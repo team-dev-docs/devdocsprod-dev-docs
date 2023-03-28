@@ -1,0 +1,238 @@
+{
+    "type": "doc",
+    "content": [
+        {
+            "type": "draggableItem",
+            "attrs": {
+                "background": "url('/img/2023-03-17T20:49:55.953Z.png') no-repeat center center / cover",
+                "backgroundPosition": null,
+                "customStyle": {
+                    "backgroundPosition": "10% 20%",
+                    "borderRadius": "0px",
+                    "backgroundBlendMode": "multiply",
+                    "backgroundColor": "rgba(0, 0, 0, 0.7)",
+                    "minHeight": "100vh"
+                },
+                "customStyleString": "background-position: 10% 20%; border-radius: 0px; background-blend-mode: lighten; background-color: rgba(0, 0, 0, 0.7); background-blend-mode: multiply; min-height: 100vh;",
+                "heightString": null,
+                "heightFormat": null,
+                "height": null,
+                "widthString": null,
+                "widthFormat": null,
+                "width": null,
+                "class": null
+            },
+            "content": [
+                {
+                    "type": "paragraph",
+                    "attrs": {
+                        "textAlign": "left",
+                        "customStyleString": ""
+                    },
+                    "content": [
+                        {
+                            "type": "text",
+                            "text": "\n          "
+                        }
+                    ]
+                },
+                {
+                    "type": "paragraph",
+                    "attrs": {
+                        "textAlign": "left",
+                        "customStyleString": ""
+                    }
+                },
+                {
+                    "type": "paragraph",
+                    "attrs": {
+                        "textAlign": "left",
+                        "customStyleString": ""
+                    }
+                },
+                {
+                    "type": "heading",
+                    "attrs": {
+                        "textAlign": "center",
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "heading",
+                    "attrs": {
+                        "textAlign": "left",
+                        "level": 1
+                    },
+                    "content": [
+                        {
+                            "type": "hardBreak"
+                        },
+                        {
+                            "type": "text",
+                            "marks": [
+                                {
+                                    "type": "customCssMark",
+                                    "attrs": {
+                                        "style": "font-size: 80px",
+                                        "class": ""
+                                    }
+                                },
+                                {
+                                    "type": "textStyle",
+                                    "attrs": {
+                                        "color": "#ffffff"
+                                    }
+                                }
+                            ],
+                            "text": "Welcome To"
+                        },
+                        {
+                            "type": "text",
+                            "marks": [
+                                {
+                                    "type": "customCssMark",
+                                    "attrs": {
+                                        "style": "background: linear-gradient(270deg, #8F00FF, #00FFFF); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 80px;",
+                                        "class": ""
+                                    }
+                                }
+                            ],
+                            "text": " "
+                        },
+                        {
+                            "type": "text",
+                            "marks": [
+                                {
+                                    "type": "customCssMark",
+                                    "attrs": {
+                                        "style": "background: linear-gradient(to right, #fad0c4, #fdd6af, darkgoldenrod, #ff9a9e, #f0615c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 80px",
+                                        "class": ""
+                                    }
+                                }
+                            ],
+                            "text": "Cakework :D."
+                        }
+                    ]
+                },
+                {
+                    "type": "paragraph",
+                    "attrs": {
+                        "textAlign": "left",
+                        "customStyleString": ""
+                    }
+                },
+                {
+                    "type": "heading",
+                    "attrs": {
+                        "textAlign": "center",
+                        "level": 1
+                    },
+                    "content": [
+                        {
+                            "type": "hardBreak"
+                        },
+                        {
+                            "type": "hardBreak"
+                        },
+                        {
+                            "type": "hardBreak"
+                        },
+                        {
+                            "type": "text",
+                            "marks": [
+                                {
+                                    "type": "textStyle",
+                                    "attrs": {
+                                        "color": "#ffffff"
+                                    }
+                                }
+                            ],
+                            "text": "Run your developers' code, instantly."
+                        }
+                    ]
+                },
+                {
+                    "type": "paragraph",
+                    "attrs": {
+                        "textAlign": "center",
+                        "customStyleString": ""
+                    },
+                    "content": [
+                        {
+                            "type": "text",
+                            "marks": [
+                                {
+                                    "type": "textStyle",
+                                    "attrs": {
+                                        "color": "#ffffff"
+                                    }
+                                }
+                            ],
+                            "text": "Add scripting to your dev product or build your own serverless cloud. Just APIs, no infra required."
+                        },
+                        {
+                            "type": "hardBreak",
+                            "marks": [
+                                {
+                                    "type": "customCssMark",
+                                    "attrs": {
+                                        "style": "",
+                                        "class": ""
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "hardBreak",
+                            "marks": [
+                                {
+                                    "type": "customCssMark",
+                                    "attrs": {
+                                        "style": "",
+                                        "class": ""
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "text",
+                            "marks": [
+                                {
+                                    "type": "link",
+                                    "attrs": {
+                                        "customStyleString": "",
+                                        "href": "https://discord.com/invite/yB6GvheDcP",
+                                        "style": "",
+                                        "class": ""
+                                    }
+                                },
+                                {
+                                    "type": "customCssMark",
+                                    "attrs": {
+                                        "style": "background: linear-gradient(to bottom right, #FFC9FF, #FF8AC9, #FFFFFF); color: white; border-radius: 5px; padding: 10px 20px; font-size: 16px; font-weight: bold; text-transform: none; /* modified */ border: none; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);",
+                                        "class": ""
+                                    }
+                                }
+                            ],
+                            "text": "Join the Discord"
+                        }
+                    ]
+                },
+                {
+                    "type": "heading",
+                    "attrs": {
+                        "textAlign": "left",
+                        "level": 1
+                    }
+                },
+                {
+                    "type": "paragraph",
+                    "attrs": {
+                        "textAlign": "left",
+                        "customStyleString": ""
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,72 @@
+{
+    "links": [
+        {
+            "items": [
+                {
+                    "label": "Tutorial",
+                    "to": "/docs/intro",
+                    "prependBaseUrlToHref": true
+                },
+                {
+                    "label": "About",
+                    "href": "/about",
+                    "prependBaseUrlToHref": true,
+                    "position": "left"
+                }
+            ],
+            "title": "Docs"
+        },
+        {
+            "items": [
+                {
+                    "label": "Stack Overflow",
+                    "href": "https://stackoverflow.com/questions/tagged/docusaurus",
+                    "prependBaseUrlToHref": false
+                },
+                {
+                    "label": "Discord",
+                    "href": "https://discordapp.com/invite/docusaurus",
+                    "prependBaseUrlToHref": false
+                },
+                {
+                    "label": "Twitter",
+                    "href": "https://twitter.com/docusaurus",
+                    "prependBaseUrlToHref": false
+                }
+            ],
+            "title": "Community"
+        },
+        {
+            "items": [
+                {
+                    "label": "Blog",
+                    "to": "/blog",
+                    "prependBaseUrlToHref": true
+                },
+                {
+                    "label": "GitHub",
+                    "href": "https://github.com/facebook/docusaurus",
+                    "prependBaseUrlToHref": false
+                }
+            ],
+            "title": "More"
+        },
+        {
+            "items": [
+                {
+                    "label": "Instagram",
+                    "href": "https://www.instagram.com",
+                    "position": "left",
+                    "prependBaseUrlToHref": false
+                },
+                {
+                    "label": "Linkedin",
+                    "href": "https://www.linkedin.com/company/dev-docs",
+                    "prependBaseUrlToHref": false,
+                    "position": "left"
+                }
+            ],
+            "title": "Social"
+        }
+    ]
+}
