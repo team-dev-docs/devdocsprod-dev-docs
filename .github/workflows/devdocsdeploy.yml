@@ -20,7 +20,7 @@ jobs:
       - name: Call API
         env:
           API_TOKEN: ${{ secrets.API_TOKEN }}
-          API_URL: ${{ secrets.URL}}
+          API_URL: ${{ secrets.API_URL}}
         run: |
           curl -X POST \
           -H "Content-Type: application/json" \
