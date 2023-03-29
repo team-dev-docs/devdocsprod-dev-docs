@@ -10,8 +10,6 @@ on:
 jobs:
   call-api:
     runs-on: ubuntu-latest
-    if: github.event.repository.private == true
-
     steps:
       - name: Get repository ID
         id: get-repo-id
