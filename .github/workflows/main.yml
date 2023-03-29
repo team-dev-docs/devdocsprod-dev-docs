@@ -1,4 +1,4 @@
-name: Migrate
+name: Migratea
 
 on: 
   push:
