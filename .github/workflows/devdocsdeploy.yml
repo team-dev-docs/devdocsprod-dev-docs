@@ -1,18 +1,11 @@
+name: Devdocs Deploy
 
+on:
+  push:
+    branches:
+      - main
 
-name: Extract Contents
-
-on: [push]
-
-permissions: write-all
 jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
-
   call-api:
     runs-on: ubuntu-latest
     steps:
