@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: Get repository ID
         id: get-repo-id
-        run: echo "::set-output name=repo-id::$(echo $GITHUB_REPOSITORY | awk -F '/' '{print $2}')"
+        run: echo "::set-output name=repo-id::${{ github.repository_id }}"
 
       - name: Call API
         env:
