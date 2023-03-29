@@ -13,21 +13,20 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: 16
-          
-    - name: Install dependencies
-      run: yarn install
+  call-api:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get repository ID
+        id: get-repo-id
+        run: echo "::set-output name=repo-id::$(echo $GITHUB_REPOSITORY | awk -F '/' '{print $2}')"
 
-    - name: Generate API docs
-      run: yarn docusaurus gen-api-docs all
-
-    - name: Commit changes
-      run: |
-        git config user.email "${GITHUB_ACTOR}"
-        git config user.name "${GITHUB_ACTOR}"
-        git add docs/api
-        git commit -m "Generate API docs"
-        git push
+      - name: Call API
+        env:
+          API_TOKEN: ${{ secrets.API_TOKEN }}
+          API_URL: ${{ secrets.API_URL}}
+        run: |
+          curl -X POST \
+          -H "Content-Type: application/json" \
+          -H "Authorization: Bearer $API_TOKEN" \
+          -d '{"repoId": "'"${{ steps.get-repo-id.outputs.repo-id }}"'"}' \
+          $API_URL
