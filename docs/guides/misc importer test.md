@@ -1,0 +1,36 @@
+import Editor from '@site/src/components/editor.jsx';
+    export const data = {"type":"doc","content":[{"type":"paragraph","attrs":{"textAlign":"left"},"content":[{"type":"hardBreak"},{"type":"hardBreak"}]},{"type":"heading","attrs":{"textAlign":"left","level":1},"content":[{"type":"text","text":"Lets goooo!"}]},{"type":"paragraph","attrs":{"textAlign":"left"}},{"type":"heading","attrs":{"textAlign":"left","level":1},"content":[{"type":"text","text":"Navbar"}]},{"type":"paragraph","attrs":{"textAlign":"left"}},{"type":"paragraph","attrs":{"textAlign":"left"},"content":[{"type":"ResizableImage","attrs":{"src":"https://storage.googleapis.com/devdocs-48872.appspot.com/devdocs/d60282f22dcb90514e47bb0e86950731.jpeg?GoogleAccessId=firebase-adminsdk-3c4rb%40devdocs-48872.iam.gserviceaccount.com&Expires=1676562551&Signature=Ya%2FzXWUCwYqWlbXOAkOFgVD5oG2x57Un1usI6hxbI1KFF5qnSdQowME04%2BhqBNAaGe4kX4MwzooMgfMPa%2BPvGjUcuF5nSwt6DK97QXxDW%2B21QOePP1A0nAIzPpmHeC4K5yse1hjjun4IFt6AetisUFOyzZeXqrd8YcpHlqxyDBqpgmfgmTkBMSR8FtZ5pGZ4oovD70AUBH9zjoJDtRAZiIp2BixUkwtaL5TPS1YDlfUrEpAGPr63va98omKwQiY68%2Ft2L6%2F4SgRAqAsiOE0NIaoQO9G9pNkLDigICQ8c4WjufQ5VTpOpzWoAY%2FwRiXcUmCmLibX5ziKzmkz99EiO8g%3D%3D","alt":null,"title":null,"width":661,"height":77,"external":null,"externalImagePath":null,"isDraggable":true}}]},{"type":"heading","attrs":{"textAlign":"left","level":2},"content":[{"type":"text","text":"Title:"}]},{"type":"paragraph","attrs":{"textAlign":"left"},"content":[{"type":"ResizableImage","attrs":{"src":"https://storage.googleapis.com/devdocs-48872.appspot.com/devdocs/09b06a8acdc4099896c93248d37540f9.jpeg?GoogleAccessId=firebase-adminsdk-3c4rb%40devdocs-48872.iam.gserviceaccount.com&Expires=1676562557&Signature=awPpmVCeVA48huj3dw7GHOOGV0ATDK%2Bx%2FjZYbFT9TGzCyVs2xwCLCqZjKDwfE5aVy3MKEEnZxJr57%2FtCj%2FXLcdEEQ%2BWVxiTb8RPLqCNE3YuJ%2Bi5TmA%2Fs551RluOYbTCfEZ0vuXwYhWZbcI06MhzRmlEjXy%2BCQmYmbN9WphnEPlIfoY3SgwTRc%2BuCevph8noQMw3HPLjjp6w56e16d2bqRHJHm7%2FLVjXtyVlI1S7%2B7Z1n6z9qr%2FcS54Cch%2BvGnELuEoNPTIQH2jKY6PebxKUDnTocXoNQ2sSM4OjoBlf65rgAGecgJ5mEBYcJaV19tGMUcVv43p0jKK%2FjarZOBluqKg%3D%3D","alt":null,"title":null,"width":600,"height":80,"external":null,"externalImagePath":null,"isDraggable":true}}]},{"type":"heading","attrs":{"textAlign":"left","level":3},"content":[{"type":"text","text":"description:"}]},{"type":"paragraph","attrs":{"textAlign":"left"}},{"type":"paragraph","attrs":{"textAlign":"left"},"content":[{"type":"text","text":"Lets you know two things, the name of the document file you are creating and the type of document.  For example the type of document here is Misc, while the title is intro to the UI."}]},{"type":"paragraph","attrs":{"textAlign":"left"}},{"type":"heading","attrs":{"textAlign":"left","level":2},"content":[{"type":"text","text":"Document Location"}]},{"type":"paragraph","attrs":{"textAlign":"left"}},{"type":"paragraph","attrs":{"textAlign":"left"},"content":[{"type":"ResizableImage","attrs":{"src":"https://storage.googleapis.com/devdocs-48872.appspot.com/devdocs/fb41042429b1caeeaff4989e00a1ff0b.jpeg?GoogleAccessId=firebase-adminsdk-3c4rb%40devdocs-48872.iam.gserviceaccount.com&Expires=1676562562&Signature=K%2BYbI96FQ2BzP4Sn256R%2B6dyr7vZbtk%2B3lf6BnO4Urr6LlsJZfwg2Q0TDMSINa2qyYzWLs1Kk9PW%2F1%2FkKfFNtqyH68ZcJTslViwk77%2BlBcAYosqaA%2BXO0watj%2FUPAVnmUTG01%2BJ%2FPv%2BiqQjvBmiFQ2UNC5asRkKuSfrvWpLPgXIHqTmYSXYWk%2BSscjZoXg8yT2ZyGMqs8X%2BzRq1O%2FdBjRvNvS%2B6CHO84x3oVJ0a0GZfw77ZvmRo92SdM3eKJjDfCwtJTiQQSIPzDiH%2F0lkska9XnJlXTizxjuJcLsbA79ylWp7JzGOFevCg7ewoaY%2B0cfXoKyKyhL7vkLoDZ9sPpkw%3D%3D","alt":null,"title":null,"width":600,"height":124,"external":null,"externalImagePath":null,"isDraggable":true}}]},{"type":"heading","attrs":{"textAlign":"left","level":3},"content":[{"type":"text","text":"description:"}]},{"type":"paragraph","attrs":{"textAlign":"left"}},{"type":"paragraph","attrs":{"textAlign":"left"},"content":[{"type":"text","text":"This shows you were the document is located.  Local means that this document is both fetched and save from the local markdown files in root directory, while cloud will fetch and save to and from Dev-Docs clould backend.  If you never sign in then you files will always be saved locally.  You can also configure this behavior with the dev-docs.json."}]},{"type":"paragraph","attrs":{"textAlign":"left"}},{"type":"paragraph","attrs":{"textAlign":"left"}},{"type":"heading","attrs":{"textAlign":"left","level":2},"content":[{"type":"text","text":"Dropdown:"}]},{"type":"paragraph","attrs":{"textAlign":"left"}},{"type":"paragraph","attrs":{"textAlign":"left"},"content":[{"type":"ResizableImage","attrs":{"src":"https://storage.googleapis.com/devdocs-48872.appspot.com/devdocs/4f5fb8229301b78aaf3c8e6a1a3c62a1.jpeg?GoogleAccessId=firebase-adminsdk-3c4rb%40devdocs-48872.iam.gserviceaccount.com&Expires=1676562567&Signature=Vzj8xq03E%2FRbNSENseSMuKx1uVwwPZRWjkvKeQsxV7U1zXEIFbklCzOQWK9XP6sr8A8z1L5YgtItmLxdiJlfpGLE0f4XtlFW8SqRmolqBC3a11DvJWTXpWPWTP9qvB7X%2F5BEzSlvxc7tnx0KG9%2BQxoY5vivPWKR2K9WTtX%2B6mA0lE5hMDtc1MhwUHzOXEc7MrjepjrGTiAFG%2B%2BLBiiSsEI2O0ryTMUmpkwEjjGegfWYFTRk%2FXNJ94JA7Kfq4jd%2BR9ZGfbCY5%2FKdLvs%2Fl05aUJvZxH%2BBfsSeO3Vu6DEYwSw7L9uQSGlJyOu3xo0Iw99SPcfuEnTW1gUXciWb96TtaRA%3D%3D","alt":null,"title":null,"width":600,"height":215,"external":null,"externalImagePath":null,"isDraggable":true}}]},{"type":"heading","attrs":{"textAlign":"left","level":3},"content":[{"type":"text","text":"description:"}]},{"type":"paragraph","attrs":{"textAlign":"left"}},{"type":"paragraph","attrs":{"textAlign":"left"},"content":[{"type":"text","text":"Dropdown shows you two options for codebase settings, and keyboard shortcuts(coming soon).  Codebase Settings, when signed in allows you to give a friendlyname to this repo so Dev-Docs is aware of it.  You must be authenticated and have github repo initialized."}]},{"type":"paragraph","attrs":{"textAlign":"left"}},{"type":"heading","attrs":{"textAlign":"left","level":2},"content":[{"type":"text","text":"Menu"}]},{"type":"paragraph","attrs":{"textAlign":"left"}},{"type":"paragraph","attrs":{"textAlign":"left"}},{"type":"paragraph","attrs":{"textAlign":"left"}},{"type":"paragraph","attrs":{"textAlign":"left"}},{"type":"paragraph","attrs":{"textAlign":"left"}},{"type":"paragraph","attrs":{"textAlign":"left"}}]}
+
+
+<Editor data={data} />
+
+
+<div style={{ display: 'none' }}>
+
+
+Lets goooo!
+
+Navbar
+
+Title:
+
+description:
+
+Lets you know two things, the name of the document file you are creating and the type of document.  For example the type of document here is Misc, while the title is intro to the UI.
+
+Document Location
+
+description:
+
+This shows you were the document is located.  Local means that this document is both fetched and save from the local markdown files in root directory, while cloud will fetch and save to and from Dev-Docs clould backend.  If you never sign in then you files will always be saved locally.  You can also configure this behavior with the dev-docs.json.
+
+Dropdown:
+
+description:
+
+Dropdown shows you two options for codebase settings, and keyboard shortcuts(coming soon).  Codebase Settings, when signed in allows you to give a friendlyname to this repo so Dev-Docs is aware of it.  You must be authenticated and have github repo initialized.
+
+Menu
+
+
+</div>

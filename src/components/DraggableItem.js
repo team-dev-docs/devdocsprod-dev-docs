@@ -33,6 +33,9 @@ export default Node.create({
       customStyleString: {
         default: null
       },
+      style: {
+        default: null
+      },
       heightString: {
         default: null
       },

@@ -4,18 +4,211 @@
         {
             "type": "draggableItem",
             "attrs": {
-                "background": "url('/img/2023-03-17T20:49:55.953Z.png') no-repeat center center / cover",
+                "background": "url('static/img/2023-03-30T15:28:36.221Z.png') no-repeat center center / cover",
                 "backgroundPosition": null,
+                "lock": false,
                 "customStyle": {
-                    "backgroundPosition": "10% 20%",
+                    "minHeight": "70ch",
+                    "display": "flex",
+                    "justifyContent": "center",
+                    "alignItems": "left",
+                    "flexDirection": "column",
                     "borderRadius": "0px",
-                    "backgroundBlendMode": "multiply",
-                    "backgroundColor": "rgba(0, 0, 0, 0.7)",
-                    "minHeight": "100vh"
+                    "padding": "10em",
+                    "background": "url('https://raw.githubusercontent.com/avb-is-me/docusarusFun/main/static/img/2023-03-30T15%3A28%3A36.221Z.png?token=AY3CZN3ZEWSEYFCDTOJMGR3EIBTZG') no-repeat center center / cover"
                 },
-                "customStyleString": "background-position: 10% 20%; border-radius: 0px; background-blend-mode: lighten; background-color: rgba(0, 0, 0, 0.7); background-blend-mode: multiply; min-height: 100vh;",
+                "customStyleString": "min-height: 70ch;display: flex; justify-content: center; /* Align horizontal */ align-items: left; flex-direction: column; border-radius: 0px; padding: 10em; background: url('https://raw.githubusercontent.com/avb-is-me/docusarusFun/main/static/img/2023-03-30T15%3A28%3A36.221Z.png?token=AY3CZN3ZEWSEYFCDTOJMGR3EIBTZG') no-repeat center center / cover;",
                 "heightString": null,
                 "heightFormat": null,
+                "style": "min-height: 70ch;display: flex; justify-content: center; /* Align horizontal */ align-items: left; flex-direction: column; border-radius: 0px; padding: 10em; background: url('https://raw.githubusercontent.com/avb-is-me/docusarusFun/main/static/img/2023-03-30T15%3A28%3A36.221Z.png?token=AY3CZN3ZEWSEYFCDTOJMGR3EIBTZG') no-repeat center center / cover;",
+                "height": null,
+                "widthString": null,
+                "widthFormat": null,
+                "width": null,
+                "class": null
+            },
+            "content": [
+                {
+                    "type": "paragraph",
+                    "attrs": {
+                        "textAlign": "center",
+                        "customStyleString": ""
+                    },
+                    "content": [
+                        {
+                            "type": "text",
+                            "marks": [
+                                {
+                                    "type": "customCssMark",
+                                    "attrs": {
+                                        "style": "",
+                                        "class": "main-heading"
+                                    }
+                                },
+                                {
+                                    "type": "textStyle",
+                                    "attrs": {
+                                        "color": "#ffffff"
+                                    }
+                                }
+                            ],
+                            "text": "Code. Document. Push."
+                        }
+                    ]
+                },
+                {
+                    "type": "paragraph",
+                    "attrs": {
+                        "textAlign": "left",
+                        "customStyleString": ""
+                    }
+                },
+                {
+                    "type": "paragraph",
+                    "attrs": {
+                        "textAlign": "center",
+                        "customStyleString": ""
+                    }
+                },
+                {
+                    "type": "draggableItem",
+                    "attrs": {
+                        "background": null,
+                        "backgroundPosition": null,
+                        "lock": false,
+                        "customStyle": {
+                            "background": "transparent",
+                            "width": "100%"
+                        },
+                        "customStyleString": "background: transparent;background: transparent; background: transparent;background: transparent; width: 100%;",
+                        "heightString": null,
+                        "heightFormat": null,
+                        "style": "background: transparent;background: transparent; background: transparent;background: transparent; width: 100%;",
+                        "height": null,
+                        "widthString": null,
+                        "widthFormat": null,
+                        "width": null,
+                        "class": null
+                    },
+                    "content": [
+                        {
+                            "type": "paragraph",
+                            "attrs": {
+                                "textAlign": "left",
+                                "customStyleString": ""
+                            },
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "\n    "
+                                }
+                            ]
+                        },
+                        {
+                            "type": "heading",
+                            "attrs": {
+                                "textAlign": "left",
+                                "level": 2
+                            },
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "marks": [
+                                        {
+                                            "type": "textStyle",
+                                            "attrs": {
+                                                "color": "rgb(209, 213, 219)"
+                                            }
+                                        }
+                                    ],
+                                    "text": "Our developer documentation solution empowers teams to create comprehensive documentation for their code, APIs, and SDKs, enabling faster onboarding and improved collaboration between internal teams and external developers."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "paragraph",
+                    "attrs": {
+                        "textAlign": "left",
+                        "customStyleString": ""
+                    },
+                    "content": [
+                        {
+                            "type": "hardBreak"
+                        },
+                        {
+                            "type": "hardBreak"
+                        }
+                    ]
+                },
+                {
+                    "type": "paragraph",
+                    "attrs": {
+                        "textAlign": "center",
+                        "customStyleString": ""
+                    },
+                    "content": [
+                        {
+                            "type": "text",
+                            "marks": [
+                                {
+                                    "type": "link",
+                                    "attrs": {
+                                        "customStyleString": "",
+                                        "href": "https://calendly.com/andrew-vb",
+                                        "style": "",
+                                        "class": ""
+                                    }
+                                },
+                                {
+                                    "type": "bold"
+                                },
+                                {
+                                    "type": "customCssMark",
+                                    "attrs": {
+                                        "style": "background-color: #0070F3; color: #FFFFFF; padding: 10px 20px; border-radius: 4px; font-weight: 500; cursor: pointer; text-decoration: none; text-align: center; display: inline-block;",
+                                        "class": ""
+                                    }
+                                },
+                                {
+                                    "type": "textStyle",
+                                    "attrs": {
+                                        "color": "#ffffff"
+                                    }
+                                }
+                            ],
+                            "text": "Book Some Time"
+                        }
+                    ]
+                },
+                {
+                    "type": "paragraph",
+                    "attrs": {
+                        "textAlign": "left",
+                        "customStyleString": ""
+                    }
+                }
+            ]
+        },
+        {
+            "type": "draggableItem",
+            "attrs": {
+                "background": "url('static/img/2023-04-04T20:58:30.812Z.png') no-repeat center center / cover",
+                "backgroundPosition": null,
+                "lock": false,
+                "customStyle": {
+                    "minHeight": "50ch",
+                    "display": "flex",
+                    "justifyContent": "align-items: center",
+                    "flexDirection": "column",
+                    "borderRadius": "0px",
+                    "background": "url('https://raw.githubusercontent.com/avb-is-me/docusarusFun/main/static/img/2023-04-04T20%3A58%3A30.812Z.png?token=AY3CZN2EGOTMCOVBOKLMUEDEIBTZI') no-repeat center center / cover"
+                },
+                "customStyleString": "min-height: 50ch;display: flex; justify-content: align-items: center; flex-direction: column; border-radius: 0px; background: url('https://raw.githubusercontent.com/avb-is-me/docusarusFun/main/static/img/2023-04-04T20%3A58%3A30.812Z.png?token=AY3CZN2EGOTMCOVBOKLMUEDEIBTZI') no-repeat center center / cover;",
+                "heightString": null,
+                "heightFormat": null,
+                "style": "min-height: 50ch;display: flex; justify-content: align-items: center; flex-direction: column; border-radius: 0px; background: url('https://raw.githubusercontent.com/avb-is-me/docusarusFun/main/static/img/2023-04-04T20%3A58%3A30.812Z.png?token=AY3CZN2EGOTMCOVBOKLMUEDEIBTZI') no-repeat center center / cover;",
                 "height": null,
                 "widthString": null,
                 "widthFormat": null,
@@ -32,30 +225,9 @@
                     "content": [
                         {
                             "type": "text",
-                            "text": "\n          "
+                            "text": "\n    "
                         }
                     ]
-                },
-                {
-                    "type": "paragraph",
-                    "attrs": {
-                        "textAlign": "left",
-                        "customStyleString": ""
-                    }
-                },
-                {
-                    "type": "paragraph",
-                    "attrs": {
-                        "textAlign": "left",
-                        "customStyleString": ""
-                    }
-                },
-                {
-                    "type": "heading",
-                    "attrs": {
-                        "textAlign": "center",
-                        "level": 1
-                    }
                 },
                 {
                     "type": "heading",
@@ -65,16 +237,13 @@
                     },
                     "content": [
                         {
-                            "type": "hardBreak"
-                        },
-                        {
                             "type": "text",
                             "marks": [
                                 {
                                     "type": "customCssMark",
                                     "attrs": {
-                                        "style": "font-size: 80px",
-                                        "class": ""
+                                        "style": "font-size: 50px",
+                                        "class": null
                                     }
                                 },
                                 {
@@ -84,33 +253,1074 @@
                                     }
                                 }
                             ],
-                            "text": "Welcome To"
+                            "text": "Document your Code as you and your other developers are coding it"
+                        }
+                    ]
+                },
+                {
+                    "type": "heading",
+                    "attrs": {
+                        "textAlign": "left",
+                        "level": 1
+                    },
+                    "content": [
+                        {
+                            "type": "hardBreak"
+                        }
+                    ]
+                },
+                {
+                    "type": "heading",
+                    "attrs": {
+                        "textAlign": "left",
+                        "level": 1
+                    },
+                    "content": [
+                        {
+                            "type": "hardBreak"
+                        }
+                    ]
+                },
+                {
+                    "type": "draggableItem",
+                    "attrs": {
+                        "background": "#ff4500",
+                        "backgroundPosition": null,
+                        "lock": false,
+                        "customStyle": {
+                            "width": "100%",
+                            "background": "transparent",
+                            "height": "100%",
+                            "display": "flex",
+                            "flex": "1 1 30%",
+                            "gap": "1%"
                         },
+                        "customStyleString": "width: 100%; background: transparent; height: 100%; display: flex; flex: 1 1 30%; gap: 1%",
+                        "heightString": null,
+                        "heightFormat": null,
+                        "style": "width: 100%; background: transparent; height: 100%; display: flex; flex: 1 1 30%; gap: 1%",
+                        "height": null,
+                        "widthString": null,
+                        "widthFormat": null,
+                        "width": null,
+                        "class": null
+                    },
+                    "content": [
+                        {
+                            "type": "paragraph",
+                            "attrs": {
+                                "textAlign": "left",
+                                "customStyleString": ""
+                            },
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "\n    "
+                                }
+                            ]
+                        },
+                        {
+                            "type": "paragraph",
+                            "attrs": {
+                                "textAlign": "left",
+                                "customStyleString": ""
+                            }
+                        },
+                        {
+                            "type": "paragraph",
+                            "attrs": {
+                                "textAlign": "left",
+                                "customStyleString": ""
+                            },
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "\n  "
+                                }
+                            ]
+                        },
+                        {
+                            "type": "draggableItem",
+                            "attrs": {
+                                "background": null,
+                                "backgroundPosition": null,
+                                "lock": false,
+                                "customStyle": {
+                                    "background": "black",
+                                    "flex": "0 0 48%"
+                                },
+                                "customStyleString": "background: black; flex: 0 0 48%",
+                                "heightString": null,
+                                "heightFormat": null,
+                                "style": "background: black; flex: 0 0 48%",
+                                "height": null,
+                                "widthString": null,
+                                "widthFormat": null,
+                                "width": null,
+                                "class": null
+                            },
+                            "content": [
+                                {
+                                    "type": "paragraph",
+                                    "attrs": {
+                                        "textAlign": "left",
+                                        "customStyleString": ""
+                                    },
+                                    "content": [
+                                        {
+                                            "type": "text",
+                                            "text": "\n    "
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "heading",
+                                    "attrs": {
+                                        "textAlign": "left",
+                                        "level": 1
+                                    },
+                                    "content": [
+                                        {
+                                            "type": "text",
+                                            "marks": [
+                                                {
+                                                    "type": "textStyle",
+                                                    "attrs": {
+                                                        "color": "#ffffff"
+                                                    }
+                                                }
+                                            ],
+                                            "text": "Start from your tools "
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "paragraph",
+                                    "attrs": {
+                                        "textAlign": "left",
+                                        "customStyleString": ""
+                                    },
+                                    "content": [
+                                        {
+                                            "type": "text",
+                                            "marks": [
+                                                {
+                                                    "type": "textStyle",
+                                                    "attrs": {
+                                                        "color": "#ffffff"
+                                                    }
+                                                }
+                                            ],
+                                            "text": " "
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "paragraph",
+                                    "attrs": {
+                                        "textAlign": "left",
+                                        "customStyleString": ""
+                                    },
+                                    "content": [
+                                        {
+                                            "type": "text",
+                                            "marks": [
+                                                {
+                                                    "type": "textStyle",
+                                                    "attrs": {
+                                                        "color": "#ffffff"
+                                                    }
+                                                }
+                                            ],
+                                            "text": " "
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "paragraph",
+                                    "attrs": {
+                                        "textAlign": "left",
+                                        "customStyleString": ""
+                                    },
+                                    "content": [
+                                        {
+                                            "type": "text",
+                                            "marks": [
+                                                {
+                                                    "type": "textStyle",
+                                                    "attrs": {
+                                                        "color": "#ffffff"
+                                                    }
+                                                }
+                                            ],
+                                            "text": "Dev-docs integrates with your dev teams workflow into the tools they love like Vs Code and the terminal.  From there developers can just write Docs, or any other content related to the code as they are coding, with 0 context switching"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "paragraph",
+                                    "attrs": {
+                                        "textAlign": "left",
+                                        "customStyleString": ""
+                                    }
+                                },
+                                {
+                                    "type": "paragraph",
+                                    "attrs": {
+                                        "textAlign": "left",
+                                        "customStyleString": ""
+                                    },
+                                    "content": [
+                                        {
+                                            "type": "text",
+                                            "text": "  "
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "paragraph",
+                            "attrs": {
+                                "textAlign": "left",
+                                "customStyleString": ""
+                            }
+                        },
+                        {
+                            "type": "draggableItem",
+                            "attrs": {
+                                "background": "url('static/img/2023-04-04T20:29:15.127Z.png') no-repeat center center / cover",
+                                "backgroundPosition": null,
+                                "lock": false,
+                                "customStyle": {
+                                    "flex": "1 1 48%",
+                                    "height": "auto",
+                                    "background": "url('https://raw.githubusercontent.com/avb-is-me/docusarusFun/main/static/img/2023-04-04T20%3A29%3A15.127Z.png?token=AY3CZN2SCTFZFLEZS3HOXE3EIBTZI') no-repeat center center / cover"
+                                },
+                                "customStyleString": "flex: 1 1 48%; height: auto; background: url('https://raw.githubusercontent.com/avb-is-me/docusarusFun/main/static/img/2023-04-04T20%3A29%3A15.127Z.png?token=AY3CZN2SCTFZFLEZS3HOXE3EIBTZI') no-repeat center center / cover;",
+                                "heightString": null,
+                                "heightFormat": null,
+                                "style": "flex: 1 1 48%; height: auto; background: url('https://raw.githubusercontent.com/avb-is-me/docusarusFun/main/static/img/2023-04-04T20%3A29%3A15.127Z.png?token=AY3CZN2SCTFZFLEZS3HOXE3EIBTZI') no-repeat center center / cover;",
+                                "height": null,
+                                "widthString": null,
+                                "widthFormat": null,
+                                "width": null,
+                                "class": null
+                            },
+                            "content": [
+                                {
+                                    "type": "paragraph",
+                                    "attrs": {
+                                        "textAlign": "left",
+                                        "customStyleString": ""
+                                    },
+                                    "content": [
+                                        {
+                                            "type": "text",
+                                            "text": "\n    "
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "heading",
+                                    "attrs": {
+                                        "textAlign": "left",
+                                        "level": 1
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "paragraph",
+                            "attrs": {
+                                "textAlign": "left",
+                                "customStyleString": ""
+                            },
+                            "content": [
+                                {
+                                    "type": "hardBreak"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "paragraph",
+                            "attrs": {
+                                "textAlign": "left",
+                                "customStyleString": ""
+                            },
+                            "content": [
+                                {
+                                    "type": "hardBreak"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "paragraph",
+                            "attrs": {
+                                "textAlign": "left",
+                                "customStyleString": ""
+                            },
+                            "content": [
+                                {
+                                    "type": "hardBreak"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "paragraph",
+                            "attrs": {
+                                "textAlign": "left",
+                                "customStyleString": ""
+                            }
+                        },
+                        {
+                            "type": "paragraph",
+                            "attrs": {
+                                "textAlign": "left",
+                                "customStyleString": ""
+                            },
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "  "
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "draggableItem",
+                    "attrs": {
+                        "background": "static/img/2023-04-04T20:29:15.127Z.png",
+                        "backgroundPosition": null,
+                        "lock": false,
+                        "customStyle": {
+                            "background": "transparent",
+                            "width": "100%",
+                            "height": "100%",
+                            "display": "flex",
+                            "flex": "1 1 30%",
+                            "gap": "1%"
+                        },
+                        "customStyleString": "background: transparent; width: 100%; height: 100%; display: flex; flex: 1 1 30%; gap: 1%",
+                        "heightString": null,
+                        "heightFormat": null,
+                        "style": "background: transparent; width: 100%; height: 100%; display: flex; flex: 1 1 30%; gap: 1%",
+                        "height": null,
+                        "widthString": null,
+                        "widthFormat": null,
+                        "width": null,
+                        "class": null
+                    },
+                    "content": [
+                        {
+                            "type": "paragraph",
+                            "attrs": {
+                                "textAlign": "left",
+                                "customStyleString": ""
+                            },
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "\n    "
+                                }
+                            ]
+                        },
+                        {
+                            "type": "paragraph",
+                            "attrs": {
+                                "textAlign": "left",
+                                "customStyleString": ""
+                            }
+                        },
+                        {
+                            "type": "paragraph",
+                            "attrs": {
+                                "textAlign": "left",
+                                "customStyleString": ""
+                            },
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "\n  "
+                                }
+                            ]
+                        },
+                        {
+                            "type": "draggableItem",
+                            "attrs": {
+                                "background": "url('static/img/2023-02-07T14:49:58.201Z.png') no-repeat center center / cover",
+                                "backgroundPosition": null,
+                                "lock": false,
+                                "customStyle": {
+                                    "flex": "1 1 48%",
+                                    "height": "auto",
+                                    "background": "url('https://raw.githubusercontent.com/avb-is-me/docusarusFun/main/static/img/2023-02-07T14%3A49%3A58.201Z.png?token=AY3CZN4OCECXHXJOW4NPBIDEIBTZK') no-repeat center center / cover"
+                                },
+                                "customStyleString": "flex: 1 1 48%; height: auto; background: url('https://raw.githubusercontent.com/avb-is-me/docusarusFun/main/static/img/2023-02-07T14%3A49%3A58.201Z.png?token=AY3CZN4OCECXHXJOW4NPBIDEIBTZK') no-repeat center center / cover;",
+                                "heightString": null,
+                                "heightFormat": null,
+                                "style": "flex: 1 1 48%; height: auto; background: url('https://raw.githubusercontent.com/avb-is-me/docusarusFun/main/static/img/2023-02-07T14%3A49%3A58.201Z.png?token=AY3CZN4OCECXHXJOW4NPBIDEIBTZK') no-repeat center center / cover;",
+                                "height": null,
+                                "widthString": null,
+                                "widthFormat": null,
+                                "width": null,
+                                "class": null
+                            },
+                            "content": [
+                                {
+                                    "type": "paragraph",
+                                    "attrs": {
+                                        "textAlign": "left",
+                                        "customStyleString": ""
+                                    },
+                                    "content": [
+                                        {
+                                            "type": "text",
+                                            "text": "\n    "
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "heading",
+                                    "attrs": {
+                                        "textAlign": "left",
+                                        "level": 1
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "paragraph",
+                            "attrs": {
+                                "textAlign": "left",
+                                "customStyleString": ""
+                            }
+                        },
+                        {
+                            "type": "draggableItem",
+                            "attrs": {
+                                "background": null,
+                                "backgroundPosition": null,
+                                "lock": false,
+                                "customStyle": {
+                                    "background": "black",
+                                    "flex": "0 0 48%"
+                                },
+                                "customStyleString": "background: black; flex: 0 0 48%",
+                                "heightString": null,
+                                "heightFormat": null,
+                                "style": "background: black; flex: 0 0 48%",
+                                "height": null,
+                                "widthString": null,
+                                "widthFormat": null,
+                                "width": null,
+                                "class": null
+                            },
+                            "content": [
+                                {
+                                    "type": "paragraph",
+                                    "attrs": {
+                                        "textAlign": "left",
+                                        "customStyleString": ""
+                                    },
+                                    "content": [
+                                        {
+                                            "type": "text",
+                                            "text": "\n    "
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "heading",
+                                    "attrs": {
+                                        "textAlign": "left",
+                                        "level": 1
+                                    },
+                                    "content": [
+                                        {
+                                            "type": "text",
+                                            "marks": [
+                                                {
+                                                    "type": "textStyle",
+                                                    "attrs": {
+                                                        "color": "#ffffff"
+                                                    }
+                                                }
+                                            ],
+                                            "text": "Make Docs Easy for Developers to update"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "paragraph",
+                                    "attrs": {
+                                        "textAlign": "left",
+                                        "customStyleString": ""
+                                    },
+                                    "content": [
+                                        {
+                                            "type": "text",
+                                            "text": " "
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "paragraph",
+                                    "attrs": {
+                                        "textAlign": "left",
+                                        "customStyleString": ""
+                                    },
+                                    "content": [
+                                        {
+                                            "type": "text",
+                                            "marks": [
+                                                {
+                                                    "type": "textStyle",
+                                                    "attrs": {
+                                                        "color": "#ffffff"
+                                                    }
+                                                }
+                                            ],
+                                            "text": "Dev-Docs integrates with git so we can help your developers focus on only updating the documentation on the modified variables, functions, and other code objects that changed."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "paragraph",
+                                    "attrs": {
+                                        "textAlign": "left",
+                                        "customStyleString": ""
+                                    },
+                                    "content": [
+                                        {
+                                            "type": "hardBreak"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "paragraph",
+                                    "attrs": {
+                                        "textAlign": "left",
+                                        "customStyleString": ""
+                                    },
+                                    "content": [
+                                        {
+                                            "type": "text",
+                                            "marks": [
+                                                {
+                                                    "type": "textStyle",
+                                                    "attrs": {
+                                                        "color": "#ffffff"
+                                                    }
+                                                }
+                                            ],
+                                            "text": "  "
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "paragraph",
+                            "attrs": {
+                                "textAlign": "left",
+                                "customStyleString": ""
+                            },
+                            "content": [
+                                {
+                                    "type": "hardBreak"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "paragraph",
+                            "attrs": {
+                                "textAlign": "left",
+                                "customStyleString": ""
+                            },
+                            "content": [
+                                {
+                                    "type": "hardBreak"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "paragraph",
+                            "attrs": {
+                                "textAlign": "left",
+                                "customStyleString": ""
+                            },
+                            "content": [
+                                {
+                                    "type": "hardBreak"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "paragraph",
+                            "attrs": {
+                                "textAlign": "left",
+                                "customStyleString": ""
+                            }
+                        },
+                        {
+                            "type": "paragraph",
+                            "attrs": {
+                                "textAlign": "left",
+                                "customStyleString": ""
+                            },
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "  "
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "draggableItem",
+                    "attrs": {
+                        "background": "#ff4500",
+                        "backgroundPosition": null,
+                        "lock": false,
+                        "customStyle": {
+                            "width": "100%",
+                            "background": "transparent",
+                            "height": "100%",
+                            "display": "flex",
+                            "flex": "1 1 30%",
+                            "gap": "1%"
+                        },
+                        "customStyleString": "width: 100%; background: transparent; height: 100%; display: flex; flex: 1 1 30%; gap: 1%",
+                        "heightString": null,
+                        "heightFormat": null,
+                        "style": "width: 100%; background: transparent; height: 100%; display: flex; flex: 1 1 30%; gap: 1%",
+                        "height": null,
+                        "widthString": null,
+                        "widthFormat": null,
+                        "width": null,
+                        "class": null
+                    },
+                    "content": [
+                        {
+                            "type": "paragraph",
+                            "attrs": {
+                                "textAlign": "left",
+                                "customStyleString": ""
+                            },
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "\n    "
+                                }
+                            ]
+                        },
+                        {
+                            "type": "paragraph",
+                            "attrs": {
+                                "textAlign": "left",
+                                "customStyleString": ""
+                            }
+                        },
+                        {
+                            "type": "paragraph",
+                            "attrs": {
+                                "textAlign": "left",
+                                "customStyleString": ""
+                            },
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "\n  "
+                                }
+                            ]
+                        },
+                        {
+                            "type": "draggableItem",
+                            "attrs": {
+                                "background": null,
+                                "backgroundPosition": null,
+                                "lock": false,
+                                "customStyle": {
+                                    "background": "black",
+                                    "flex": "0 0 48%"
+                                },
+                                "customStyleString": "background: black; flex: 0 0 48%",
+                                "heightString": null,
+                                "heightFormat": null,
+                                "style": "background: black; flex: 0 0 48%",
+                                "height": null,
+                                "widthString": null,
+                                "widthFormat": null,
+                                "width": null,
+                                "class": null
+                            },
+                            "content": [
+                                {
+                                    "type": "paragraph",
+                                    "attrs": {
+                                        "textAlign": "left",
+                                        "customStyleString": ""
+                                    },
+                                    "content": [
+                                        {
+                                            "type": "text",
+                                            "text": "\n    "
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "heading",
+                                    "attrs": {
+                                        "textAlign": "left",
+                                        "level": 1
+                                    },
+                                    "content": [
+                                        {
+                                            "type": "text",
+                                            "marks": [
+                                                {
+                                                    "type": "textStyle",
+                                                    "attrs": {
+                                                        "color": "#ffffff"
+                                                    }
+                                                }
+                                            ],
+                                            "text": "Publish Your Docs "
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "paragraph",
+                                    "attrs": {
+                                        "textAlign": "left",
+                                        "customStyleString": ""
+                                    },
+                                    "content": [
+                                        {
+                                            "type": "text",
+                                            "marks": [
+                                                {
+                                                    "type": "textStyle",
+                                                    "attrs": {
+                                                        "color": "#ffffff"
+                                                    }
+                                                }
+                                            ],
+                                            "text": " "
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "paragraph",
+                                    "attrs": {
+                                        "textAlign": "left",
+                                        "customStyleString": ""
+                                    },
+                                    "content": [
+                                        {
+                                            "type": "text",
+                                            "marks": [
+                                                {
+                                                    "type": "textStyle",
+                                                    "attrs": {
+                                                        "color": "#ffffff"
+                                                    }
+                                                }
+                                            ],
+                                            "text": " "
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "paragraph",
+                                    "attrs": {
+                                        "textAlign": "left",
+                                        "customStyleString": ""
+                                    },
+                                    "content": [
+                                        {
+                                            "type": "text",
+                                            "marks": [
+                                                {
+                                                    "type": "textStyle",
+                                                    "attrs": {
+                                                        "color": "#ffffff"
+                                                    }
+                                                }
+                                            ],
+                                            "text": "Any Docs written in Dev-Docs can then be published to a dedicated:"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "paragraph",
+                                    "attrs": {
+                                        "textAlign": "left",
+                                        "customStyleString": ""
+                                    }
+                                },
+                                {
+                                    "type": "paragraph",
+                                    "attrs": {
+                                        "textAlign": "left",
+                                        "customStyleString": ""
+                                    },
+                                    "content": [
+                                        {
+                                            "type": "text",
+                                            "marks": [
+                                                {
+                                                    "type": "textStyle",
+                                                    "attrs": {
+                                                        "color": "#ffffff"
+                                                    }
+                                                }
+                                            ],
+                                            "text": "1. An external documentation site hosted by Dev-Docs for your customers, partners, and other users."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "paragraph",
+                                    "attrs": {
+                                        "textAlign": "left",
+                                        "customStyleString": ""
+                                    },
+                                    "content": [
+                                        {
+                                            "type": "text",
+                                            "marks": [
+                                                {
+                                                    "type": "textStyle",
+                                                    "attrs": {
+                                                        "color": "#ffffff"
+                                                    }
+                                                }
+                                            ],
+                                            "text": "2. An internal private wiki hosted by Dev-Docs that is meant for your own engineering team."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "paragraph",
+                                    "attrs": {
+                                        "textAlign": "left",
+                                        "customStyleString": ""
+                                    }
+                                },
+                                {
+                                    "type": "paragraph",
+                                    "attrs": {
+                                        "textAlign": "left",
+                                        "customStyleString": ""
+                                    },
+                                    "content": [
+                                        {
+                                            "type": "text",
+                                            "text": "  "
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "paragraph",
+                            "attrs": {
+                                "textAlign": "left",
+                                "customStyleString": ""
+                            }
+                        },
+                        {
+                            "type": "draggableItem",
+                            "attrs": {
+                                "background": "url('static/img/2023-04-04T20:51:47.123Z.png') no-repeat center center / cover",
+                                "backgroundPosition": null,
+                                "lock": false,
+                                "customStyle": {
+                                    "flex": "1 1 48%",
+                                    "height": "auto",
+                                    "background": "url('https://raw.githubusercontent.com/avb-is-me/docusarusFun/main/static/img/2023-04-04T20%3A51%3A47.123Z.png?token=AY3CZN2F3GN42FZLCM363XDEIBUGU') no-repeat center center / cover"
+                                },
+                                "customStyleString": "flex: 1 1 48%; height: auto; background: url('https://raw.githubusercontent.com/avb-is-me/docusarusFun/main/static/img/2023-04-04T20%3A51%3A47.123Z.png?token=AY3CZN2F3GN42FZLCM363XDEIBUGU') no-repeat center center / cover;",
+                                "heightString": null,
+                                "heightFormat": null,
+                                "style": "flex: 1 1 48%; height: auto; background: url('https://raw.githubusercontent.com/avb-is-me/docusarusFun/main/static/img/2023-04-04T20%3A51%3A47.123Z.png?token=AY3CZN2F3GN42FZLCM363XDEIBUGU') no-repeat center center / cover;",
+                                "height": null,
+                                "widthString": null,
+                                "widthFormat": null,
+                                "width": null,
+                                "class": null
+                            },
+                            "content": [
+                                {
+                                    "type": "paragraph",
+                                    "attrs": {
+                                        "textAlign": "left",
+                                        "customStyleString": ""
+                                    },
+                                    "content": [
+                                        {
+                                            "type": "text",
+                                            "text": "\n    "
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "heading",
+                                    "attrs": {
+                                        "textAlign": "left",
+                                        "level": 1
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "paragraph",
+                            "attrs": {
+                                "textAlign": "left",
+                                "customStyleString": ""
+                            },
+                            "content": [
+                                {
+                                    "type": "hardBreak"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "paragraph",
+                            "attrs": {
+                                "textAlign": "left",
+                                "customStyleString": ""
+                            },
+                            "content": [
+                                {
+                                    "type": "hardBreak"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "paragraph",
+                            "attrs": {
+                                "textAlign": "left",
+                                "customStyleString": ""
+                            },
+                            "content": [
+                                {
+                                    "type": "hardBreak"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "paragraph",
+                            "attrs": {
+                                "textAlign": "left",
+                                "customStyleString": ""
+                            }
+                        },
+                        {
+                            "type": "paragraph",
+                            "attrs": {
+                                "textAlign": "left",
+                                "customStyleString": ""
+                            },
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "  "
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "left",
+                "customStyleString": ""
+            }
+        },
+        {
+            "type": "draggableItem",
+            "attrs": {
+                "background": "linear-gradient(30.17deg, #1E90FF, #6A164B, #00CED1)",
+                "backgroundPosition": null,
+                "lock": false,
+                "customStyle": {
+                    "background": "black",
+                    "minHeight": "50ch",
+                    "display": "flex",
+                    "justifyContent": "center",
+                    "flexDirection": "column",
+                    "borderRadius": "0px"
+                },
+                "customStyleString": "background: black; min-height: 50ch;display: flex; justify-content: center; /* Align horizontal */ flex-direction: column; border-radius: 0px;",
+                "heightString": null,
+                "heightFormat": null,
+                "style": "background: black; min-height: 50ch;display: flex; justify-content: center; /* Align horizontal */ flex-direction: column; border-radius: 0px;",
+                "height": null,
+                "widthString": null,
+                "widthFormat": null,
+                "width": null,
+                "class": null
+            },
+            "content": [
+                {
+                    "type": "paragraph",
+                    "attrs": {
+                        "textAlign": "left",
+                        "customStyleString": ""
+                    },
+                    "content": [
+                        {
+                            "type": "text",
+                            "text": "\n    "
+                        }
+                    ]
+                },
+                {
+                    "type": "heading",
+                    "attrs": {
+                        "textAlign": "left",
+                        "level": 1
+                    },
+                    "content": [
                         {
                             "type": "text",
                             "marks": [
                                 {
-                                    "type": "customCssMark",
+                                    "type": "textStyle",
                                     "attrs": {
-                                        "style": "background: linear-gradient(270deg, #8F00FF, #00FFFF); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 80px;",
-                                        "class": ""
+                                        "color": "rgb(255, 255, 255)"
                                     }
                                 }
                             ],
-                            "text": " "
-                        },
+                            "text": "Ready to Optimize Your Code "
+                        }
+                    ]
+                },
+                {
+                    "type": "heading",
+                    "attrs": {
+                        "textAlign": "left",
+                        "level": 1
+                    },
+                    "content": [
                         {
                             "type": "text",
                             "marks": [
                                 {
-                                    "type": "customCssMark",
+                                    "type": "textStyle",
                                     "attrs": {
-                                        "style": "background: linear-gradient(to right, #fad0c4, #fdd6af, darkgoldenrod, #ff9a9e, #f0615c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 80px",
-                                        "class": ""
+                                        "color": "rgb(255, 255, 255)"
                                     }
                                 }
                             ],
-                            "text": "Cakework :D."
+                            "text": "Documentation Process?"
                         }
                     ]
                 },
@@ -124,16 +1334,22 @@
                 {
                     "type": "heading",
                     "attrs": {
-                        "textAlign": "center",
+                        "textAlign": "left",
                         "level": 1
                     },
                     "content": [
                         {
                             "type": "hardBreak"
-                        },
-                        {
-                            "type": "hardBreak"
-                        },
+                        }
+                    ]
+                },
+                {
+                    "type": "heading",
+                    "attrs": {
+                        "textAlign": "left",
+                        "level": 1
+                    },
+                    "content": [
                         {
                             "type": "hardBreak"
                         },
@@ -147,14 +1363,14 @@
                                     }
                                 }
                             ],
-                            "text": "Run your developers' code, instantly."
+                            "text": "Join the growing community of developers who have streamlined their documentation workflows with our developer documentation solution."
                         }
                     ]
                 },
                 {
                     "type": "paragraph",
                     "attrs": {
-                        "textAlign": "center",
+                        "textAlign": "left",
                         "customStyleString": ""
                     },
                     "content": [
@@ -168,32 +1384,59 @@
                                     }
                                 }
                             ],
-                            "text": "Add scripting to your dev product or build your own serverless cloud. Just APIs, no infra required."
-                        },
+                            "text": " "
+                        }
+                    ]
+                },
+                {
+                    "type": "paragraph",
+                    "attrs": {
+                        "textAlign": "left",
+                        "customStyleString": ""
+                    },
+                    "content": [
                         {
-                            "type": "hardBreak",
+                            "type": "text",
                             "marks": [
                                 {
-                                    "type": "customCssMark",
+                                    "type": "textStyle",
                                     "attrs": {
-                                        "style": "",
-                                        "class": ""
+                                        "color": "#ffffff"
                                     }
                                 }
-                            ]
-                        },
+                            ],
+                            "text": " "
+                        }
+                    ]
+                },
+                {
+                    "type": "paragraph",
+                    "attrs": {
+                        "textAlign": "left",
+                        "customStyleString": ""
+                    },
+                    "content": [
                         {
-                            "type": "hardBreak",
+                            "type": "text",
                             "marks": [
                                 {
-                                    "type": "customCssMark",
+                                    "type": "textStyle",
                                     "attrs": {
-                                        "style": "",
-                                        "class": ""
+                                        "color": "#ffffff"
                                     }
                                 }
-                            ]
-                        },
+                            ],
+                            "text": " "
+                        }
+                    ]
+                },
+                {
+                    "type": "paragraph",
+                    "attrs": {
+                        "textAlign": "center",
+                        "customStyleString": ""
+                    },
+                    "content": [
                         {
                             "type": "text",
                             "marks": [
@@ -201,7 +1444,7 @@
                                     "type": "link",
                                     "attrs": {
                                         "customStyleString": "",
-                                        "href": "https://discord.com/invite/yB6GvheDcP",
+                                        "href": "https://calendly.com/andrew-vb",
                                         "style": "",
                                         "class": ""
                                     }
@@ -209,30 +1452,104 @@
                                 {
                                     "type": "customCssMark",
                                     "attrs": {
-                                        "style": "background: linear-gradient(to bottom right, #FFC9FF, #FF8AC9, #FFFFFF); color: white; border-radius: 5px; padding: 10px 20px; font-size: 16px; font-weight: bold; text-transform: none; /* modified */ border: none; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);",
+                                        "style": "background-color: #008CBA; border: none; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; border-radius: 4px;",
                                         "class": ""
+                                    }
+                                },
+                                {
+                                    "type": "textStyle",
+                                    "attrs": {
+                                        "color": "#ffffff"
                                     }
                                 }
                             ],
-                            "text": "Join the Discord"
+                            "text": "Book Some time"
                         }
                     ]
-                },
-                {
-                    "type": "heading",
-                    "attrs": {
-                        "textAlign": "left",
-                        "level": 1
-                    }
-                },
-                {
-                    "type": "paragraph",
-                    "attrs": {
-                        "textAlign": "left",
-                        "customStyleString": ""
-                    }
                 }
             ]
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "left",
+                "customStyleString": ""
+            }
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "left",
+                "customStyleString": ""
+            }
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "left",
+                "customStyleString": ""
+            }
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "left",
+                "customStyleString": ""
+            }
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "left",
+                "customStyleString": ""
+            },
+            "content": [
+                {
+                    "type": "text",
+                    "text": "  \n  "
+                }
+            ]
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "left",
+                "customStyleString": ""
+            },
+            "content": [
+                {
+                    "type": "text",
+                    "text": "      "
+                }
+            ]
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "left",
+                "customStyleString": ""
+            }
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "left",
+                "customStyleString": ""
+            }
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "left",
+                "customStyleString": ""
+            }
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "left",
+                "customStyleString": ""
+            }
         }
     ]
 }
