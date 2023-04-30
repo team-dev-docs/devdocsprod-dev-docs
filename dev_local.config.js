@@ -5,7 +5,7 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 // [item, [[], [], []]]
-const apiConfig =  require('./dev-docs-openapi.js');
+const apiConfig = require('./dev-docs-openapi.js');
 const openApiCongfig = apiConfig.config
 const itemsJson = require("./items.json")
 const footerItems = require("./footerItems.json")
@@ -26,15 +26,16 @@ const config = {
   organizationName: 'facebook', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
   plugins: ['docusaurus-plugin-sass',
-  [
-    'docusaurus-plugin-openapi-docs',
-    {
-      id: "apiDocs",
-      docsPluginId: "classic",
-      config: openApiCongfig
-    },
-  ]],
-  themes: ["docusaurus-theme-openapi-docs"],
+    [
+      'docusaurus-plugin-openapi-docs',
+      {
+        id: "apiDocs",
+        docsPluginId: "classic",
+        config: openApiCongfig
+      },
+    ]
+  ],
+  themes: ["docusaurus-theme-openapi-docs", '@docusaurus/theme-live-codeblock'],
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
@@ -88,6 +89,13 @@ const config = {
         style: 'dark',
         links: [...footerItems.links],
         copyright: `${new Date().getFullYear()} Dev-Docs`,
+      },
+      liveCodeBlock: {
+        /**
+         * The position of the live playground, above or under the editor
+         * Possible values: "top" | "bottom"
+         */
+        playgroundPosition: 'bottom',
       },
       prism: {
         theme: lightCodeTheme,

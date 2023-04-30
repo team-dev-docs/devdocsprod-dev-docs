@@ -1,10 +1,16 @@
 {
     "items": [
         {
-            "label": "About",
-            "href": "/about",
+            "position": "left",
+            "label": "Get Started",
             "prependBaseUrlToHref": true,
-            "position": "left"
+            "href": "/docs/"
+        },
+        {
+            "label": "Blogs",
+            "position": "left",
+            "prependBaseUrlToHref": true,
+            "href": "/blog"
         }
     ]
 }
