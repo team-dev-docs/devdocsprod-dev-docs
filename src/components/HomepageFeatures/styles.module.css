@@ -1,0 +1,240 @@
+.features {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.featureSvg {
+  height: 200px;
+  width: 200px;
+}
+
+.super-card {
+  /* Card */
+
+position: absolute;
+width: 320px;
+height: 160px;
+left: 352px;
+top: 304px;
+
+
+
+/* Glass Gradient Unshelled */
+
+position: absolute;
+left: 24.44%;
+right: 53.33%;
+top: 36.98%;
+bottom: 43.55%;
+
+
+
+/* Rectangle 77 */
+
+position: absolute;
+left: 0%;
+right: 2.43%;
+top: 3.03%;
+bottom: 0%;
+
+background: linear-gradient(180deg, #7ED0FE 0%, #C63CD7 100%);
+border-radius: 20px;
+
+
+/* Rectangle 707 */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 1.67%;
+right: 0%;
+top: 0%;
+bottom: 3.03%;
+
+background: radial-gradient(100% 359.18% at 0% 0%, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.2) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(15px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 20px;
+
+
+/* Overview */
+
+position: absolute;
+left: 25.69%;
+right: 61.88%;
+top: 42.34%;
+bottom: 51.22%;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 34px;
+line-height: 41px;
+letter-spacing: -2px;
+
+color: #212121;
+
+
+
+/* Document Count 2 */
+
+position: absolute;
+left: 35.9%;
+right: 54.79%;
+top: 51.22%;
+bottom: 45.99%;
+
+font-family: 'Barlow';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+display: flex;
+align-items: center;
+
+color: #131318;
+
+
+
+/* Icon */
+
+position: absolute;
+left: 44.55%;
+right: 53.86%;
+top: 51.22%;
+bottom: 46%;
+
+
+
+/* Icon/More */
+
+position: absolute;
+width: 22.86px;
+height: 22.86px;
+left: 0px;
+top: 0px;
+
+
+
+/* Grid */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* Mask */
+
+position: absolute;
+left: 43.33%;
+right: 43.33%;
+top: 20%;
+bottom: 20%;
+
+background: #000000;
+
+
+/* Oval */
+
+position: absolute;
+left: 43.33%;
+right: 43.33%;
+top: 20%;
+bottom: 66.67%;
+
+background: #DADADA;
+
+
+/* Oval Copy */
+
+position: absolute;
+left: 43.33%;
+right: 43.33%;
+top: 43.33%;
+bottom: 43.33%;
+
+background: #DADADA;
+
+
+/* Oval Copy 2 */
+
+position: absolute;
+left: 43.33%;
+right: 43.33%;
+top: 66.67%;
+bottom: 20%;
+
+background: #DADADA;
+
+
+/* Mask */
+
+position: absolute;
+left: 43.33%;
+right: 43.33%;
+top: 20%;
+bottom: 20%;
+
+background: #000000;
+
+
+/* Oval */
+
+position: absolute;
+left: 43.33%;
+right: 43.33%;
+top: 20%;
+bottom: 66.67%;
+
+background: #DADADA;
+
+
+/* Oval Copy */
+
+position: absolute;
+left: 43.33%;
+right: 43.33%;
+top: 43.33%;
+bottom: 43.33%;
+
+background: #DADADA;
+
+
+/* Oval Copy 2 */
+
+position: absolute;
+left: 43.33%;
+right: 43.33%;
+top: 66.67%;
+bottom: 20%;
+
+background: #DADADA;
+
+
+/* Icon/🖌 Fill/Bright */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* Icon/🖌 Fill/Bright */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #FFFFFF;
+
+}
