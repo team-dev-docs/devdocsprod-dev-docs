@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from 'react'
 
 function replaceImageUrl(cssString) {
   const regex = /url\(['"]?(https:\/\/raw.githubusercontent.com\/.*?)\/img\/(.*?\.png).*?['"]?\)/g;
-  return cssString.replace(regex, 'url("/img/$2")');
+  return cssString.replace(regex, 'url("img/$2")');
 }
 
 

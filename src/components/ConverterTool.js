@@ -27,9 +27,47 @@ function handleCodeSnippets(markdown) {
     const regexOne = /(\<li data-checked="false">)(.*?)(<\/li>)/g;
   
     var markdown = html.replace(regexOne, `\n-[ ]`)
+    // let listItems = markdown.replace(regexOne, (match, p1, p2, p3) => {
+    //   console.log("this is the p1", p1)
+    //   console.log("this is the p2", p2)
+    //   console.log("this is the p3", p3)
+    //   // Replace the element with a <li> element and keep the data-checked attribute
+    //   return '<li data-checked="' + p2 + '">' + p3 + '</li>';
+    // });
+  
+    // const regex = /<li.*?data-checked="(.*?)".*?>([\s\S]*?)<\/li>/g;
+    // let markdown = listItems.replace(regex, (match, p1, p2) => {
+    //   console.log("this is the p1", p1)
+    //   console.log("this is the p2", p2)
+    //   const matches = p2.match(/<div>([\s\S]*?)<\/div>/);
+    //   // Use the appropriate checkbox syntax based on the value of the data-checked attribute
+    //   return p1 === 'true' ? '- [x] ' + matches[1] : '- [ ] ' + matches[1];
+    // });
+  
+    // Replace the <ul> and </ul> tags with the Markdown list syntax
+    //markdown = markdown.replace(/<ul.*?>/g, '<div class="taskList">').replace(/<\/ul>/g, '</div>');
+  
     return markdown
   }
+  
+  
+  // function convertToList(markdown) {
+  //   // Initialize the HTML list
+  //   const checkboxRegex = /^- \[(x| )\] (.*)$/gm;
+  //   let checkboxMatch;
+  //   while ((checkboxMatch = checkboxRegex.exec(markdown)) !== null) {
+  //     const checkboxSyntax = checkboxMatch[1];
+  //     const listItemText = checkboxMatch[2];
     
+  //     const dataChecked = checkboxSyntax === 'x' ? 'true' : 'false';
+  //     markdown = markdown.replace(checkboxMatch[0], '<li data-type="taskItem" data-checked="' + dataChecked + '">' + listItemText + '</li>');
+  //   }
+  //   markdown = markdown.replace(/^- \[(x| )\]/gm, '<ul data-type="taskList">');
+  //   markdown = markdown.replace(/<\/li>$/gm, '</li></ul>');
+  
+  //   return markdown
+  // }
+  
   function convertToList(markdown) {
     // Initialize the HTML list
     const checkboxRegex = /^- \[(x| )\] (.*)$/gm;
@@ -60,6 +98,10 @@ function handleCodeSnippets(markdown) {
 
 function extractJSON(str) {
     console.log(str)
+    // const jsonStart = str.indexOf("{");
+    // const jsonEnd = str.lastIndexOf("}");
+    // const jsonString = str.substring(jsonStart, jsonEnd + 1);
+    // const jsonObject = JSON.parse(jsonString);
     return {}
 }
 
