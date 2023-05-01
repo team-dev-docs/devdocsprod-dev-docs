@@ -3,16 +3,12 @@ import { unified } from 'unified';
 import markdown from 'remark-parse';
 import remark2rehype from 'remark-rehype';
 import rehype2react from 'rehype-react';
-import { Resizable } from 'react-resizable';
-import 'react-resizable/css/styles.css';
-
 
 import logoJson from '../../logo.json'
 import chatJson from '../../chat.json'
 
-const { logo } = logoJson
-const { chatUrl } = chatJson
-
+const {logo} = logoJson
+const {chatUrl} = chatJson
 console.log(logo)
 
 const processor = unified()
@@ -22,14 +18,13 @@ const processor = unified()
 
 function ChatBox({ messages, onSendMessage }) {
   const [showChatBox, setShowChatBox] = useState(false);
-  const [loadingBar, setLoadingBar] = useState(false)
   const [message, setMessage] = React.useState('');
 
   const handleSendMessage = async (event) => {
     event.preventDefault();
     console.log(message);
     messages.push({ text: message });
-    setLoadingBar(true)
+
     try {
       const response = await fetch(chatUrl, {
         method: 'POST',
@@ -45,40 +40,41 @@ function ChatBox({ messages, onSendMessage }) {
 
       const data = await response.json();
       console.log(data);
-      const { source_nodes } = data?.response
+      const { source_nodes} = data?.response
       const answer = data?.response?.response
       messages.push({ text: `${answer} \n Here is the orignal article:` });
       source_nodes.forEach((messageObject) => {
         messages.push({
-          text: `[Original Source](/${messageObject?.node?.extra_info?.source}) \n ${messageObject?.node?.text}`,
+          text: `[Original Source](/${messageObject?.node?.extra_info?.document_id.split('.md')[0]}) \n ${messageObject?.node?.text}`,
         });
       });
     } catch (error) {
       console.error(error);
-      //messages.push({ text: 'hi' });
+      messages.push({ text: 'hi' });
     }
-    setLoadingBar(false)
+
     setMessage('');
   };
 
   return (
     <div>
       <div className={`chat-box ${showChatBox ? 'show' : 'hide'}`}>
+        <button onClick={() => setShowChatBox(!showChatBox)} className='chat-box__button'>
+          Hide
+        </button>
+
         <div className='chat-box__messages'>
           {messages.map((message, index) => (
             <div
-              className={`chat-box__message ${message.sender === 'user' ? 'user-message' : 'bot-message'
-                }`}
+              className={`chat-box__message ${
+                message.sender === 'user' ? 'user-message' : 'bot-message'
+              }`}
               key={index}
             >
               {processor.processSync(message.text).result}
             </div>
           ))}
-          {loadingBar && (
-            <div className={'chat-box__message'}> 🦾🤖 Loading....</div>
-          )}
         </div>
-
         <form onSubmit={handleSendMessage}>
           <input
             type='text'
@@ -101,7 +97,6 @@ function ChatBox({ messages, onSendMessage }) {
         />
       </div>
     </div>
-
   );
 }
 
