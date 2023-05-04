@@ -289,6 +289,17 @@
   // Clip: rect(0 0 0 0)
 }
 
+#docusaurus_skipToContent_fallback > main > pre {
+  position: fixed;
+  Opacity: 0;
+  height: 10px; 
+  width: 10px;
+  overflow: scroll;
+  padding: 0px;
+  margin: 0px;
+  top: -10px;
+}
+
 
 .button-link {
   backdrop-filter: blur(25px) saturate(180%);
