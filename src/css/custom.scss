@@ -65,6 +65,31 @@
   }
 }
 
+[data-theme='dark'] {
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5, 
+  h6 {
+    color: white !important;
+  }
+}
+
+  
+[data-theme='light'] {
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: black !important;
+  }
+}
+
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
   --ifm-color-primary: #9666ff;
@@ -175,15 +200,6 @@
     padding: 0 1rem;
   }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    line-height: 1.1;
-  }
-
   code {
     background-color: rgba(#616161, 0.1);
     color: #616161;
@@ -251,15 +267,6 @@
     0 0 0 1px rgba(0, 0, 0, 0.05),
     0px 10px 20px rgba(0, 0, 0, 0.1),
   ;
-
-  p,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    color: black !important;
-  }
 
   .drag-handle {
     flex: 0 0 auto;
@@ -705,15 +712,6 @@ body::-webkit-scrollbar-thumb {
     padding: 0 1rem;
   }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    line-height: 1.1;
-  }
-
   code {
     background-color: rgba(#616161, 0.1);
     color: #616161;
@@ -781,15 +779,9 @@ body::-webkit-scrollbar-thumb {
     0 0 0 1px rgba(0, 0, 0, 0.05),
     0px 10px 20px rgba(0, 0, 0, 0.1),
   ;
-
-  p,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    color: black !important;
-  }
+  
+ 
+  
 
   .drag-handle {
     flex: 0 0 auto;
