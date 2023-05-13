@@ -1,2 +1,2 @@
-adds the proper workflow files
+Merge branch 'main' of github.com:team-dev-docs/starter-template
 
