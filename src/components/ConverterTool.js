@@ -205,6 +205,8 @@ function styleToCss(styleObj) {
       html = html.replace(/<\/tr>/g, '\n');
       html = html.replace(/<td>(.*?)<\/td>/g, '| $1 ');
       html = handleLists(html)
+      html = html.replace(/<\/div>/g, '</div>\n');
+      html = html.replace(/<\/span>/g, '</div>\n');
       // html = html.replace(/<p>(.*?)<\/p>/g, (match, p1) => {
       //     if (p1.trim() === '') {
       //       return '\n';
@@ -216,21 +218,23 @@ function styleToCss(styleObj) {
   
     this.convertToHTML = function(markdown) {
       // Convert # to <h1>
-      console.log("this is the markdown at the start!!!", markdown)
-      
-      markdown = markdown.replace(/###\s+(.*?)(?=\s*(<|$))/gm, '<h3>$1</h3>');
-      markdown = markdown.replace(/##\s+(.*?)(?=\s*(<|$))/gm, '<h2>$1</h2>');
-      markdown = markdown.replace(/#\s+(.*?)(?=\s*(<|$))/gm, '<h1>$1</h1>');
+      console.log("this is the markdown at the start", markdown)
       markdown = markdown.replace(/^# (.*)$/gm, '<h1>$1</h1>');
-    
     
       // Convert ## to <h2>
       markdown = markdown.replace(/^## (.*)$/gm, '<h2>$1</h2>');
     
       // Convert ### to <h3>
       markdown = markdown.replace(/^### (.*)$/gm, '<h3>$1</h3>');
+      // hey
+      
+      // hey
   
-      markdown = markdown.replace(/\n\n/g, '<p></p>');
+      markdown = markdown.replace(/(?<=^|\r\n|\n|\r)(\r\n|\n|\r)/g, '<p></p>');
+      //  markdown = replaceConsecutiveNewlines(markdown)
+      // markdown = markdown.replace(/<\/p>\s*<(h[1-3])>/g, '<$1>');
+      // markdown = markdown.replace(/<\/(h[1-3])>\s*<p>/g, '</$1>');
+  
       markdown = markdown.replace(/\%ref\/\|/g, `<span data-inline-reference="true">`)
       markdown = markdown.replace(/\\\|ref\%/g, `</span>`)
       markdown = markdown.replace(/\%ref\|/g, `<span data-inline-reference="true">`)
@@ -266,10 +270,15 @@ function styleToCss(styleObj) {
       // markdown = markdown.replace(/<\/td>/g, '</td></tr></table>');
       markdown = handleCodeSnippets(markdown)
       markdown = convertToList(markdown)
-      markdown = addStyleAttributesToMarkdown(markdown)
-      console.log("######")
+  
+      // markdown = markdown.replace(/```/g, '<pre><code>');
+  
+      // // Convert ` to <code>
+      // markdown = markdown.replace(/`(.*?)`/g, '<code>$1</code>');
+    
+      // // Convert </code> to </code></pre>
+      // markdown = markdown.replace(/<\/code>/g, '</code></pre>');
       console.log("this is the html form", markdown)
-      console.log("######")
       return markdown
     }
   }
