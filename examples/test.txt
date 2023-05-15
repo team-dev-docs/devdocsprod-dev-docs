@@ -1,3 +1,5 @@
+Example of a Yaml
+
 openapi: 3.0.0
 info:
   title: dev-docs
