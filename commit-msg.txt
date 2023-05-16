@@ -1,2 +1,2 @@
-Merge branch 'main' of github.com:team-dev-docs/starter-template
+removes general synposis items
 
