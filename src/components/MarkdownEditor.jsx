@@ -1,12 +1,13 @@
 
 
-import { EditorContent, useEditor } from '@tiptap/react'
+import { EditorContent, useEditor, ReactNodeViewRenderer} from '@tiptap/react'
 import { ColumnExtension } from "@gocapsule/column-extension";
 import StarterKit from '@tiptap/starter-kit'
 import ResizableImage from './ResizableImage'
 import DraggableItem from './DraggableItem'
 import { TextStyle } from '@tiptap/extension-text-style';
 import { Color } from '@tiptap/extension-color';
+import CodeBlockLowlight from '@tiptap/extension-code-block-lowlight'
 import TextAlign from '@tiptap/extension-text-align'
 import TaskItem from '@tiptap/extension-task-item'
 import TaskList from '@tiptap/extension-task-list'
@@ -16,9 +17,12 @@ import TableHeader from '@tiptap/extension-table-header'
 import TableRow from '@tiptap/extension-table-row'
 import Link from '@tiptap/extension-link';
 import CustomCssMark from './customCssMark';
+import CustomCodeBlock from './CustomCodeBlock.jsx';
 import Button from './button';
 import React from 'react'
 import converter from './ConverterTool';
+import { lowlight } from 'lowlight/lib/all'
+
 
 const MenuBar = ({ editor }) => {
   if (!editor) {
@@ -238,7 +242,14 @@ const content = parserTool.convertToHTML(data)
         types: ['heading', 'paragraph']
       }),
       TextStyle,
-      Color
+      Color,
+      CodeBlockLowlight
+      .extend({
+        addNodeView() {
+          return ReactNodeViewRenderer(CustomCodeBlock)
+        },
+      })
+      .configure({ lowlight })
     ],
     content: content,
   })
