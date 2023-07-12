@@ -1,2 +1,1 @@
-adds external documentation back to parity
-
+Create devcontainer.json
