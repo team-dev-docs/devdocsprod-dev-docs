@@ -1,0 +1,12 @@
+{
+  "name": "Docusaurus Project",
+  "image": "node",
+  "forwardPorts": [3000],
+  "postCreateCommand": "npm install && npm run start -- --host 0.0.0.0",
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+    "extensions": [
+        "dev-docs.dev-docs"
+   ]
+}
