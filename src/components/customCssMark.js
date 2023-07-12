@@ -24,13 +24,13 @@ export default Mark.create({
     renderHTML({ HTMLAttributes }) {
         return [
             'span',
-            mergeAttributes(HTMLAttributes, { 'data-inline-custom-css-mark': 'true' }),
+            HTMLAttributes,
             0,
         ]
     },
     parseHTML() {
         return [
-          { tag: 'span[data-inline-reference="true"]' },
+          { tag: 'span' },
         ]
       },
 

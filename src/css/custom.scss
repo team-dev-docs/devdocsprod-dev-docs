@@ -1,3 +1,7 @@
+@import "./design-preferences.scss";
+
+
+
 :root {
   --ifm-color-primary: #4e00f5;
   --ifm-color-primary-dark: #4600dd;
@@ -27,7 +31,7 @@
     }
   
     .draggable-item {
-      flex-direction: row !important
+      flex-direction: row !important;
     }
 
     .main-heading {
@@ -88,6 +92,10 @@
   h6 {
     color: black !important;
   }
+}
+
+.node-ResizableImage {
+  width: fit-content;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -260,9 +268,9 @@
   display: flex;
   padding: 0.1rem;
   margin: 0.1rem 0;
-  border-radius: 20px;
-  background: white;
-  color: black;
+  // border: 2px solid darken(#0D0D0D, 10%);
+  background: transparent;
+  color: white;
   box-shadow:
     0 0 0 1px rgba(0, 0, 0, 0.05),
     0px 10px 20px rgba(0, 0, 0, 0.1),
@@ -285,6 +293,10 @@
   .content {
     flex: 1 1 auto;
   }
+
+  // div {
+  //   height: 100% !important;
+  // }
 }
 
     
@@ -773,13 +785,13 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   padding: 0.1rem;
   margin: 0.1rem 0;
-  border-radius: 20px;
-  background: white;
-  color: black;
-  box-shadow:
-    0 0 0 1px rgba(0, 0, 0, 0.05),
-    0px 10px 20px rgba(0, 0, 0, 0.1),
-  ;
+  // border-radius: 20px;
+  // background: white;
+  // color: black;
+  // box-shadow:
+  //   0 0 0 1px rgba(0, 0, 0, 0.05),
+  //   0px 10px 20px rgba(0, 0, 0, 0.1),
+  // ;
   
  
   
@@ -1027,77 +1039,20 @@ ul[data-type="taskList"] {
     flex-basis: 70%;
   }
 
-}
-
-.ProseMirror {
-  > * + * {
-    margin-top: 0.75em;
-  }
-
-  pre {
-    background: #0d0d0d;
-    color: #fff;
-    font-family: "JetBrainsMono", monospace;
-    padding: 0.75rem 1rem;
+  .inner-card {
+    background: radial-gradient(100% 359.18% at 0% 0%, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.2) 100%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    ;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+    backdrop-filter: blur(15px);
+    width: 100%;
     border-radius: 0.5rem;
-
-    code {
-      color: inherit;
-      padding: 0;
-      background: none;
-      font-size: 0.8rem;
-    }
-
-    .hljs-comment,
-    .hljs-quote {
-      color: #616161;
-    }
-
-    .hljs-variable,
-    .hljs-template-variable,
-    .hljs-attribute,
-    .hljs-tag,
-    .hljs-name,
-    .hljs-regexp,
-    .hljs-link,
-    .hljs-name,
-    .hljs-selector-id,
-    .hljs-selector-class {
-      color: #f98181;
-    }
-
-    .hljs-number,
-    .hljs-meta,
-    .hljs-built_in,
-    .hljs-builtin-name,
-    .hljs-literal,
-    .hljs-type,
-    .hljs-params {
-      color: #fbbc88;
-    }
-
-    .hljs-string,
-    .hljs-symbol,
-    .hljs-bullet {
-      color: #b9f18d;
-    }
-
-    .hljs-title,
-    .hljs-section {
-      color: #faf594;
-    }
-
-    .hljs-keyword,
-    .hljs-selector-tag {
-      color: #70cff8;
-    }
-
-    .hljs-emphasis {
-      font-style: italic;
-    }
-
-    .hljs-strong {
-      font-weight: 700;
-    }
-  }
+    /* Note: backdrop-filter has minimal browser support */
 }
+
+}
+
+@import "./custom-templates.scss";
+
+

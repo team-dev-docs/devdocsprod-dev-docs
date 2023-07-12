@@ -12,10 +12,24 @@ export default Node.create({
 
   draggable: true,
 
+  addStorage() {
+    return {
+      disableDrag: false,
+    }
+  },
+  addOptions() {
+    return {
+      HTMLAttributes: {
+        class: null,
+        style: null,
+      },
+      validate: undefined,
+    }
+  },
   parseHTML() {
     return [
       {
-        tag: 'div[data-type="draggable-item"]',
+        tag: 'div',
       },
     ]
   },
@@ -27,14 +41,8 @@ export default Node.create({
       backgroundPosition: {
         default: null
       },
-      customStyle: {
-        default: null
-      },
-      customStyleString: {
-        default: null
-      },
       style: {
-        default: null
+        default: this.options.HTMLAttributes.style,
       },
       heightString: {
         default: null
@@ -55,12 +63,13 @@ export default Node.create({
         default: null
       },
       class: {
-        default: null
+        default: this.options.HTMLAttributes.class || ""
       }
     }
   },
+
   renderHTML({ HTMLAttributes }) {
-    return ['div', mergeAttributes(HTMLAttributes, { 'data-type': 'draggable-item' }), 0]
+    return ['div', HTMLAttributes, 0]
   },
 
   addNodeView() {

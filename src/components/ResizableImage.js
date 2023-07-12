@@ -4,6 +4,15 @@ import ResizableImageTemplate from './ResizableImage.jsx'
 
 export default Image.extend({
 	name: 'ResizableImage',
+	addOptions() {
+		return {
+		  HTMLAttributes: {
+			class: null,
+			style: null,
+		  },
+		  validate: undefined,
+		};
+	},
 	addAttributes() {
 		return {
 			...this.parent?.(),
@@ -15,6 +24,12 @@ export default Image.extend({
 						width: attributes.width
 					};
 				}
+			},
+			style: {
+				default: this.options?.HTMLAttributes?.style || "",
+			},
+			class: {
+				default: this.options?.HTMLAttributes?.class || ""
 			},
 			externalImagePath: {
 				default: null

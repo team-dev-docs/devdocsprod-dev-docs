@@ -13,6 +13,21 @@ const logoJson = require('./logo.json')
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
+  scripts: [
+    {
+      src: 'https://kit.fontawesome.com/c11e540390.js',
+      crossorigin: 'anonymous',
+    },
+    {
+      src: 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js',
+      crossorigin: 'anonymous',
+    },
+  ],
+  stylesheets: [
+    {
+      href: 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css',
+    },
+  ],
   title: 'Your Dev-Docs',
   tagline: 'Lets Dev-Doc and Roll',
   url: 'https://your-docusaurus-test-site.com',
@@ -75,6 +90,11 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      colorMode: {
+        defaultMode: 'dark',
+        disableSwitch: false,
+        respectPrefersColorScheme: false,
+      },
       navbar: {
         title: 'My Site',
         logo: {
