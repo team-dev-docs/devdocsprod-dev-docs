@@ -4,7 +4,7 @@ function handleCodeSnippets(markdown) {
   const regex = /```(\w+)\n([\s\S]*?)```/g;
   markdown = markdown.replace(regex, (match, language, code) => {
     // Add a class attribute to the code element based on the captured language identifier
-    return `<pre><code class="language-${language || "python"}">${code}</code></pre>`;
+    return `<pre><code class="language-${language || "python"}">ddcode-token${btoa(code)}ddcode-token</code></pre>`;
   });
 
   const codeSnippetRegex = /```([\s\S]*?)```/g;
@@ -16,6 +16,19 @@ function handleCodeSnippets(markdown) {
   //markdown = markdown.replace(/`/g, '\\`');
 
   return markdown;
+}
+
+function decodeBase64InText(text) {
+  const base64Pattern = /ddcode-token([^<]+)ddcode-token/g;
+
+  return text.replace(base64Pattern, (_, encodedString) => {
+      try {
+          return atob(encodedString.trim());
+      } catch (error) {
+          console.error(`Failed to decode: ${encodedString}`);
+          return _;  // return the original string if decoding fails
+      }
+  });
 }
 
 
@@ -390,152 +403,33 @@ function extractHref(html) {
   return match ? match[1] : null;
 }
 
+const parseTabs = (str) => {
+  str = str.replace(/\+\+\{tabs\}\+\+([\s\S]*?)--\{tabs\}--/gs, function (_, matchedContent) {
+    const tabItemRegex = /\+\+\{tab-item value="(.*?)"\}\+\+(.*?)--\{tab-item\}--/gs;
+    const matches = Array.from(matchedContent.matchAll(tabItemRegex));
+    const tabParser = new parser()
+    const myArray = matches.map((match, index) => ({
+      id: index,
+      value: match[1],
+      label: match[1].charAt(0).toUpperCase() + match[1].slice(1), // Convert first character to uppercase
+      emoji: '',
+      default: index === 0, // First tab is default
+      content:  tabParser.convertToHTML(match[2].trim())
+    }));
+
+    return `<tabs items='${JSON.stringify(myArray)}'></tabs>`;
+  });
+
+  return str;
+};
+
 var parser = function () {
-  this.convertToMarkdown = function (html) {
-    //
-    //   html = html.replace(/>\s+</g, '><');
-    //
-    html = html.replace(/<p><br><\/p>/g, "<br>");
-    console.log("this is the html again", html)
-    // html = wrapDivsWithP(html);
-
-    html = html.replace(/<p>(<div.*?>)/g, "$1"); // remove opening <p> before <div>
-    html = html.replace(/(<\/div>)<\/p>/g, "$1");
-    html = html.replace(/(<div.*?>)/g, "$1\n");
-    // html = html.replace(/(<\/div>)/g, '$1\n');
-
-    //  html = html.replace(/<p><\/p>(?=\s)/g, "\n\n")
-    // html = html.replace(/<p>\s*([^<]+)<\/p>/g, '\n$1')
-    // html = handlePTagWithContent(html);
-    html = handlePTagContent(html);
-    html = addNewlineToDraggableEnd(html);
-    // html = addNewlineToDraggable(html)
-
-    // html = html.replace(/<p(\s*[^>]*)?>(.*?)<\/p>/g, '\n$2');
-    // Remove remaining '<p>' (with possible attributes) and '</p>'
-    // html = html.replace(/<p(\s*[^>]*)?><\/p>/g, '');
-    //html = html.replace(/<p>(\s*)<\/p>/g, '\n');
-
-    html = html.replace(
-      /<h(\d)( style=".*?")?><span style="(.*?)">(.*?)<\/span><\/h\d>/g,
-      (_, level, textAlign, style, title) => {
-        textAlign = textAlign ? textAlign.split("=")[1].replace(/"/g, "") : "";
-        return `${"#".repeat(
-          Number(level)
-        )} ++{style="${textAlign}${style}"} ${title}\n`;
-      }
-    );
-
-    html = html.replace(
-      /<h(\d)( style=".*?")?>(.*?)<\/h\d>/g,
-      (_, level, textAlign, title) => {
-        textAlign = textAlign ? textAlign.split("=")[1].replace(/"/g, "") : "";
-        if (textAlign)
-          return `${"#".repeat(
-            Number(level)
-          )} ++{style="${textAlign}"} ${title}\n`;
-        else return `${"#".repeat(Number(level))} ${title}\n`;
-      }
-    );
-
-    // html = html.replace(/<h1>(.*?)<\/h1>/g, '# $1\n');
-    // html = html.replace(/<h2>(.*?)<\/h2>/g, '## $1\n');
-    // html = html.replace(/<h3>(.*?)<\/h3>/g, '### $1\n');
-    // html = html.replace(/<h4>(.*?)<\/h4>/g, '#### $1\n');
-    // html = html.replace(/<h5>(.*?)<\/h5>/g, '##### $1\n');
-    // html = html.replace(/<h6>(.*?)<\/h6>/g, '###### $1\n');
-
-    const codeSnippetRegex =
-      /<pre(?:.*?class="language-(.*?)")?.*?>([\s\S]*?)<\/pre>/g;
-    html = html.replace(codeSnippetRegex, (match, p1, p2) => {
-      p2 = p2.replace(/<code>/g, "");
-      p2 = p2.replace(/<\/code>/g, "");
-      // Use the triple backtick syntax for the code block, and include the language specified in the class if it exists
-      return "```" + (p1 ? "" : "") + "\n" + p2 + "\n```\n";
-    });
-    html = html.replace(/<strong>(.*?)<\/strong>/g, "**$1**");
-    html = html.replace(/<em>(.*?)<\/em>/g, "*$1*");
-    html = html.replace(/<a href="(.*?)">(.*?)<\/a>/g, "[$2]($1)");
-    // html = html.replace(/<table>/g, "");
-    // html = html.replace(/<\/table>/g, "");
-    // html = html.replace(/<tr>/g, "");
-    // html = html.replace(/<\/tr>/g, "\n");
-    // html = html.replace(/<td>(.*?)<\/td>/g, "| $1 ");
-
-    // html = html.replace(/(<img[^>]*>)/g, '\n\n$1\n\n');
-    html = handleLists(html);
-    // html = addNewlineBeforeDiv(html)
-    //   html = html.replace(
-    //     /(?:<p( style=".*?")?>)?<span style="(.*?)">(.*?)<\/span>(?:<\/p>)?/g,
-    //     (_, textAlign, style, text) => {
-    //         textAlign = textAlign ? textAlign.split('=')[1].replace(/"/g, '') : "";
-    //         return `++{style="${textAlign}${style}"} ${text}`;
-    //     }
-    //   );
-
-    //
-    //   html = html.replace(
-    //     /<div[^>]*?(style="[^"]*")?[^>]*?(class="[^"]*")?[^>]*?>([\s\S]*?)<\/div>/g,
-    //     (fullString, style, classAttr, content) => {
-
-    //       let styleString = extractStyle(fullString)
-
-    //       let classString = extractClass(fullString)
-    //         style = style ? style.split('=')[1].replace(/"/g, '') : "";
-    //         classAttr = classAttr ? classAttr.split('=')[1].replace(/"/g, '') : "";
-    //         return `\n++{card style="${styleString}" class="${classString}"}++\n${content.trim()}\n--{card}--`;
-    //     }
-    // );
-    html = html.replace(
-      /<img.*?(src=".*?").*?(alt=".*?")?.*?(style=".*?")?.*?(class=".*?")?.*?>/g,
-      (_, src, alt, style, classAttr) => {
-        src = extractSrc(_);
-        alt = alt ? alt.split("=")[1].replace(/"/g, "") : "";
-        style = extractStyle(_);
-        classAttr = extractClass(_);
-        return `![${alt}](${src})${
-          style || classAttr
-            ? `++{${style ? `style="${style}"` : ""}${
-                classAttr ? ` class="${classAttr}"` : ""
-              }}`
-            : ""
-        }`;
-      }
-    );
-    console.log("before the cards", html)
-    html = componentHtmlConverter(html)
-    html = html.replace(/<div([^>]*)>/g, "++{card$1}++");
-    html = html.replace(/<\/div>/g, "--{card}--");
-    html = html.replace(
-      /<a(?:\s+[\w-]+(?:\s*=\s*(?:".*?"|'.*?'|[^'">\s]+))?)*>(.*?)<\/a>/g,
-      (_, url, _2, style, _4, classAttr, linkText) => {
-        const href = extractHref(_);
-        const styleString = extractStyle(_);
-        const classString = extractClass(_)
-        return `[${linkText || url}](${href})${
-          styleString || classString
-            ? `++{${style ? `style="${styleString}"` : ""}${
-                classString ? ` class="${classString}"` : ""
-              }}`
-            : ""
-        }`;
-      }
-    );
-    html = html.replace(
-      /<span( style=".*?")?>(.*?)<\/span>/g,
-      (match, spanStyle, text) => {
-        spanStyle = spanStyle ? spanStyle.split("=")[1].replace(/"/g, "") : "";
-        let style = `${spanStyle}`.trim();
-
-        return `++{style="${style}"}${text}`;
-      }
-    );
-    html = html.replace(/<br>/g, "\n");
-    html = convertHtmlTableToMarkdown(html);
-    return html;
-  };
 
   this.convertToHTML = function (markdown) {
+    markdown = parseTabs(markdown)
+
+    console.log("After the tabs", markdown)
+    markdown = handleCodeSnippets(markdown);
     markdown = markdown.replace(
       /(#{1,6}) \+\+\{style="(.*?)"\} (.+)/g,
       function (_, hashes, style, title) {
@@ -543,7 +437,7 @@ var parser = function () {
 
         const formattedStyles = handleTextAlign(style);
         let { textAlign, otherStyles } = formattedStyles;
-        return `<h${level} ${
+        return `<h${level} id="${title}" ${
           textAlign ? ` style="${textAlign}"` : ""
         }><span style="${
           otherStyles.trim() || ""
@@ -574,12 +468,12 @@ var parser = function () {
 
 
 
-    markdown = markdown.replace(/^# (.*)$/gm, "<h1>$1</h1>");
-    markdown = markdown.replace(/^## (.*)$/gm, "<h2>$1</h2>");
-    markdown = markdown.replace(/^### (.*)$/gm, "<h3>$1</h3>");
-    markdown = markdown.replace(/^#### (.*)$/gm, "<h4>$1</h4>");
-    markdown = markdown.replace(/^##### (.*)$/gm, "<h5>$1</h5>");
-    markdown = markdown.replace(/^###### (.*)$/gm, "<h6>$1</h6>");
+    markdown = markdown.replace(/^# (.*)$/gm, "<h1 id='$1'>$1</h1>");
+    markdown = markdown.replace(/^## (.*)$/gm, "<h2 id='$1'>$1</h2>");
+    markdown = markdown.replace(/^### (.*)$/gm, "<h3 id='$1'>$1</h3>");
+    markdown = markdown.replace(/^#### (.*)$/gm, "<h4 id='$1'>$1</h4>");
+    markdown = markdown.replace(/^##### (.*)$/gm, "<h5 id='$1'>$1</h5>");
+    markdown = markdown.replace(/^###### (.*)$/gm, "<h6 id='$1'>$1</h6>");
 
     markdown = markdown.replace(/(?<=^|\r\n|\n|\r)(\r\n|\n|\r)/g, "<p></p>");
     markdown = markdown.replace(/(?<!<\/p>)\n([^\n<]+)(?!\S)/g, "<br>$1");
@@ -597,7 +491,7 @@ var parser = function () {
     markdown = markdown.replace(/image-component/g, `img`);
     markdown = markdown.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
     markdown = markdown.replace(/\*(.*?)\*/g, "<em>$1</em>");
-    //
+    
     markdown = markdown.replace(
       /!\[(.*?)\]\((.*?)\)(\+\+\{(style=".*?"|class=".*?"|)?\s*(style=".*?"|class=".*?"|)?\})?/g,
       (match, alt, src, fullMatch, attr1, attr2) => {
@@ -642,8 +536,6 @@ var parser = function () {
     markdown = markdown.replace(
       /\+\+\{card( [a-z\-]+=".*?")*\}\+\+/g,
       (match, capture) => {
-       
-       
         const styleString = extractStyle(match) || "";
         const classString = extractClass(match) || "";
         return `<div style="${styleString}" class="${classString}">`;
@@ -651,9 +543,10 @@ var parser = function () {
     );
     
     markdown = markdown.replace(/\-\-\{card\}\-\-/g, "</div>");
-    markdown = handleCodeSnippets(markdown);
+
     markdown = convertToList(markdown);
     markdown = convertMarkdownTableToHtml(markdown);
+    markdown = decodeBase64InText(markdown)
     console.log("this is the html", markdown)
     return markdown;
   };

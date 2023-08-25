@@ -28,6 +28,26 @@ import ts from 'highlight.js/lib/languages/typescript'
 import html from 'highlight.js/lib/languages/xml'
 import { lowlight } from 'lowlight'
 import Accordion from "./Accordion";
+import Tabs from "./Tabs";
+import Heading from "@tiptap/extension-heading"
+
+const HeadingWithID = Heading.extend({
+  addAttributes() {
+    return {
+      id: {
+        default: null,
+        parseHTML: element => {
+          return { id: element.getAttribute("id") };
+        },
+        renderHTML: attributes => {
+          if (attributes.id) {
+            return attributes.id
+          }
+        },
+      },
+    };
+  },
+});
 
 lowlight.registerLanguage('html', html)
 lowlight.registerLanguage('css', css)
@@ -167,7 +187,6 @@ const MenuBar = ({ editor }) => {
 export default ({ data }) => {
   const parserTool = new converter();
   const content = parserTool.convertToHTML(data);
-  
   const editor = useEditor({
     editable: false,
     extensions: [
@@ -213,6 +232,7 @@ export default ({ data }) => {
           };
         },
       }),
+      HeadingWithID,
       Link.extend({
         addOptions() {
           return {
@@ -261,6 +281,7 @@ export default ({ data }) => {
       TableRow,
       TableHeader,
       TableCell,
+      Tabs,
       DraggableItem,
       CalloutBoxes,
       TextAlign.configure({
