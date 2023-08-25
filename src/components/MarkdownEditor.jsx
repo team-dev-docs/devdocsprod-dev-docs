@@ -167,6 +167,7 @@ const MenuBar = ({ editor }) => {
 export default ({ data }) => {
   const parserTool = new converter();
   const content = parserTool.convertToHTML(data);
+  
   const editor = useEditor({
     editable: false,
     extensions: [
