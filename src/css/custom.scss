@@ -1,4 +1,5 @@
 @import "./design-preferences.scss";
+@import "./legacy.scss";
 
 
 
@@ -17,6 +18,8 @@
 .main-heading {
   font-size: 100px;
 }
+
+
 
 @media (max-width: 767px) {
   .ProseMirror .column-block {
