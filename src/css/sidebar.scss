@@ -1,0 +1,13 @@
+.menu__link--active:not(.menu__link--sublist) {
+  border-radius: 7px;
+  background: rgba(225, 217, 255, 0.85);
+  color: #4600b5;
+
+  /* Navigation Selected */
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.322px;
+}

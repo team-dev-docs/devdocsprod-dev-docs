@@ -1,6 +1,6 @@
 @import "./design-preferences.scss";
 @import "./legacy.scss";
-
+@import "./sidebar.scss";
 
 
 :root {
@@ -481,23 +481,23 @@ ul[data-type="taskList"] {
 }
 
 .menu__link--sublist:before {
-  content: none !important;
+  // content: none !important;
 }
 
-.menu__link--active:before {
-  content: "\\ ";
-  color: transparent;
-  border-left: 2px solid var(--ifm-color-primary);
+// .menu__link--active:before {
+//   // content: "\\ ";
+//   // color: transparent;
+//   // border-left: 2px solid var(--ifm-color-primary);
 
-  border-left: 1;
-  margin-left: -15px;
-  display: inline-block;
-  position: sticky;
-  left: 0.5em;
+//   // border-left: 1;
+//   // margin-left: -15px;
+//   // display: inline-block;
+//   // position: sticky;
+//   // left: 0.5em;
 
-}
+// }
 
-.menu__list-item .menu__link--active {}
+// .menu__list-item .menu__link--active {}
 
 // .menu__link--active {
 //   color: var(--ifm-menu-color-active);
