@@ -3,6 +3,7 @@
 @import "./legacy.scss";
 @import "./sidebar.scss";
 @import "./navbar.scss";
+@import "./footer.scss";
 
 :root {
   --ifm-color-primary: #4e00f5;
@@ -530,46 +531,13 @@ ul[data-type="taskList"] {
   border: none;
 }
 
-[data-theme="dark"] .footer--dark {
-  backdrop-filter: blur(16px) saturate(180%);
-  -webkit-backdrop-filter: blur(16px) saturate(180%);
-  background-color: rgba(17, 25, 40, 0.75);
-  border: none;
-  .footer__title,
-  .footer__link-item {
-  }
-}
+
 
 [data-theme="light"] #docusaurus_skipToContent_fallback > div {
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
-  background-color: rgba(255, 255, 255, 0.94);
+  background-color: white;
   border: none;
-}
-
-[data-theme="light"] .footer--dark {
-  color: #0d0d0d;
-  backdrop-filter: blur(16px) saturate(180%);
-  -webkit-backdrop-filter: blur(16px) saturate(180%);
-  background-color: rgba(255, 255, 255, 0.94);
-  border: none;
-  .footer__title,
-  .footer__link-item {
-    color: #0d0d0d;
-  }
-}
-
-.theme-doc-sidebar-container {
-  // background-color: #111927;
-  // background-image:
-  //     radial-gradient(at 47% 33%, hsl(289.90, 87%, 47%) 0, transparent 59%),
-  //     radial-gradient(at 82% 65%, hsl(218.00, 39%, 11%) 0, transparent 55%)
-}
-
-.theme-doc-sidebar-container > div > nav {
-  // backdrop-filter: blur(16px) saturate(180%);
-  // -webkit-backdrop-filter: blur(16px) saturate(180%);
-  // background-color: rgba(17, 25, 40, 0.75);
 }
 
 /* Background styles */
