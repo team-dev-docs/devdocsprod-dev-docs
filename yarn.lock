@@ -1657,6 +1657,11 @@
   "resolved" "https://registry.npmjs.org/@exodus/schemasafe/-/schemasafe-1.0.0-rc.9.tgz"
   "version" "1.0.0-rc.9"
 
+"@fontsource/inter@^5.0.8":
+  "integrity" "sha512-28knWH1BfOiRalfLs90U4sge5mpQ8ZH6FS0PTT+IZMKrZ7wNHDHRuKa1kQJg+uHcc6axBppnxll+HXM4c7zo/Q=="
+  "resolved" "https://registry.npmjs.org/@fontsource/inter/-/inter-5.0.8.tgz"
+  "version" "5.0.8"
+
 "@gocapsule/column-extension@^1.0.0-beta-3":
   "integrity" "sha512-bvxbmfJS4Hgt25hfQHEU7QDdDxNtjgUXCsBsFqMES/gi1fAQJ2ZptyuEdBHPCAUG0Tuzd7X9beiitG69as/1FQ=="
   "resolved" "https://registry.npmjs.org/@gocapsule/column-extension/-/column-extension-1.0.0-beta-3.tgz"

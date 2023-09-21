@@ -1,7 +1,7 @@
 ````markdown 
 ++{card style=" background: url('/img/dev-docs-assets/dev-docs-TW9uLCAxNyBKdWwgMjAyMyAwMzo0MTozNiBHTVQ=.png') no-repeat center center / cover;" class="background-landing"}++
 
-# ++{style="font-size: 120px;;;;;;;;;"} Dev-Docs
+# ++{style="font-size: 120px;"} Dev-Docs
 
 ## ++{style="text-align: center"} We are a documentation platform that helps developers generate, query, and search documentation using AI.
 
