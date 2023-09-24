@@ -1,29 +1,60 @@
 .centerSearchBar {
- 
   justify-content: center; /* Center children horizontallyv */
   align-items: center; /* Center children vertically */
-position: absolute;
-display: flex;
-//   position: fixed; /* Absolute positioning */
+  position: absolute;
+  display: flex;
+  //   position: fixed; /* Absolute positioning */
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-padding-left: 3em;
-z-index: 0;
+  padding-left: 3em;
+  z-index: 0 !important;
 }
 
 .navbar__items {
-    a, button {
-        z-index: 1 !important;
-    }
+  a,
+  button {
+    z-index: 1 !important;
+  }
+
+  > div {
+    z-index: 0 !important;
+  }
+}
+
+// .navbar-sidebar__items {
+//     z-index: 3 !important;
+// }
+
+// .navbar-sidebar__brand {
+//     z-index: 4 !important;
+// }
+
+@media (max-width: 767px) {
+  .navbar__title .text--truncate {
+    display: none !important;
+  }
+  .navbar-sidebar {
+    z-index: 5 !important;
+    min-height: 100vh !important;
+  }
+
+  .navbar__toggle {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+.toggleButton_node_modules-\@docusaurus-theme-classic-lib-theme-ColorModeToggle-styles-module {
+  justify-content: unset !important;
 }
 
 .navbar .aa-DetachedSearchButton {
-    border-radius: 0.4375rem !important;
+  border-radius: 0.4375rem !important;
   border: 2px solid rgba(87, 95, 110, 0.7) !important;
   background: #363b45 !important;
   height: 3.125rem !important;
   flex-shrink: 0 !important;
   width: 20.3125rem !important;
-} 
+}
