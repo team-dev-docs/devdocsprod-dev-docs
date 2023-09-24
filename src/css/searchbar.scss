@@ -32,9 +32,7 @@
 // }
 
 @media (max-width: 767px) {
-  .navbar__title .text--truncate {
-    display: none !important;
-  }
+
   .navbar-sidebar {
     z-index: 5 !important;
     min-height: 100vh !important;

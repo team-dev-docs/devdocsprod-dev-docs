@@ -18,6 +18,5 @@ This is documentation meant for users, partners, or anyone that would use your A
 
 This is documentation meant for other folks in software engineering org, or other folks that actually contribute to your codebase.  This type of documentation can even be helpful to you if you forget what your code does as well.
 
-
  ````
  <Parser />

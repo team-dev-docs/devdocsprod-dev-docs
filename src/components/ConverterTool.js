@@ -90,13 +90,12 @@ function convertMarkdownTableToHtml(htmlString) {
    
     let markdownTable = match[0];
     let htmlTable = "<table><tbody>";
-    let rowMatch;
-    let rowIndex = 0;
     let headerMarkdown;
 
+    headerPattern.lastIndex = 0;  // Reset the regex index
     let headerMatch = headerPattern.exec(markdownTable);
+
     if (headerMatch) {
-     
       headerMarkdown = headerMatch[1];
       let htmlRow = "";
       let cellMatch;
@@ -106,7 +105,6 @@ function convertMarkdownTableToHtml(htmlString) {
       }
 
       htmlTable += `<tr>${htmlRow}</tr>`;
-      rowIndex++;
     }
    
     let markdownTables = markdownTable.split(headerMarkdown)[1].split("<br>");
@@ -114,7 +112,6 @@ function convertMarkdownTableToHtml(htmlString) {
     markdownTables.shift();
     markdownTables.shift();
 
-   
     for (const row of markdownTables) {
       let tds = row.split("|").filter(function (item) {
         return item != "";
@@ -136,6 +133,7 @@ function convertMarkdownTableToHtml(htmlString) {
 
   return htmlString;
 }
+
 
 function convertHtmlTableToMarkdown(htmlString) {
  
