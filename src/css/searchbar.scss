@@ -1,0 +1,29 @@
+.centerSearchBar {
+ 
+  justify-content: center; /* Center children horizontallyv */
+  align-items: center; /* Center children vertically */
+position: absolute;
+display: flex;
+//   position: fixed; /* Absolute positioning */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+padding-left: 3em;
+z-index: 0;
+}
+
+.navbar__items {
+    a, button {
+        z-index: 1 !important;
+    }
+}
+
+.navbar .aa-DetachedSearchButton {
+    border-radius: 0.4375rem !important;
+  border: 2px solid rgba(87, 95, 110, 0.7) !important;
+  background: #363b45 !important;
+  height: 3.125rem !important;
+  flex-shrink: 0 !important;
+  width: 20.3125rem !important;
+} 

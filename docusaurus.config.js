@@ -11,6 +11,7 @@ const itemsJson = require("./items.json")
 const footerItems = require("./footerItems.json")
 const logoJson = require('./logo.json')
 
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   scripts: [
@@ -40,7 +41,7 @@ const config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'facebook', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
-  plugins: ['docusaurus-plugin-sass', "@lyrasearch/plugin-docusaurus",
+  plugins: ['docusaurus-plugin-sass', "@orama/plugin-docusaurus",
   [
     'docusaurus-plugin-openapi-docs',
     {
@@ -112,7 +113,10 @@ const config = {
           src: logoJson.logo || "",
         },
         items: [
-          ...itemsJson.items
+          ...itemsJson.items, {
+            type: 'search',
+            position: 'left',
+          }
         ],
       },
       footer: {
