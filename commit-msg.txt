@@ -1,2 +1,2 @@
-changes style
+new search centered
 
