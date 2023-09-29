@@ -1,3 +1,7 @@
+---
+sidebar_position: 5
+---
+
 ````markdown 
 ## Use the Vs Code extension to write normal Markdown
 

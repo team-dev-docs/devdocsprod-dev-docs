@@ -1,3 +1,7 @@
+---
+sidebar_position: 3
+---
+
 ````markdown 
 ## Dev-Docs Repo File Structure
 
