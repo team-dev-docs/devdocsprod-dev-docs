@@ -1,0 +1,137 @@
+
+.dev-docs-landing {
+    min-height: 200ch;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    >h1 {
+      font-size: 4.88313rem;
+      font-family: Inter;
+  
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: -0.02444rem;
+      a {
+        color: #CECEF8;
+      }
+    }
+  
+  
+    h1 {
+      color: #EEE;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Inter;
+  font-size: 4.88313rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.02444rem;
+    }
+  
+    > h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      // padding-left: 10em;
+      // padding-right: 10em;
+      // letter-spacing: -1.6px;
+    }
+  
+    > .content {
+      padding-left: 10em;
+      padding-right: 10em;
+      display: flex;
+      flex-direction: column;
+      width: 108rem;
+      height: 93.25rem;
+      flex-shrink: 0;
+      align-items: flex-start;
+      justify-content: flex-start;
+      // backdrop-filter: blur(5px);
+    }
+  }
+  
+[id="Launch your Documents"], [id="with <a href=&quot;https://dev-docs.io&quot; >Dev-Docs</a>"] {
+    font-size: 4.88313rem;
+    font-family: Inter;
+
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.02444rem;
+    a {
+      color: #CECEF8;
+    }
+}
+    
+
+
+[id="We are a documentation platform that helps developers generate, query, and search documentation using AI."] {
+  // Your styles here
+  font-family: Inter;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 43.3125rem !important;
+}
+
+.main-btn {
+  border-radius: 0.4375rem;
+  border: 2px solid #a4fad1;
+  background: #031a0f;
+}
+[id="Why Dev-Docs?"] {
+    margin-top: 3.5em;
+    text-align: center;
+    color: #DDD;
+text-align: center;
+font-family: Inter;
+font-size: 3.125rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+[id="Integrates with the tools you love"] {
+  color: #ddd;
+  font-family: Inter;
+  font-size: 1.6rem !important;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.integration-grid {
+  background: transparent !important;
+  padding-left: unset !important;
+  padding-top: 2rem !important;
+  margin-bottom: 5.12rem !important;
+  .content {
+    padding: 0px !important;
+  }
+}
+
+.draggable-grid {
+    
+    h1 {
+        color: #DDD;
+font-family: Inter;
+font-size: 1.6rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+    }
+
+    .general-card {
+        border-radius: 0.4375rem;
+border: 1px solid rgba(54, 59, 69, 0.50);
+background: #0B101A;
+
+    }
+}
+
+
