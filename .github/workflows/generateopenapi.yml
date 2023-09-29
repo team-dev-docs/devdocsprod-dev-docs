@@ -1,0 +1,39 @@
+name: Generate API docs
+
+on:
+  push:
+    branches:
+      - main
+
+permissions: write-all
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: 16
+
+    - name: Install dependencies
+      run: yarn install
+
+    - name: Generate API docs
+      run: yarn docusaurus gen-api-docs all
+    - name: Configure Git
+      run: |
+        git config --global user.name "Dev-Docs"
+        git config --global user.email "$GITHUB_ACTOR@users.noreply.github.com"
+    
+    - name: Pull latest changes
+      run: git pull origin main
+
+    - name: Commit changes
+      run: |
+        git add docs/api
+        git commit -m "Generate API docs"
+        git push

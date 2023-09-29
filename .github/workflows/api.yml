@@ -1,0 +1,32 @@
+
+
+name: Extract Contents
+
+on: [push]
+
+permissions: write-all
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+  call-api:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get repository ID
+        id: get-repo-id
+        run: echo "::set-output name=repo-id::$(echo $GITHUB_REPOSITORY | awk -F '/' '{print $2}')"
+
+      - name: Call API
+        env:
+          API_TOKEN: ${{ secrets.API_TOKEN }}
+          API_URL: ${{ secrets.API_URL}}
+        run: |
+          curl -X POST \
+          -H "Content-Type: application/json" \
+          -H "Authorization: Bearer $API_TOKEN" \
+          -d '{"repoId": "'"${{ steps.get-repo-id.outputs.repo-id }}"'"}' \
+          $API_URL

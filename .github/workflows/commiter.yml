@@ -1,0 +1,23 @@
+name: Update Commit Message
+
+on:
+  push:
+    branches: [main]
+
+permissions: write-all
+jobs:
+  update-commit-msg:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Configure Git
+        run: |
+          git config --global user.name "Dev-Docs"
+          git config --global user.email "$GITHUB_ACTOR@users.noreply.github.com"
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Update commit message
+        run: |
+          git log --format=%B -n 1 $GITHUB_SHA > commit-msg.txt
+          git add commit-msg.txt
+          git commit -m "Update commit message" -a
+          git push

@@ -1,0 +1,81 @@
+:root {
+    --ifm-color-primary: #4e00f5;
+    --ifm-color-primary-dark: #4600dd;
+    --ifm-color-primary-darker: #4200d0;
+    --ifm-color-primary-darkest: #3700ab;
+    --ifm-color-primary-light: #5b0fff;
+    --ifm-color-primary-lighter: #631bff;
+    --ifm-color-primary-lightest: #7c40ff;
+    --ifm-code-font-size: 95%;
+    --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  }
+  
+  /* For readability concerns, you should choose a lighter palette in dark mode. */
+  [data-theme='dark'] {
+    --ifm-color-primary: #9666ff;
+    --ifm-color-primary-dark: #7d42ff;
+    --ifm-color-primary-darker: #7130ff;
+    --ifm-color-primary-darkest: #4e00fa;
+    --ifm-color-primary-light: #ae8aff;
+    --ifm-color-primary-lighter: #bb9cff;
+    --ifm-color-primary-lightest: #dfd1ff;
+    --ifm-background-color: #000000;
+    --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  }
+
+  .ProseMirror {
+    > * + * {
+      margin-top: 0.75em;
+    }
+  
+    ul,
+    ol {
+      padding: 0 1rem;
+    }
+  
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      line-height: 1.1;
+      color: red !important;
+    }
+  
+    code {
+      background-color: rgba(#616161, 0.1);
+      color: #616161;
+    }
+  
+    pre {
+      background: #0D0D0D;
+      color: #FFF;
+      font-family: 'JetBrainsMono', monospace;
+      padding: 0.75rem 1rem;
+      border-radius: 0.5rem;
+  
+      code {
+        color: inherit;
+        padding: 0;
+        background: none;
+        font-size: 0.8rem;
+      }
+    }
+  
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    blockquote {
+      padding-left: 1rem;
+      border-left: 2px solid rgba(#0D0D0D, 0.1);
+    }
+  
+    hr {
+      border: none;
+      border-top: 2px solid rgba(#0D0D0D, 0.1);
+      margin: 2rem 0;
+    }
+  }

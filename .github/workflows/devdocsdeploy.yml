@@ -1,0 +1,25 @@
+name: Devdocs Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  call-api:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get repository ID
+        id: get-repo-id
+        run: echo "::set-output name=repo-id::${{ github.repository_id }}"
+
+      - name: Call API
+        env:
+          API_TOKEN: ${{ secrets.API_TOKEN }}
+          API_URL: ${{ secrets.API_URL}}
+        run: |
+          curl -X POST \
+          -H "Content-Type: application/json" \
+          -H "Authorization: Bearer $API_TOKEN" \
+          -d '{"repoId": "'"${{ steps.get-repo-id.outputs.repo-id }}"'"}' \
+          $API_URL
