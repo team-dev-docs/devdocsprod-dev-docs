@@ -138,6 +138,22 @@
   // padding: unset !important;
 }
 
+.third-hero {
+  // background-color: #0B101A !important;
+  // border-radius: 44.0625rem;
+  background-image: url("/img/dev-docs-assets/internalbglanding.png") !important;
+  background-position: top left;
+  background-repeat: no-repeat !important;
+  background-color: #eee !important;
+  h1, h2, h3, h4, h5, h6, p {
+    color: #222731 !important;
+  }
+  .draggable-item {
+    box-shadow: unset !important;
+  }
+  // padding: unset !important;
+}
+
 .second-hero-text {
   padding-left: 10em !important;
   padding-right: 10em !important;

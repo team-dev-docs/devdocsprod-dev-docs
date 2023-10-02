@@ -64,17 +64,17 @@ Anything created using Dev-Docs outputs markdowns, so regardless of whether you 
 
 ++{card style="" class="second-hero"}++
 
-++{card style="100vw; 100vw:; 100vw: ;" class="second-hero-text"}++
+++{card style="100vw; 100vw:; 100vw:; 100vw:; 100vw:; 100vw:;" class="second-hero-text"}++
 # Make it easy for
 # internal documentation
 
 --{card}--
 
-++{card class="image-container draggable-logo-grid"}++
+++{card style="" class="image-container draggable-logo-grid"}++
 
 ++{card style="position: relative; padding-bottom: 65.03401360544217%; height: 0;" class="general-card"}++
 
-<iframe src="https://www.loom.com/embed/94fb67c8145a4b4d9a0c23efc55ea1f1?sid=ddbc29de-8183-4a62-9baa-4037747b561b" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+<iframe src="https://www.loom.com/embed/e92e1f3a15524efeb86b58169e9d3576?sid=5c1ef433-deaa-4983-aaf9-4ae61003c704" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
 
 --{card}--
 
@@ -82,15 +82,14 @@ Anything created using Dev-Docs outputs markdowns, so regardless of whether you 
 
 # Use AI to generate your Docs and Content
 
-Dev-Docs allows you and your team to automatically generate documentation through AI.  We give you the flexibilty to use our out of the box model as well as bring your own. Whether you are documenting your codebase for onboarding or documenting your public API, documentation is now automa
+Dev-Docs allows you and your team to automatically generate documentation through AI. We give you the flexibilty to use our out of the box model as well as bring your own. Whether you are documenting your codebase for onboarding or documenting your public API, documentation is now automa
 
 --{card}--
 
 --{card}--
 
-<!-- 
-start -->
-++{card class="image-container draggable-logo-grid"}++
+
+++{card style="" class="image-container draggable-logo-grid"}++
 
 ++{card style="" class="general-card"}++
 
@@ -102,21 +101,20 @@ Automatically have a chatbot powered by a LLM that can answer questions on top o
 
 ++{card style="position: relative; padding-bottom: 65.03401360544217%; height: 0;" class="general-card"}++
 
-<iframe src="https://www.loom.com/embed/94fb67c8145a4b4d9a0c23efc55ea1f1?sid=ddbc29de-8183-4a62-9baa-4037747b561b" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+
+<iframe src="https://www.loom.com/embed/e92e1f3a15524efeb86b58169e9d3576?sid=5c1ef433-deaa-4983-aaf9-4ae61003c704" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
 
 --{card}--
 
 --{card}--
-<!-- 
-end -->
 
-<!-- 
-start -->
-++{card class="image-container draggable-logo-grid"}++
+
+++{card style="" class="image-container draggable-logo-grid"}++
 
 ++{card style="position: relative; padding-bottom: 65.03401360544217%; height: 0;" class="general-card"}++
 
-<iframe src="https://www.loom.com/embed/94fb67c8145a4b4d9a0c23efc55ea1f1?sid=ddbc29de-8183-4a62-9baa-4037747b561b" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+
+<iframe src="https://www.loom.com/embed/e92e1f3a15524efeb86b58169e9d3576?sid=5c1ef433-deaa-4983-aaf9-4ae61003c704" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
 
 --{card}--
 
@@ -124,13 +122,83 @@ start -->
 
 # Interactive Code Tutorials
 
-Allow your users to quickly validate your solution instantly by running your codesnippets in interactive tutorials powered by github codespaces.  
+Allow your users to quickly validate your solution instantly by running your codesnippets in interactive tutorials powered by github codespaces.
 
 --{card}--
 
 --{card}--
-<!-- 
-end -->
+
+
+
+
+
+--{card}--
+
+++{card style="" class="third-hero"}++
+
+++{card style="100vw; 100vw:; 100vw:; 100vw:; 100vw:; 100vw:;" class="second-hero-text"}++
+# Make it easy for
+# internal documentation
+
+--{card}--
+
+++{card style="" class="image-container draggable-logo-grid"}++
+
+++{card style="position: relative; padding-bottom: 65.03401360544217%; height: 0;" class="general-card"}++
+
+<iframe src="https://www.loom.com/embed/e92e1f3a15524efeb86b58169e9d3576?sid=5c1ef433-deaa-4983-aaf9-4ae61003c704" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+
+--{card}--
+
+++{card style="" class="general-card"}++
+
+# Use AI to generate your Docs and Content
+
+Dev-Docs allows you and your team to automatically generate documentation through AI. We give you the flexibilty to use our out of the box model as well as bring your own. Whether you are documenting your codebase for onboarding or documenting your public API, documentation is now automa
+
+--{card}--
+
+--{card}--
+
+
+++{card style="" class="image-container draggable-logo-grid"}++
+
+++{card style="" class="general-card"}++
+
+# Chatbot out of the Box
+
+Automatically have a chatbot powered by a LLM that can answer questions on top of your docs in addition to a keyword search powered by Orama.
+
+--{card}--
+
+++{card style="position: relative; padding-bottom: 65.03401360544217%; height: 0;" class="general-card"}++
+
+
+<iframe src="https://www.loom.com/embed/e92e1f3a15524efeb86b58169e9d3576?sid=5c1ef433-deaa-4983-aaf9-4ae61003c704" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+
+--{card}--
+
+--{card}--
+
+
+++{card style="" class="image-container draggable-logo-grid"}++
+
+++{card style="position: relative; padding-bottom: 65.03401360544217%; height: 0;" class="general-card"}++
+
+
+<iframe src="https://www.loom.com/embed/e92e1f3a15524efeb86b58169e9d3576?sid=5c1ef433-deaa-4983-aaf9-4ae61003c704" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+
+--{card}--
+
+++{card style="" class="general-card"}++
+
+# Interactive Code Tutorials
+
+Allow your users to quickly validate your solution instantly by running your codesnippets in interactive tutorials powered by github codespaces.
+
+--{card}--
+
+--{card}--
 
 
 
