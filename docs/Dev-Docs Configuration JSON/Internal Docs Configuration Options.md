@@ -1,4 +1,4 @@
-# This is an External Document cinfig
+## Example of an Internal Dev-Docs config
 
 ```
 {
