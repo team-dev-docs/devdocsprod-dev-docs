@@ -35,7 +35,7 @@
 
 # Why Dev-Docs?
 
-++{card type="grid"}++
+++{card class="draggable-grid"}++
 
 ++{card style="" class="general-card"}++
 
