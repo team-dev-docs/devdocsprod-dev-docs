@@ -20,9 +20,16 @@
 
 --{card}--
 
+++{card class="filler-card btn-group"}++
 [Get Started](https://dev-docs.io)++{style="null;" class="main-btn btn-grad"}
 [Read the Docs](/docs)++{style="null;" class="btn-grad"}
+--{card}--
 
+++{card style="background: url('/img/mobilerobot.png') no-repeat center center / cover;" class="mobile"}++
+
+
+
+--{card}--
 
 ++{card style="" class=""}++
 

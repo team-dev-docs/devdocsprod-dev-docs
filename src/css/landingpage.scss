@@ -1,3 +1,5 @@
+
+
 .dev-docs-landing {
   min-height: 200ch;
   display: block;
@@ -26,6 +28,10 @@
     font-weight: 700;
     line-height: normal;
     letter-spacing: -0.02444rem;
+  }
+
+  .mobile {
+    display: none !important;
   }
 
   > h2,
@@ -246,3 +252,5 @@ background: #0b101a !important;
   box-shadow: -2px -2px 13px 0px rgba(57, 0, 255, 0.80) inset;
   filter: drop-shadow(0px 0px 40px #4015D4);
 }
+
+@import "./mobilelanding.scss"
