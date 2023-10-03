@@ -1,6 +1,8 @@
 @media (max-width: 767px) {
 
- 
+  .table-of-contents {
+    display: none;
+  }
 
     .dev-docs-landing {
         max-width: 100vw !important;
