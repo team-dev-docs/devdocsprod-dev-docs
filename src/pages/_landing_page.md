@@ -206,6 +206,36 @@ Allow your users to quickly validate your solution instantly by running your cod
 
 --{card}--
 
+++{card class="fourth-hero"}++
+
+++{card style="" class="image-container draggable-logo-grid"}++
+++{card class="filler-card"}++
+
+--{card}--
+++{card style="" class="image-container test draggable-logo-grid"}++
+
+++{card class="general-card"}++
+# Contact Us, 
+# Let’s Collaborate
+--{card}--
+
+++{card class="general-card"}++
+[Request a Demo](/docs)++{style="null;" class="btn-grad contact-btn"}
+--{card}--
+
+--{card}--
+
+
+
+++{card class="general-card"}++
+
+--{card}--
+
+--{card}--
+
+
+--{card}--
+
 
  ````
  <Parser />
