@@ -5,7 +5,7 @@ For the External Dev-Docs JSON config, there is not that much configuration exce
 ```json
 
 {
-"external": true
+"external": false
 }
 
 ```
