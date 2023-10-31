@@ -3,7 +3,7 @@ const fs = require('fs');
 const { execSync } = require('child_process');
 
 const API_KEY = process.env.API_KEY;
-const ENDPOINT_URL = new URL(process.env.ENDPOINT_URL);
+// const ENDPOINT_URL = new URL(process.env.ENDPOINT_URL);
 
 const getModifiedMarkdownFiles = () => {
   try {
