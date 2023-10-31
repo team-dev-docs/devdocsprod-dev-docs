@@ -1,33 +1,30 @@
-name: demo
+name: Process Markdown Files
+
 on:
   push:
     branches:
-      - 'main'
+      - main
+    paths:
+      - '**.md'
 
 jobs:
-  conditional_step:
-    runs-on: 'ubuntu-20.04'
+  notify-express-app:
+    runs-on: ubuntu-latest
+
     steps:
-    - uses: actions/checkout@v2
-      with:
-        # Checkout as many commits as needed for the diff
-        fetch-depth: 2
-    - shell: pwsh
-      # Give an id to the step, so we can reference it later
-      id: check_file_changed
-      run: |
-        # Diff HEAD with the previous commit
-        $diff = git diff --name-only HEAD^ HEAD
+      - name: Checkout Repository
+        uses: actions/checkout@v2
 
-        # Check if a file under docs/ or with the .md extension has changed (added, modified, deleted)
-        $SourceDiff = $diff | Where-Object { $_ -match '^docs/' -or $_ -match '.md$' }
-        $HasDiff = $SourceDiff.Length -gt 0
+      - name: Notify Express App
+        run: |
+          TIMESTAMP=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+          API_KEY=${{ secrets.API_KEY }}
+          CUSTOMER="example-customer"
+          GITHUB_REPOSITORY="${{ github.repository }}"
+          GITHUB_ACTOR="${{ github.actor }}"
 
-        # Set the output named "docs_changed"
-        Write-Host "::set-output name=docs_changed::$HasDiff"
-
-    # Run the step only with "docs_changed" equals "True"
-    - shell: pwsh
-      # steps.<step_id>.outputs.<output name>
-      if: steps.check_file_changed.outputs.docs_changed == 'True'
-      run: echo publish docs
+          curl -X POST -H "Content-Type: application/json" \
+               -d '{"apiKey": "'$API_KEY'", "customer": "'$CUSTOMER'", "timestamp": "'$TIMESTAMP'", "githubRepository": "'$GITHUB_REPOSITORY'", "githubActor": "'$GITHUB_ACTOR'"}' \
+               "${{ secrets.ENDPOINT_URL }}"
+        env:
+          API_KEY: ${{ secrets.API_KEY }}
