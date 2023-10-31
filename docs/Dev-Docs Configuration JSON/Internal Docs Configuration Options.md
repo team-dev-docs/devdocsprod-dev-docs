@@ -1,4 +1,4 @@
-## Example of an Internal Dev-Docs configdsfdsf
+## Example of an Internal Dev-Docs Config
 
 ```
 {
