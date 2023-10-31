@@ -7,8 +7,8 @@ const API_KEY = process.env.API_KEY;
 
 const getModifiedMarkdownFiles = () => {
   try {
-    const output = execSync('git log -m -1 --name-only --pretty=format:""').toString();
-    return output.split('\n').filter(file => file.endsWith('.md') && file.trim() !== '');
+    const child_process = require('child_process');
+    const modifiedFiles = child_process.execSync('git diff --name-only HEAD^1 HEAD').toString().split('\n');
   } catch(e) {
     return []
   }
