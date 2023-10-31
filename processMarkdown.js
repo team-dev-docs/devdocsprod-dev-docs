@@ -7,14 +7,10 @@ const ENDPOINT_URL = new URL(process.env.ENDPOINT_URL);
 
 const getModifiedMarkdownFiles = () => {
   try {
-    // Attempt to get the list of modified files compared to the previous commit
-    const output = execSync('git diff --name-only HEAD HEAD~1').toString();
+    const output = execSync('git diff-tree --no-commit-id --name-only -r HEAD').toString();
     return output.split('\n').filter(file => file.endsWith('.md'));
-  } catch (error) {
-    console.error('Error getting modified files from previous commit:', error.message);
-    // Fallback: Get all markdown files in the current commit if comparison to previous commit fails
-    return execSync('git ls-tree --full-tree -r --name-only HEAD').toString()
-           .split('\n').filter(file => file.endsWith('.md'));
+  } catch(e) {
+    return []
   }
 };
 
