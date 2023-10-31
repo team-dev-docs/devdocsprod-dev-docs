@@ -15,6 +15,7 @@ const getModifiedMarkdownFiles = () => {
     console.log(lastCommit)
     const child_process = require('child_process');
     const modifiedFiles = child_process.execSync('git diff --name-only HEAD').toString().split('\n');
+    return modifiedFiles 
   } catch(e) {
     return []
   }
