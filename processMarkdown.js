@@ -5,10 +5,16 @@ const { execSync } = require('child_process');
 const API_KEY = process.env.API_KEY;
 // const ENDPOINT_URL = new URL(process.env.ENDPOINT_URL);
 
+const getLatestCommitId = () => {
+  return execSync('git rev-parse HEAD').toString().trim();
+};
+
 const getModifiedMarkdownFiles = () => {
   try {
+    const lastCommit = getLatestCommitId()
+    console.log(lastCommit)
     const child_process = require('child_process');
-    const modifiedFiles = child_process.execSync('git diff --name-only HEAD^1 HEAD').toString().split('\n');
+    const modifiedFiles = child_process.execSync('git diff --name-only HEAD').toString().split('\n');
   } catch(e) {
     return []
   }
