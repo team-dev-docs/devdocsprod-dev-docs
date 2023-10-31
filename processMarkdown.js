@@ -14,6 +14,16 @@ const getModifiedMarkdownFiles = () => {
   }
 };
 
+const getLatestCommitId = () => {
+  return execSync('git rev-parse HEAD').toString().trim();
+};
+
+const getFilesFromCommit = (commitId) => {
+  const output = execSync(`git diff-tree --no-commit-id --name-only -r ${commitId}`).toString();
+  return output.split('\n').filter(file => file.endsWith('.md') && file.trim() !== '');
+};
+
+
 const sendRequest = (file, content) => {
   return new Promise((resolve, reject) => {
     const data = JSON.stringify({ content, filepath: file });
@@ -49,11 +59,18 @@ const sendRequest = (file, content) => {
 };
 
 const main = async () => {
-  const files = getModifiedMarkdownFiles();
+  const latestCommitId = getLatestCommitId();
+  const files = getFilesFromCommit(latestCommitId);
+  console.log(latestCommitId)
   console.log(files)
   for (const file of files) {
     if (file) {
       const content = fs.readFileSync(file, 'utf8');
+      try {
+        // await sendRequest(file, content);
+      } catch (error) {
+        console.error(`Error processing file ${file}:`, error);
+      }
     }
   }
 };
