@@ -13,61 +13,17 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '14'
-
-      - name: Install Axios
-        run: npm install axios
-
       - name: Process Markdown Files
         env:
           API_KEY: ${{ secrets.API_KEY }}
           ENDPOINT_URL: ${{ secrets.ENDPOINT_URL }}
         run: |
-          const axios = require('axios');
-          const { execSync } = require('child_process');
-          const fs = require('fs');
-
-          const getModifiedMarkdownFiles = () => {
-            const output = execSync('git diff --name-only HEAD HEAD~1').toString();
-            return output.split('\n').filter(file => file.endsWith('.md'));
-          };
-
-          const sendRequest = async (file) => {
-            const content = fs.readFileSync(file, 'utf8');
-            let data = JSON.stringify({
-              content: content,
-              filepath: file
-            });
-
-            let config = {
-              method: 'post',
-              maxBodyLength: Infinity,
-              url: process.env.ENDPOINT_URL,
-              headers: { 
-                'x-api-key': process.env.API_KEY, 
-                'Content-Type': 'application/json'
-              },
-              data: data
-            };
-
-            try {
-              const response = await axios.request(config);
-              console.log(JSON.stringify(response.data));
-            } catch (error) {
-              console.error(`Error processing file ${file}:`, error);
-            }
-          };
-
-          const main = async () => {
-            const files = getModifiedMarkdownFiles();
-            for (const file of files) {
-              if (file) {
-                await sendRequest(file);
-              }
-            }
-          };
-
-          main();
+          for file in $(git diff --name-only HEAD HEAD~1 | grep '\.md$'); do
+            if [ -f "$file" ]; then
+              content=$(cat "$file")
+              curl -X POST "$ENDPOINT_URL" \
+                -H 'Content-Type: application/json' \
+                -H "x-api-key: $API_KEY" \
+                -d "{\"content\": \"$content\", \"filepath\": \"$file\"}"
+            fi
+          done
