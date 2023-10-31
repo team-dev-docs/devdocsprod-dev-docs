@@ -21,9 +21,6 @@ const getModifiedMarkdownFiles = () => {
   }
 };
 
-const getLatestCommitId = () => {
-  return execSync('git rev-parse HEAD').toString().trim();
-};
 
 const getFilesFromCommit = (commitId) => {
   const output = execSync(`git diff-tree --no-commit-id --name-only -r ${commitId}`).toString();
