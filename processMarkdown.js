@@ -54,14 +54,10 @@ const sendRequest = (file, content) => {
 
 const main = async () => {
   const files = getModifiedMarkdownFiles();
+  console.log(files)
   for (const file of files) {
     if (file) {
       const content = fs.readFileSync(file, 'utf8');
-      try {
-        await sendRequest(file, content);
-      } catch (error) {
-        console.error(`Error processing file ${file}:`, error);
-      }
     }
   }
 };
