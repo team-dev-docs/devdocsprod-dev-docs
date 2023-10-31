@@ -7,7 +7,7 @@ sidebar_position: 1
 ````markdown 
 # Getting Started
 
-Welcome to the Dev-Docs, a tool to help developers create documentation.  Now Dev-Docs has two main usecases
+Welcome to the Dev-Docs, a tool to help developers create documentation.  Now Dev-Docs has two main usecases!
 
 ## Usecases:
 
