@@ -7,8 +7,8 @@ const API_KEY = process.env.API_KEY;
 
 const getModifiedMarkdownFiles = () => {
   try {
-    const output = execSync('git log -m -1 --name-only --pretty=format:""').toString();
-    return output.split('\n').filter(file => file.endsWith('.md') && file.trim() !== '');
+  const output = execSync('git show --pretty="" --name-only HEAD').toString();
+  return output.split('\n').filter(file => file.endsWith('.md') && file.trim() !== '');
   } catch(e) {
     return []
   }
