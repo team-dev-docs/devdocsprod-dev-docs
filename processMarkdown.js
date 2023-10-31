@@ -7,8 +7,8 @@ const ENDPOINT_URL = new URL(process.env.ENDPOINT_URL);
 
 const getModifiedMarkdownFiles = () => {
   try {
-    const output = execSync('git diff-tree --no-commit-id --name-only -r HEAD').toString();
-    return output.split('\n').filter(file => file.endsWith('.md'));
+    const output = execSync('git log -m -1 --name-only --pretty=format:""').toString();
+    return output.split('\n').filter(file => file.endsWith('.md') && file.trim() !== '');
   } catch(e) {
     return []
   }
