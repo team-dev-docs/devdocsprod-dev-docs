@@ -1,3 +1,3 @@
-# External docs json is spaghetti!!ooo loool a
+# External docs json 
 
-bro
+The External JSON is a config object.
