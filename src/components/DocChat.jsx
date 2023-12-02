@@ -13,7 +13,11 @@ import chatJson from '../../chat.json'
 const { logo } = logoJson
 const { chatUrl } = chatJson
 
-console.log(logo)
+
+
+function capitalizeFirstLetterOfEachWord(str) {
+  return str.replace(/(^\w|\s\w)/g, match => match.toUpperCase());
+}
 
 const processor = unified()
   .use(markdown)
@@ -27,7 +31,7 @@ function ChatBox({ messages, onSendMessage }) {
 
   const handleSendMessage = async (event) => {
     event.preventDefault();
-    console.log(message);
+    
     messages.push({ text: message });
     setLoadingBar(true)
     try {
@@ -36,7 +40,7 @@ function ChatBox({ messages, onSendMessage }) {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ question: message }),
+        body: JSON.stringify({ query: message }),
       });
 
       if (!response.ok) {
@@ -44,14 +48,30 @@ function ChatBox({ messages, onSendMessage }) {
       }
 
       const data = await response.json();
-      console.log(data);
-      const { source_nodes } = data?.response
-      const answer = data?.response?.response
-      messages.push({ text: `${answer} \n Here is the orignal article:` });
-      source_nodes.forEach((messageObject) => {
-        messages.push({
-          text: `[Original Source](/${messageObject?.node?.extra_info?.source}) \n ${messageObject?.node?.text}`,
-        });
+
+      const answer = data?.text
+      messages.push({ text: `${answer} \n Here are the sources and other relavant articles:` });
+    
+      const { metadatas } = data?.relevantDocuments
+      let metadatasList = metadatas[0]
+      // let messageObject = metadatasList[metadatasList - 1]
+      // messages.push({
+      //   text: `[Oringal Source](/${messageObject?.path.split(".md")[0].replace(/\s/g, "%20")}) \n ${messageObject?.file}`,
+      // });
+      metadatasList.forEach((messageObject) => {
+   
+        let filename = messageObject?.file.split(".md")[0].replace(/\_/g, " ")
+        let camelSourceName = capitalizeFirstLetterOfEachWord(filename)
+        let markdownPath = `(/${messageObject?.path.split(".md")[0].replace(/\s/g, "%20")})`
+        let existingMessage = messages.find(function(message) {
+          return message.text.includes(markdownPath)
+        })
+        console.log(existingMessage)
+        if(!existingMessage) {
+          messages.push({
+            text: `[Oringal Source]${markdownPath} \n ${camelSourceName}`,
+          });
+        }
       });
     } catch (error) {
       console.error(error);

@@ -1,7 +1,12 @@
+
+// import design-preferences.scss
+
+@import "./design-preferences.scss";
+
 .menu__link--active:not(.menu__link--sublist) {
   border-radius: 7px;
-  background: rgba(225, 217, 255, 0.85);
-  color: #4600b5;
+  background: $color-1-1;
+  color: $color-1;
 
   /* Navigation Selected */
   font-family: Inter;

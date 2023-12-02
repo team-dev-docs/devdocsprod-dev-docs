@@ -5,6 +5,7 @@
 @import "./navbar.scss";
 @import "./footer.scss";
 @import "./searchbar.scss";
+@import "./table-of-conents.scss";
 :root {
   --ifm-color-primary: #4e00f5;
   --ifm-color-primary-dark: #4600dd;
@@ -16,6 +17,10 @@
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
+
+//add this to your custom.scss file to change the color of the code blocks
+
+//add styling .scss for docusaurus toc to be sticky on the right side of the page and scrollable
 
 .main-heading {
   font-size: 100px;

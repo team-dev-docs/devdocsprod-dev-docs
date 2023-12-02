@@ -1,6 +1,8 @@
 const { create, search, insert } = require('@orama/orama');
 const docusaurusUtils = require('docusaurus-utils');
 
+
+
 module.exports = {
   name: 'my-docusaurus-search-plugin',
   search: async (siteConfig, options) => {
