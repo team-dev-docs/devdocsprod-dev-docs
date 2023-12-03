@@ -5,7 +5,7 @@
 @import "./prose.scss";
 @import "./misc.scss";
 
-// @import "./legacy.scss";
+@import "./legacy.scss";
 @import "./sidebar.scss";
 @import "./navbar.scss";
 @import "./footer.scss";
@@ -399,9 +399,7 @@
 //   background-color: hsl(162, 77%, 40%);
 // }
 
-// body {
-//   overflow-x: hidden !important;
-// }
+
 
 // /* Glassmorphism card effect */
 // .card {
@@ -440,4 +438,4 @@
 
 
 
-//  @import "./custom-templates.scss";
+ @import "./custom-templates.scss";

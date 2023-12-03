@@ -23,3 +23,9 @@
   background-color: rgba(17, 25, 40, 0.75) !important;
   border: none;
 }
+
+html, body {
+  height: 100%;
+  max-width: 100vw !important;
+  overflow-x: hidden !important;
+}
