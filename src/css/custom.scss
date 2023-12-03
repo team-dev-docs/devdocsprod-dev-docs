@@ -1,5 +1,10 @@
 @import "../../node_modules/@fontsource/inter/index.css";
 @import "./design-preferences.scss";
+@import "./root-and-body.scss";
+@import "./headings-and-paragraphs.scss";
+@import "./prose.scss";
+@import "./misc.scss";
+
 // @import "./legacy.scss";
 @import "./sidebar.scss";
 @import "./navbar.scss";
@@ -7,146 +12,37 @@
 @import "./searchbar.scss";
 @import "./table-of-conents.scss";
 @import "./chatbot.scss";
-// :root {
-//   --ifm-color-primary: #4e00f5;
-//   --ifm-color-primary-dark: #4600dd;
-//   --ifm-color-primary-darker: #4200d0;
-//   --ifm-color-primary-darkest: #3700ab;
-//   --ifm-color-primary-light: #5b0fff;
-//   --ifm-color-primary-lighter: #631bff;
-//   --ifm-color-primary-lightest: #7c40ff;
-//   --ifm-code-font-size: 95%;
-//   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-// }
+
 
 // //add this to your custom.scss file to change the color of the code blocks
 
 // //add styling .scss for docusaurus toc to be sticky on the right side of the page and scrollable
 
-// .main-heading {
-//   font-size: 100px;
-// }
 
-// @media (max-width: 767px) {
-//   .ProseMirror .column-block {
-//     grid-auto-flow: row;
-//     gap: 16px;
-//   }
 
-//   @media (max-width: 767px) {
-//     .ProseMirror .column-block {
-//       grid-auto-flow: row;
-//       gap: 16px;
-//     }
 
-//     .draggable-item {
-//       flex-direction: row !important;
-//     }
 
-//     .main-heading {
-//       font-size: 4.5rem;
-//     }
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme="dark"] {
+  --ifm-color-primary: #9666ff;
+  --ifm-color-primary-dark: #7d42ff;
+  --ifm-color-primary-darker: #7130ff;
+  --ifm-color-primary-darkest: #4e00fa;
+  --ifm-color-primary-light: #ae8aff;
+  --ifm-color-primary-lighter: #bb9cff;
+  --ifm-color-primary-lightest: #dfd1ff;
+  --ifm-background-color: red;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
 
-//     p,
-//     span {
-//     }
+[data-theme="dark"] #__docusaurus_skipToContent_fallback > div {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75) !important;
+    border: none;
+}
 
-//     .content {
-//       display: block !important;
-//       min-height: 40ch;
-//       padding: 2% !important;
-//     }
 
-//     // .content div:first-child {
-//     //   display: flex !important;
-//     //   gap: inherit;
-//     //   align-content: inherit;
-//     //   align-items: inherit;
-//     //   flex-direction: inherit;
-//     //   justify-content: inherit;
-//     //   flex-wrap: inherit;
-//     //   min-height: 400px;
-//     //   flex-flow: inherit;
-//     //   margin: 0px;
-//     //   width: 100%;
-//     //   flex-direction: column;
-//     // }
-//   }
-// }
-
-// [data-theme="dark"] {
-//   p,
-//   h1,
-//   h2,
-//   h3,
-//   h4,
-//   h5,
-//   h6 {
-//     color: white !important;
-//     font-family: Inter;
-//   }
-// }
-
-// [data-theme="light"] {
-//   p,
-//   h1,
-//   h2,
-//   h3,
-//   h4,
-//   h5,
-//   h6 {
-//     color: black !important;
-//   }
-// }
-
-// h1 {
-//   font-size: 32.25px;
-//   font-style: normal;
-//   font-weight: 800;
-//   line-height: normal;
-//   letter-spacing: -0.645px;
-// }
-
-// h2 {
-//   font-size: 25px;
-//   font-style: normal;
-//   font-weight: 700;
-//   line-height: normal;
-//   letter-spacing: -0.5px;
-// }
-
-// p {
-//   font-family: Inter;
-//   font-size: 16px;
-//   font-style: normal;
-//   font-weight: 400;
-//   line-height: 21.4px; /* 133.75% */
-//   letter-spacing: -0.08px;
-// }
-
-// .node-ResizableImage {
-//   width: fit-content;
-// }
-
-// /* For readability concerns, you should choose a lighter palette in dark mode. */
-// [data-theme="dark"] {
-//   --ifm-color-primary: #9666ff;
-//   --ifm-color-primary-dark: #7d42ff;
-//   --ifm-color-primary-darker: #7130ff;
-//   --ifm-color-primary-darkest: #4e00fa;
-//   --ifm-color-primary-light: #ae8aff;
-//   --ifm-color-primary-lighter: #bb9cff;
-//   --ifm-color-primary-lightest: #dfd1ff;
-//   --ifm-background-color: #000000;
-//   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
-// }
-
-// .landing {
-// }
-
-// .content {
-//   padding: 2rem;
-// }
 
 // .ProseMirror {
 //   table {
@@ -455,53 +351,13 @@
 //   cursor: pointer;
 //   outline: none;
 // }
-// :root {
-//   --ifm-color-primary: #4e00f5;
-//   --ifm-color-primary-dark: #4600dd;
-//   --ifm-color-primary-darker: #4200d0;
-//   --ifm-color-primary-darkest: #3700ab;
-//   --ifm-color-primary-light: #5b0fff;
-//   --ifm-color-primary-lighter: #631bff;
-//   --ifm-color-primary-lightest: #7c40ff;
-//   --ifm-code-font-size: 95%;
-//   --ifm-color-primary-andrew: rgb(4, 4, 4);
-//   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-// }
 
-// .menu__link--sublist-caret:after,
-// .menu__caret:before {
-//   background: url("data:image/svg+xml;utf8,<svg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path d='M7.41 15.16L12 10.58l4.59 4.58L18 13.75l-6-6-6 6 1.41 1.41z'/></svg>");
-// }
 
-// .theme-doc-sidebar-menu {
-//   // border-left: 1px solid #d1d0d33e;
-//   // -webkit-background-clip: padding-box; /* for Safari */
-// }
 
-// .menu__link--sublist:before {
-//   // content: none !important;
-// }
 
-// // .menu__link--active:before {
-// //   // content: "\\ ";
-// //   // color: transparent;
-// //   // border-left: 2px solid var(--ifm-color-primary);
 
-// //   // border-left: 1;
-// //   // margin-left: -15px;
-// //   // display: inline-block;
-// //   // position: sticky;
-// //   // left: 0.5em;
 
-// // }
 
-// // .menu__list-item .menu__link--active {}
-
-// // .menu__link--active {
-// //   color: var(--ifm-menu-color-active);
-// //   list-style: '👉';
-// //   // list-style: 👉;
-// // }
 
 // @media (max-width: 767px) {
 //   .ProseMirror .column-block {
@@ -546,18 +402,8 @@
 //   border: none;
 // }
 
-// /* Background styles */
-// html {
-//   background-color: #000000;
-//   // background-color: var(--ifm-color-primary-dark);
-//   // //background-image: url(https://cdn.glitch.global/40d5f2e1-d6f1-4b4e-b603-44a0049b2e40/DALL%C2%B7E%202023-01-15%2000.21.49.png?v=1673763772494);
 
-//   // background-image:
-//   // radial-gradient(at 47% 33%, var(--ifm-color-primary-andrew), transparent 59%),
-//   // radial-gradient(at 82% 65%, rgb(1, 3, 7) 0, transparent 55%);
-//   // background-attachment: fixed;
-//   // transition: background-image 0.5s ease-in-out;
-// }
+
 
 // body::-webkit-scrollbar {
 //   width: 8px;
@@ -583,306 +429,30 @@
 
 // /* Generated by https://generator.ui.glass/ */
 
-// // .main-wrapper {
-// //   background-color: #181822;
-// //   background-image:
-// //       radial-gradient(at 47% 33%, hsl(289.90, 87%, 47%) 0, transparent 59%),
-// //       radial-gradient(at 82% 65%, hsl(216.62, 100%, 70%) 0, transparent 55%);
-// // }
-
-// #__docusaurus
-//   > nav
-//   > div.navbar__inner
-//   > div.navbar__items.navbar__items--right
-//   > div.toggle_node_modules-\@docusaurus-theme-classic-lib-theme-ColorModeToggle-styles-module.colorModeToggle_node_modules-\@docusaurus-theme-classic-lib-theme-Navbar-Content-styles-module
-//   > button
-//   > svg.lightToggleIcon_node_modules-\@docusaurus-theme-classic-lib-theme-ColorModeToggle-styles-module {
-//   color: black;
-// }
-
-// [data-theme="dark"] .theme-doc-sidebar-container {
-//   // backdrop-filter: blur(16px) saturate(180%);
-//   // -webkit-backdrop-filter: blur(16px) saturate(180%);
-//   // background-color: rgba(17, 25, 40, 0.75);
-//   // border: none;
-// }
-
-// // [data-theme="dark"] .navbar--fixed-top {
-// //   position: sticky;
-// //   color: white;
-// //   width: 100%;
-// //   color: white;
-// //   top: 0;
-// //   z-index: var(--ifm-z-index-fixed);
-// //   backdrop-filter: blur(0px) saturate(180%);
-// //   -webkit-backdrop-filter: blur(0px) saturate(180%);
-// //   background-color: rgba(17, 25, 40, 0.87);
-// //   border: 1px solid rgba(255, 255, 255, 0.125);
-// // }
-
-// // [data-theme="light"] .navbar--fixed-top {
-// //   position: sticky;
-// //   color: #0d0d0d;
-// //   top: 0;
-// //   z-index: var(--ifm-z-index-fixed);
-// //   backdrop-filter: blur(16px) saturate(180%);
-// //   -webkit-backdrop-filter: blur(16px) saturate(180%);
-// //   background-color: rgba(255, 255, 255, 0.94);
-// //   border: 1px solid rgba(255, 255, 255, 0.125);
-// // }
-
-// .content {
-//   padding: 2rem;
-// }
-
-// .ProseMirror {
-//   table {
-//     border-collapse: collapse;
-//     margin: 0;
-//     overflow: hidden;
-//     table-layout: fixed;
-//     width: 100%;
-
-//     td,
-//     th {
-//       border: 2px solid #ced4da;
-//       box-sizing: border-box;
-//       min-width: 1em;
-//       padding: 3px 5px;
-//       position: relative;
-//       vertical-align: top;
-
-//       > * {
-//         margin-bottom: 0;
-//       }
-//     }
-
-//     th {
-//       background-color: #f1f3f5;
-//       font-weight: bold;
-//       text-align: left;
-//     }
-
-//     .selectedCell:after {
-//       background: rgba(200, 200, 255, 0.4);
-//       content: "";
-//       left: 0;
-//       right: 0;
-//       top: 0;
-//       bottom: 0;
-//       pointer-events: none;
-//       position: absolute;
-//       z-index: 2;
-//     }
-
-//     .column-resize-handle {
-//       background-color: #adf;
-//       bottom: -2px;
-//       position: absolute;
-//       right: -2px;
-//       pointer-events: none;
-//       top: 0;
-//       width: 4px;
-//     }
-
-//     p {
-//       margin: 0;
-//     }
-//   }
-
-//   > * + * {
-//     margin-top: 0.75em;
-//   }
-
-//   ul,
-//   ol {
-//     padding: 0 1rem;
-//   }
-
-//   code {
-//     background-color: rgba(#616161, 0.1);
-//     color: #616161;
-//   }
-
-//   pre {
-//     background: #0d0d0d;
-//     color: #fff;
-//     font-family: "JetBrainsMono", monospace;
-//     padding: 0.75rem 1rem;
-//     border-radius: 0.5rem;
-
-//     code {
-//       color: inherit;
-//       padding: 0;
-//       background: none;
-//       font-size: 0.8rem;
-//     }
-//   }
-
-//   img {
-//     max-width: 100%;
-//     height: auto;
-//   }
-
-//   blockquote {
-//     padding-left: 1rem;
-//     border-left: 2px solid rgba(#0d0d0d, 0.1);
-//   }
-
-//   hr {
-//     border: none;
-//     border-top: 2px solid rgba(#0d0d0d, 0.1);
-//     margin: 2rem 0;
-//   }
-// }
-
-// .ProseMirror .column-block {
-//   width: 100%;
-//   display: grid;
-//   cursor: pointer;
-//   grid-auto-flow: column;
-//   grid-auto-columns: 1fr;
-//   gap: 24px;
-//   padding: 8px 0;
-//   justify-content: center;
-// }
-
-// .ProseMirror .column {
-//   overflow: auto;
-//   border: 1px gray dashed;
-//   border-radius: 8px;
-//   padding: 8px;
-//   margin: -8px;
-// }
-
-// .draggable-item {
-//   display: flex;
-//   padding: 0.1rem;
-//   margin: 0.1rem 0;
-//   // border-radius: 20px;
-//   // background: white;
-//   // color: black;
-//   // box-shadow:
-//   //   0 0 0 1px rgba(0, 0, 0, 0.05),
-//   //   0px 10px 20px rgba(0, 0, 0, 0.1),
-//   // ;
-
-//   .drag-handle {
-//     flex: 0 0 auto;
-//     position: relative;
-//     width: 1rem;
-//     height: 1rem;
-//     top: 0.3rem;
-//     margin-right: 0.5rem;
-//     cursor: grab;
-//     background-image: url("data:image/svg+xml;charset=UTF-8,");
-//     background-repeat: no-repeat;
-//     background-size: contain;
-//     background-position: center;
-//   }
-
-//   .content {
-//     flex: 1 1 auto;
-//   }
-// }
-
-// .button-link {
-//   backdrop-filter: blur(25px) saturate(180%);
-//   -webkit-backdrop-filter: blur(16px) saturate(180%);
-//   background-color: #23263bd1;
-//   border: 1px solid hsla(0, 0%, 100%, 0.125);
-//   border-radius: 12px;
-//   color: #fff;
-//   padding: 0.5em;
-// }
-
-// .glass-morph {
-//   background: radial-gradient(
-//       100% 359.18% at 0% 0%,
-//       rgba(255, 255, 255, 0.6) 0%,
-//       rgba(255, 255, 255, 0.2) 100%
-//     )
-//     /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-//   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
-//   backdrop-filter: blur(15px);
-//   /* Note: backdrop-filter has minimal browser support */
-//   padding: 2rem;
-//   border-radius: 20px;
-//   min-width: 100%;
-//   min-height: 100%;
-// }
-
-// .tableWrapper {
-//   padding: 1rem 0;
-//   overflow-x: auto;
-// }
-
-// .resize-cursor {
-//   cursor: ew-resize;
-//   cursor: col-resize;
-// }
-
-// ul[data-type="taskList"] {
-//   list-style: none;
-//   padding: 0;
-
-//   p {
-//     margin: 0;
-//   }
-
-//   li {
-//     display: flex;
-
-//     > label {
-//       flex: 0 0 auto;
-//       margin-right: 0.5rem;
-//       user-select: none;
-//     }
-
-//     > div {
-//       flex: 1 1 auto;
-//     }
-//   }
-// }
 
 
-// .content {
-//   // white-space: nowrap;
-//   // display: flex;
-//   // padding-left: 0px;
-//   // padding-right: 0px;
-//   div:first-child {
-//     display: inherit;
-//     gap: inherit;
-//     align-content: inherit;
-//     align-items: inherit;
-//     flex-direction: inherit;
-//     justify-content: inherit;
-//     flex-wrap: inherit;
-//     flex-flow: inherit;
-//     margin: 0px;
-//     width: 100%;
-//     // background: orange;
-//   }
 
-//   .node-draggableItem {
-//     flex-basis: 70%;
-//   }
 
-//   .inner-card {
-//     background: radial-gradient(
-//         100% 359.18% at 0% 0%,
-//         rgba(255, 255, 255, 0.6) 0%,
-//         rgba(255, 255, 255, 0.2) 100%
-//       )
-//       /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-//     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
-//     padding: 1em;
-//     backdrop-filter: blur(15px);
-//     width: 100%;
-//     border-radius: 0.5rem;
-//     /* Note: backdrop-filter has minimal browser support */
-//   }
-// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //  @import "./custom-templates.scss";

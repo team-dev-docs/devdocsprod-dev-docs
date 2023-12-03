@@ -25,3 +25,31 @@ menu__link {
   line-height: normal;
   letter-spacing: -0.322px;
 }
+
+.menu__link--sublist-caret:after,
+.menu__caret:before {
+  background: url("data:image/svg+xml;utf8,<svg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path d='M7.41 15.16L12 10.58l4.59 4.58L18 13.75l-6-6-6 6 1.41 1.41z'/></svg>");
+}
+
+// .theme-doc-sidebar-menu {
+//   border-left: 1px solid #d1d0d33e;
+//   -webkit-background-clip: padding-box; /* for Safari */
+// }
+
+// .menu__link--sublist:before {
+//   content: none !important;
+// }
+
+// .menu__link--active:before {
+//   content: "\\ ";
+//   color: transparent;
+//   border-left: 2px solid var(--ifm-color-primary);
+
+//   border-left: 1;
+//   margin-left: -15px;
+//   display: inline-block;
+//   position: sticky;
+//   left: 0.5em;
+
+// }
+
