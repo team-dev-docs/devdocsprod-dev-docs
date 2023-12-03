@@ -42,26 +42,26 @@ function createUlWithClasses(...classes) {
 // Append the desired structure to a target element
 function appendStructureToTarget(targetElement, headers) {
   // Outer div
-  const outerDiv = createDivWithClasses("col", "col--3");
+  // const outerDiv = createDivWithClasses("col", "col--3");
 
-  // Inner div
-  const innerDiv = createDivWithClasses("tableOfContents_node_modules-@docusaurus-theme-classic-lib-theme-TOC-styles-module", "thin-scrollbar", "theme-doc-toc-desktop");
+  // // Inner div
+  // const innerDiv = createDivWithClasses("tableOfContents_node_modules-@docusaurus-theme-classic-lib-theme-TOC-styles-module", "thin-scrollbar", "theme-doc-toc-desktop");
 
-  // UL
-  const ulElement = createUlWithClasses("table-of-contents", "table-of-contents__left-border");
+  // // UL
+  // const ulElement = createUlWithClasses("table-of-contents", "table-of-contents__left-border");
 
-  // LI and anchor
-  for(const header of headers) {
-  let liElement = document.createElement("li");
-  let anchor = createAnchor(`#${header.trimStart().trimEnd()}`, header, "table-of-contents__link", "toc-highlight");
-  liElement.appendChild(anchor);
-  ulElement.appendChild(liElement);
-  }
+  // // LI and anchor
+  // for(const header of headers) {
+  // let liElement = document.createElement("li");
+  // let anchor = createAnchor(`#${header.trimStart().trimEnd()}`, header, "table-of-contents__link", "toc-highlight");
+  // liElement.appendChild(anchor);
+  // ulElement.appendChild(liElement);
+  // }
 
 
-  innerDiv.appendChild(ulElement);
-  outerDiv.appendChild(innerDiv);
-  targetElement.appendChild(outerDiv);
+  // innerDiv.appendChild(ulElement);
+  // outerDiv.appendChild(innerDiv);
+  // targetElement.appendChild(outerDiv);
 }
 
 
