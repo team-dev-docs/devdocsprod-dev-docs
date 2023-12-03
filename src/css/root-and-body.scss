@@ -10,9 +10,16 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
-[data-theme="dark"] #docusaurus_skipToContent_fallback > div {
+[data-theme="dark"] #__docusaurus_skipToContent_fallback > div {
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
   background-color: rgba(17, 25, 40, 0.75);
+  border: none;
+}
+
+[data-theme="dark"] #docusaurus_skipToContent_fallback > div {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75) !important;
   border: none;
 }
