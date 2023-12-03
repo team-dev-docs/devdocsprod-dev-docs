@@ -4,14 +4,18 @@ import Parser from '@site/src/components/OmniParser';
 import ChatBox from '@site/src/components/DocChat';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-
+import { useColorMode } from '@docusaurus/theme-common';
 
 
 
 export default function FooterWrapper(props) {
   let location = useLocation();
+
+
   useEffect(() => {
     const tocLinks = document.querySelectorAll('.toc-highlight');
+
+  
   
     const handleClick = (event) => {
       // Prevent default anchor click behavior
@@ -32,6 +36,9 @@ export default function FooterWrapper(props) {
     });
   
     // Cleanup function to remove event listener when the component unmounts
+    
+
+
     return () => {
       tocLinks.forEach(link => {
         link.removeEventListener('click', handleClick);
