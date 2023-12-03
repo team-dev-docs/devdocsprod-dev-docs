@@ -120,6 +120,10 @@
 
 
 
+
+
+
+
 .draggable-item {
     display: flex;
     padding: 0.1rem;
@@ -214,3 +218,14 @@
   .node-ResizableImage {
     width: fit-content;
   }
+
+  @media (max-width: 767px) {
+  .ProseMirror .column-block {
+    grid-auto-flow: row;
+    gap: 16px;
+  }
+
+  .node-draggableItem {
+    flex-direction: column-reverse !important;
+  }
+}
