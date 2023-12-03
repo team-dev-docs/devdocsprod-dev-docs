@@ -28,11 +28,31 @@ export default function SearchBarWrapper(props) {
       }
     };
 
-    window.addEventListener('keydown', handleKeyDown);
+    const handleClick = () => {
+      console.log('centerSearchBar div was clicked');
+      console.log('Command + K was pressed');
+      console.log("this is the colorMode brooo", colorMode);
 
-    // Cleanup function to remove the event listener when the component unmounts
+      // You can use the updated colorMode value here
+
+      // Example: Toggle a class on the body based on colorMode
+      if (colorMode === 'dark') {
+        document.body.classList.add("dark");
+        setColorMode('dark')
+      } else {
+        document.body.classList.remove("dark");
+        setColorMode('light')
+      }
+      // Add your logic here for the onClick event
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    document.querySelector('.centerSearchBar').addEventListener('click', handleClick);
+
+    // Cleanup function to remove the event listeners when the component unmounts
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
+      document.querySelector('.centerSearchBar').removeEventListener('click', handleClick);
     };
   }, [colorMode]);
 
