@@ -567,6 +567,10 @@ body::-webkit-scrollbar-thumb {
   background-color: hsl(162, 77%, 40%);
 }
 
+body {
+  overflow-x: hidden !important;
+}
+
 /* Glassmorphism card effect */
 .card {
   backdrop-filter: blur(0px) saturate(180%);
@@ -1015,4 +1019,4 @@ ul[data-type="taskList"] {
   }
 }
 
-@import "./custom-templates.scss";
+ @import "./custom-templates.scss";

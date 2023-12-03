@@ -53,7 +53,7 @@ function appendStructureToTarget(targetElement, headers) {
   // LI and anchor
   for(const header of headers) {
   let liElement = document.createElement("li");
-  let anchor = createAnchor(`#${header.trimStart().trimEnd()}`, header, "table-of-contents__link", "toc-highlight", "table-of-contents__link--active");
+  let anchor = createAnchor(`#${header.trimStart().trimEnd()}`, header, "table-of-contents__link", "toc-highlight");
   liElement.appendChild(anchor);
   ulElement.appendChild(liElement);
   }
