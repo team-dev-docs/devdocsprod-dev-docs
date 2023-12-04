@@ -1,0 +1,53 @@
+[data-theme="dark"] {
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: white !important;
+      font-family: Inter;
+    }
+  }
+  
+  [data-theme="light"] {
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: black !important;
+    }
+  }
+  
+  h1 {
+    font-size: 32.25px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -0.645px;
+  }
+  
+  h2 {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.5px;
+  }
+  
+  p {
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21.4px; /* 133.75% */
+    letter-spacing: -0.08px;
+  }
+
+  .main-heading {
+  font-size: 100px;
+}

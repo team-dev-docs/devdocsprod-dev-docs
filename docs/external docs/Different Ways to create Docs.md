@@ -1,6 +1,5 @@
 ---
 title: "Different Ways to Create Docs"
-sidebar_position: 4
 ---
 
 ````markdown 

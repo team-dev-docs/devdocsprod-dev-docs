@@ -16,11 +16,11 @@ p {
 .draggable-grid {
   display: flex !important;
   flex-wrap: wrap !important;
-  // background: black !important;
+  background: black !important;
   min-height: 20em;
   justify-content: center;
   flex-direction: row !important;
-  gap: 0.4em !important; /* space between cards */
+  gap: 0.2em; /* space between cards */
   p {
     display: none !important;
   }
@@ -43,11 +43,11 @@ p {
   }
 
   .content {
-    display: inherit !important;
-    flex-wrap: inherit !important;;
-    flex-direction: inherit !important;;
-    gap: inherit !important;;
-    justify-content: inherit !important;;
+    display: inherit;
+    flex-wrap: inherit;
+    flex-direction: inherit;
+    gap: inherit;
+    justify-content: inherit;
   }
 
   .node-draggableItem {
@@ -80,7 +80,7 @@ p {
 .draggable-logo-grid {
   display: flex !important;
   flex-wrap: wrap !important;
-  // background: black !important;
+  background: black !important;
 
   justify-content: center;
   flex-direction: row !important;
@@ -164,71 +164,11 @@ p {
     height: 100%;
     display: flex;
     flex-direction: column;
-    width: 108rem;
-height: 93.25rem;
-flex-shrink: 0;
-    // align-items: center !important;
-    // justify-content: center !important;
-    // backdrop-filter: blur(5px);
+    align-items: center !important;
+    justify-content: center !important;
+    backdrop-filter: blur(5px);
   }
 }
-
-
-// .dev-docs-landing {
-//   height: 100ch;
-//   display: block;
-//   justify-content: center;
-//   align-items: center;
-//   opacity: 0.8;
-//   h1 {
-//     font-size: 4.88313rem;
-//     font-family: Inter;
-
-//     font-style: normal;
-//     font-weight: 700;
-//     line-height: normal;
-//     letter-spacing: -0.02444rem;
-//     a {
-//       color: #CECEF8;
-//     }
-//   }
-
-
-//   h1 {
-//     color: #EEE;
-// text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-// font-family: Inter;
-// font-size: 4.88313rem;
-// font-style: normal;
-// font-weight: 700;
-// line-height: normal;
-// letter-spacing: -0.02444rem;
-//   }
-
-//   > h2,
-//   h3,
-//   h4,
-//   h5,
-//   h6 {
-//     // padding-left: 10em;
-//     // padding-right: 10em;
-//     // letter-spacing: -1.6px;
-//   }
-
-//   .content {
-//     padding-top: 15em;
-//     padding-left: 10em;
-//     display: flex;
-//     flex-direction: column;
-//     width: 108rem;
-//     height: 93.25rem;
-//     flex-shrink: 0;
-//     align-items: flex-start;
-//     justify-content: flex-start;
-//     // backdrop-filter: blur(5px);
-//   }
-// }
-
 
 .radial-card-content {
   display: flex;
@@ -542,10 +482,6 @@ button:after {
   }
 }
 
-#__docusaurus {
-  max-width: 100vw !important;
-  overflow-x: hidden;
-}
 
 .ProseMirror {
   > * + * {

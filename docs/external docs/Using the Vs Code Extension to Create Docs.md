@@ -1,8 +1,4 @@
----
-sidebar_position: 5
----
 
-````markdown 
 ## Use the Vs Code extension to write normal Markdown
 
 If you always struggled to just write normal markdown, rejoice you can use the the VS Code Extensions markdown just like this
@@ -31,6 +27,3 @@ If you ever forget how to use the dev-docs syntax there is a built in vs code ex
 
 
 
-
- ````
- <Parser />

@@ -1,6 +1,7 @@
 const apiConfig = {
+
 }
 
- module.exports = {
-    config: apiConfig
- }
+module.exports = {
+   config: apiConfig
+}

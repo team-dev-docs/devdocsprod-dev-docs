@@ -1,7 +1,3 @@
----
-sidebar_position: 2
----
-
 ````markdown 
 ## Intro to Dev-Docs External Documentation
 
