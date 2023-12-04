@@ -1,3 +1,2 @@
-Merge pull request #1 from team-dev-docs/2.4.3
+cleans things up
 
-2.4.3
