@@ -1,36 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import zlib from 'zlib';
-import { useDoc } from '@docusaurus/theme-common/internal'
-
-const RenderTable = ({ data }) => {
-  if (!data || typeof data !== 'object') {
-    return null;
-  }
-
-  return (
-    <table>
-      <tbody>
-        {Object.entries(data).map(([key, value], index) => (
-          <tr key={index}>
-            <td>{key}</td>
-            <td>{typeof value === 'object' ? JSON.stringify(value, null, 2) : value.toString()}</td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
-  );
-};
+import { useDoc } from '@docusaurus/theme-common/internal';
 
 const JsonToTable = () => {
   const [decodedData, setDecodedData] = useState({});
+
   const { frontMatter } = useDoc();
 
   useEffect(() => {
     if (frontMatter.api) {
       try {
-        const decodedJSON = JSON.parse(
+        let decodedJSON = JSON.parse(
           zlib.inflateSync(Buffer.from(frontMatter.api, 'base64')).toString()
         );
+        console.log('decodedJSON', decodedJSON);
+        decodedJSON.requestBodyValues = extractPropertiesAndExamples(decodedJSON);
         setDecodedData(decodedJSON);
       } catch (error) {
         console.error('Error parsing JSON:', error);
@@ -38,14 +22,78 @@ const JsonToTable = () => {
     }
   }, [frontMatter.api]);
 
+  const extractPropertiesAndExamples = (json) => {
+    let propertiesObject = json.requestBody.content['application/json'].schema.allOf.find((item) => item.properties !== undefined);
+    let exampleObject = json.requestBody.content['application/json'].example;
+    let properties = propertiesObject.properties;
+    let required = propertiesObject.required;
+    Object.keys(properties).forEach((key) => {
+      if (required && required.includes(key)) properties[key].required = true
+      if (exampleObject && exampleObject[key]) {
+        properties[key].example = exampleObject[key];
+      }
+    });
+
+    return properties;
+  };
+
+
   return (
     <div>
-      {Object.entries(decodedData).map(([sectionTitle, sectionData], index) => (
-        <React.Fragment key={index}>
-          <h2>{sectionTitle}</h2>
-          <RenderTable data={sectionData} />
-        </React.Fragment>
-      ))}
+      <div>
+        {decodedData.info && (
+          <>
+            <h2>{decodedData.info.title}</h2>
+            <p>{decodedData.info.description}</p>
+          </>
+        )}
+        {decodedData.parameters && decodedData.parameters.length > 0 && (
+          <>
+            <h3>Parameters:</h3>
+            <ul>
+              {decodedData.parameters.map((param) => (
+                <li key={param.name}>
+                  <strong>{param.name}:</strong> {param.description}
+                </li>
+              ))}
+            </ul>
+          </>
+        )}
+        {decodedData?.requestBodyValues && Object.keys(decodedData.requestBodyValues).length > 0 && (
+          <>
+            <h3>Request Body</h3>
+
+              {Object.entries(decodedData.requestBodyValues).map(([key, value]) => (
+                
+                <div style={{ borderTop: '1px solid #eaecef', margin: '24px 0' }} aria-hidden="true" key={key}>
+                  <strong>{key}:</strong> 
+                  <p>{value.description}</p>
+                  <br></br>
+                  Extra Context {JSON.stringify(value)}
+                </div>
+              ))}
+           
+          </>
+        )}
+        {decodedData.securitySchemes && Object.keys(decodedData.securitySchemes).length > 0 && (
+          <>
+            <h3>Security Schemes:</h3>
+            <ul>
+              {Object.entries(decodedData.securitySchemes).map(([key, value]) => (
+                <li key={key}>
+                  <strong>{key}:</strong> {value.description}
+                </li>
+              ))}
+            </ul>
+          </>
+        )}
+        {decodedData.postman && decodedData.postman.description && (
+          <>
+            <h3>Postman Configuration:</h3>
+            <p>{decodedData.postman.description.content}</p>
+          </>
+        )}
+      </div>
     </div>
   );
 };
