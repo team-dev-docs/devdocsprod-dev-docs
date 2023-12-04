@@ -4,6 +4,7 @@ import chroma from 'chroma-js';
 import { NodeViewWrapper, NodeViewContent } from '@tiptap/react';
 
 
+
 function Details({ node }) {
     const [styleObject, setStyleObject] = useState({});
     const styles = {

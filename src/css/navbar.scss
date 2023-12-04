@@ -35,3 +35,13 @@
   height: 5.6875rem;
   flex-shrink: 0;
 }
+
+#__docusaurus
+  > nav
+  > div.navbar__inner
+  > div.navbar__items.navbar__items--right
+  > div.toggle_node_modules-\@docusaurus-theme-classic-lib-theme-ColorModeToggle-styles-module.colorModeToggle_node_modules-\@docusaurus-theme-classic-lib-theme-Navbar-Content-styles-module
+  > button
+  > svg.lightToggleIcon_node_modules-\@docusaurus-theme-classic-lib-theme-ColorModeToggle-styles-module {
+  color: black;
+}
