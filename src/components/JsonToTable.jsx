@@ -23,18 +23,48 @@ const JsonToTable = () => {
   }, [frontMatter.api]);
 
   const extractPropertiesAndExamples = (json) => {
-    let propertiesObject = json.requestBody.content['application/json'].schema.allOf.find((item) => item.properties !== undefined);
-    let exampleObject = json.requestBody.content['application/json'].example;
-    let properties = propertiesObject.properties;
-    let required = propertiesObject.required;
-    Object.keys(properties).forEach((key) => {
-      if (required && required.includes(key)) properties[key].required = true
-      if (exampleObject && exampleObject[key]) {
-        properties[key].example = exampleObject[key];
-      }
-    });
+    try {
+      if (!json || !json.requestBody || !json.requestBody.content) return {};
 
-    return properties;
+      const content = json.requestBody.content['application/json'];
+      if (!content || !content.schema) return {};
+
+      const schema = content.schema;
+      let properties = {};
+
+      // Function to extract properties
+      const extract = (schema) => {
+        if (schema.properties) {
+          Object.assign(properties, schema.properties);
+        }
+
+        ['allOf', 'anyOf', 'oneOf'].forEach((key) => {
+          if (schema[key]) {
+            schema[key].forEach(subSchema => extract(subSchema));
+          }
+        });
+
+        if (schema.$ref) {
+          // Here you should resolve the reference. This is a placeholder logic.
+          console.log(`Reference found: ${schema.$ref}. Implement reference resolution logic.`);
+        }
+      };
+
+      extract(schema);
+
+      // Extract examples if available
+      let exampleObject = content.example || {};
+      Object.keys(properties).forEach((key) => {
+        if (exampleObject[key]) {
+          properties[key].example = exampleObject[key];
+        }
+      });
+
+      return properties;
+    } catch (error) {
+      console.error('Error extracting properties and examples:', error);
+      return {};
+    }
   };
 
 
