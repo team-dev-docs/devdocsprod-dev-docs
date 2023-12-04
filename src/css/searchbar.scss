@@ -12,6 +12,23 @@
   z-index: 0 !important;
 }
 
+@media (max-width: 600px) {
+  .navbar-sidebar {
+    z-index: 5 !important;
+    min-height: 100vh !important;
+  }
+
+  .centerSearchBar {
+    left: unset;
+    max-width: 10vw;
+  }
+
+  .navbar__toggle {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
 .navbar__items {
   a,
   button {
@@ -23,19 +40,14 @@
   }
 }
 
-// .navbar-sidebar__items {
-//     z-index: 3 !important;
-// }
-
-// .navbar-sidebar__brand {
-//     z-index: 4 !important;
-// }
-
-@media (max-width: 767px) {
-
+@media (max-width: 966px) {
   .navbar-sidebar {
     z-index: 5 !important;
     min-height: 100vh !important;
+  }
+
+  .centerSearchBar {
+    padding-left: 0em;
   }
 
   .navbar__toggle {
@@ -51,8 +63,41 @@
 .navbar .aa-DetachedSearchButton {
   border-radius: 0.4375rem !important;
   border: 2px solid rgba(87, 95, 110, 0.7) !important;
-  background: #363b45 !important;
+  background: #fff !important;
   height: 3.125rem !important;
   flex-shrink: 0 !important;
   width: 20.3125rem !important;
+}
+
+.aa-FooterSearchCredit {
+  display: none !important;
+}
+
+#__docusaurus > nav > div.navbar__inner > div:nth-child(1) > button > svg > path {
+  color: white;
+}
+
+.navbar-sidebar__back {
+  color: white !important;
+}
+
+
+[data-theme='light'] #__docusaurus > nav > div.navbar__inner > div:nth-child(1) > button > svg > path {
+  color: black;
+}
+
+[data-theme='light'] .navbar-sidebar__back {
+  color: black !important;
+}
+
+[data-theme='light'] #__docusaurus > nav > div.navbar__inner > div.navbar__items.navbar__items--right > div > button > svg.darkToggleIcon_node_modules-\@docusaurus-theme-classic-lib-theme-ColorModeToggle-styles-module > path {
+  color: black !important
+}
+
+[data-theme='light'] #__docusaurus > nav > div.navbar-sidebar > div.navbar-sidebar__brand > div > button > svg.lightToggleIcon_node_modules-\@docusaurus-theme-classic-lib-theme-ColorModeToggle-styles-module > path {
+  color: black !important
+}
+
+[data-theme='light'] #__docusaurus > nav > div.navbar-sidebar > div.navbar-sidebar__brand > div > button > svg.darkToggleIcon_node_modules-\@docusaurus-theme-classic-lib-theme-ColorModeToggle-styles-module > path {
+  color: black !important
 }
