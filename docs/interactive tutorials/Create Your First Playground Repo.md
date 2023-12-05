@@ -1,6 +1,4 @@
-
-  
-  # Create Your First Playground Repo
+# Create Your First Playground Repo
 
 On the  page https://www.dev-docs.io/  find the Login button and continue to authenticate with Github. 
 
