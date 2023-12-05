@@ -2,7 +2,7 @@
 
 # What is Interactive Codelabs
 
-Interactive Codelabs is a combonation of a full running coding environment with your choice of runtimes, docker images and documenation paired with step by step interactive documentation, so your users can follow along with your own tailored guides and content as they code.  Think of Interactive Codelabs as our own vision similar to Juypter Notebook that supports all languages, and frameworks paired with Github Codespaces.
+Interactive Codelabs is a combonation of a full running coding environment with your choice of runtimes, docker images paired with step by step interactive documentation, so your users can follow along with your own tailored guides and content as they code.  Think of Interactive Codelabs as our own vision similar to Juypter Notebook that supports all languages, and frameworks paired with Github Codespaces.
 
 # Why Interactive Codelabs
 

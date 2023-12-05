@@ -51,10 +51,12 @@ Now if you don't have a second file in your tutorial, be sure to add one for exa
 
 ![create_a_sequence_tutorial/step_27](/img/create_a_sequence_tutorial/step_27.png)
 
-On the second file,  right click and Open Dev-doc for current file
+On the second file,  right click on "Open Dev-doc for current file"
 
 ![create_a_sequence_tutorial/step_28](/img/create_a_sequence_tutorial/step_28.png)
 
 If done correctly you should see a button at the top that when clicked opens the other codfile and tutorial.  Now feel free to write content in the second page.
 
 ![create_a_sequence_tutorial/step_29](/img/create_a_sequence_tutorial/step_29.png)
+
+Congrats, you just created a sequence tutorial.

@@ -48,12 +48,12 @@ Create a codeblock, either with backticks or using the typing `/` and selecting 
 
 ![add code block](/img/create_your_first_codelab_in_your_playgrounds_repo/addcodeblock.png)
 
-Double click the codeblock and select the language.  What you select decides what base folder is created that tutorial will be a sub folder of.
+Double click the codeblock and select the language.  What you select decides what base folder is created, for example if you select javascript it will be `javascript/your_tutorial_name`.
 
 ![add code block](/img/create_your_first_codelab_in_your_playgrounds_repo/selectlang.png)
 
 
-When the modal opens go to the playgrounds tab and fill out the tutorial name, and the name of the first code file which is usually just the name of the tutorial followed by extension, in this cas `js`.
+When the modal opens go to the playgrounds tab and fill out the tutorial name, and the name of the first code file which is usually just the name of the tutorial followed by the extension, in this case `js`.
 
 Hit Update Snippet.
 
@@ -64,7 +64,7 @@ Now in the terminal check if your tutorial was created by running `git pull orig
 
 ![create_your_first_codelab_in_your_playgrounds_repo/step_15](/img/create_your_first_codelab_in_your_playgrounds_repo/step_15.png)
 
-Now find the new folder and code file created, in the example of this tutorial it was `javascript/test/test.js`.
+Now find the new folder and code file created. In this example the tutorial codefile was `javascript/test/test.js`.
 
 ![create_your_first_codelab_in_your_playgrounds_repo/step_25](/img/create_your_first_codelab_in_your_playgrounds_repo/step_25.png)
 
