@@ -10,8 +10,8 @@ Getting a user to understand the big picture of the project while getting gettin
 
 # How can Interactive Codelabs Help
 
--Step by Step Interactive Guides
--Consistent Development Runtimes and Dependencies for Users
--Live Coding Environment
--Support for Simple Snippets to Full Web applications
--Analytics to help track where your Users are blocker
+- Step by Step Interactive Guides
+- Consistent Development Runtimes and Dependencies for Users
+- Live Coding Environment
+- Support for Simple Snippets to Full Web applications
+- Analytics to help track where your Users are blocker
