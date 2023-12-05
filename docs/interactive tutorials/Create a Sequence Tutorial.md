@@ -1,3 +1,7 @@
+---
+sidebar_position: 3
+---
+
 # Create a Sequence Tutorial
 
 On the page https://www.dev-docs.io/dash find the button with the text "Or go to External Docs" and click it.

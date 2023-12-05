@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 # Create Your First Codelab in Your Playgrounds Repo
 
 Click the Gear Icon to open the Side Drawer
