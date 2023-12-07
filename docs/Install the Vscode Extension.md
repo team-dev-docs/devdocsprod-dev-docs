@@ -1,119 +1,60 @@
 
-  
-  # Install the Vscode Extension
+# Install the Vscode Extension
+
+
+## Step 1
+
+In Your Vscode Editor find the Extensions icon in the left side of the page.
+![](/img/install_the_vscode_extension/step_2.png)
+
 
 ## Step 2
-Find the Extensions icon in the left side of the page.
-![install_the_vscode_extension/step_2](/img/install_the_vscode_extension/step_2.png)
 
-### Step 3
-On the page https://musical-robot-w6jxgpxw54jcgg5j.github.dev/ click the element.
-![install_the_vscode_extension/step_3](/img/install_the_vscode_extension/step_3.png)
+Search Dev-Docs and then click install.
+
+![](/img/install_the_vscode_extension/step_4.png)
+
+## Step 3
+
+Open the command palette with `shift command p` and click/select: dev-docs: Initialize Dev-Docs. This creates a `dev-docs.json` file that you can use to configure Dev-Docs.
+
+![](/img/install_the_vscode_extension/step_5.png)
+
+## Step 3
+
+Now we are going to create our first dev-docs documents but since we aren't use dev-docs cloud yet, we are going to turn on markdown mode. Open the command palette with `shift command p` and search for the the text that says "dev-docs: turn on markdown mode."
+
+![](/img/install_the_vscode_extension/step_7.png)
+
+click on the text "yes".
+
+![](/img/install_the_vscode_extension/step_8.png)
 
 ## Step 4
-On the page https://musical-robot-w6jxgpxw54jcgg5j.github.dev/ click on the dev-docs button.
-![install_the_vscode_extension/step_4](/img/install_the_vscode_extension/step_4.png)
 
-- On the page https://musical-robot-w6jxgpxw54jcgg5j.github.dev/ click on the text that says: dev-docs: Initialize Dev-Docs
-![install_the_vscode_extension/step_5](/img/install_the_vscode_extension/step_5.png)
+Now lets hit `shift command p` and find/click the command <code>open our dev-docs</code>
+![](/img/install_the_vscode_extension/step_9.png)
+## Step 5
+
+The Dev-Docs text editor should open to the general document for your codebase that covers a general overview of the codebase.
+## 
+![](/img/install_the_vscode_extension/step_10.png)
+
+Feel Free to start typing and it will autosave to dev-docs.
+
+![](/img/install_the_vscode_extension/step_11.png)
 
 ## Step 6
-On the page https://musical-robot-w6jxgpxw54jcgg5j.github.dev/, click the Explorer icon in the sidebar.
-![install_the_vscode_extension/step_6](/img/install_the_vscode_extension/step_6.png)
 
-**Step 7:** On the page https://musical-robot-w6jxgpxw54jcgg5j.github.dev/, click on the text that says "dev-docs: turn on markdown mode."
-![install_the_vscode_extension/step_7](/img/install_the_vscode_extension/step_7.png)
+You can also create documentation tied to the specific code files.  Just right click on any codefile and select "open Dev-doc for current file"
 
-## Step 8
-On the page https://musical-robot-w6jxgpxw54jcgg5j.github.dev/, click on the text "yes".
-![install_the_vscode_extension/step_8](/img/install_the_vscode_extension/step_8.png)
+![](/img/install_the_vscode_extension/step_14.png)
 
-**Step 9**
-On the page https://musical-robot-w6jxgpxw54jcgg5j.github.dev/, click on the text that says "Ope".
-![install_the_vscode_extension/step_9](/img/install_the_vscode_extension/step_9.png)
+## Step 7 
 
-### Step 10
+Now any documentation created by de-docs will be saved as markdown in the Dev-Docs folder
 
-**On the page https://musical-robot-w6jxgpxw54jcgg5j.github.dev/, perform the following steps:**
+![](/img/install_the_vscode_extension/step_19.png)
 
-1. Find the DIV with the text: Visual Studio Code
-Editing evolved
-Start
-New File...
-Open File...
-Clone Git Repository...
-Recent
-You have no recent folders,
-open a folder
-to start.
-Recommended
-Walkthroughs
-Get Started with VS Code for the Web
-Discover the best customizations to make VS Code for the Web yours.
-Learn the Fundamentals
-Boost your Productivity
-More...
-Show welcome page on startup
 
-2. Click on the checkbox labeled "Show welcome page on startup".
-![install_the_vscode_extension/step_10](/img/install_the_vscode_extension/step_10.png)
 
-### Step 11
-
-On the page https://musical-robot-w6jxgpxw54jcgg5j.github.dev/, find the section with the text "Start, New File..., Open File..., Clone Git Repository..., Recent, You have no recent folders, open a folder to start." and click on the "New File..." button.
-![install_the_vscode_extension/step_11](/img/install_the_vscode_extension/step_11.png)
-
-### Step 12: On the **Start** page
-
-1. Click **New File...** to open a new untitled text file, notebook, or custom editor.
-2. Click **Open File...** to open a file to start working.
-3. Click **Clone Git Repository...** to clone a remote repository to a local folder.
-![install_the_vscode_extension/step_12](/img/install_the_vscode_extension/step_12.png)
-
-**Step 13:** On the page https://musical-robot-w6jxgpxw54jcgg5j.github.dev/, click on the text **test.js**.
-![install_the_vscode_extension/step_13](/img/install_the_vscode_extension/step_13.png)
-
-## Step 14
-On the page https://musical-robot-w6jxgpxw54jcgg5j.github.dev/, find the text "main()" and click on it.
-![install_the_vscode_extension/step_14](/img/install_the_vscode_extension/step_14.png)
-
-### Step 15
-
-On the page https://musical-robot-w6jxgpxw54jcgg5j.github.dev/, find the text:
-
-```
-import { sprite } from "./index.js";
-const main = async function() {
-    const result = await sprite.generateSprite("a robot samurai cat", {save: true})
-    console.log('this is the finished result', result)
-}
-main()
-```
-
-Then, click on the text.
-![install_the_vscode_extension/step_15](/img/install_the_vscode_extension/step_15.png)
-
-### Step 16
-On the page https://musical-robot-w6jxgpxw54jcgg5j.github.dev/ find the text: import { sprite }  from "./index.js";const main = async function() {    const result = await sprite.generateSprite("a robot samurai cat", {save: true})    console.log('this is the finished result', result)}main() and click on it.
-![install_the_vscode_extension/step_16](/img/install_the_vscode_extension/step_16.png)
-
-**Step 17:** On the page https://musical-robot-w6jxgpxw54jcgg5j.github.dev/, find the collapsible div with the text "dev-docs" and click on it.
-![install_the_vscode_extension/step_17](/img/install_the_vscode_extension/step_17.png)
-
-## Step 18
-On the page https://musical-robot-w6jxgpxw54jcgg5j.github.dev/ click on the text: context-test.js.md
-![install_the_vscode_extension/step_18](/img/install_the_vscode_extension/step_18.png)
-
-### Step 19
-On the page https://musical-robot-w6jxgpxw54jcgg5j.github.dev/ click on the text: Test.js OverviewAny notes on my codefile can go here!
-![install_the_vscode_extension/step_19](/img/install_the_vscode_extension/step_19.png)
-
-## Step 20
-On the page https://musical-robot-w6jxgpxw54jcgg5j.github.dev/ click on the text general.md
-![install_the_vscode_extension/step_20](/img/install_the_vscode_extension/step_20.png)
-
-## Step 21
-On the page https://musical-robot-w6jxgpxw54jcgg5j.github.dev/ find the text "# My First Dev-Doc File!" and click on it.
-![install_the_vscode_extension/step_21](/img/install_the_vscode_extension/step_21.png)
-  
-  
