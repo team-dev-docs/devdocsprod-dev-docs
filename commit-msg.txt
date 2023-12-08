@@ -1,3 +1,2 @@
-Merge pull request #1 from team-dev-docs/2.4.3
+fixes navbar font
 
-2.4.3
