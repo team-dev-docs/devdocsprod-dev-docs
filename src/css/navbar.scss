@@ -3,26 +3,33 @@
   color: white;
   top: 0;
   height: 7.375rem;
-  //   z-index: var(--ifm-z-index-fixed);
-  //   backdrop-filter: blur(25px) saturate(180%);
-  //   -webkit-backdrop-filter: blur(25px) saturate(180%);
-  //   background-color: rgba(17, 25, 40, 0.75);
-  border-bottom: 2px solid rgba(44, 49, 59, 0.5);
-  background: var(--DD-BG, #0e131d);
-  border: 1px solid rgba(255, 255, 255, 0.125);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(14, 19, 29, 0.34);
 }
 
-.navbar--fixed-top {
+[data-theme="light"] .navbar--fixed-top {
   position: sticky;
-  color: white;
+  color: black;
   top: 0;
   height: 7.375rem;
   z-index: var(--ifm-z-index-fixed);
-  backdrop-filter: blur(25px) saturate(180%);
-  -webkit-backdrop-filter: blur(25px) saturate(180%);
-  background-color: white;
-  border: 1px solid rgba(209, 213, 219, 0.3);
+  backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.34);
 }
+
+// .navbar--fixed-top {
+//   position: sticky;
+//   top: 0;
+//   height: 7.375rem;
+//   z-index: var(--ifm-z-index-fixed);
+//   backdrop-filter: blur(16px) saturate(180%);
+//   -webkit-backdrop-filter: blur(16px) saturate(180%);
+//   background-color: white;
+//   border: 1px solid rgba(255, 255, 255, 0.125);
+// }
+
 
 @media (max-width: 767px) {
   .navbar__title {
@@ -36,12 +43,6 @@
   flex-shrink: 0;
 }
 
-#__docusaurus
-  > nav
-  > div.navbar__inner
-  > div.navbar__items.navbar__items--right
-  > div.toggle_node_modules-\@docusaurus-theme-classic-lib-theme-ColorModeToggle-styles-module.colorModeToggle_node_modules-\@docusaurus-theme-classic-lib-theme-Navbar-Content-styles-module
-  > button
-  > svg.lightToggleIcon_node_modules-\@docusaurus-theme-classic-lib-theme-ColorModeToggle-styles-module {
+#__docusaurus>nav>div.navbar__inner>div.navbar__items.navbar__items--right>div.toggle_node_modules-\@docusaurus-theme-classic-lib-theme-ColorModeToggle-styles-module.colorModeToggle_node_modules-\@docusaurus-theme-classic-lib-theme-Navbar-Content-styles-module>button>svg.lightToggleIcon_node_modules-\@docusaurus-theme-classic-lib-theme-ColorModeToggle-styles-module {
   color: black;
 }

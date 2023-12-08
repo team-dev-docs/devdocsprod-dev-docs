@@ -10,6 +10,10 @@
       font-family: Inter;
     }
   }
+
+  row {
+      background-image: radial-gradient(circle at 200% 104%, #e03c3c 3%, #ffffff 71%) !important;
+  }
   
   [data-theme="light"] {
     p,
