@@ -9,7 +9,7 @@ Sure, here are the instructions in markdown format:
 
 ## Step 2
 On the page https://musical-robot-w6jxgpxw54jcgg5j.github.dev/ click the button with the text: Allow
-![sync_your_dev-docs_to_dev-docs_cloud/step_2](/img/sync_your_dev-docs_to_dev-docs_cloud/step_2.png)
+
 
 ### Step 3
 On the page https://musical-robot-w6jxgpxw54jcgg5j.github.dev/ click on the text **devdocsprod**.
