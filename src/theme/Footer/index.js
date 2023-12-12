@@ -8,6 +8,8 @@ import { useColorMode } from '@docusaurus/theme-common';
 import '@fontsource/inter';
 
 
+
+
 export default function FooterWrapper(props) {
   let location = useLocation();
   // Supports weights 100-900
