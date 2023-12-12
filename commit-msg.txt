@@ -1,2 +1,2 @@
-fixes navbar font
+Merge branch 'main' of https://github.com/team-dev-docs/starter-template
 
