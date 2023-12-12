@@ -5,7 +5,7 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 // [item, [[], [], []]]
-const apiConfig =  require('./dev-docs-openapi.js');
+const apiConfig = require('./dev-docs-openapi.js');
 const openApiCongfig = apiConfig.config
 const itemsJson = require("./items.json")
 const footerItems = require("./footerItems.json")
@@ -28,6 +28,10 @@ const config = {
     {
       href: 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css',
     },
+    'src/css/custom.css',
+    {
+      href: 'https://cdn.tailwindcss.com/2.2.19/tailwind.min.css'
+    }
   ],
   title: 'Your Dev-Docs',
   tagline: 'Lets Dev-Doc and Roll',
@@ -42,14 +46,25 @@ const config = {
   organizationName: 'facebook', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
   plugins: ['docusaurus-plugin-sass', "@orama/plugin-docusaurus",
-  [
-    'docusaurus-plugin-openapi-docs',
-    {
-      id: "apiDocs",
-      docsPluginId: "classic",
-      config: openApiCongfig
+    [
+      'docusaurus-plugin-openapi-docs',
+      {
+        id: "apiDocs",
+        docsPluginId: "classic",
+        config: openApiCongfig
+      },
+    ], async function myPlugin(context, options) {
+      return {
+        name: "docusaurus-tailwindcss",
+        configurePostCss(postcssOptions) {
+          // Appends TailwindCSS and AutoPrefixer.
+          postcssOptions.plugins.push(require("tailwindcss"));
+          postcssOptions.plugins.push(require("autoprefixer"));
+          return postcssOptions;
+        },
+      };
     },
-  ]],
+  ],
   themes: ["docusaurus-theme-openapi-docs"],
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
