@@ -1,5 +1,7 @@
 import React from 'react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs"
+import DarkModeInitializer from './DarkModeInitializer';
+
 
 
 
@@ -59,6 +61,7 @@ const CodeSnippets = (props) => {
 
   return (
     <div className="mt-[1em]">
+      <DarkModeInitializer />
       <Tabs defaultValue={triggers.length > 0 ? triggers[0].props.value : ''}>
         <TabsList>
           {triggers}

@@ -73,8 +73,13 @@
   body {
     @apply bg-background text-foreground;
   }
+
 }
 
 body {
   background-color: unset;
 }
+
+
+
+// apply the properties of the dark class to the body
