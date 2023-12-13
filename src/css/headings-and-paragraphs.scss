@@ -80,7 +80,7 @@ h5 { font-size: 13px; font-style: normal; font-weight: 500; line-height: normal;
 
 h6 { font-size: 10px; font-style: normal; font-weight: 500; line-height: normal; letter-spacing: -0.2px; }
 
-$base-margin: 16px;
+$base-margin: 0.5em;
 
 // Helper mixin for vertical margin
 @mixin vertical-margin($size) {
@@ -110,12 +110,12 @@ h5 {
 }
 
 h6 {
-  @include vertical-margin($base-margin * 0.75);
+  @include vertical-margin($base-margin);
 }
 
 // Paragraphs
 p {
-  @include vertical-margin($base-margin * 0.75);
+  @include vertical-margin($base-margin);
 }
 
 // Unordered Lists

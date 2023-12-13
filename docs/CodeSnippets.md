@@ -2,11 +2,17 @@
 title: 'My MDX Document'
 ---
 
-import CodeSnippets from '@site/src/components/CodeSnippets';
+
 
 # My MDX Document
 
 Here are some code snippets:
+
+<InfoBox type="info">
+
+Whats Up
+
+</InfoBox>
 
 <CodeSnippets>
 

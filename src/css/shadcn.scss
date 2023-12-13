@@ -73,13 +73,19 @@
   body {
     @apply bg-background text-foreground;
   }
-
 }
 
 body {
   background-color: unset;
+  color: unset;
 }
 
+// src/css/custom.scss
 
 
-// apply the properties of the dark class to the body
+
+.markdown {
+  li {
+    @apply list-disc list-inside;
+  }
+}

@@ -21,7 +21,7 @@
   font-family: Inter;
   font-size: 14px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   line-height: normal;
   letter-spacing: -0.322px;
 }
@@ -90,3 +90,17 @@
 }
 
 
+.breadcrumbs__link {
+  font-weight: 500;
+}
+
+.breadcrumbs {
+   li:nth-child(1) {
+    display: none !important;
+   }
+}
+
+.breadcrumbs__item--active .breadcrumbs__link {
+  background: $color-1;
+  color: white;
+}
