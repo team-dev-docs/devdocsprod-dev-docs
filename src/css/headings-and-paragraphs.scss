@@ -79,3 +79,61 @@ h4 { font-size: 16px; font-style: normal; font-weight: 500; line-height: normal;
 h5 { font-size: 13px; font-style: normal; font-weight: 500; line-height: normal; letter-spacing: -0.26px; }
 
 h6 { font-size: 10px; font-style: normal; font-weight: 500; line-height: normal; letter-spacing: -0.2px; }
+
+$base-margin: 16px;
+
+// Helper mixin for vertical margin
+@mixin vertical-margin($size) {
+  margin-top: $size;
+  margin-bottom: $size;
+}
+
+// Headings
+h1 {
+  @include vertical-margin($base-margin * 2);
+}
+
+h2 {
+  @include vertical-margin($base-margin * 1.75);
+}
+
+h3 {
+  @include vertical-margin($base-margin * 1.5);
+}
+
+h4 {
+  @include vertical-margin($base-margin * 1.25);
+}
+
+h5 {
+  @include vertical-margin($base-margin);
+}
+
+h6 {
+  @include vertical-margin($base-margin * 0.75);
+}
+
+// Paragraphs
+p {
+  @include vertical-margin($base-margin * 0.75);
+}
+
+// Unordered Lists
+ul {
+  @include vertical-margin($base-margin);
+  // Reset margin for nested lists
+  ul {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+// List Items
+li {
+  margin-bottom: $base-margin * 0.25; // Smaller bottom margin for list items
+}
+
+// Images
+img {
+  @include vertical-margin($base-margin);
+}
