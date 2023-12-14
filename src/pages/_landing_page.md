@@ -31,43 +31,7 @@
 
 --{card}--
 
-++{card style="" class=""}++
 
-# Why Dev-Docs?
-
-++{card class="draggable-grid"}++
-
-++{card style="" class="general-card"}++
-
-# Integrates with your Dev Tools
-
-
-Dev-Docs integrates with your existing development tools, so you can use it with the workflows and processes you already have in place.
-
---{card}--
-
-++{card style="" class="general-card"}++
-
-# Write documentation for internal and public APIs.
-
-Dev-Docs allows helps internal teams create Docs for onboarding engineers as well as public API/SDK docs for other developers.
-
---{card}--
-
-++{card style="" class="general-card"}++
-
-# Markdown First
-
-Anything created using Dev-Docs outputs markdowns, so regardless of whether you are using the UI or direct markdown via Code you are covered.
-
---{card}--
-
-
---{card}--
-
---{card}--
-
---{card}--
 
  ````
  <Parser />
