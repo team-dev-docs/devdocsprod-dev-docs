@@ -5,7 +5,7 @@
   height: 7.375rem;
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
-  background-color: rgba(14, 19, 29, 0.34);
+  background-color: rgb(8 28 69 / 30%);
 }
 
 [data-theme="light"] .navbar--fixed-top {
@@ -17,6 +17,13 @@
   backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
     background-color: rgba(255, 255, 255, 0.34);
+}
+
+.navbar {
+  @media (min-width: 1400px) {
+    padding-left: 12em;
+    padding-right: 12em;
+  }
 }
 
 // .navbar--fixed-top {
@@ -38,9 +45,15 @@
 }
 
 .navbar__logo {
-  width: 5.84588rem;
-  height: 5.6875rem;
+  min-width: 1.84588rem;
+  min-height: 1.6875rem;
+  // max-height: 2rem;
+  // max-width: 2rem;
   flex-shrink: 0;
+  img {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
 }
 
 #__docusaurus>nav>div.navbar__inner>div.navbar__items.navbar__items--right>div.toggle_node_modules-\@docusaurus-theme-classic-lib-theme-ColorModeToggle-styles-module.colorModeToggle_node_modules-\@docusaurus-theme-classic-lib-theme-Navbar-Content-styles-module>button>svg.lightToggleIcon_node_modules-\@docusaurus-theme-classic-lib-theme-ColorModeToggle-styles-module {
