@@ -1,4 +1,6 @@
-
+---
+sidebar_position: 3
+---
   
 # Sync Your Dev-Docs to Dev-Docs Cloud
 

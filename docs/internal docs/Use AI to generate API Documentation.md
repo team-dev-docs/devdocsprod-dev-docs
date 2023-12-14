@@ -1,6 +1,4 @@
-
-  
-  # Use AI to generate API Documentation
+# Use AI to generate API Documentation
 
 ## Step 1: 
 
