@@ -13,7 +13,7 @@ Open the command palette and Type “>sign” into the nav bar at the top and cl
 
 ## Step 2
 In your VsCode Editor select your org from the dropdown.
-![sync_your_dev-docs_to_dev-docs_cloud/step_3](/img/sync_your_dev-docs_to_dev-docs_cloud/step_3.png)
+![create_your_first_codelab_in_your_playgrounds_repo/step_8](/img/create_your_first_codelab_in_your_playgrounds_repo/step_8.png)
 
 ## Step 3
 - In your VsCode Editor click on the text that says: dev-docs: Open Dev-docs

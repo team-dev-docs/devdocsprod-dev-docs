@@ -14,7 +14,7 @@ In your VsCode Editor, click the **Sign In** button.
 ### Step 3: In your VsCode Editor
 
 - Select your org from the dropdown.
-![use_ai_to_generate_api_documentation/step_3](/img/use_ai_to_generate_api_documentation/step_3.png)
+![create_your_first_codelab_in_your_playgrounds_repo/step_8](/img/create_your_first_codelab_in_your_playgrounds_repo/step_8.png)
 
 
 ## Step 4

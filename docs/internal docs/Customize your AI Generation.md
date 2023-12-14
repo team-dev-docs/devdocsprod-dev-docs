@@ -22,7 +22,7 @@ In your VsCode Editor, click on the Dev-Docs button.
 
 From the dropdown select your org
 
-![](/img/customize_your_ai_generation/step_3.png)
+![create_your_first_codelab_in_your_playgrounds_repo/step_8](/img/create_your_first_codelab_in_your_playgrounds_repo/step_8.png)
 
 
 

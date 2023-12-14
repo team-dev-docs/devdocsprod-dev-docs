@@ -18,7 +18,9 @@ In your VsCode Editor find the "Sign In" button and click it.
 ## Step 3
 
 In your VsCode Editor select your org.
-![](/img/generate_documentation_with_ai/step_3.png)
+
+![create_your_first_codelab_in_your_playgrounds_repo/step_8](/img/create_your_first_codelab_in_your_playgrounds_repo/step_8.png)
+
 ## Step 4
 
 Open the command palette and click on the text that says: dev-docs: generate documentation or run <code>shift command d</code>
