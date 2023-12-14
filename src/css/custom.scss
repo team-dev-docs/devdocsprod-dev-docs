@@ -1,5 +1,9 @@
-@import "../../node_modules/@fontsource/inter/index.css";
+// @import "../../node_modules/@fontsource/inter/index.css";
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 @import "./design-preferences.scss";
+@import "./shadcn.scss";
 @import "./root-and-body.scss";
 @import "./headings-and-paragraphs.scss";
 @import "./prose.scss";

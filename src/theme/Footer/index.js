@@ -5,11 +5,15 @@ import ChatBox from '@site/src/components/DocChat';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { useColorMode } from '@docusaurus/theme-common';
+import GlobalDarkModeHandler from '@site/src/components/GlobalDarkModeHandler';
+import '@fontsource/inter';
+
 
 
 
 export default function FooterWrapper(props) {
   let location = useLocation();
+  // Supports weights 100-900
 
 
   useEffect(() => {
@@ -48,6 +52,7 @@ export default function FooterWrapper(props) {
   return (
     <>
       <ChatBox messages={[]} />
+      <GlobalDarkModeHandler />
       <Footer {...props} />
     </>
   );

@@ -1,6 +1,3 @@
-lol {
-    color: red
-}
-
-/* make the background color of the body white */
-
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';

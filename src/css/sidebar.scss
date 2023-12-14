@@ -17,11 +17,11 @@
   letter-spacing: -0.322px;
 }
 
-menu__link {
+.menu__link {
   font-family: Inter;
   font-size: 14px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   line-height: normal;
   letter-spacing: -0.322px;
 }
@@ -61,6 +61,10 @@ menu__link {
   color: black !important
 }
 
+.theme-doc-sidebar-container {
+  border: none !important;
+}
+
 .tocCollapsible_node_modules-\@docusaurus-theme-classic-lib-theme-TOCCollapsible-styles-module.theme-doc-toc-mobile.tocMobile_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem-TOC-Mobile-styles-module {
  .clean-btn {
   padding-left: 2rem;
@@ -86,3 +90,17 @@ menu__link {
 }
 
 
+.breadcrumbs__link {
+  font-weight: 500;
+}
+
+.breadcrumbs {
+   li:nth-child(1) {
+    display: none !important;
+   }
+}
+
+.breadcrumbs__item--active .breadcrumbs__link {
+  background: $color-1;
+  color: white;
+}

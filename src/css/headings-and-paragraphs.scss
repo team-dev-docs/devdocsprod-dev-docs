@@ -10,6 +10,10 @@
       font-family: Inter;
     }
   }
+
+  row {
+      background-image: radial-gradient(circle at 200% 104%, #e03c3c 3%, #ffffff 71%) !important;
+  }
   
   [data-theme="light"] {
     p,
@@ -50,4 +54,86 @@
 
   .main-heading {
   font-size: 100px;
+}
+
+h1 {
+  font-size: 32.25px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: -0.645px;
+}
+
+h2 {
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.5px;
+}
+
+h3 { font-size: 20px; font-style: normal; font-weight: 600; line-height: normal; letter-spacing: -0.4px; } 
+
+h4 { font-size: 16px; font-style: normal; font-weight: 500; line-height: normal; letter-spacing: -0.32px; }
+
+h5 { font-size: 13px; font-style: normal; font-weight: 500; line-height: normal; letter-spacing: -0.26px; }
+
+h6 { font-size: 10px; font-style: normal; font-weight: 500; line-height: normal; letter-spacing: -0.2px; }
+
+$base-margin: 0.5em;
+
+// Helper mixin for vertical margin
+@mixin vertical-margin($size) {
+  margin-top: $size;
+  margin-bottom: $size;
+}
+
+// Headings
+h1 {
+  @include vertical-margin($base-margin * 2);
+}
+
+h2 {
+  @include vertical-margin($base-margin * 1.75);
+}
+
+h3 {
+  @include vertical-margin($base-margin * 1.5);
+}
+
+h4 {
+  @include vertical-margin($base-margin * 1.25);
+}
+
+h5 {
+  @include vertical-margin($base-margin);
+}
+
+h6 {
+  @include vertical-margin($base-margin);
+}
+
+// Paragraphs
+p {
+  @include vertical-margin($base-margin);
+}
+
+// Unordered Lists
+ul {
+  @include vertical-margin($base-margin);
+  // Reset margin for nested lists
+  ul {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+// List Items
+li {
+  margin-bottom: $base-margin * 0.25; // Smaller bottom margin for list items
+}
+
+// Images
+img {
+  @include vertical-margin($base-margin);
 }

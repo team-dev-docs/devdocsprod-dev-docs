@@ -20,7 +20,7 @@ export default function Home(): JSX.Element {
     <Layout
       title={`Hello from ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
-      <main className="landing">
+      <main className="landing text-center mt-6">
         <Landing />
         <Parser />
       </main>
