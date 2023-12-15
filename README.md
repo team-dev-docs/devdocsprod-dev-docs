@@ -1,6 +1,6 @@
 # Welcome to your Dev-Docs Repo
 
-To run the project in codespaces just use
+This Repo is the Starter Template and it was made by AVB
 
 ```
 npm run start -- --host 0.0.0.0
