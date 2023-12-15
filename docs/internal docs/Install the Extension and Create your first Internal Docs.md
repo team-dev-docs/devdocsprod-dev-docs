@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Install the Extension and Create your first Internal Docs.md
+# Install the Extension and Create your first Internal Docs
 
 
 ## Step 1: Go to VsCode Extensions
