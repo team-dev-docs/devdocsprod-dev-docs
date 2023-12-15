@@ -1,3 +1,9 @@
 .tocCollapsibleButton_node_modules-\@docusaurus-theme-classic-lib-theme-TOCCollapsible-CollapseButton-styles-module::after {
     background: none !important;
 }
+
+.theme-doc-toc-mobile {
+    .tocCollapsibleButton_TO0P:after {
+        background: none !important;
+    }
+}
