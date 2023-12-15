@@ -70,6 +70,21 @@
   width: 20.3125rem !important;
 }
 
+@media (max-width: 600px) {
+  .navbar .aa-DetachedSearchButton {
+    border: none !important;
+    height: 2.5rem !important;
+    width: 2.5rem !important;
+    .aa-DetachedSearchButtonPlaceholder {
+      display: none;
+    }
+
+    kbd {
+      display: none;
+    }
+  }
+}
+
 .aa-FooterSearchCredit {
   display: none !important;
 }
