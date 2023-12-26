@@ -38,6 +38,23 @@ export default function FooterWrapper(props) {
     tocLinks.forEach(link => {
       link.addEventListener('click', handleClick);
     });
+
+    let footerTitles = document.querySelectorAll('div.footer__title');
+
+    footerTitles.forEach((footerTitle) => {
+      if (footerTitle.textContent.trim() === 'Social') {
+        // Find any list items in the next adjacent element that is likely to be a list container
+        let listContainer = footerTitle.nextElementSibling; // Adjust this line if the structure is different
+        let listItems = listContainer.querySelectorAll('li');
+  
+        listItems.forEach((item) => {
+          // Convert the item's text content into a valid class name
+          let className = item.textContent.trim().toLowerCase().replace(/\s+/g, '-');
+          // Ensure the class 'social' is added along with the specific social media class
+          item.classList.add('social', className);
+        });
+      }
+    });
   
     // Cleanup function to remove event listener when the component unmounts
     
