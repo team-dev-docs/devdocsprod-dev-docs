@@ -3,8 +3,8 @@
         {
             "items": [
                 {
-                    "label": "Instagram",
-                    "href": "https://www.instagram.com",
+                    "label": "Gitub",
+                    "href": "https://github.com/team-dev-docs",
                     "position": "left",
                     "prependBaseUrlToHref": false
                 },
