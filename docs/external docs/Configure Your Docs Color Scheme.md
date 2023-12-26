@@ -1,34 +1,40 @@
 
-  
-  # Configure Your Docs Color Scheme
+# Configure Your Docs Color Scheme
 
-## Step 1: On the page https://www.dev-docs.io/dash, click on the Theme link in the navigation bar.
-![configure_your_docs_color_scheme/step_1](/img/configure_your_docs_color_scheme/step_1.png)
+## Step 1: 
 
-**Step 2: On the page https://www.dev-docs.io/theme**
+## On the left side of the Dev-Docs Dashboard, click on the Theme link in the navigation bar.
 
-- Click on the **Color Palette** tab.
-![configure_your_docs_color_scheme/step_2](/img/configure_your_docs_color_scheme/step_2.png)
+![](/img/configure_your_docs_color_scheme/step_1.png)
 
-### Step 3: On the page https://www.dev-docs.io/theme
-1. Find the color picker.
-2. Click on the color picker icon.
-![configure_your_docs_color_scheme/step_3](/img/configure_your_docs_color_scheme/step_3.png)
+## **Step 2:**
 
-### Step 4 On page https://www.dev-docs.io/theme
+Click on the **Color Palette** tab.
 
-- Click the blue background DIV.
-![configure_your_docs_color_scheme/step_4](/img/configure_your_docs_color_scheme/step_4.png)
+![](/img/configure_your_docs_color_scheme/step_2.png)
 
-## Step 5
-On the page https://www.dev-docs.io/theme, click the OK button.
-![configure_your_docs_color_scheme/step_5](/img/configure_your_docs_color_scheme/step_5.png)
+## Step 3: 
 
-## Step 6: On the page https://www.dev-docs.io/theme, click the "Submit" button.
-![configure_your_docs_color_scheme/step_6](/img/configure_your_docs_color_scheme/step_6.png)
+Find the color picker and select your preferred color of choice.
+
+![](/img/configure_your_docs_color_scheme/step_3.png)
+
+![](/img/configure_your_docs_color_scheme/step_4.png)
+
+## Step 4
+
+When done click the OK button.
+![](/img/configure_your_docs_color_scheme/step_5.png)
+
+## Step 6: 
+
+Click the "Submit" button to see your generated color palette.
+
+![](/img/configure_your_docs_color_scheme/step_6.png)
 
 ## Step 7
-On the page https://www.dev-docs.io/theme find the button with the text "Submit Palette" and click it.
-![configure_your_docs_color_scheme/step_7](/img/configure_your_docs_color_scheme/step_7.png)
-  
-  
+
+Then push the change to your docs repo by finding the button with the text "Submit Palette" and click it.
+![](/img/configure_your_docs_color_scheme/step_7.png)
+
+
