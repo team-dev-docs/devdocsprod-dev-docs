@@ -3,7 +3,7 @@
         {
             "items": [
                 {
-                    "label": "Gitub",
+                    "label": "Github",
                     "href": "https://github.com/team-dev-docs",
                     "position": "left",
                     "prependBaseUrlToHref": false
