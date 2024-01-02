@@ -51,23 +51,6 @@
                 }
             ],
             "title": "More"
-        },
-        {
-            "items": [
-                {
-                    "label": "Instagram",
-                    "href": "https://www.instagram.com",
-                    "position": "left",
-                    "prependBaseUrlToHref": false
-                },
-                {
-                    "label": "Linkedin",
-                    "href": "https://www.linkedin.com/company/dev-docs",
-                    "prependBaseUrlToHref": false,
-                    "position": "left"
-                }
-            ],
-            "title": "Social"
         }
     ]
 }

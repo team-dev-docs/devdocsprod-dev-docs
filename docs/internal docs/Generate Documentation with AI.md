@@ -2,11 +2,23 @@
 sidebar_position: 4
 ---
 
+
+
+
+
+
+
+
+
+
+
 # Generate Documentation with AI
 
 ## Step 1
 
 In your VsCode Editor, click on the Dev-Docs button
+
+![](/img/dev-docs-assets/dev-docs-VHVlLCAyNiBEZWMgMjAyMyAyMzo1NzozNSBHTVQ=.png)
 
 ![](/img/generate_documentation_with_ai/step_1.png)
 
@@ -19,7 +31,7 @@ In your VsCode Editor find the "Sign In" button and click it.
 
 In your VsCode Editor select your org.
 
-![create_your_first_codelab_in_your_playgrounds_repo/step_8](/img/create_your_first_codelab_in_your_playgrounds_repo/step_8.png)
+![](/img/create_your_first_codelab_in_your_playgrounds_repo/step_8.png)
 
 ## Step 4
 
