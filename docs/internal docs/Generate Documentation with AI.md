@@ -4,29 +4,30 @@ sidebar_position: 4
 
 # Generate Documentation with AI
 
-## Step 1
 
-In your VsCode Editor, click on the Dev-Docs button
+## Step 1: Sign into Dev-Docs in VS Code
 
-![](/img/generate_documentation_with_ai/step_1.png)
+In your VS Code Editor, click on the Dev-Docs button.
 
-## Step 2
+![](/img/customize_your_ai_generation/step_1.png)
 
-In your VsCode Editor find the "Sign In" button and click it.
-![](/img/generate_documentation_with_ai/step_2.png)
 
-## Step 3
+Click on the "Sign In" button.
 
-In your VsCode Editor select your org.
+![](/img/customize_your_ai_generation/step_2.png)
+
+## Step 2: Select Your Org
+
+From the dropdown select your org
 
 ![create_your_first_codelab_in_your_playgrounds_repo/step_8](/img/create_your_first_codelab_in_your_playgrounds_repo/step_8.png)
 
-## Step 4
+## Step 3: Run the AI on Code File of Choice
 
-Open the command palette and click on the text that says: dev-docs: generate documentation or run <code>shift command d</code>
+Select the file you wish to be documented. From there, open the command palette, search and select dev-docs: generate documentation or run <code>shift command d</code>
 ![](/img/generate_documentation_with_ai/step_5.png)
 
-## Step 5
+## Step 4: Review the AI Generated Documentation
 
 Wait a couple minutes and find the corresponding Dev-Docs markdown file to check if documentation was generated.
 
