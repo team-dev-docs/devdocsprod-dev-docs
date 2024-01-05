@@ -5,7 +5,7 @@ sidebar_position: 2
 # Install the Extension and Create your first Internal Docs
 
 
-## Step 1: Go to VsCode Extensions
+## Step 1: Go to VS Code Extensions
 
 In Your Vscode Editor find the Extensions icon in the left side of the page.
 ![](/img/install_the_vscode_extension/step_2.png)
@@ -49,13 +49,13 @@ Feel Free to start typing and it will autosave to dev-docs.
 
 ## Step 6: Edit Your First Document Tied to Code
 
-You can also create documentation tied to the specific code files.  Just right click on any codefile and select "open Dev-doc for current file"
+You can also create documentation tied to any specific code files. To do this, right click on any codefile and select "open Dev-doc for current file"
 
 ![](/img/install_the_vscode_extension/step_14.png)
 
 ## Step 7: Done
 
-Now any documentation created by de-docs will be saved as markdown in the Dev-Docs folder
+Now any documentation created by Dev-Docs will be saved as markdown in the Dev-Docs folder
 
 ![](/img/install_the_vscode_extension/step_19.png)
 

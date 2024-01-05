@@ -7,7 +7,7 @@ sidebar_position: 2
 
 ## Step 1: Login For the First Time
 
-Go to Dev-Docs https://www.dev-docs.io/, click the "Login with Github" button.  This will create an account for you if you do not have one yet.
+Go to [dev-docs.io](https://dev-docs.io), click the "Login with Github" button.  This will create an account for you if you do not have one yet.
 
 ![create_an_account_and_org/step_1](/img/create_an_account_and_org/step_1.png)
 

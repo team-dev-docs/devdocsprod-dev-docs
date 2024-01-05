@@ -2,16 +2,16 @@
 sidebar_position: 3
 ---
 
-# Install the Vscode Extension
+# Install Dev-Docs VS Code Extension
 
 
-## Step 1: Go to VsCode Extensions
+## Step 1: Go to VS Code Extensions
 
 In Your Vscode Editor find the Extensions icon in the left side of the page.
 ![](/img/install_the_vscode_extension/step_2.png)
 
 
-## Step 2: Install the Extension
+## Step 2: Install the Dev-Docs Extension
 
 Search Dev-Docs and then click install.
 

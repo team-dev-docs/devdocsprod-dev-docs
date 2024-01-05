@@ -1,3 +1,10 @@
 {
-    "external": true
+  "external": true,
+  "ai": {
+    "contextDirs": [
+      "docs"
+    ],
+    "auditTasks": ["Find any Markdown Headings that start with the word Step that lack descriptions"],
+    "mappings": []
+  }
 }

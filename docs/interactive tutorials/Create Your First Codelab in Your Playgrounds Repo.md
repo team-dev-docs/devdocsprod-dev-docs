@@ -4,31 +4,31 @@ sidebar_position: 2
 
 # Create Your First Codelab in Your Playgrounds Repo
 
-Click the Gear Icon to open the Side Drawer
+When logged into [dev-docs.io](https://dev-docs.io) click the gear icon on the right side of the page to open the Side Drawer. 
 
 ![create_your_first_codelab_in_your_playgrounds_repo/step_1](/img/create_your_first_codelab_in_your_playgrounds_repo/step_1.png)
 
-Click Live Playground Examples 
+Click Live Playground Examples.
 
 ![create_your_first_codelab_in_your_playgrounds_repo/step_2](/img/create_your_first_codelab_in_your_playgrounds_repo/step_2.png)
 
-Find the link with the text Codespace Url  and click on it
+Find the link with the text Codespace Url and click on it.
 
 ![create_your_first_codelab_in_your_playgrounds_repo/step_3](/img/create_your_first_codelab_in_your_playgrounds_repo/step_3.png)
 
-We are going to edit our playground in a Github Codespace(but you can do it locally as well).
+We are going to edit our playground in a Github Codespace (but you can do it locally as well).
 
-Click the **Create codespace** button. 
+Click the **Create codespace** button. This will initialize your Github Codespace, which takes about one minute to complete. 
 
 When the tutorial Dialog, comes up Click the **Cancel** button since we are creating a tutorial not running one.
 
 ![create_your_first_codelab_in_your_playgrounds_repo/step_6](/img/create_your_first_codelab_in_your_playgrounds_repo/step_6.png)
 
-With Shift Command P open the Command Palette and find the Dev-Docs Command called **Sign in With Dev-Docs** 
+With Shift Command P open the Command Palette and find the Dev-Docs Command called **Sign in With Dev-Docs**.
 
 ![create_your_first_codelab_in_your_playgrounds_repo/step_7](/img/create_your_first_codelab_in_your_playgrounds_repo/step_7.png)
 
-Select your Org
+Select your Org.
 
 ![create_your_first_codelab_in_your_playgrounds_repo/step_8](/img/create_your_first_codelab_in_your_playgrounds_repo/step_8.png)
 
@@ -36,11 +36,11 @@ Click the Dev-Docs button.
 
 ![create_your_first_codelab_in_your_playgrounds_repo/step_10](/img/create_your_first_codelab_in_your_playgrounds_repo/step_10.png)
 
-Click the  "Open Dev-Docs" button 
+Click the "Open Dev-Docs" button.
 
 ![create_your_first_codelab_in_your_playgrounds_repo/step_11](/img/create_your_first_codelab_in_your_playgrounds_repo/step_11.png)
 
-When Dev-Docs Opens hit the pencil
+When Dev-Docs notion type editor open, click hit the pencil icon on the right hand side.
 
 ![create_your_first_codelab_in_your_playgrounds_repo/step_12](/img/create_your_first_codelab_in_your_playgrounds_repo/step_12.png)
 
@@ -55,24 +55,24 @@ Double click the codeblock and select the language.  What you select decides wha
 
 When the modal opens go to the playgrounds tab and fill out the tutorial name, and the name of the first code file which is usually just the name of the tutorial followed by the extension, in this case `js`.
 
-Hit Update Snippet.
+Select Update Snippet.
 
 ![add code block](/img/create_your_first_codelab_in_your_playgrounds_repo/modal.png)
 
 
-Now in the terminal check if your tutorial was created by running `git pull origin main`
+Now in the terminal check if your tutorial was created by running `git pull origin main`.
 
 ![create_your_first_codelab_in_your_playgrounds_repo/step_15](/img/create_your_first_codelab_in_your_playgrounds_repo/step_15.png)
 
-Now find the new folder and code file created. In this example the tutorial codefile was `javascript/test/test.js`.
+Find the new folder and code file created. In this example the tutorial codefile was `javascript/test/test.js`.
 
 ![create_your_first_codelab_in_your_playgrounds_repo/step_25](/img/create_your_first_codelab_in_your_playgrounds_repo/step_25.png)
 
-Now right click on the the file and select `Open Dev-Doc for current file`
+Now right click on the the file and select `Open Dev-Doc for current file`.
 
 ![create_your_first_codelab_in_your_playgrounds_repo/step_26](/img/create_your_first_codelab_in_your_playgrounds_repo/step_26.png)
 
-Then start typing your content
+Then start typing your content.
 
 ![create_your_first_codelab_in_your_playgrounds_repo/step_27](/img/create_your_first_codelab_in_your_playgrounds_repo/step_27.png)
 
@@ -80,5 +80,5 @@ Congrats you just wrote your first tutorial.
 
 ![create_your_first_codelab_in_your_playgrounds_repo/step_28](/img/create_your_first_codelab_in_your_playgrounds_repo/step_28.png)
   
-Do not forget to commit your progress
+Do not forget to commit your progress.
   

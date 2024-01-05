@@ -4,18 +4,14 @@ title: "Welcome"
 sidebar_position: 1
 ---
 
-
 # Getting Started
 
-Welcome to the Dev-Docs, a tool to help developers create documentation.  Now Dev-Docs has two main usecases
+Welcome to Dev-Docs, a tool to help developers more efficiently generate and maintain technical documentation. Dev-Docs has two main use cases:
 
-## Usecases:
+## External Documentation (Public Facing)
 
-## External Public facing Documentation
+External docs are meant for users, customers, developers, partners, or anyone that would use your APIs, SDKs, or applications. These docs help with developer experience and can also act as self-service implementation and support guides.
 
-This is documentation meant for users, partners, or anyone that would use your APIs, SDKs, or  applications.
+## Internal Documentation
 
-## Internal facing Documentation
-
-This is documentation meant for other folks in software engineering org, or other folks that actually contribute to your codebase.  This type of documentation can even be helpful to you if you forget what your code does as well.
-
+Internal docs are meant for internal software engineering orgs, or anyone who contributes to your codebase. These docs helps organizations share knowledge, maintain consistency, collaborate, and onboard new team members. This type of documentation can also be helpful in reminding developers why certain decisions were made and how the code base works.

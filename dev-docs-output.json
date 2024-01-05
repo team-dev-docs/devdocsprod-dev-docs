@@ -1,0 +1,25 @@
+{
+  "issues": [
+    {
+      "file": "/Users/andrewvanbeek/dev-docs-work/clients/us/devdocsprod-dev-docs/docs/.DS_Store",
+      "suggestions": {
+        "content": " Certainly! I'll thoroughly review the provided Markdown content and identify any potential issues based on the criteria you've specified. Here's my analysis:\n\n**Grammar or Spelling Errors:**\n\n- \"pertain the below\" should be \"pertaining to the below\" to maintain proper grammar.\n\n**Paragraphs, Sentences, that do not make sense:**\n\n- The sentence \"Paragraphs, Sentences, that do not make sense\" is grammatically incorrect and should be rephrased.\n\n**Any content that is not helpful:**\n\n- There doesn't seem to be any content that is not helpful or irrelevant to the topic.\n\n**Anything that could be improved to be Aestically pleasing:**\n\n- Consider adding appropriate headings and subheadings to break up the content and make it more visually appealing.\n\n**Codeblocks that will not work:**\n\n- I cannot detect any codeblocks within the provided text.\n\n**Explanations and Suggestions:**\n\n- For the grammar error, change \"pertain the below\" to \"pertaining to the below.\"\n- For the sentence that doesn't make sense, it's unclear what you're trying to convey. Please revise it to make it clear and concise.\n- For improving the aesthetics, you can add headings like \"Grammar and Spelling,\" \"Paragraphs and Sentences,\" \"Helpful Content,\" \"Aesthetics,\" and \"Codeblocks\" to organize the feedback.\n- If there are any codeblocks, please include them in your next message, and I'll check their functionality.\n\nIf you have any additional questions or need further assistance, feel free to ask!",
+        "author": "bot"
+      }
+    },
+    {
+      "file": "/Users/andrewvanbeek/dev-docs-work/clients/us/devdocsprod-dev-docs/docs/CodeSnippets.md",
+      "suggestions": {
+        "author": "bot",
+        "content": " **Grammar or Spelling errors:**\n\n- \"Whats Up\" in the InfoBox should be \"What's Up\"\n\n**Paragraphs, Sentences, that do not make sense:**\n\n- NA\n\n**Any content that is not helpful:**\n\n- NA\n\n**Anything that could be improved to be Aestically pleasing:**\n\n- The markdown could be improved by adding more whitespace between the title and the first paragraph, and by using a more consistent font and font size throughout the document.\n\n**Codeblocks that will not work:**\n\n- The JavaScript codeblock is missing a semicolon at the end of the first line.\n\n**Overall:**\n\nThe markdown is generally well-written and easy to understand, but there are a few minor errors that could be corrected."
+      }
+    },
+    {
+      "file": "/Users/andrewvanbeek/dev-docs-work/clients/us/devdocsprod-dev-docs/docs/Welcome to Dev-Docs.md",
+      "suggestions": {
+        "author": "bot",
+        "content": " **Grammar or Spelling errors.**\n\n- \"Welcome to the Dev-Docs, a tool to help developers create documentation.\"\n\n  - This sentence is too long and could be broken up into two sentences:\n    - \"Welcome to the Dev-Docs.\"\n    - \"This tool helps developers create documentation.\"\n\n- \"Now Dev-Docs has two main usecases\"\n\n  - The word \"usecases\" is misspelled. It should be \"use cases\".\n\n**Paragraphs, Sentences, that do not make sense**\n\n- \"This is documentation meant for users, partners, or anyone that would use your APIs, SDKs, or  applications.\"\n\n  - This sentence is unclear. What does it mean by \"anyone that would use your APIs, SDKs, or applications\"?\n\n- \"This is documentation meant for other folks in software engineering org, or other folks that actually contribute to your codebase.\"\n\n  - This sentence is also unclear. What does it mean by \"other folks in software engineering org\"?\n\n**Any content that is not helpful**\n\n- The section \"Getting Started\" does not provide any information on how to get started using Dev-Docs.\n\n**Anything that could be improved to be Aestically pleasing**\n\n- The markdown could be formatted to make it more readable. For example, the headings could be bolded and the text could be left-aligned.\n\n**Codeblocks that will not work**\n\n- There are no codeblocks in the markdown.\n\n**Overall**\n\nThe markdown could be improved by fixing the grammar and spelling errors, clarifying the unclear sentences, adding more helpful content, and formatting the markdown to make it more readable."
+      }
+    }
+  ]
+}

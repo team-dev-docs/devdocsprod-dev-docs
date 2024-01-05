@@ -2,11 +2,11 @@
 
 ## Tutorial
 
-This is just how we tell dev-docs how this is a tutorial.  Just set it to true!
+This is how we tell Dev-Docs that this is a tutorial.  Just set it to true!
 
 ## Tutorial Order
 
-This an Object with folders of of your tutorials, so you change different files and tutorials strung together so someone could create a tutorial step by step.
+This an Object with folders of of your tutorials. You can change different files and tutorials strung together in order to create a step by step tutorial.
 
 ```json
 
