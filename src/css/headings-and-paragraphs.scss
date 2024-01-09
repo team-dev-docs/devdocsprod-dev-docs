@@ -1,58 +1,66 @@
 [data-theme="dark"] {
-    p,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      color: white !important;
-      font-family: Inter;
-    }
-  }
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: white !important;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell,
+      "Noto Sans", sans-serif, "system-ui", "Segoe UI", Helvetica, Arial,
+      sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
 
-  row {
-      background-image: radial-gradient(circle at 200% 104%, #e03c3c 3%, #ffffff 71%) !important;
+    // font-family: Inter;
   }
-  
-  [data-theme="light"] {
-    p,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      color: black !important;
-    }
-  }
-  
-  h1 {
-    font-size: 32.25px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
-    letter-spacing: -0.645px;
-  }
-  
-  h2 {
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: -0.5px;
-  }
-  
-  p {
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 21.4px; /* 133.75% */
-    letter-spacing: -0.08px;
-  }
+}
 
-  .main-heading {
+row {
+  background-image: radial-gradient(
+    circle at 200% 104%,
+    #e03c3c 3%,
+    #ffffff 71%
+  ) !important;
+}
+
+[data-theme="light"] {
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: black !important;
+  }
+}
+
+h1 {
+  font-size: 32.25px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: -0.645px;
+}
+
+h2 {
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.5px;
+}
+
+p {
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21.4px; /* 133.75% */
+  letter-spacing: -0.08px;
+}
+
+.main-heading {
   font-size: 100px;
 }
 
@@ -72,13 +80,37 @@ h2 {
   letter-spacing: -0.5px;
 }
 
-h3 { font-size: 20px; font-style: normal; font-weight: 600; line-height: normal; letter-spacing: -0.4px; } 
+h3 {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.4px;
+}
 
-h4 { font-size: 16px; font-style: normal; font-weight: 500; line-height: normal; letter-spacing: -0.32px; }
+h4 {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.32px;
+}
 
-h5 { font-size: 13px; font-style: normal; font-weight: 500; line-height: normal; letter-spacing: -0.26px; }
+h5 {
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.26px;
+}
 
-h6 { font-size: 10px; font-style: normal; font-weight: 500; line-height: normal; letter-spacing: -0.2px; }
+h6 {
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.2px;
+}
 
 $base-margin: 0.5em;
 
