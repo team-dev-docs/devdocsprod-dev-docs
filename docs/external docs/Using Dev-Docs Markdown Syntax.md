@@ -13,11 +13,7 @@ If you want to use extra Dev-Docs functionality but write your documentation in 
 
 Just go to add any MD file to your <code>docs</code> folder and use the VS Code command: <code>Use Dev Docs Syntax</code>. It create the simple shorthand to write your markdown. From there you should be good to go.
 
-If you want to dive deeper checkout:
-
-[Dev-Docs Components](https://test.com)
-[Dev-Docs Styling](https://test.com)
-
+If you want to dive deeper, stay tuned - more coming soon!
 
  ````
  <Parser />
