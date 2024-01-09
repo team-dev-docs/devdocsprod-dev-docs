@@ -1,28 +1,24 @@
 # Use AI to generate API Documentation
 
-## Step 1: 
+## Step 1: Sign in
 
-In your VsCode Editor, click on the Dev-Docs button.**
-![use_ai_to_generate_api_documentation/step_1](/img/use_ai_to_generate_api_documentation/step_1.png)
+In your VsCode Editor, click on the Dev-Docs Icon on the left sidebar.
+![](/img/use_ai_to_generate_api_documentation/step_1.png)
+Find and click the **Sign In** button.
 
-### Step 2
-In your VsCode Editor, click the **Sign In** button.
-![use_ai_to_generate_api_documentation/step_2](/img/use_ai_to_generate_api_documentation/step_2.png)
+![](/img/use_ai_to_generate_api_documentation/step_2.png)
 
-### Step 3: In your VsCode Editor
+### In your VsCode Editor
 
 - Select your org from the dropdown.
-![create_your_first_codelab_in_your_playgrounds_repo/step_8](/img/create_your_first_codelab_in_your_playgrounds_repo/step_8.png)
+
+![](/img/create_your_first_codelab_in_your_playgrounds_repo/step_8.png)
 
 
-## Step 4
-Find or create Your `dev-docs.json`, it should be at the root of your VsCode workspace.
-![use_ai_to_generate_api_documentation/step_9](/img/use_ai_to_generate_api_documentation/step_9.png)
+## Step 2: Edit Your Dev-Docs.json
 
-
-## Step 5
-
-Add edit this JSON to add the `ai` object with the `API` key set to true.  Look at this code for reference
+Find or create Your `dev-docs.json`, it should be at the root of your VsCode workspace.  Here we are going to add AI functionality
+by editing this JSON to add the `ai` object with the `API` key set to true. Look at this code for reference
 
 ```json
 
@@ -35,30 +31,22 @@ Add edit this JSON to add the `ai` object with the `API` key set to true.  Look 
 
 ```
 
-## Step 6
+## Step 3: Generate the API Config
 
-In your VsCode Editor, find a code file with visbible API Routes.
+In your VsCode Editor, find a code file with visible API Routes.  Then run <code>shift command a</code>
 
-![use_ai_to_generate_api_documentation/step_12](/img/use_ai_to_generate_api_documentation/step_12.png)
+![](/img/use_ai_to_generate_api_documentation/step_13.png)
 
-## Step 6
-
-In your VsCode Editor, find the text "from django.http import HttpResponse" and click on it.
-![use_ai_to_generate_api_documentation/step_13](/img/use_ai_to_generate_api_documentation/step_13.png)
-
-## Step 7
-
-- In your VsCode Editor, find the text "dev-docs.json" and click on it.  And hit `shift command a` to generate API Documentation
-![use_ai_to_generate_api_documentation/step_15](/img/use_ai_to_generate_api_documentation/step_15.png)
+## Step 4:  Check the Config
 
 After a couple of minutes you should see two files create `dev-docs-collection.json` and the `dev-docs-openapi-collection.yaml`.
 
-
 **Post Collection**
-![use_ai_to_generate_api_documentation/step_20](/img/use_ai_to_generate_api_documentation/step_20.png)
+
+![](/img/use_ai_to_generate_api_documentation/step_20.png)
 
 
 **Openapi Yaml**
-![use_ai_to_generate_api_documentation/step_22](/img/use_ai_to_generate_api_documentation/step_22.png)
-  
-  
+![](/img/use_ai_to_generate_api_documentation/step_22.png)
+
+

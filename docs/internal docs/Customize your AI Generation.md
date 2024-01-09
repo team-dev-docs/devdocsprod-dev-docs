@@ -5,6 +5,7 @@ sidebar_position: 5
 
 
 
+
 # Customize your AI Generation
 
 ## Step 1: Sign into Dev-Docs in VS Code
@@ -22,7 +23,7 @@ Click on the "Sign In" button.
 
 From the dropdown select your org
 
-![create_your_first_codelab_in_your_playgrounds_repo/step_8](/img/create_your_first_codelab_in_your_playgrounds_repo/step_8.png)
+![](/img/create_your_first_codelab_in_your_playgrounds_repo/step_8.png)
 
 
 ## Step 3: `dev-docs.json`
@@ -32,7 +33,7 @@ Find your `dev-docs.json` file.
 
 ## Step 4: Customize the JSON
 
-Now we are going to make dev-docs JSON look similar to the one in the step above.  The goal is have the AI answer custom questions and prompts on our code.  Replace your JSON with JSON below:
+Now we are going to make  the dev-docs JSON look similar to the one in the step above. The goal is to have the AI answer custom questions and prompts on our code. Replace your JSON with JSON below:
 
 ```json
 
@@ -59,9 +60,7 @@ Now we are going to make dev-docs JSON look similar to the one in the step above
     }
 }
 
-You can then customize the questions you want the AI To answer from your code by adusting the questions int he JSON or adding new ones to the JSON. The title can be thought of as a header within your documentation.
 ```
-
 
 ## Step 5: Run the AI on Code File of Choice
 
