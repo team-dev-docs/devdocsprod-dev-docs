@@ -5,7 +5,7 @@ title: "Different Ways to Create Docs"
 ````markdown 
 ## Using the VS Code Extension Editor
 
-This a full rich text editor built into VS Code using the Dev-Docs VS Code extension. It is very similar to what you could expect from a notion type interface. It can be accessed at any time by right clicking any code file and selecting "Open Devdocs Markdown." This editor has benefits built in like AI helpers, out of the box styling options, and out the box component selections so you do not have to remember shorthand.
+This a full rich text editor built into VS Code using the Dev-Docs VS Code extension. It is very similar to what you could expect from a notion type interface. It can be accessed at any time by right clicking any code file and selecting "Open Devdocs Markdown." This editor has built in benefits including AI helpers, out of the box styling options, and out the box component selections so you do not have to remember shorthand.
 
 ## Using Dev-Docs Markdown
 
