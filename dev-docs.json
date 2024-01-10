@@ -4,7 +4,7 @@
     "contextDirs": [
       "docs"
     ],
-    "auditTasks": ["Find any Markdown Headings that start with the word Step that lack descriptions"],
+    "auditTasks": ["Find any Markdown Headings that start with the word Step that lack descriptions", {"template": "dev-docs/task_one.md"}, {"template": "dev-docs/task_two.md"}],
     "mappings": []
   }
 }
