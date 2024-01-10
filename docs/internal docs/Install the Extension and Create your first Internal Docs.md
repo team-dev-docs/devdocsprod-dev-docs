@@ -7,7 +7,7 @@ sidebar_position: 2
 
 ## Step 1: Go to VS Code Extensions
 
-In Your Vscode Editor find the Extensions icon in the left side of the page.
+In Your VS Code Editor find the Extensions icon in the left side of the page.
 ![](/img/install_the_vscode_extension/step_2.png)
 
 
@@ -28,13 +28,13 @@ Now we are going to create our first dev-docs documents but since we aren't use 
 
 ![](/img/install_the_vscode_extension/step_7.png)
 
-click on the text "yes".
+click on the text **yes**.
 
 ![](/img/install_the_vscode_extension/step_8.png)
 
 ## Step 4: Open the Dev-Docs Editor
 
-Now lets hit `shift command p` and find/click the command <code>open our dev-docs</code>
+Now lets hit `shift command p` and find/click the command <code>Open Dev-docs</code>.
 ![](/img/install_the_vscode_extension/step_9.png)
 
 ## Step 5: Edit Your First General Document
@@ -43,19 +43,19 @@ The Dev-Docs text editor should open to the general document for your codebase t
 
 ![](/img/install_the_vscode_extension/step_10.png)
 
-Feel Free to start typing and it will autosave to dev-docs.
+Feel Free to start typing and it will autosave to Dev-Docs.
 
 ![](/img/install_the_vscode_extension/step_11.png)
 
 ## Step 6: Edit Your First Document Tied to Code
 
-You can also create documentation tied to any specific code files. To do this, right click on any codefile and select "open Dev-doc for current file"
+You can also create documentation tied to any specific code files. To do this, right click on any codefile and select **open Dev-doc for current file**.
 
 ![](/img/install_the_vscode_extension/step_14.png)
 
 ## Step 7: Done
 
-Now any documentation created by Dev-Docs will be saved as markdown in the Dev-Docs folder
+Now any documentation created by Dev-Docs will be saved as markdown in the Dev-Docs folder.
 
 ![](/img/install_the_vscode_extension/step_19.png)
 
