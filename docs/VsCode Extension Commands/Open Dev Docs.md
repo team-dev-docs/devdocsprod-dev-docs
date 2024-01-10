@@ -1,34 +1,31 @@
 
   
-   ## **Open Dev Docs**
+   # **Open Dev Docs**
 
 ## What does this Vs Code Extension Command do?
 
-The `openDevDocs` command opens the Dev Docs web app in a new panel in Visual Studio Code. The web app provides a user interface for creating and editing documentation for your code.
+The `Open Dev Docs` command opens the Dev Docs web app for the current folder. This allows you to quickly access documentation and other resources for the project you're working on.
 
 ## Why should I use this Vs Code Extension Command?
 
-The Dev Docs web app makes it easy to create and edit documentation for your code. You can use the web app to:
+Using the `Open Dev Docs` command can save you time and effort by providing quick access to the information you need to work on your project. You can use it to:
 
-- Create new documentation pages
-- Edit existing documentation pages
-- Preview your documentation pages
-- Publish your documentation pages
+* Quickly find documentation for the functions and classes you're using.
+* Learn about the best practices for using the Dev Docs API.
+* Get help with troubleshooting problems with your code.
 
 ## What are relevant configuration Options in the `dev-docs.json`?
 
-The following configuration options are relevant to the `openDevDocs` command:
-
-- `devdocs.quickDoc`: This option specifies whether the Dev Docs web app should open in a new panel or in a new window.
-- `devdocs.excludedExpressions`: This option specifies a list of regular expressions that match code that should not be included in the documentation.
-- `devdocs.seperateSave`: This option specifies whether the Dev Docs web app should save changes to the documentation automatically or only when you click the Save button.
+There are no relevant configuration options for the `Open Dev Docs` command.
 
 ## Prequsites
 
-Before you can use the `openDevDocs` command, you must have the Dev Docs extension installed. You can install the extension from the Visual Studio Code Marketplace.
+To use the `Open Dev Docs` command, you must have the Dev Docs extension installed and you must be signed in to your Dev Docs account.
 
 ## How do I use this Vs Code Extension Command?
 
-To use the `openDevDocs` command, simply press `Ctrl+Shift+P` (or `Cmd+Shift+P` on macOS) and type `Open Dev Docs`. The command will open the Dev Docs web app in a new panel in Visual Studio Code.
+To use the `Open Dev Docs` command, simply open the Command Palette (Ctrl+Shift+P) and type "Open Dev Docs". You can also click on the Dev Docs icon in the Activity Bar.
+
+Once the Dev Docs web app is open, you can use it to browse the documentation for the current folder. You can also use the search bar to find specific information.
   
   
