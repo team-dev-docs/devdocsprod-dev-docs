@@ -7,7 +7,7 @@ sidebar_position: 3
 
 ## Step 1: Sign into Dev-Docs
 
-Open the command palette and Type “>sign” into the nav bar at the top and click on sign into Devdocs with GitHub.
+Open the command palette and Type **>sign** into the nav bar at the top and click on sign into Devdocs with GitHub.
 ![sync_your_dev-docs_to_dev-docs_cloud/step_1](/img/sync_your_dev-docs_to_dev-docs_cloud/step_1.png)
 
 
@@ -16,18 +16,18 @@ In your VS Code Editor select your org from the dropdown.
 ![create_your_first_codelab_in_your_playgrounds_repo/step_8](/img/create_your_first_codelab_in_your_playgrounds_repo/step_8.png)
 
 ## Step 3: Open Dev-Docs
-In your VS Code Editor click on the text that says: dev-docs: Open Dev-docs.
+In your VS Code Editor click on the text that says **dev-docs: Open Dev-docs**.
 ![sync_your_dev-docs_to_dev-docs_cloud/step_4](/img/sync_your_dev-docs_to_dev-docs_cloud/step_4.png)
 
 ## Step 4: Set Up Codebase Settings
 
-Select the icon on the top right of the editor and select Codebase Settings. This icon being visible indicates that you are signed into Dev-Docs.
+Select the icon on the top right of the editor and select **Codebase Settings**. This icon being visible indicates that you are signed into Dev-Docs.
 
 ![sync_your_dev-docs_to_dev-docs_cloud/step_5](/img/sync_your_dev-docs_to_dev-docs_cloud/step_5.png)
 
 ## Step 5: Name Your Documentation Wiki
 
-Fill out the form with your preferred name for a documentation wiki. In the example below, we name it "SpriteAI".  Select your Github Repo and coding language from the dropdown menus then click **Save**.
+Fill out the form with your preferred name for a documentation wiki. In the example below, we name it **SpriteAI**.  Select your Github Repo and coding language from the dropdown menus then click **Save**.
 
 ![sync_your_dev-docs_to_dev-docs_cloud/step_8](/img/sync_your_dev-docs_to_dev-docs_cloud/step_8.png)
 
