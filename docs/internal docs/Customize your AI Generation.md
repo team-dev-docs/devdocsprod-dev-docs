@@ -60,12 +60,9 @@ Now we are going to make your Dev-Docs JSON look similar to the one in the step 
     }
 }
 
-You can then customize the questions you want the AI To answer from your code by adusting the questions int he JSON or adding new ones to the JSON. The title can be thought of as a header within your documentation.
 ```
 
-You can then customize the questions you want the AI To answer from your code by adusting the questions in the JSON or adding new ones to the JSON. The title can be thought of as a header within your documentation. Here you can also set the AI to run every time you save by keeping the "onSave" prompt as true. Alternatively, you can turn the auto generate on save feature off by setting the "onSave" prompt to false. 
-
-
+You can then customize the questions you want the AI To answer from your code by adusting the questions in the JSON or adding new ones to the JSON. The title can be thought of as a header within your documentation. Here you can also set the AI to run every time you save by keeping the "onSave" prompt as true. Alternatively, you can turn the auto generate on save feature off by setting the "onSave" prompt to false.
 
 ## Step 5: Run the AI on Code File of Choice
 
