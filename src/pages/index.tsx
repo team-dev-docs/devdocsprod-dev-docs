@@ -1,39 +1,16 @@
-import React from 'react';
-import clsx from 'clsx';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import Editor from '@site/src/components/editor';
-import ChatBox from '@site/src/components/ChatBox';
-import landingJson from '../../landing.json'
+"use client";
+import React from "react";
+import { WavyBackground } from "./wavy-background";
 
-import Parser from '../components/Parser';
-import {Redirect} from '@docusaurus/router';
-
-function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
+export default function WavyBackgroundDemo() {
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            Lets Get Started - 5min ⏱️
-          </Link>
-        </div>
-      </div>
-    </header>
-  );
-}
-
-export default function Home(): JSX.Element {
-  const {siteConfig} = useDocusaurusContext()
-  const data = landingJson
-  return (
-    <Redirect to="/docs" />
+    <WavyBackground className="max-w-4xl mx-auto pb-40">
+      <p className="text-2xl md:text-4xl lg:text-7xl text-white font-bold inter-var text-center">
+        Hero waves are cool
+      </p>
+      <p className="text-base md:text-lg mt-4 text-white font-normal inter-var text-center">
+        Leverage the power of canvas to create a beautiful hero section
+      </p>
+    </WavyBackground>
   );
 }

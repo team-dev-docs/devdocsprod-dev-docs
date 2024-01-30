@@ -1,12 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ["class", '[data-theme="dark"] *', '[data-theme="dark"] *'],
-  content: [
-    './pages/**/*.{js,jsx}',
-    './components/**/*.{js,jsx}',
-    './app/**/*.{js,jsx}',
-    './src/**/*.{js,jsx}',
-	],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     container: {
       center: true,
@@ -72,5 +67,15 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), async function myPlugin(context, options) {
+    return {
+      name: "docusaurus-tailwindcss",
+      configurePostCss(postcssOptions) {
+        // Appends TailwindCSS and AutoPrefixer.
+        postcssOptions.plugins.push(require("tailwindcss"));
+        postcssOptions.plugins.push(require("autoprefixer"));
+        return postcssOptions;
+      },
+    };
+  }],
 }
