@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect  } from "react";
 
 import { BackgroundBeams } from "../components/background-beams";
 
@@ -232,7 +232,14 @@ export default function WavyBackgroundDemo() {
   ];
 
 
+  useEffect(() => {
+    // Set the data-theme attribute to "dark" on the body
+    document.body.classList.remove('dark');
+    document.body.classList.add('dark');
+    document.documentElement.setAttribute('data-theme', 'dark');
 
+    // Optional: Add any additional dark mode styling or logic here
+  }, []);
 
 
 
