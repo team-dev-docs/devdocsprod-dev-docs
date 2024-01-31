@@ -29,6 +29,7 @@
     "@orama/orama": "^1.2.6",
     "@orama/plugin-docusaurus": "^1.2.6",
     "@radix-ui/react-tabs": "^1.0.4",
+    "@tabler/icons-react": "^2.46.0",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tiptap/core": "^2.0.0-beta.205",
     "@tiptap/extension-code-block-lowlight": "^2.0.3",

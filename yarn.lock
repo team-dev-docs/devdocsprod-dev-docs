@@ -2448,6 +2448,19 @@
   dependencies:
     "defer-to-connect" "^1.0.1"
 
+"@tabler/icons-react@^2.46.0":
+  "integrity" "sha512-X8MRxuslIOFqMjAo+GvUZDpjlOwNYNJTuOsHXf/NBvVI6ygqUf0FUNsDLLA5fQ6k6KtRwxMlgGB+eR8ZG1UP0g=="
+  "resolved" "https://registry.npmjs.org/@tabler/icons-react/-/icons-react-2.46.0.tgz"
+  "version" "2.46.0"
+  dependencies:
+    "@tabler/icons" "2.46.0"
+    "prop-types" "^15.7.2"
+
+"@tabler/icons@2.46.0":
+  "integrity" "sha512-Q5G8Pj5IO+Uhc6pszpu5/hGYY018JwEzzvmuqr+gKJtfIvAHA3umpwUilMRLEy89p+WCP+YsDhicMhfBCCv1qA=="
+  "resolved" "https://registry.npmjs.org/@tabler/icons/-/icons-2.46.0.tgz"
+  "version" "2.46.0"
+
 "@tailwindcss/aspect-ratio@^0.4.2":
   "integrity" "sha512-8QPrypskfBa7QIMuKHg2TA7BqES6vhBrDLOv8Unb6FcFyd3TjKbc6lcmb9UPQHxfl24sXoJ41ux/H7qQQvfaSQ=="
   "resolved" "https://registry.npmjs.org/@tailwindcss/aspect-ratio/-/aspect-ratio-0.4.2.tgz"
