@@ -8,6 +8,8 @@ import { TypewriterEffectSmooth } from "./typewriting-effect";
 import { LayoutGrid } from "./layout-grid";
 import FullScreenImage from "./fullscreen-image"
 import { HeroParallax } from "./parallax";
+import { TracingBeam } from "./tracing-beam";
+
 
 import { BentoGrid, BentoGridItem } from "./bento-grid";
 import {
@@ -28,6 +30,10 @@ const backgroundStyle = {
   width: "100%",
   height: "951px",
   flexShrink: 0
+};
+
+const openLink = (url) => {
+  window.open(url, '_blank', 'noopener,noreferrer');
 };
 
 const topHeading = {
@@ -59,26 +65,26 @@ const items = [
   },
   {
     title: "Document Your UI",
-    description: "Document UI workflows and directly push to your public docs site",
+    description: "Use AI to document UI workflows and directly push to your public docs site or markdown repo",
     header: <Skeleton />,
     icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "The Power of Communication",
+    title: "Audit, Check, and Evaluate Your Docs",
     description:
-      "Understand the impact of effective communication in our lives.",
+      "Use AI to go through all your markdown docs to check the content for what is important for your team whether that is grammar or even quality of the content",
     header: <Skeleton />,
     icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
   },
   {
     title: "Document and Identity Issues in your codebases",
-    description: "Join the quest for understanding and enlightenment.",
+    description: "Provide custom prompts to the Dev-Docs to find and document issues in your code",
     header: <Skeleton />,
     icon: <IconArrowWaveRightUp className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "The Joy of Creation",
-    description: "Experience the thrill of bringing ideas to life.",
+    title: "Easily find information through search and AI Chat",
+    description: "Any documentation generated can be queried directly from VsCode using Dev-Docs, or using our chat and search cabalities online",
     header: <Skeleton />,
     icon: <IconBoxAlignTopLeft className="h-4 w-4 text-neutral-500" />,
   },
@@ -207,9 +213,14 @@ function Navbar({ className }: { className?: string }) {
       className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50", className)}
     >
       <Menu setActive={setActive}>
-        <MenuItem setActive={setActive} active={active} item="Services">
+        <MenuItem setActive={setActive} active={active} item="Resources">
           <div className="flex flex-col space-y-4 text-sm">
-
+          <ProductItem
+              title="Docs"
+              href="https://algochurn.com"
+              src="https://res.cloudinary.com/algochurn/image/upload/v1700109138/framer%20motion%20components/290shots_so_gruelx.png"
+              description="Prepare for tech interviews like never before."
+            />
           </div>
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item="Products">
@@ -240,7 +251,7 @@ function Navbar({ className }: { className?: string }) {
             />
           </div>
         </MenuItem>
-        <MenuItem setActive={setActive} active={active} item="Pricing">
+        <MenuItem setActive={setActive} active={active} item="Extensions">
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/hobby">Hobby</HoveredLink>
             <HoveredLink href="/individual">Individual</HoveredLink>
@@ -280,44 +291,14 @@ export default function WavyBackgroundDemo() {
   ];
 
 
-  const cards = [
-    {
-      id: 1,
-      content: <h1>Hey</h1>,
-      className: "md:col-span-2",
-      thumbnail:
-        "https://images.unsplash.com/photo-1476231682828-37e571bc172f?q=80&w=3474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      id: 2,
-      content: <h1>Hey</h1>,
-      className: "col-span-1",
-      thumbnail:
-        "https://images.unsplash.com/photo-1464457312035-3d7d0e0c058e?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      id: 3,
-      content: <h1>Hey</h1>,
-      className: "col-span-1",
-      thumbnail:
-        "https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      id: 4,
-      content: <h1>Hey</h1>,
-      className: "md:col-span-2",
-      thumbnail:
-        "https://images.unsplash.com/photo-1475070929565-c985b496cb9f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-  ];
+
+
+
 
   return (
-
+   
     <div>
-      <div className="relative w-full flex items-center justify-center">
-        <Navbar className="top-2" />
 
-      </div>
 
 
       <div style={backgroundStyle} className="h-[50rem] w-full dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2]">
@@ -326,22 +307,25 @@ export default function WavyBackgroundDemo() {
 
 
 
-          <div className="text-white p-4 flex flex-col items-start justify-between">
+          <div className="text-white p-4 sm:p-24 flex flex-col items-start justify-between">
             <TypewriterEffectSmooth words={words} className={undefined} cursorClassName={undefined} />
             <p className="text-lg text-center mb-4">
               We are a documentation platform that helps developers generate, update, audit, and search documentation using AI all as you code.
             </p>
+            <br></br>
+            <p className="text-lg text-center mb-4">Integrates With the  Tools you Love</p>
             <div className="mt-8 mb-8 flex justify-center">
               {/* Render your images/logos */}
-              <img src="/img/dev-docs-assets/dev-docs-VHVlLCAxOCBKdWwgMjAyMyAxODo0NDoyOCBHTVQ=.png" alt="Logo 1" className="h-12 mx-2" />
-              <img src="/img/dev-docs-assets/dev-docs-VHVlLCAxOCBKdWwgMjAyMyAyMDozMjoyMCBHTVQ=.png" alt="Logo 2" className="h-12 mx-2" />
-              <img src="/img/dev-docs-assets/dev-docs-VHVlLCAxOCBKdWwgMjAyMyAxODo0NTozMSBHTVQ=.png" alt="Logo 3" className="h-12 mx-2" />
-              <img src="/img/dev-docs-assets/dev-docs-VHVlLCAxOCBKdWwgMjAyMyAyMDoyMToyOSBHTVQ=.png" alt="Logo 4" className="h-12 mx-2" />
-              <img src="https://logo.clearbit.com/openai.com" className="h-12 mx-2" />
-              <img src="https://logo.clearbit.com/atlassian.com" className="h-12 mx-2" />
+              
+           
+              <img src="/img/dev-docs-assets/dev-docs-VHVlLCAxOCBKdWwgMjAyMyAxODo0NDoyOCBHTVQ=.png" alt="Logo 1" className="h-8 sm:h-10 md:h-12 mx-1 sm:mx-2" />
+              <img src="/img/dev-docs-assets/dev-docs-VHVlLCAxOCBKdWwgMjAyMyAyMDozMjoyMCBHTVQ=.png" alt="Logo 2" className="h-8 sm:h-10 md:h-12 mx-1 sm:mx-2" />
+              <img src="/img/dev-docs-assets/dev-docs-VHVlLCAxOCBKdWwgMjAyMyAxODo0NTozMSBHTVQ=.png" alt="Logo 3" className="h-8 sm:h-10 md:h-12 mx-1 sm:mx-2" />
+              <img src="/img/dev-docs-assets/dev-docs-VHVlLCAxOCBKdWwgMjAyMyAyMDoyMToyOSBHTVQ=.png" alt="Logo 4" className="h-8 sm:h-10 md:h-12 mx-1 sm:mx-2" />
+              <img src="https://logo.clearbit.com/atlassian.com" className="h-8 sm:h-10 md:h-12 mx-1 sm:mx-2" />
             </div>
             <div className="flex space-x-2 mt-2">
-            <button className="bg-slate-800 no-underline group cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-full p-px text-xs font-semibold leading-6 text-white inline-flex items-center">
+            <button onClick={() => openLink('https://airtable.com/app0byUVW3Sh1SSme/pagBebmK6tVqA1Rsr/form')} className="bg-slate-800 no-underline group cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-full p-px text-xs font-semibold leading-6 text-white inline-flex items-center">
               <span className="absolute inset-0 overflow-hidden rounded-full">
                 <span className="absolute inset-0 rounded-full bg-[image:radial-gradient(75%_100%_at_50%_0%,rgba(56,189,248,0.6)_0%,rgba(56,189,248,0)_75%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
               </span>
@@ -367,7 +351,7 @@ export default function WavyBackgroundDemo() {
               </div>
               <span className="absolute -bottom-0 left-[1.125rem] h-px w-[calc(100%-2.25rem)] bg-gradient-to-r from-emerald-400/0 via-emerald-400/90 to-emerald-400/0 transition-opacity duration-500 group-hover:opacity-40" />
             </button>
-            <button className="bg-slate-800 no-underline group cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-full p-px text-xs font-semibold leading-6 text-white inline-flex items-center">
+            <button onClick={() => openLink('https://calendly.com/srchat/dev-docs-founders')} className="bg-slate-800 no-underline group cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-full p-px text-xs font-semibold leading-6 text-white inline-flex items-center">
               <span className="absolute inset-0 overflow-hidden rounded-full">
                 <span className="absolute inset-0 rounded-full bg-[image:radial-gradient(75%_100%_at_50%_0%,rgba(56,189,248,0.6)_0%,rgba(56,189,248,0)_75%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
               </span>
@@ -403,6 +387,7 @@ export default function WavyBackgroundDemo() {
         </div>
       </div>
       <div className="text-white p-8 flex flex-col dark:bg-black bg-white dark:bg-grid-white/[0.2] bg-grid-black/[0.2] items-start justify-between">
+
       <h1 className="relative z-10 text-lg md:text-7xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 text-center font-sans font-bold">
           Usecases
         </h1>
@@ -439,7 +424,7 @@ export default function WavyBackgroundDemo() {
           Dev-Docs is currently in a closed beta and working fast to bring you our AI powered documentation magic. Sign up for our waitlist below.
           </p>
           <div className="flex space-x-2 mt-8 items-center justify-center">
-          <button className="bg-slate-800 no-underline group cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-full p-px text-xs font-semibold leading-6 text-white inline-flex items-center">
+          <button onClick={() => openLink('https://airtable.com/app0byUVW3Sh1SSme/pagBebmK6tVqA1Rsr/form')}  className="bg-slate-800 no-underline group cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-full p-px text-xs font-semibold leading-6 text-white inline-flex items-center">
               <span className="absolute inset-0 overflow-hidden rounded-full">
                 <span className="absolute inset-0 rounded-full bg-[image:radial-gradient(75%_100%_at_50%_0%,rgba(56,189,248,0.6)_0%,rgba(56,189,248,0)_75%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
               </span>
@@ -470,5 +455,6 @@ export default function WavyBackgroundDemo() {
         <BackgroundBeams />
       </div>
     </div>
+  
   );
 }
