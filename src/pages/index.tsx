@@ -270,7 +270,7 @@ export default function WavyBackgroundDemo() {
               <img src="/img/dev-docs-assets/dev-docs-VHVlLCAxOCBKdWwgMjAyMyAyMDozMjoyMCBHTVQ=.png" alt="Logo 2" className="h-8 sm:h-10 md:h-12 mx-1 sm:mx-2" />
               <img src="/img/dev-docs-assets/dev-docs-VHVlLCAxOCBKdWwgMjAyMyAxODo0NTozMSBHTVQ=.png" alt="Logo 3" className="h-8 sm:h-10 md:h-12 mx-1 sm:mx-2" />
               <img src="/img/dev-docs-assets/dev-docs-VHVlLCAxOCBKdWwgMjAyMyAyMDoyMToyOSBHTVQ=.png" alt="Logo 4" className="h-8 sm:h-10 md:h-12 mx-1 sm:mx-2" />
-              <img src="https://logo.clearbit.com/atlassian.com" className="h-8 sm:h-10 md:h-12 mx-1 sm:mx-2" />
+              <img src="/img/vertical-logo-gradient-blue-atlassian.png" className="h-8 sm:h-10 md:h-12 mx-1 sm:mx-2" />
             </div>
             <div className="flex space-x-2 mt-2">
             <button onClick={() => openLink('https://airtable.com/app0byUVW3Sh1SSme/pagBebmK6tVqA1Rsr/form')} className="bg-slate-800 no-underline group cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-full p-px text-xs font-semibold leading-6 text-white inline-flex items-center">
