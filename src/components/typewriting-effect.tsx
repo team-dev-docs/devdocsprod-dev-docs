@@ -111,3 +111,5 @@ export const TypewriterEffectSmooth = ({ words, className, cursorClassName }) =>
     </div>
   );
 };
+
+export default TypewriterEffect

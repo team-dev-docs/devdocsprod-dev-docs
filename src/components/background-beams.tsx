@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { cn } from "../utils";
+import { cn } from "../utils/cn";
 
-export function BackgroundBeamsDemo() {
+export default function BackgroundBeamsDemo() {
   return (
     <div className="h-screen bg-neutral-950 relative flex flex-col items-center justify-center antialiased">
       <div className="max-w-2xl mx-auto p-4">

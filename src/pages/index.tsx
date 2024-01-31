@@ -1,17 +1,14 @@
 "use client";
 import React, { useState } from "react";
-import { WavyBackground } from "./wavy-background";
-import { TextGenerateEffect } from "./typewriter-effect"
-import { BackgroundBeams } from "./background-beams";
-import { BackgroundGradient } from "./background-gradient";
-import { TypewriterEffectSmooth } from "./typewriting-effect";
-import { LayoutGrid } from "./layout-grid";
-import FullScreenImage from "./fullscreen-image"
-import { HeroParallax } from "./parallax";
-import { TracingBeam } from "./tracing-beam";
+
+import { BackgroundBeams } from "../components/background-beams";
+
+import { TypewriterEffectSmooth } from "../components/typewriting-effect";
 
 
-import { BentoGrid, BentoGridItem } from "./bento-grid";
+
+
+import { BentoGrid, BentoGridItem } from "../components/bento-grid";
 import {
   IconArrowWaveRightUp,
   IconBoxAlignRightFilled,
@@ -22,7 +19,7 @@ import {
   IconTableColumn,
 } from "@tabler/icons-react";
 
-import { HoveredLink, Menu, MenuItem, ProductItem } from "./landing-navbar";
+
 import { cn } from "../utils/cn";
 
 const backgroundStyle = {
@@ -206,63 +203,7 @@ function Header() {
   );
 }
 
-function Navbar({ className }: { className?: string }) {
-  const [active, setActive] = useState<string | null>(null);
-  return (
-    <div
-      className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50", className)}
-    >
-      <Menu setActive={setActive}>
-        <MenuItem setActive={setActive} active={active} item="Resources">
-          <div className="flex flex-col space-y-4 text-sm">
-          <ProductItem
-              title="Docs"
-              href="https://algochurn.com"
-              src="https://res.cloudinary.com/algochurn/image/upload/v1700109138/framer%20motion%20components/290shots_so_gruelx.png"
-              description="Prepare for tech interviews like never before."
-            />
-          </div>
-        </MenuItem>
-        <MenuItem setActive={setActive} active={active} item="Products">
-          <div className="  text-sm grid grid-cols-2 gap-10 p-4">
-            <ProductItem
-              title="Algochurn"
-              href="https://algochurn.com"
-              src="https://res.cloudinary.com/algochurn/image/upload/v1700109138/framer%20motion%20components/290shots_so_gruelx.png"
-              description="Prepare for tech interviews like never before."
-            />
-            <ProductItem
-              title="Tailwind Master Kit"
-              href="https://tailwindmasterkit.com"
-              src="https://res.cloudinary.com/algochurn/image/upload/v1700109138/framer%20motion%20components/155shots_so_acab66.png"
-              description="Production ready Tailwind css components for your next project"
-            />
-            <ProductItem
-              title="Moonbeam"
-              href="https://gomoonbeam.com"
-              src="https://res.cloudinary.com/algochurn/image/upload/v1700109138/framer%20motion%20components/53shots_so_wygjpf.png"
-              description="Never write from scratch again. Go from idea to blog in minutes."
-            />
-            <ProductItem
-              title="Rogue"
-              href="https://userogue.com"
-              src="https://res.cloudinary.com/algochurn/image/upload/v1700109139/framer%20motion%20components/356shots_so_hwpzvs.png"
-              description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
-            />
-          </div>
-        </MenuItem>
-        <MenuItem setActive={setActive} active={active} item="Extensions">
-          <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/hobby">Hobby</HoveredLink>
-            <HoveredLink href="/individual">Individual</HoveredLink>
-            <HoveredLink href="/team">Team</HoveredLink>
-            <HoveredLink href="/enterprise">Enterprise</HoveredLink>
-          </div>
-        </MenuItem>
-      </Menu>
-    </div>
-  );
-}
+
 
 
 

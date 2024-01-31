@@ -70,3 +70,5 @@ export const BackgroundGradient = ({
     </div>
   );
 };
+
+export default BackgroundGradient

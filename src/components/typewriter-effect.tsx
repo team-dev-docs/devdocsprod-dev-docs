@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react"; // Import React
 import { motion, animate } from "framer-motion";
 import { cn } from "../utils/cn";
+import { TypewriterEffectSmooth } from "./typewriting-effect";
 
 export const TextGenerateEffect = ({ words, className }) => {
     let wordsArray = words.split(" ");
@@ -40,3 +41,5 @@ export const TextGenerateEffect = ({ words, className }) => {
       </div>
     );
   };
+
+  export default TextGenerateEffect

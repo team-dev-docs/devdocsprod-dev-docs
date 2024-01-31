@@ -156,3 +156,5 @@ const Glow = ({ delay }: { delay: number }) => {
     />
   );
 };
+
+export default GlowingStarsBackgroundCard

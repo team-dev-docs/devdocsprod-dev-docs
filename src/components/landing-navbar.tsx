@@ -130,3 +130,5 @@ export const HoveredLink = ({ children, ...rest }: any) => {
     </a>
   );
 };
+
+export default Menu

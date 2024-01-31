@@ -154,3 +154,5 @@ export const ProductCard = ({
     </motion.div>
   );
 };
+
+export default HeroParallax
