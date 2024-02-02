@@ -247,7 +247,7 @@ export default function WavyBackgroundDemo() {
   return (
 
     <div>
-      <div style={backgroundStyle} className="h-[50rem] w-full dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2]">
+      <div style={backgroundStyle} className="h-full w-full dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2]">
         <Header />
         <div className="h-[50rem] w-full bg-transparent relative flex items-center justify-center">
 
