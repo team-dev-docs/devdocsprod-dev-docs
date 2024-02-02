@@ -26,7 +26,8 @@ const backgroundStyle = {
   background: `url(/img/dev-docs-assets/ClippedHeroBg.png) lightgray 50% / cover no-repeat`,
   width: "100%",
   height: "951px",
-  flexShrink: 0
+  flexShrink: 0,
+  loading: 'lazy'
 };
 
 const openLink = (url) => {
