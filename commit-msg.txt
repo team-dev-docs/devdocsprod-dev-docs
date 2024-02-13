@@ -1,1 +1,1 @@
-removes extra stuff
+Update chat.json
