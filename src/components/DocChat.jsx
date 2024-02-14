@@ -58,6 +58,16 @@ const SvgBackgroundImage = ({ imageUrl }) => {
   );
 };
 
+const LoadingDots = () => {
+  return (
+    <div className="loading-dots">
+      <div className="dot"></div>
+      <div className="dot"></div>
+      <div className="dot"></div>
+    </div>
+  );
+};
+
 const SendInput = () => {
   return (
     <div className="flex items-center justify-center bg-black">
@@ -140,17 +150,11 @@ function ChatBox({ messages, onSendMessage }) {
       <div className={`chat-box ${showChatBox ? "show" : "hide"}`}>
         <div className="" style={{ width: "100%", display: "flex", padding: "20px", borderBottom: '1px solid  #616062' }}>
           <SvgBackgroundImage imageUrl={logo} />
-          {/* <button
-            style={{ float: "right" }}
-            onClick={() => setShowChatBox(!showChatBox)}
-          >
-            X
-          </button> */}
-
+       
           <h3 className="pl-4 chat-header">Dev-Docs AI Bot</h3>
         </div>
 
-        <div className="chat-box__messages" style={{"padding": "20px"}}>
+        <div className="chat-box__messages flex" style={{"padding": "20px", "flexDirection": "column"}}>
           {messages.map((message, index) => (
             <div
               style={{
@@ -177,7 +181,6 @@ function ChatBox({ messages, onSendMessage }) {
                 }`}
                 style={{
                   flexGrow: 1,
-                  borderRadius: "20px 20px 20px 0px",
                   background: "#616062",
                   marginLeft: message.sender === "user" ? "16px" : "0", // Adjust spacing based on sender
                   marginRight: message.sender === "user" ? "0" : "16px", // Adjust spacing based on sender
@@ -188,11 +191,19 @@ function ChatBox({ messages, onSendMessage }) {
             </div>
           ))}
           {loadingBar && (
-            <div className={"chat-box__message"}> 🦾🤖 Loading....</div>
+             <div
+             style={{
+               display: "flex",
+               alignItems: "flex-end", // Align items vertically
+             }}
+             className="chat-box__message loading_message"
+           >
+            <LoadingDots />
+          </div>
           )}
         </div>
 
-        <form className="flex" style={{ paddingLeft: "10px", paddingRight: "10px",  border: '1px solid  #616062', borderRadius: "10px"  }} onSubmit={handleSendMessage}>
+        <form className="flex" style={{ marginLeft: "10px", marginRight: "10px", marginBottom: "10px",  border: '1px solid  #616062', borderRadius: "10px"  }} onSubmit={handleSendMessage}>
       <input
         type="text"
         placeholder="Type your message"
