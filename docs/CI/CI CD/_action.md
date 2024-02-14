@@ -1,0 +1,30 @@
+name: Check for Updates
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '**.md'
+
+jobs:
+  notify-express-app:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Send Update to DevDocs
+        run: |
+          TIMESTAMP=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+          API_KEY=${{ secrets.API_KEY }}
+          REPO_GH_PAT=${{secrets.REPO_GH_PAT}}
+          GITHUB_REPOSITORY="${{ github.repository }}"
+          GITHUB_ACTOR="${{ github.actor }}"
+          curl -X POST -H "Content-Type: application/json" \
+               -H "X-API-KEY: $API_KEY" \
+               -d '{"apiKey": "'$API_KEY'", repo_gh_pat: "'$REPO_GH_PAT'", "timestamp": "'$TIMESTAMP'", "githubRepository": "'$GITHUB_REPOSITORY'", "githubActor": "'$GITHUB_ACTOR'"}' \
+               "${{ secrets.ENDPOINT_URL }}"
+        env:
+          API_KEY: ${{ secrets.API_KEY }}
