@@ -1,3 +1,3 @@
-Merge pull request #9 from team-dev-docs/landingpage
+Merge pull request #10 from team-dev-docs/landingpage
 
-adds more chatbot styling
+adds mobile ready chatbot
