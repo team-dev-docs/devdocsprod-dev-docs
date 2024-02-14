@@ -82,7 +82,7 @@
 }
 
 .bot-message {
-  border-radius: "20px 20px 20px 0px";
+  border-radius: 20px 20px 20px 0px;
 }
 
 .chat-box__input {
@@ -229,5 +229,43 @@
   50%,
   100% {
     opacity: 1;
+  }
+}
+
+// Example media query adjustments
+@media (max-width: 600px) {
+  .chat-box {
+    width: 90%; // Adjust width for smaller screens
+    height: 80vh; // Make height adaptive
+    bottom: 20px; // Adjust positioning for accessibility
+    right: 10px;
+  }
+
+  .chat-box__input, .chat-box__button {
+    padding: 12px; // Increase padding for larger touch targets
+  }
+
+  .toggle-button {
+    width: 60px; // Adjust button size for smaller screens
+    height: 60px;
+  }
+}
+
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .chat-box {
+    width: 90%; // Adjust width for smaller screens
+    height: 60vh; // Make height adaptive
+    bottom: 20px; // Adjust positioning for accessibility
+    right: 10px;
+  }
+
+  .chat-box__input, .chat-box__button {
+    padding: 12px; // Increase padding for larger touch targets
+  }
+
+  .toggle-button {
+    width: 60px; // Adjust button size for smaller screens
+    height: 60px;
   }
 }
