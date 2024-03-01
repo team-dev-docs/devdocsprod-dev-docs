@@ -119,6 +119,10 @@ html, body {
 }
 
 
+// .#__docusaurus_skipToContent_fallback > div > div > main > article > header > h1 {
+//   display: none;
+// }
+
 
 // #__docusaurus {
 //   @media (max-width: 1024px) {
@@ -129,3 +133,9 @@ html, body {
 //     background-image: radial-gradient(circle at 500px 1px, $primary 3%, transparent 71%, rgba(0, 0, 0, 0.1)) !important;
 //   }
 // }
+
+[itemprop="blogPost"] {
+  header {
+    display: none;
+  }
+}
