@@ -7,6 +7,7 @@ import { useLocation } from 'react-router-dom';
 import { useColorMode } from '@docusaurus/theme-common';
 import GlobalDarkModeHandler from '@site/src/components/GlobalDarkModeHandler';
 import '@fontsource/inter';
+import { BackgroundGradientAnimation } from "@site/src/components/background-gradient-animation";
 
 
 
@@ -70,7 +71,11 @@ export default function FooterWrapper(props) {
     <>
       <ChatBox messages={[]} />
       <GlobalDarkModeHandler />
-      <Footer {...props} />
+      
+
+
+        <Footer {...props} />
+
     </>
   );
 }
