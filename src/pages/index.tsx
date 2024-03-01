@@ -359,7 +359,6 @@ export default function WavyBackgroundDemo() {
 
         </div>
       </div>
-      <SpotlightPreview />
     </div>
 
   );
