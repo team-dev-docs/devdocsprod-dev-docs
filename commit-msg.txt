@@ -1,3 +1,3 @@
-Merge pull request #11 from team-dev-docs/landingpage
+Merge pull request #12 from team-dev-docs/landingpage
 
-Landingpage
+removes sportlight
