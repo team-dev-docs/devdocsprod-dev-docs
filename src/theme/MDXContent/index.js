@@ -20,20 +20,33 @@ console.log("HEY this is the stuff", props)
   };
 
   return (
-    <TracingBeam className=''>
-        {props?.children?.type?.metadata?.title ? (
+    <>
+  
+
+        {props?.children?.type?.metadata?.title ? (<>
         <BackgroundGradientAnimation onClick={handleClick}>
-          <h1>{props.children.type.metadata.title}</h1>
-          <h3>
+          <h1 style={{paddingLeft: "1vw", fontSize: "60px"}}><a href={props.children.type.metadata.permalink}>{props.children.type.metadata.title}</a></h1>
+          <h3 style={{paddingLeft: "1vw"}}>
           {props.children.type.metadata.formattedDate}
           </h3>
-        </BackgroundGradientAnimation> 
-        ) : (<span></span>)
+          <div className='flex flex-row items-center mb-10 w-full'>
+            {props.children.type.metadata.authors.map((item, index) => (
+            <img style={{height: "4vh"}} src={item.imageURL}></img>
+            ))}
+          </div>
+   
+        </BackgroundGradientAnimation>
+        <MDXContent style={{backgroundImage: image}} {...props} />
+        </>
+        ) : (
+        <TracingBeam>
+          <MDXContent style={{backgroundImage: image}} {...props} />
+        </TracingBeam>)
         }
            
-        <MDXContent style={{backgroundImage: image}} {...props} />
+        
   
-    </TracingBeam>
+    </>
     
   );
 }

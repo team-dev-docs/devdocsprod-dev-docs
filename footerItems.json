@@ -20,33 +20,13 @@
         {
             "items": [
                 {
-                    "label": "Stack Overflow",
-                    "href": "https://stackoverflow.com/questions/tagged/docusaurus",
-                    "prependBaseUrlToHref": false
-                },
-                {
-                    "label": "Discord",
-                    "href": "https://discordapp.com/invite/docusaurus",
-                    "prependBaseUrlToHref": false
-                },
-                {
-                    "label": "Twitter",
-                    "href": "https://twitter.com/docusaurus",
-                    "prependBaseUrlToHref": false
-                }
-            ],
-            "title": "Community"
-        },
-        {
-            "items": [
-                {
                     "label": "Blog",
                     "to": "/blog",
                     "prependBaseUrlToHref": true
                 },
                 {
                     "label": "GitHub",
-                    "href": "https://github.com/facebook/docusaurus",
+                    "href": "https://github.com/team-dev-docs",
                     "prependBaseUrlToHref": false
                 }
             ],

@@ -1,0 +1,24 @@
+
+// [aria-label="Blog recent posts navigation"] {
+//     display: none;
+// }
+
+.blog-post-page {
+    #__docusaurus_skipToContent_fallback > div > .row {
+        
+
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 calc(var(--ifm-spacing-horizontal)* -1);
+        justify-content: center;
+
+        aside {
+            display: none;
+        }
+    }
+
+    
+    [itemtype="http://schema.org/Blog"] {
+        align-self: center !important;
+    }
+}

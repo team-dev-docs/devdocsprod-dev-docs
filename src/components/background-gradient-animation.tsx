@@ -83,7 +83,7 @@ export const BackgroundGradientAnimation = ({
   };
 
   return (
-    <div style={{height: "60vh", borderRadius: "20px"}}
+    <div style={{height: "25vh", borderRadius: "20px"}}
       className={cn(
         "relative overflow-hidden top-0 left-0 bg-[linear-gradient(40deg,var(--gradient-background-start),var(--gradient-background-end))]",
         containerClassName
@@ -107,7 +107,7 @@ export const BackgroundGradientAnimation = ({
           </filter>
         </defs>
       </svg>
-      <div className={cn("", className)}>{children}</div>
+      <div style={{position: "absolute", zIndex: 2000}} className={cn("", className)}>{children}</div>
       <div className="gradients-container [filter:url(#blurMe)_blur(40px)] h-full w-full">
         <div
           className={cn(
