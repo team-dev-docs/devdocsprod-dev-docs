@@ -1,1 +1,1 @@
-geenrate api key
+Update commit-msg.txt
