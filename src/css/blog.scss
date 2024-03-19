@@ -1,0 +1,111 @@
+// [aria-label="Blog recent posts navigation"] {
+//     display: none;
+// }
+
+.author-avatar {
+  border-radius: 50%;
+  background-color: white
+
+}
+
+[itemprop="blogPost"] {
+  header {
+    display: none;
+  }
+}
+
+.blog-post-page {
+  .blog-header-title-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 2em;
+    gap: 2rem; // Use a relative unit like rem for a more responsive gap
+    flex-shrink: 0;
+
+    padding: 2rem; // Use a relative unit for padding
+
+    // Adjust width to a percentage for responsiveness
+    width: 65vw;
+
+    // Limit the maximum width to provide a better reading experience on larger screens
+    //   max-width: 980px;
+
+    // Styles for smaller screens or mobile devices
+    @media screen and (max-width: 768px) {
+      // Adjust styles for smaller screens
+      padding: 1rem;
+    }
+  }
+
+  .margin-vert--lg {
+    margin: 0 !important;
+    min-width: 100vw !important;
+  }
+  #__docusaurus_skipToContent_fallback > div > .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 calc(var(--ifm-spacing-horizontal) * -1);
+    justify-content: center;
+
+    aside {
+      display: none;
+    }
+  }
+
+  [itemtype="http://schema.org/Blog"]
+  {
+    align-self: center !important;
+  }
+}
+
+.blog-list-page {
+  [aria-label="Blog recent posts navigation"] {
+    padding-left: 10em;
+  }
+  .margin-vert--lg {
+    margin: 0 !important;
+    padding-top: 4em;
+    min-width: 100vw !important;
+  }
+
+
+
+  [itemtype="http://schema.org/BlogPosting"]
+
+  {
+   margin-bottom: 2em !important;
+   padding-bottom: 0px !important;
+
+    .markdown {
+      .blog-header-title-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 2rem; // Use a relative unit like rem for a more responsive gap
+        flex-shrink: 0;
+
+        padding: 2rem; // Use a relative unit for padding
+
+        // Adjust width to a percentage for responsiveness
+        width: 65vw;
+
+        // Limit the maximum width to provide a better reading experience on larger screens
+        //   max-width: 980px;
+
+        // Styles for smaller screens or mobile devices
+        @media screen and (max-width: 768px) {
+          // Adjust styles for smaller screens
+          padding: 1rem;
+        }
+      }
+
+      > *:not(.blog-header-title-card) {
+        display: none;
+        // styles for all children except the one with the class "exclude-child"
+      }
+    }
+  }
+}
