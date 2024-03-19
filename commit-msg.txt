@@ -1,3 +1,1 @@
-Merge pull request #10 from team-dev-docs/landingpage
-
-adds mobile ready chatbot
+md file
