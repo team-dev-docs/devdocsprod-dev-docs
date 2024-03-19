@@ -1,1 +1,3 @@
-Update commit-msg.txt
+Merge pull request #13 from team-dev-docs/landingpage
+
+Landingpage
