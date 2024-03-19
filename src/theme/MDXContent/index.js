@@ -7,8 +7,6 @@ import { BackgroundGradientAnimation } from "@site/src/components/background-gra
 import { useHistory } from "@docusaurus/router";
 
 export default function MDXContentWrapper(props) {
-  const hasBlogListPageClass =
-    document.documentElement.classList.contains("blog-list-page");
   let image = `url("${svgToDataUri(
     `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="none"><circle fill="white" id="pattern-circle" cx="10" cy="10" r="1.6257413380501518"></circle></svg>`
   )}")`;
