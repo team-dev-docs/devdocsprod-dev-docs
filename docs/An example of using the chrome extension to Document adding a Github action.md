@@ -1,56 +1,52 @@
 
-  
-  # An Example of Using the Chrome Extension to Document Adding a GitHub Action
 
+# Using the Chrome Extension
 ## Prerequisites
 
-Before you begin, make sure to install the "Document This" Chrome extension from the following link: [https://chrome.google.com/webstore/detail/jdfpljfedojaigjibfnnobbmgmlfkibb](https://chrome.google.com/webstore/detail/jdfpljfedojaigjibfnnobbmgmlfkibb)
+Before you begin, make sure to install the Dev-Docs Chrome extension from the following link:
 
-This extension will allow you to capture screenshots and generate markdown documentation as you navigate through the process of adding a GitHub Action.
 
-## Step 1: Navigate to the Actions Tab
 
-1. Open the repository you want to add a GitHub Action to in your web browser.
-2. Navigate to the `.github/workflows` directory by visiting the following URL: `https://github.com/team-dev-docs/devdocs-dev-docs/tree/main/.github/workflows`
-3. Find the link with the text "Actions" and click it.
+<br></br>
 
-![This is the image for A with the text: Actions and then clicked](/img/an_example_of_using_the_chrome_extension_to_document_adding_a_github_action/step_1.png)
+[https://chrome.google.com/webstore/detail/jdfpljfedojaigjibfnnobbmgmlfkibb](https://chrome.google.com/webstore/detail/jdfpljfedojaigjibfnnobbmgmlfkibb)
 
-## Step 2: Click the "New Workflow" Button
 
-1. After navigating to the Actions page (`https://github.com/team-dev-docs/devdocs-dev-docs/actions`), locate the "New Workflow" button.
-2. Click the "New Workflow" button to start the process of adding a new GitHub Action.
 
-![This is the image for A with the text: New workflow and then clicked](/img/an_example_of_using_the_chrome_extension_to_document_adding_a_github_action/step_2.png)
+<br></br>
+This extension will allow you to capture screenshots and generate markdown documentation as you navigate through your UI browser workflows, for example your own app and UI. You can open the extension on a MAC with shift command U, or you can click on the extension icon and hit open panel(will make this look prettier in the future).
+<br></br>
+After You Sign In with Github make sure you select your org.
+<br></br>
 
-## Step 3: Configure the Workflow
+![](/img/dev-docs-assets/dev-docs-VHVlLCAxOSBNYXIgMjAyNCAyMToxNzo1MyBHTVQ=.png)
 
-1. On the "Configure GitHub Actions" page (`https://github.com/team-dev-docs/devdocs-dev-docs/actions/new`), find the template you want to use for your GitHub Action. In this example, we'll use the "JavaScript with Node.js" template.
-2. Locate the "Configure" button for the selected template and click it.
 
-![This is the image for A with the text: Configure and then clicked](/img/an_example_of_using_the_chrome_extension_to_document_adding_a_github_action/step_3.png)
+## Step 1: Hit Record
 
-## Step 4: Edit the Workflow File
+Now it is time to record, but before you do that you toggle whether to capture images or not. When you are ready you can hit the record button to start documentating a workflow. When you hit record you will see couple options. This is the breakdown of the options: 
 
-1. In the workflow file editor (`https://github.com/team-dev-docs/devdocs-dev-docs/new/main`), locate the `push:` section.
-2. Click on the `push:` section to activate the Chrome extension and capture a screenshot.
+<br></br>
+- Topic (Required): This is a mandatory field that is basically the title of your guide. 
+<br></br>
+<br></br>
+- Writing Persona (Optional): Optional field to allow you customize the writer/writing style. For example you could say poet for fun, scientific researcher, and leave it as is for a developer documentation writer. 
+<br></br>
+<br></br>
+- Additional Context (Optional): Think of this as extra instructions or context to help Dev-Docs write your guide.
 
-![This is the image for DIV with the text: push: and then clicked](/img/an_example_of_using_the_chrome_extension_to_document_adding_a_github_action/step_4.png)
+![](/img/dev-docs-assets/dev-docs-VHVlLCAxOSBNYXIgMjAyNCAyMTo1MjozMiBHTVQ=.png)
+## Step 2: Click through workflow
 
-## Step 5: Commit Changes
+From here just do your typical workflow as usual.
 
-1. After making any desired changes to the workflow file, find the "Commit changes..." button.
-2. Click the "Commit changes..." button to initiate the commit process.
+## Step 3: Reopen the Extension
 
-![This is the image for SPAN with the text: Commit changes... and then clicked](/img/an_example_of_using_the_chrome_extension_to_document_adding_a_github_action/step_5.png)
+When you are done just hit Shift Command U again and hit Generate Guide. It will take some time to load.
 
-## Step 6: Commit and Create Pull Request
+## Step 4: View Results and Update Docs
 
-1. Finally, click the "Commit changes" button to commit the new workflow file and create a pull request.
-2. The Chrome extension will capture a screenshot and generate markdown documentation for this step.
+From here you will be able to see a dialog with the output of the guide. When you are you ready you can hit update docs to merge the guide as markdown file to your repo.
 
-![This is the image for SPAN with the text: Commit changes and then clicked](/img/an_example_of_using_the_chrome_extension_to_document_adding_a_github_action/step_6.png)
+![](/img/dev-docs-assets/dev-docs-VHVlLCAxOSBNYXIgMjAyNCAyMTo1MzoxOCBHTVQ=.png)
 
-By following these steps, you can use the "Document This" Chrome extension to document the process of adding a new GitHub Action to your repository. The extension will capture screenshots and generate markdown documentation at each step, making it easy to create comprehensive guides for your team.
-  
-  

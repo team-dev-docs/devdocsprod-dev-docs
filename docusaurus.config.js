@@ -94,6 +94,19 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            feedOptions: {
+              createFeedItems: async (params) => {
+                const {blogPosts, defaultCreateFeedItems, ...rest} = params;
+                console.log("###########")
+                console.log(blogPosts)
+                return defaultCreateFeedItems({
+              
+                  // keep only the 10 most recent blog posts in the feed
+                  blogPosts: blogPosts.filter((item, index) => index < 10),
+                  ...rest,
+                });
+              },
+            },
         },
         theme: {
           customCss: require.resolve('./src/css/custom.scss'),
