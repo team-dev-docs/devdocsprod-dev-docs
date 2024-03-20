@@ -3,6 +3,8 @@ name: Update Commit Message
 on:
   push:
     branches: [main]
+    paths:
+      - '**/*.md'
 
 permissions: write-all
 jobs:
