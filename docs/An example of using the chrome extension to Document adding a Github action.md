@@ -21,6 +21,14 @@ After You Sign In with Github make sure you select your org.
 
 ![](/img/dev-docs-assets/dev-docs-VHVlLCAxOSBNYXIgMjAyNCAyMToxNzo1MyBHTVQ=.png)
 
+Also make sure you have created a Dev-Docs account.  You can find a guide [here](/docs/Initial Set Up/Create an Account and Org.md). 
+
+After that make sure you go to [here](https://www.dev-docs.io/external_docs) to confirm you are all set up.  If you see a github url and org then you are good to go.
+
+<br></br>
+
+Optionally if you want so set up the chrome extension to push to your custom repo you can set it up [here](/docs/Integrate Dev-Docs with a Custom Docs Repo.md).  However we recommend you start simple first just to get going.
+
 
 ## Step 1: Hit Record
 
