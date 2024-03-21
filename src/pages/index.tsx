@@ -23,7 +23,7 @@ import {
 import { cn } from "../utils/cn";
 
 const backgroundStyle = {
-  background: `url(/img/dev-docs-assets/HeroBg.png) lightgray 50% / cover no-repeat`,
+  background: `url(/img/dev-docs-assets/HeroOptBG.png) lightgray 50% / cover no-repeat`,
   width: "100%",
   height: "951px",
   flexShrink: 0,
