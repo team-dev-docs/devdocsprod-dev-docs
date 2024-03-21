@@ -29,13 +29,15 @@ $dark-darker: $color-1-5;
 $dark-darkest: $color-1-6;
 
 :root {
-  --ifm-color-primary: #{$color-1}; ;
+  --ifm-color-primary: #{$color-1};
   --ifm-color-primary-dark: #{$light-dark};
   --ifm-color-primary-darker: #{$light-darker};
   --ifm-color-primary-darkest: #{$light-darkest};
   --ifm-color-primary-light: #{$light-light};
   --ifm-color-primary-lighter: #{$light-lighter};
   --ifm-color-primary-lightest: #{$light-lightest};
+  --ellipis-color: #{$color-1};
+  --ellipis-transparency: 80%
 }
 
 [data-theme="dark"] {
@@ -46,13 +48,35 @@ $dark-darkest: $color-1-6;
   --ifm-color-primary-light: #{$dark-light};
   --ifm-color-primary-lighter: #{$dark-lighter};
   --ifm-color-primary-lightest: #{$dark-lightest};
+  --ellipis-transparency: 12%;
 }
 
-[data-theme="dark"] #__docusaurus_skipToContent_fallback > div {
+// [data-theme="dark"] #__docusaurus_skipToContent_fallback > div {
+//   backdrop-filter: blur(16px) saturate(180%);
+//   -webkit-backdrop-filter: blur(16px) saturate(180%);
+//   background-color: rgba(17, 25, 40, 0.75);
+//   border: none;
+// }
+
+[data-theme="dark"] #__docusaurus__skipToContent__fallback > div {
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
-  background-color: rgba(17, 25, 40, 0.75);
+  background: radial-gradient(circle at 50% 50%, #ff3366, #c766ff, #ff3366);
+  background-size: 200% 200%;
+  animation: gradientAnimation 10s ease infinite;
   border: none;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 [data-theme="dark"] #docusaurus_skipToContent_fallback > div {
@@ -93,24 +117,48 @@ html, body {
 // }
 
 #__docusaurus {
-  background-image: radial-gradient(circle at 300vw 1px, $color-1 3%, transparent 225vw) !important;
+  // background-image: radial-gradient(circle at 300vw 1px, $color-1 3%, transparent 225vw) !important;
   max-width: 100vw !important;
   overflow-x: hidden !important;
   // background: red;
 }
 
-// .docPage_node_modules-\@docusaurus-theme-classic-lib-theme-DocPage-Layout-styles-module {
-//   @media (min-width: 1400px) {
-//     padding-left: 12em;
-//     padding-right: 12em;
-//   }
-// }
+[data-theme="dark"] #__docusaurus {
+  background: radial-gradient(ellipse 349px 354px at 60% 30%, rgba(#C070FF, var(--ellipis-transparency)) 40%, transparent 90%) no-repeat;
+  // background-color: black;
+  background-size: 100% 200%;
+  animation: gradientAnimation 10s ease infinite;
+  overflow: visible;
+  border: none;
+
+}
+
+.docPage_node_modules-\@docusaurus-theme-classic-lib-theme-DocPage-Layout-styles-module {
+  @media (min-width: 1400px) {
+    // padding-left: 12em;
+    // padding-right: 12em;
+  }
+}
+
+[data-theme="dark"] [class^="docPage"] {
+  background: radial-gradient(ellipse 315.122px 352.987px at 80% 40%, rgba(#FF7070, var(--ellipis-transparency)) 40%, transparent 90%) no-repeat;
+  // background-color: black;
+  background-size: 100% 200%;
+  animation: gradientAnimation 10s ease infinite;
+  overflow: visible;
+  border: none;
+
+}
 
 [class^="docPage"] {
   @media (min-width: 1400px) {
-    padding-left: 12em;
-    padding-right: 12em;
+    padding-left: 5em;
+    padding-right: 5em;
   }
+  background-color: transparent;
+  // backdrop-filter: blur(16px) saturate(10%);
+  // -webkit-backdrop-filter: blur(16px) saturate(10%);
+
 
   img {
     margin-top: 1.25em;
@@ -118,6 +166,20 @@ html, body {
   }
   /* Styles for elements with a class that starts with "word" */
 }
+
+// [class^="docPage"]::before {
+//   content: "";
+//   overflow-x: hidden !important;
+//   position: absolute;
+//   top: 10em;
+//   left: -10em;
+//   right: 1px;
+//   bottom: -100px;
+//   background: inherit;
+//   filter: blur(100px);
+//   z-index: -1;
+//   max-width: 100%;
+// }
 
 
 // .#__docusaurus_skipToContent_fallback > div > div > main > article > header > h1 {
