@@ -136,7 +136,7 @@ const config = {
         },
       ],
       navbar: {
-        title: 'Dev-Docs',
+        title: '',
         logo: {
           alt: 'My Site Logo',
           src: logoJson.logo || "",

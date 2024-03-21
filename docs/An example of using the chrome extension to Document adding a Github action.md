@@ -9,7 +9,7 @@ Before you begin, make sure to install the Dev-Docs Chrome extension from the fo
 
 <br></br>
 
-[https://chrome.google.com/webstore/detail/jdfpljfedojaigjibfnnobbmgmlfkibb](https://chrome.google.com/webstore/detail/jdfpljfedojaigjibfnnobbmgmlfkibb)
+[Chrome Extension Link Here](https://chrome.google.com/webstore/detail/jdfpljfedojaigjibfnnobbmgmlfkibb)
 
 
 
