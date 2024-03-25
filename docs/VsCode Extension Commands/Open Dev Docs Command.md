@@ -4,40 +4,45 @@
 
 ## What does this command do?
 
-This command is responsible for opening the Dev Docs application within Visual Studio Code. It initiates a series of actions to authenticate the user (if necessary), gather any relevant query parameters from the URI, and then launch the Dev Docs application with the appropriate context.
+This command is an asynchronous function that is triggered when a folder is opened in Visual Studio Code. It performs the following tasks:
+
+1. It clears any existing draft content from the `storageManager` by setting the `draft` key to `null`.
+2. It retrieves the `devdocs_id_token` from the `storageManager`.
+3. It checks if the provided `resource` (which is a URI representing a folder path) is a directory or not. If it's not a directory, it throws an error.
+4. If the `resource` is a valid directory, it calls the `openDevDocs` function with an object containing the `openedFrom` property set to `'folder'` and the `folderPath` property set to the file system path of the provided `resource`.
 
 ## Why should I use this command?
 
-The Open Dev Docs command streamlines the process of accessing the Dev Docs application directly from within Visual Studio Code. Rather than having to switch between applications or navigate through multiple windows, this command allows developers to seamlessly integrate Dev Docs into their coding workflow. It provides a convenient way to access documentation, generate code snippets, or leverage other Dev Docs features without leaving the Visual Studio Code environment.
-
-## Prerequisites
-
-To use this command effectively, you should have the following prerequisites in place:
-
-1. The Dev Docs extension for Visual Studio Code installed and configured correctly.
-2. A valid GitHub account, as the command may prompt you to sign in with GitHub for authentication purposes.
-3. Any necessary configuration options set in the `dev-docs.json` file, if applicable.
-
-## How do I use this command?
-
-To use the Open Dev Docs command, follow these steps:
-
-1. Open Visual Studio Code and ensure that the Dev Docs extension is installed and enabled.
-2. Navigate to the file or project you want to work with.
-3. Use the appropriate keyboard shortcut or command palette option to trigger the Open Dev Docs command.
-4. If you're not already authenticated, the command will prompt you to sign in with your GitHub account.
-5. Depending on the context, the command may prompt you to provide additional information or query parameters.
-6. Once all necessary information is gathered, the Dev Docs application will open within Visual Studio Code, displaying relevant documentation, code snippets, or other resources related to your current context.
+This command is likely a part of a larger Visual Studio Code extension that integrates with a documentation platform called "Dev Docs." When you open a folder in Visual Studio Code, this command is executed to initiate the process of opening or updating the documentation for that folder within the Dev Docs platform. This can be useful for developers who want to keep their project documentation up-to-date and easily accessible within their development environment.
 
 ## What are relevant configuration options in the `dev-docs.json`?
 
-The `dev-docs.json` file may contain various configuration options that can customize the behavior of the Dev Docs extension and the Open Dev Docs command. Some potentially relevant options could include:
+The code snippet provided does not directly reference any configuration options from a `dev-docs.json` file. However, it's likely that the `storageManager` and the `openDevDocs` function rely on certain configuration options defined in a `dev-docs.json` file. Some potential configuration options that might be relevant include:
 
-- `authenticationProvider`: Specifies the authentication provider to be used for authenticating with Dev Docs (e.g., GitHub, custom provider).
-- `defaultQueryParameters`: Allows you to set default query parameters that should be included when opening Dev Docs.
-- `documentationPaths`: Defines the paths or URLs for the documentation sources that Dev Docs should reference.
-- `codeGenerationSettings`: Configures settings related to code generation, such as language preferences or code formatting options.
+- Authentication settings (e.g., API keys, access tokens) for the Dev Docs platform.
+- Base URLs or endpoints for the Dev Docs API.
+- Folder mappings or project configurations to determine which folders should be synced with Dev Docs.
+- Formatting or styling preferences for the generated documentation.
 
-Please note that the specific configuration options may vary depending on the version of the Dev Docs extension you're using, and some options may be specific to your project or team settings.
+## Prerequisites
+
+To use this command effectively, you likely need:
+
+1. A valid installation of the Dev Docs Visual Studio Code extension.
+2. A configured `devdocs_id_token` stored in the `storageManager`, which is likely obtained through an authentication process with the Dev Docs platform.
+3. A folder or project that you want to integrate with the Dev Docs platform for documentation purposes.
+
+## How do I use this command?
+
+This command is likely triggered automatically when you open a folder in Visual Studio Code, assuming the Dev Docs extension is installed and configured correctly. However, you may also be able to manually trigger this command through the Visual Studio Code command palette or other extension-specific UI elements.
+
+To use this command effectively, follow these steps:
+
+1. Open or create a folder in Visual Studio Code that represents your project or codebase.
+2. Ensure that the Dev Docs extension is installed and configured with the appropriate authentication and project settings.
+3. Open the folder in Visual Studio Code.
+4. The command should execute automatically, initializing the documentation process with the Dev Docs platform for the opened folder.
+
+If the command is successful, you should see the documentation for your project updated or created within the Dev Docs platform, accessible through the extension's UI or the Dev Docs web interface.
   
   
