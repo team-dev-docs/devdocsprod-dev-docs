@@ -2,44 +2,42 @@
   
   # **Open Dev Docs Command**
 
-## What does this VS Code Extension Command do?
+## What does this command do?
 
-This command is responsible for opening the Dev Docs application, which is likely a documentation tool or platform related to the project or codebase. It performs the following actions:
+This command is responsible for opening the Dev Docs application within Visual Studio Code. It initiates a series of actions to authenticate the user (if necessary), gather any relevant query parameters from the URI, and then launch the Dev Docs application with the appropriate context.
 
-1. It clears the value of the `draft` key in the storage manager.
-2. It retrieves the value of the `devdocs_id_token` key from the storage manager, which is likely an authentication token or identifier.
-3. It calls the `openDevDocs` function, passing an object with two properties: `openedFrom` (set to `"file"`) and `doctype` (set to `"reference"`).
+## Why should I use this command?
 
-## Why should I use this VS Code Extension Command?
-
-This command provides a convenient way to access the Dev Docs application directly from within the Visual Studio Code editor. By integrating the documentation platform into the development environment, developers can quickly reference relevant documentation, API references, or other resources without having to switch contexts or applications.
-
-## What are relevant configuration options in the `dev-docs.json`?
-
-While the code snippet provided does not explicitly mention any configuration options, it's likely that the `dev-docs.json` file contains settings or configurations related to the Dev Docs application or the VS Code extension itself. Relevant configuration options could include:
-
-- Authentication credentials or tokens
-- URLs or endpoints for the Dev Docs application
-- Default document types or categories
-- Customization options for the documentation viewer or integration
+The Open Dev Docs command streamlines the process of accessing the Dev Docs application directly from within Visual Studio Code. Rather than having to switch between applications or navigate through multiple windows, this command allows developers to seamlessly integrate Dev Docs into their coding workflow. It provides a convenient way to access documentation, generate code snippets, or leverage other Dev Docs features without leaving the Visual Studio Code environment.
 
 ## Prerequisites
 
-To use this VS Code Extension Command effectively, the following prerequisites may be required:
+To use this command effectively, you should have the following prerequisites in place:
 
-1. The Dev Docs application should be installed and accessible.
-2. The necessary authentication tokens or credentials should be configured and available in the storage manager.
-3. The VS Code extension associated with this command should be installed and properly configured.
+1. The Dev Docs extension for Visual Studio Code installed and configured correctly.
+2. A valid GitHub account, as the command may prompt you to sign in with GitHub for authentication purposes.
+3. Any necessary configuration options set in the `dev-docs.json` file, if applicable.
 
-## How do I use this VS Code Extension Command?
+## How do I use this command?
 
-To use this VS Code Extension Command, follow these steps:
+To use the Open Dev Docs command, follow these steps:
 
-1. Open Visual Studio Code and navigate to the project or codebase where the extension is installed.
-2. Open the Command Palette in Visual Studio Code (via the menu or by pressing `Ctrl+Shift+P` on Windows/Linux, or `Cmd+Shift+P` on macOS).
-3. Start typing "Open Dev Docs" or the command name associated with this functionality.
-4. Select the appropriate command from the list.
+1. Open Visual Studio Code and ensure that the Dev Docs extension is installed and enabled.
+2. Navigate to the file or project you want to work with.
+3. Use the appropriate keyboard shortcut or command palette option to trigger the Open Dev Docs command.
+4. If you're not already authenticated, the command will prompt you to sign in with your GitHub account.
+5. Depending on the context, the command may prompt you to provide additional information or query parameters.
+6. Once all necessary information is gathered, the Dev Docs application will open within Visual Studio Code, displaying relevant documentation, code snippets, or other resources related to your current context.
 
-Upon executing the command, the Dev Docs application should open, displaying the relevant documentation or resources based on the configuration and the provided parameters (`openedFrom` and `doctype`). You can then navigate and explore the documentation as needed.
+## What are relevant configuration options in the `dev-docs.json`?
+
+The `dev-docs.json` file may contain various configuration options that can customize the behavior of the Dev Docs extension and the Open Dev Docs command. Some potentially relevant options could include:
+
+- `authenticationProvider`: Specifies the authentication provider to be used for authenticating with Dev Docs (e.g., GitHub, custom provider).
+- `defaultQueryParameters`: Allows you to set default query parameters that should be included when opening Dev Docs.
+- `documentationPaths`: Defines the paths or URLs for the documentation sources that Dev Docs should reference.
+- `codeGenerationSettings`: Configures settings related to code generation, such as language preferences or code formatting options.
+
+Please note that the specific configuration options may vary depending on the version of the Dev Docs extension you're using, and some options may be specific to your project or team settings.
   
   
