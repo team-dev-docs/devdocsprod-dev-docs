@@ -1,0 +1,60 @@
+
+  
+  # **DevDocs Shortcuts**
+
+## What does this VS Code Extension Command do?
+
+This VS Code Extension Command provides a user-friendly way to display a list of available shortcuts related to the DevDocs extension. When the command `devdocs.showShortCuts` is executed, it opens a modal window that displays a table containing two rows:
+
+1. The first row shows the shortcut `Shift + Command + A`, which generates API documentation in the form of a Postman collection for files containing API routes.
+2. The second row shows the shortcut `Shift + Command + D`, which generates internal documentation within the currently open code file.
+
+## Why should I use this VS Code Extension Command?
+
+Using this VS Code Extension Command can be beneficial for developers working with the DevDocs extension for the following reasons:
+
+1. **Quick Reference**: Instead of having to remember or look up the available shortcuts, this command provides a convenient way to quickly access and view them within the VS Code editor.
+
+2. **Improved Productivity**: By providing easy access to the shortcuts, developers can streamline their workflow and generate documentation more efficiently, saving time and effort.
+
+3. **Discoverability**: If developers are unaware of certain shortcuts or their functionality, this command can help them discover and learn about the available options, enhancing their knowledge of the DevDocs extension.
+
+## What are relevant configuration Options in the `dev-docs.json`?
+
+The code snippet provided does not mention any specific configuration options related to the `dev-docs.json` file. However, it is likely that the DevDocs extension may have configuration options that control the behavior or settings of the extension, including the shortcuts displayed by this command.
+
+## Example JSON of relevant Dev-Docs.json options
+
+Since the code snippet does not reference any specific configuration options, it is not possible to provide an example JSON from the `dev-docs.json` file. However, a hypothetical example of configuration options related to the shortcuts could look like this:
+
+```json
+{
+  "devdocs.shortcuts": {
+    "apiDocGeneration": {
+      "key": "Shift+Command+A",
+      "description": "Generate API Documentation"
+    },
+    "internalDocGeneration": {
+      "key": "Shift+Command+D",
+      "description": "Generate Internal Documentation"
+    }
+  }
+}
+```
+
+## Prerequisites
+
+There are no specific prerequisites mentioned in the provided code snippet for using this VS Code Extension Command. However, it is assumed that the DevDocs extension is installed and properly configured within the VS Code editor.
+
+## How do I use this VS Code Extension Command?
+
+To use this VS Code Extension Command, follow these steps:
+
+1. Open Visual Studio Code and ensure that the DevDocs extension is installed and enabled.
+2. Open the Command Palette in VS Code by pressing `Ctrl+Shift+P` (Windows/Linux) or `Cmd+Shift+P` (macOS).
+3. Type "devdocs.showShortCuts" and press Enter.
+4. A modal window will appear, displaying a table with the available shortcuts and their descriptions.
+
+By executing this command, developers can quickly access and reference the available shortcuts provided by the DevDocs extension, streamlining their workflow and improving productivity.
+  
+  
