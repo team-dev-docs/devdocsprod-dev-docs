@@ -1,0 +1,56 @@
+
+  
+  # **Generate API Documentation**
+
+## What does this VS Code Extension Command do?
+
+This extension command is designed to generate API documentation for your codebase automatically. It analyzes the code, identifies the API routes, and generates a Postman Collection JSON file and an OpenAPI specification (Swagger) file. The Postman Collection can be imported into Postman for testing and documenting your API endpoints, while the OpenAPI specification provides a standardized way to describe your API.
+
+## Why should I use this VS Code Extension Command?
+
+Maintaining API documentation can be a tedious and error-prone task, especially as your codebase grows and changes over time. This extension automates the process of generating API documentation, ensuring that it remains up-to-date and accurate. By generating the documentation directly from your code, you can eliminate the risk of inconsistencies between your documentation and the actual implementation.
+
+Additionally, this extension integrates with an AI service to provide human-readable descriptions and explanations for each API endpoint, making it easier for developers and stakeholders to understand the purpose and usage of each endpoint.
+
+## What are relevant configuration options in the `dev-docs.json`?
+
+The `dev-docs.json` file is used to configure various settings for the extension. Some relevant options include:
+
+1. **ai**: This option specifies the configuration for the AI service used to generate human-readable descriptions for API endpoints.
+2. **defaultOrg**: This option sets the default organization or project to use for the AI service.
+3. **baseUrl**: This option specifies the base URL for the AI service API.
+
+## Example JSON of relevant `dev-docs.json` options
+
+```json
+{
+  "ai": {
+    "model": "gpt-3.5-turbo",
+    "temperature": 0.7,
+    "maxTokens": 2048
+  },
+  "defaultOrg": "your-organization",
+  "baseUrl": "https://api.example.com"
+}
+```
+
+## Prerequisites
+
+Before using this extension command, ensure that you have the following prerequisites:
+
+1. A `dev-docs.json` file in the root of your workspace, with the necessary configuration options set.
+2. An active text editor with the code you want to generate API documentation for.
+
+## How do I use this VS Code Extension Command?
+
+To generate API documentation using this extension command, follow these steps:
+
+1. Open your project in Visual Studio Code.
+2. Open the command palette (`Ctrl+Shift+P` on Windows/Linux or `Cmd+Shift+P` on macOS).
+3. Search for and select the `devdocs.generateAPIDocumentation` command.
+4. The extension will analyze your code, identify the API routes, and generate a Postman Collection JSON file and an OpenAPI specification file in the root of your workspace.
+5. You can import the Postman Collection into Postman for testing and documenting your API endpoints, or use the OpenAPI specification with tools like Swagger UI to provide interactive documentation for your API.
+
+This extension leverages the power of AI to generate human-readable descriptions and explanations for each API endpoint, making it easier for developers and stakeholders to understand the purpose and usage of each endpoint without needing to dig through the code directly.
+  
+  
