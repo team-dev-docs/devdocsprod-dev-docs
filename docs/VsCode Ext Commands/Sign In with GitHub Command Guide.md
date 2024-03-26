@@ -1,6 +1,4 @@
-
-  
-  # **Sign In with GitHub Command**
+# Sign In with GitHub Command
 
 ## What does this command do?
 This command initiates the process of signing in to the Dev Docs extension using your GitHub account. It calls the `signInWithGithub` function, which likely handles the authentication flow with GitHub's OAuth mechanism. Upon successful authentication, it sets the `loggedIn` context in Visual Studio Code to `"yes"`, indicating that the user is now logged in.
@@ -8,20 +6,6 @@ This command initiates the process of signing in to the Dev Docs extension using
 ## Why should I use this command?
 Using this command allows you to authenticate with the Dev Docs extension using your GitHub account. This authentication process may be necessary to access certain features or functionalities provided by the extension that require user authentication or authorization. By signing in, you can unlock additional capabilities or personalized experiences within the extension.
 
-## What are relevant configuration options in the `dev-docs.json`?
-The code snippet provided does not directly reference any configuration options from the `dev-docs.json` file. However, it is possible that the `signInWithGithub` function or other parts of the extension may rely on certain configuration options related to GitHub authentication, such as client ID, client secret, or other OAuth-related settings.
-
-## Example JSON of relevant Dev-Docs.json options
-Since the code snippet does not directly reference any configuration options, there is no clear example JSON to provide. However, if the extension requires GitHub authentication settings, the `dev-docs.json` file might contain something like:
-
-```json
-{
-  "githubAuth": {
-    "clientId": "your-github-client-id",
-    "clientSecret": "your-github-client-secret"
-  }
-}
-```
 
 ## Prerequisites
 Before using this command, make sure you have a GitHub account set up and configured. Additionally, the Dev Docs extension may require certain permissions or scopes to be granted during the authentication process.

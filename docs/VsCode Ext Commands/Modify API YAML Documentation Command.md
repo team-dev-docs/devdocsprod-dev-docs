@@ -1,6 +1,4 @@
-
-  
-  # **Modify API YAML Documentation**
+# **Modify API YAML Documentation**
 
 ## What does this VS Code Extension Command do?
 
@@ -32,9 +30,7 @@ The `dev-docs.json` file is used to configure various settings for the extension
         "langs": ["javascript", "python", "ruby"]
       }
     }
-  },
-  "customRoot": "api-docs",
-  "workspaceRoot": false
+  }
 }
 ```
 

@@ -1,6 +1,4 @@
-
-  
-  # **Audit Markdown Documents**
+# Audit Markdown Documents
 
 ## What does this Vs Code Extension Command do?
 
@@ -44,9 +42,7 @@ The `dev-docs.json` file allows you to configure various aspects of the extensio
       "Check for compliance with project-specific style guides.",
       "Ensure technical accuracy and correctness of code examples."
     ]
-  },
-  "workspaceRoot": "/path/to/your/project/root",
-  "customRoot": "docs"
+  }
 }
 ```
 

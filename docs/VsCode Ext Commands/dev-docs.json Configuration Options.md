@@ -1,6 +1,5 @@
 
-  
-  # **Turn Markdown On**
+# Turn Markdown On
 
 ## What does this VS Code Extension Command do?
 
@@ -9,24 +8,6 @@ This command enables the "Turn Markdown On" functionality of the VS Code extensi
 ## Why should I use this VS Code Extension Command?
 
 The "Turn Markdown On" command provides a convenient way to set up a documentation structure within your project. By creating dedicated Markdown files, you can easily document your codebase, APIs, or any other relevant information. This can be particularly useful for maintaining comprehensive documentation alongside your code, making it easier for developers to understand and contribute to the project.
-
-## What are relevant configuration Options in the `dev-docs.json`?
-
-The `dev-docs.json` file allows you to configure the behavior of the "Turn Markdown On" command and the documentation structure. The relevant configuration options are:
-
-1. `customRoot`: Specifies a custom directory path relative to the workspace root where the `dev-docs` folder should be created.
-2. `workspaceRoot`: If set to `true`, the `dev-docs` folder will be created in the workspace root directory.
-
-## Example JSON of relevant Dev-Docs.json options
-
-```json
-{
-  "customRoot": "src/docs",
-  "workspaceRoot": false
-}
-```
-
-In the above example, the `dev-docs` folder will be created inside the `src/docs` directory relative to the workspace root.
 
 ## Prerequisites
 

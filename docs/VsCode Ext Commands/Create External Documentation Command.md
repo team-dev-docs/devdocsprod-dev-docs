@@ -1,6 +1,6 @@
 
   
-  # **Create External Documentation Command**
+# Create External Documentation Command
 
 ## What does this VSCode Extension Command do?
 

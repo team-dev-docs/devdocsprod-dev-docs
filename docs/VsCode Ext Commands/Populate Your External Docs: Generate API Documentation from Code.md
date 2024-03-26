@@ -1,8 +1,4 @@
-
-  
-  Here is the updated documentation:
-
-# **Populate Your External Docs**
+# Populate Your External Docs
 
 ## What does this VS Code Extension Command do?
 

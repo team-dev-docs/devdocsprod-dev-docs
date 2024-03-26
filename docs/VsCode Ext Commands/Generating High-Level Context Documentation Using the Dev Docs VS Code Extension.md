@@ -1,6 +1,4 @@
-
-  
-  # **Generating High-Level Context for Code**
+# Generating High-Level Context for Code
 
 ## What does this Vs Code Extension Command do?
 
@@ -10,30 +8,6 @@ The `devdocs.generateContext` command is a part of a Visual Studio Code extensio
 
 This command can be useful when working with large or complex codebases, as it provides a quick way to generate documentation that summarizes the main components of the code. This can help developers better understand the purpose and functionality of the code, especially when joining a new project or working on unfamiliar parts of an existing codebase.
 
-## Main Code Object or Class
-
-The primary code object or class highlighted in the provided code is the `generateHighLevelContext` function. This function is responsible for generating the high-level context documentation for a given code file.
-
-### Methods
-
-1. `generateHighLevelContext(data, options)`:
-   - This is an asynchronous function that takes two parameters: `data` (an object containing the token, organization, code, language, and file) and `options` (an object with additional configuration options for the AI service).
-   - It initializes a `CustomLLM` instance with the provided token and organization.
-   - It splits the code into smaller chunks using the `RecursiveCharacterTextSplitter` based on the provided language.
-   - It builds an array of prompts (`summarize`) that include the code chunks and instructions for the AI service.
-   - It constructs a final instruction based on the provided `contextPrompt` option or a default instruction.
-   - It calls the `callMultiAiService` function with the prompts and options to generate the documentation.
-   - If the `editing` option is provided, it calls the `useEditing` function for further editing of the generated documentation.
-
-Example usage:
-
-```typescript
-const result = await generateHighLevelContext(
-  { token: 'your_token', org: 'your_org', code: 'your_code', lang: 'javascript', file: 'example.js' },
-  { ai: { contextPrompt: 'Provide a detailed explanation of the code' } }
-);
-console.log(result);
-```
 
 ## Relevant Configuration Options in the `dev-docs.json`
 

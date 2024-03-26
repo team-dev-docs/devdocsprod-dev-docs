@@ -1,6 +1,4 @@
-
-  
-  # **Generating High-Level Context for Code Files and Folders**
+# Generating High-Level Context for Code Files and Folders
 
 ## What does this VSCode Extension Command do?
 
@@ -23,11 +21,8 @@ The `dev-docs.json` file contains configuration options that control the behavio
 ```json
 {
   "ai": {
-    "url": "https://api.example.com",
     "contextPrompt": "Generate a high-level overview of the code, focusing on the main functionality and data structures."
-  },
-  "workspaceRoot": true,
-  "customRoot": "src"
+  }
 }
 ```
 

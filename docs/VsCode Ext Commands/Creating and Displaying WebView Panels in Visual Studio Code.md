@@ -1,6 +1,4 @@
-
-  
-  # **Displaying a WebView Panel**
+# Displaying a WebView Panel
 
 ## What does this code do?
 This code creates or shows a WebView panel within Visual Studio Code. It is an asynchronous function that, when executed, performs the following steps:

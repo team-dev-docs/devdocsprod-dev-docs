@@ -1,6 +1,4 @@
-
-  
-  # **Creating a dev-docs.json File**
+# Creating a dev-docs.json File
 
 ## What does this VS Code Extension Command do?
 
@@ -20,7 +18,7 @@ Using this command can be helpful in the following scenarios:
 
 The code provided does not specify any particular configuration options for the `dev-docs.json` file. The content of the file is initialized with an empty JSON object `{}`. However, you can define custom configuration options based on your project's requirements.
 
-## Example JSON of relevant Dev-Docs.json options
+
 
 Since no specific configuration options are defined in the provided code, here's an example of how a `dev-docs.json` file might look like with some hypothetical options:
 
@@ -44,7 +42,6 @@ Since no specific configuration options are defined in the provided code, here's
 ```
 
 In this example, the `dev-docs.json` file contains project metadata like `projectName` and `version`, as well as environment-specific settings for API URLs and build configurations.
-
 ## Prerequisites
 
 To use this VS Code extension command, you need to have the following:

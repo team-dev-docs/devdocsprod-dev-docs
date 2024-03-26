@@ -1,6 +1,4 @@
-
-  
-  # **Dev-Docs Search Extension**
+# Dev-Docs Search Extension
 
 ## What does this VS Code Extension Command do?
 
@@ -9,29 +7,6 @@ The `devdocs.showSearchResults` command in the provided code allows users to sea
 ## Why should I use this VS Code Extension Command?
 
 This command is particularly useful when working on large codebases with extensive documentation. It allows developers to quickly find information related to specific topics, classes, methods, or concepts without having to manually browse through multiple files. By enabling efficient searching within the documentation, this command can significantly improve productivity and make it easier to understand and navigate the codebase.
-
-## What are relevant configuration Options in the `dev-docs.json`?
-
-The provided code does not explicitly mention any configuration options in a `dev-docs.json` file. However, based on the code, it appears that the extension relies on the presence of a `dev-docs` directory within the project's root directory, where the documentation files are stored. The configuration options could potentially include the location of this directory or any specific settings related to the search functionality, such as file exclusions or search preferences.
-
-## Example JSON of relevant Dev-Docs.json options
-
-Since the code does not provide any specific details about the `dev-docs.json` configuration file, it is difficult to provide an example. However, here's a hypothetical example of what the configuration file might look like:
-
-```json
-{
-  "documentationDirectory": "path/to/dev-docs",
-  "excludedFiles": [
-    "reference.md"
-  ],
-  "searchOptions": {
-    "includeSubdirectories": true,
-    "ignoreCase": true
-  }
-}
-```
-
-In this example, the `documentationDirectory` option specifies the path to the `dev-docs` directory, `excludedFiles` lists the files to be excluded from the search, and `searchOptions` contains settings related to the search functionality, such as including subdirectories and ignoring case sensitivity.
 
 ## Prerequisites
 

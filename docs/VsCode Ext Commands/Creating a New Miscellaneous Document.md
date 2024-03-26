@@ -1,6 +1,4 @@
-
-  
-  # **Creating a new Miscellaneous Document**
+# Creating a new Miscellaneous Document
 
 ## What does this VS Code Extension Command do?
 

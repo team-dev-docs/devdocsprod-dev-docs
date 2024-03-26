@@ -1,6 +1,4 @@
-
-  
-  # **Initializing dev-docs.json File**
+# Initializing dev-docs.json File
 
 ## What does this method do?
 

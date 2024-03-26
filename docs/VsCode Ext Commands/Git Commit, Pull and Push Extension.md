@@ -1,6 +1,4 @@
-
-  
-  # **Git Commit, Pull and Push Extension**
+# Git Commit, Pull and Push Extension
 
 ## What does this VS Code Extension Command do?
 

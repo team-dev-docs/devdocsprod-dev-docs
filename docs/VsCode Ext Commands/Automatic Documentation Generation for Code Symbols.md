@@ -1,6 +1,6 @@
 
   
-  # **Automatic Documentation Generation for Code Symbols**
+# Automatic Documentation Generation
 
 ## What does this extension command do?
 

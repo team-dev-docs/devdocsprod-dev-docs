@@ -1,6 +1,4 @@
-
-  
-  # **Generating Multi-File High-Level Context**
+# Generating Multi-File High-Level Context
 
 ## What does this command do?
 

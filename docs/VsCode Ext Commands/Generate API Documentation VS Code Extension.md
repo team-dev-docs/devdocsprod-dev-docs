@@ -1,6 +1,6 @@
 
   
-  # **Generate API Documentation**
+# Generate API Documentation
 
 ## What does this VS Code Extension Command do?
 
@@ -12,27 +12,6 @@ Maintaining API documentation can be a tedious and error-prone task, especially 
 
 Additionally, this extension integrates with an AI service to provide human-readable descriptions and explanations for each API endpoint, making it easier for developers and stakeholders to understand the purpose and usage of each endpoint.
 
-## What are relevant configuration options in the `dev-docs.json`?
-
-The `dev-docs.json` file is used to configure various settings for the extension. Some relevant options include:
-
-1. **ai**: This option specifies the configuration for the AI service used to generate human-readable descriptions for API endpoints.
-2. **defaultOrg**: This option sets the default organization or project to use for the AI service.
-3. **baseUrl**: This option specifies the base URL for the AI service API.
-
-## Example JSON of relevant `dev-docs.json` options
-
-```json
-{
-  "ai": {
-    "model": "gpt-3.5-turbo",
-    "temperature": 0.7,
-    "maxTokens": 2048
-  },
-  "defaultOrg": "your-organization",
-  "baseUrl": "https://api.example.com"
-}
-```
 
 ## Prerequisites
 

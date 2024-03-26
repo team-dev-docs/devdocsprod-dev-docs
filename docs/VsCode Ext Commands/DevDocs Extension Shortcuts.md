@@ -1,6 +1,4 @@
-
-  
-  # **DevDocs Shortcuts**
+# DevDocs Shortcuts
 
 ## What does this VS Code Extension Command do?
 
@@ -18,29 +16,6 @@ Using this VS Code Extension Command can be beneficial for developers working wi
 2. **Improved Productivity**: By providing easy access to the shortcuts, developers can streamline their workflow and generate documentation more efficiently, saving time and effort.
 
 3. **Discoverability**: If developers are unaware of certain shortcuts or their functionality, this command can help them discover and learn about the available options, enhancing their knowledge of the DevDocs extension.
-
-## What are relevant configuration Options in the `dev-docs.json`?
-
-The code snippet provided does not mention any specific configuration options related to the `dev-docs.json` file. However, it is likely that the DevDocs extension may have configuration options that control the behavior or settings of the extension, including the shortcuts displayed by this command.
-
-## Example JSON of relevant Dev-Docs.json options
-
-Since the code snippet does not reference any specific configuration options, it is not possible to provide an example JSON from the `dev-docs.json` file. However, a hypothetical example of configuration options related to the shortcuts could look like this:
-
-```json
-{
-  "devdocs.shortcuts": {
-    "apiDocGeneration": {
-      "key": "Shift+Command+A",
-      "description": "Generate API Documentation"
-    },
-    "internalDocGeneration": {
-      "key": "Shift+Command+D",
-      "description": "Generate Internal Documentation"
-    }
-  }
-}
-```
 
 ## Prerequisites
 

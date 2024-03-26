@@ -1,6 +1,4 @@
-
-  
-  # **Replace Selected Text with AI-Generated Content**
+# Replace Selected Text with AI-Generated Content
 
 ## What does this VS Code Extension Command do?
 

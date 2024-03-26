@@ -1,6 +1,4 @@
-
-  
-  # **Outline for Current File**
+# Outline for Current File
 
 ## What does this VS Code Extension Command do?
 
