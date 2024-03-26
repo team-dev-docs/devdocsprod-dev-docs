@@ -87,8 +87,9 @@ $dark-darkest: $color-1-6;
 }
 
 html, body {
-   height: 100%;
-  max-width: 100vw !important;
+  //  height: 100%;
+  // max-width: 100vw !important;
+  overflow-x: hidden;
 }
 
 #__docusaurus_skipToContent_fallback > main > pre {
@@ -116,12 +117,12 @@ html, body {
 //   }
 // }
 
-#__docusaurus {
-  // background-image: radial-gradient(circle at 300vw 1px, $color-1 3%, transparent 225vw) !important;
-  max-width: 100vw !important;
-  overflow-x: hidden !important;
-  // background: red;
-}
+// #__docusaurus {
+//   // background-image: radial-gradient(circle at 300vw 1px, $color-1 3%, transparent 225vw) !important;
+//   max-width: 100vw !important;
+//   overflow-x: hidden !important;
+//   // background: red;
+// }
 
 [data-theme="dark"] #__docusaurus {
   background: radial-gradient(ellipse 349px 354px at 60% 30%, rgba(#C070FF, var(--ellipis-transparency)) 40%, transparent 90%) no-repeat;
@@ -148,6 +149,50 @@ html, body {
   overflow: visible;
   border: none;
 
+}
+
+[class^="docPage"] {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.68);
+  overflow: visible;
+  border: none;
+  backdrop-filter: blur(25px) saturate(180%);
+  -webkit-backdrop-filter: blur(25px) saturate(180%);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+[data-theme="light"] [class^="docPage"]::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 200px; /* Adjust this value as needed */
+  background: radial-gradient(ellipse 50vw 80px at 95% 40%, rgba(#ff83e2, 20%) 40%, transparent 95%);
+  background-size: 100% 200%;
+  animation: gradientAnimation 10s ease infinite;
+  z-index: -1;
+}
+
+
+#__docusaurus {
+  position: relative;
+  overflow: visible;
+  border: none;
+}
+
+[data-theme="light"] #__docusaurus::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 200px; /* Adjust this value as needed */
+  background: radial-gradient(ellipse 50vw 80px at 70% 50%, rgba(#3d3ada, 20%) 40%, transparent 95%);
+  background-size: 100% 200%;
+  animation: gradientAnimation 10s ease infinite;
+  z-index: -1;
 }
 
 [class^="docPage"] {

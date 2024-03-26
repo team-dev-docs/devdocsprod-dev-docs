@@ -56,7 +56,11 @@ export default function MDXContentWrapper(props) {
         </>
       ) : (
         <TracingBeam>
+          <div style={{paddingTop: "2em"}}>
+
+       
           <MDXContent style={{ backgroundImage: image }} {...props} />
+          </div>
         </TracingBeam>
       )}
     </>

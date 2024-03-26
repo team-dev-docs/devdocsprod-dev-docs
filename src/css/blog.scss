@@ -37,7 +37,19 @@
       // Adjust styles for smaller screens
       padding: 1rem;
     }
+
+      a {
+        color: unset !important;
+      }
+    
+   
+
+   
+
+
   }
+
+  
 
   .margin-vert--lg {
     margin: 0 !important;
@@ -69,6 +81,15 @@
     padding-top: 4em;
     min-width: 100vw !important;
   }
+
+  .blog-header-title-card {
+    a {
+      color: unset !important;
+    }
+  }
+ 
+
+
 
 
 

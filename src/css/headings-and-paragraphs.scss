@@ -32,6 +32,9 @@ row {
   h5,
   h6 {
     color: black !important;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell,
+    "Noto Sans", sans-serif, "system-ui", "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
   }
 }
 
@@ -58,6 +61,8 @@ p {
   font-weight: 400;
   line-height: 21.4px; /* 133.75% */
   letter-spacing: -0.08px;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .main-heading {
@@ -165,6 +170,13 @@ li {
   margin-bottom: $base-margin * 0.25; // Smaller bottom margin for list items
 }
 
+.theme-doc-markdown {
+  ul {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+}
+
 // Images
 img {
   @include vertical-margin($base-margin);
@@ -173,9 +185,15 @@ img {
 a {
   color: $color-1; /* Default link color */
   text-decoration: none; /* Remove underline by default */
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell,
+  "Noto Sans", sans-serif, "system-ui", "Segoe UI", Helvetica, Arial,
+  sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
 }
 
 a:hover {
   color: $color-1; /* Change color on hover */
   text-decoration: underline; /* Underline on hover */
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell,
+  "Noto Sans", sans-serif, "system-ui", "Segoe UI", Helvetica, Arial,
+  sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
 }
