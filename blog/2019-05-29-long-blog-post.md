@@ -3,6 +3,7 @@ slug: long-blog-post
 title: Long Blog Post
 authors: endi
 tags: [hello, docusaurus]
+header_image: /img/dev-docs-assets/ClippedHeroBg.png
 ---
 
 This is the summary of a very long blog post,

@@ -18,6 +18,13 @@ export const BackgroundGradientAnimation = ({
   className,
   interactive = true,
   containerClassName,
+  image,
+  headerHeight= "25vh",
+  lightImage,
+  imagePositionX,
+  imagePositionY,
+  backgroundRepeat,
+  bgImageSize
 }: {
   gradientBackgroundStart?: string;
   gradientBackgroundEnd?: string;
@@ -33,6 +40,13 @@ export const BackgroundGradientAnimation = ({
   className?: string;
   interactive?: boolean;
   containerClassName?: string;
+  image?: null;
+  headerHeight?: string,
+  lightImage?: null
+  imagePositionX: null,
+  imagePositionY: null,
+  backgroundRepeat?: null
+  bgImageSize?: null
 }) => {
   const interactiveRef = useRef<HTMLDivElement>(null);
 
@@ -81,12 +95,16 @@ export const BackgroundGradientAnimation = ({
       setTgY(event.clientY - rect.top);
     }
   };
+  console.log("this is the image", image)
+  let imageHeaderClass;
+  if(image) imageHeaderClass = "image-blog-header-card"
+  if(image && lightImage) imageHeaderClass = "image-blog-header-card-light"
 
   return (
-    <div style={{height: "25vh", borderRadius: "20px"}}
+    <div style={{height: `${ headerHeight ||"25vh"}`, borderRadius: "20px", backgroundImage: `url(${image})`, backgroundSize: `${bgImageSize || "cover"}`, backgroundPositionX: `${ imagePositionX || "center"}`, backgroundPositionY: `${ imagePositionY || "center"}`, backgroundRepeat: `${ backgroundRepeat || "no-repeat"}`}}
       className={cn(
         "blog-header-title-card relative overflow-hidden top-0 left-0 bg-[linear-gradient(40deg,var(--gradient-background-start),var(--gradient-background-end))]",
-        containerClassName
+        containerClassName, imageHeaderClass
       )}
     >
       <svg className="hidden">

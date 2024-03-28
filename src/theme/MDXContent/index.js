@@ -21,7 +21,25 @@ export default function MDXContentWrapper(props) {
     <>
       {props?.children?.type?.metadata?.title ? (
         <>
-          <BackgroundGradientAnimation className="test" style={{marginBottom: "2em"}} onClick={handleClick}>
+          <BackgroundGradientAnimation
+            lightImage={props?.children?.type?.frontMatter?.light_image}
+            imagePositionY={
+              props?.children?.type?.frontMatter?.image_position_y
+            }
+            bgImageSize={ props?.children?.type?.frontMatter?.image_size}
+            imagePositionX={
+              props?.children?.type?.frontMatter?.image_position_x
+            }
+            headerHeight={props?.children?.type?.frontMatter?.header_height}
+            image={props?.children?.type?.frontMatter?.header_image}
+            backgroundRepeat={props?.children?.type?.frontMatter?.image_repeat}
+            className="test"
+            style={{
+              marginBottom: "2em",
+              backgroundImage: props?.children?.type?.frontMatter?.header_image,
+            }}
+            onClick={handleClick}
+          >
             <h1 style={{ paddingLeft: "1vw", fontSize: "30px" }}>
               <a href={props.children.type.metadata.permalink}>
                 {props.children.type.metadata.title}
@@ -31,35 +49,36 @@ export default function MDXContentWrapper(props) {
               style={{ paddingLeft: "1vw", fontSize: "16px", fontWeight: 400 }}
             >
               {props.children.type.metadata.authors.length > 0 &&
-                props.children.type.metadata.authors.map((item, index) => ( 
+                props.children.type.metadata.authors.map((item, index) => (
                   <span key={index}>{" " + item.name + ","}</span>
                 ))}
               &nbsp; On {props.children.type.metadata.formattedDate},{" "}
               {Math.ceil(props.children.type.metadata.readingTime * 10) / 1} min
             </h3>
-            <div className='flex flex-row items-center mb-10 w-full'>
-            {props.children.type.metadata.authors.map((item, index) => (
-              <div className="pl-2">
-                  <img className="author-avatar" style={{height: "4vh"}} src={item.imageURL || "/img/ddlogo.png"}></img>
+            <div className="flex flex-row items-center mb-10 w-full">
+              {props.children.type.metadata.authors.map((item, index) => (
+                <div className="pl-2">
+                  <img
+                    className="author-avatar"
+                    style={{ height: "4vh" }}
+                    src={item.imageURL || "/img/ddlogo.png"}
+                  ></img>
+                </div>
+              ))}
+              <div className="pl-6">
+                {props.children.type.metadata.authors.length > 0 &&
+                  props.children.type.metadata.authors.map((item, index) => (
+                    <span key={index}>{" " + item.name + ","}</span>
+                  ))}
               </div>
-            ))}
-            <div className="pl-6">
-            {props.children.type.metadata.authors.length > 0 &&
-                props.children.type.metadata.authors.map((item, index) => ( 
-                  <span key={index}>{" " + item.name + ","}</span>
-                ))}
             </div>
-        
-          </div>
           </BackgroundGradientAnimation>
           <MDXContent style={{ backgroundImage: image }} {...props} />
         </>
       ) : (
         <TracingBeam>
-          <div style={{paddingTop: "2em"}}>
-
-       
-          <MDXContent style={{ backgroundImage: image }} {...props} />
+          <div style={{ paddingTop: "2em" }}>
+            <MDXContent style={{ backgroundImage: image }} {...props} />
           </div>
         </TracingBeam>
       )}
