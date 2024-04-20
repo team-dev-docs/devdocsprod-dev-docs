@@ -1,0 +1,49 @@
+name: Update Target Repositories
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  update-repos:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout main repository
+      uses: actions/checkout@v3
+
+    - name: Checkout target repository 1
+      uses: actions/checkout@v3
+      with:
+        repository: team-dev-docs/devdocsprod-dev-docs
+        path: target-repo-1
+
+    - name: Checkout target repository 2
+      uses: actions/checkout@v3
+      with:
+        repository: team-dev-docs/starter-template
+        path: target-repo-2
+
+    - name: Copy files to target repositories
+      run: |
+        rsync -av --exclude='docs' --exclude='blog' . target-repo-1/
+        rsync -av --exclude='docs' --exclude='blog' . target-repo-2/
+
+    - name: Create pull request in target repository 1
+      uses: peter-evans/create-pull-request@v4
+      with:
+        path: target-repo-1
+        title: Update from main repository
+        branch: update-from-main
+        commit-message: Update files from main repository
+        body: This pull request updates all files and folders from the main repository, except for the docs and blog folders.
+
+    - name: Create pull request in target repository 2
+      uses: peter-evans/create-pull-request@v4
+      with:
+        path: target-repo-2
+        title: Update from main repository
+        branch: update-from-main
+        commit-message: Update files from main repository
+        body: This pull request updates all files and folders from the main repository, except for the docs and blog folders.
