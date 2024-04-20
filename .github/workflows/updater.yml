@@ -27,8 +27,8 @@ jobs:
 
     - name: Copy files to target repositories
       run: |
-        rsync -av --exclude='docs' --exclude='blog' . target-repo-1/
-        rsync -av --exclude='docs' --exclude='blog' . target-repo-2/
+        rsync -av --exclude='docs' --exclude='src/pages' --exclude='blog' . target-repo-1/
+        rsync -av --exclude='docs' --exclude='src/pages' --exclude='blog' . target-repo-2/
 
     - name: Create pull request in target repository 1
       uses: peter-evans/create-pull-request@v4
