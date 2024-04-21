@@ -16,19 +16,19 @@ jobs:
     - name: Checkout target repository 1
       uses: actions/checkout@v3
       with:
-        repository: team-dev-docs/devdocsprod-dev-docs
+        repository: username/target-repo-1
         path: target-repo-1
 
     - name: Checkout target repository 2
       uses: actions/checkout@v3
       with:
-        repository: team-dev-docs/starter-template
+        repository: username/target-repo-2
         path: target-repo-2
 
     - name: Copy files to target repositories
       run: |
-        cp -r . target-repo-1/ --exclude=docs --exclude=src/pages --exclude=blog
-        cp -r . target-repo-2/ --exclude=docs --exclude=src/pages --exclude=blog
+        find . -path "./docs" -prune -o -path "./blog" -prune -o -type f -exec cp --parents {} target-repo-1/ \;
+        find . -path "./docs" -prune -o -path "./blog" -prune -o -type f -exec cp --parents {} target-repo-2/ \;
 
     - name: Create pull request in target repository 1
       uses: peter-evans/create-pull-request@v4
