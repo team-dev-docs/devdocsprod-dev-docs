@@ -14,6 +14,7 @@ jobs:
           python-version: '3.9'
       - run: pip install -r requirements.txt
       - name: build documentation
+        run: echo "Building documentation..."
       - uses: cpina/github-action-push-to-another-repository@main
         env:
           API_TOKEN_GITHUB: ${{ secrets.PAT }}
@@ -25,4 +26,3 @@ jobs:
           target-branch: 'docs_components_update'
           target-directory: 'src/components'
           create-target-branch-if-needed: true
-  
