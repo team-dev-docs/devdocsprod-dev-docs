@@ -16,13 +16,13 @@ jobs:
     - name: Checkout target repository 1
       uses: actions/checkout@v3
       with:
-        repository: username/target-repo-1
+        repository: team-dev-docs/devdocsprod-dev-docs
         path: target-repo-1
 
     - name: Checkout target repository 2
       uses: actions/checkout@v3
       with:
-        repository: username/target-repo-2
+        repository: team-dev-docs/starter-template
         path: target-repo-2
 
     - name: Copy files to target repositories
