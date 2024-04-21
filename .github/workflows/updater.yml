@@ -27,8 +27,8 @@ jobs:
 
     - name: Copy files to target repositories
       run: |
-        find . -path "./docs" -prune -o -path "./blog" -prune -o -type f -exec cp --parents {} target-repo-1/ \;
-        find . -path "./docs" -prune -o -path "./blog" -prune -o -type f -exec cp --parents {} target-repo-2/ \;
+        find . -path "./.git" -prune -o -path "./docs" -prune -o -path "./blog" -prune -o -type f -exec cp --parents {} target-repo-1/ \;
+        find . -path "./.git" -prune -o -path "./docs" -prune -o -path "./blog" -prune -o -type f -exec cp --parents {} target-repo-2/ \;
 
     - name: Create pull request in target repository 1
       uses: peter-evans/create-pull-request@v4
