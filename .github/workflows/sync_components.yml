@@ -1,0 +1,28 @@
+name: build documentation and publish
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+      - run: pip install -r requirements.txt
+      - name: build documentation
+      - uses: cpina/github-action-push-to-another-repository@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.PAT }}
+        with:
+          source-directory: './src/components'
+          destination-github-username: 'team-dev-docs'
+          destination-repository-name: 'starter-template'
+          user-email: github-actions[bot]@users.noreply.github.com
+          target-branch: 'docs_update'
+          target-directory: 'src/components'
+          create-target-branch-if-needed: true
+  
