@@ -22,7 +22,7 @@ jobs:
           destination-github-username: 'team-dev-docs'
           destination-repository-name: 'starter-template'
           user-email: github-actions[bot]@users.noreply.github.com
-          target-branch: 'docs_update'
+          target-branch: 'docs_components_update'
           target-directory: 'src/components'
           create-target-branch-if-needed: true
   
