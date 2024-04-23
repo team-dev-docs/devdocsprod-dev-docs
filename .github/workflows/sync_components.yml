@@ -39,3 +39,16 @@ jobs:
           target-branch: 'docs_css_update'
           target-directory: 'src/css'
           create-target-branch-if-needed: true
+      - name: build assets
+        run: echo "Building documentation..."
+      - uses: cpina/github-action-push-to-another-repository@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.PAT }}
+        with:
+          source-directory: './static/buttons'
+          destination-github-username: 'team-dev-docs'
+          destination-repository-name: 'starter-template'
+          user-email: github-actions[bot]@users.noreply.github.com
+          target-branch: 'docs_css_update'
+          target-directory: 'static/buttons'
+          create-target-branch-if-needed: true
