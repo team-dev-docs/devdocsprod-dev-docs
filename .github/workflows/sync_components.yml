@@ -1,0 +1,54 @@
+name: build documentation and publish
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+      - run: echo "Building documentation..."
+      - name: build components
+        run: echo "Building documentation..."
+      - uses: cpina/github-action-push-to-another-repository@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.PAT }}
+        with:
+          source-directory: './src/components'
+          destination-github-username: 'team-dev-docs'
+          destination-repository-name: 'starter-template'
+          user-email: github-actions[bot]@users.noreply.github.com
+          target-branch: 'docs_components_update'
+          target-directory: 'src/components'
+          create-target-branch-if-needed: true
+      - name: build css
+        run: echo "Building documentation..."
+      - uses: cpina/github-action-push-to-another-repository@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.PAT }}
+        with:
+          source-directory: './src/css'
+          destination-github-username: 'team-dev-docs'
+          destination-repository-name: 'starter-template'
+          user-email: github-actions[bot]@users.noreply.github.com
+          target-branch: 'docs_css_update'
+          target-directory: 'src/css'
+          create-target-branch-if-needed: true
+      - name: build assets
+        run: echo "Building documentation..."
+      - uses: cpina/github-action-push-to-another-repository@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.PAT }}
+        with:
+          source-directory: './static/buttons'
+          destination-github-username: 'team-dev-docs'
+          destination-repository-name: 'starter-template'
+          user-email: github-actions[bot]@users.noreply.github.com
+          target-branch: 'docs_css_update'
+          target-directory: 'static/buttons'
+          create-target-branch-if-needed: true
