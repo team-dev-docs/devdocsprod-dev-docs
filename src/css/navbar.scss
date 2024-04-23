@@ -10,6 +10,40 @@ height: 4.375rem;
 //   z-index: var(--ifm-z-index-fixed);
 }
 
+[data-theme="dark"] .navbar__items--right {
+
+   .clean-btn {
+    position: relative;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    background-image: url("../../static/buttons/darkslider.png") !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    svg {
+      display: none;
+    }
+  }
+}
+
+.navbar__items--right {
+  .clean-btn {
+    position: relative;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    background-image: url("../../static/buttons/slider.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    svg {
+      display: none;
+    }
+  }
+}
+
+
 [data-theme="light"] .navbar--fixed-top {
   position: sticky;
   color: black;
