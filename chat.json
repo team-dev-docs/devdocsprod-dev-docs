@@ -1,3 +1,3 @@
 {
-    "chatUrl": "https://u43zkrn3fm.us-east-1.awsapprunner.com/v1/devdocsprod/query"
+    "chatUrl": "http://localhost:4000/v1/devdocsprod/query"
 }

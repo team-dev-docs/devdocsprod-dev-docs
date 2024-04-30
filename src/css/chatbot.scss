@@ -367,28 +367,28 @@
 
 
 [data-theme="dark"] .chat-popup-box {
-  @extend .chat-box;
+  // @extend .chat-box;
   min-width: 60vw
 }
 
-.chat-popup-box {
-  @extend .chat-box;
-  backdrop-filter: blur(5px);
-  position: fixed;
-  bottom: 100px;
-  right: 20px;
-  width: 400px;
-  height: 625px;
-  flex-shrink: 0;
-  z-index: 9999;
-  // background-color: #111928bf;
-  // backdrop-filter: blur(10px);
-  border-radius: 10px;
-  // padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  color: white;
-  min-width: 60vw
-}
+// .chat-popup-box {
+//   @extend .chat-box;
+//   backdrop-filter: blur(5px);
+//   position: fixed;
+//   bottom: 100px;
+//   right: 20px;
+//   width: 400px;
+//   height: 625px;
+//   flex-shrink: 0;
+//   z-index: 9999;
+//   // background-color: #111928bf;
+//   // backdrop-filter: blur(10px);
+//   border-radius: 10px;
+//   // padding: 20px;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+//   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+//   color: white;
+//   min-width: 60vw
+// }

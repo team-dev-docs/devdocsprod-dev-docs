@@ -1,5 +1,4 @@
 
-  
 # Create External Documentation Command
 
 ## What does this VSCode Extension Command do?
@@ -8,7 +7,7 @@ This command allows you to generate external documentation for your code snippet
 
 ## Why should I use this VSCode Extension Command?
 
-Writing documentation can be a tedious and time-consuming task, especially for complex codebases. This command streamlines the process by automatically generating documentation based on your code. It saves you time and effort, allowing you to focus on coding while still maintaining a well-documented codebase.
+Writing documentation can be a tedious and time-consuming task, especially for complex codebases. This command streamlines the process by automatically generating documentation based on your code. It saves you time and effort, allowing you to focus on coding while still maintaining a well-documented codebase!!!
 
 ## What are the relevant configuration options in the `dev-docs.json`?
 
@@ -20,7 +19,8 @@ The `dev-docs.json` file allows you to customize the behavior of the external do
 
 ## Example JSON of relevant `dev-docs.json` options
 
-```json
+```
+json
 {
   "ai": {
     "externalDocPrompt": "Generate detailed documentation for the createExternalDoc command, explaining its purpose, configuration options, and usage examples.",
@@ -42,6 +42,7 @@ The `dev-docs.json` file allows you to customize the behavior of the external do
     }
   }
 }
+
 ```
 
 ## Prerequisites
@@ -59,5 +60,5 @@ The `dev-docs.json` file allows you to customize the behavior of the external do
 6. The generated documentation will be displayed in a new tab or window, depending on your configuration.
 
 By using this command, you can quickly generate high-quality documentation for your code, making it easier for other developers to understand and maintain your codebase.
-  
-  
+
+

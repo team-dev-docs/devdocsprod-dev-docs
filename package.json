@@ -59,6 +59,7 @@
     "docusaurus-plugin-openapi-docs": "^2.0.1",
     "docusaurus-plugin-sass": "^0.2.2",
     "docusaurus-theme-openapi-docs": "^2.0.1",
+    "embla-carousel-react": "^8.0.2",
     "framer-motion": "^6.5.1",
     "highlight.js": "^11.8.0",
     "js-yaml": "^4.1.0",

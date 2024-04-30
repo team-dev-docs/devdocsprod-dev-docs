@@ -16,6 +16,14 @@ import {
 } from "../components/ui/alert-dialog";
 import { Button } from "../components/ui/button";
 
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "../components/ui/carousel";
+
 import logoJson from "../../logo.json";
 import chatJson from "../../chat.json";
 import { IconX, IconSend2 } from "@tabler/icons-react";
@@ -120,9 +128,10 @@ function ChatBox({ messages, onSendMessage }) {
       const data = await response.json();
 
       const answer = data?.text;
-      messages.push({
+      let messageItem = {
         text: `${answer} \n Here are the sources and other relevant articles:`,
-      });
+        sources: [],
+      };
 
       const { metadatas } = data?.relevantDocuments;
       let metadatasList = metadatas[0];
@@ -132,16 +141,21 @@ function ChatBox({ messages, onSendMessage }) {
         let markdownPath = `(/${messageObject?.path
           .split(".md")[0]
           .replace(/\s/g, "%20")})`;
-        let existingMessage = messages.find(function (message) {
+        let existingMessage = messageItem.sources.find(function (message) {
           return message.text.includes(markdownPath);
         });
         console.log(existingMessage);
         if (!existingMessage) {
-          messages.push({
+          messageItem.sources.push({
             text: `[Original Source]${markdownPath} \n ${camelSourceName}`,
           });
+          // messages.push({
+          //   text: `[Original Source]${markdownPath} \n ${camelSourceName}`,
+          // });
         }
       });
+
+      messages.push(messageItem);
     } catch (error) {
       console.error(error);
     }
@@ -172,7 +186,7 @@ function ChatBox({ messages, onSendMessage }) {
           <SvgBackgroundImage imageUrl={logo} />
 
           <h3 className="pl-4 chat-header">Dev-Docs AI Bot</h3>
-          <AlertDialog className="mt-12"> 
+          <AlertDialog className="mt-12">
             <AlertDialogTrigger asChild>
               <Button
                 style={{ marginLeft: "auto", backgroundColor: "transparent" }}
@@ -197,8 +211,16 @@ function ChatBox({ messages, onSendMessage }) {
               </Button>
             </AlertDialogTrigger>
             <AlertDialogContent className="chat-popup-box">
-              <AlertDialogHeader style={{display: "flex", flexDirection: "row", gap: "0 1em", justifyContent: "center", alignItems: "start"}}>
-              <SvgBackgroundImage imageUrl={logo} />
+              <AlertDialogHeader
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  gap: "0 1em",
+                  justifyContent: "center",
+                  alignItems: "start",
+                }}
+              >
+                <SvgBackgroundImage imageUrl={logo} />
                 <AlertDialogTitle>Dev-Docs AI Bot</AlertDialogTitle>
               </AlertDialogHeader>
               <div
@@ -231,7 +253,6 @@ function ChatBox({ messages, onSendMessage }) {
                     >
                       <SvgBackgroundImage imageUrl={logo} />
                     </div>
-
                     <div
                       className={`chat-box__message ${
                         message.sender === "user"
@@ -251,13 +272,29 @@ function ChatBox({ messages, onSendMessage }) {
                 ))}
                 {loadingBar && (
                   <div
-                    style={{
-                      display: "flex",
-                      alignItems: "flex-end",
-                    }}
+                    style={{ display: "flex", alignItems: "flex-end" }}
                     className="chat-box__message loading_message"
                   >
                     <LoadingDots />
+                  </div>
+                )}
+                {messages.some((message) => message?.sources?.length > 0) && (
+                  <div style={{ marginTop: "20px" }}>
+                    <Carousel
+                      style={{ maxWidth: "80%", marginLeft: "2em" }}
+                    >
+                      <CarouselContent>
+                        {messages
+                          .flatMap((message) => message.sources || [])
+                          .map((source, index) => (
+                            <CarouselItem className="basis-1/3" key={index} style={{ flexShrink: 0 }}>
+                              {processor.processSync(source.text).result}
+                            </CarouselItem>
+                          ))}
+                      </CarouselContent>
+                      <CarouselPrevious />
+                      <CarouselNext />
+                    </Carousel>
                   </div>
                 )}
               </div>
@@ -296,58 +333,81 @@ function ChatBox({ messages, onSendMessage }) {
         </div>
 
         <>
-          <div
-            className="chat-box__messages flex"
-            style={{ padding: "20px", flexDirection: "column" }}
-          >
-            {messages.map((message, index) => (
-              <div
+        <div
+                className="chat-box__messages flex"
                 style={{
-                  display: "flex",
-                  alignItems: "flex-end",
-                  background: "transparent",
+                  padding: "20px",
+                  flexDirection: "column",
+                  overflowY: "scroll",
+                  minHeight: "40vh",
+                  maxHeight: "40vh",
                 }}
-                className={`${
-                  message.sender === "user" ? "user-message" : "bot-message"
-                } mb-4`}
-                key={index}
               >
-                <div
-                  className={`${
-                    message.sender === "user" ? "user-avatar" : "bot-avatar"
-                  } pr-2`}
-                  style={{ flexShrink: 0 }}
-                >
-                  <SvgBackgroundImage imageUrl={logo} />
-                </div>
-
-                <div
-                  className={`chat-box__message ${
-                    message.sender === "user" ? "user-message" : "bot-message"
-                  }`}
-                  style={{
-                    flexGrow: 1,
-                    background: "#616062",
-                    marginLeft: message.sender === "user" ? "16px" : "0",
-                    marginRight: message.sender === "user" ? "0" : "16px",
-                  }}
-                >
-                  {processor.processSync(message.text).result}
-                </div>
+                {messages.map((message, index) => (
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "flex-end",
+                      background: "transparent",
+                    }}
+                    className={`${
+                      message.sender === "user" ? "user-message" : "bot-message"
+                    } mb-4`}
+                    key={index}
+                  >
+                    <div
+                      className={`${
+                        message.sender === "user" ? "user-avatar" : "bot-avatar"
+                      } pr-2`}
+                      style={{ flexShrink: 0 }}
+                    >
+                      <SvgBackgroundImage imageUrl={logo} />
+                    </div>
+                    <div
+                      className={`chat-box__message ${
+                        message.sender === "user"
+                          ? "user-message"
+                          : "bot-message"
+                      }`}
+                      style={{
+                        flexGrow: 1,
+                        background: "#616062",
+                        marginLeft: message.sender === "user" ? "16px" : "0",
+                        marginRight: message.sender === "user" ? "0" : "16px",
+                      }}
+                    >
+                      {processor.processSync(message.text).result}
+                    </div>
+                  </div>
+                ))}
+                {loadingBar && (
+                  <div
+                    style={{ display: "flex", alignItems: "flex-end" }}
+                    className="chat-box__message loading_message"
+                  >
+                    <LoadingDots />
+                  </div>
+                )}
+                {messages.some((message) => message?.sources?.length > 0) && (
+                  <div style={{ marginTop: "20px" }}>
+                    <Carousel
+                      style={{ maxWidth: "80%", marginLeft: "2em" }}
+                    >
+                      <CarouselContent>
+                        {messages
+                          .flatMap((message) => message.sources || [])
+                          .map((source, index) => (
+                            <CarouselItem className="basis-1/3" key={index} style={{ flexShrink: 0 }}>
+                              {processor.processSync(source.text).result}
+                            </CarouselItem>
+                          ))}
+                      </CarouselContent>
+                      <CarouselPrevious />
+                      <CarouselNext />
+                    </Carousel>
+                  </div>
+                )}
               </div>
-            ))}
-            {loadingBar && (
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "flex-end",
-                }}
-                className="chat-box__message loading_message"
-              >
-                <LoadingDots />
-              </div>
-            )}
-          </div>
 
           <form
             className="flex"
