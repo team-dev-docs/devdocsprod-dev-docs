@@ -3,15 +3,33 @@ import { unified } from "unified";
 import markdown from "remark-parse";
 import remark2rehype from "remark-rehype";
 import rehype2react from "rehype-react";
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from "../components/ui/alert-dialog";
+import { Button } from "../components/ui/button";
+
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "../components/ui/carousel";
 
 import logoJson from "../../logo.json";
 import chatJson from "../../chat.json";
-import { IconX, IconSend2 } from '@tabler/icons-react';
+import { IconX, IconSend2 } from "@tabler/icons-react";
 
 const { logo } = logoJson;
 const { chatUrl } = chatJson;
-
-
 
 function capitalizeFirstLetterOfEachWord(str) {
   return str.replace(/(^\w|\s\w)/g, (match) => match.toUpperCase());
@@ -30,7 +48,6 @@ const SvgBackgroundImage = ({ imageUrl }) => {
       className="chatbot-avatar"
       viewBox="0 0 53 53"
     >
-      {/* Background circle */}
       <circle
         cx="26.5"
         cy="26.5"
@@ -40,7 +57,6 @@ const SvgBackgroundImage = ({ imageUrl }) => {
         fill="#7984EB"
       />
 
-      {/* Image pattern */}
       <defs>
         <pattern
           id="imgPattern"
@@ -52,7 +68,6 @@ const SvgBackgroundImage = ({ imageUrl }) => {
         </pattern>
       </defs>
 
-      {/* Foreground circle with image */}
       <circle cx="26.5" cy="26.5" r="25" fill="url(#imgPattern)" />
     </svg>
   );
@@ -78,7 +93,7 @@ const SendInput = () => {
           placeholder="Type something"
         />
         <button className="flex items-center justify-center px-4 border-l">
-          <IconSend2 className="text-white" /> {/* Tabler search icon */}
+          <IconSend2 className="text-white" />
         </button>
       </div>
     </div>
@@ -89,11 +104,13 @@ function ChatBox({ messages, onSendMessage }) {
   const [showChatBox, setShowChatBox] = useState(false);
   const [loadingBar, setLoadingBar] = useState(false);
   const [message, setMessage] = React.useState("");
+  const [isFullScreen, setIsFullScreen] = useState(false);
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
 
   const handleSendMessage = async (event) => {
     event.preventDefault();
 
-    messages.push({ text: message , sender: "user"});
+    messages.push({ text: message, sender: "user" });
     setLoadingBar(true);
     try {
       const response = await fetch(chatUrl, {
@@ -111,136 +128,330 @@ function ChatBox({ messages, onSendMessage }) {
       const data = await response.json();
 
       const answer = data?.text;
-      messages.push({
-        text: `${answer} \n Here are the sources and other relavant articles:`,
-      });
+      let messageItem = {
+        text: `${answer} \n Here are the sources and other relevant articles:`,
+        sources: [],
+      };
 
       const { metadatas } = data?.relevantDocuments;
       let metadatasList = metadatas[0];
-      // let messageObject = metadatasList[metadatasList - 1]
-      // messages.push({
-      //   text: `[Oringal Source](/${messageObject?.path.split(".md")[0].replace(/\s/g, "%20")}) \n ${messageObject?.file}`,
-      // });
       metadatasList.forEach((messageObject) => {
         let filename = messageObject?.file.split(".md")[0].replace(/\_/g, " ");
         let camelSourceName = capitalizeFirstLetterOfEachWord(filename);
         let markdownPath = `(/${messageObject?.path
           .split(".md")[0]
           .replace(/\s/g, "%20")})`;
-        let existingMessage = messages.find(function (message) {
+        let existingMessage = messageItem.sources.find(function (message) {
           return message.text.includes(markdownPath);
         });
         console.log(existingMessage);
         if (!existingMessage) {
-          messages.push({
-            text: `[Oringal Source]${markdownPath} \n ${camelSourceName}`,
+          messageItem.sources.push({
+            text: `[Original Source]${markdownPath} \n ${camelSourceName}`,
           });
+          // messages.push({
+          //   text: `[Original Source]${markdownPath} \n ${camelSourceName}`,
+          // });
         }
       });
+
+      messages.push(messageItem);
     } catch (error) {
       console.error(error);
-      //messages.push({ text: 'hi' });
     }
     setLoadingBar(false);
     setMessage("");
   };
 
+  const toggleFullScreen = () => {
+    setIsFullScreen(!isFullScreen);
+  };
+
   return (
     <div>
-      <div className={`chat-box ${showChatBox ? "show" : "hide"}`}>
-        <div className="" style={{ width: "100%", display: "flex", padding: "20px", borderBottom: '1px solid  #616062' }}>
+      <div
+        className={`chat-box ${showChatBox ? "show" : "hide"} ${
+          isFullScreen ? "full-screen" : ""
+        }`}
+      >
+        <div
+          className=""
+          style={{
+            width: "100%",
+            display: "flex",
+            padding: "20px",
+            borderBottom: "1px solid  #616062",
+          }}
+        >
           <SvgBackgroundImage imageUrl={logo} />
-       
+
           <h3 className="pl-4 chat-header">Dev-Docs AI Bot</h3>
-        </div>
-
-        <div className="chat-box__messages flex" style={{"padding": "20px", "flexDirection": "column"}}>
-          {messages.map((message, index) => (
-            <div
-              style={{
-                display: "flex",
-                alignItems: "flex-end", // Align items vertically
-                background: "transparent",
-              }}
-              className={`${
-                message.sender === "user" ? "user-message" : "bot-message"
-              } mb-4`}
-              key={index}
-            >
-              {/* Fixed-size avatar container with no flex-shrink */}
-              <div  className={`${
-                message.sender === "user" ? "user-avatar" : "bot-avatar"
-              } pr-2`} style={{ flexShrink: 0 }}>
-                <SvgBackgroundImage imageUrl={logo} />
-              </div>
-
-              {/* Message container with padding and flex-grow */}
-              <div
-                className={`chat-box__message ${
-                  message.sender === "user" ? "user-message" : "bot-message"
-                }`}
+          <AlertDialog className="mt-12">
+            <AlertDialogTrigger asChild>
+              <Button
+                style={{ marginLeft: "auto", backgroundColor: "transparent" }}
+                className="fullscreenBtn"
+                variant="outline"
+                onClick={() => setShowChatBox(!showChatBox)}
+              >
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 15 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 2.5C2 2.22386 2.22386 2 2.5 2H5.5C5.77614 2 6 2.22386 6 2.5C6 2.77614 5.77614 3 5.5 3H3V5.5C3 5.77614 2.77614 6 2.5 6C2.22386 6 2 5.77614 2 5.5V2.5ZM9 2.5C9 2.22386 9.22386 2 9.5 2H12.5C12.7761 2 13 2.22386 13 2.5V5.5C13 5.77614 12.7761 6 12.5 6C12.2239 6 12 5.77614 12 5.5V3H9.5C9.22386 3 9 2.77614 9 2.5ZM2.5 9C2.77614 9 3 9.22386 3 9.5V12H5.5C5.77614 12 6 12.2239 6 12.5C6 12.7761 5.77614 13 5.5 13H2.5C2.22386 13 2 12.7761 2 12.5V9.5C2 9.22386 2.22386 9 2.5 9ZM12.5 9C12.7761 9 13 9.22386 13 9.5V12.5C13 12.7761 12.7761 13 12.5 13H9.5C9.22386 13 9 12.7761 9 12.5C9 12.2239 9.22386 12 9.5 12H12V9.5C12 9.22386 12.2239 9 12.5 9Z"
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </Button>
+            </AlertDialogTrigger>
+            <AlertDialogContent className="chat-popup-box">
+              <AlertDialogHeader
                 style={{
-                  flexGrow: 1,
-                  background: "#616062",
-                  marginLeft: message.sender === "user" ? "16px" : "0", // Adjust spacing based on sender
-                  marginRight: message.sender === "user" ? "0" : "16px", // Adjust spacing based on sender
+                  display: "flex",
+                  flexDirection: "row",
+                  gap: "0 1em",
+                  justifyContent: "center",
+                  alignItems: "start",
                 }}
               >
-                {processor.processSync(message.text).result}
+                <SvgBackgroundImage imageUrl={logo} />
+                <AlertDialogTitle>Dev-Docs AI Bot</AlertDialogTitle>
+              </AlertDialogHeader>
+              <div
+                className="chat-box__messages flex"
+                style={{
+                  padding: "20px",
+                  flexDirection: "column",
+                  overflowY: "scroll",
+                  minHeight: "40vh",
+                  maxHeight: "40vh",
+                }}
+              >
+                {messages.map((message, index) => (
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "flex-end",
+                      background: "transparent",
+                    }}
+                    className={`${
+                      message.sender === "user" ? "user-message" : "bot-message"
+                    } mb-4`}
+                    key={index}
+                  >
+                    <div
+                      className={`${
+                        message.sender === "user" ? "user-avatar" : "bot-avatar"
+                      } pr-2`}
+                      style={{ flexShrink: 0 }}
+                    >
+                      <SvgBackgroundImage imageUrl={logo} />
+                    </div>
+                    <div
+                      className={`chat-box__message ${
+                        message.sender === "user"
+                          ? "user-message"
+                          : "bot-message"
+                      }`}
+                      style={{
+                        flexGrow: 1,
+                        background: "#616062",
+                        marginLeft: message.sender === "user" ? "16px" : "0",
+                        marginRight: message.sender === "user" ? "0" : "16px",
+                      }}
+                    >
+                      {processor.processSync(message.text).result}
+                    </div>
+                  </div>
+                ))}
+                {loadingBar && (
+                  <div
+                    style={{ display: "flex", alignItems: "flex-end" }}
+                    className="chat-box__message loading_message"
+                  >
+                    <LoadingDots />
+                  </div>
+                )}
+                {messages.some((message) => message?.sources?.length > 0) && (
+                  <div style={{ marginTop: "20px" }}>
+                    <Carousel
+                      style={{ maxWidth: "80%", marginLeft: "2em" }}
+                    >
+                      <CarouselContent>
+                        {messages
+                          .flatMap((message) => message.sources || [])
+                          .map((source, index) => (
+                            <CarouselItem className="basis-1/3" key={index} style={{ flexShrink: 0 }}>
+                              {processor.processSync(source.text).result}
+                            </CarouselItem>
+                          ))}
+                      </CarouselContent>
+                      <CarouselPrevious />
+                      <CarouselNext />
+                    </Carousel>
+                  </div>
+                )}
               </div>
-            </div>
-          ))}
-          {loadingBar && (
-             <div
-             style={{
-               display: "flex",
-               alignItems: "flex-end", // Align items vertically
-             }}
-             className="chat-box__message loading_message"
-           >
-            <LoadingDots />
-          </div>
-          )}
+              <form
+                className="flex"
+                style={{
+                  marginLeft: "10px",
+                  marginRight: "10px",
+                  marginBottom: "10px",
+                  border: "1px solid  #616062",
+                  borderRadius: "10px",
+                }}
+                onSubmit={handleSendMessage}
+              >
+                <input
+                  type="text"
+                  placeholder="Type your message"
+                  value={message}
+                  onChange={(event) => setMessage(event.target.value)}
+                  className="chat-box__input focus:outline-none flex-1 rounded-l-lg p-2"
+                />
+                <button
+                  type="submit"
+                  className="flex items-center justify-center px-4 bg-transparent font-semibold hover:text-white py-2 hover:border-transparent rounded-r-lg"
+                >
+                  <IconSend2 />
+                </button>
+              </form>
+              <AlertDialogFooter>
+                <AlertDialogCancel onClick={() => setShowChatBox(!showChatBox)}>
+                  Close
+                </AlertDialogCancel>
+              </AlertDialogFooter>
+            </AlertDialogContent>
+          </AlertDialog>
         </div>
 
-        <form className="flex" style={{ marginLeft: "10px", marginRight: "10px", marginBottom: "10px",  border: '1px solid  #616062', borderRadius: "10px"  }} onSubmit={handleSendMessage}>
-      <input
-        type="text"
-        placeholder="Type your message"
-        value={message}
-        onChange={(event) => setMessage(event.target.value)}
-        className="chat-box__input focus:outline-none flex-1 rounded-l-lg p-2" // Adjust classes as needed
-      />
-      <button
-        type="submit"
-        className="flex items-center justify-center px-4 bg-transparent font-semibold hover:text-white py-2 hover:border-transparent rounded-r-lg"
-      >
-        <IconSend2 />
-      </button>
-    </form>
+        <>
+        <div
+                className="chat-box__messages flex"
+                style={{
+                  padding: "20px",
+                  flexDirection: "column",
+                  overflowY: "scroll",
+                  minHeight: "40vh",
+                  maxHeight: "40vh",
+                }}
+              >
+                {messages.map((message, index) => (
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "flex-end",
+                      background: "transparent",
+                    }}
+                    className={`${
+                      message.sender === "user" ? "user-message" : "bot-message"
+                    } mb-4`}
+                    key={index}
+                  >
+                    <div
+                      className={`${
+                        message.sender === "user" ? "user-avatar" : "bot-avatar"
+                      } pr-2`}
+                      style={{ flexShrink: 0 }}
+                    >
+                      <SvgBackgroundImage imageUrl={logo} />
+                    </div>
+                    <div
+                      className={`chat-box__message ${
+                        message.sender === "user"
+                          ? "user-message"
+                          : "bot-message"
+                      }`}
+                      style={{
+                        flexGrow: 1,
+                        background: "#616062",
+                        marginLeft: message.sender === "user" ? "16px" : "0",
+                        marginRight: message.sender === "user" ? "0" : "16px",
+                      }}
+                    >
+                      {processor.processSync(message.text).result}
+                    </div>
+                  </div>
+                ))}
+                {loadingBar && (
+                  <div
+                    style={{ display: "flex", alignItems: "flex-end" }}
+                    className="chat-box__message loading_message"
+                  >
+                    <LoadingDots />
+                  </div>
+                )}
+                {messages.some((message) => message?.sources?.length > 0) && (
+                  <div style={{ marginTop: "20px" }}>
+                    <Carousel
+                      style={{ maxWidth: "80%", marginLeft: "2em" }}
+                    >
+                      <CarouselContent>
+                        {messages
+                          .flatMap((message) => message.sources || [])
+                          .map((source, index) => (
+                            <CarouselItem className="basis-1/3" key={index} style={{ flexShrink: 0 }}>
+                              {processor.processSync(source.text).result}
+                            </CarouselItem>
+                          ))}
+                      </CarouselContent>
+                      <CarouselPrevious />
+                      <CarouselNext />
+                    </Carousel>
+                  </div>
+                )}
+              </div>
+
+          <form
+            className="flex"
+            style={{
+              marginLeft: "10px",
+              marginRight: "10px",
+              marginBottom: "10px",
+              border: "1px solid  #616062",
+              borderRadius: "10px",
+            }}
+            onSubmit={handleSendMessage}
+          >
+            <input
+              type="text"
+              placeholder="Type your message"
+              value={message}
+              onChange={(event) => setMessage(event.target.value)}
+              className="chat-box__input focus:outline-none flex-1 rounded-l-lg p-2"
+            />
+            <button
+              type="submit"
+              className="flex items-center justify-center px-4 bg-transparent font-semibold hover:text-white py-2 hover:border-transparent rounded-r-lg"
+            >
+              <IconSend2 />
+            </button>
+          </form>
+        </>
       </div>
       <div className="overlay">
-      {
-  showChatBox
-    ? (
-        // The 'if' part: this will render when showChatBox is true
-        <IconX onClick={() => setShowChatBox(!showChatBox)}
-        className="toggle-button"
-        src={logo}
-        alt="Circular button" />
-      )
-    : (
-        // The 'else' part: this will render when showChatBox is false
-  
-
-        <img
-        onClick={() => setShowChatBox(!showChatBox)}
-        className="toggle-button"
-        src={logo}
-        alt="Circular button"
-      />
-      )
-}
+        {showChatBox ? (
+          <IconX
+            onClick={() => setShowChatBox(!showChatBox)}
+            className="toggle-button"
+            src={logo}
+            alt="Circular button"
+          />
+        ) : (
+          <img
+            onClick={() => setShowChatBox(!showChatBox)}
+            className="toggle-button"
+            src={logo}
+            alt="Circular button"
+          />
+        )}
       </div>
     </div>
   );
