@@ -1,11 +1,27 @@
 .tocCollapsibleButton_node_modules-\@docusaurus-theme-classic-lib-theme-TOCCollapsible-CollapseButton-styles-module::after {
-    background: none !important;
+  background: none !important;
 }
 
 .theme-doc-toc-mobile {
-    .tocCollapsibleButton_TO0P:after {
-        background: none !important;
-    }
+  .tocCollapsibleButton_TO0P:after {
+    background: none !important;
+  }
+}
+
+.table-of-contents__link {
+  color: #A2A1A5;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+
+
+.table-of-contents__link:hover, .table-of-contents__link:hover code, .table-of-contents__link--active, .table-of-contents__link--active code {
+    color: var(--ifm-color-primary) !important;
+    text-decoration: none;
 }
 
 // [data-theme="light"] .table-of-contents {

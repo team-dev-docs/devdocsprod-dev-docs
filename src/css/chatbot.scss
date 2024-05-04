@@ -122,6 +122,7 @@
   padding: 0.5em;
   margin-bottom: 10px;
   border-radius: 10px;
+  max-width: 80%;
 }
 
 .loading_message {
@@ -369,6 +370,25 @@
 [data-theme="dark"] .chat-popup-box {
   // @extend .chat-box;
   min-width: 60vw
+}
+
+.chat-popup-box {
+  min-width: 60vw;
+}
+
+.chat-code-block {
+  position: relative;
+}
+
+.copy-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 4px 8px;
+  background-color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 // .chat-popup-box {
