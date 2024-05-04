@@ -536,14 +536,14 @@ p {
 /* Background styles */
 
 
-body::-webkit-scrollbar {
-  width: 8px;
-  background-color: var(--ifm-color-primary-dark);
-}
+// body::-webkit-scrollbar {
+//   width: 8px;
+//   background-color: var(--ifm-color-primary-dark);
+// }
 
-body::-webkit-scrollbar-thumb {
-  background-color: hsl(162, 77%, 40%);
-}
+// body::-webkit-scrollbar-thumb {
+//   background-color: hsl(162, 77%, 40%);
+// }
 
 /* Glassmorphism card effect */
 // .card {
