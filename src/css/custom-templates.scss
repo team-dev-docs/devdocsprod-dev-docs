@@ -222,63 +222,6 @@ p {
   margin-top: 0px;
 }
 
-// .inside-magic p {
-//   display: block !important;
-// }
-
-// .inside-magic br {
-//   display: block !important;
-// }
-
-// .magic-card {
-//   height: 60vh;
-//   aspect-ratio: 1 / 1.5;
-//   background: $color-1;
-//   border-radius: 0.5rem;
-//   z-index: 1;
-//   position: relative;
-//   padding-top: 0 !important;
-
-//   // div {
-//   //   height: 100% !important;
-//   // }
-// }
-
-// .magic-card p {
-//   display: none;
-// }
-
-// .magic-card br {
-//   display: none;
-// }
-
-// .magic-card:hover {
-//   color: rgb(88, 199, 250);
-//   transition: color 1s;
-// }
-
-// .magic-card::before,
-// .magic-card::after {
-//   content: "";
-//   position: absolute;
-//   inset: -0.5rem;
-//   z-index: -1;
-//   background: conic-gradient(
-//     from var(--gradient-angle),
-//     $color-3,
-//     $color-4,
-//     $color-5,
-//     $color-4,
-//     $color-3
-//   );
-//   border-radius: inherit;
-//   animation: rotation 10s linear infinite;
-// }
-
-// .magic-card::after {
-//   filter: blur(3.5rem);
-// }
-
 @property --gradient-angle {
   syntax: "<angle>";
   initial-value: 0deg;
@@ -391,16 +334,16 @@ p {
   background-image: linear-gradient(90deg, #7b81ec, #3bd1d3);
 }
 
-.gradient-button:before,
-button:after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  border-radius: 50px;
-  z-index: -1;
-  filter: blur(14px);
-}
+// .gradient-button:before,
+// button:after {
+//   content: "";
+//   width: 100%;
+//   height: 100%;
+//   position: absolute;
+//   border-radius: 50px;
+//   z-index: -1;
+//   filter: blur(14px);
+// }
 
 @media (max-width: 768px) {
   .border-button {

@@ -2,6 +2,10 @@
   display: none;
 }
 
+[aria-label="Scroll back to top"] {
+  right: 100px !important;
+}
+
 [role="alertdialog"] {
   margin-top: 0.5em !important;
   max-height: 80vh;
@@ -119,10 +123,15 @@
 
 .chat-box__message {
   background: rgba(255, 255, 255, 0.2);
-  padding: 0.5em;
   margin-bottom: 10px;
   border-radius: 10px;
   max-width: 80%;
+  display: inline-flex;
+padding: 0.5em;
+justify-content: center;
+align-items: center;
+gap: 10px;
+margin-bottom: 0px !important;
 }
 
 .loading_message {
