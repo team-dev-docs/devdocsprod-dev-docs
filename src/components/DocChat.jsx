@@ -4,6 +4,7 @@ import markdown from "remark-parse";
 import remark2rehype from "remark-rehype";
 import rehype2react from "rehype-react";
 import CodeBlock from '../components/ui/codeblock'
+import { Input } from "../components/ui/input"
 import {
   AlertDialog,
   AlertDialogAction,
@@ -93,14 +94,14 @@ const SendInput = () => {
   return (
     <div className="flex items-center justify-center bg-black">
       <div className="flex border-2 rounded">
-        <input
+        <Input
           type="text"
           className="px-4 py-2 w-80"
           placeholder="Type something"
         />
-        <button className="flex items-center justify-center px-4 border-l">
+        <Button className="flex items-center justify-center px-4 border-l">
           <IconSend2 className="text-white" />
-        </button>
+        </Button>
       </div>
     </div>
   );
@@ -315,19 +316,19 @@ function ChatBox({ messages, onSendMessage }) {
                 }}
                 onSubmit={handleSendMessage}
               >
-                <input
+                <Input
                   type="text"
                   placeholder="Type your message"
                   value={message}
                   onChange={(event) => setMessage(event.target.value)}
-                  className="chat-box__input focus:outline-none flex-1 rounded-l-lg p-2"
+                  className="chat-box__input"
                 />
-                <button
+                <Button
                   type="submit"
                   className="flex items-center justify-center px-4 bg-transparent font-semibold hover:text-white py-2 hover:border-transparent rounded-r-lg"
                 >
                   <IconSend2 />
-                </button>
+                </Button>
               </form>
               <AlertDialogFooter>
                 <AlertDialogCancel onClick={() => setShowChatBox(!showChatBox)}>
@@ -416,29 +417,27 @@ function ChatBox({ messages, onSendMessage }) {
               </div>
 
           <form
-            className="flex"
+            className="flex w-full max-w-sm items-center space-x-2"
             style={{
               marginLeft: "10px",
               marginRight: "10px",
-              marginBottom: "10px",
-              border: "1px solid  #616062",
-              borderRadius: "10px",
+              marginBottom: "10px"
             }}
             onSubmit={handleSendMessage}
           >
-            <input
+            <Input
               type="text"
               placeholder="Type your message"
               value={message}
               onChange={(event) => setMessage(event.target.value)}
-              className="chat-box__input focus:outline-none flex-1 rounded-l-lg p-2"
+              className="chat-box__input"
             />
-            <button
+            <Button
               type="submit"
               className="flex items-center justify-center px-4 bg-transparent font-semibold hover:text-white py-2 hover:border-transparent rounded-r-lg"
             >
               <IconSend2 />
-            </button>
+            </Button>
           </form>
         </>
       </div>
