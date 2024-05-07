@@ -12,6 +12,11 @@
   z-index: 0 !important;
 }
 
+.aa-SubmitIcon {
+  fill: $color-1;
+}
+
+
 @media (max-width: 600px) {
   .navbar-sidebar {
     z-index: 5 !important;
