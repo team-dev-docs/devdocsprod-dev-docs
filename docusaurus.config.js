@@ -45,7 +45,7 @@ const config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'facebook', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
-  plugins: ['docusaurus-plugin-sass', "@orama/plugin-docusaurus",
+  plugins: ['docusaurus-plugin-sass', "@docusaurus/plugin-sitemap", "@orama/plugin-docusaurus",
     [
       'docusaurus-plugin-openapi-docs',
       {

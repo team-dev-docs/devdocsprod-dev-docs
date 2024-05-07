@@ -139,6 +139,11 @@ margin-bottom: 0px !important;
   padding: 0.5em;
 }
 
+[data-theme="light"] .loading_message {
+  background-color: #F3F3F3;
+  max-width: 100px;
+}
+
 .user-message {
   border-radius: 20px 20px 0px 20px;
   background: #7984eb !important;
