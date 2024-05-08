@@ -1,13 +1,40 @@
 [data-theme="dark"] .navbar--fixed-top {
   position: sticky;
   color: white;
-  //   top: 0;
+  top: 0;
   height: 4.375rem;
-  padding-bottom: 3.5em;
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
   background-color: rgb(8 28 69 / 30%);
+  .navbar__inner {
+    background-size: 100% 200%;
+    overflow: visible;
+    border: none;
+  }
   //   z-index: var(--ifm-z-index-fixed);
+}
+
+[data-theme="light"] .navbar--fixed-top {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.34);
+  color: black;
+}
+
+.navbar--fixed-top {
+  position: sticky;
+  top: 0;
+  height: 4.375rem;
+  z-index: var(--ifm-z-index-fixed);
+  .navbar__inner {
+    background-size: 100% 200%;
+    overflow: visible;
+    border: none;
+  }
+}
+
+.navbar--fixed-top {
+  height: 4.375rem;
 }
 
 
@@ -98,30 +125,7 @@
   }
 }
 
-[data-theme="light"] .navbar--fixed-top {
-  position: sticky;
-  color: black;
-  top: 0;
-  height: 4.375rem;
-  z-index: var(--ifm-z-index-fixed);
-  backdrop-filter: blur(16px) saturate(180%);
-  -webkit-backdrop-filter: blur(16px) saturate(180%);
-  background-color: rgba(255, 255, 255, 0.34);
-  // background: radial-gradient(ellipse 200px 100px at 100% 90%, rgba(#FF7070, 20%) 40%, transparent 90%) no-repeat;
-  .navbar__inner {
-    // background: radial-gradient(ellipse 200px 100px at 90% 40%, rgba(#FF7070, 20%) 40%, transparent 90%) no-repeat;
-    // background-color: transparent;
-    // background: radial-gradient(ellipse 315.122px 352.987px at 80% 40%, rgba(#FF7070, var(--ellipis-transparency)) 40%, transparent 90%) no-repeat;
-    // // background-color: black;
-    background-size: 100% 200%;
-    // animation: gradientAnimation 10s ease infinite;
-    overflow: visible;
-    border: none;
-    //  backdrop-filter: blur(25px) saturate(180%);
-    //   -webkit-backdrop-filter: blur(25px) saturate(180%);
-    //   background-color: transparent;
-  }
-}
+
 
 .navbar {
   @media (min-width: 1400px) {
