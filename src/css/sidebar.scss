@@ -7,7 +7,7 @@
   border-radius: 7px;
   background: none;
   // color: $color-1;
-  color: #0D0D0D !important;
+  color: $color-1 !important;
   /* Navigation Selected */
   font-family: Inter;
   font-size: 14px;
@@ -18,7 +18,7 @@
 }
 
 [data-theme="dark"] .menu__link--active:not(.menu__link--sublist) {
-  color: #FFF !important;
+  color: $color-1 !important;
 }
 
 .menu__link {
