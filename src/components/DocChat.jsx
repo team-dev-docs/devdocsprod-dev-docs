@@ -5,6 +5,7 @@ import remark2rehype from "remark-rehype";
 import rehype2react from "rehype-react";
 import CodeBlock from '../components/ui/codeblock'
 import { Input } from "../components/ui/input"
+
 import {
   AlertDialog,
   AlertDialogAction,
@@ -96,6 +97,7 @@ const SendInput = () => {
       <div className="flex border-2 rounded">
         <Input
           type="text"
+          autoFocus
           className="px-4 py-2 w-80"
           placeholder="Type something"
         />
@@ -113,6 +115,7 @@ function ChatBox({ messages, onSendMessage }) {
   const [message, setMessage] = React.useState("");
   const [isFullScreen, setIsFullScreen] = useState(false);
   const [isDialogOpen, setIsDialogOpen] = useState(false);
+
 
   const handleSendMessage = async (event) => {
     event.preventDefault();
@@ -438,6 +441,7 @@ function ChatBox({ messages, onSendMessage }) {
               type="text"
               placeholder="Type your message"
               value={message}
+              autoFocus
               onChange={(event) => setMessage(event.target.value)}
               className="chat-box__input"
             />
