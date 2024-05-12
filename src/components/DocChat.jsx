@@ -117,6 +117,15 @@ function ChatBox({ messages, onSendMessage }) {
   const handleSendMessage = async (event) => {
     event.preventDefault();
 
+    const trimmedMessage = message.trim();
+
+    // Check if the trimmed message is not empty
+    if (trimmedMessage == '') {
+      console.log('Sending message:', trimmedMessage);
+      setMessage('');
+      return
+    }
+
     messages.push({ text: message, sender: "user" });
     setLoadingBar(true);
     try {
