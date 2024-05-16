@@ -148,13 +148,16 @@ align-self: stretch !important;
 }
 
 .loading_message {
-  width: 5rem;
-  padding: 0.5em;
+  width: 5rem !important;
 }
+
+// .loading-dots {
+//   max-width: 3em !important;
+// }
 
 [data-theme="light"] .loading_message {
   background-color: #f3f3f3;
-  max-width: 100px;
+  max-width: 5em !important;
 }
 
 .user-message {

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { unified } from "unified";
 import markdown from "remark-parse";
 import remark2rehype from "remark-rehype";
@@ -117,6 +117,9 @@ function ChatBox({ messages, onSendMessage }) {
   const [isFullScreen, setIsFullScreen] = useState(false);
   const [isDialogOpen, setIsDialogOpen] = useState(false);
 
+
+
+
   const handleSendMessage = async (event) => {
     event.preventDefault();
 
@@ -131,13 +134,24 @@ function ChatBox({ messages, onSendMessage }) {
 
     messages.push({ text: message, sender: "user" });
     setLoadingBar(true);
+    setMessage("")
+    let messagesContainer = document.querySelector('.end-of-chat');
+    let fullMessagesContainer = document.querySelector('.end-of-chat-fullscreen');
+    if (messagesContainer) {
+      console.log("this the container", messagesContainer)
+      messagesContainer.scrollIntoView({ behavior: 'smooth' });
+      // messagesContainer.scrollTop = messagesContainer.scrollHeight * 2;
+    } 
+    if(fullMessagesContainer) {
+      fullMessagesContainer.scrollIntoView({ behavior: 'smooth' });
+    }
     try {
       const response = await fetch(chatUrl, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ query: message }),
+        body: JSON.stringify({ query: trimmedMessage }),
       });
 
       if (!response.ok) {
@@ -254,39 +268,63 @@ function ChatBox({ messages, onSendMessage }) {
               >
                 {messages.map((message, index) => (
                   <div
-                    style={{
-                      display: "flex",
-                      alignItems: "flex-end",
-                      background: "transparent",
-                    }}
-                    className={`${
-                      message.sender === "user" ? "user-message" : "bot-message"
-                    } mb-4`}
                     key={index}
+                    style={{ display: "flex", flexDirection: "column" }}
                   >
                     <div
+                      style={{
+                        display: "flex",
+                        alignItems: "flex-end",
+                        background: "transparent",
+                      }}
                       className={`${
-                        message.sender === "user" ? "user-avatar" : "bot-avatar"
-                      } pr-2`}
-                      style={{ flexShrink: 0 }}
-                    >
-                      <SvgBackgroundImage imageUrl={logo} />
-                    </div>
-                    <div
-                      className={`chat-box__message ${
                         message.sender === "user"
                           ? "user-message"
                           : "bot-message"
-                      }`}
-                      style={{
-                        flexGrow: 1,
-                        background: "#616062",
-                        marginLeft: message.sender === "user" ? "16px" : "0",
-                        marginRight: message.sender === "user" ? "0" : "16px",
-                      }}
+                      } mb-4`}
                     >
-                      {processor.processSync(message.text).result}
+                      <div
+                        className={`${
+                          message.sender === "user"
+                            ? "user-avatar"
+                            : "bot-avatar"
+                        } pr-2`}
+                        style={{ flexShrink: 0 }}
+                      >
+                        <SvgBackgroundImage imageUrl={logo} />
+                      </div>
+                      <div
+                        className={`chat-box__message ${
+                          message.sender === "user"
+                            ? "user-message"
+                            : "bot-message"
+                        }`}
+                        style={{
+                          flexGrow: 1,
+                          background: "#616062",
+                          marginLeft: message.sender === "user" ? "16px" : "0",
+                          marginRight: message.sender === "user" ? "0" : "16px",
+                        }}
+                      >
+                        {processor.processSync(message.text).result}
+                      </div>
                     </div>
+                    {message.sources && message.sources.length > 0 && (
+                      <div
+                        className="sources-container"
+                        style={{ marginTop: "10px" }}
+                      >
+                        <h3>Sources</h3>
+                        {message.sources.map((source, sourceIndex) => (
+                          <Badge
+                            key={`${index}-${sourceIndex}`}
+                            className="sources"
+                          >
+                            {processor.processSync(source.text).result}
+                          </Badge>
+                        ))}
+                      </div>
+                    )}
                   </div>
                 ))}
                 {loadingBar && (
@@ -297,21 +335,7 @@ function ChatBox({ messages, onSendMessage }) {
                     <LoadingDots />
                   </div>
                 )}
-                {messages.some((message) => message?.sources?.length > 0) && (
-                  <div
-                    className="sources-container"
-                    style={{ marginTop: "20px" }}
-                  >
-                    <h3>Sources</h3>
-                    {messages
-                      .flatMap((message) => message.sources || [])
-                      .map((source, index) => (
-                        <Badge className="sources">
-                          {processor.processSync(source.text).result}
-                        </Badge>
-                      ))}
-                  </div>
-                )}
+                <div className="end-of-chat-fullscreen"></div>
               </div>
               <form
                 className="flex"
@@ -360,37 +384,57 @@ function ChatBox({ messages, onSendMessage }) {
           >
             {messages.map((message, index) => (
               <div
-                style={{
-                  display: "flex",
-                  alignItems: "flex-end",
-                  background: "transparent",
-                }}
-                className={`${
-                  message.sender === "user" ? "user-message" : "bot-message"
-                } mb-4`}
                 key={index}
+                style={{ display: "flex", flexDirection: "column" }}
               >
                 <div
-                  className={`${
-                    message.sender === "user" ? "user-avatar" : "bot-avatar"
-                  } pr-2`}
-                  style={{ flexShrink: 0 }}
-                >
-                  <SvgBackgroundImage imageUrl={logo} />
-                </div>
-                <div
-                  className={`chat-box__message ${
-                    message.sender === "user" ? "user-message" : "bot-message"
-                  }`}
                   style={{
-                    flexGrow: 1,
-                    background: "#616062",
-                    marginLeft: message.sender === "user" ? "16px" : "0",
-                    marginRight: message.sender === "user" ? "0" : "16px",
+                    display: "flex",
+                    alignItems: "flex-end",
+                    background: "transparent",
                   }}
+                  className={`${
+                    message.sender === "user" ? "user-message" : "bot-message"
+                  } mb-4`}
                 >
-                  {processor.processSync(message.text).result}
+                  <div
+                    className={`${
+                      message.sender === "user" ? "user-avatar" : "bot-avatar"
+                    } pr-2`}
+                    style={{ flexShrink: 0 }}
+                  >
+                    <SvgBackgroundImage imageUrl={logo} />
+                  </div>
+                  <div
+                    className={`chat-box__message ${
+                      message.sender === "user" ? "user-message" : "bot-message"
+                    }`}
+                    style={{
+                      flexGrow: 1,
+                      background: "#616062",
+                      marginLeft: message.sender === "user" ? "16px" : "0",
+                      marginRight: message.sender === "user" ? "0" : "16px",
+                    }}
+                  >
+                    {processor.processSync(message.text).result}
+                  </div>
                 </div>
+                {message.sources && message.sources.length > 0 && (
+                  <div
+                    className="sources-container"
+                    style={{ marginTop: "10px" }}
+                  >
+                    <h3>Sources</h3>
+                    {message.sources.map((source, sourceIndex) => (
+                      <Badge
+                        key={`${index}-${sourceIndex}`}
+                        className="sources"
+                      >
+                        {processor.processSync(source.text).result}
+                      </Badge>
+                    ))}
+                  </div>
+                )}
               </div>
             ))}
             {loadingBar && (
@@ -401,18 +445,7 @@ function ChatBox({ messages, onSendMessage }) {
                 <LoadingDots />
               </div>
             )}
-            {messages.some((message) => message?.sources?.length > 0) && (
-              <div className="sources-container" style={{ marginTop: "20px" }}>
-                <h3>Sources</h3>
-                {messages
-                  .flatMap((message) => message.sources || [])
-                  .map((source, index) => (
-                    <Badge className="sources">
-                      {processor.processSync(source.text).result}
-                    </Badge>
-                  ))}
-              </div>
-            )}
+             <div className="end-of-chat"></div>
           </div>
 
           <form
