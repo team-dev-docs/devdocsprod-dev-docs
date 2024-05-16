@@ -37,6 +37,9 @@
   height: 4.375rem;
 }
 
+[class^="toggle"] {
+  width: 4rem !important;
+}
 
 [data-theme="dark"] .navbar__items--right {
   [class^="toggle"] {
@@ -46,7 +49,7 @@
       border: none;
       cursor: pointer;
       padding: 10px;
-      background-image: url("../../static/buttons/darkslider.png") !important;
+      background-image: url("../../static/buttons/darkslider.svg") !important;
       background-position: center;
       background-repeat: no-repeat;
       svg {
@@ -67,7 +70,7 @@
       border: none;
       cursor: pointer;
       padding: 10px;
-      background-image: url("../../static/buttons/slider.png");
+      background-image: url("../../static/buttons/slider.svg");
       background-position: center;
       background-repeat: no-repeat;
       svg {
@@ -88,7 +91,7 @@
     border: none;
     cursor: pointer;
     padding: 10px;
-    background-image: url("../../static/buttons/darkslider.png") !important;
+    background-image: url("../../static/buttons/darkslider.svg") !important;
     background-position: center;
     background-repeat: no-repeat;
     svg {
@@ -112,7 +115,7 @@
     border: none;
     cursor: pointer;
     padding: 10px;
-    background-image: url("../../static/buttons/slider.png") !important;
+    background-image: url("../../static/buttons/slider.svg") !important;
     background-position: center;
     background-repeat: no-repeat;
     svg {
