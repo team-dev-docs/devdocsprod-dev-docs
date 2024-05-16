@@ -3,8 +3,9 @@ import { unified } from "unified";
 import markdown from "remark-parse";
 import remark2rehype from "remark-rehype";
 import rehype2react from "rehype-react";
-import CodeBlock from '../components/ui/codeblock'
-import { Input } from "../components/ui/input"
+import CodeBlock from "../components/ui/codeblock";
+import { Input } from "../components/ui/input";
+import { badgeVariants, Badge } from "../components/ui/badge";
 
 import {
   AlertDialog,
@@ -41,11 +42,11 @@ function capitalizeFirstLetterOfEachWord(str) {
 const processor = unified()
   .use(markdown)
   .use(remark2rehype)
-  .use(rehype2react, { 
-    createElement: React.createElement, 
+  .use(rehype2react, {
+    createElement: React.createElement,
     components: {
       pre: CodeBlock,
-    }
+    },
   });
 
 const SvgBackgroundImage = ({ imageUrl }) => {
@@ -116,17 +117,16 @@ function ChatBox({ messages, onSendMessage }) {
   const [isFullScreen, setIsFullScreen] = useState(false);
   const [isDialogOpen, setIsDialogOpen] = useState(false);
 
-
   const handleSendMessage = async (event) => {
     event.preventDefault();
 
     const trimmedMessage = message.trim();
 
     // Check if the trimmed message is not empty
-    if (trimmedMessage == '') {
-      console.log('Sending message:', trimmedMessage);
-      setMessage('');
-      return
+    if (trimmedMessage == "") {
+      console.log("Sending message:", trimmedMessage);
+      setMessage("");
+      return;
     }
 
     messages.push({ text: message, sender: "user" });
@@ -166,7 +166,7 @@ function ChatBox({ messages, onSendMessage }) {
         console.log(existingMessage);
         if (!existingMessage) {
           messageItem.sources.push({
-            text: `[Original Source]${markdownPath} \n ${camelSourceName}`,
+            text: `[${camelSourceName}]${markdownPath}`,
           });
           // messages.push({
           //   text: `[Original Source]${markdownPath} \n ${camelSourceName}`,
@@ -298,22 +298,18 @@ function ChatBox({ messages, onSendMessage }) {
                   </div>
                 )}
                 {messages.some((message) => message?.sources?.length > 0) && (
-                  <div style={{ marginTop: "20px" }}>
-                    <Carousel
-                      style={{ maxWidth: "80%", marginLeft: "2em" }}
-                    >
-                      <CarouselContent>
-                        {messages
-                          .flatMap((message) => message.sources || [])
-                          .map((source, index) => (
-                            <CarouselItem className="basis-1/3" key={index} style={{ flexShrink: 0 }}>
-                              {processor.processSync(source.text).result}
-                            </CarouselItem>
-                          ))}
-                      </CarouselContent>
-                      <CarouselPrevious />
-                      <CarouselNext />
-                    </Carousel>
+                  <div
+                    className="sources-container"
+                    style={{ marginTop: "20px" }}
+                  >
+                    <h3>Sources</h3>
+                    {messages
+                      .flatMap((message) => message.sources || [])
+                      .map((source, index) => (
+                        <Badge className="sources">
+                          {processor.processSync(source.text).result}
+                        </Badge>
+                      ))}
                   </div>
                 )}
               </div>
@@ -352,88 +348,79 @@ function ChatBox({ messages, onSendMessage }) {
         </div>
 
         <>
-        <div
-                className="chat-box__messages flex"
+          <div
+            className="chat-box__messages flex"
+            style={{
+              padding: "20px",
+              flexDirection: "column",
+              overflowY: "scroll",
+              minHeight: "40vh",
+              maxHeight: "40vh",
+            }}
+          >
+            {messages.map((message, index) => (
+              <div
                 style={{
-                  padding: "20px",
-                  flexDirection: "column",
-                  overflowY: "scroll",
-                  minHeight: "40vh",
-                  maxHeight: "40vh",
+                  display: "flex",
+                  alignItems: "flex-end",
+                  background: "transparent",
                 }}
+                className={`${
+                  message.sender === "user" ? "user-message" : "bot-message"
+                } mb-4`}
+                key={index}
               >
-                {messages.map((message, index) => (
-                  <div
-                    style={{
-                      display: "flex",
-                      alignItems: "flex-end",
-                      background: "transparent",
-                    }}
-                    className={`${
-                      message.sender === "user" ? "user-message" : "bot-message"
-                    } mb-4`}
-                    key={index}
-                  >
-                    <div
-                      className={`${
-                        message.sender === "user" ? "user-avatar" : "bot-avatar"
-                      } pr-2`}
-                      style={{ flexShrink: 0 }}
-                    >
-                      <SvgBackgroundImage imageUrl={logo} />
-                    </div>
-                    <div
-                      className={`chat-box__message ${
-                        message.sender === "user"
-                          ? "user-message"
-                          : "bot-message"
-                      }`}
-                      style={{
-                        flexGrow: 1,
-                        background: "#616062",
-                        marginLeft: message.sender === "user" ? "16px" : "0",
-                        marginRight: message.sender === "user" ? "0" : "16px",
-                      }}
-                    >
-                      {processor.processSync(message.text).result}
-                    </div>
-                  </div>
-                ))}
-                {loadingBar && (
-                  <div
-                    style={{ display: "flex", alignItems: "flex-end" }}
-                    className="chat-box__message loading_message"
-                  >
-                    <LoadingDots />
-                  </div>
-                )}
-                {messages.some((message) => message?.sources?.length > 0) && (
-                  <div style={{ marginTop: "20px" }}>
-                    <Carousel
-                      style={{ maxWidth: "80%", marginLeft: "2em" }}
-                    >
-                      <CarouselContent>
-                        {messages
-                          .flatMap((message) => message.sources || [])
-                          .map((source, index) => (
-                            <CarouselItem className="basis-1/3" key={index} style={{ flexShrink: 0 }}>
-                              {processor.processSync(source.text).result}
-                            </CarouselItem>
-                          ))}
-                      </CarouselContent>
-                      <CarouselPrevious />
-                      <CarouselNext />
-                    </Carousel>
-                  </div>
-                )}
+                <div
+                  className={`${
+                    message.sender === "user" ? "user-avatar" : "bot-avatar"
+                  } pr-2`}
+                  style={{ flexShrink: 0 }}
+                >
+                  <SvgBackgroundImage imageUrl={logo} />
+                </div>
+                <div
+                  className={`chat-box__message ${
+                    message.sender === "user" ? "user-message" : "bot-message"
+                  }`}
+                  style={{
+                    flexGrow: 1,
+                    background: "#616062",
+                    marginLeft: message.sender === "user" ? "16px" : "0",
+                    marginRight: message.sender === "user" ? "0" : "16px",
+                  }}
+                >
+                  {processor.processSync(message.text).result}
+                </div>
               </div>
+            ))}
+            {loadingBar && (
+              <div
+                style={{ display: "flex", alignItems: "flex-end" }}
+                className="chat-box__message loading_message"
+              >
+                <LoadingDots />
+              </div>
+            )}
+            {messages.some((message) => message?.sources?.length > 0) && (
+              <div className="sources-container" style={{ marginTop: "20px" }}>
+                <h3>Sources</h3>
+                {messages
+                  .flatMap((message) => message.sources || [])
+                  .map((source, index) => (
+                    <Badge className="sources">
+                      {processor.processSync(source.text).result}
+                    </Badge>
+                  ))}
+              </div>
+            )}
+          </div>
 
           <form
             className="flex w-full max-w-sm items-center space-x-2"
             style={{
               marginLeft: "10px",
               marginRight: "10px",
-              marginBottom: "10px"
+              marginBottom: "10px",
             }}
             onSubmit={handleSendMessage}
           >
