@@ -4,6 +4,7 @@
     "contextDirs": [
       "docs"
     ],
+    "task": "dev-docs/task.md",
     "auditTasks": ["Find any Markdown Headings that start with the word Step that lack descriptions", "Identify any sections that might be difficult for new javascript users"],
     "mappings": []
   }
