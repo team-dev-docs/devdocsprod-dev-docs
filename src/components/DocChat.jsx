@@ -187,7 +187,7 @@ function ChatBox({ messages, onSendMessage }) {
           // });
         }
       });
-
+     
       messages.push(messageItem);
     } catch (error) {
       console.error(error);

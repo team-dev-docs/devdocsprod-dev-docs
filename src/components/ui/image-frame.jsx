@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { cn } from "@site/src/utils";
 
-const ImageFrame = (props) => {
+const DevDocsImageFrame = (props) => {
   const [isFullScreen, setIsFullScreen] = useState(false);
   const imageRef = useRef(null);
 
@@ -61,4 +61,4 @@ const ImageFrame = (props) => {
   );
 };
 
-export { ImageFrame };
+export { DevDocsImageFrame };
