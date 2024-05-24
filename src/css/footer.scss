@@ -17,16 +17,93 @@
   }
 }
 
+.pagination-nav__sublabel {
+  display: none;
+}
+
+.pagination-nav__link {
+  display: flex;
+}
+
+// .pagination-nav__link--prev::before {
+//   content: url("/buttons/prev.svg")
+// }
+
+.pagination-nav__link-- {
+  .pagination-nav__label::after {
+    content: none;
+    background-color: #1c1c1c !important;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    text-justify: auto;
+    padding-left: 2px;
+  }
+}
+
 .pagination-nav__link--next {
-  border-radius: 0.4375rem;
-  border: 2px solid rgba(87, 95, 110, 0.35);
-  text-align: left;
+  .pagination-nav__label::after {
+    content: none;
+    background-color: #1c1c1c !important;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    text-justify: auto;
+    padding-left: 2px;
+  }
+}
+
+.pagination-nav__link {
+  padding: 0px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 20px;
+  width:fit-content;
+  background-image: linear-gradient(
+    to right,
+    rgba(16, 185, 129, 0),
+    $color-1,
+    $color-1-2
+  );
+  opacity: 1;
+
+  .pagination-nav__label {
+    padding-top: 0.5em;
+    padding: 0.8rem;
+    background-color: #1c1c1c !important;
+    width: 100%;
+    height: 97%;
+    color: white;
+    text-align: center;
+    text-justify: auto;
+    color: var(--text-primary-light, #FFF);
+
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    font-weight: 400;
+  }
+}
+
+.pagination-nav__link--next {
+  justify-self: end !important;
 }
 
 .pagination-nav__link--prev {
-  border-radius: 0.4375rem;
-  border: 2px solid rgba(87, 95, 110, 0.35);
-  text-align: left;
+  justify-self: start !important;
+}
+
+.pagination-nav__link--prev:hover {
+  color: unset;
+}
+
+.pagination-nav__link--:hover {
+  color: unset;
 }
 
 .pagination-nav__sublabel {
@@ -38,13 +115,7 @@
   letter-spacing: -0.025rem;
 }
 
-.pagination-nav__link--next .pagination-nav__label::after {
-  content: "";
-}
 
-.pagination-nav__link--prev .pagination-nav__label::before {
-  content: "";
-}
 
 .pagination-nav__label {
   font-family: Inter;
@@ -55,13 +126,12 @@
   letter-spacing: -0.005rem;
 }
 
-
 .github {
   overflow: hidden;
   display: inline-block; /* Allows sizing */
   width: 24px; /* Set the width for your icon */
   height: 24px; /* Set the height for your icon */
-  background-image: url('/svgs/github.svg'); /* Path to your SVG icon */
+  background-image: url("/svgs/github.svg"); /* Path to your SVG icon */
   background-size: cover; /* Ensures the icon covers the element */
   a {
     color: transparent !important;
@@ -74,7 +144,7 @@
   display: inline-block; /* Allows sizing */
   width: 24px; /* Set the width for your icon */
   height: 24px; /* Set the height for your icon */
-  background-image: url('/svgs/instagram.svg'); /* Path to your SVG icon */
+  background-image: url("/svgs/instagram.svg"); /* Path to your SVG icon */
   background-size: cover; /* Ensures the icon covers the element */
   a {
     color: transparent !important;
@@ -87,7 +157,7 @@
   display: inline-block; /* Allows sizing */
   width: 24px; /* Set the width for your icon */
   height: 24px; /* Set the height for your icon */
-  background-image: url('/svgs/discord.svg'); /* Path to your SVG icon */
+  background-image: url("/svgs/discord.svg"); /* Path to your SVG icon */
   background-size: cover; /* Ensures the icon covers the element */
   a {
     color: transparent !important;
@@ -101,7 +171,7 @@
   display: inline-block; /* Allows sizing */
   width: 24px; /* Set the width for your icon */
   height: 24px; /* Set the height for your icon */
-  background-image: url('/svgs/linkedin.svg'); /* Path to your SVG icon */
+  background-image: url("/svgs/linkedin.svg"); /* Path to your SVG icon */
   background-size: cover; /* Ensures the icon covers the element */
   a {
     color: transparent !important;
@@ -155,4 +225,3 @@
 .footer ul .social {
   margin: 0 10px; /* Add some space between the icons */
 }
-

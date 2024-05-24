@@ -1,33 +1,25 @@
-import React from 'react';
-import clsx from 'clsx';
-import styles from './styles.module.css';
-export default function IconEdit({className, ...restProps}) {
+import React from "react";
+import clsx from "clsx";
+import styles from "./styles.module.css";
+export default function IconEdit({ className, ...restProps }) {
   return (
-<button className="bg-slate-800 no-underline group cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-full p-px text-xs font-semibold leading-6  text-white inline-block">
-  <span className="absolute inset-0 overflow-hidden rounded-full">
-    <span className="absolute inset-0 rounded-full bg-[image:radial-gradient(75%_100%_at_50%_0%,rgba(56,189,248,0.6)_0%,rgba(56,189,248,0)_75%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
-  </span>
-  <div className="relative flex space-x-2 items-center z-10 rounded-full bg-zinc-950 py-0.5 px-4 ring-1 ring-white/10 ">
-    <span>
-      Edit Page
-    </span>
-    <svg
-      fill="none"
-      height="16"
-      viewBox="0 0 24 24"
-      width="16"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M10.75 8.75L14.25 12L10.75 15.25"
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="1.5"
-      />
-    </svg>
-  </div>
-  <span className="absolute -bottom-0 left-[1.125rem] h-px w-[calc(100%-2.25rem)] bg-gradient-to-r from-emerald-400/0 via-emerald-400/90 to-emerald-400/0 transition-opacity duration-500 group-hover:opacity-40" />
-</button>
+    <a className="edit-icon">
+      Edit This Page
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
+        fill="none"
+      >
+        <path
+          d="M9.99837 4.99962H4.99962C4.55771 4.99962 4.13389 5.17517 3.82141 5.48766C3.50892 5.80014 3.33337 6.22396 3.33337 6.66587V14.9971C3.33337 15.439 3.50892 15.8629 3.82141 16.1753C4.13389 16.4878 4.55771 16.6634 4.99962 16.6634H13.3309C13.7728 16.6634 14.1966 16.4878 14.5091 16.1753C14.8216 15.8629 14.9971 15.439 14.9971 14.9971V9.99837M9.16525 10.8315L16.6634 3.33337M16.6634 3.33337H12.4977M16.6634 3.33337V7.499"
+          stroke="#A2A1A5"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </a>
   );
 }
