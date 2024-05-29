@@ -15,6 +15,15 @@
 }
 
 .blog-post-page {
+
+  ol {
+    list-style: auto !important;
+  }
+
+  li {
+    list-style: auto !important;
+  }
+
   .table-of-contents {
     display: none;
   }
