@@ -2,6 +2,16 @@
 //     display: none;
 // }
 
+@mixin conditional-styles($class) {
+  $selector: if(&, "#{&}.#{$class}", false);
+  @if $selector {
+    // Styles to apply if the class is present
+    .col--2 {
+      display: none;
+    }
+  } 
+}
+
 .author-avatar {
   border-radius: 50%;
   background-color: white
@@ -19,7 +29,10 @@
 .blog-post-page {
 
  
-
+  @include conditional-styles('col--2');
+  .row {
+    justify-content: flex-start !important;
+  }
   .navbar {
     margin-bottom: 5em;
   }
@@ -86,7 +99,12 @@
       }
     }
       a {
-        color: unset !important;
+        color: unset;
+      }
+      .image-blog-header-card {
+        a {
+          color: blue !important;
+        }
       }
   }
 

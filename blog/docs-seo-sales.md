@@ -1,6 +1,8 @@
 ---
 title: Why Developer Documentation is Important for SEO and Sales
 authors: andrew
+header_image: /img/dev-docs-assets/ClippedHeroBg.png
+text_color: white
 ---
 
 Developer documentation plays a crucial role in enhancing both SEO and sales for software products and services. In today's digital landscape, where potential customers heavily rely on online resources for research and decision-making, well-crafted documentation can significantly impact a company's visibility, credibility, and success.

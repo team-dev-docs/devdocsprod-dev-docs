@@ -33,27 +33,29 @@ export default function MDXContentWrapper(props) {
             headerHeight={props?.children?.type?.frontMatter?.header_height}
             image={props?.children?.type?.frontMatter?.header_image}
             backgroundRepeat={props?.children?.type?.frontMatter?.image_repeat}
-            className="test"
+            className={props?.children?.type?.frontMatter?.class_name}
+            textColor={props?.children?.type?.frontMatter?.text_color || "auto"}
             style={{
               marginBottom: "2em",
               backgroundImage: props?.children?.type?.frontMatter?.header_image,
             }}
             onClick={handleClick}
           >
-            <h1 style={{ paddingLeft: "1vw" }}>
-              <a href={props.children.type.metadata.permalink}>
+            <h1 style={{ paddingLeft: "1vw", color: props?.children?.type?.frontMatter?.text_color}}>
+              <a style={{ paddingLeft: "1vw", color: props?.children?.type?.frontMatter?.text_color}} href={props.children.type.metadata.permalink}>
                 {props.children.type.metadata.title}
               </a>
             </h1>
             <h3
-              style={{ paddingLeft: "1vw", fontSize: "16px", fontWeight: 400 }}
+              style={{ paddingLeft: "1vw", fontSize: "16px", fontWeight: 400, color: props?.children?.type?.frontMatter?.text_color }}
             >
               {props.children.type.metadata.authors.length > 0 &&
                 props.children.type.metadata.authors.map((item, index) => (
-                  <span key={index}>{" " + item.name + ","}</span>
+                  <span style={{color: props?.children?.type?.frontMatter?.text_color}} key={index}>{" " + item.name + ","}</span>
                 ))}
-              &nbsp; On {props.children.type.metadata.formattedDate},{" "}
-              {Math.ceil(props.children.type.metadata.readingTime * 10) / 1} min
+              
+              &nbsp; <span style={{color: props?.children?.type?.frontMatter?.text_color}}>On {props.children.type.metadata.formattedDate},</span>{" "}
+              <span style={{color: props?.children?.type?.frontMatter?.text_color}}>{Math.ceil(props.children.type.metadata.readingTime * 10) / 1} min</span>
             </h3>
             <div className="flex flex-row items-center mb-10 w-full">
               {props.children.type.metadata.authors.map((item, index) => (
