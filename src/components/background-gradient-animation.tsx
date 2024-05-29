@@ -19,7 +19,7 @@ export const BackgroundGradientAnimation = ({
   interactive = true,
   containerClassName,
   image,
-  headerHeight= "25vh",
+  headerHeight= "40vh",
   lightImage,
   imagePositionX,
   imagePositionY,
@@ -101,7 +101,7 @@ export const BackgroundGradientAnimation = ({
   if(image && lightImage) imageHeaderClass = "image-blog-header-card-light"
 
   return (
-    <div style={{height: `${ headerHeight ||"25vh"}`, borderRadius: "20px", backgroundImage: `url(${image})`, backgroundSize: `${bgImageSize || "cover"}`, backgroundPositionX: `${ imagePositionX || "center"}`, backgroundPositionY: `${ imagePositionY || "center"}`, backgroundRepeat: `${ backgroundRepeat || "no-repeat"}`}}
+    <div style={{borderRadius: "20px", backgroundImage: `url(${image})`, backgroundSize: `${bgImageSize || "cover"}`, backgroundPositionX: `${ imagePositionX || "center"}`, backgroundPositionY: `${ imagePositionY || "center"}`, backgroundRepeat: `${ backgroundRepeat || "no-repeat"}`}}
       className={cn(
         "blog-header-title-card relative overflow-hidden top-0 left-0 bg-[linear-gradient(40deg,var(--gradient-background-start),var(--gradient-background-end))]",
         containerClassName, imageHeaderClass
@@ -125,7 +125,7 @@ export const BackgroundGradientAnimation = ({
           </filter>
         </defs>
       </svg>
-      <div style={{position: "absolute", zIndex: 2000}} className={cn("", className)}>{children}</div>
+      <div style={{position: "absolute", zIndex: 199}} className={cn("", className)}>{children}</div>
       <div className="gradients-container [filter:url(#blurMe)_blur(40px)] h-full w-full">
         <div
           className={cn(

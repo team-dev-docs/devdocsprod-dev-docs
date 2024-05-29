@@ -14,7 +14,28 @@
   }
 }
 
+
+
 .blog-post-page {
+
+ 
+
+  .navbar {
+    margin-bottom: 5em;
+  }
+
+
+
+
+
+
+  // #__docusaurus_skipToContent_fallback > div > div > .col--2 {
+  //   display: none;
+  // }
+
+  .pagination-nav {
+    display: none;
+  }
 
   ol {
     list-style: auto !important;
@@ -33,12 +54,15 @@
   }
   
   .blog-header-title-card {
+    line-break: strict;
+    height: 40vh !important;
     h1 {
       font-size: 56px;
     }
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: fit-content;
     align-items: flex-start;
     margin-bottom: 2em;
     gap: 2rem; // Use a relative unit like rem for a more responsive gap
@@ -47,7 +71,7 @@
     padding: 2rem; // Use a relative unit for padding
 
     // Adjust width to a percentage for responsiveness
-    width: 65vw;
+    width: 100%;
    
     // Limit the maximum width to provide a better reading experience on larger screens
     //   max-width: 980px;
@@ -56,17 +80,14 @@
     @media screen and (max-width: 768px) {
       // Adjust styles for smaller screens
       padding: 1rem;
+      .blog-header-title-card {
+        line-break: anywhere;
+        height: 40vh !important;
+      }
     }
-
       a {
         color: unset !important;
       }
-    
-   
-
-   
-
-
   }
 
   
@@ -103,6 +124,8 @@
   }
 
   .blog-header-title-card {
+    line-break: strict;
+    height: 40vh !important;
     a {
       color: unset !important;
     }
@@ -143,7 +166,7 @@
         padding: 2rem; // Use a relative unit for padding
 
         // Adjust width to a percentage for responsiveness
-        width: 65vw;
+        width: 100%;
 
         // Limit the maximum width to provide a better reading experience on larger screens
         //   max-width: 980px;

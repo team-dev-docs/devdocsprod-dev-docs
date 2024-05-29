@@ -40,7 +40,7 @@ export default function MDXContentWrapper(props) {
             }}
             onClick={handleClick}
           >
-            <h1 style={{ paddingLeft: "1vw", fontSize: "30px" }}>
+            <h1 style={{ paddingLeft: "1vw" }}>
               <a href={props.children.type.metadata.permalink}>
                 {props.children.type.metadata.title}
               </a>
