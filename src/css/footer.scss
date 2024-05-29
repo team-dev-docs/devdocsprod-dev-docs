@@ -29,8 +29,8 @@
 //   content: url("/buttons/prev.svg")
 // }
 
-.pagination-nav__link-- {
-  .pagination-nav__label::after {
+.pagination-nav__link--prev {
+  .pagination-nav__label::before {
     content: none;
     background-color: #1c1c1c !important;
     align-self: center;

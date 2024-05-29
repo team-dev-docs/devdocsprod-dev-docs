@@ -8,8 +8,17 @@
   }
 }
 
+.theme-doc-toc-desktop::before {
+  content: ("On This Page");
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
 .table-of-contents__link {
-  color: #A2A1A5;
+  color: #a2a1a5;
   font-family: Inter;
   font-size: 14px;
   font-style: normal;
@@ -17,12 +26,18 @@
   line-height: normal;
 }
 
-
-
-.table-of-contents__link:hover, .table-of-contents__link:hover code, .table-of-contents__link--active, .table-of-contents__link--active code {
-    color: var(--ifm-color-primary) !important;
-    text-decoration: none;
+.table-of-contents__link:hover,
+.table-of-contents__link:hover code,
+.table-of-contents__link--active,
+.table-of-contents__link--active code {
+  color: var(--ifm-color-primary) !important;
+  text-decoration: none;
 }
+
+// .table-of-contents__link--active::before {
+//   content: ("");
+//   border-right: 0.5px solid $color-1;
+// }
 
 // [data-theme="light"] .table-of-contents {
 //     backdrop-filter: blur(16px) saturate(180%);

@@ -105,7 +105,17 @@ menu__link--sublist {
    }
 }
 
+// .breadcrumbs__item--active .breadcrumbs__link {
+//   background: $color-1;
+//   color: white;
+// }
+
 .breadcrumbs__item--active .breadcrumbs__link {
-  background: $color-1;
-  color: white;
+  color: #7984EB;
+  // background: none;
+
+// font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
 }

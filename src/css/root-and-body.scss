@@ -79,6 +79,15 @@ $dark-darkest: $color-1-6;
   }
 }
 
+.spark-circle {
+  background: #FFF;
+  .rounded-full {
+    background: $color-1 !important;
+    background-color: $color-1 !important;
+    border-color: $color-1 !important; 
+  }
+}
+
 [data-theme="dark"] #docusaurus_skipToContent_fallback > div {
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
@@ -225,6 +234,7 @@ html, body {
   @media (min-width: 1400px) {
     padding-left: 5em;
     padding-right: 5em;
+    padding-top: 2em;
   }
   background-color: transparent;
   // backdrop-filter: blur(16px) saturate(10%);
@@ -238,33 +248,5 @@ html, body {
   /* Styles for elements with a class that starts with "word" */
 }
 
-// [class^="docPage"]::before {
-//   content: "";
-//   overflow-x: hidden !important;
-//   position: absolute;
-//   top: 10em;
-//   left: -10em;
-//   right: 1px;
-//   bottom: -100px;
-//   background: inherit;
-//   filter: blur(100px);
-//   z-index: -1;
-//   max-width: 100%;
-// }
 
-
-// .#__docusaurus_skipToContent_fallback > div > div > main > article > header > h1 {
-//   display: none;
-// }
-
-
-// #__docusaurus {
-//   @media (max-width: 1024px) {
-//     background-image: radial-gradient(circle at 500px 1px, $primary 3%, transparent 71%, rgba(0, 0, 0, 0.1)) !important;
-//   }
-
-//   @media (max-width: 768px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
-//     background-image: radial-gradient(circle at 500px 1px, $primary 3%, transparent 71%, rgba(0, 0, 0, 0.1)) !important;
-//   }
-// }
 

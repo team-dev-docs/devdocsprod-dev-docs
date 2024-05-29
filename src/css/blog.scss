@@ -15,7 +15,18 @@
 }
 
 .blog-post-page {
+  .table-of-contents {
+    display: none;
+  }
+
+  p {
+    font-size: 18px;
+  }
+  
   .blog-header-title-card {
+    h1 {
+      font-size: 56px;
+    }
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,7 +39,7 @@
 
     // Adjust width to a percentage for responsiveness
     width: 65vw;
-
+   
     // Limit the maximum width to provide a better reading experience on larger screens
     //   max-width: 980px;
 
@@ -61,9 +72,9 @@
     margin: 0 calc(var(--ifm-spacing-horizontal) * -1);
     justify-content: center;
 
-    aside {
-      display: none;
-    }
+    // aside {
+    //   display: none;
+    // }
   }
 
   [itemtype="http://schema.org/Blog"]
