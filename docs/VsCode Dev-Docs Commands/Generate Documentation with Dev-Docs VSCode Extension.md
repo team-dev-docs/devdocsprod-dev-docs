@@ -2,57 +2,74 @@
   
   # **Generate Documentation**
 
-The `devdocs.generateDocumentation` command in the Dev-Docs Visual Studio Code (VSCode) extension is designed to generate documentation for your codebase automatically. This command utilizes an AI-powered engine to analyze your code, identify relevant components, functions, and classes, and create comprehensive documentation for them.
-
-## What does this VSCode Extension Command do?
-
-The `devdocs.generateDocumentation` command scans your project's codebase, including files and folders specified in the `dev-docs.json` configuration file. It uses natural language processing and machine learning techniques to understand the code structure, variable names, function signatures, and comments. Based on this analysis, it generates human-readable documentation that explains the purpose, parameters, return values, and usage examples for each code component.
+The "Generate Documentation" command (`devdocs.generateDocumentation`) is a powerful feature of the Dev-Docs VSCode extension that allows you to generate comprehensive documentation for your codebase directly within your editor. This command leverages the power of artificial intelligence (AI) to analyze your code, identify key components, functions, and variables, and generate detailed documentation explaining their purpose, usage, and relevant examples.
 
 ## Why should I use this VSCode Extension Command?
 
-Maintaining up-to-date documentation for a codebase can be a time-consuming and tedious task, especially for large projects or teams with frequent code changes. The `devdocs.generateDocumentation` command automates this process, saving developers valuable time and effort. By leveraging AI technology, it ensures that the documentation remains accurate and consistent with the codebase, reducing the risk of outdated or missing documentation.
+Maintaining up-to-date and accurate documentation is crucial for any software project, especially as codebases grow in complexity. However, manually documenting every aspect of your code can be a tedious and time-consuming task. The "Generate Documentation" command streamlines this process, saving you valuable time and effort while ensuring that your documentation remains consistent and comprehensive.
 
-## What are relevant configuration Options in the `dev-docs.json`?
+By automating the documentation generation process, this command helps you:
 
-Several configuration options in the `dev-docs.json` file are relevant to the `devdocs.generateDocumentation` command:
+1. **Increase productivity**: Instead of spending countless hours manually writing documentation, you can focus on writing code and let the AI handle the documentation aspect.
+2. **Improve code maintainability**: Well-documented code is easier to understand, modify, and maintain, especially for new developers joining the project.
+3. **Enhance collaboration**: Clear and comprehensive documentation facilitates better collaboration among team members, reducing misunderstandings and enabling smoother knowledge transfer.
+4. **Ensure consistency**: The AI-generated documentation follows a consistent format and style, ensuring uniformity across your codebase.
 
-1. **ai.internalTypeFilters**: An array of strings that specifies which types of code components (e.g., classes, functions, interfaces) should be included in the documentation.
-2. **ai.codeFilters**: An array of strings that allows you to filter the code patterns or signatures that should be documented.
-3. **ai.nameFilters**: An array of strings that helps identify specific function or variable names to be documented.
-4. **ai.contextDirs**: An array of strings representing the directories where the command should look for additional context files to improve the documentation quality.
-5. **ai.docPath**: A string specifying the path where the generated documentation should be saved.
+## What are relevant configuration options in the `dev-docs.json`?
 
-## Example JSON of relevant Dev-Docs.json options
+The `dev-docs.json` file contains various configuration options that control the behavior and output of the "Generate Documentation" command. Here are some relevant options:
+
+1. **ai.variablesAndFunctions**: This section allows you to define prompts and documentation templates for variables and functions.
+2. **ai.internalTypeFilters**: An array of TypeScript types to include or exclude from the documentation generation process.
+3. **ai.codeFilters**: An array of code patterns (e.g., `async function`, `export default`) to include or exclude from the documentation.
+4. **ai.nameFilters**: An array of function or variable names to include or exclude from the documentation.
+5. **ai.populateDoc**: The path to a Markdown template file that serves as the base for the generated documentation.
+6. **ai.docSubFolder**: The subfolder within your project where the generated documentation will be stored.
+
+## Example JSON of relevant `dev-docs.json` options
 
 ```json
 {
   "ai": {
-    "internalTypeFilters": ["class", "function", "interface"],
+    "variablesAndFunctions": {
+      "yourFunction": {
+        "prompts": [
+          {
+            "title": "What does this function do?",
+            "question": "Explain the purpose and functionality of the 'yourFunction' function.",
+            "documentation": "The 'yourFunction' is a utility function that..."
+          }
+        ]
+      }
+    },
+    "internalTypeFilters": ["function", "variable", "interface"],
     "codeFilters": ["async function", "export default"],
     "nameFilters": ["handleSubmit", "render"],
-    "contextDirs": ["src/utils", "src/helpers"],
-    "docPath": "docs/generated"
+    "populateDoc": "docs/template.md",
+    "docSubFolder": "api-reference"
   }
 }
 ```
 
 ## Prerequisites
 
-Before using the `devdocs.generateDocumentation` command, ensure that you have:
+Before using the "Generate Documentation" command, ensure that you have:
 
 1. Installed the Dev-Docs VSCode extension.
-2. Configured the `dev-docs.json` file with the appropriate settings for your project.
-3. Opened the project folder in VSCode.
+2. Configured the `dev-docs.json` file according to your project's requirements.
+3. Opened your project in VSCode.
 
 ## How do I use this VSCode Extension Command?
 
-To generate documentation for your codebase using the `devdocs.generateDocumentation` command, follow these steps:
+To generate documentation for your codebase using the "Generate Documentation" command, follow these steps:
 
-1. Open the Command Palette in VSCode by pressing `Ctrl+Shift+P` (Windows/Linux) or `Cmd+Shift+P` (macOS).
-2. Type "Generate Documentation" and select the `devdocs.generateDocumentation` command from the list.
-3. The command will start analyzing your codebase and generate documentation based on the configuration specified in the `dev-docs.json` file.
-4. Once the process is complete, the generated documentation will be saved in the location specified by the `ai.docPath` configuration option.
+1. Open the Command Palette in VSCode (Ctrl+Shift+P on Windows/Linux or Cmd+Shift+P on macOS).
+2. Search for "Generate Documentation" and select the command from the list.
+3. The extension will analyze your codebase based on the configured options and generate the documentation files.
+4. The generated documentation will be saved in the specified `docSubFolder` within your project.
 
-The generated documentation aims to provide a comprehensive understanding of your codebase, making it easier for developers to navigate, maintain, and collaborate on the project. It helps onboard new team members, serves as a reference for existing developers, and facilitates knowledge sharing within the development team.
+Alternatively, you can use the keyboard shortcut `Shift+Cmd+D` (Mac) or `Shift+Ctrl+D` (Windows/Linux) to trigger the "Generate Documentation" command directly.
+
+By following these steps and leveraging the power of AI, you can streamline the documentation process, ensuring that your codebase remains well-documented and easier to maintain and collaborate on.
   
   
