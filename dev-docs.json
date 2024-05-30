@@ -5,8 +5,7 @@
       "docs"
     ],
     "task": "dev-docs/task.md",
-    "auditTasks": ["Find any Markdown Headings that start with the word Step that lack descriptions", 
-    "Identify any that start with ````markdown ", "Find any dev-docs configuration that does match"],
+    "auditTasks": ["dev-docs/audit_task_one.md"],
     "mappings": []
   }
 }
