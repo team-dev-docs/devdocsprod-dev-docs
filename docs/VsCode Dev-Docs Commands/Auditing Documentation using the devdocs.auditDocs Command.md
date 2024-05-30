@@ -1,6 +1,4 @@
-
-  
-  # **devdocs.auditDocs**
+# devdocs.auditDocs
 
 **What does this Vs Code Extension Command do?**
 The `devdocs.auditDocs` command is used to audit the existing documentation files in the project. It analyzes the Markdown files and identifies potential issues or areas for improvement, such as grammar or spelling errors, unclear or unhelpful content, and opportunities to enhance the aesthetic appeal of the documentation.
@@ -18,7 +16,7 @@ The following configuration options in the `dev-docs.json` file are relevant to 
 {
   "ai": {
     "auditTasks": [
-      "Check for broken links or references",
+      "Check sections where code blocks would result in errors",
       "Ensure consistent formatting and styling"
     ]
   }
@@ -30,6 +28,7 @@ Before using the `devdocs.auditDocs` command, make sure you have the following:
 
 1. A `dev-docs.json` configuration file in your project's root directory.
 2. Markdown files containing the documentation you want to audit.
+3.  You using it in a dev-docs documentation repo.
 
 **How do I use this Vs Code Extension Command?**
 To use the `devdocs.auditDocs` command, follow these steps:

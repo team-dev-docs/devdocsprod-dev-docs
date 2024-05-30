@@ -1,6 +1,6 @@
 
   
-  # **Set Where Dev-Docs will read and write to**
+  # Set Where Dev-Docs will read and write to
 
 This command allows you to set the root directory for the Dev-Docs extension to read and write documentation files. It is an essential step in configuring the extension to work with your project.
 

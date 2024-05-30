@@ -1,6 +1,4 @@
-
-  
-  # **Modify YAML Documentation Command**
+# Modify YAML Documentation Command
 
 The `devdocs.modifyAPIYAMLDocumentation` command is a Visual Studio Code extension command that allows you to modify the documentation for your API routes defined in an OpenAPI (Swagger) YAML file. It provides a user-friendly interface to update specific sections of your API documentation, such as tags, summaries, code samples, and descriptions.
 

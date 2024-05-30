@@ -1,6 +1,4 @@
-
-  
-  # **Find Missing Documentation**
+# Find Missing Documentation
 
 The `devdocs.findMissingDocs` command is a powerful feature of the Dev-Docs VS Code extension that helps you identify gaps in your project's documentation. By analyzing the existing documentation and code, this command suggests titles for new documentation pages that could improve the overall understanding and experience for developers working with your codebase.
 

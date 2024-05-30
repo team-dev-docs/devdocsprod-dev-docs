@@ -1,6 +1,4 @@
-
-  
-  # **Outline Dev-docs**
+# Outline Dev-docs
 
 ## What does this VS Code Extension Command do?
 

@@ -1,6 +1,4 @@
-
-  
-  # **Generate an External Doc Page**
+# Generate an External Doc Page
 
 The `devdocs.createExternalDoc` command allows you to generate an external documentation page for your code or project. This command is particularly useful when you want to create a standalone documentation page that can be hosted separately from your codebase, making it accessible to a wider audience or for reference purposes.
 

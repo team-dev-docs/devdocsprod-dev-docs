@@ -1,6 +1,4 @@
-
-  
-  # **Generate Documentation for a Folder**
+# Generate Documentation for a Folder
 
 The command `devdocs.folderDocument` allows you to create documentation for the current folder you have open in your workspace. This command is particularly useful when you want to generate high-level documentation for a specific directory in your project, providing an overview of the folder's contents and its purpose.
 

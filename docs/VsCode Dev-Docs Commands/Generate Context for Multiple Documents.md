@@ -1,6 +1,4 @@
-
-  
-  # **Generate Context for Multiple Documents**
+# Generate Context for Multiple Documents
 
 The `devdocs.generateMultiContext` command is used to generate high-level context for multiple code files or directories within the current workspace. This command is particularly useful when you have a project with multiple files or folders, and you want to generate a brief overview or summary for each of them.
 

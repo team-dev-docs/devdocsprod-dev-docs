@@ -1,6 +1,4 @@
-
-  
-  # **Generate Documentation Command**
+# Generate Documentation Command
 
 The "Generate Documentation" command in the Dev-Docs extension is a powerful tool that allows you to generate comprehensive documentation for your codebase directly from within Visual Studio Code. This command leverages the power of artificial intelligence to analyze your code, extract relevant information, and create well-structured and informative documentation.
 

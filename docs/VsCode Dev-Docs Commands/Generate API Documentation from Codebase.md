@@ -1,6 +1,4 @@
-
-  
-  # Generating API Documentation and Config
+# Generating API Documentation and Config
 
 The `devdocs.generateAPIDocumentation` command allows you to generate API documentation and configuration files directly from your codebase. It analyzes your code, identifies API routes, and generates a Postman Collection JSON file containing all the detected API routes. Additionally, it can generate an OpenAPI (Swagger) specification file for your API.
 

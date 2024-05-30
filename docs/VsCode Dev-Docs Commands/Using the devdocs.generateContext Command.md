@@ -1,6 +1,4 @@
-
-  
-  # **Generate Context Command**
+# Generate Context Command
 
 The `devdocs.generateContext` command is a Visual Studio Code extension command that generates high-level context for a specific document or file within your project. It uses artificial intelligence to analyze the code and provide a concise overview of what the file or document is about, its purpose, and how it fits into the overall project structure.
 

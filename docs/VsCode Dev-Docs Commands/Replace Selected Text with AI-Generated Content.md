@@ -1,6 +1,4 @@
-
-  
-  # **Replace Selected Text with AI-Generated Content**
+# Replace Selected Text with AI-Generated Content
 
 ## What does this VS Code Extension Command do?
 
@@ -69,10 +67,7 @@ To use the `devdocs.replaceText` command, follow these steps:
 
 1. Open the file you want to modify in your code editor.
 2. Select the code snippet or section you want to replace with an AI-generated alternative.
-3. Use one of the following methods to trigger the command:
-   - Press the keyboard shortcut `Shift+Cmd+X` (macOS) or `Shift+Ctrl+X` (Windows/Linux).
-   - Right-click on the selected text and choose "Use Dev-Docs AI to replace Selected" from the context menu.
-   - Open the Command Palette (`Cmd+Shift+P` or `Ctrl+Shift+P`) and search for "Use Dev-Docs AI to replace Selected".
+3. Open the Command Palette (`Cmd+Shift+P` or `Ctrl+Shift+P`) and search for "Use Dev-Docs AI to replace Selected".
 4. The Dev-Docs AI will analyze the selected code and the context provided in the configuration file.
 5. The AI will generate a replacement for the selected code and prompt you to confirm the change.
 6. Review the suggested replacement and choose to accept or reject it.

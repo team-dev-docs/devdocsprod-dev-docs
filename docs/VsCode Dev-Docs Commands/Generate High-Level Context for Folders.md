@@ -1,6 +1,4 @@
-
-  
-  # **Generate High Level Context for the Folder**
+# Generate High Level Context for the Folder
 
 This VS Code extension command allows you to generate a high-level overview or context for the entire folder or directory. It analyzes all the code files within the folder and provides a comprehensive summary of what the folder's purpose is and what it does from a high-level perspective.
 

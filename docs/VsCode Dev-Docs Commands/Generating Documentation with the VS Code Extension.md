@@ -1,6 +1,4 @@
-
-  
-  # **Generate Documentation for Code**
+# Generate Documentation for Code
 
 The code you provided is an asynchronous function that creates or shows a WebAppPanel instance, which seems to be a custom Vue.js or React component for displaying documentation in a Visual Studio Code (VSCode) extension. The function returns the current WebAppPanel instance, which can be used to interact with the panel or update its content.
 

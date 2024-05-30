@@ -1,6 +1,4 @@
-
-  
-  # **Creating and Managing Documentation with the Dev-Docs VS Code Extension**
+# Creating and Managing Documentation with the Dev-Docs VS Code Extension
 
 The Dev-Docs VS Code extension is a powerful tool that helps developers create, manage, and maintain documentation for their codebase directly within Visual Studio Code. This extension leverages AI technologies to generate high-quality documentation automatically, making it easier for developers to keep their documentation up-to-date and in sync with their code changes.
 
@@ -62,9 +60,6 @@ The `dev-docs.json` file is the central configuration file for the Dev-Docs exte
         }
       ]
     },
-    "components": {
-      "template": "docs/component-template.md"
-    },
     "internalTypeFilters": [
       "class",
       "method",
@@ -78,9 +73,7 @@ The `dev-docs.json` file is the central configuration file for the Dev-Docs exte
       "handleSubmit",
       "render"
     ]
-  },
-  "customRoot": "packages/my-package",
-  "workspaceRoot": "/path/to/project"
+  }
 }
 ```
 

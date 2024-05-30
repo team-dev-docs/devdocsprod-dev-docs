@@ -1,6 +1,4 @@
-
-  
-  # **Generate Documentation**
+# Generate Documentation
 
 The `devdocs.generateDocumentation` command is used to automatically generate documentation for your codebase. It leverages the power of AI to analyze your code and produce comprehensive documentation, making it easier for developers to understand and maintain the codebase.
 

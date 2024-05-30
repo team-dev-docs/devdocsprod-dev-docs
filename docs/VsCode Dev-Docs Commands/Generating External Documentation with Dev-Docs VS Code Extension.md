@@ -1,6 +1,4 @@
-
-  
-  # **Generate External Documentation**
+# Generate External Documentation
 
 The "Populate External Docs" command (`devdocs.generateExternalDocs`) is a crucial feature of the Dev-Docs VS Code extension that allows you to generate comprehensive documentation for your codebase. This command analyzes your project's files and generates an external documentation website, which serves as a centralized hub for all your project's documentation.
 

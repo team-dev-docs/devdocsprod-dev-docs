@@ -1,6 +1,4 @@
-
-  
-  # **Generate Missing Documentation**
+# Generate Missing Documentation
 
 The "Generate Missing Docs" command is a part of the Dev-Docs Visual Studio Code extension, which enables developers to create and maintain comprehensive documentation for their codebase directly within the IDE.
 

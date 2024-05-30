@@ -1,6 +1,4 @@
-
-  
-  # **Generate Missing Docs**
+# Generate Missing Docs
 
 The `devdocs.generateMissingDocs` command is a powerful feature of the Dev-Docs VS Code extension that allows you to automatically generate missing documentation for your codebase. It leverages the power of artificial intelligence (AI) to analyze your existing code and documentation, identify any gaps, and generate new documentation content to fill those gaps.
 

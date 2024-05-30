@@ -1,6 +1,4 @@
-
-  
-  # **Version Control for Dev-Docs**
+# Initialize Dev-Docs
 
 This Vs Code Extension Command allows you to initialize and set up version control for your Dev-Docs project. It enables you to keep track of changes made to your documentation files and collaborate with others on the project.
 

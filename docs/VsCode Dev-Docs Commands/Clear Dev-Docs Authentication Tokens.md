@@ -1,6 +1,4 @@
-
-  
-  # **Clear Dev-Docs Tokens**
+# Clear Dev-Docs Tokens
 
 This command clears the Dev-Docs authentication tokens stored locally on your machine. It removes the GitHub access token and refresh token used to authenticate with the Dev-Docs Cloud service.
 

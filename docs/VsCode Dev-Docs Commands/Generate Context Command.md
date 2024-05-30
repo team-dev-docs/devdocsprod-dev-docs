@@ -1,6 +1,4 @@
-
-  
-  # **Generate Context**
+# Generate Context
 
 The "Generate Context" command in the Dev-Docs VS Code extension is designed to generate a high-level context or overview for a specific file or folder in your project. This context can be used as a starting point for writing documentation or providing an introduction to the code in question.
 

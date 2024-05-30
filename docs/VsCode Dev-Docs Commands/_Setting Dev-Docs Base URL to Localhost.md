@@ -1,6 +1,4 @@
-
-  
-  # **Setting Up Dev-Docs Base URL**
+# Setting Up Dev-Docs Base URL
 
 The command `devdocs.setLocal` is used to set the base URL for the Dev-Docs extension to `http://localhost:3000`. This command is helpful when you want to run the Dev-Docs application locally on your machine during development or testing.
 

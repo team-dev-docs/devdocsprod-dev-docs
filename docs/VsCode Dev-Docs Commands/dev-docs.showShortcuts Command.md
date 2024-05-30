@@ -1,6 +1,4 @@
-
-  
-  # **Show Shortcuts Command**
+# Show Shortcuts Command
 
 The `devdocs.showShortCuts` command displays a table with keyboard shortcuts and a brief description of their functionality within the Dev-Docs extension.
 

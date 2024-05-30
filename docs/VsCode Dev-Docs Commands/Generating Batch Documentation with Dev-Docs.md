@@ -1,6 +1,4 @@
-
-  
-  # **Dev-Docs Batch Documentation**
+# Dev-Docs Batch Documentation
 
 The `devdocs.generateBatchDocumentation` command is used to generate documentation for multiple files or directories at once in a batch process. This command can be helpful when you need to update or create documentation for a large codebase or multiple components simultaneously.
 

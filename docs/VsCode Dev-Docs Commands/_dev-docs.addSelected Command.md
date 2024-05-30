@@ -1,6 +1,4 @@
-
-  
-  # **Add Selected**
+# Add Selected
 
 **What does this VS Code Extension Command do?**
 The `devdocs.addSelected` command allows you to generate documentation for the selected code in your editor. It analyzes the selected code and provides relevant documentation, explanations, and context to help you understand and work with that code more effectively.

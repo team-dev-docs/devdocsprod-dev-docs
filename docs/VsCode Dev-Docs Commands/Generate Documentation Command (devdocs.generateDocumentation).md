@@ -1,6 +1,4 @@
-
-  
-  # **Generate Documentation for the Current File**
+# Generate Documentation for the Current File
 
 The `devdocs.generateDocumentation` command is a powerful feature of the Dev-Docs VSCode extension that allows you to generate documentation for the current file you have open in the editor. This command leverages the power of AI to analyze your code and automatically create a comprehensive documentation file with detailed explanations, code snippets, and relevant information.
 
