@@ -26,7 +26,7 @@ The `dev-docs.json` file is the central configuration file for the Dev-Docs exte
 
 1. **quickDoc**: Configures the prompts and behavior for generating quick documentation for variables and functions.
 2. **ai**: Defines the prompts, templates, and filters for AI-assisted documentation generation.
-   - **variablesAndFunctions**: Configures prompts for documenting variables and functions.
+   - **variablesAndFunctions**: Configures prompts for documenting variables and functions in specific code files and directories.
    - **components**: Specifies the template file for generating documentation for components.
    - **docPath**: Sets the custom path for storing generated documentation.
    - **internalTypeFilters**: Filters the types of code elements to include in the generated documentation.
@@ -52,27 +52,19 @@ The `dev-docs.json` file is the central configuration file for the Dev-Docs exte
   },
   "ai": {
     "variablesAndFunctions": {
-      "prompts": [
-        {
-          "title": "Describe the variable/function",
-          "question": "What does this variable/function do?",
-          "documentation": "Provide a brief description of the purpose and functionality of the variable or function."
-        }
-      ]
+      "yourfilename.js": {
+        "prompts": [
+          {
+            "title": "Describe the variable/function",
+            "question": "What does this variable/function do?",
+            "documentation": "Provide a brief description of the purpose and functionality of the variable or function."
+          }
+        ]
+      }
     },
-    "internalTypeFilters": [
-      "class",
-      "method",
-      "function"
-    ],
-    "codeFilters": [
-      "async function",
-      "export default"
-    ],
-    "nameFilters": [
-      "handleSubmit",
-      "render"
-    ]
+    "internalTypeFilters": ["class", "method", "function"],
+    "codeFilters": ["async function", "export default"],
+    "nameFilters": ["handleSubmit", "render"]
   }
 }
 ```
@@ -102,5 +94,3 @@ When generating documentation, Dev-Docs will analyze your code and present you w
 For external documentation, Dev-Docs provides commands to create new pages, manage existing ones, and publish your documentation to platforms like Dev-Docs Cloud or GitHub Pages.
 
 Remember, the power of Dev-Docs lies in its ability to streamline the documentation process and keep your documentation in sync with your codebase. By leveraging AI technologies and integrating with your development workflow, Dev-Docs aims to make maintaining high-quality documentation a more efficient and enjoyable experience.
-  
-  

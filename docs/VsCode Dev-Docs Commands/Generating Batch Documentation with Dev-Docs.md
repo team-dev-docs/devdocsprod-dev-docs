@@ -1,41 +1,56 @@
 # Dev-Docs Batch Documentation
 
-The `devdocs.generateBatchDocumentation` command is used to generate documentation for multiple files or directories at once in a batch process. This command can be helpful when you need to update or create documentation for a large codebase or multiple components simultaneously.
+The `devdocs.generateBatchDocumentation` command is used to generate documentation for a codefile's functions in a batch process. This command can be helpful when you want to quickly document all the functions in a codefile.
 
 ## Why should I use this Vs Code Extension Command?
 
-Generating documentation for an entire project or large parts of a codebase can be a time-consuming and tedious task if done manually. The `devdocs.generateBatchDocumentation` command automates this process, saving you time and effort. It allows you to quickly generate documentation for multiple files or directories in a single step, ensuring consistency and reducing the chances of missing important documentation.
+Generating documentation for an entire project or large parts of a codebase can be a time-consuming and tedious task if done manually. The `devdocs.generateBatchDocumentation` command automates this process, saving you time and effort. It allows you to quickly generate documentation for a codefile.
 
-## What are relevant configuration Options in the `dev-docs.json`?
+## What are relevant configuration options in the `dev-docs.json`?
 
-The following configuration options in the `dev-docs.json` file are relevant for the `devdocs.generateBatchDocumentation` command:
+The `dev-docs.json` file is the central configuration file for the Dev-Docs extension. Here are some of the most relevant configuration options:
 
-- `ai.components.template`: Specifies the path to the Markdown template file used for generating the documentation.
-- `ai.docPath`: Defines the custom path where the generated documentation files will be saved.
-- `ai.branch`: Specifies the Git branch where the generated documentation will be committed and pushed.
-- `ai.internalTypeFilters`: Allows you to filter the types of code elements (e.g., classes, functions, variables) that should be included in the generated documentation.
-- `ai.codeFilters`: Provides an array of strings to filter the code elements based on specific patterns or keywords.
-- `ai.nameFilters`: Allows you to filter the code elements based on their names, useful for including or excluding specific functions or methods.
-- `ai.docSubFolder`: Specifies the subfolder within the `docPath` where the generated documentation files will be saved.
-- `ai.contextDirs`: An array of directories that should be included when generating the documentation context.
-- `ai.mappings`: Defines the mappings between code files or folders and the corresponding documentation sections or directories in the cloud.
+1. **quickDoc**: Configures the prompts and behavior for generating quick documentation for variables and functions.
+2. **ai**: Defines the prompts, templates, and filters for AI-assisted documentation generation.
+   - **variablesAndFunctions**: Configures prompts for documenting variables and functions in specific code files and directories.
+   - **components**: Specifies the template file for generating documentation for components.
+   - **docPath**: Sets the custom path for storing generated documentation.
+   - **internalTypeFilters**: Filters the types of code elements to include in the generated documentation.
+   - **codeFilters**: Filters code elements based on specific patterns in the code.
+   - **nameFilters**: Filters code elements based on their names.
+   - **openapi**: Configures the OpenAPI specification file and code sample languages for API documentation.
+3. **customRoot**: Specifies the custom root directory for your project.
+4. **workspaceRoot**: Sets the workspace root directory for your project.
 
-## Example JSON of relevant Dev-Docs.json options
-
-Here's an example JSON configuration with the minimum required options to use the `devdocs.generateBatchDocumentation` command:
+## Example JSON of relevant `dev-docs.json` options
 
 ```json
 {
+  "quickDoc": {
+    "variablesAndFunctions": {
+      "prompts": [
+        {
+          "title": "Describe the variable/function",
+          "question": "What does this variable/function do?"
+        }
+      ]
+    }
+  },
   "ai": {
-    "components": {
-      "template": "path/to/markdown/template.md"
+    "variablesAndFunctions": {
+      "yourfilename.js": {
+        "prompts": [
+          {
+            "title": "Describe the variable/function",
+            "question": "What does this variable/function do?",
+            "documentation": "Provide a brief description of the purpose and functionality of the variable or function."
+          }
+        ]
+      }
     },
-    "docPath": "docs",
-    "branch": "main",
-    "internalTypeFilters": [
-      "function",
-      "class"
-    ]
+    "internalTypeFilters": ["class", "method", "function"],
+    "codeFilters": ["async function", "export default"],
+    "nameFilters": ["handleSubmit", "render"]
   }
 }
 ```
@@ -56,16 +71,8 @@ To use the `devdocs.generateBatchDocumentation` command, follow these steps:
 2. Press `Cmd+Shift+P` (Mac) or `Ctrl+Shift+P` (Windows/Linux) to open the Command Palette.
 3. Search for "Batch Document" and select the `devdocs.generateBatchDocumentation` command.
 
-Alternatively, you can use the keyboard shortcut configured for this command (if available). By default, it is not assigned to any keyboard shortcut.
-
 After executing the command, the extension will analyze your codebase based on the specified configuration options and generate documentation files for the selected code elements. The generated documentation files will be saved in the specified `docPath` and `docSubFolder`.
 
-**Why and How?**
 
-The `devdocs.generateBatchDocumentation` command is designed to streamline the documentation process for large codebases or multiple components. By automating the generation of documentation files, it saves time and effort, ensuring consistent and up-to-date documentation across your project.
-
-The command works by analyzing your codebase based on the specified configuration options, such as `internalTypeFilters`, `codeFilters`, and `nameFilters`. It then generates documentation files for the selected code elements using the provided Markdown template. The generated documentation files are saved in the specified `docPath` and `docSubFolder`, organized according to the defined `mappings` (if applicable).
-
-This command is particularly useful when you need to update documentation after making changes to your codebase or when onboarding new team members who need to understand the codebase quickly. By automating the documentation generation process, you can ensure that your documentation remains up-to-date and consistent with the latest code changes.
   
   

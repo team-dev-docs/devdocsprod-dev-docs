@@ -19,10 +19,6 @@ Generating API documentation from your codebase has several advantages:
 The following configuration options in the `dev-docs.json` file are relevant for the `devdocs.generateAPIDocumentation` command:
 
 - `ai.openapi.file`: Specifies the file path where the generated OpenAPI specification file should be saved.
-- `ai.openapi.x-codeSamples.langs`: An array of programming languages for which code samples should be generated in the OpenAPI specification.
-- `ai.codeFilters`: An array of strings used to filter the code for identifying API routes. For example, `["async function", "export default"]` will look for async functions and default exports.
-- `ai.nameFilters`: An array of strings used to filter function names when identifying API routes. For example, `["handleSubmit", "render"]` will exclude functions with these names.
-- `ai.contextDirs`: An array of directories that should be included in the context when generating API documentation.
 
 ## Example JSON of relevant Dev-Docs.json options
 
@@ -30,14 +26,8 @@ The following configuration options in the `dev-docs.json` file are relevant for
 {
   "ai": {
     "openapi": {
-      "file": "src/api/openapi.yaml",
-      "x-codeSamples": {
-        "langs": ["javascript", "python", "ruby"]
-      }
-    },
-    "codeFilters": ["async function", "export default"],
-    "nameFilters": ["handleSubmit", "render"],
-    "contextDirs": ["src/utils", "src/helpers"]
+      "file": "src/api/openapi.yaml"
+    }
   }
 }
 ```
