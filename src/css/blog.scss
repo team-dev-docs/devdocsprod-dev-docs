@@ -30,6 +30,9 @@
 [itemprop="articleBody"] {
   display: flex;
   flex-direction: column;
+  li {
+    margin-bottom: 1rem;
+  }
 }
 .blog-post-page {
 
@@ -48,6 +51,8 @@
   ol {
     list-style: auto !important;
   }
+
+
 
   // li {
   //   list-style: auto !important;

@@ -58,7 +58,7 @@
   h6 {
     color: white !important;
   }
-  p {
+  p, ol, ul {
     color: white !important;
   }
 
@@ -103,8 +103,12 @@
   h6 {
     color: white !important;
   }
-  p {
+  p, ol, ul {
     color: white !important;
+  }
+
+  ol, ul {
+    padding-left: 2rem;
   }
 
   .chat-header {
@@ -124,6 +128,12 @@
   padding: 10px;
   .chatbot-avatar {
     height: 2.5em;
+  }
+  p, ol, ul {
+    color: white;
+  }
+  ol, ul {
+    padding-left: 2rem;
   }
 }
 
