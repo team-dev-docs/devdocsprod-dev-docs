@@ -68,6 +68,20 @@
     word-break: break-word;
     text-overflow: ellipsis;
     // height: 40vh !important;
+    display: flex;
+    flex: 0 0 40ch !important;
+    flex-direction: column;
+    height: fit-content;
+    align-items: flex-start;
+    margin-bottom: 2em;
+    gap: 2rem; // Use a relative unit like rem for a more responsive gap
+    flex-shrink: 0;
+
+    padding: 2rem; // Use a relative unit for padding
+
+    // Adjust width to a percentage for responsiveness
+    width: 100%;
+
     h1 {
       font-size: 56px;
     }
@@ -80,21 +94,6 @@
         font-size: calc(14px + 0.5vw); /* Fluid scaling based on viewport width */
       }
     }
-
-    display: flex;
-    flex: 0 0 40ch !important;
-    flex-direction: column;
-    // justify-content: center;
-    height: fit-content;
-    align-items: flex-start;
-    margin-bottom: 2em;
-    gap: 2rem; // Use a relative unit like rem for a more responsive gap
-    flex-shrink: 0;
-
-    padding: 2rem; // Use a relative unit for padding
-
-    // Adjust width to a percentage for responsiveness
-    width: 100%;
 
     // Limit the maximum width to provide a better reading experience on larger screens
     //   max-width: 980px;
@@ -185,11 +184,14 @@
     padding-bottom: 0px !important;
 
     .markdown {
+      
       .blog-header-title-card {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
+        display: flex;
+        flex: 0 0 35ch !important;
         gap: 2rem; // Use a relative unit like rem for a more responsive gap
         flex-shrink: 0;
 
