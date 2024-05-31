@@ -41,8 +41,8 @@ export default function MDXContentWrapper(props) {
             }}
             onClick={handleClick}
           >
-            <h1 style={{ paddingLeft: "1vw", color: props?.children?.type?.frontMatter?.text_color}}>
-              <a style={{ paddingLeft: "1vw", color: props?.children?.type?.frontMatter?.text_color}} href={props.children.type.metadata.permalink}>
+            <h1 style={{ color: props?.children?.type?.frontMatter?.text_color}}>
+              <a style={{ color: props?.children?.type?.frontMatter?.text_color}} href={props.children.type.metadata.permalink}>
                 {props.children.type.metadata.title}
               </a>
             </h1>
@@ -70,7 +70,9 @@ export default function MDXContentWrapper(props) {
               <div className="pl-6">
                 {props.children.type.metadata.authors.length > 0 &&
                   props.children.type.metadata.authors.map((item, index) => (
-                    <span key={index}>{" " + item.name + ","}</span>
+                    <span style={{color: props?.children?.type?.frontMatter?.text_color}} key={index}>
+                    {" " + item.name + (index < props.children.type.metadata.authors.length - 1 ? "," : "")}
+                    </span>
                   ))}
               </div>
             </div>
