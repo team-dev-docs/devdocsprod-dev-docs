@@ -32,12 +32,35 @@ import logoJson from "../../logo.json";
 import chatJson from "../../chat.json";
 import { IconX, IconSend2 } from "@tabler/icons-react";
 
+
 const { logo } = logoJson;
 const { chatUrl } = chatJson;
 
 function capitalizeFirstLetterOfEachWord(str) {
   return str.replace(/(^\w|\s\w)/g, (match) => match.toUpperCase());
 }
+
+
+const useViewport = () => {
+  const [viewport, setViewport] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
+
+  useEffect(() => {
+    const handleResize = () => {
+      setViewport({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  return viewport;
+};
 
 const processor = unified()
   .use(markdown)
@@ -116,9 +139,10 @@ function ChatBox({ messages, onSendMessage }) {
   const [message, setMessage] = React.useState("");
   const [isFullScreen, setIsFullScreen] = useState(false);
   const [isDialogOpen, setIsDialogOpen] = useState(false);
+  
 
 
-
+  const { width, height } = useViewport();
 
   const handleSendMessage = async (event) => {
     event.preventDefault();
@@ -197,8 +221,31 @@ function ChatBox({ messages, onSendMessage }) {
   };
 
   const toggleFullScreen = () => {
-    setIsFullScreen(!isFullScreen);
+    if (width <= 768) {
+      setShowChatBox(true)
+    } else {
+      setIsDialogOpen(true)
+    }
   };
+
+  const openChat = (params = {}) => {
+    if(params.closeAll) setShowChatBox(false)
+    if(width <= 768) {
+      setIsDialogOpen(!isDialogOpen)
+    } else {
+      setShowChatBox(!showChatBox)
+    }
+  }
+
+  const openFullScreen = () => {
+    setShowChatBox(false)
+    setIsDialogOpen(!isDialogOpen)
+  }
+
+  const closeFullScreen = () => {
+    setShowChatBox(false)
+    setIsDialogOpen(false)
+  }
 
   return (
     <div>
@@ -219,13 +266,13 @@ function ChatBox({ messages, onSendMessage }) {
           <SvgBackgroundImage imageUrl={logo} />
 
           <h3 className="pl-4 chat-header">Dev-Docs AI Bot</h3>
-          <AlertDialog className="mt-12">
+          <AlertDialog open={isDialogOpen} className="mt-12">
             <AlertDialogTrigger asChild>
               <Button
                 style={{ marginLeft: "auto", backgroundColor: "transparent" }}
                 className="fullscreenBtn"
                 variant="outline"
-                onClick={() => setShowChatBox(!showChatBox)}
+                onClick={() => openFullScreen()}
               >
                 <svg
                   width="15"
@@ -363,7 +410,7 @@ function ChatBox({ messages, onSendMessage }) {
                 </Button>
               </form>
               <AlertDialogFooter>
-                <AlertDialogCancel onClick={() => setShowChatBox(!showChatBox)}>
+                <AlertDialogCancel onClick={() => closeFullScreen()}>
                   Close
                 </AlertDialogCancel>
               </AlertDialogFooter>
@@ -477,14 +524,14 @@ function ChatBox({ messages, onSendMessage }) {
       <div className="overlay">
         {showChatBox ? (
           <IconX
-            onClick={() => setShowChatBox(!showChatBox)}
+            onClick={() => openChat()}
             className="toggle-button"
             src={logo}
             alt="Circular button"
           />
         ) : (
           <img
-            onClick={() => setShowChatBox(!showChatBox)}
+            onClick={() => openChat()}
             className="toggle-button"
             src={logo}
             alt="Circular button"
