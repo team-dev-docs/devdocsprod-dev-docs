@@ -1,6 +1,4 @@
-
-  
-  # **Asking Your Dev Docs A Question**
+# Asking Your Dev Docs A Question
 
 The `devdocs.askYourDevDocsAQuestion` command allows you to ask natural language questions about your codebase, and receive responses from an AI assistant. This command leverages the power of natural language processing and machine learning to provide you with relevant information and insights based on your code.
 

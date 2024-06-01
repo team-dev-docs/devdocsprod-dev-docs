@@ -6,33 +6,8 @@ This command allows you to set the root directory for the Dev-Docs extension to 
 
 ## Why should I use this Vs Code Extension Command?
 
-Setting the root directory is crucial because it tells Dev-Docs where to look for your codebase and where to create or update documentation files. Without setting the correct root directory, the extension may not function properly or may generate documentation in the wrong location.
+Setting the root directory is crucial because it tells Dev-Docs where to look for your codebase and where to create or update documentation files. Without setting the correct root directory, the extension may not function properly or may generate documentation in the wrong location.  This is especially useful if you are working in a monorepo.
 
-## What are relevant configuration Options in the `dev-docs.json`?
-
-The most relevant configuration option for this command is the `gitroot` property under the `ai` object. This property is used to store the path to the root directory that you set with this command.
-
-Here's an example of how the `gitroot` property might appear in your `dev-docs.json` file:
-
-```json
-{
-  "ai": {
-    "gitroot": "/path/to/your/project"
-  }
-}
-```
-
-## Example JSON of relevant Dev-Docs.json options
-
-```json
-{
-  "ai": {
-    "gitroot": "/path/to/your/project"
-  }
-}
-```
-
-In this example, the minimum required configuration is the `gitroot` property under the `ai` object. This property should be set to the path of your project's root directory.
 
 ## Prerequisites
 
@@ -40,6 +15,7 @@ Before using this command, make sure you have:
 
 1. Opened your project in Visual Studio Code.
 2. Installed the Dev-Docs extension.
+3. Initialized project with a `dev-docs.json` and `dev-docs` folder
 
 ## How do I use this Vs Code Extension Command?
 

@@ -1,4 +1,4 @@
-# devdocs.auditDocs
+# Audit Docs
 
 **What does this Vs Code Extension Command do?**
 The `devdocs.auditDocs` command is used to audit the existing documentation files in the project. It analyzes the Markdown files and identifies potential issues or areas for improvement, such as grammar or spelling errors, unclear or unhelpful content, and opportunities to enhance the aesthetic appeal of the documentation.

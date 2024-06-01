@@ -1,4 +1,4 @@
-# **Modify API YAML Documentation**
+# Modify API YAML Documentation
 
 ## What does this VS Code Extension Command do?
 

@@ -34,6 +34,7 @@ Before using the `devdocs.modifyAPIYAMLDocumentation` command, ensure that you h
 
 1. An OpenAPI (Swagger) YAML file that defines your API routes and documentation.
 2. The `dev-docs.json` file properly configured with the path to your OpenAPI YAML file and the desired programming languages for code samples.
+3. Initialized project with a `dev-docs.json` and `dev-docs` folder
 
 ## How do I use this VS Code Extension Command?
 

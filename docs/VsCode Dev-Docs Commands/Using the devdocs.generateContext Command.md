@@ -46,6 +46,7 @@ Before using the `devdocs.generateContext` command, make sure you have the follo
 
 1. The Dev-Docs Visual Studio Code extension installed and configured correctly.
 2. A `dev-docs.json` configuration file in your project root directory, with the relevant options set according to your project's needs.
+3. Initialized project with a `dev-docs.json` and `dev-docs` folder 
 
 ## How do I use this Vs Code Extension Command?
 

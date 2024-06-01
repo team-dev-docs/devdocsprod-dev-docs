@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-````markdown 
+
 ## Dev-Docs Repo File Structure
 
 In the repo there are a lot of configuration files you can customize and extend, but with Dev-Docs you will not likely need to modify them. Instead you should focus on three main folders: <code>docs</code>, <code>blog</code>, and <code>pages</code> folder.
@@ -19,6 +19,3 @@ Any markdown files placed here will automatically become blog posts.
 
 At the moment the only page you have to worry about here is <code>_landing_page.md</code>. This can be used as a landing page for your docs if you'd like. So don't be afraid to make it awesome!
 
-
- ````
- <Parser />

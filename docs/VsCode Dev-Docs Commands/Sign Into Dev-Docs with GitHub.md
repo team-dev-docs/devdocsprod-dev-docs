@@ -14,30 +14,6 @@ Signing into Dev-Docs with GitHub provides several benefits:
 
 4. **Seamless Integration**: Dev-Docs integrates seamlessly with GitHub, allowing you to leverage your existing GitHub workflows and access your documentation directly from your code repositories.
 
-## What are relevant configuration Options in the `dev-docs.json`?
-
-The `dev-docs.json` configuration file contains several options that are relevant to the `devdocs.getGitHubUser` command:
-
-1. `ai.branch` (optional): Specifies the branch where your documentation will be saved and synced. The default value is `"main"`.
-
-2. `ai.docPath` (optional): Specifies the path where your documentation will be stored in the Dev-Docs Cloud. The default value is `"some custom path"`.
-
-3. `customRoot` (optional): Specifies the custom root directory for your project, if it differs from the default project structure. The default value is `"packages/my-package"`.
-
-4. `workspaceRoot` (optional): Specifies the absolute path to your project's root directory. The default value is `"/path/to/project"`.
-
-## Example JSON of relevant Dev-Docs.json options
-
-```json
-{
-  "ai": {
-    "branch": "main",
-    "docPath": "my-project-docs"
-  },
-  "customRoot": "src",
-  "workspaceRoot": "/Users/yourname/projects/my-project"
-}
-```
 
 ## Prerequisites
 
@@ -46,6 +22,7 @@ Before using the `devdocs.getGitHubUser` command, ensure that you have:
 1. A GitHub account.
 2. The Dev-Docs extension installed in Visual Studio Code.
 3. A project opened in Visual Studio Code.
+
 
 ## How do I use this Vs Code Extension Command?
 

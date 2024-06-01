@@ -16,50 +16,6 @@ Using the `devdocs.replaceText` command can be beneficial in several scenarios:
 
 4. **Exploring Alternatives**: The AI can offer different perspectives or approaches to solving a problem, allowing you to explore alternative solutions you might not have considered.
 
-## What are relevant configuration Options in the `dev-docs.json`?
-
-The following configuration options in the `dev-docs.json` file are relevant to the `devdocs.replaceText` command:
-
-- `ai.variablesAndFunctions`: This object contains prompts and documentation related to variables and functions in your codebase. The AI uses this information to understand the context of the selected code and generate relevant replacements.
-- `ai.codeFilters`: An array of strings that specify patterns to filter the code that the AI should consider for generating documentation or replacements.
-- `ai.nameFilters`: An array of strings that specify variable or function names to include or exclude when generating documentation or replacements.
-
-## Example JSON of relevant Dev-Docs.json options
-
-```json
-{
-  "ai": {
-    "variablesAndFunctions": {
-      "myFunction": {
-        "prompts": [
-          {
-            "title": "What does myFunction do?",
-            "question": "Explain the purpose and functionality of the myFunction function.",
-            "documentation": "myFunction is a utility function that performs xyz operations..."
-          }
-        ]
-      }
-    },
-    "codeFilters": [
-      "async function",
-      "export default"
-    ],
-    "nameFilters": [
-      "handleSubmit",
-      "render"
-    ]
-  }
-}
-```
-
-In this example, the AI will use the information provided for `myFunction` to understand the context and generate replacements for selected code related to that function. The `codeFilters` and `nameFilters` options further refine the scope of code the AI considers.
-
-## Prerequisites
-
-To use the `devdocs.replaceText` command effectively, you should have the following prerequisites in place:
-
-1. **Dev-Docs Configuration**: Ensure that you have a `dev-docs.json` file in your project with relevant configuration options for the AI to understand your codebase's context.
-2. **Code Selection**: You need to have a portion of code selected in your code editor for the AI to generate a replacement.
 
 ## How do I use this VS Code Extension Command?
 
