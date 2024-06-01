@@ -43,20 +43,29 @@ function capitalizeFirstLetterOfEachWord(str) {
 
 const useViewport = () => {
   const [viewport, setViewport] = useState({
-    width: window.innerWidth,
-    height: window.innerHeight,
+    width: 0,
+    height: 0,
   });
 
   useEffect(() => {
-    const handleResize = () => {
+    if (typeof window !== 'undefined') {
+      // If window is defined, set the initial viewport size
       setViewport({
         width: window.innerWidth,
         height: window.innerHeight,
       });
-    };
 
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+      const handleResize = () => {
+        setViewport({
+          width: window.innerWidth,
+          height: window.innerHeight,
+        });
+      };
+
+      window.addEventListener('resize', handleResize);
+
+      return () => window.removeEventListener('resize', handleResize);
+    }
   }, []);
 
   return viewport;
@@ -385,7 +394,7 @@ function ChatBox({ messages, onSendMessage }) {
                 <div className="end-of-chat-fullscreen"></div>
               </div>
               <form
-                className="flex"
+                className="flex message-input"
                 style={{
                   marginLeft: "10px",
                   marginRight: "10px",
@@ -496,7 +505,7 @@ function ChatBox({ messages, onSendMessage }) {
           </div>
 
           <form
-            className="flex w-full max-w-sm items-center space-x-2"
+            className="flex w-full max-w-sm items-center space-x-2 message-input"
             style={{
               marginLeft: "10px",
               marginRight: "10px",

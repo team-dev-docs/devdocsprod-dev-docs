@@ -122,6 +122,12 @@
   }
 }
 
+.message-input {
+  svg {
+    stroke: $color-1;
+  }
+}
+
 .chat-box__messages {
   height: 80%;
   overflow-y: scroll;
