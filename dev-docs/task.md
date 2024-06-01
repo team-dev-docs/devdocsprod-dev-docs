@@ -2,4 +2,4 @@
 docPath: blog
 ---
 
-Write a blog on why developer documentation is important for SEO and Sales
+Write me a blog post that emphasizes the future of AI in developer documentation and highlight how Dev-Docs is leading that initiative.
