@@ -62,7 +62,7 @@ export default function MDXContentWrapper(props) {
                 <div className="pl-2">
                   <img
                     className="author-avatar"
-                    style={{ height: "4vh" }}
+                    style={{ height: "2.5em" }}
                     src={item.imageURL || "/img/ddlogo.png"}
                   ></img>
                 </div>
