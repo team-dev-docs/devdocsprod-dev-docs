@@ -20,6 +20,21 @@
         {
             "items": [
                 {
+                    "label": "Components",
+                    "to": "https://doc-components.dev-docs.dev/docs",
+                    "prependBaseUrlToHref": true
+                },
+                {
+                    "label": "Contact",
+                    "href": "https://calendly.com/d/3mk-5ys-3c4/dev-docs-founders",
+                    "prependBaseUrlToHref": false
+                }
+            ],
+            "title": "Resources"
+        },
+        {
+            "items": [
+                {
                     "label": "Blog",
                     "to": "/blog",
                     "prependBaseUrlToHref": true

@@ -190,11 +190,18 @@
   align-items: center; /* Center the items vertically */
 }
 
+#__docusaurus > footer > div > div.row.footer__links > div:nth-child(1) {
+  flex: 0 0 calc(var(--doc-sidebar-width) - 25px);
+  // background: red;
+}
+
 #__docusaurus > footer > div > div.row.footer__links > div:nth-child(1) ul {
   display: flex;
   list-style: none; /* Remove default list styling */
   padding: 0; /* Remove default padding */
   margin: 0; /* Remove default margin */
+  justify-content: flex-start;
+  // background: red;
 }
 
 #__docusaurus > footer > div > div.row.footer__links > div:nth-child(1) > div {
@@ -217,11 +224,24 @@
 }
 
 .row.footer__links {
-  width: 100%;
+  width: 90%;
   display: flex;
   justify-content: space-between; /* This spreads the columns evenly across the available space */
 }
 
 .footer ul .social {
   margin: 0 10px; /* Add some space between the icons */
+}
+
+.footer__copyright {
+  color: var(--text-secondary-light, #A2A1A5);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#__docusaurus > footer.footer {
+  border-top: 0.5px solid rgba(162, 161, 165, 0.50);
 }
