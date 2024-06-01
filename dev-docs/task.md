@@ -2,4 +2,4 @@
 docPath: blog
 ---
 
-Write a blog on why developer documentation is important for SEO and Sales
+Write me a blog post about the future of developer productivity, documentation, and devex and the role of AI.  Please no extra commentary!
