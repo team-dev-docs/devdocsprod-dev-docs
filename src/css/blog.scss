@@ -1,7 +1,3 @@
-// [aria-label="Blog recent posts navigation"] {
-//     display: none;
-// }
-
 @mixin conditional-styles($class) {
   $selector: if(&, "#{&}.#{$class}", false);
   @if $selector {
