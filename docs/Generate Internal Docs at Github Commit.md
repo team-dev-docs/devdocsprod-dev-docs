@@ -123,7 +123,7 @@ Click on the "New repository secret" span to create a new repository secret. `GE
 
 ## Step 12: Add GENERATE_ENDPOINT_URL
 
-For the secret name name it `GENERATE_ENDPOINT_URL` and for the value provide your dev-docs base url with the path of `/company/{your org}/generate_internal_docs`
+For the secret name name it `GENERATE_ENDPOINT_URL` and for the value provide your dev-docs base url with the path of `https://api.devdocsapp.com/company/{your org}/generate_internal_docs`
 
 
 ![](/img/generate_internal_docs_at_github_commit/step_22.png)
