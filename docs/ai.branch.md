@@ -1,4 +1,6 @@
+# Dev-Docs.JSON Configuration
 
+Configuration in most cases are optional but recommended in Dev-Docs
   
   | Configuration Option | Description | Relevant VS Code Commands |
 |----------------------|--------------|----------------------------|
