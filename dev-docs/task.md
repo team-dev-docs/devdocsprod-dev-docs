@@ -1,5 +1,5 @@
 
-Can you write a documentation page that explains are the options of the dev-docs.json.  For reference here is the dev-docs.json schema below:
+Can you write a documentation page that explains what are the configuration options of the dev-docs.json.  For reference here is the dev-docs.json schema below:
 
 
 ```json
@@ -253,4 +253,4 @@ Can you write a documentation page that explains are the options of the dev-docs
 }
 ```
 
-Can you make sure the documenation page creates a markdown table explaining the options in the ai object of the JSON.
+Can you make your response includes a markdown table explaining the options in the `ai` object of the JSON Schema above and what Dev-Doc VsCode Commands could be relevant.
