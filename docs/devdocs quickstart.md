@@ -2,9 +2,12 @@
 
 Open our hello world repo that has a sample `dev-docs.json` file already configured.
 
+<br></br>
 [Open and Run in GitHub Codespaces](https://codespaces.new/team-dev-docs/spriteAI)
 
 Once open follow these steps.
+
+<br></br>
 
 ## Get Dev-Docs Extension Setup
 
@@ -38,8 +41,9 @@ Right click on `index.js` and find the `dev-docs` submenu and click `generate do
 
 Wait for the documentation to generate, and then right click to open the context menu and click `Open Dev-doc for current file`.  And you are done with Internal Documentation
 
-![Open Dev-doc]; and then clicked](/img/devdocs_quickstart/step_4.png)
+![Open Dev-doc and then clicked](/img/devdocs_quickstart/step_4.png)
 
+<br></br>
 ## Generate Public Documentation Site
 
 ### Step 1: Click on the 'dev-docs: Populate External Docs' option to generate Public SDK Documentation
