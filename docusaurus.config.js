@@ -83,7 +83,7 @@ const config = {
           docItemComponent: "@theme/ApiItem",
           docLayoutComponent: "@theme/DocPage",
           sidebarPath: require.resolve('./sidebars.js'),
-          sidebarCollapsed: false,
+          sidebarCollapsed: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
