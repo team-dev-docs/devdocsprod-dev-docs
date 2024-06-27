@@ -1,4 +1,4 @@
-# devdocs quickstart
+# Dev-Docs quickstart
 
 Open our hello world repo that has a sample `dev-docs.json` file already configured.
 
