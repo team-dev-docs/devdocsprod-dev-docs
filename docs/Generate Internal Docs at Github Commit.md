@@ -7,7 +7,7 @@ On your repo's page click on the "Actions" tab to open the Actions page.
 
 ![](/img/generate_internal_docs_at_github_commit/step_1.png)
 
-![](/img/dev-docs-assets/dev-docs-RnJpLCAyNiBBcHIgMjAyNCAxNzo1OTowNSBHTVQ=.png)
+
 ## Step 2: Click New Workflow Button
 
 On the Actions page, click the "New workflow" button to begin creating a new workflow.
