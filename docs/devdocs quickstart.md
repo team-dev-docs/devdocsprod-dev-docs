@@ -3,6 +3,7 @@
 Open our hello world repo that has a sample `dev-docs.json` file already configured.
 
 <br></br>
+
 [Open and Run in GitHub Codespaces](https://codespaces.new/team-dev-docs/spriteAI)
 
 Once open follow these steps.
