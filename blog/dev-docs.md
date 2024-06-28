@@ -3,7 +3,7 @@
 ---
 title: Supercharge Your API and SDK Documentation with AI-Powered Dev-Docs
 authors: andrew
-tags: [docs, seo, sales]
+tags: [docs, sdks, vscode, seo, sales]
 ---
 
 Are you a developer building APIs, SDKs, or other developer tools? Maintaining comprehensive and up-to-date documentation can be a daunting task, especially as your codebase grows in complexity. Enter Dev-Docs, an AI-powered documentation solution that streamlines the process of generating and managing documentation for your projects.
