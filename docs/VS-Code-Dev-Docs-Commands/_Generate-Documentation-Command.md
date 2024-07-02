@@ -43,7 +43,7 @@ The `dev-docs.json` file contains several configuration options that control the
 
 Before using the `devdocs.generateDocumentation` command, ensure that you have the following prerequisites:
 
-1. The Dev-Docs VSCode extension installed and configured correctly.
+1. The Dev-Docs VS Code extension installed and configured correctly.
 2. A `dev-docs.json` configuration file in your project root, with the desired settings.
 3. A Git repository initialized for your project (if you want to commit and push the generated documentation).
 
@@ -51,7 +51,7 @@ Before using the `devdocs.generateDocumentation` command, ensure that you have t
 
 To generate documentation for your codebase, follow these steps:
 
-1. Open your project in VSCode.
+1. Open your project in VS Code.
 2. Press `Ctrl+Shift+P` (Windows/Linux) or `Cmd+Shift+P` (macOS) to open the Command Palette.
 3. Type "Generate Documentation" and select the `devdocs.generateDocumentation` command.
 4. The extension will analyze your codebase and generate documentation based on your configuration settings.

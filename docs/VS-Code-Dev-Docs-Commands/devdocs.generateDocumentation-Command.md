@@ -1,8 +1,8 @@
 # Generate Documentation for the Current File
 
-The `devdocs.generateDocumentation` command is a powerful feature of the Dev-Docs VSCode extension that allows you to generate documentation for the current file you have open in the editor. This command leverages the power of AI to analyze your code and automatically create a comprehensive documentation file with detailed explanations, code snippets, and relevant information.
+The `devdocs.generateDocumentation` command is a powerful feature of the Dev-Docs VS Code extension that allows you to generate documentation for the current file you have open in the editor. This command leverages the power of AI to analyze your code and automatically create a comprehensive documentation file with detailed explanations, code snippets, and relevant information.
 
-## What does this VSCode Extension Command do?
+## What does this VS Code Extension Command do?
 
 The `devdocs.generateDocumentation` command scans the current file, understands its structure, and generates a new Markdown file with documentation. It covers the following aspects:
 
@@ -12,7 +12,7 @@ The `devdocs.generateDocumentation` command scans the current file, understands 
 4. **Code Snippets**: Relevant code snippets are included to illustrate the usage of functions, classes, and variables.
 5. **Context and Usage**: The generated documentation provides context on how the documented components fit into the overall codebase and how they should be used.
 
-## Why should I use this VSCode Extension Command?
+## Why should I use this VS Code Extension Command?
 
 Generating documentation manually can be a tedious and time-consuming task, especially for large codebases or when working on complex projects. The `devdocs.generateDocumentation` command streamlines this process, saving you valuable time and effort. Here are some key benefits:
 
@@ -47,13 +47,13 @@ The `dev-docs.json` file contains various configuration options that control the
 
 ## Prerequisites
 
-To use the `devdocs.generateDocumentation` command, you need to have the Dev-Docs VSCode extension installed and configured correctly. Additionally, make sure you have the necessary permissions to create and write files in the project directory.
+To use the `devdocs.generateDocumentation` command, you need to have the Dev-Docs VS Code extension installed and configured correctly. Additionally, make sure you have the necessary permissions to create and write files in the project directory.
 
-## How do I use this VSCode Extension Command?
+## How do I use this VS Code Extension Command?
 
 Using the `devdocs.generateDocumentation` command is straightforward:
 
-1. Open the file you want to generate documentation for in the VSCode editor.
+1. Open the file you want to generate documentation for in the VS Code editor.
 2. Press the configured keyboard shortcut for the command (e.g., `Shift+Cmd+D` on macOS, `Shift+Ctrl+D` on Windows/Linux), or navigate to the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`) and search for "Generate Documentation."
 3. The extension will analyze the current file and generate a new Markdown file with the documentation in the specified `docSubFolder` location.
 4. Once the documentation file is generated, you can review and make any necessary adjustments or additions.

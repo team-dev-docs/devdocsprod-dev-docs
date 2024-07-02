@@ -2,7 +2,7 @@
 sidebar_position: 5
 ---
 
-# Customize your AI Generation
+# Customize Your AI Generation
 
 ## Step 1: Sign into Dev-Docs in VS Code
 

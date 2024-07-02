@@ -2,7 +2,7 @@
 
 The `devdocs.generateMultiContext` command is used to generate high-level context for multiple code files or directories within the current workspace. This command is particularly useful when you have a project with multiple files or folders, and you want to generate a brief overview or summary for each of them.
 
-## Why should I use this Vs Code Extension Command?
+## Why should I use this VS Code Extension Command?
 
 Creating high-level context for multiple files or directories can be a time-consuming and repetitive task, especially in large projects. By using this command, you can automate the process of generating context, saving you time and effort. Additionally, having a concise overview of each file or directory can help you better understand the structure and purpose of your project, making it easier to navigate and maintain.
 
@@ -33,7 +33,7 @@ Before using this command, make sure you have:
 1. A `dev-docs.json` file configured with the relevant options mentioned above.
 2. Code files or directories for which you want to generate context.
 
-## How do I use this Vs Code Extension Command?
+## How do I use this VS Code Extension Command?
 
 To use the `devdocs.generateMultiContext` command, follow these steps:
 

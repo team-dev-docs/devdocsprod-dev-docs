@@ -2,11 +2,11 @@
 
 The `devdocs.generateContext` command is a Visual Studio Code extension command that generates high-level context for a specific document or file within your project. It uses artificial intelligence to analyze the code and provide a concise overview of what the file or document is about, its purpose, and how it fits into the overall project structure.
 
-## What does this Vs Code Extension Command do?
+## What does this VS Code Extension Command do?
 
 The `devdocs.generateContext` command analyzes the selected file or document and generates a brief, high-level summary that explains its context within the project. This context can be helpful for developers who are new to the project or need a quick refresher on the purpose and role of a particular file or document.
 
-## Why should I use this Vs Code Extension Command?
+## Why should I use this VS Code Extension Command?
 
 Using the `devdocs.generateContext` command can be beneficial in the following scenarios:
 
@@ -48,7 +48,7 @@ Before using the `devdocs.generateContext` command, make sure you have the follo
 2. A `dev-docs.json` configuration file in your project root directory, with the relevant options set according to your project's needs.
 3. Initialized project with a `dev-docs.json` and `dev-docs` folder 
 
-## How do I use this Vs Code Extension Command?
+## How do I use this VS Code Extension Command?
 
 To use the `devdocs.generateContext` command, follow these steps:
 

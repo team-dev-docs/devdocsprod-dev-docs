@@ -1,4 +1,4 @@
-# Outline Command for DevDocs Extension
+# Outline Command for Dev-Docs Extension
 
 ## What does this Vs Code Extension Command do?
 
