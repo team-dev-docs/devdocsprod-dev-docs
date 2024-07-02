@@ -1,4 +1,4 @@
-# Dev-Docs quickstart
+# Dev-Docs Quickstart
 
 Open our hello world repo that has a sample `dev-docs.json` file already configured.
 
@@ -47,6 +47,7 @@ Wait for the documentation to generate, and then right click to open the context
 ![Open Dev-doc and then clicked](/img/devdocs_quickstart/step_4.png)
 
 <br></br>
+
 ## Generate Public Documentation Site
 
 ### Step 1: Click on the 'dev-docs: Populate External Docs' option to generate Public SDK Documentation
