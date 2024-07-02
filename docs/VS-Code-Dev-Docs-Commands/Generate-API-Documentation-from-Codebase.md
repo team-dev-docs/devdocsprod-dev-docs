@@ -2,7 +2,7 @@
 
 The `devdocs.generateAPIDocumentation` command allows you to generate API documentation and configuration files directly from your codebase. It analyzes your code, identifies API routes, and generates a Postman Collection JSON file containing all the detected API routes. Additionally, it can generate an OpenAPI (Swagger) specification file for your API.
 
-## Why should I use this Vs Code Extension Command?
+## Why should I use this VS Code Extension Command?
 
 Generating API documentation from your codebase has several advantages:
 
@@ -37,7 +37,7 @@ The following configuration options in the `dev-docs.json` file are relevant for
 - Your project should have a `dev-docs.json` configuration file in the root directory.
 - The `dev-docs.json` file should be properly configured with the relevant options mentioned above.
 
-## How do I use this Vs Code Extension Command?
+## How do I use this VS Code Extension Command?
 
 1. **Open the command palette**: Press `Cmd+Shift+P` (Mac) or `Ctrl+Shift+P` (Windows/Linux) to open the command palette.
 2. **Search for the command**: Type `devdocs.generateAPIDocumentation` and select it from the list.

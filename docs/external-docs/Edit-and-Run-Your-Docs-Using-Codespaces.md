@@ -3,9 +3,7 @@ sidebar_position: 3
 ---
 
 
-# Edit Your and Run Your Docs Using Codespaces
-
-Sure, here are the markdown instructions:
+# Edit and Run Your Docs Using Codespaces
 
 ## Step 1: Go To Your External Docs
 

@@ -1,4 +1,4 @@
-# Use AI to generate API Documentation
+# Use AI to Generate API Documentation
 
 ## Step 1: Sign in
 

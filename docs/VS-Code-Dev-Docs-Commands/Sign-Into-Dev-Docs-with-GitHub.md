@@ -2,7 +2,7 @@
 
 The `devdocs.getGitHubUser` command allows you to sign into the Dev-Docs extension using your GitHub account. This is a crucial step to take advantage of the cloud-based features of Dev-Docs, such as saving and sharing your documentation across multiple projects and devices.
 
-## Why should I use this Vs Code Extension Command?
+## Why should I use this VS Code Extension Command?
 
 Signing into Dev-Docs with GitHub provides several benefits:
 
@@ -24,7 +24,7 @@ Before using the `devdocs.getGitHubUser` command, ensure that you have:
 3. A project opened in Visual Studio Code.
 
 
-## How do I use this Vs Code Extension Command?
+## How do I use this VS Code Extension Command?
 
 To sign into Dev-Docs with your GitHub account, follow these steps:
 

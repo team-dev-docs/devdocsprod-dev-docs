@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Install the Extension and Create your first Internal Docs
+# Install the Extension and Create Your First Internal Docs
 
 
 ## Step 1: Go to VS Code Extensions

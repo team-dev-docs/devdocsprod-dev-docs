@@ -4,7 +4,7 @@
 
 This command allows you to set the root directory for the Dev-Docs extension to read and write documentation files. It is an essential step in configuring the extension to work with your project.
 
-## Why should I use this Vs Code Extension Command?
+## Why should I use this VS Code Extension Command?
 
 Setting the root directory is crucial because it tells Dev-Docs where to look for your codebase and where to create or update documentation files. Without setting the correct root directory, the extension may not function properly or may generate documentation in the wrong location.  This is especially useful if you are working in a monorepo.
 
@@ -17,7 +17,7 @@ Before using this command, make sure you have:
 2. Installed the Dev-Docs extension.
 3. Initialized project with a `dev-docs.json` and `dev-docs` folder
 
-## How do I use this Vs Code Extension Command?
+## How do I use this VS Code Extension Command?
 
 To set the root directory for Dev-Docs, follow these steps:
 
