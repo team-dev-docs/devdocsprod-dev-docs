@@ -2,6 +2,8 @@
 sidebar_position: 7
 ---
 
+# Using Dev-Docs Markdown Syntax
+
 ## Dev-Docs Markdown
 
 If you want to use extra Dev-Docs functionality but write your documentation in a code editor, then this is the right option for you. Dev-Docs' markdown gives you the same familiarity with regular markdown, but with three main benefits:
