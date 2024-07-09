@@ -1,4 +1,4 @@
-# Config your tutorial Json
+# Config your tutorial JSON
 
 ## Tutorial
 
