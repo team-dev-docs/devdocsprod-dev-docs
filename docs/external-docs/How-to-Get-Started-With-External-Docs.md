@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 ---
-
+# How to Get Started With External Docs
 
 ## Intro to Dev-Docs External Documentation
 

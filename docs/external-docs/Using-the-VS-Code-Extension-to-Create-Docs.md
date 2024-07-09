@@ -2,6 +2,8 @@
 sidebar_position: 6
 ---
 
+#Using the VS Code Extension to Create Docs
+
 ## Use the VS Code Extension to Write Normal Markdown
 
 If you always struggled to write normal markdown, rejoice you can use Dev-Docs VS Code extension to write markdown for you! Anything written in the rich text editor as seen in the screnshot below:
