@@ -19,8 +19,6 @@ To get started open our hello world repo that has a sample `dev-docs.json` file 
 
 Once open follow these steps.
 
-<br></br>
-
 ## Get Dev-Docs Extension Setup
 
 ### Step 1: Install the Extension
