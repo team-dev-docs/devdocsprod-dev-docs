@@ -5,12 +5,13 @@ sidebar_position: 2
 
 # Dev-Docs Quickstart
 
-See Dev-Docs in action! 
-
+See Dev-Docs in action! The quickstart requires that you have an account. If you haven't made one yet, see [Create an Account and Org](https://www.dev-docs.dev/docs/Initial-Setup/Create-an-Account-and-Org). If you have then you're ready to go! 
+<br></br>
 To get started open our hello world repo that has a sample `dev-docs.json` file already configured.
 
 <br></br>
 [Open and Run in GitHub Codespaces](https://codespaces.new/team-dev-docs/spriteAI)
+<br></br>
 
 Once open follow these steps.
 
