@@ -5,8 +5,6 @@ sidebar_position: 2
 
 # Dev-Docs Quickstart
 
-See Dev-Docs in action! 
-
 To get started open our hello world repo that has a sample `dev-docs.json` file already configured.
 
 <br></br>
