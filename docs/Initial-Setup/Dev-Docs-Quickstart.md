@@ -12,7 +12,9 @@ See Dev-Docs in action! The quickstart requires that you have an account. If you
 To get started open our hello world repo that has a sample `dev-docs.json` file already configured.
 
 <br></br>
+
 [Open and Run in GitHub Codespaces](https://codespaces.new/team-dev-docs/spriteAI)
+
 <br></br>
 
 Once open follow these steps.
