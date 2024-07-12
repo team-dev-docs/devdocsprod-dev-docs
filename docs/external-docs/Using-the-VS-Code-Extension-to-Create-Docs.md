@@ -2,7 +2,7 @@
 sidebar_position: 6
 ---
 
-#Using the VS Code Extension to Create Docs
+# Using the VS Code Extension to Create Docs
 
 ## Use the VS Code Extension to Write Normal Markdown
 

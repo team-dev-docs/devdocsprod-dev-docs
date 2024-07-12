@@ -2,7 +2,7 @@
 sidebar_position: 5
 ---
 
-#Using Out of the Box Docusaurus Markdown
+# Using Out of the Box Docusaurus Markdown
 
 ## Using Docusaurus Markdown
 
