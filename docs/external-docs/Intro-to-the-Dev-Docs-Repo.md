@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-#Intro to the Dev-Docs Repo
+# Intro to the Dev-Docs Repo
 
 ## Dev-Docs Repo File Structure
 
