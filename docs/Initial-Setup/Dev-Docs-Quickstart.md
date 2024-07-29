@@ -29,7 +29,7 @@ Search Dev-Docs and then click install.
 
 ### Step 2: Sign into Dev-Docs in VS Code
 
-In your VS Code Editor, click on the Dev-Docs button.
+Click on the Dev-Docs extension button in your Github Codespace or VS Code Editor. Select sign in and then follow the steps to select the org you created when you set up your account. 
 
 ## Create Onboarding Docs on a codefile
 
@@ -54,6 +54,7 @@ Wait for the documentation to generate, and then right click to open the context
 ![Open Dev-doc and then clicked](/img/devdocs_quickstart/step_4.png)
 
 <br></br>
+
 ## Generate Public Documentation Site
 
 ### Step 1: Click on the 'dev-docs: Populate External Docs' option to generate Public SDK Documentation
