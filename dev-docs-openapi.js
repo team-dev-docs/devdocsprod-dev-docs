@@ -1,7 +1,7 @@
 const apiConfig = {
-    "legend": {
-        "specPath": "examples/legend.yaml",
-        "outputDir": "docs/api/legend"
+    "gyfufufu": {
+        "specPath": "examples/gyfufufu.yaml",
+        "outputDir": "docs/api/gyfufufu"
     }
 }
 
