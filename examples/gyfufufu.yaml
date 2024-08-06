@@ -1,0 +1,53 @@
+openapi: 3.0.0
+info:
+  title: dev-docs
+  version: 1.0.0
+servers:
+  - url: http://localhost:3000
+tags:
+  - name: users
+paths:
+  /api/users:
+    get:
+      tags:
+        - users
+      summary: Get Users
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+    post:
+      tags:
+        - users
+      summary: Create User
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                first_name: John
+                last_name: Doe
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/users/{uid}:
+    get:
+      tags:
+        - users
+      summary: Get User by UID
+      parameters:
+        - name: uid
+          in: path
+          schema:
+            type: string
+          required: true
+          description: The UID of the user to retrieve
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
