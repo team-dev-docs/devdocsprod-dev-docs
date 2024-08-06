@@ -1,7 +1,7 @@
 const apiConfig = {
-    "cool": {
-        "specPath": "examples/cool.yaml",
-        "outputDir": "docs/api/cool"
+    "woot": {
+        "specPath": "examples/woot.yaml",
+        "outputDir": "docs/api/woot"
     }
 }
 
