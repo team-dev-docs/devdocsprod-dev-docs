@@ -1,10 +1,10 @@
 
 
-  # DevDocs VS Code Extension: Supercharge Your Documentation Workflow
+  # Dev-Docs VS Code Extension: Supercharge Your Documentation Workflow
 
 ## Introduction
 
-The DevDocs VS Code Extension is a powerful tool designed to streamline and enhance your documentation process. By leveraging AI-powered features and seamless integration with your development environment, this extension makes creating, managing, and maintaining documentation a breeze.
+The Dev-Docs VS Code Extension is a powerful tool designed to streamline and enhance your documentation process. By leveraging AI-powered features and seamless integration with your development environment, this extension makes creating, managing, and maintaining documentation a breeze.
 
 ## Key Features
 
@@ -18,18 +18,18 @@ The DevDocs VS Code Extension is a powerful tool designed to streamline and enha
 
 5. **Customizable Configuration**: Tailor the extension's behavior to your project's needs using the `dev-docs.json` configuration file.
 
-6. **Cloud Integration**: Seamlessly sync your documentation with DevDocs Cloud for easy sharing and collaboration.
+6. **Cloud Integration**: Seamlessly sync your documentation with Dev-Docs Cloud for easy sharing and collaboration.
 
 7. **Documentation Auditing**: Ensure the quality and consistency of your documentation with built-in auditing features.
 
 ## Getting Started
 
-1. Install the DevDocs VS Code Extension from the VS Code Marketplace.
+1. Install the Dev-Docs VS Code Extension from the VS Code Marketplace.
 2. Set up your `dev-docs.json` configuration file to customize the extension's behavior.
-3. Use the Command Palette (Cmd+Shift+P / Ctrl+Shift+P) to access DevDocs commands.
+3. Use the Command Palette (Cmd+Shift+P / Ctrl+Shift+P) to access Dev-Docs commands.
 4. Start generating documentation with a single click or keyboard shortcut!
 
-## Why Choose DevDocs?
+## Why Choose Dev-Docs?
 
 - **Save Time**: Automate repetitive documentation tasks and focus on writing code.
 - **Improve Consistency**: Ensure uniform documentation across your entire project.
@@ -38,8 +38,8 @@ The DevDocs VS Code Extension is a powerful tool designed to streamline and enha
 
 ## Conclusion
 
-The DevDocs VS Code Extension is an invaluable tool for developers who want to maintain high-quality documentation without sacrificing productivity. By combining the power of AI with the familiarity of VS Code, DevDocs makes documentation an integral part of your development workflow.
+The Dev-Docs VS Code Extension is an invaluable tool for developers who want to maintain high-quality documentation without sacrificing productivity. By combining the power of AI with the familiarity of VS Code, Dev-Docs makes documentation an integral part of your development workflow.
 
-Try the DevDocs VS Code Extension today and experience the future of documentation!
+Try the Dev-Docs VS Code Extension today and experience the future of documentation!
 
   
