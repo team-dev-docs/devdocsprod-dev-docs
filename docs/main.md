@@ -1,6 +1,4 @@
-
-
-  # DevDocs VS Code Extension: Supercharge Your Documentation Workflow
+# Dev-Docs VS Code Extension: Supercharge Your Documentation Workflow
 
 ## Introduction
 
