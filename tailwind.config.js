@@ -10,7 +10,7 @@ function addVariablesForColors({ addBase, theme }) {
   let newVars = Object.fromEntries(
     Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
   );
- 
+
   addBase({
     ":root": newVars,
   });
@@ -132,6 +132,13 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out",
         "spotlight": "spotlight 2s ease .75s 1 forwards"
       },
+      fontFamily: {
+        sans: ["Inter", "sans"],
+        pixel: ["Puffin Arcade", "sans"],
+      },
+      backgroundImage: {
+        'landing-page': "url('/landing-page/background.jpg')",
+      }
     },
   },
   plugins: [

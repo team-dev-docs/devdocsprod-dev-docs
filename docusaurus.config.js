@@ -31,7 +31,11 @@ const config = {
     'src/css/custom.css',
     {
       href: 'https://cdn.tailwindcss.com/2.2.19/tailwind.min.css'
-    }
+    },
+    {
+      href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap',
+      rel: 'stylesheet',
+    },
   ],
   title: 'Your Dev-Docs',
   tagline: 'Lets Dev-Doc and Roll',
@@ -101,7 +105,7 @@ const config = {
                 console.log("###########")
                 console.log(blogPosts)
                 return defaultCreateFeedItems({
-              
+
                   // keep only the 10 most recent blog posts in the feed
                   blogPosts: blogPosts.filter((item, index) => index < 10),
                   ...rest,
