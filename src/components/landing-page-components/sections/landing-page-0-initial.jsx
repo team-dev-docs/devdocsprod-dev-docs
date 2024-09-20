@@ -1,6 +1,6 @@
 import React from 'react';
 import LandingPageHeader from '../parts/landing-page-header';
-import PrimaryButton from '../parts/landing-page-buttton-primary';
+import PrimaryButton from '../parts/landing-page-button-primary';
 import SecondaryButton from '../parts/landing-page-button-secondary';
 
 const LandingPageInitial = () => {

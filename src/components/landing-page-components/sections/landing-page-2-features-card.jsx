@@ -45,15 +45,22 @@ const LandingPageFeaturesCard = () => {
       </div>
 
       <div
-        className="w-full mt-[3rem] flex flex-wrap gap-x-[1.5rem] gap-y-[5rem]"
+        className="mt-[3rem] flex flex-wrap gap-x-[1.5rem] gap-y-[5rem] justify-center items-center"
       >
-        {FEATURES.map((feature, index) => (
-          <LandingPageFeatureCard
-            key={index}
-            iconSrc={feature.iconSrc}
-            title={feature.title}
-            description={feature.description}
-          />
+        {FEATURES.map((feature, idx) => (
+          <div
+            key={`landing-page-features-card-feature-card-${idx}`}
+            className="flex justify-center"
+            style={{
+              flexBasis: 'calc(50% - 1rem)'
+            }}
+          >
+            <LandingPageFeatureCard
+              iconSrc={feature.iconSrc}
+              title={feature.title}
+              description={feature.description}
+            />
+          </div>
         ))}
       </div>
     </LandingPageCard>

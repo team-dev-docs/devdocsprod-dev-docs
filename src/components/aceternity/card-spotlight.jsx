@@ -31,17 +31,21 @@ export const CardSpotlight = ({
   return (
     (<div
       className={cn(
-        "group/spotlight p-10 rounded-md relative border border-neutral-800 bg-black dark:border-neutral-800",
+        "group/spotlight p-[3.75rem] w-[37.125rem] rounded-[1.25rem] relative",
         className
       )}
+      style={{
+        background: "linear-gradient(0deg, rgba(243, 243, 243, 0.20) 0%, rgba(243, 243, 243, 0.20) 100%), linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00) 100%)",
+        boxShadow: "0px -2px 10px 0px rgba(233, 223, 255, 0.30), 0px -2px 40px 0px rgba(187, 155, 255, 0.15), 0px 0.5px 0px 0px rgba(255, 255, 255, 0.50) inset"
+      }}
       onMouseMove={handleMouseMove}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       {...props}>
       <motion.div
-        className="absolute z-0 transition duration-300 rounded-md opacity-0 pointer-events-none -inset-px group-hover/spotlight:opacity-100"
+        className="absolute z-0 transition duration-300 rounded-[1.25rem] opacity-0 pointer-events-none -inset-px group-hover/spotlight:opacity-100"
         style={{
-          backgroundColor: color,
+          // backgroundColor: color,
           maskImage: useMotionTemplate`
             radial-gradient(
               ${radius}px circle at ${mouseX}px ${mouseY}px,
