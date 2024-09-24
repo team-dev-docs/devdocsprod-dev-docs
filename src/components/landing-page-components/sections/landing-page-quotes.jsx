@@ -1,6 +1,7 @@
 import React from 'react';
 import LandingPageCard from '../parts/landing-page-card';
 import LandingPageQuoteCard from '../parts/landing-page-quote-card';
+import { useIsMobile } from '../context-providers/mobile-context-provider';
 
 const QUOTES = [
   {
@@ -24,12 +25,18 @@ const QUOTES = [
 ];
 
 const LandingPageQuotes = () => {
+  const isMobile = useIsMobile();
+
   return (
     <div
       className="flex flex-col items-center justify-center gap-[3.75rem]"
     >
       <div
-        className="font-extrabold text-[3rem]"
+        className={isMobile ?
+          "font-extrabold text-[2rem] text-center"
+          :
+          "font-extrabold text-[3rem] text-center"
+        }
         style={{
           fontFeatureSettings: "'liga' off, 'clig' off",
           fontFamily: "Puffin Arcade",
@@ -39,7 +46,11 @@ const LandingPageQuotes = () => {
       </div>
 
       <div
-        className="flex flex-wrap gap-[4.56rem]"
+        className={isMobile ?
+          "flex flex-wrap gap-[3.12rem] w-full justify-center items-center px-[1.88rem]"
+          :
+          "flex flex-wrap gap-[4.56rem] w-full justify-center items-center px-[1.88rem]"
+        }
       >
         {QUOTES.map((quote, index) => (
           <LandingPageQuoteCard

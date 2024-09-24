@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import { useIsMobile } from '../context-providers/mobile-context-provider';
 
 const LandingPageQuoteCard = ({
   avatarSrc,
@@ -6,12 +7,40 @@ const LandingPageQuoteCard = ({
   company,
   quote,
 }) => {
+  const cardRef = useRef(null);
+  const [carWidth, setCardWidth] = useState(0);
+  const isMobile = useIsMobile();
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (cardRef.current) {
+        setCardWidth(cardRef.current.offsetWidth);
+      }
+    };
+
+    const resizeObserver = new ResizeObserver(handleResize);
+    if (cardRef.current) {
+      resizeObserver.observe(cardRef.current);
+    }
+
+    handleResize();
+
+    return () => {
+      if (cardRef.current) {
+        resizeObserver.unobserve(cardRef.current);
+      }
+    };
+  }, [cardRef]);
+
+  const offset = carWidth / 14
+
   return (
     <div
-      className='relative'
+      className='relative flex justify-center'
     >
       <div
-        className="relative w-[21.4375rem] h-[14.6875rem] p-[1.5625rem] bg-[#0E1330] rounded-[0.625rem] flex flex-col gap-[1.56rem] z-10"
+        ref={cardRef}
+        className={`relative w-full max-w-[21.4375rem] p-[1.5625rem] min-h-[14.6875rem] bg-[#0E1330] rounded-[0.625rem] flex flex-col gap-[1.56rem] z-10`}
         style={{
           border: "1px solid var(--Neutral-gray-500, #282D45)",
         }}
@@ -52,10 +81,12 @@ const LandingPageQuoteCard = ({
       </div>
 
       <div
-        className="absolute bottom-[-1.53125rem] left-[-1.53125rem] rounded-[0.625rem] w-[24.5rem] h-[6.875rem]"
+        className="absolute rounded-[0.625rem] w-[24.5rem] h-[6.875rem]"
         style={{
           background: "url('/landing-page/quote-card-mask-group.svg')",
           backdropFilter: "blur(12.5px)",
+          bottom: offset * -1,
+          width: carWidth + (offset * 2),
         }}
       />
     </div>

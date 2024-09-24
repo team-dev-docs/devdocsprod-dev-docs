@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { CSSTransition } from 'react-transition-group';
+import { useIsMobile } from '../context-providers/mobile-context-provider';
 import './landing-page-dropdown.css';
 
 const LandingPageDropdown = ({
@@ -7,6 +8,7 @@ const LandingPageDropdown = ({
   description,
   borderBottom,
 }) => {
+  const isMobile = useIsMobile();
   const [isExpanded, setIsExpanded] = useState(false);
 
   const toggleExpand = () => {
@@ -19,13 +21,21 @@ const LandingPageDropdown = ({
 
   return (
     <div
-      className="w-full py-[1.25rem] px-[0.63rem] cursor-pointer"
+      className={isMobile ?
+        "w-full py-[1.25rem] px-[0.5rem] cursor-pointer"
+        :
+        "w-full py-[1.25rem] px-[0.63rem] cursor-pointer"
+      }
       style={{
         borderBottom: divBorderBottom,
       }}
     >
       <div
-        className="flex justify-between w-full text-[1.125rem] font-semibold"
+        className={isMobile ?
+          "flex justify-between w-full font-semibold"
+          :
+          "flex justify-between w-full text-[1.125rem] font-semibold"
+        }
         onClick={toggleExpand}
       >
         {title}
@@ -40,7 +50,11 @@ const LandingPageDropdown = ({
         unmountOnExit
       >
         <div
-          className="text-[1.125rem]"
+          className={isMobile ?
+            "pt-[0.94rem]"
+            :
+            "text-[1.125rem]"
+          }
         >
           {description}
         </div>

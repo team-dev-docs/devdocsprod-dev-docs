@@ -1,6 +1,7 @@
 import React from 'react';
 import LandingPageCard from '../parts/landing-page-card';
 import LandingPageDropdown from '../parts/landing-page-dropdown';
+import { useIsMobile } from '../context-providers/mobile-context-provider';
 
 const FAQS = [
   {
@@ -18,10 +19,16 @@ const FAQS = [
 ];
 
 const LandingPageFaqCard = () => {
+  const isMobile = useIsMobile();
+
   return (
     <LandingPageCard>
       <div
-        className="font-extrabold text-[3rem]"
+        className={isMobile ?
+          "font-extrabold text-[2rem] text-center"
+          :
+          "font-extrabold text-[3rem] text-center"
+        }
         style={{
           fontFeatureSettings: "'liga' off, 'clig' off",
           fontFamily: "Puffin Arcade",

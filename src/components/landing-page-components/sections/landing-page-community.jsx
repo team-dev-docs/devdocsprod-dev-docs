@@ -1,10 +1,17 @@
 import React from 'react';
 import PrimaryButtonWhiteText from '../parts/landing-page-button-primary-white-text';
+import { useIsMobile } from '../context-providers/mobile-context-provider';
 
 const LandingPageCommunityCard = () => {
+  const isMobile = useIsMobile();
+
   return (
     <div
-      className="mx-[5rem] rounded-[1.25rem]"
+      className={isMobile ?
+        "mx-[1.25rem] rounded-[1.25rem]"
+        :
+        "mx-[5rem] rounded-[1.25rem]"
+      }
       style={{
         backgroundImage: "url('/landing-page/BG_shape_color.svg')",
         backgroundSize: "cover",
@@ -12,7 +19,11 @@ const LandingPageCommunityCard = () => {
       }}
     >
       <div
-        className="w-full flex flex-col items-center p-[3.75rem] gap-[1.88rem] rounded-[1.25rem] mt-[7.74rem]"
+        className={isMobile ?
+          "w-full flex flex-col items-center p-[3.75rem] gap-[1.88rem] rounded-[1.25rem] mt-[2rem]"
+          :
+          "w-full flex flex-col items-center p-[3.75rem] gap-[1.88rem] rounded-[1.25rem] mt-[7.74rem]"
+        }
         style={{
           backgroundImage: "url('/landing-page/Bg_shape.svg')",
           backgroundSize: "cover",

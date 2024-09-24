@@ -2,12 +2,18 @@ import React from 'react';
 import LandingPageCard from '../parts/landing-page-card';
 import PrimaryButton from '../parts/landing-page-button-primary';
 import SecondaryButton from '../parts/landing-page-button-secondary';
+import { useIsMobile } from '../context-providers/mobile-context-provider';
 
 const LandingPageCallToAction = () => {
+  const isMobile = useIsMobile();
   return (
     <LandingPageCard>
       <div
-        className="font-extrabold text-[3rem] text-center"
+        className={isMobile ?
+          "font-extrabold text-[2rem] text-center"
+          :
+          "font-extrabold text-[3rem] text-center"
+        }
         style={{
           fontFeatureSettings: "'liga' off, 'clig' off",
           fontFamily: "Puffin Arcade",
@@ -24,15 +30,21 @@ const LandingPageCallToAction = () => {
 
 
       <div
-        className="flex gap-[1rem] pt-[2rem]"
+        className={isMobile ?
+          "flex flex-col gap-[1rem] pt-[1.5rem]"
+          :
+          "flex gap-[1rem] pt-[2rem]"
+        }
       >
         <PrimaryButton
+          className="inline-flex !w-auto px-[1.5rem] py-[0.75rem]"
           onClick={() => { }}
         >
           Get Started
         </PrimaryButton>
 
         <SecondaryButton
+          className="inline-flex !w-auto px-[1.5rem] py-[0.75rem]"
           onClick={() => { }}
         >
           Chat with the founders

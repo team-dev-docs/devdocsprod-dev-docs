@@ -169,7 +169,13 @@ const LandingPageHeader = () => {
   const links = isMobile ? mobileLinks : desktopLinks;
 
   return (
-    <div className="w-screen px-[3.75rem] py-[1.5rem] flex items-center justify-between">
+    <div
+      className={isMobile ?
+        "w-screen px-[1.56rem] py-[1.5rem] flex items-center justify-between"
+        :
+        "w-screen px-[3.75rem] py-[1.5rem] flex items-center justify-between"
+      }
+    >
       <div
         className="flex gap-[0.44rem] items-center"
       >

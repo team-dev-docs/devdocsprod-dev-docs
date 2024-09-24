@@ -1,6 +1,7 @@
 import React from 'react';
 import LandingPageCard from '../parts/landing-page-card';
 import { FlipWords } from '../../../components/aceternity/flip-words';
+import { useIsMobile } from '../context-providers/mobile-context-provider';
 
 const ICONS = [
   "/landing-page/pixel_white_github_.svg",
@@ -22,10 +23,16 @@ const WORDS = [
 ];
 
 const LandingPageWorkflowCard = () => {
+  const isMobile = useIsMobile();
+
   return (
     <LandingPageCard>
       <div
-        className="font-extrabold text-[3rem] text-center"
+        className={isMobile ?
+          "font-extrabold text-[2rem] text-center"
+          :
+          "font-extrabold text-[3rem] text-center"
+        }
         style={{
           fontFeatureSettings: "'liga' off, 'clig' off",
           fontFamily: "Puffin Arcade",

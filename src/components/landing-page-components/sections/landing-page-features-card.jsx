@@ -1,6 +1,7 @@
 import React from 'react';
 import LandingPageCard from '../parts/landing-page-card';
 import LandingPageFeatureCard from '../parts/landing-page-feature-card';
+import { useIsMobile } from '../context-providers/mobile-context-provider';
 
 const FEATURES = [
   {
@@ -26,10 +27,16 @@ const FEATURES = [
 ];
 
 const LandingPageFeaturesCard = () => {
+  const isMobile = useIsMobile();
+
   return (
     <LandingPageCard>
       <div
-        className="font-extrabold text-[3rem] max-w-[24rem] text-center"
+        className={isMobile ?
+          "font-extrabold text-[2rem] max-w-[24rem] text-center"
+          :
+          "font-extrabold text-[3rem] max-w-[24rem] text-center"
+        }
         style={{
           fontFeatureSettings: "'liga' off, 'clig' off",
           fontFamily: "Puffin Arcade",
@@ -45,15 +52,27 @@ const LandingPageFeaturesCard = () => {
       </div>
 
       <div
-        className="mt-[3rem] flex flex-wrap gap-x-[1.5rem] gap-y-[5rem] justify-center items-center"
+        className={isMobile ?
+          "mt-[3rem] flex flex-wrap gap-[1.25rem] justify-center items-center w-full"
+          :
+          "mt-[3rem] flex flex-wrap gap-x-[1.5rem] gap-y-[5rem] justify-center items-center"
+        }
       >
         {FEATURES.map((feature, idx) => (
           <div
             key={`landing-page-features-card-feature-card-${idx}`}
-            className="flex justify-center"
-            style={{
-              flexBasis: 'calc(50% - 1rem)'
-            }}
+            className={isMobile ?
+              "flex justify-center w-full"
+              :
+              "flex justify-center"
+            }
+            style={isMobile ?
+              {}
+              :
+              {
+                flexBasis: 'calc(50% - 1rem)'
+              }
+            }
           >
             <LandingPageFeatureCard
               iconSrc={feature.iconSrc}

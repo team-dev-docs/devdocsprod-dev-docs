@@ -1,11 +1,18 @@
 import React from 'react';
+import { useIsMobile } from '../context-providers/mobile-context-provider';
 
 const LandingPageCard = ({
   children,
 }) => {
+  const isMobile = useIsMobile();
+
   return (
     <div
-      className='mx-[5rem] flex flex-col items-center p-[3.75rem] gap-[1rem] rounded-[1.25rem]'
+      className={isMobile ?
+        "mx-[1.125rem] flex flex-col items-center p-[1.88rem] gap-[1rem] rounded-[1.25rem]"
+        :
+        "mx-[5rem] flex flex-col items-center p-[3.75rem] gap-[1rem] rounded-[1.25rem]"
+      }
       style={{
         backdropFilter: "blur(12.5px)",
         background: "linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00) 100%)",
