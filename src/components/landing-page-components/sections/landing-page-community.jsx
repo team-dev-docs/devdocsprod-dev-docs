@@ -8,9 +8,9 @@ const LandingPageCommunityCard = () => {
   return (
     <div
       className={isMobile ?
-        "mx-[1.25rem] rounded-[1.25rem]"
+        "mx-[1.125rem] my-[2rem] flex flex-col items-center p-[1.88rem] gap-[1rem] rounded-[1.25rem]"
         :
-        "mx-[5rem] rounded-[1.25rem]"
+        "mx-[5rem] my-[7.81rem] flex flex-col items-center p-[3.75rem] gap-[1rem] rounded-[1.25rem]"
       }
       style={{
         backgroundImage: "url('/landing-page/BG_shape_color.svg')",
@@ -50,10 +50,9 @@ const LandingPageCommunityCard = () => {
           className="flex flex-col items-center gap-[0.94rem]"
         >
           <div
-            className="font-extrabold text-[2.5rem]"
+            className="font-extrabold text-[2.5rem] font-pixel"
             style={{
               fontFeatureSettings: "'liga' off, 'clig' off",
-              fontFamily: "Puffin Arcade",
             }}
           >
             Join the community

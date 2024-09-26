@@ -10,22 +10,21 @@ const LandingPageCallToAction = () => {
     <LandingPageCard>
       <div
         className={isMobile ?
-          "font-extrabold text-[2rem] text-center"
+          "font-extrabold text-[2rem] text-center font-pixel"
           :
-          "font-extrabold text-[3rem] text-center"
+          "font-extrabold text-[3rem] text-center font-pixel"
         }
         style={{
           fontFeatureSettings: "'liga' off, 'clig' off",
-          fontFamily: "Puffin Arcade",
         }}
       >
-        Ready to make your docs amazing?
+        Ready to embrace efficiency?
       </div>
 
       <div
         className="text-[1.125rem] text-center"
       >
-        Start effortlessly generating documentation with a free account. Speak to the co-founders if you still have questions or want to chat.
+        Start effortlessly generating and maintaining your documentation today with a free account. Speak to the co-founders if you still have questions or want to chat.
       </div>
 
 

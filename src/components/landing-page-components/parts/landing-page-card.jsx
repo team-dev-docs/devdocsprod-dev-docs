@@ -9,9 +9,9 @@ const LandingPageCard = ({
   return (
     <div
       className={isMobile ?
-        "mx-[1.125rem] flex flex-col items-center p-[1.88rem] gap-[1rem] rounded-[1.25rem]"
+        "mx-[1.125rem] my-[2rem] flex flex-col items-center p-[1.88rem] gap-[1rem] rounded-[1.25rem]"
         :
-        "mx-[5rem] flex flex-col items-center p-[3.75rem] gap-[1rem] rounded-[1.25rem]"
+        "mx-[5rem] my-[7.81rem] flex flex-col items-center p-[3.75rem] gap-[1rem] rounded-[1.25rem]"
       }
       style={{
         backdropFilter: "blur(12.5px)",

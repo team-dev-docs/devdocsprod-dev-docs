@@ -25,16 +25,15 @@ const LandingPageFaqCard = () => {
     <LandingPageCard>
       <div
         className={isMobile ?
-          "font-extrabold text-[2rem] text-center"
+          "font-extrabold text-[2rem] text-center font-pixel"
           :
-          "font-extrabold text-[3rem] text-center"
+          "font-extrabold text-[3rem] text-center font-pixel"
         }
         style={{
           fontFeatureSettings: "'liga' off, 'clig' off",
-          fontFamily: "Puffin Arcade",
         }}
       >
-        Commonly asked questions
+        Frequently asked questions
       </div>
 
       <div

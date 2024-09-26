@@ -11,7 +11,10 @@ export const MobileContextProvider = ({ children }) => {
     };
     handleResize();
     window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    return () => {
+      if (!window) return;
+      return window.removeEventListener('resize', handleResize);
+    };
   }, []);
 
   return (

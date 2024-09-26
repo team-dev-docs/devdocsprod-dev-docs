@@ -35,8 +35,8 @@ export const CardSpotlight = ({
         className
       )}
       style={{
-        background: "linear-gradient(0deg, rgba(243, 243, 243, 0.20) 0%, rgba(243, 243, 243, 0.20) 100%), linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00) 100%)",
-        boxShadow: "0px -2px 10px 0px rgba(233, 223, 255, 0.30), 0px -2px 40px 0px rgba(187, 155, 255, 0.15), 0px 0.5px 0px 0px rgba(255, 255, 255, 0.50) inset"
+        background: 'linear-gradient(0deg, rgba(17, 23, 65, 0.75) 0%, rgba(17, 23, 65, 0.75) 100%), linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00) 100%)',
+        boxShadow: '0px - 2px 10px 0px rgba(233, 223, 255, 0.30), 0px - 2px 40px 0px rgba(187, 155, 255, 0.15), 0px 0.5px 0px 0px rgba(255, 255, 255, 0.50) inset',
       }}
       onMouseMove={handleMouseMove}
       onMouseEnter={handleMouseEnter}
@@ -62,7 +62,9 @@ export const CardSpotlight = ({
               [59, 130, 246],
               [139, 92, 246],
             ]}
-            dotSize={3} />
+            dotSize={3}
+            showGradient={false}
+          />
         )}
       </motion.div>
       {children}

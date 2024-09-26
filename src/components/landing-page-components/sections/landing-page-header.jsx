@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import icon from '/static/landing-page/icon.png';
 import logo from '/static/landing-page/logo.png';
-import PrimaryButton from './landing-page-button-primary';
-import SecondaryButton from './landing-page-button-secondary';
-import LandingPageLink from './landing-page-link';
+import PrimaryButton from '../parts/landing-page-button-primary';
+import SecondaryButton from '../parts/landing-page-button-secondary';
+import LandingPageLink from '../parts/landing-page-link';
 import { useIsMobile } from '../context-providers/mobile-context-provider';
 
 const LandingPageHeader = () => {
@@ -171,10 +171,14 @@ const LandingPageHeader = () => {
   return (
     <div
       className={isMobile ?
-        "w-screen px-[1.56rem] py-[1.5rem] flex items-center justify-between"
+        "w-full px-[1.56rem] py-[1.5rem] flex items-center justify-between sticky top-0 left-0 z-20"
         :
-        "w-screen px-[3.75rem] py-[1.5rem] flex items-center justify-between"
+        "w-full px-[3.75rem] py-[1.5rem] flex items-center justify-between sticky top-0 left-0 z-20"
       }
+      style={{
+        background: 'rgba(17, 35, 75, 0.80)',
+        backdropFilter: 'blur(12.5px)',
+      }}
     >
       <div
         className="flex gap-[0.44rem] items-center"

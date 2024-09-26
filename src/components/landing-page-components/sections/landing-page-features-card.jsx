@@ -24,6 +24,16 @@ const FEATURES = [
     title: "Contextual docs",
     description: "Bring your own .md supported docs framework, and go from 0 to deployed in minutes.",
   },
+  {
+    iconSrc: "/landing-page/chat-icon.png",
+    title: "AI Chat",
+    description: "Organize your docs and make them searchable, so you always find the right information when needed.",
+  },
+  {
+    iconSrc: "/landing-page/update-icon.png",
+    title: "Real-time updates",
+    description: "Syncs with your CI/CD pipeline to keep everything up-to-date as you ship new code.",
+  },
 ];
 
 const LandingPageFeaturesCard = () => {
@@ -33,22 +43,15 @@ const LandingPageFeaturesCard = () => {
     <LandingPageCard>
       <div
         className={isMobile ?
-          "font-extrabold text-[2rem] max-w-[24rem] text-center"
+          "font-extrabold text-[2rem] max-w-[24rem] text-center font-pixel"
           :
-          "font-extrabold text-[3rem] max-w-[24rem] text-center"
+          "font-extrabold text-[3rem] max-w-[24rem] text-center font-pixel"
         }
         style={{
           fontFeatureSettings: "'liga' off, 'clig' off",
-          fontFamily: "Puffin Arcade",
         }}
       >
         Benefits built for your success
-      </div>
-
-      <div
-        className="text-[1.125rem] max-w-[30rem] text-center"
-      >
-        Check out our amazing features and experience the power of Dev-Docs for yourself.
       </div>
 
       <div
@@ -64,15 +67,12 @@ const LandingPageFeaturesCard = () => {
             className={isMobile ?
               "flex justify-center w-full"
               :
-              "flex justify-center"
+              "flex justify-center max-w-[24rem] h-[31rem]"
             }
-            style={isMobile ?
-              {}
-              :
-              {
-                flexBasis: 'calc(50% - 1rem)'
-              }
-            }
+            style={{
+              flexBasis: 'calc(33.33% - 1.5rem)',
+              margin: '1rem',
+            }}
           >
             <LandingPageFeatureCard
               iconSrc={feature.iconSrc}

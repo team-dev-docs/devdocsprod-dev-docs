@@ -29,16 +29,15 @@ const LandingPageWorkflowCard = () => {
     <LandingPageCard>
       <div
         className={isMobile ?
-          "font-extrabold text-[2rem] text-center"
+          "font-extrabold text-[2rem] text-center font-pixel"
           :
-          "font-extrabold text-[3rem] text-center"
+          "font-extrabold text-[3rem] text-center font-pixel"
         }
         style={{
           fontFeatureSettings: "'liga' off, 'clig' off",
-          fontFamily: "Puffin Arcade",
         }}
       >
-        Integrates with your <FlipWords words={WORDS} />
+        Integrates with your<FlipWords words={WORDS} />
       </div>
 
       <div
@@ -51,18 +50,17 @@ const LandingPageWorkflowCard = () => {
             alt="icon"
             className="w-[3.125rem] h-[3.125rem]"
             style={{
-              flexBasis: 'calc(33.33% - 1rem)', // Adjust the width to fit 3 items per row
-              margin: '0.5rem', // Optional: Add some margin between items
+              flexBasis: 'calc(33.33% - 1rem)',
+              margin: '0.5rem',
             }}
           />
         ))}
       </div>
 
       <div
-        className="font-extrabold text-[3rem] text-center"
+        className="font-extrabold text-[3rem] text-center font-pixel"
         style={{
           fontFeatureSettings: "'liga' off, 'clig' off",
-          fontFamily: "Puffin Arcade",
         }}
       >
         ... and many more coming soon!

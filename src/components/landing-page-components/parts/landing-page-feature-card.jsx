@@ -31,7 +31,7 @@ const LandingPageFeatureCard = ({
         {title}
       </div>
       <div
-        className="text-[0.875rem] z-10"
+        className="z-10 font-medium"
       >
         {description}
       </div>
