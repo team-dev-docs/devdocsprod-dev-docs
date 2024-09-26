@@ -57,14 +57,14 @@ const LandingPageWorkflowCard = () => {
         ))}
       </div>
 
-      <div
+      {/* <div
         className="font-extrabold text-[3rem] text-center font-pixel"
         style={{
           fontFeatureSettings: "'liga' off, 'clig' off",
         }}
       >
         ... and many more coming soon!
-      </div>
+      </div> */}
     </LandingPageCard>
   );
 };

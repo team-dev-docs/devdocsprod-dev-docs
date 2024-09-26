@@ -46,36 +46,72 @@ const LandingPageIntegrationsCard = () => {
         Developed with your needs in mind
       </div>
 
-      <div
-        className="flex gap-[0.625rem] rounded-[3.75rem] mt-[2.81rem]"
-        style={{
-          background: "rgba(27, 27, 30, 0.50)",
-        }}
-      >
-        {INTEGRATIONS.map((integration, idx) => (
-          <button
-            key={`landing-page-integrations-selection-${idx}`}
-            className="py-[0.625rem] px-[1.25rem] rounded-[3.75rem]"
-            style={{
-              background: selectedIndex === idx ? "rgba(255, 255, 255, 0.15)" : "transparent",
-            }}
-            onClick={() => setSelectedIndex(idx)}
-          >
-            {integration.name}
-          </button>
-        ))}
-      </div>
+      {!isMobile && (
+        <div
+          className="flex gap-[0.625rem] rounded-[3.75rem] mt-[2.81rem]"
+          style={{
+            background: "rgba(27, 27, 30, 0.50)",
+          }}
+        >
+          {INTEGRATIONS.map((integration, idx) => (
+            <button
+              key={`landing-page-integrations-selection-${idx}`}
+              className="py-[0.625rem] px-[1.25rem] rounded-[3.75rem]"
+              style={{
+                background: selectedIndex === idx ? "rgba(255, 255, 255, 0.15)" : "transparent",
+              }}
+              onClick={() => setSelectedIndex(idx)}
+            >
+              {integration.name}
+            </button>
+          ))}
+        </div>
+      )}
 
       <div
-        className="mt-[2.81rem]"
+        className={isMobile ?
+          "mt-[1.25rem]"
+          :
+          "mt-[2.81rem]"
+        }
       >
         {INTEGRATIONS[selectedIndex].description}
       </div>
 
       <img
-        className="mt-[2.81rem] w-full"
+        className={isMobile ?
+          "mt-[1.25rem] w-full"
+          :
+          "mt-[2.81rem] w-full"
+        }
         src={INTEGRATIONS[selectedIndex].screenshotSrc}
       />
+
+      {isMobile && (
+        <div
+          className="flex items-center justify-between w-full gap-[1rem]"
+        >
+          <img
+            src="/landing-page/arrow-left.svg"
+            className="border rounded-full p-[0.31rem] w-[2rem] h-[2rem] m-0 cursor-pointer"
+            onClick={() => setSelectedIndex((selectedIndex - 1 + INTEGRATIONS.length) % INTEGRATIONS.length)}
+          />
+          <div
+            className="rounded-full px-[1.25rem] py-[0.625rem]"
+            style={{
+              background: 'rgba(255, 255, 255, 0.15)',
+              backdropFilter: 'blur(12.5px)',
+            }}
+          >
+            {INTEGRATIONS[selectedIndex].name}
+          </div>
+          <img
+            src="/landing-page/arrow-right.svg"
+            className="border rounded-full p-[0.31rem] w-[2rem] h-[2rem] m-0 cursor-pointer"
+            onClick={() => setSelectedIndex((selectedIndex + 1 + INTEGRATIONS.length) % INTEGRATIONS.length)}
+          />
+        </div>
+      )}
     </LandingPageCard>
   );
 };

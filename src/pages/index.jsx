@@ -16,8 +16,8 @@ import { MobileContextProvider, useIsMobile } from '../components/landing-page-c
 import "../css/landingpage.scss";
 import LandingPageHeader from '../components/landing-page-components/sections/landing-page-header';
 
-
-// bullets
+// carosel for quotes
+// move links in const
 
 const LandingPage = () => {
   return (
@@ -25,7 +25,6 @@ const LandingPage = () => {
       <div
         className={"w-full font-sans bg-repeat-y bg-cover bg-landing-page text-[#ECECEC] flex flex-col"}
       >
-        <LandingPageHeader />
         <LandingPageInitial />
         <LandingPageDemoCard />
         <LandingPageHasYourBack />

@@ -1,5 +1,5 @@
 import React from 'react';
-import { DEV_DOCS_WHITE } from '@site/src/constants/landing-page-constants';
+import { DEV_DOCS_WHITE } from '@site/src/constants/landing-page-links-constants';
 
 const SecondaryButton = ({
   onClick,

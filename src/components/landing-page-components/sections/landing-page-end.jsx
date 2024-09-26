@@ -74,17 +74,29 @@ const LandingPageEnd = () => {
         </div>
 
         <div
-          className='flex flex-wrap justify-around w-full px-[0.63rem] min-h-[7.3125rem]'
+          className={isMobile ?
+            "flex flex-col justify-around w-full min-h-[7.3125rem]"
+            :
+            "flex justify-around w-full min-h-[7.3125rem]"
+          }
           style={{
             background: "rgba(207, 211, 255, 0.50)",
           }}
         >
           {BACKER_LOGOS_SRC.map((src, index) => (
-            <img
+            <div
               key={`landing-page-footer-backer-${index}`}
-              src={src}
-              alt="backer"
-            />
+              className={isMobile ?
+                "flex items-center justify-center w-auto grow"
+                :
+                "flex items-center justify-center w-0 grow"
+              }
+            >
+              <img
+                src={src}
+                alt="backer"
+              />
+            </div>
           ))}
         </div>
       </div>

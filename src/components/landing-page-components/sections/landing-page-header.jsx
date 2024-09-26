@@ -1,12 +1,16 @@
 import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
+
 import icon from '/static/landing-page/icon.png';
 import logo from '/static/landing-page/logo.png';
 import PrimaryButton from '../parts/landing-page-button-primary';
 import SecondaryButton from '../parts/landing-page-button-secondary';
 import LandingPageLink from '../parts/landing-page-link';
 import { useIsMobile } from '../context-providers/mobile-context-provider';
+import { LINK_GET_STARTED, LINK_HOW_IT_WORKS, LINK_PRICING, LINK_DOCS, LINK_BLOG, LINK_SIGN_IN } from '../../../constants/landing-page-links-constants';
 
 const LandingPageHeader = () => {
+  const history = useHistory();
   const isMobile = useIsMobile();
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -49,9 +53,9 @@ const LandingPageHeader = () => {
           style={{
             borderBottom: "1px solid #3741AC",
           }}
-          href=''
+          href={LINK_HOW_IT_WORKS}
         >
-          Features
+          How it works
         </LandingPageLink>
 
         <LandingPageLink
@@ -59,17 +63,7 @@ const LandingPageHeader = () => {
           style={{
             borderBottom: "1px solid #3741AC",
           }}
-          href=''
-        >
-          About us
-        </LandingPageLink>
-
-        <LandingPageLink
-          className="px-[0.5rem] py-[1.5rem]"
-          style={{
-            borderBottom: "1px solid #3741AC",
-          }}
-          href=''
+          href={LINK_PRICING}
         >
           Pricing
         </LandingPageLink>
@@ -79,7 +73,7 @@ const LandingPageHeader = () => {
           style={{
             borderBottom: "1px solid #3741AC",
           }}
-          href=''
+          href={LINK_DOCS}
         >
           Docs
         </LandingPageLink>
@@ -89,7 +83,7 @@ const LandingPageHeader = () => {
           style={{
             borderBottom: "1px solid #3741AC",
           }}
-          href=''
+          href={LINK_BLOG}
         >
           Blog
         </LandingPageLink>
@@ -153,13 +147,13 @@ const LandingPageHeader = () => {
       className='flex gap-[1.25rem] items-center'
     >
       <PrimaryButton
-        onClick={() => {}}
+        onClick={() => history.push(LINK_GET_STARTED)}
       >
         Get started
       </PrimaryButton>
 
       <SecondaryButton
-        onClick={() => { }}
+        onClick={() => history.push(LINK_SIGN_IN)}
       >
         Sign in
       </SecondaryButton>

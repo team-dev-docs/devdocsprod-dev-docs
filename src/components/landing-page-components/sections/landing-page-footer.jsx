@@ -3,6 +3,7 @@ import LandingPageLink from '../parts/landing-page-link';
 import icon from '/static/landing-page/icon.png';
 import logo from '/static/landing-page/logo.png';
 import { useIsMobile } from '../context-providers/mobile-context-provider';
+import { LINK_BLOG, LINK_GITHUB, LINK_LINKEDIN } from '@site/src/constants/landing-page-links-constants';
 
 const BACKER_LOGOS_SRC = [
   "/landing-page/techstars.svg",
@@ -82,7 +83,7 @@ const LandingPageFooter = () => {
                 :
                 "text-[1.125rem] font-light"
               }
-              href=""
+              href={LINK_LINKEDIN}
             >
               LinkedIn
             </LandingPageLink>
@@ -92,7 +93,7 @@ const LandingPageFooter = () => {
                 :
                 "text-[1.125rem] font-light"
               }
-              href=""
+              href={LINK_GITHUB}
             >
               GitHub
             </LandingPageLink>
@@ -102,7 +103,7 @@ const LandingPageFooter = () => {
                 :
                 "text-[1.125rem] font-light"
               }
-              href=""
+              href={LINK_BLOG}
             >
               Blog
             </LandingPageLink>

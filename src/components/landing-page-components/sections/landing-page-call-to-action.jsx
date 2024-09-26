@@ -1,10 +1,13 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 import LandingPageCard from '../parts/landing-page-card';
 import PrimaryButton from '../parts/landing-page-button-primary';
 import SecondaryButton from '../parts/landing-page-button-secondary';
 import { useIsMobile } from '../context-providers/mobile-context-provider';
+import { LINK_CHAT_WITH_FOUNDERS, LINK_GET_STARTED } from '@site/src/constants/landing-page-links-constants';
 
 const LandingPageCallToAction = () => {
+  const history = useHistory();
   const isMobile = useIsMobile();
   return (
     <LandingPageCard>
@@ -37,14 +40,14 @@ const LandingPageCallToAction = () => {
       >
         <PrimaryButton
           className="inline-flex !w-auto px-[1.5rem] py-[0.75rem]"
-          onClick={() => { }}
+          onClick={() => history.push(LINK_GET_STARTED)}
         >
           Get Started
         </PrimaryButton>
 
         <SecondaryButton
           className="inline-flex !w-auto px-[1.5rem] py-[0.75rem]"
-          onClick={() => { }}
+          onClick={() => history.push(LINK_CHAT_WITH_FOUNDERS)}
         >
           Chat with the founders
         </SecondaryButton>

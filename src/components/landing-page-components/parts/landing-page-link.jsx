@@ -1,5 +1,5 @@
 import React from 'react';
-import { DEV_DOCS_WHITE } from '@site/src/constants/landing-page-constants';
+import { Link } from 'react-router-dom';
 
 const LandingPageLink = ({
   href,
@@ -8,13 +8,13 @@ const LandingPageLink = ({
   style = {},
 }) => {
   return (
-    <a
-      href={href}
+    <Link
+      to={href}
       className={`text-[#ECECEC] ${className}`}
       style={style}
     >
       {children}
-    </a>
+    </Link>
   );
 };
 

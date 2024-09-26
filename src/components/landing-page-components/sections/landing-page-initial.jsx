@@ -1,7 +1,10 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 import PrimaryButton from '../parts/landing-page-button-primary';
 import SecondaryButton from '../parts/landing-page-button-secondary';
 import { useIsMobile } from '../context-providers/mobile-context-provider';
+import LandingPageHeader from './landing-page-header';
+import { LINK_BOOK_MEETING, LINK_GET_STARTED } from '@site/src/constants/landing-page-links-constants';
 
 const BULLETS = [
   "Start in just a few minutes",
@@ -11,18 +14,20 @@ const BULLETS = [
 ]
 
 const LandingPageInitial = () => {
+  const history = useHistory();
   const isMobile = useIsMobile();
 
   return (
     <div
       className='relative min-h-screen'
     >
+      <LandingPageHeader />
 
       <img
         className={isMobile ?
-          'w-full p-8'
+          'w-full p-8 m-0'
           :
-          'max-w-[75vw] max-h-[75vh] w-auto h-auto absolute bottom-0 right-0 z-0'
+          'max-w-[50vw] max-h-[50vh] w-auto h-auto absolute bottom-0 right-[1rem] z-0 m-0'
         }
         src="/landing-page/robot.png"
       />
@@ -96,7 +101,7 @@ const LandingPageInitial = () => {
             :
             ""
           }
-          onClick={() => { }}
+          onClick={() => history.push(LINK_GET_STARTED)}
         >
           Get Started
         </PrimaryButton>
@@ -107,9 +112,9 @@ const LandingPageInitial = () => {
             :
             ""
           }
-          onClick={() => { }}
+          onClick={() => history.push(LINK_BOOK_MEETING)}
         >
-          Book a demo
+          Book a meeting
         </SecondaryButton>
       </div>
     </div>

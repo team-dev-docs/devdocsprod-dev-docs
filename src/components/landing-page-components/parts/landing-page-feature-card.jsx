@@ -14,11 +14,11 @@ const LandingPageFeatureCard = ({
       className={isMobile ?
         "w-full p-[1.25rem]"
         :
-        ""
+        "p-[2rem]"
       }
     >
       <img
-        className="w-[3.125rem] h-[3.125rem] mb-[px-4] z-10"
+        className="w-[3.125rem] h-[3.125rem] m-0 mb-[1rem] z-10"
         src={iconSrc}
       />
       <div
