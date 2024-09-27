@@ -32,8 +32,6 @@ const LandingPageQuoteCard = ({
     };
   }, [cardRef]);
 
-  const offset = carWidth / 14
-
   return (
     <div
       className='relative flex justify-center'
@@ -81,12 +79,10 @@ const LandingPageQuoteCard = ({
       </div>
 
       <div
-        className="absolute rounded-[0.625rem] w-[24.5rem] h-[6.875rem]"
+        className="absolute rounded-[0.625rem] w-[24.5rem] h-[6.875rem] bottom-[-1rem]"
         style={{
           background: "url('/landing-page/quote-card-mask-group.svg')",
           backdropFilter: "blur(12.5px)",
-          bottom: offset * -1,
-          width: carWidth + (offset * 2),
         }}
       />
     </div>

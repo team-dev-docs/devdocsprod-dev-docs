@@ -16,9 +16,6 @@ import { MobileContextProvider, useIsMobile } from '../components/landing-page-c
 import "../css/landingpage.scss";
 import LandingPageHeader from '../components/landing-page-components/sections/landing-page-header';
 
-// carosel for quotes
-// move links in const
-
 const LandingPage = () => {
   return (
     <MobileContextProvider>

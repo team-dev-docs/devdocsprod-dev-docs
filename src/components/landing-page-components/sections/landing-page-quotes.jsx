@@ -2,6 +2,7 @@ import React from 'react';
 import LandingPageCard from '../parts/landing-page-card';
 import LandingPageQuoteCard from '../parts/landing-page-quote-card';
 import { useIsMobile } from '../context-providers/mobile-context-provider';
+import InfiniteMovingCards from '../../aceternity/infinite-moving-cards';
 
 const QUOTES = [
   {
@@ -44,7 +45,11 @@ const LandingPageQuotes = () => {
         See what people are saying about Dev-Docs
       </div>
 
-      <div
+      <InfiniteMovingCards
+        items={QUOTES}
+      />
+
+      {/* <div
         className={isMobile ?
           "flex flex-wrap gap-[3.12rem] w-full justify-center items-center px-[1.88rem]"
           :
@@ -60,7 +65,7 @@ const LandingPageQuotes = () => {
             quote={quote.quote}
           />
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };
