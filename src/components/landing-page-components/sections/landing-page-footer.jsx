@@ -77,7 +77,7 @@ const LandingPageFooter = () => {
             >
               Social
             </div>
-            <LandingPageLink
+            <a
               className={isMobile ?
                 "font-light"
                 :
@@ -86,8 +86,8 @@ const LandingPageFooter = () => {
               href={LINK_LINKEDIN}
             >
               LinkedIn
-            </LandingPageLink>
-            <LandingPageLink
+            </a>
+            <a
               className={isMobile ?
                 "font-light"
                 :
@@ -96,8 +96,8 @@ const LandingPageFooter = () => {
               href={LINK_GITHUB}
             >
               GitHub
-            </LandingPageLink>
-            <LandingPageLink
+            </a>
+            <a
               className={isMobile ?
                 "font-light"
                 :
@@ -106,7 +106,7 @@ const LandingPageFooter = () => {
               href={LINK_BLOG}
             >
               Blog
-            </LandingPageLink>
+            </a>
           </div>
         </div>
       </div>

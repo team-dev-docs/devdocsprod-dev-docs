@@ -47,7 +47,7 @@ const LandingPageCallToAction = () => {
 
         <SecondaryButton
           className="inline-flex !w-auto px-[1.5rem] py-[0.75rem]"
-          onClick={() => history.push(LINK_CHAT_WITH_FOUNDERS)}
+          onClick={() => window.open(LINK_CHAT_WITH_FOUNDERS, '_blank')}
         >
           Chat with us
         </SecondaryButton>

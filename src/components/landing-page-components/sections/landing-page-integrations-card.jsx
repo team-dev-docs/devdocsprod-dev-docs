@@ -33,7 +33,7 @@ const LandingPageIntegrationsCard = () => {
 
   return (
     <LandingPageCard>
-      <div
+      <div id="features"
         className={isMobile ?
           "font-extrabold text-[2rem] text-center font-pixel"
           :

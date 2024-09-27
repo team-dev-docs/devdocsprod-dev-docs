@@ -58,7 +58,7 @@ const LandingPageHeader = () => {
           How it works
         </LandingPageLink>
 
-        <LandingPageLink
+        {/* <LandingPageLink
           className="px-[0.5rem] py-[1.5rem]"
           style={{
             borderBottom: "1px solid #3741AC",
@@ -66,7 +66,7 @@ const LandingPageHeader = () => {
           href={LINK_PRICING}
         >
           Pricing
-        </LandingPageLink>
+        </LandingPageLink> */}
 
         <LandingPageLink
           className="px-[0.5rem] py-[1.5rem]"
@@ -94,14 +94,14 @@ const LandingPageHeader = () => {
       >
         <PrimaryButton
           className="w-full"
-          onClick={() => {}}
+          onClick={() => history.push(LINK_GET_STARTED)}
         >
           Get started
         </PrimaryButton>
 
         <SecondaryButton
           className="w-full"
-          onClick={() => { }}
+          onClick={() => window.open(LINK_SIGN_IN, '_blank')}
         >
           Sign in
         </SecondaryButton>
@@ -109,39 +109,43 @@ const LandingPageHeader = () => {
     </div>
   </>
 
+const scrollToHeader = (headerId) => {
+  const headerElement = document.getElementById(headerId);
+  if (headerElement) {
+    headerElement.scrollIntoView({ behavior: 'smooth' });
+  }
+};
+
+
   const desktopLinks = <>
     <div
       className={`flex gap-[1.5rem] items-center`}
     >
-      <LandingPageLink
-        href=''
+      <a style={{ color: 'white' }}
+       onClick={() => scrollToHeader('features')}
       >
-        Features
-      </LandingPageLink>
+        How it works
+      </a>
+      
+
 
       <LandingPageLink
-        href=''
-      >
-        About us
-      </LandingPageLink>
-
-      <LandingPageLink
-        href=''
-      >
-        Pricing
-      </LandingPageLink>
-
-      <LandingPageLink
-        href=''
+        href='/docs'
       >
         Docs
       </LandingPageLink>
 
       <LandingPageLink
-        href=''
+        href='/blog'
       >
         Blog
       </LandingPageLink>
+
+      {/* <LandingPageLink
+        href='/pricing'
+      >
+        Pricing
+      </LandingPageLink> */}
     </div>
     <div
       className='flex gap-[1.25rem] items-center'
@@ -153,7 +157,7 @@ const LandingPageHeader = () => {
       </PrimaryButton>
 
       <SecondaryButton
-        onClick={() => history.push(LINK_SIGN_IN)}
+        onClick={() => window.open(LINK_SIGN_IN, '_blank')}
       >
         Sign in
       </SecondaryButton>

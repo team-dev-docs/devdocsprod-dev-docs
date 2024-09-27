@@ -108,7 +108,7 @@ const LandingPageEnd = () => {
           "px-[5rem] my-[1.5rem] text-[1.125rem] text-center"
         }
       >
-        We take your data security seriously. Dev-Docs is actively working towards SOC 2 Type 2 compliance to ensure the highest standards of security and privacy for your documentation.
+        We take your data security seriously. Absolutely none of your codebase is stored or trained on. Dev-Docs is actively working towards SOC 2 Type 2 compliance to ensure the highest standards of security and privacy.
       </div>
 
       <img

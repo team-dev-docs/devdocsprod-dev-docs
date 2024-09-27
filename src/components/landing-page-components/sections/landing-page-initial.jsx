@@ -104,7 +104,7 @@ const LandingPageInitial = () => {
           }
           onClick={() => history.push(LINK_GET_STARTED)}
         >
-          Get started
+          Get started for free
         </PrimaryButton>
 
         <SecondaryButton
@@ -113,7 +113,7 @@ const LandingPageInitial = () => {
             :
             ""
           }
-          onClick={() => history.push(LINK_BOOK_MEETING)}
+          onClick={() => window.open(LINK_BOOK_MEETING, '_blank')}
         >
           Chat with us
         </SecondaryButton>

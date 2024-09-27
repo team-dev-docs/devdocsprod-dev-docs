@@ -46,6 +46,12 @@ const QUOTES = [
     title: "Richard Cuellar-Lopez, Founder and CEO",
     company: "Ourarmada",
     quote: "Dev-Docs is a must have for fast moving teams that have full-time, part-time, outsourced Engs drop into your codebase regularly. It establishes the uniform standard that makes onboarding, code handoff, and referencing smooth."
+  },
+  {
+    avatarSrc: "/landing-page/avatar-3.svg",
+    title: "Nicholas Fry, CEO",
+    company: "Turbodocx",
+    quote: "Dev-Docs team is super responsive and awesome, and they helped us create our initial docs page and gave us world class support when we had questions.  Super excited about what they are building."
   }
 ];
 
