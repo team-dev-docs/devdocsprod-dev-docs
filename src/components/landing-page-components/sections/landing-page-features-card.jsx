@@ -6,8 +6,8 @@ import { useIsMobile } from '../context-providers/mobile-context-provider';
 const FEATURES = [
   {
     iconSrc: "/landing-page/docs-icon.png",
-    title: "Contextual docs",
-    description: "Automatically generate and maintain contextual information on your codebase.",
+    title: "Markdown docs by default",
+    description: "We believe developer content should live as code, aka markdown. Your content lives right next to your codebase or in a documentation framework.",
   },
   {
     iconSrc: "/landing-page/update-icon.png",
@@ -17,21 +17,21 @@ const FEATURES = [
   {
     iconSrc: "/landing-page/output-icon.png",
     title: "Configure your output",
-    description: "You choose what code you want documented, what questions you want answered, and where you want the content stored.",
+    description: "You choose what code you want documented, what questions you want answered, and where you want the content stored. Doc teams guide the AI.",
   },
   {
     iconSrc: "/landing-page/documentation-icon.png",
-    title: "Integrates where you work",
-    description: "Auto-generate content from where you’re already working. Store it where it’s already being consumed.",
+    title: "Bring your own docs or use ours",
+    description: "Plug in your existing docs repo if you have one. Starting from scratch? Use our free docs template generated for you by default.",
   },
   {
     iconSrc: "/landing-page/human-icon.png",
-    title: "Human in the loop",
+    title: "Human-in-the-loop",
     description: "You have editing and publishing powers. We don’t replace humans, we empower them. The final say is always yours!",
   },
   {
     iconSrc: "/landing-page/ui-icon.png",
-    title: "Document UI workflows",
+    title: "Create step-by-step guides",
     description: "Great UI speaks for itself, but Dev-Docs’ Chrome extension is built for those times you need to document it for your users.",
   },
 ];

@@ -13,7 +13,7 @@ const LandingPageHasYourBack = () => {
           }
           style={{ color: '#ECECEC' }}
         >
-          Whether you need content for internal teams or your end users, Dev-Docs has your back!
+          Dev-Docs has you covered, whether you need content for your internal teams or your end users.
         </div>
   );
 };
