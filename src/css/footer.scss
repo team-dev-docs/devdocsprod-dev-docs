@@ -133,10 +133,10 @@
   height: 24px; /* Set the height for your icon */
   background-image: url("/svgs/github.svg"); /* Path to your SVG icon */
   background-size: cover; /* Ensures the icon covers the element */
+  cursor: pointer;
   a {
     color: transparent !important;
   }
-  cursor: pointer;
 }
 
 .instagram {
@@ -146,10 +146,10 @@
   height: 24px; /* Set the height for your icon */
   background-image: url("/svgs/instagram.svg"); /* Path to your SVG icon */
   background-size: cover; /* Ensures the icon covers the element */
+  cursor: pointer;
   a {
     color: transparent !important;
   }
-  cursor: pointer;
 }
 
 .discord {
@@ -159,10 +159,10 @@
   height: 24px; /* Set the height for your icon */
   background-image: url("/svgs/discord.svg"); /* Path to your SVG icon */
   background-size: cover; /* Ensures the icon covers the element */
+  cursor: pointer;
   a {
     color: transparent !important;
   }
-  cursor: pointer;
 }
 
 .linkedin {
@@ -173,10 +173,10 @@
   height: 24px; /* Set the height for your icon */
   background-image: url("/svgs/linkedin.svg"); /* Path to your SVG icon */
   background-size: cover; /* Ensures the icon covers the element */
+  cursor: pointer;
   a {
     color: transparent !important;
   }
-  cursor: pointer;
 }
 
 [class^="iconExternalLink"] {

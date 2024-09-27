@@ -10,7 +10,7 @@ function addVariablesForColors({ addBase, theme }) {
   let newVars = Object.fromEntries(
     Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
   );
- 
+
   addBase({
     ":root": newVars,
   });
@@ -121,6 +121,11 @@ module.exports = {
             transform: "translate(-50%,-40%) scale(1)",
           },
         },
+        scroll: {
+          to: {
+            transform: "translate(calc(-50% - 0.5rem))",
+          },
+        },
       },
       animation: {
         "first": "moveVertical 30s ease infinite",
@@ -130,8 +135,16 @@ module.exports = {
         "fifth": "moveInCircle 20s ease infinite",
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "spotlight": "spotlight 2s ease .75s 1 forwards"
+        "spotlight": "spotlight 2s ease .75s 1 forwards",
+        scroll: "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
       },
+      fontFamily: {
+        sans: ["Inter", "sans"],
+        pixel: ["Puffin Arcade", "sans"],
+      },
+      backgroundImage: {
+        'landing-page': "url('/landing-page/background.jpg')",
+      }
     },
   },
   plugins: [

@@ -1,0 +1,19 @@
+.dropdown-enter {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 300ms ease-out;
+}
+
+.dropdown-enter-active {
+  max-height: 100px; /* Adjust based on content */
+}
+
+.dropdown-exit {
+  max-height: 100px; /* Adjust based on content */
+  overflow: hidden;
+  transition: max-height 300ms ease-in;
+}
+
+.dropdown-exit-active {
+  max-height: 0;
+}
