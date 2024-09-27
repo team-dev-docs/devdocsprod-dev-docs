@@ -4,7 +4,7 @@ import MDXContent from "@theme-original/MDXContent";
 import TracingBeam from "@site/src/components/tracing-beam";
 import svgToDataUri from "mini-svg-data-uri";
 import { BackgroundGradientAnimation } from "@site/src/components/background-gradient-animation";
-import { useHistory } from "@docusaurus/router";
+
 
 export default function MDXContentWrapper(props) {
   let image = `url("${svgToDataUri(
@@ -17,9 +17,11 @@ export default function MDXContentWrapper(props) {
     history.push("/docs/another-page");
   };
 
+  console.log("bloggging", props?.children?.type?.metadata)
+
   return (
     <>
-      {props?.children?.type?.metadata?.title ? (
+      {props?.children?.type?.metadata?.source.includes("@site/blog") ? (
         <>
           <BackgroundGradientAnimation
             lightImage={props?.children?.type?.frontMatter?.light_image}
@@ -43,13 +45,13 @@ export default function MDXContentWrapper(props) {
           >
             <h1 style={{ color: props?.children?.type?.frontMatter?.text_color}}>
               <a style={{ color: props?.children?.type?.frontMatter?.text_color}} href={props.children.type.metadata.permalink}>
-                {props.children.type.metadata.title}
+                {props.children.type.metadata.title || "yo"}
               </a>
             </h1>
             <h3
               style={{ paddingLeft: "1vw", fontSize: "16px", fontWeight: 400, color: props?.children?.type?.frontMatter?.text_color }}
             >
-              {props.children.type.metadata.authors.length > 0 &&
+              {props?.children?.type?.metadata?.authors?.length > 0 &&
                 props.children.type.metadata.authors.map((item, index) => (
                   <span style={{color: props?.children?.type?.frontMatter?.text_color}} key={index}>{" " + item.name + ","}</span>
                 ))}
@@ -58,7 +60,7 @@ export default function MDXContentWrapper(props) {
               <span style={{color: props?.children?.type?.frontMatter?.text_color}}>{Math.ceil(props.children.type.metadata.readingTime * 10) / 1} min</span>
             </h3>
             <div className="flex flex-row items-center mb-10 w-full">
-              {props.children.type.metadata.authors.map((item, index) => (
+              {props?.children?.type?.metadata.authors?.map((item, index) => (
                 <div className="pl-2">
                   <img
                     className="author-avatar"
@@ -68,7 +70,7 @@ export default function MDXContentWrapper(props) {
                 </div>
               ))}
               <div className="pl-6">
-                {props.children.type.metadata.authors.length > 0 &&
+                {props?.children?.type?.metadata?.authors?.length > 0 &&
                   props.children.type.metadata.authors.map((item, index) => (
                     <span style={{color: props?.children?.type?.frontMatter?.text_color}} key={index}>
                     {" " + item.name + (index < props.children.type.metadata.authors.length - 1 ? "," : "")}
@@ -77,11 +79,13 @@ export default function MDXContentWrapper(props) {
               </div>
             </div>
           </BackgroundGradientAnimation>
-          <MDXContent style={{ backgroundImage: image }} {...props} />
+          <div className="dev-docs-blog">
+            <MDXContent style={{ backgroundImage: image }} {...props} />
+          </div>
         </>
       ) : (
         <TracingBeam>
-          <div>
+          <div id="tracing-beam">
             <MDXContent style={{ backgroundImage: image }} {...props} />
           </div>
         </TracingBeam>
