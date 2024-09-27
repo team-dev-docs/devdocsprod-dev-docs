@@ -7,11 +7,11 @@ import LandingPageFeaturesCard from '../components/landing-page-components/secti
 import LandingPageIntegrationsCard from '../components/landing-page-components/sections/landing-page-integrations-card';
 import LandingPageWorkflowCard from '../components/landing-page-components/sections/landing-page-workflow-card';
 import LandingPageCallToAction from '../components/landing-page-components/sections/landing-page-call-to-action';
-import LandingPageCommunityCard from '../components/landing-page-components/sections/landing-page-community';
+// import LandingPageCommunityCard from '../components/landing-page-components/sections/landing-page-community';
 import LandingPageQuotes from '../components/landing-page-components/sections/landing-page-quotes';
 import LandingPageEnd from '../components/landing-page-components/sections/landing-page-end';
 import LandingPageFooter from '../components/landing-page-components/sections/landing-page-footer';
-import { MobileContextProvider, useIsMobile } from '../components/landing-page-components/context-providers/mobile-context-provider';
+import { MobileContextProvider } from '../components/landing-page-components/context-providers/mobile-context-provider';
 
 import "../css/landingpage.scss";
 import LandingPageHeader from '../components/landing-page-components/sections/landing-page-header';
