@@ -46,7 +46,7 @@ const LandingPageInitial = () => {
           WebkitTextFillColor: "transparent",
         }}
       >
-        AI-Powered Developer Documentation
+        Generate content from your codebase and software
       </div>
 
       <div
@@ -60,7 +60,7 @@ const LandingPageInitial = () => {
           fontFeatureSettings: "'liga' off, 'clig' off",
         }}
       >
-        Effortlessly generate context-aware, minimum viable documentation in <code className="bg-[#464646]">.md</code> from your codebase and existing docs
+        Effortlessly generate context-aware, minimum viable documentation in <code className="bg-[#464646]">.md</code> from your codebase and existing docs.  With Dev-Docs, ensure your documentation and content stays accurate and up to date.
       </div>
 
       <div
