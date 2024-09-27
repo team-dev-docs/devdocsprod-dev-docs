@@ -16,7 +16,7 @@ const INTEGRATIONS = [
   },
   {
     name: "Chrome Extension",
-    description: "Generate markdown files for UI-driven workflows!",
+    description: "Create step-by-step instructional guides on your app's UI in no time flat with the chrome extension!",
     screenshotSrc: "/landing-page/screenshot-chrome-extension.png",
   },
   {
@@ -43,7 +43,7 @@ const LandingPageIntegrationsCard = () => {
           fontFeatureSettings: "'liga' off, 'clig' off",
         }}
       >
-        Developed with your needs in mind
+        How can I use Dev-Docs?
       </div>
 
       {!isMobile && (

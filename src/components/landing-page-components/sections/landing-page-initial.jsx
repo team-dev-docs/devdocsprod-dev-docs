@@ -7,8 +7,9 @@ import LandingPageHeader from './landing-page-header';
 import { LINK_BOOK_MEETING, LINK_GET_STARTED } from '@site/src/constants/landing-page-links-constants';
 
 const BULLETS = [
-  "Start in just a few minutes",
-  "Plug into your existing toolstack",
+  "Start in just two minutes",
+  "Plug into your existing docs and toolstack",
+  "Document your codebases, SDKs, APIs, and more",
   "Bridge the gap between developer and doc teams",
   "Edit and use the markdown output as needed",
 ]
@@ -103,7 +104,7 @@ const LandingPageInitial = () => {
           }
           onClick={() => history.push(LINK_GET_STARTED)}
         >
-          Get Started
+          Get started
         </PrimaryButton>
 
         <SecondaryButton

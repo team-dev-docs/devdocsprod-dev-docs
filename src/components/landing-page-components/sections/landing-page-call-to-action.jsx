@@ -27,7 +27,7 @@ const LandingPageCallToAction = () => {
       <div
         className="text-[1.125rem] text-center"
       >
-        Start effortlessly generating and maintaining your documentation today with a free account. Speak to the co-founders if you still have questions or want to chat.
+        Start effortlessly generating and maintaining your documentation today with a free account. Speak to the team if you still have questions or want to chat.
       </div>
 
 
@@ -42,14 +42,14 @@ const LandingPageCallToAction = () => {
           className="inline-flex !w-auto px-[1.5rem] py-[0.75rem]"
           onClick={() => history.push(LINK_GET_STARTED)}
         >
-          Get Started
+          Get started
         </PrimaryButton>
 
         <SecondaryButton
           className="inline-flex !w-auto px-[1.5rem] py-[0.75rem]"
           onClick={() => history.push(LINK_CHAT_WITH_FOUNDERS)}
         >
-          Chat with the founders
+          Chat with us
         </SecondaryButton>
       </div>
     </LandingPageCard>
