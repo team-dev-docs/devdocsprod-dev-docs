@@ -9,7 +9,7 @@ const LandingPageHasYourBack = () => {
           className={isMobile ?
             "text-[1.125rem] font-medium text-center tracking-[-0.06375rem] px-[3rem]"
             :
-            "text-[2.5rem] font-medium text-center tracking-[-0.075rem]"
+            "text-[2.5rem] font-medium text-center tracking-[-0.075rem] px-[18.75rem]"
           }
           style={{ color: '#ECECEC' }}
         >

@@ -18,20 +18,20 @@ const LandingPageFeatureCard = ({
       }
     >
       <img
-        className="w-[3.125rem] h-[3.125rem] m-0 mb-[1rem] z-10"
+        className="w-[3.125rem] h-[3.125rem] m-0 mb-[1rem] z-10 relative"
         src={iconSrc}
       />
       <div
         className={isMobile ?
-          "mb-[0.625rem] text-[1.25rem] font-medium z-10"
+          "mb-[0.625rem] text-[1.25rem] font-medium z-10 relative"
           :
-          "mb-[0.625rem] text-[2rem] font-medium z-10"
+          "mb-[0.625rem] text-[2rem] font-medium z-10 relative"
         }
       >
         {title}
       </div>
       <div
-        className="z-10 font-medium"
+        className="relative z-10 font-medium"
       >
         {description}
       </div>

@@ -75,14 +75,6 @@ const LandingPageFeaturesCard = () => {
               :
               "flex justify-center max-w-[20rem] h-[23rem]"
             }
-            style={isMobile ?
-              {}
-              :
-              {
-                // flexBasis: 'calc(33.33% - 1.5rem)',
-                // margin: '1rem',
-              }
-            }
           >
             <LandingPageFeatureCard
               iconSrc={feature.iconSrc}
