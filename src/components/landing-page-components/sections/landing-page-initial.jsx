@@ -8,9 +8,9 @@ import { LINK_BOOK_MEETING, LINK_GET_STARTED } from '@site/src/constants/landing
 
 const BULLETS = [
   "Start in just a few minutes",
-  "Integrates into your existing tool stack",
-  "Edit or use the output as needed",
-  "No code is persisted or used for training",
+  "Plug into your existing toolstack",
+  "Bridge the gap between developer and doc teams",
+  "Edit and use the markdown output as needed",
 ]
 
 const LandingPageInitial = () => {
@@ -114,7 +114,7 @@ const LandingPageInitial = () => {
           }
           onClick={() => history.push(LINK_BOOK_MEETING)}
         >
-          Book a meeting
+          Chat with us
         </SecondaryButton>
       </div>
     </div>
