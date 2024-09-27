@@ -51,7 +51,7 @@ const config = {
   projectName: 'docusaurus', // Usually your repo name.
   plugins: [
     'docusaurus-plugin-sass',
-    // "@orama/plugin-docusaurus",
+    '@orama/plugin-docusaurus-v3',
     // '@docusaurus/plugin-content-docs',
     [
       'docusaurus-plugin-openapi-docs',
