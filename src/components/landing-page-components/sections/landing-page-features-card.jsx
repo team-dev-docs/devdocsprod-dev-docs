@@ -1,7 +1,11 @@
 import React from 'react';
 import LandingPageCard from '../parts/landing-page-card';
+import { useHistory } from 'react-router-dom';
 import LandingPageFeatureCard from '../parts/landing-page-feature-card';
 import { useIsMobile } from '../context-providers/mobile-context-provider';
+import PrimaryButton from '../parts/landing-page-button-primary';
+import SecondaryButton from '../parts/landing-page-button-secondary';
+import { LINK_CHAT_WITH_FOUNDERS, LINK_GET_STARTED } from '@site/src/constants/landing-page-links-constants';
 
 const FEATURES = [
   {
@@ -38,7 +42,7 @@ const FEATURES = [
 
 const LandingPageFeaturesCard = () => {
   const isMobile = useIsMobile();
-
+  const history = useHistory();
   return (
     <LandingPageCard
       className={isMobile ?
@@ -83,6 +87,27 @@ const LandingPageFeaturesCard = () => {
             />
           </div>
         ))}
+      </div>
+      <div
+        className={isMobile ?
+          "flex flex-col gap-[1rem] pt-[1.5rem]"
+          :
+          "flex gap-[1rem] pt-[2rem]"
+        }
+      >
+        <PrimaryButton
+          className="inline-flex !w-auto px-[1.5rem] py-[0.75rem]"
+          onClick={() => history.push(LINK_GET_STARTED)}
+        >
+          Get started
+        </PrimaryButton>
+
+        <SecondaryButton
+          className="inline-flex !w-auto px-[1.5rem] py-[0.75rem]"
+          onClick={() => window.open(LINK_CHAT_WITH_FOUNDERS, '_blank')}
+        >
+          Chat with us
+        </SecondaryButton>
       </div>
     </LandingPageCard>
   );

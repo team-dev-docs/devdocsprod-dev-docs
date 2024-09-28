@@ -176,6 +176,7 @@ const scrollToHeader = (headerId) => {
       style={{
         background: 'rgba(17, 35, 75, 0.80)',
         backdropFilter: 'blur(12.5px)',
+        zIndex: 9000
       }}
     >
       <div

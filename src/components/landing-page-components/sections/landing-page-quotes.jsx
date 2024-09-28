@@ -20,7 +20,7 @@ const QUOTES = [
   {
     avatarSrc: "https://media.licdn.com/dms/image/v2/D5603AQE7kyH1Et3yNw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1719427949285?e=1732752000&v=beta&t=vRedtBeZ-dqq2V_pwMu8smoBpHq_d_D7WJO7A-K0P-Y",
     title: "Nicole Zhu, Co-Founder",
-    company: "Jan AI",
+    company: "Homebrew",
     quote: "I'm a fan of the Dev-Docs vision to automate technical docs with AI. We were able to scaffold an early version of Jan docs with Dev-Docs. It was seamless and enabled us to focus on product improvements. We love Dev-Docs!"
   },
   {
