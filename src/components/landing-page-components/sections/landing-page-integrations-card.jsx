@@ -7,17 +7,17 @@ const INTEGRATIONS = [
   {
     name: "VS Code Extension",
     description: "Leverage the VS Code extension to quickly start generating markdown files from your existing code.",
-    screenshotSrc: "/landing-page/screenshot-vs-code.png",
+    screenshotSrc: "/landing-page/vscodeextension.png",
   },
   {
     name: "GitHub App",
     description: "Integrate Dev-Docs into your CI/CD to fully automate the generation and maintenance of your docs.",
-    screenshotSrc: "/landing-page/screenshot-github-app.png",
+    screenshotSrc: "/landing-page/githubapp.png",
   },
   {
     name: "Chrome Extension",
     description: "Create step-by-step instructional guides on your app's UI in no time flat with the chrome extension!",
-    screenshotSrc: "/landing-page/screenshot-chrome-extension.png",
+    screenshotSrc: "/landing-page/chromeextension.png",
   },
   {
     name: "Docusaurus Template",

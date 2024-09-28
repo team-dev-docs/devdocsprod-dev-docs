@@ -22,7 +22,7 @@ const LandingPageInitial = () => {
     <div
       className='relative min-h-screen'
     >
-      <LandingPageHeader />
+      {/* <LandingPageHeader /> */}
 
       <img
         className={isMobile ?

@@ -12,9 +12,10 @@ import LandingPageQuotes from '../components/landing-page-components/sections/la
 import LandingPageEnd from '../components/landing-page-components/sections/landing-page-end';
 import LandingPageFooter from '../components/landing-page-components/sections/landing-page-footer';
 import { MobileContextProvider } from '../components/landing-page-components/context-providers/mobile-context-provider';
+import LandingPageHeader from '../components/landing-page-components/sections/landing-page-header.jsx';
 
 import "../css/landingpage.scss";
-import LandingPageHeader from '../components/landing-page-components/sections/landing-page-header';
+
 
 const LandingPage = () => {
   return (
@@ -22,6 +23,7 @@ const LandingPage = () => {
       <div
         className={"w-full font-sans bg-repeat-y bg-cover bg-landing-page text-[#ECECEC] flex flex-col"}
       >
+        <LandingPageHeader />
         <LandingPageInitial />
         <LandingPageDemoCard />
         <LandingPageHasYourBack />
