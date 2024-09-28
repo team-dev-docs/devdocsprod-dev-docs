@@ -5,19 +5,38 @@ import { MobileContextProvider, useIsMobile } from '../../components/landing-pag
 import LandingPageHeader from '../../components/landing-page-components/sections/landing-page-header';
 import LandingPageFaqCard from '../../components/landing-page-components/sections/landing-page-faq';
 import LandingPageCard from '../../components/landing-page-components/parts/landing-page-card';
-import LandingPageFeatureCard from '../../components/landing-page-components/parts/landing-page-feature-card.jsx';
+import LandingPageFeatureCard from '../../components/landing-page-components/parts/pricing-card';
+
+
 
 
 const FEATURES = [
   {
-    iconSrc: "/landing-page/docs-icon.png",
-    title: "Markdown docs by default",
-    description: "We believe developer content should live as code, aka markdown. Your content lives right next to your codebase or in a documentation framework.",
+    title: "Sign up for free (Byte Plan)",
+    description: "Everything you need to get started with Dev-Docs",
+    bulletPoints: [
+      "No cc required",
+      "Access to Dev-Docs' native web app features",
+      "Use Dev-Docs in VS Code or GitHub Codespaces",
+      "Generate the content you need from your codebase",
+      "Leverage Dev-Docs Chrome Extension to generate step by step guides",
+      "Get X input credits and Y output credits to use as you see fit (note: fill in with actual credit numbers)",
+    ],
+    buttonTitle: "Get started",
+    href: "https://docs.dev/docs"
   },
   {
-    iconSrc: "/landing-page/update-icon.png",
-    title: "Real-time updates",
-    description: "Syncs with your CI/CD pipeline to keep everything up-to-date as you ship new code. Your docs stay great -- and acurate -- as you build your product.",
+    title: "Dev-Docs Pro Plan (Megabyte Plan)",
+    description: "Get even more out of Dev-Docs",
+    bulletPoints: [
+      "Everything from the free plan",
+      "Starting with X input credits and Y output credits per month (note: fill in with actual credit numbers)",
+      "Integrate Dev-Docs into your CI/CD to fully automate the process",
+      "Sync Dev-Docs up with your Confluence, Google Drive or Notion",
+      "Dedicated support" 
+    ],
+    buttonTitle: "Get In Touch",
+    href: "https://dub.sh/devdocs"
   }
 ];
 
@@ -38,24 +57,28 @@ const PricingPage = () => {
 
         <div
         className={isMobile ?
-          "mt-[3rem] flex flex-col flex-wrap gap-[1.25rem] justify-center items-center w-full"
+          "mt-[3rem] flex justify-center items-center gap-[1rem]"
           :
-          "mt-[3rem] flex flex-col flex-wrap gap-x-[1rem] gap-y-[5rem] justify-center items-center"
+          "mt-[3rem] flex flex-col flex-wrap gap-[1.25rem] justify-center w-full"
         }
+        style={{"alignItems": "stretch"}}
       >
         {FEATURES.map((feature, idx) => (
           <div
             key={`landing-page-features-card-feature-card-${idx}`}
             className={isMobile ?
-              "flex flex-row justify-center"
+              "flex flex-row justify-center align-items-stretch"
               :
-              "flex flex-row justify-center h-[23rem]"
+              "flex flex-row justify-center h-[23rem] align-items-stretch"
             }
           >
             <LandingPageFeatureCard
               iconSrc={feature.iconSrc}
               title={feature.title}
               description={feature.description}
+              bulletPoints={feature.bulletPoints}
+              href={feature.href}
+              buttonTitle={feature.buttonTitle}
             />
           </div>
         ))}
