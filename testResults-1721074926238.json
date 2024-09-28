@@ -1,0 +1,158 @@
+{
+  "summary": {
+    "specs": {
+      "pass": 1,
+      "fail": 0,
+      "warning": 0,
+      "skipped": 0
+    },
+    "tests": {
+      "pass": 1,
+      "fail": 0,
+      "warning": 0,
+      "skipped": 0
+    },
+    "contexts": {
+      "pass": 1,
+      "fail": 0,
+      "warning": 0,
+      "skipped": 0
+    },
+    "steps": {
+      "pass": 7,
+      "fail": 0,
+      "warning": 0,
+      "skipped": 0
+    }
+  },
+  "specs": [
+    {
+      "result": "PASS",
+      "id": "Sample Doc Detective Test Specification",
+      "tests": [
+        {
+          "result": "PASS",
+          "id": "Sample Doc Detective Test",
+          "contexts": [
+            {
+              "result": "PASS",
+              "app": "chrome",
+              "platform": "mac",
+              "steps": [
+                {
+                  "exitCode": 0,
+                  "stdout": "andrewvanbeek",
+                  "stderr": "",
+                  "result": "PASS",
+                  "resultDescription": "Executed command.",
+                  "action": "runShell",
+                  "command": "echo",
+                  "args": [
+                    "andrewvanbeek"
+                  ],
+                  "id": "86462788-28fa-4836-941c-602a409da17f",
+                  "exitCodes": [
+                    0
+                  ],
+                  "maxVariation": 0,
+                  "overwrite": "false",
+                  "timeout": 60000,
+                  "setVariables": []
+                },
+                {
+                  "result": "PASS",
+                  "resultDescription": "Returned 200",
+                  "action": "checkLink",
+                  "url": "https://www.duckduckgo.com",
+                  "id": "6028b80c-2d47-4bf4-ac01-c5435953cfe7",
+                  "statusCodes": [
+                    200,
+                    201,
+                    202
+                  ]
+                },
+                {
+                  "actualResponseData": {
+                    "name": "morpheus",
+                    "job": "leader",
+                    "id": "189",
+                    "createdAt": "2024-07-15T20:21:52.065Z"
+                  },
+                  "result": "PASS",
+                  "resultDescription": "Returned 201. Expected response data was present in actual response data.",
+                  "action": "httpRequest",
+                  "url": "https://reqres.in/api/users",
+                  "method": "post",
+                  "requestData": {
+                    "name": "morpheus",
+                    "job": "leader"
+                  },
+                  "responseData": {
+                    "name": "morpheus",
+                    "job": "leader"
+                  },
+                  "statusCodes": [
+                    200,
+                    201
+                  ],
+                  "id": "92f7c557-b1f4-415c-9740-e0ad376ea32b",
+                  "timeout": 60000,
+                  "requestHeaders": {},
+                  "responseHeaders": {},
+                  "requestParams": {},
+                  "responseParams": {},
+                  "allowAdditionalFields": true,
+                  "maxVariation": 0,
+                  "overwrite": "false",
+                  "envsFromResponseData": []
+                },
+                {
+                  "result": "PASS",
+                  "resultDescription": "Opened URL.",
+                  "action": "goTo",
+                  "url": "https://www.google.com",
+                  "id": "4e2296fb-cd48-443f-82b5-f86d02dc8028"
+                },
+                {
+                  "result": "PASS",
+                  "resultDescription": "Found an element matching selector. Clicked element. Typed keys.",
+                  "action": "find",
+                  "selector": "[title=Search]",
+                  "timeout": 10000,
+                  "moveTo": true,
+                  "click": true,
+                  "typeKeys": {
+                    "keys": [
+                      "kittens",
+                      "$ENTER$"
+                    ]
+                  },
+                  "id": "05ce38f1-2ab9-434c-b156-983c513dfaca",
+                  "setVariables": []
+                },
+                {
+                  "result": "PASS",
+                  "resultDescription": "Waited.",
+                  "action": "wait",
+                  "id": "ea47a449-b567-41ee-a8bc-4ab92f12b96f",
+                  "duration": 5000
+                },
+                {
+                  "result": "PASS",
+                  "resultDescription": "Saved screenshot.",
+                  "action": "saveScreenshot",
+                  "path": "kitten-search-results.png",
+                  "directory": "samples",
+                  "maxVariation": 5,
+                  "overwrite": "byVariation",
+                  "id": "92e9343f-86cf-4375-8297-c6d16f443eba"
+                }
+              ]
+            }
+          ],
+          "description": "This test includes nearly every property across all actions."
+        }
+      ]
+    }
+  ]
+}
