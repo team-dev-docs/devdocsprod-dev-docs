@@ -51,6 +51,8 @@ const LandingPageQuoteCard = ({
           >
             <img
               className="my-0"
+              height="30"
+              width="30"
               src={avatarSrc}
             />
             <div
