@@ -26,7 +26,7 @@
     "@gocapsule/column-extension": "^1.0.0-beta-3",
     "@mdx-js/react": "^3.0.1",
     "@monaco-editor/react": "^4.6.0",
-    "@orama/plugin-docusaurus-v3": "^2.0.19",
+    "@orama/plugin-docusaurus-v3": "2.0.19",
     "@orama/searchbox": "1.0.0-rc33",
     "@radix-ui/react-accordion": "^1.1.2",
     "@radix-ui/react-alert-dialog": "^1.1.1",

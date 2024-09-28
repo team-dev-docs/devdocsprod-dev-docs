@@ -1732,7 +1732,7 @@
     utility-types "^3.10.0"
     webpack "^5.88.1"
 
-"@docusaurus/plugin-content-docs@*", "@docusaurus/plugin-content-docs@^3.0.1", "@docusaurus/plugin-content-docs@^3.5.2", "@docusaurus/plugin-content-docs@>= 3.2.0", "@docusaurus/plugin-content-docs@3.5.2":
+"@docusaurus/plugin-content-docs@*", "@docusaurus/plugin-content-docs@^3.0.1", "@docusaurus/plugin-content-docs@^3.2.0", "@docusaurus/plugin-content-docs@^3.5.2", "@docusaurus/plugin-content-docs@3.5.2":
   version "3.5.2"
   resolved "https://registry.npmjs.org/@docusaurus/plugin-content-docs/-/plugin-content-docs-3.5.2.tgz"
   integrity sha512-Bt+OXn/CPtVqM3Di44vHjE7rPCEsRCB/DMo2qoOuozB9f7+lsdrHvD0QCHdBs0uhz6deYJDppAr2VgqybKPlVQ==
@@ -1877,7 +1877,7 @@
     tslib "^2.6.0"
     utility-types "^3.10.0"
 
-"@docusaurus/theme-common@^3.0.1", "@docusaurus/theme-common@>= 3.2.0", "@docusaurus/theme-common@3.5.2":
+"@docusaurus/theme-common@^3.0.1", "@docusaurus/theme-common@^3.2.0", "@docusaurus/theme-common@3.5.2":
   version "3.5.2"
   resolved "https://registry.npmjs.org/@docusaurus/theme-common/-/theme-common-3.5.2.tgz"
   integrity sha512-QXqlm9S6x9Ibwjs7I2yEDgsCocp708DrCrgHgKwg2n2AY0YQ6IjU0gAK35lHRLOvAoJUfCKpQAwUykB0R7+Eew==
@@ -1976,7 +1976,7 @@
     lodash "^4.17.21"
     tslib "^2.6.0"
 
-"@docusaurus/utils@^3.0.1", "@docusaurus/utils@>= 3.2.0", "@docusaurus/utils@3.5.2":
+"@docusaurus/utils@^3.0.1", "@docusaurus/utils@3.5.2":
   version "3.5.2"
   resolved "https://registry.npmjs.org/@docusaurus/utils/-/utils-3.5.2.tgz"
   integrity sha512-33QvcNFh+Gv+C2dP9Y9xWEzMgf3JzrpL2nW9PopidiohS1nDcyknKRx2DWaFvyVTTYIkkABVSr073VTj/NITNA==
@@ -2112,6 +2112,11 @@
   resolved "https://registry.npmjs.org/@img/sharp-libvips-linux-x64/-/sharp-libvips-linux-x64-1.0.4.tgz"
   integrity sha512-MmWmQ3iPFZr0Iev+BAgVMb3ZyC4KeFc3jFxnNbEPas60e1cIfevbtuyf9nDGIzOaW9PdnDciJm+wFFaTlj5xYw==
 
+"@img/sharp-libvips-linuxmusl-x64@1.0.2", "@img/sharp-libvips-linuxmusl-x64@1.0.4":
+  version "1.0.4"
+  resolved "https://registry.npmjs.org/@img/sharp-libvips-linuxmusl-x64/-/sharp-libvips-linuxmusl-x64-1.0.4.tgz"
+  integrity sha512-viYN1KX9m+/hGkJtvYYp+CCLgnJXwiQB39damAO7WMdKWlIhmYTfHjwSbQeUK/20vY154mwezd9HflVFM1wVSw==
+
 "@img/sharp-linux-x64@0.33.4":
   version "0.33.4"
   resolved "https://registry.npmjs.org/@img/sharp-linux-x64/-/sharp-linux-x64-0.33.4.tgz"
@@ -2125,6 +2130,13 @@
   integrity sha512-opC+Ok5pRNAzuvq1AG0ar+1owsu842/Ab+4qvU879ippJBHvyY5n2mxF1izXqkPYlGuP/M556uh53jRLJmzTWA==
   optionalDependencies:
     "@img/sharp-libvips-linux-x64" "1.0.4"
+
+"@img/sharp-linuxmusl-x64@0.33.4", "@img/sharp-linuxmusl-x64@0.33.5":
+  version "0.33.5"
+  resolved "https://registry.npmjs.org/@img/sharp-linuxmusl-x64/-/sharp-linuxmusl-x64-0.33.5.tgz"
+  integrity sha512-WT+d/cgqKkkKySYmqoZ8y3pxx7lx9vVejxW/W4DOFMYVSkErR+w7mf2u8m/y4+xHe7yY9DAXQMWQhpnMuFfScw==
+  optionalDependencies:
+    "@img/sharp-libvips-linuxmusl-x64" "1.0.4"
 
 "@isaacs/cliui@^8.0.2":
   version "8.0.2"
@@ -2309,43 +2321,61 @@
   resolved "https://registry.npmjs.org/@orama/orama/-/orama-2.1.1.tgz"
   integrity sha512-euTV/2kya290SNkl5m8e/H1na8iDygk74nNtl4E0YZNyYIrEMwE1JwamoroMKGZw2Uz+in/8gH3m1+2YfP0j1w==
 
-"@orama/orama@2.1.0":
-  version "2.1.0"
-  resolved "https://registry.npmjs.org/@orama/orama/-/orama-2.1.0.tgz"
-  integrity sha512-6Z6acBHmXGhp2Dom0ZvGJsJ1tkCwvs+uqNZUnhBbUTDvX4U1EMSGiTZt3fJFXy1enLKse6lOpG+E76/MnQIdBw==
+"@orama/orama@2.0.19":
+  version "2.0.19"
+  resolved "https://registry.npmjs.org/@orama/orama/-/orama-2.0.19.tgz"
+  integrity sha512-9nlF5iYUghewRt2TDmAJO5TN4hYFPhql4d2ZAdJYJtGSIi2BZjMNQIqQ874w0q/rur67wp0AWLb020EakEN0aA==
 
-"@orama/plugin-analytics@^2.0.18", "@orama/plugin-analytics@^2.0.20", "@orama/plugin-analytics@2.1.1":
+"@orama/plugin-analytics@^2.0.18":
   version "2.1.1"
   resolved "https://registry.npmjs.org/@orama/plugin-analytics/-/plugin-analytics-2.1.1.tgz"
   integrity sha512-t7wS4crQCbfnDuHsvNyA3z4Q44DUca7hgZV8KVpRpz2jgKK4qlPEQig+NOL3rp2lHAAjFwxXegCIaeoW9dChQA==
   dependencies:
     "@orama/orama" "2.1.1"
 
-"@orama/plugin-docusaurus-v3@^2.0.19":
+"@orama/plugin-analytics@^2.0.20":
   version "2.1.1"
-  resolved "https://registry.npmjs.org/@orama/plugin-docusaurus-v3/-/plugin-docusaurus-v3-2.1.1.tgz"
-  integrity sha512-5UtK+ZCVGZGr4LzHTNp6CmmaoAA9GpoSWeuOv3tMeTPhlvPKm/Zph7u/h/GJvdNwlxLXXXNPg9ktPve82gH6PQ==
+  resolved "https://registry.npmjs.org/@orama/plugin-analytics/-/plugin-analytics-2.1.1.tgz"
+  integrity sha512-t7wS4crQCbfnDuHsvNyA3z4Q44DUca7hgZV8KVpRpz2jgKK4qlPEQig+NOL3rp2lHAAjFwxXegCIaeoW9dChQA==
   dependencies:
-    "@orama/highlight" "^0.1.5"
     "@orama/orama" "2.1.1"
-    "@orama/plugin-analytics" "2.1.1"
-    "@orama/plugin-parsedoc" "2.1.1"
-    "@orama/searchbox" "^1.0.0-rc53"
+
+"@orama/plugin-analytics@2.0.19":
+  version "2.0.19"
+  resolved "https://registry.npmjs.org/@orama/plugin-analytics/-/plugin-analytics-2.0.19.tgz"
+  integrity sha512-lluYsfKy0h+mERc/NWtXd3QXslz0kE8qZ9yxAQ/W3KccZR3XXI9StQI+BLNsaYDB9SP5TcArrPIvO4SsYY4GWw==
+  dependencies:
+    "@orama/orama" "2.0.19"
+
+"@orama/plugin-docusaurus-v3@2.0.19":
+  version "2.0.19"
+  resolved "https://registry.npmjs.org/@orama/plugin-docusaurus-v3/-/plugin-docusaurus-v3-2.0.19.tgz"
+  integrity sha512-4JG7aAJSGYxwpas9XGWfVtnAOOTCQC7FXLl0mnvIRnIUsbYoVFJG6Av2PWXezTYUFZYEQt0Q5ghKK5Q75khZNg==
+  dependencies:
+    "@docusaurus/plugin-content-docs" "^3.2.0"
+    "@docusaurus/theme-common" "^3.2.0"
+    "@orama/highlight" "^0.1.5"
+    "@orama/orama" "2.0.19"
+    "@orama/plugin-analytics" "2.0.19"
+    "@orama/plugin-parsedoc" "2.0.19"
+    "@orama/searchbox" "^1.0.0-rc20"
     "@oramacloud/client" "^1.0.14"
     github-slugger "^2.0.0"
     gray-matter "^4.0.3"
     jsdom "^23.2.0"
     markdown-it "^13.0.2"
     pako "^2.1.0"
+    react "^18.2.0"
+    react-dom "^18.2.0"
     tslib "^2.6.2"
     vfile-message "^3.1.4"
 
-"@orama/plugin-parsedoc@2.1.1":
-  version "2.1.0"
-  resolved "https://registry.npmjs.org/@orama/plugin-parsedoc/-/plugin-parsedoc-2.1.0.tgz"
-  integrity sha512-xY8k95mJ+ACvUe09PLsu9s3wJ9ZOKEMfR7jufIyeBO0TUHVR0xlIFQeRMHG0ZH95xy7zy+MfPwNtdHVtIZpxYA==
+"@orama/plugin-parsedoc@2.0.19":
+  version "2.0.19"
+  resolved "https://registry.npmjs.org/@orama/plugin-parsedoc/-/plugin-parsedoc-2.0.19.tgz"
+  integrity sha512-cDRiawaT5VzKDj7nlMAvGdUug9W2WYuvHuPpYJLRyc4MF1VULIgs9B16c2DSinPFsa7B4JHYgxuPWC8EgVmdJw==
   dependencies:
-    "@orama/orama" "2.1.0"
+    "@orama/orama" "2.0.19"
     glob "^8.1.0"
     hast-util-from-html "^1.0.1"
     hast-util-from-string "^2.0.0"
@@ -2366,7 +2396,7 @@
   dependencies:
     "@oramacloud/client" "^1.0.4"
 
-"@orama/searchbox@^1.0.0-rc53":
+"@orama/searchbox@^1.0.0-rc20":
   version "1.0.0-rc53"
   resolved "https://registry.npmjs.org/@orama/searchbox/-/searchbox-1.0.0-rc53.tgz"
   integrity sha512-7jP1ji2Otbzs85qFF/tud+QYbSGLvzUVdY7vPx9mX+NNVa4Wa3U87IhlTl2VhWUgjGC/el0n/g+ZpBk5aIYoPQ==
@@ -12894,7 +12924,7 @@ react-dev-utils@^12.0.1:
     strip-ansi "^6.0.1"
     text-table "^0.2.0"
 
-react-dom@*, "react-dom@^0.14.0 || ^15.0.0 || ^16 || ^17 || ^18", "react-dom@^16.6.0 || ^17.0.0 || ^18.0.0", "react-dom@^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc", "react-dom@^16.8.0 || ^17.0.0 || ^18.0.0", "react-dom@^16.8.4 || ^17.0.0 || ^18.0.0", "react-dom@^17.0.0 || ^18.0.0", react-dom@^18.0.0, react-dom@^18.3.1, "react-dom@>= 16.3.0", "react-dom@>= 16.8", "react-dom@>= 16.8.0", "react-dom@>= 16.8.0 < 19.0.0", "react-dom@>= 18.0.0", react-dom@>=16.6.0, react-dom@>=16.8, react-dom@>=16.8.0, react-dom@>=18.0, react-dom@>=18.0.0:
+react-dom@*, "react-dom@^0.14.0 || ^15.0.0 || ^16 || ^17 || ^18", "react-dom@^16.6.0 || ^17.0.0 || ^18.0.0", "react-dom@^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc", "react-dom@^16.8.0 || ^17.0.0 || ^18.0.0", "react-dom@^16.8.4 || ^17.0.0 || ^18.0.0", "react-dom@^17.0.0 || ^18.0.0", react-dom@^18.0.0, react-dom@^18.2.0, react-dom@^18.3.1, "react-dom@>= 16.3.0", "react-dom@>= 16.8", "react-dom@>= 16.8.0", "react-dom@>= 16.8.0 < 19.0.0", react-dom@>=16.6.0, react-dom@>=16.8, react-dom@>=16.8.0, react-dom@>=18.0, react-dom@>=18.0.0:
   version "18.3.1"
   resolved "https://registry.npmjs.org/react-dom/-/react-dom-18.3.1.tgz"
   integrity sha512-5m4nQKp+rZRb09LNH59GM4BxTh9251/ylbKIbpe7TpGxfJ+9kv6BLkLBXIjjspbgbnIBNqlI23tRnTWT0snUIw==
@@ -13170,7 +13200,7 @@ react-transition-group@^4.4.5:
     loose-envify "^1.4.0"
     prop-types "^15.6.2"
 
-react@*, "react@^0.14.0 || ^15.0.0 || ^16 || ^17 || ^18", "react@^16.13.1 || ^17.0.0 || ^18.0.0", "react@^16.14.0 || 17.x || 18.x", "react@^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0-rc", "react@^16.6.0 || ^17.0.0 || ^18.0.0", "react@^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc", "react@^16.8.0 || ^17 || ^18 || ^19", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^16.8.0 || ^17.0.1 || ^18.0.0", "react@^16.8.3 || ^17 || ^18", "react@^16.8.4 || ^17.0.0 || ^18.0.0", "react@^16.9.0 || ^17.0.0 || ^18", "react@^16.x || ^17.x || ^18.x", "react@^17.0.0 || ^18.0.0", react@^18.0.0, react@^18.2.0, react@^18.3.1, "react@>= 0.14.0", "react@>= 16", "react@>= 16.3", "react@>= 16.3.0", "react@>= 16.8", "react@>= 16.8.0", "react@>= 16.8.0 < 19.0.0", "react@>= 18.0.0", react@>=15, react@>=16, "react@>=16 <= 18", react@>=16.0.0, react@>=16.6.0, react@>=16.8, react@>=16.8.0, react@>=17.0, react@>=18, react@>=18.0, react@>=18.0.0:
+react@*, "react@^0.14.0 || ^15.0.0 || ^16 || ^17 || ^18", "react@^16.13.1 || ^17.0.0 || ^18.0.0", "react@^16.14.0 || 17.x || 18.x", "react@^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0-rc", "react@^16.6.0 || ^17.0.0 || ^18.0.0", "react@^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc", "react@^16.8.0 || ^17 || ^18 || ^19", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^16.8.0 || ^17.0.1 || ^18.0.0", "react@^16.8.3 || ^17 || ^18", "react@^16.8.4 || ^17.0.0 || ^18.0.0", "react@^16.9.0 || ^17.0.0 || ^18", "react@^16.x || ^17.x || ^18.x", "react@^17.0.0 || ^18.0.0", react@^18.0.0, react@^18.2.0, react@^18.3.1, "react@>= 0.14.0", "react@>= 16", "react@>= 16.3", "react@>= 16.3.0", "react@>= 16.8", "react@>= 16.8.0", "react@>= 16.8.0 < 19.0.0", react@>=15, react@>=16, "react@>=16 <= 18", react@>=16.0.0, react@>=16.6.0, react@>=16.8, react@>=16.8.0, react@>=17.0, react@>=18, react@>=18.0, react@>=18.0.0:
   version "18.3.1"
   resolved "https://registry.npmjs.org/react/-/react-18.3.1.tgz"
   integrity sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ==
