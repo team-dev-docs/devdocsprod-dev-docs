@@ -1,5 +1,3 @@
-
-  
 ---
 title: Supercharge Your API and SDK Documentation with AI-Powered Dev-Docs
 authors: andrew
