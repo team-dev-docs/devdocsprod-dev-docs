@@ -55,7 +55,7 @@ const PricingCards = () => {
         Benefits built for your success
       </div>
 
-      <div className={`${isMobile ? 'flex flex-col' : 'flex flex-row'} gap-[1em]`} style={{ alignItems: "stretch" }}>
+      <div className={`${isMobile ? 'flex flex-col' : 'flex flex-row'} gap-[1em]`} style={{ alignItems: "stretch", background: "transparent" }}>
         {FEATURES.map((feature, idx) => (
           <div
             key={`landing-page-features-card-feature-card-${idx}`}
@@ -72,7 +72,7 @@ const PricingCards = () => {
           </div>
         ))}
       </div>
-
+ ""
       <div
         className={isMobile ? "flex flex-col gap-[1rem] pt-[1.5rem]" : "flex gap-[1rem] pt-[2rem]"}
       >
