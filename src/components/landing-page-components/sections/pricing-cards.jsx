@@ -5,6 +5,7 @@ import PricingCard from '../parts/pricing-card';
 import PrimaryButton from '../parts/landing-page-button-primary';
 import SecondaryButton from '../parts/landing-page-button-secondary';
 import { LINK_CHAT_WITH_FOUNDERS, LINK_GET_STARTED } from '@site/src/constants/landing-page-links-constants';
+import { useIsMobile } from '../context-providers/mobile-context-provider';
 
 const FEATURES = [
     {
@@ -37,7 +38,7 @@ const FEATURES = [
   ];
 
 const PricingCards = () => {
-  const isMobile = window.innerWidth < 869;
+  const isMobile = useIsMobile()
   const history = useHistory();
 
   return (
