@@ -20,7 +20,7 @@ const FEATURES = [
       "Use Dev-Docs in VS Code or GitHub Codespaces",
       "Generate the content you need from your codebase",
       "Leverage Dev-Docs Chrome Extension to generate step by step guides",
-      "Get X input credits and Y output credits to use as you see fit (note: fill in with actual credit numbers)",
+      "Get 2,000,000 input credits and 500,000 output credits to use as you see fit (note: fill in with actual credit numbers)",
     ],
     buttonTitle: "Get started",
     href: "https://docs.dev/docs"
@@ -30,7 +30,7 @@ const FEATURES = [
     description: "Get even more out of Dev-Docs",
     bulletPoints: [
       "Everything from the free plan",
-      "Starting with X input credits and Y output credits per month (note: fill in with actual credit numbers)",
+      "Starting with 10,000,000 input credits and 2,000,000 output credits per month (note: fill in with actual credit numbers)",
       "Integrate Dev-Docs into your CI/CD to fully automate the process",
       "Sync Dev-Docs up with your Confluence, Google Drive or Notion",
       "Dedicated support" 
