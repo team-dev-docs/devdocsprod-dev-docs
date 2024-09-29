@@ -2,6 +2,9 @@ import React from 'react';
 import LandingPageCard from '../parts/landing-page-card';
 import { FlipWords } from '../../../components/aceternity/flip-words';
 import { useIsMobile } from '../context-providers/mobile-context-provider';
+import PrimaryButton from '../parts/landing-page-button-primary';
+import SecondaryButton from '../parts/landing-page-button-secondary';
+import { INTEGRATION_REQUEST } from '@site/src/constants/landing-page-links-constants';
 
 const ICONS = [
   "/landing-page/pixel_white_github_.svg",
@@ -65,6 +68,20 @@ const LandingPageWorkflowCard = () => {
       >
         ... and many more coming soon!
       </div> */}
+           <div
+        className={isMobile ?
+          "flex flex-col gap-[1rem] pt-[1.5rem]"
+          :
+          "flex gap-[1rem] pt-[2rem]"
+        }
+      >
+        <SecondaryButton
+          className="inline-flex !w-auto px-[1.5rem] py-[0.75rem]"
+          onClick={() => window.open(INTEGRATION_REQUEST, '_blank')}
+        >
+          Request an integration
+        </SecondaryButton>
+      </div>
     </LandingPageCard>
   );
 };

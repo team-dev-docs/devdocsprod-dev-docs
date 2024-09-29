@@ -11,3 +11,4 @@ export const LINK_GITHUB = 'https://github.com/team-dev-docs';
 export const HOME_PAGE = '/';
 export const LINK_PRIVACY_POLICY = 'https://app.termly.io/document/privacy-policy/f93b0777-1325-40b0-b83a-e8f1fc82c82c';
 export const LINK_TERMS_OF_SERVICE = 'https://app.termly.io/document/terms-of-use-for-saas/2089f33f-b962-4e79-b2c2-5d2832abb223';
+export const INTEGRATION_REQUEST = 'https://pgdaqkquqfk.typeform.com/to/R1JwhIH6'
