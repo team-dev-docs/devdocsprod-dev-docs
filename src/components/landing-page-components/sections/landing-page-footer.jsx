@@ -66,7 +66,7 @@ const LandingPageFooter = () => {
             </div>
           </div>
           <div
-            className="flex flex-col gap-[1rem] grow"
+            className="flex flex-col gap-[0.38rem] grow"
           >
             <div
               className={isMobile ?
