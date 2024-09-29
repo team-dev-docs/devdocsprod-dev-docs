@@ -58,7 +58,7 @@ const LandingPageHeader = () => {
           How it works
         </LandingPageLink>
 
-        {/* <LandingPageLink
+        <LandingPageLink
           className="px-[0.5rem] py-[1.5rem]"
           style={{
             borderBottom: "1px solid #3741AC",
@@ -66,7 +66,7 @@ const LandingPageHeader = () => {
           href={LINK_PRICING}
         >
           Pricing
-        </LandingPageLink> */}
+        </LandingPageLink>
 
         <LandingPageLink
           className="px-[0.5rem] py-[1.5rem]"
@@ -141,11 +141,11 @@ const scrollToHeader = (headerId) => {
         Blog
       </LandingPageLink>
 
-      {/* <LandingPageLink
+      <LandingPageLink
         href='/pricing'
       >
         Pricing
-      </LandingPageLink> */}
+      </LandingPageLink>
     </div>
     <div
       className='flex gap-[1.25rem] items-center'

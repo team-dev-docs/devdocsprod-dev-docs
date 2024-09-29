@@ -52,7 +52,7 @@ const PricingCards = () => {
           fontFeatureSettings: "'liga' off, 'clig' off",
         }}
       >
-        Benefits built for your success
+        Plans
       </div>
 
       <div className={`${isMobile ? 'flex flex-col' : 'flex flex-row'} gap-[1em]`} style={{ alignItems: "stretch", background: "transparent" }}>
@@ -71,24 +71,6 @@ const PricingCards = () => {
             />
           </div>
         ))}
-      </div>
- ""
-      <div
-        className={isMobile ? "flex flex-col gap-[1rem] pt-[1.5rem]" : "flex gap-[1rem] pt-[2rem]"}
-      >
-        <PrimaryButton
-          className="inline-flex !w-auto px-[1.5rem] py-[0.75rem]"
-          onClick={() => history.push(LINK_GET_STARTED)}
-        >
-          Get started
-        </PrimaryButton>
-
-        <SecondaryButton
-          className="inline-flex !w-auto px-[1.5rem] py-[0.75rem]"
-          onClick={() => window.open(LINK_CHAT_WITH_FOUNDERS, '_blank')}
-        >
-          Chat with us
-        </SecondaryButton>
       </div>
     </LandingPageCard>
   );
