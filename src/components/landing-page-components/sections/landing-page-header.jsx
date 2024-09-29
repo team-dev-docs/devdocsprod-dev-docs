@@ -7,9 +7,11 @@ import PrimaryButton from '../parts/landing-page-button-primary';
 import SecondaryButton from '../parts/landing-page-button-secondary';
 import LandingPageLink from '../parts/landing-page-link';
 import { useIsMobile } from '../context-providers/mobile-context-provider';
-import { LINK_GET_STARTED, LINK_HOW_IT_WORKS, LINK_PRICING, LINK_DOCS, LINK_BLOG, LINK_SIGN_IN } from '../../../constants/landing-page-links-constants';
+import { LINK_GET_STARTED, LINK_HOW_IT_WORKS, LINK_PRICING, LINK_DOCS, LINK_BLOG, LINK_SIGN_IN, HOME_PAGE } from '../../../constants/landing-page-links-constants';
 
-const LandingPageHeader = () => {
+const LandingPageHeader = ({
+  notFromHome = false
+}) => {
   const history = useHistory();
   const isMobile = useIsMobile();
 
@@ -53,9 +55,9 @@ const LandingPageHeader = () => {
           style={{
             borderBottom: "1px solid #3741AC",
           }}
-          href={LINK_HOW_IT_WORKS}
+          href={notFromHome ? HOME_PAGE : LINK_HOW_IT_WORKS}
         >
-          How it works
+          {notFromHome ? "Home" : "How it works"}
         </LandingPageLink>
 
         <LandingPageLink
@@ -109,24 +111,24 @@ const LandingPageHeader = () => {
     </div>
   </>
 
-const scrollToHeader = (headerId) => {
-  const headerElement = document.getElementById(headerId);
-  if (headerElement) {
-    headerElement.scrollIntoView({ behavior: 'smooth' });
-  }
-};
+  const scrollToHeader = (headerId) => {
+    const headerElement = document.getElementById(headerId);
+    if (headerElement) {
+      headerElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
 
   const desktopLinks = <>
     <div
       className={`flex gap-[1.5rem] items-center`}
     >
-      <a style={{ color: 'white' }}
-       onClick={() => scrollToHeader('features')}
-      >
-        How it works
-      </a>
-      
+     <LandingPageLink
+          href={notFromHome ? HOME_PAGE : LINK_HOW_IT_WORKS}
+        >
+          {notFromHome ? "Home" : "How it works"}
+    </LandingPageLink>
+
 
 
       <LandingPageLink

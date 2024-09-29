@@ -3,7 +3,7 @@ import LandingPageLink from '../parts/landing-page-link';
 import icon from '/static/landing-page/icon.png';
 import logo from '/static/landing-page/logo.png';
 import { useIsMobile } from '../context-providers/mobile-context-provider';
-import { LINK_BLOG, LINK_GITHUB, LINK_LINKEDIN } from '@site/src/constants/landing-page-links-constants';
+import { LINK_BLOG, LINK_GITHUB, LINK_LINKEDIN, LINK_PRIVACY_POLICY, LINK_TERMS_OF_SERVICE } from '@site/src/constants/landing-page-links-constants';
 
 const BACKER_LOGOS_SRC = [
   "/landing-page/techstars.svg",
@@ -64,6 +64,40 @@ const LandingPageFooter = () => {
                 href="mailto:support@dev-docs.io"
               >support@dev-docs.io</a>
             </div>
+          </div>
+          <div
+            className="flex flex-col gap-[1rem] grow"
+          >
+            <div
+              className={isMobile ?
+                "text-[1.25rem] font-medium"
+                :
+                "text-[1.5rem] font-medium"
+              }
+            >
+              Company
+            </div>
+              <a
+                className={isMobile ?
+                  "font-light"
+                  :
+                  "text-[1.125rem] font-light"
+                }
+                href={LINK_TERMS_OF_SERVICE}
+              >
+                Terms of service
+              </a>
+              <a
+                className={isMobile ?
+                  "font-light"
+                  :
+                  "text-[1.125rem] font-light"
+                }
+                href={LINK_PRIVACY_POLICY}
+              >
+                Privacy policy
+              </a>
+            
           </div>
           <div
             className="flex flex-col grow gap-[0.38rem]"

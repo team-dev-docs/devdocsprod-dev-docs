@@ -18,7 +18,7 @@ const PricingPage = () => {
       <div
         className={`w-full font-sans bg-repeat-y bg-cover bg-landing-page text-[#ECECEC] flex flex-col ${isMobile ? 'gap-4' : 'gap-[15.62rem]'}`}
       >
-        <LandingPageHeader />
+        <LandingPageHeader notFromHome={true} />
 
         <PricingCards />
 
