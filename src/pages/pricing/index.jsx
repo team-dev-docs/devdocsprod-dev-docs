@@ -12,7 +12,7 @@ import LandingPageFeatureCard from '../../components/landing-page-components/par
 
 const FEATURES = [
   {
-    title: "Sign up for free (Byte Plan)",
+    title: "Byte Plan (free tier)",
     description: "Everything you need to get started with Dev-Docs",
     bulletPoints: [
       "No cc required",
@@ -20,17 +20,17 @@ const FEATURES = [
       "Use Dev-Docs in VS Code or GitHub Codespaces",
       "Generate the content you need from your codebase",
       "Leverage Dev-Docs Chrome Extension to generate step by step guides",
-      "Get 2,000,000 input credits and 500,000 output credits to use as you see fit (note: fill in with actual credit numbers)",
+      "Get 2,000,000 input credits and 500,000 output credits to use as you see fit",
     ],
     buttonTitle: "Get started",
     href: "https://docs.dev/docs"
   },
   {
-    title: "Dev-Docs Pro Plan (Megabyte Plan)",
+    title: "Megabyte Plan (pro tier)",
     description: "Get even more out of Dev-Docs",
     bulletPoints: [
       "Everything from the free plan",
-      "Starting with 10,000,000 input credits and 2,000,000 output credits per month (note: fill in with actual credit numbers)",
+      "Starting with 10,000,000 input credits and 2,000,000 output credits per month",
       "Integrate Dev-Docs into your CI/CD to fully automate the process",
       "Sync Dev-Docs up with your Confluence, Google Drive or Notion",
       "Dedicated support" 
