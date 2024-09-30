@@ -22,7 +22,7 @@ const LandingPageInitial = () => {
     <div
       className='relative min-h-screen'
     >
-      {/* <LandingPageHeader /> */}
+      <LandingPageHeader />
 
       <img
         className={isMobile ?
@@ -35,19 +35,25 @@ const LandingPageInitial = () => {
 
       <div
         className={isMobile ?
-          "max-w-[64rem] text-[2.75rem] leading-[2.5rem] font-extrabold z-10 relative mt-[1.56rem] mx-4 text-center font-pixel"
+          "max-w-[64rem] text-[2.5rem] leading-[2.5rem] font-extrabold z-10 relative mt-[1.56rem] mx-4 text-center"
           :
-          "max-w-[64rem] text-[5rem] leading-[4.5rem] font-extrabold z-10 relative mt-[9.38rem] ml-[7.19rem] font-pixel"
+          "max-w-[64rem] text-[5rem] leading-[5rem] font-extrabold z-10 relative mt-[9.38rem] ml-[7.19rem]"
         }
         style={{
-          textShadow: '0px 0px 13px rgba(187, 155, 255, 0.64)',
+          textShadow: '0px 0px 13px rgba(187, 155, 255, 0.3)',
           background: "linear-gradient(92deg, #808AFF 1.07%, #FF78B9 56.56%)",
           backgroundClip: "text",
           WebkitBackgroundClip: "text",
           WebkitTextFillColor: "transparent",
         }}
       >
-        Generate content from your codebase and software
+        Generate content from your codebase and so
+        <span
+          className="tracking-wide"
+        >
+          ft
+        </span>
+        ware
       </div>
 
       <div

@@ -23,7 +23,7 @@ const LandingPage = () => {
       <div
         className={"w-full font-sans bg-repeat-y bg-cover bg-landing-page text-[#ECECEC] flex flex-col"}
       >
-        <LandingPageHeader />
+        {/* <LandingPageHeader /> */}
         <LandingPageInitial />
         <LandingPageDemoCard />
         <LandingPageHasYourBack />
