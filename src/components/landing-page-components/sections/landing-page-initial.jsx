@@ -61,7 +61,7 @@ const LandingPageInitial = () => {
           fontFeatureSettings: "'liga' off, 'clig' off",
         }}
       >
-        Use AI to effortlessly generate context-aware, minimum viable documentation in <code className="bg-[#464646]">.md</code> from your codebase and existing docs.  With Dev-Docs, ensure your documentation and content stays accurate and up to date.
+        Use AI to effortlessly generate context-aware, minimum viable documentation in <code className="bg-[#464646]">.md</code> from your codebase and existing docs.  With Dev-Docs, ensure your documentation and content stay accurate and up to date.
       </div>
 
       <div
