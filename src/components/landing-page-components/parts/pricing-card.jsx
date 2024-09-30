@@ -16,9 +16,9 @@ const PricingCard = ({
   return (
     <div
       className={isMobile ?
-        "w-full p-[1.25rem]"
+        "w-full p-[1.25rem] rounded-[0.625rem]"
         :
-        "p-[2rem]"
+        "p-[2rem] rounded-[0.625rem]"
       }
 
       style={{
@@ -41,14 +41,18 @@ const PricingCard = ({
       >
         {description}
       </div>
-    <ul className="relative z-10 mt-4 list-disc list-inside">
-        {bulletPoints.map((point, index) => (
-            <li key={index} className="mb-2">
-                {point}
-            </li>
-        ))}
-    </ul>
-    <PrimaryButton onClick={() => window.open(href, '_blank')} className="mt-4 z-[8000]">{buttonTitle}</PrimaryButton>
+      <PrimaryButton onClick={() => window.open(href, '_blank')} className="mt-4 z-[8000]">{buttonTitle}</PrimaryButton>
+      <div className="relative z-10 mt-4 list-disc list-inside">
+          {bulletPoints.map((point, index) => (
+            <div
+              key={`landing-page-pricing-card-${title}-bullet-${index}`}
+              className="mb-2 text-[#A2A1A5] flex items-center"
+            >
+              <div className="w-1 h-1 mr-2 bg-white rounded-full"></div>
+              {point}
+            </div>
+          ))}
+      </div>
     </div>
   );
 };
