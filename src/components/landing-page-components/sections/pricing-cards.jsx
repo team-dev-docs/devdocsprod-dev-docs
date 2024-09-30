@@ -30,7 +30,7 @@ const FEATURES = [
         "Starting with 10,000,000 input credits and 2,000,000 output credits per month",
         "Integrate Dev-Docs into your CI/CD to fully automate the process",
         "Sync Dev-Docs up with your Confluence, Google Drive or Notion",
-        "Dedicated support via a private slack channel" 
+        "Dedicated support via a private slack channel"
       ],
       buttonTitle: "Get In Touch",
       href: "https://dub.sh/devdocs"
@@ -47,12 +47,12 @@ const PricingCards = () => {
 
     >
       <div
-        className={isMobile ? "font-extrabold text-[2rem] max-w-[24rem] text-center font-pixel" : "font-extrabold text-[3rem] max-w-[24rem] text-center font-pixel"}
+        className={isMobile ? "font-extrabold text-[2rem] text-center font-pixel" : "font-extrabold text-[3rem] text-center font-pixel"}
         style={{
           fontFeatureSettings: "'liga' off, 'clig' off",
         }}
       >
-        Plans
+        Start using Dev-Docs for free or get in touch to learn more
       </div>
 
       <div className={`${isMobile ? 'flex flex-col' : 'flex flex-row'} gap-[1em]`} style={{ alignItems: "stretch", background: "transparent" }}>

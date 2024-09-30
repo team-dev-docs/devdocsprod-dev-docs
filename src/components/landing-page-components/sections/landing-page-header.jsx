@@ -182,7 +182,8 @@ const LandingPageHeader = ({
       }}
     >
       <div
-        className="flex gap-[0.44rem] items-center"
+        className="flex gap-[0.44rem] items-center cursor-pointer"
+        onClick={() => history.push(HOME_PAGE)}
       >
         <img
           src={icon}

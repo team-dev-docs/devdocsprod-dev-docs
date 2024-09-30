@@ -7,7 +7,7 @@
             "href": "/docs/"
         },
         {
-            "label": "Blogs",
+            "label": "Blog",
             "position": "left",
             "prependBaseUrlToHref": true,
             "href": "/blog"
