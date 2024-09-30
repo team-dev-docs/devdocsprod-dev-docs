@@ -46,7 +46,7 @@ const PricingCard = ({
           {bulletPoints.map((point, index) => (
             <div
               key={`landing-page-pricing-card-${title}-bullet-${index}`}
-              className="mb-2 text-[#A2A1A5] flex items-center"
+              className="flex items-center mb-2"
             >
               <div className="w-1 h-1 mr-2 bg-white rounded-full"></div>
               {point}
