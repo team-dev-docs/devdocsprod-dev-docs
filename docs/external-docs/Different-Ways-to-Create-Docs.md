@@ -14,5 +14,5 @@ Dev-Docs has it's own custom markdown that gives you more flexability than the o
 
 ## Using Docusaurus Markdown
 
-At its core Dev-Docs external documentation framework is built around all the great functionality of Docusaurus. If you want to use out the box docusaurus features and markdown syntax you can do that.
+At its core Dev-Docs user-facing documentation framework is built around all the great functionality of Docusaurus. If you want to use out the box docusaurus features and markdown syntax you can do that.
 
