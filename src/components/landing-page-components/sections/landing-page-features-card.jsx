@@ -41,7 +41,7 @@ const FEATURES = [
 ];
 
 const LandingPageFeaturesCard = () => {
-  const isMobile = useIsMobile();
+  const { isMobile } = useIsMobile();
   const history = useHistory();
   return (
     <LandingPageCard

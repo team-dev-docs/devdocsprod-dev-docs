@@ -11,7 +11,7 @@ import PricingCards from '@site/src/components/landing-page-components/sections/
 
 
 const PricingPage = () => {
-  const isMobile = useIsMobile();
+  const { isMobile } = useIsMobile();
 
   return (
     <MobileContextProvider>

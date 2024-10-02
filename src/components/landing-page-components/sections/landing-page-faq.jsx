@@ -19,7 +19,7 @@ const FAQS = [
 ];
 
 const LandingPageFaqCard = () => {
-  const isMobile = useIsMobile();
+  const { isMobile } = useIsMobile();
 
   return (
     <LandingPageCard>

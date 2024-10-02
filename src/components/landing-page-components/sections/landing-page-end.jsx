@@ -11,7 +11,7 @@ const BACKER_LOGOS_SRC = [
 ];
 
 const LandingPageEnd = () => {
-  const isMobile = useIsMobile();
+  const { isMobile } = useIsMobile();
 
   return (
     <div
@@ -23,7 +23,7 @@ const LandingPageEnd = () => {
     >
       <div
         className={isMobile ?
-          "text-[2rem] font-medium text-center tracking-[-0.075rem] flex flex-wrap items-center justify-center w-full mb-[3.46rem]"
+          "text-[2rem] font-medium text-center tracking-[-0.075rem] flex flex-wrap gap-[1rem] items-center justify-center w-full mb-[3.46rem]"
           :
           "text-[2.5rem] font-medium text-center tracking-[-0.075rem] flex flex-wrap gap-[1.25rem] items-center justify-center w-full mb-[4.69rem]"
         }

@@ -12,7 +12,7 @@ const BACKER_LOGOS_SRC = [
 ];
 
 const LandingPageFooter = () => {
-  const isMobile = useIsMobile();
+  const { isMobile } = useIsMobile();
 
   return (
     <div
@@ -97,7 +97,7 @@ const LandingPageFooter = () => {
               >
                 Privacy policy
               </a>
-            
+
           </div>
           <div
             className="flex flex-col grow gap-[0.38rem]"

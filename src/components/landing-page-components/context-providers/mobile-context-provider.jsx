@@ -4,10 +4,13 @@ const MobileContext = createContext(true);
 
 export const MobileContextProvider = ({ children }) => {
   const [isMobile, setIsMobile] = useState(true);
+  const [isTablet, setIsTablet] = useState(false);
 
   useEffect(() => {
+    if (!window) return;
     const handleResize = () => {
       setIsMobile(window.innerWidth < 896);
+      setIsTablet(window.innerWidth < 1024);
     };
     handleResize();
     window.addEventListener('resize', handleResize);
@@ -18,7 +21,7 @@ export const MobileContextProvider = ({ children }) => {
   }, []);
 
   return (
-    <MobileContext.Provider value={isMobile}>
+    <MobileContext.Provider value={{isMobile, isTablet}}>
       {children}
     </MobileContext.Provider>
   );
