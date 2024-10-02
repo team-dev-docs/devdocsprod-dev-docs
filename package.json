@@ -80,6 +80,7 @@
     "mini-svg-data-uri": "^1.4.4",
     "postcss": "^8.4.45",
     "postcss-import": "^16.1.0",
+    "posthog-docusaurus": "^2.0.1",
     "prism-react-renderer": "^2.4.0",
     "prosemirror-history": "^1.4.1",
     "react": "^18.3.1",
