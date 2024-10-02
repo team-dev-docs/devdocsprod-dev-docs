@@ -27,7 +27,7 @@ const INTEGRATIONS = [
 ];
 
 const LandingPageIntegrationsCard = () => {
-  const isMobile = useIsMobile();
+  const { isMobile } = useIsMobile();
 
   const [selectedIndex, setSelectedIndex] = React.useState(0);
 

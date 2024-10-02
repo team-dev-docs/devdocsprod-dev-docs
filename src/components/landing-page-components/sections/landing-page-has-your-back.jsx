@@ -2,7 +2,7 @@ import React from 'react';
 import { useIsMobile } from '../context-providers/mobile-context-provider';
 
 const LandingPageHasYourBack = () => {
-  const isMobile = useIsMobile();
+  const { isMobile } = useIsMobile();
 
   return (
     <div

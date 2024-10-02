@@ -8,7 +8,7 @@ const LandingPageDropdown = ({
   description,
   borderBottom,
 }) => {
-  const isMobile = useIsMobile();
+  const { isMobile } = useIsMobile();
   const [isExpanded, setIsExpanded] = useState(false);
 
   const toggleExpand = () => {

@@ -26,7 +26,7 @@ const WORDS = [
 ];
 
 const LandingPageWorkflowCard = () => {
-  const isMobile = useIsMobile();
+  const { isMobile } = useIsMobile();
 
   return (
     <LandingPageCard>

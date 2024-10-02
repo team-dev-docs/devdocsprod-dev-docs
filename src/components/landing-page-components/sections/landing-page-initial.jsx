@@ -16,7 +16,7 @@ const BULLETS = [
 
 const LandingPageInitial = () => {
   const history = useHistory();
-  const { isMobile } = useIsMobile();
+  const { isTablet } = useIsMobile();
 
   return (
     <div
@@ -25,7 +25,7 @@ const LandingPageInitial = () => {
       <LandingPageHeader />
 
       <img
-        className={isMobile ?
+        className={isTablet ?
           "w-full p-8 m-0"
           :
           "hidden"
@@ -34,7 +34,7 @@ const LandingPageInitial = () => {
       />
 
       <div
-        className={isMobile ?
+        className={isTablet ?
           "max-w-[64rem] text-[2.5rem] leading-[2.5rem] font-extrabold z-10 relative mt-[1.56rem] mx-4 text-center"
           :
           "max-w-[64rem] text-[5rem] leading-[5rem] font-extrabold z-10 relative mt-[9.38rem] ml-[7.19rem]"
@@ -63,7 +63,7 @@ const LandingPageInitial = () => {
           className="shrink-0"
         >
           <div
-            className={isMobile ?
+            className={isTablet ?
               "relative z-10 mx-4 my-[2.56rem]"
               :
               "relative z-10 ml-[7.19rem] my-[3.5rem] text-[1.125rem] max-w-[33rem]"
@@ -77,7 +77,7 @@ const LandingPageInitial = () => {
           </div>
 
           <div
-            className={isMobile ?
+            className={isTablet ?
               "relative z-10 mx-4 my-[2.56rem]"
               :
               "relative z-10 ml-[7.19rem] my-[3.5rem] text-[1.125rem] max-w-[33rem]"
@@ -102,14 +102,14 @@ const LandingPageInitial = () => {
           </div>
 
           <div
-            className={isMobile ?
+            className={isTablet ?
               "relative z-10 w-full flex flex-col gap-[1.56rem] items-center"
               :
               "relative z-10 ml-[7.19rem] flex gap-[1rem]"
             }
           >
             <PrimaryButton
-              className={isMobile ?
+              className={isTablet ?
                 "px-[1.5rem] py-[0.75rem] text-[1.125rem]"
                 :
                 ""
@@ -120,7 +120,7 @@ const LandingPageInitial = () => {
             </PrimaryButton>
 
             <SecondaryButton
-              className={isMobile ?
+              className={isTablet ?
                 "px-[1.5rem] py-[0.75rem] text-[1.125rem]"
                 :
                 ""
@@ -133,7 +133,7 @@ const LandingPageInitial = () => {
         </div>
 
         <div
-          className={isMobile ?
+          className={isTablet ?
             "hidden"
             :
             "z-0 m-0 shrink grow ml-[-2rem] max-h-full relative"

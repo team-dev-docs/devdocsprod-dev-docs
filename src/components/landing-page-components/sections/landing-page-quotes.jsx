@@ -56,7 +56,7 @@ const QUOTES = [
 ];
 
 const LandingPageQuotes = () => {
-  const isMobile = useIsMobile();
+  const { isMobile } = useIsMobile();
 
   return (
     <div

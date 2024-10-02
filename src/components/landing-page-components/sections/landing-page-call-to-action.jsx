@@ -8,7 +8,7 @@ import { LINK_CHAT_WITH_FOUNDERS, LINK_GET_STARTED } from '@site/src/constants/l
 
 const LandingPageCallToAction = () => {
   const history = useHistory();
-  const isMobile = useIsMobile();
+  const { isMobile } = useIsMobile();
   return (
     <LandingPageCard>
       <div

@@ -9,7 +9,7 @@ const LandingPageQuoteCard = ({
 }) => {
   const cardRef = useRef(null);
   const [carWidth, setCardWidth] = useState(0);
-  const isMobile = useIsMobile();
+  const { isMobile } = useIsMobile();
 
   useEffect(() => {
     const handleResize = () => {

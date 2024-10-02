@@ -11,7 +11,7 @@ const BACKER_LOGOS_SRC = [
 ];
 
 const LandingPageEnd = () => {
-  const isMobile = useIsMobile();
+  const { isMobile } = useIsMobile();
 
   return (
     <div

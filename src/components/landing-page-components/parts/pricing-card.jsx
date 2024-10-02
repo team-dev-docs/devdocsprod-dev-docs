@@ -11,7 +11,7 @@ const PricingCard = ({
   buttonTitle,
   href
 }) => {
-  const isMobile = useIsMobile();
+  const { isMobile } = useIsMobile();
 
   return (
     <div

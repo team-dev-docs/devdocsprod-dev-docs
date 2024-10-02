@@ -13,7 +13,7 @@ const LandingPageHeader = ({
   notFromHome = false
 }) => {
   const history = useHistory();
-  const isMobile = useIsMobile();
+  const { isMobile } = useIsMobile();
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
