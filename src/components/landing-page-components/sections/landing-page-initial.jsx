@@ -16,7 +16,7 @@ const BULLETS = [
 
 const LandingPageInitial = () => {
   const history = useHistory();
-  const isMobile = useIsMobile();
+  const { isMobile } = useIsMobile();
 
   return (
     <div
@@ -26,9 +26,9 @@ const LandingPageInitial = () => {
 
       <img
         className={isMobile ?
-          'w-full p-8 m-0'
+          "w-full p-8 m-0"
           :
-          'max-w-[50vw] max-h-[50vh] w-auto h-auto absolute bottom-0 right-[1rem] z-0 m-0'
+          "hidden"
         }
         src="/landing-page/robot.png"
       />
@@ -57,73 +57,96 @@ const LandingPageInitial = () => {
       </div>
 
       <div
-        className={isMobile ?
-          "relative z-10 mx-4 my-[2.56rem]"
-          :
-          "relative z-10 ml-[7.19rem] my-[3.5rem] text-[1.125rem] max-w-[33rem]"
-        }
-        style={{
-          color: "rgba(236, 236, 236, 0.85)",
-          fontFeatureSettings: "'liga' off, 'clig' off",
-        }}
+        className="flex justify-between w-full h-full"
       >
-        Use AI to effortlessly generate context-aware, minimum viable documentation in <code className="bg-[#464646]">.md</code> from your codebase and existing docs.  With Dev-Docs, ensure your documentation and content stay accurate and up to date.
-      </div>
-
-      <div
-        className={isMobile ?
-          "relative z-10 mx-4 my-[2.56rem]"
-          :
-          "relative z-10 ml-[7.19rem] my-[3.5rem] text-[1.125rem] max-w-[33rem]"
-        }
-        style={{
-          color: "rgba(236, 236, 236, 0.85)",
-          fontFeatureSettings: "'liga' off, 'clig' off",
-        }}
-      >
-        {BULLETS.map((bullet, index) => (
+        <div
+          className="shrink-0"
+        >
           <div
-            key={`landing-page-initial-bullets-${index}`}
-            className="flex items-center gap-[1rem]"
+            className={isMobile ?
+              "relative z-10 mx-4 my-[2.56rem]"
+              :
+              "relative z-10 ml-[7.19rem] my-[3.5rem] text-[1.125rem] max-w-[33rem]"
+            }
+            style={{
+              color: "rgba(236, 236, 236, 0.85)",
+              fontFeatureSettings: "'liga' off, 'clig' off",
+            }}
           >
-            <img
-              className="w-[1.25rem] h-[1.25rem]"
-              src="/landing-page/rocket-bullet.svg"
-            />
-            {bullet}
+            Use AI to effortlessly generate context-aware, minimum viable documentation in <code className="bg-[#464646]">.md</code> from your codebase and existing docs.  With Dev-Docs, ensure your documentation and content stay accurate and up to date.
           </div>
-        ))}
+
+          <div
+            className={isMobile ?
+              "relative z-10 mx-4 my-[2.56rem]"
+              :
+              "relative z-10 ml-[7.19rem] my-[3.5rem] text-[1.125rem] max-w-[33rem]"
+            }
+            style={{
+              color: "rgba(236, 236, 236, 0.85)",
+              fontFeatureSettings: "'liga' off, 'clig' off",
+            }}
+          >
+            {BULLETS.map((bullet, index) => (
+              <div
+                key={`landing-page-initial-bullets-${index}`}
+                className="flex items-center gap-[1rem]"
+              >
+                <img
+                  className="w-[1.25rem] h-[1.25rem]"
+                  src="/landing-page/rocket-bullet.svg"
+                />
+                {bullet}
+              </div>
+            ))}
+          </div>
+
+          <div
+            className={isMobile ?
+              "relative z-10 w-full flex flex-col gap-[1.56rem] items-center"
+              :
+              "relative z-10 ml-[7.19rem] flex gap-[1rem]"
+            }
+          >
+            <PrimaryButton
+              className={isMobile ?
+                "px-[1.5rem] py-[0.75rem] text-[1.125rem]"
+                :
+                ""
+              }
+              onClick={() => history.push(LINK_GET_STARTED)}
+            >
+              Get started for free
+            </PrimaryButton>
+
+            <SecondaryButton
+              className={isMobile ?
+                "px-[1.5rem] py-[0.75rem] text-[1.125rem]"
+                :
+                ""
+              }
+              onClick={() => window.open(LINK_BOOK_MEETING, '_blank')}
+            >
+              Chat with us
+            </SecondaryButton>
+          </div>
+        </div>
+
+        <div
+          className={isMobile ?
+            "hidden"
+            :
+            "z-0 m-0 shrink grow ml-[-2rem] max-h-full relative"
+          }
+        >
+          <img
+            className="absolute bottom-0 right-0 m-0 mr-1"
+            src="/landing-page/robot.png"
+          />
+        </div>
+
       </div>
 
-      <div
-        className={isMobile ?
-          "relative z-10 w-full flex flex-col gap-[1.56rem] items-center"
-          :
-          "relative z-10 ml-[7.19rem] flex gap-[1rem]"
-        }
-      >
-        <PrimaryButton
-          className={isMobile ?
-            "px-[1.5rem] py-[0.75rem] text-[1.125rem]"
-            :
-            ""
-          }
-          onClick={() => history.push(LINK_GET_STARTED)}
-        >
-          Get started for free
-        </PrimaryButton>
-
-        <SecondaryButton
-          className={isMobile ?
-            "px-[1.5rem] py-[0.75rem] text-[1.125rem]"
-            :
-            ""
-          }
-          onClick={() => window.open(LINK_BOOK_MEETING, '_blank')}
-        >
-          Chat with us
-        </SecondaryButton>
-      </div>
     </div>
   );
 };
