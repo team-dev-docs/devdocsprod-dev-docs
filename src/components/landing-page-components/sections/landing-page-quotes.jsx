@@ -77,6 +77,7 @@ const LandingPageQuotes = () => {
 
       <InfiniteMovingCards
         items={QUOTES}
+        speed="slow"
       />
 
       {/* <div
