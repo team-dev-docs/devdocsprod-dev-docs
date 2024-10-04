@@ -61,6 +61,14 @@ const config = {
         config: openApiCongfig
       },
     ],
+    [
+      "posthog-docusaurus",
+      {
+        apiKey: "phc_Q3Rna4XzIjrTqqUDwIPTffPplnZXKDQvGaYA5OsVPtA",
+        appUrl: "https://us.i.posthog.com", // optional, defaults to "https://us.i.posthog.com"
+        enableInDevelopment: false, // optional
+      },
+    ],
     async function myPlugin(context, options) {
       return {
         name: "docusaurus-tailwindcss",
