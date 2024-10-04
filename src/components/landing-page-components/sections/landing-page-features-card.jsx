@@ -77,8 +77,11 @@ const LandingPageFeaturesCard = () => {
             className={isMobile ?
               "flex justify-center w-full"
               :
-              "flex justify-center max-w-[20rem] h-[23rem]"
+              "flex justify-center max-w-[26%] min-w-[20rem] h-[23rem]"
             }
+            // style={{
+            //   maxWidth: isMobile ? "100%" : "26%",
+            // }}
           >
             <LandingPageFeatureCard
               iconSrc={feature.iconSrc}
