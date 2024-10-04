@@ -60,7 +60,11 @@ const LandingPageInitial = () => {
         className="flex justify-between w-full h-full"
       >
         <div
-          className="shrink-0"
+          className={isTablet ?
+            ""
+            :
+            "shrink-0"
+          }
         >
           <div
             className={isTablet ?

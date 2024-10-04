@@ -4,7 +4,7 @@ const MobileContext = createContext(true);
 
 export const MobileContextProvider = ({ children }) => {
   const [isMobile, setIsMobile] = useState(true);
-  const [isTablet, setIsTablet] = useState(false);
+  const [isTablet, setIsTablet] = useState(true);
 
   useEffect(() => {
     if (!window) return;
