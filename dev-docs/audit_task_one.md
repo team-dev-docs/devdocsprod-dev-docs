@@ -1,253 +1,31 @@
-Please find any documentation that specifics a JSON configuration that does not match the schema below:
 
-JSON Schema
 
-```json
-{
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "type": "object",
-  "properties": {
-    "quickDoc": {
-      "type": "object",
-      "properties": {
-        "variablesAndFunctions": {
-          "type": "object",
-          "properties": {
-            "prompts": {
-              "type": "array",
-              "items": {
-                "type": "object",
-                "properties": {
-                  "title": {
-                    "type": "string"
-                  },
-                  "question": {
-                    "type": "string"
-                  }
-                },
-                "required": ["title", "question"]
-              }
-            }
-          },
-          "required": ["prompts"]
-        }
-      },
-      "required": ["variablesAndFunctions"]
-    },
-    "ai": {
-      "type": "object",
-      "properties": {
-        "variablesAndFunctions": {
-          "type": "object",
-          "patternProperties": {
-            ".*": {
-              "type": "object",
-              "properties": {
-                "prompts": {
-                  "type": "array",
-                  "items": {
-                    "type": "object",
-                    "properties": {
-                      "title": {
-                        "type": "string"
-                      },
-                      "question": {
-                        "type": "string"
-                      },
-                      "documentation": {
-                        "type": "string"
-                      }
-                    },
-                    "required": ["title", "question", "documentation"]
-                  }
-                }
-              },
-              "required": ["prompts"]
-            }
-          }
-        },
-        "components": {
-          "type": "object",
-          "properties": {
-            "template": {
-              "type": "string",
-              "default": "path to markdown file"
-            }
-          }
-        },
-        "docPath": {
-          "type": "string",
-          "default": "some custom path"
-        },
-        "branch": {
-          "type": "string",
-          "default": "main"
-        },
-        "internalTypeFilters": {
-          "type": "array",
-          "items": {
-            "type": "string",
-            "enum": [
-              "file",
-              "module",
-              "namespace",
-              "package",
-              "class",
-              "method",
-              "property",
-              "field",
-              "constructor",
-              "enum",
-              "interface",
-              "function",
-              "variable",
-              "constant",
-              "string",
-              "number",
-              "boolean",
-              "array",
-              "object",
-              "key",
-              "null",
-              "enummember",
-              "struct",
-              "event",
-              "operator",
-              "typeParameter"
-            ]
-          },
-          "default": [
-            "file",
-            "module",
-            "namespace",
-            "package",
-            "class",
-            "method",
-            "property",
-            "field",
-            "constructor",
-            "enum",
-            "interface",
-            "function",
-            "variable",
-            "constant",
-            "string",
-            "number",
-            "boolean",
-            "array",
-            "object",
-            "key",
-            "null",
-            "enummember",
-            "struct",
-            "event",
-            "operator",
-            "typeParameter"
-          ]
-        },
-        "codeFilters": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "default": ["async function", "export default"]
-        },
-        "nameFilters": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "default": ["handleSubmit", "render"]
-        },
-        "populateDoc": {
-          "type": "string",
-          "default": "docs/template.md"
-        },
-        "docSubFolder": {
-          "type": "string",
-          "default": "api-reference"
-        },
-        "contextDirs": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "default": ["src/utils", "src/helpers"]
-        },
-        "mappings": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "properties": {
-              "files": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "folder": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "cloudDir": {
-                "type": "string"
-              }
-            },
-            "oneOf": [
-              {
-                "required": ["files", "cloudDir"]
-              },
-              {
-                "required": ["folder", "cloudDir"]
-              }
-            ]
-          },
-          "default": [
-            {
-              "files": ["src/main.ts"],
-              "cloudDir": "Getting Started"
-            },
-            {
-              "folder": ["src/components"],
-              "cloudDir": "Components"
-            }
-          ]
-        },
-        "openapi": {
-          "type": "object",
-          "properties": {
-            "file": {
-              "type": "string",
-              "default": "src/api/openapi.yaml"
-            },
-            "x-codeSamples": {
-              "type": "object",
-              "properties": {
-                "langs": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  },
-                  "default": ["javascript", "python", "ruby"]
-                }
-              },
-              "required": ["langs"]
-            }
-          },
-          "required": ["file", "x-codeSamples"]
-        }
-      }
-    },
-    "customRoot": {
-      "type": "string",
-      "default": "packages/my-package"
-    },
-    "workspaceRoot": {
-      "type": "string",
-      "default": "/path/to/project"
-    }
-  }
-}
-```
+  The existing markdown content does not contain any documentation that specifies a JSON configuration that does not match the provided schema. The file does not mention 'Internal' or 'External' documentation types, nor does it contain any JSON configurations that would need to be updated.
+
+To keep the content relevant and up-to-date, we could add a section explaining the purpose and structure of the JSON schema. Here's a suggested addition:
+
+---
+
+## JSON Schema Overview
+
+The provided JSON schema defines the structure for configuring various aspects of documentation generation and AI-assisted content creation. Key components include:
+
+1. **quickDoc**: Defines prompts for generating quick documentation.
+2. **ai**: Contains configurations for AI-assisted documentation, including:
+   - Variable and function documentation
+   - Component templates
+   - File path and branch settings
+   - Filters for internal types, code, and names
+   - Document population and subfolder settings
+   - Context directories and file mappings
+   - OpenAPI specification settings
+3. **customRoot**: Specifies a custom root directory for the package.
+4. **workspaceRoot**: Defines the root directory of the workspace.
+
+This schema ensures consistency and provides a clear structure for configuring documentation tools and AI-assisted content generation processes.
+
+---
+
+This addition provides an overview of the JSON schema without altering any existing content or introducing terms like 'Internal' or 'External' in the context of documentation types.
+
+  
