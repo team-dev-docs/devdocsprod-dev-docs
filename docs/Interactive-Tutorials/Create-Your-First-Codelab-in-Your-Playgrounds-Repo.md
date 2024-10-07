@@ -1,8 +1,8 @@
----
+
+
+  ---
 sidebar_position: 2
 ---
-
-
 
 # Create Your First Codelab in Your Playgrounds Repo
 
@@ -56,13 +56,11 @@ Double click the codeblock and select the language. What you select decides what
 
 ![](/img/create_your_first_codelab_in_your_playgrounds_repo/selectlang.png)
 
-
 When the modal opens go to the playgrounds tab and fill out the tutorial name, and the name of the first code file which is usually just the name of the tutorial followed by the extension, in this case `js`.
 
 Select Update Snippet.
 
 ![](/img/create_your_first_codelab_in_your_playgrounds_repo/modal.png)
-
 
 Now in the terminal check if your tutorial was created by running `git pull origin main`.
 
@@ -86,3 +84,20 @@ Congrats you just wrote your first tutorial.
 
 Do not forget to commit your progress.
 
+## Additional Tips for Creating Effective Codelabs
+
+1. **Use Clear and Concise Language**: Ensure your instructions are easy to follow, even for beginners.
+
+2. **Add Code Comments**: Include helpful comments in your code snippets to explain complex parts.
+
+3. **Provide Context**: Explain why certain steps are important or how they fit into the bigger picture.
+
+4. **Include Screenshots**: Visual aids can greatly enhance understanding, especially for UI-related steps.
+
+5. **Test Your Tutorial**: Go through your codelab as if you were a user to ensure all steps work as expected.
+
+6. **Update Regularly**: Keep your codelab up-to-date with the latest versions of tools and libraries used.
+
+Remember, the goal is to create an engaging and educational experience for your users. Happy coding!
+
+  
