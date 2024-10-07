@@ -1,4 +1,6 @@
----
+
+
+  ---
 slug: /VS-Code-Commands/Generate-Documentation-for-a-Folder
 ---
 
@@ -16,6 +18,8 @@ Using the `devdocs.folderDocument` command can be beneficial in several ways:
 
 3. **Collaboration and Onboarding**: Comprehensive folder-level documentation can facilitate collaboration among team members and streamline the onboarding process for new developers joining the project.
 
+4. **Automated Documentation Updates**: As your project evolves, you can easily regenerate folder documentation to keep it up-to-date with the latest changes in your codebase.
+
 ## What are relevant configuration Options in the `dev-docs.json`?
 
 The following configuration options in the `dev-docs.json` file are relevant for generating documentation for a folder:
@@ -24,11 +28,13 @@ The following configuration options in the `dev-docs.json` file are relevant for
 
 - `mappings`: This option allows you to map specific files or folders to cloud directories, which can be useful for organizing your documentation in a structured manner.
 
+- `folderDocumentationTemplate`: This option allows you to specify a custom template for folder documentation, ensuring consistency across your project's documentation.
+
 ## Example JSON of relevant Dev-Docs.json options
 
 ```json
 {
-  "contextDirs": ["src/components", "src/utils"],
+  "contextDirs": ["src/components", "src/utils", "src/services"],
   "mappings": [
     {
       "folder": ["src/components"],
@@ -37,19 +43,25 @@ The following configuration options in the `dev-docs.json` file are relevant for
     {
       "folder": ["src/utils"],
       "cloudDir": "Utility Functions"
+    },
+    {
+      "folder": ["src/services"],
+      "cloudDir": "API Services"
     }
-  ]
+  ],
+  "folderDocumentationTemplate": "templates/folder-doc-template.md"
 }
 ```
 
-In this example, the `contextDirs` option is set to include the `src/components` and `src/utils` directories for generating context information. Additionally, the `mappings` option maps the `src/components` folder to the "UI Components" cloud directory and the `src/utils` folder to the "Utility Functions" cloud directory.
+In this example, we've added the `src/services` directory to both `contextDirs` and `mappings`, and introduced a new `folderDocumentationTemplate` option for customized documentation generation.
 
 ## Prerequisites
 
 Before using the `devdocs.folderDocument` command, ensure that you have:
 
 1. Installed the Dev-Docs extension in your Visual Studio Code instance.
-2. Configured the necessary settings in your `dev-docs.json` file, such as `contextDirs` and `mappings`.
+2. Configured the necessary settings in your `dev-docs.json` file, such as `contextDirs`, `mappings`, and `folderDocumentationTemplate` (if desired).
+3. Created a folder documentation template (if using the `folderDocumentationTemplate` option).
 
 ## How do I use this VS Code Extension Command?
 
@@ -66,6 +78,15 @@ Alternatively, you can use the command palette:
 
 After executing the command, Dev-Docs will generate documentation for the selected folder, providing an overview of its contents and purpose. The generated documentation will be saved in the location specified by your configuration settings.
 
-By following these steps, you can efficiently create and maintain documentation for different folders in your project, improving the overall organization and comprehension of your codebase.
-  
+## Best Practices for Folder Documentation
+
+To make the most of the `devdocs.folderDocument` command, consider the following best practices:
+
+1. **Consistent Naming**: Use consistent naming conventions for folders across your project to make documentation more intuitive.
+2. **Regular Updates**: Re-run the command periodically to keep folder documentation up-to-date with code changes.
+3. **Include README Files**: Create README.md files in important folders to provide additional context that can be incorporated into the generated documentation.
+4. **Link Related Documentation**: Use cross-references in your folder documentation to link related components or services, creating a more interconnected documentation structure.
+
+By following these steps and best practices, you can efficiently create and maintain documentation for different folders in your project, improving the overall organization and comprehension of your codebase.
+
   
