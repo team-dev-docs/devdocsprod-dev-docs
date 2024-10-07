@@ -1,8 +1,10 @@
----
+
+
+  ---
 sidebar_position: 2
 ---
 
-# Install the Extension and Create Your First Internal Docs
+# Install the Extension and Create Your First Onboarding Docs
 
 
 ## Step 1: Go to VS Code Extensions
@@ -37,27 +39,30 @@ click on the text **yes**.
 Now lets hit `shift command p` and find/click the command <code>Open Dev-docs</code>.
 ![](/img/install_the_vscode_extension/step_9.png)
 
-## Step 5: Edit Your First General Document
+## Step 5: Edit Your First General Onboarding Document
 
-The Dev-Docs text editor should open to the general document for your codebase that covers a general overview of the codebase.
+The Dev-Docs text editor should open to the general document for your codebase that covers a general overview of the codebase. This is an excellent place to start creating your onboarding documentation.
 
 ![](/img/install_the_vscode_extension/step_10.png)
 
-Feel Free to start typing and it will autosave to Dev-Docs.
+Feel Free to start typing and it will autosave to Dev-Docs. Consider adding information about project setup, coding standards, and important architectural decisions to help new team members get up to speed quickly.
 
 ![](/img/install_the_vscode_extension/step_11.png)
 
-## Step 6: Edit Your First Document Tied to Code
+## Step 6: Edit Your First Onboarding Document Tied to Code
 
-You can also create documentation tied to any specific code files. To do this, right click on any codefile and select **open Dev-doc for current file**.
+You can also create onboarding documentation tied to any specific code files. This is particularly useful for explaining complex components or critical parts of your codebase. To do this, right click on any codefile and select **open Dev-doc for current file**.
 
 ![](/img/install_the_vscode_extension/step_14.png)
 
-## Step 7: Done
+## Step 7: Organize Your Onboarding Docs
 
-Now any documentation created by Dev-Docs will be saved as markdown in the Dev-Docs folder.
+Now any documentation created by Dev-Docs will be saved as markdown in the Dev-Docs folder. Consider creating a structured hierarchy for your onboarding docs, such as "Getting Started", "Code Structure", "Development Workflow", and "Troubleshooting" to make it easier for new team members to navigate.
 
 ![](/img/install_the_vscode_extension/step_19.png)
 
+## Step 8: Share and Iterate
 
+Once you've created your initial onboarding docs, share them with your team and gather feedback. Regularly update and refine your documentation to ensure it remains relevant and helpful for new team members joining your project.
 
+  
