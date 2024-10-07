@@ -1,4 +1,6 @@
----
+
+
+  ---
 slug: /VS-Code-Commands/Ask-Dev-Docs-A-Question
 ---
 
@@ -14,7 +16,6 @@ The `devdocs.askDocs` command prompts you to enter a question related to your co
 
 Asking questions about your codebase is an essential part of the development process, whether you're trying to understand existing code, exploring new features, or troubleshooting issues. However, manually searching through documentation or code can be time-consuming and inefficient, especially in large and complex codebases. The `devdocs.askDocs` command provides a convenient way to leverage AI-powered natural language processing to quickly obtain relevant information about your code, saving you valuable time and effort.
 
-
 ## Prerequisites
 
 To use the `devdocs.askDocs` must have local dev-doc markdown files to search.
@@ -29,6 +30,15 @@ To use the `devdocs.askDocs` must have local dev-doc markdown files to search.
 6. Wait for the AI model to process your question and the codebase context.
 7. An information message will appear, displaying the generated answer from the AI model.
 
+## Advanced Usage Tips
+
+To get the most out of the `devdocs.askDocs` command, consider the following tips:
+
+1. Be specific in your questions to receive more accurate and relevant answers.
+2. Use code snippets or file names in your questions to provide additional context.
+3. Ask follow-up questions to dive deeper into a particular topic or clarify previous answers.
+4. Utilize the command in combination with other Dev-Docs features for a comprehensive understanding of your codebase.
+
 By leveraging the power of AI-powered natural language processing and understanding, the `devdocs.askDocs` command streamlines the process of comprehending and documenting your codebase. It enables you to quickly obtain relevant information, enhancing your productivity and reducing the time spent searching through documentation or code manually.
-  
+
   
