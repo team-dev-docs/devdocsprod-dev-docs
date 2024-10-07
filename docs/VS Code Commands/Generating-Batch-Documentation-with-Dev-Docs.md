@@ -1,8 +1,6 @@
----
-slug: /VS-Code-Commands/Dev-Docs-Batch-Documentation
----
 
-# Dev-Docs Batch Documentation
+
+  # Dev-Docs Batch Documentation
 
 The `devdocs.generateBatchDocumentation` command is used to generate documentation for a codefile's functions in a batch process. This command can be helpful when you want to quickly document all the functions in a codefile.
 
@@ -19,12 +17,13 @@ The `dev-docs.json` file is the central configuration file for the Dev-Docs exte
    - **variablesAndFunctions**: Configures prompts for documenting variables and functions in specific code files and directories.
    - **components**: Specifies the template file for generating documentation for components.
    - **docPath**: Sets the custom path for storing generated documentation.
-   - **internalTypeFilters**: Filters the types of code elements to include in the generated documentation.
+   - **onboardingTypeFilters**: Filters the types of code elements to include in the generated documentation for onboarding purposes.
    - **codeFilters**: Filters code elements based on specific patterns in the code.
    - **nameFilters**: Filters code elements based on their names.
    - **openapi**: Configures the OpenAPI specification file and code sample languages for API documentation.
 3. **customRoot**: Specifies the custom root directory for your project.
 4. **workspaceRoot**: Sets the workspace root directory for your project.
+5. **onboardingDocs**: Configures settings for generating onboarding documentation, including templates and output formats.
 
 ## Example JSON of relevant `dev-docs.json` options
 
@@ -52,9 +51,14 @@ The `dev-docs.json` file is the central configuration file for the Dev-Docs exte
         ]
       }
     },
-    "internalTypeFilters": ["class", "method", "function"],
-    "codeFilters": ["async function", "export default"],
-    "nameFilters": ["handleSubmit", "render"]
+    "onboardingTypeFilters": ["class", "method", "function", "component"],
+    "codeFilters": ["async function", "export default", "useState"],
+    "nameFilters": ["handleSubmit", "render", "useEffect"]
+  },
+  "onboardingDocs": {
+    "template": "onboarding-template.md",
+    "outputFormat": "markdown",
+    "includeCodeSnippets": true
   }
 }
 ```
@@ -66,6 +70,7 @@ Before using the `devdocs.generateBatchDocumentation` command, ensure that you h
 1. A valid `dev-docs.json` configuration file in your project root directory.
 2. A Markdown template file specified in the `ai.components.template` configuration option.
 3. The necessary permissions to write documentation files to the specified `docPath`.
+4. If using the onboarding documentation feature, an onboarding template file as specified in `onboardingDocs.template`.
 
 ## How do I use this VS Code Extension Command?
 
@@ -77,6 +82,6 @@ To use the `devdocs.generateBatchDocumentation` command, follow these steps:
 
 After executing the command, the extension will analyze your codebase based on the specified configuration options and generate documentation files for the selected code elements. The generated documentation files will be saved in the specified `docPath` and `docSubFolder`.
 
+For onboarding documentation, the extension will use the settings in the `onboardingDocs` section to create comprehensive documentation that helps new team members understand the project structure and key components.
 
-  
   
