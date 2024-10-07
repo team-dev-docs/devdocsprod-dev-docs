@@ -1,4 +1,6 @@
----
+
+
+  ---
 slug: /VS-Code-Commands/Clear-Dev-Docs-Tokens
 ---
 
@@ -22,6 +24,8 @@ You might want to use this command in the following scenarios:
 
 4. **Troubleshooting**: In case of authentication issues or other token-related problems, clearing the existing tokens can help resolve the issue by starting with a clean slate.
 
+5. **Security Precaution**: If you're using a shared or public computer, it's a good practice to clear your tokens after your session to prevent unauthorized access to your Dev-Docs account.
+
 ## What are relevant configuration Options in the `dev-docs.json`?
 
 The `dev-docs.json` configuration file does not have any options directly related to the `devdocs.resetTokens` command. This command operates on the locally stored authentication tokens and does not require any specific configuration options.
@@ -43,5 +47,14 @@ To clear your Dev-Docs authentication tokens, follow these steps:
 3. Alternatively, you can navigate to the Dev-Docs view in the Activity Bar and click the "Sign Out" link when logged in.
 
 After running the command, your Dev-Docs authentication tokens will be removed from your local machine. You will need to re-authenticate with the `devdocs.getGitHubUser` command to regain access to the Dev-Docs Cloud service.
-  
+
+## Best Practices
+
+- Regularly clear your tokens if you're working on shared or public computers.
+- Always sign out and clear tokens before switching to a different Dev-Docs account.
+- If you suspect any security breach, immediately clear your tokens and change your Dev-Docs account password.
+- Keep your VS Code extension up-to-date to ensure you have the latest security features and token management capabilities.
+
+By following these best practices, you can maintain the security of your Dev-Docs account and ensure smooth operation of the authentication process.
+
   
