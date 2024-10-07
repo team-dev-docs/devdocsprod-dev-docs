@@ -1,4 +1,6 @@
----
+
+
+  ---
 slug: /VS-Code-Commands/Audit-Docs
 ---
 
@@ -21,7 +23,8 @@ The following configuration options in the `dev-docs.json` file are relevant to 
   "ai": {
     "auditTasks": [
       "Check sections where code blocks would result in errors",
-      "Ensure consistent formatting and styling"
+      "Ensure consistent formatting and styling",
+      "Verify cross-references and links are up-to-date"
     ]
   }
 }
@@ -32,7 +35,7 @@ Before using the `devdocs.auditDocs` command, make sure you have the following:
 
 1. A `dev-docs.json` configuration file in your project's root directory.
 2. Markdown files containing the documentation you want to audit.
-3.  You using it in a dev-docs documentation repo.
+3. You are using it in a dev-docs documentation repo.
 
 **How do I use this VS Code Extension Command?**
 To use the `devdocs.auditDocs` command, follow these steps:
@@ -44,6 +47,15 @@ To use the `devdocs.auditDocs` command, follow these steps:
 5. A new Markdown file named `dev-docs_audit.md` will be generated in the `docs` directory, containing the audit results and suggestions for improvements.
 6. If any issues are found, the extension will also create GitHub issues for each file with identified problems, providing links to the issues within the `dev-docs_audit.md` file.
 
-By regularly auditing your documentation using the `devdocs.auditDocs` command, you can ensure that your project's documentation remains accurate, clear, and visually appealing, facilitating better understanding and collaboration among team members and users.
-  
+**Best Practices for Documentation Audits**
+To get the most out of the `devdocs.auditDocs` command, consider the following best practices:
+
+1. Run audits regularly, such as before major releases or documentation updates.
+2. Review and prioritize the issues identified by the audit.
+3. Address high-priority issues promptly to maintain documentation quality.
+4. Use the audit results as a learning opportunity to improve your documentation practices.
+5. Collaborate with team members to review and implement suggested improvements.
+
+By regularly auditing your documentation using the `devdocs.auditDocs` command and following these best practices, you can ensure that your project's documentation remains accurate, clear, and visually appealing, facilitating better understanding and collaboration among team members and users.
+
   
