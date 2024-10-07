@@ -1,8 +1,6 @@
----
-slug: /VS-Code-Commands/Managing-Documentation-Dev-Docs-VS-Code-Extension
----
 
-# Creating and Managing Documentation with the Dev-Docs VS Code Extension
+
+  # Creating and Managing Documentation with the Dev-Docs VS Code Extension
 
 The Dev-Docs VS Code extension is a powerful tool that helps developers create, manage, and maintain documentation for their codebase directly within Visual Studio Code. This extension leverages AI technologies to generate high-quality documentation automatically, making it easier for developers to keep their documentation up-to-date and in sync with their code changes.
 
@@ -14,11 +12,13 @@ The Dev-Docs VS Code extension provides a range of features to streamline the do
 
 2. **Outline and Context Generation**: Dev-Docs can generate outlines and high-level context for specific files or entire folders, helping you understand the structure and purpose of your code more easily.
 
-3. **External Documentation Management**: In addition to generating internal documentation within your codebase, Dev-Docs allows you to create and manage external documentation pages, which can be hosted on platforms like Dev-Docs Cloud or GitHub Pages.
+3. **User-Facing Documentation Management**: In addition to generating onboarding documentation within your codebase, Dev-Docs allows you to create and manage user-facing documentation pages, which can be hosted on platforms like Dev-Docs Cloud or GitHub Pages.
 
 4. **AI-Assisted Editing**: The extension provides AI-powered code completion and text generation capabilities, making it easier to write and edit documentation directly within VS Code.
 
 5. **Version Control Integration**: Dev-Docs integrates with Git, allowing you to track changes to your documentation and collaborate with your team more effectively.
+
+6. **Customizable Templates**: The extension offers customizable templates for different types of documentation, ensuring consistency across your project's documentation.
 
 ## Why should I use this VS Code Extension?
 
@@ -39,6 +39,8 @@ The `dev-docs.json` file is the central configuration file for the Dev-Docs exte
    - **openapi**: Configures the OpenAPI specification file and code sample languages for API documentation.
 3. **customRoot**: Specifies the custom root directory for your project.
 4. **workspaceRoot**: Sets the workspace root directory for your project.
+5. **onboardingDocs**: Configures settings for generating and managing onboarding documentation.
+6. **userFacingDocs**: Defines options for creating and organizing user-facing documentation.
 
 ## Example JSON of relevant `dev-docs.json` options
 
@@ -69,6 +71,15 @@ The `dev-docs.json` file is the central configuration file for the Dev-Docs exte
     "internalTypeFilters": ["class", "method", "function"],
     "codeFilters": ["async function", "export default"],
     "nameFilters": ["handleSubmit", "render"]
+  },
+  "onboardingDocs": {
+    "templatePath": "./templates/onboarding.md",
+    "outputPath": "./docs/onboarding/"
+  },
+  "userFacingDocs": {
+    "templatePath": "./templates/user-guide.md",
+    "outputPath": "./docs/user-guide/",
+    "publishPlatform": "GitHub Pages"
   }
 }
 ```
@@ -85,7 +96,7 @@ Before using the Dev-Docs VS Code extension, make sure you have the following pr
 
 Using the Dev-Docs VS Code extension is straightforward and can be done in several ways:
 
-1. **Command Palette**: Open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`) and search for the desired Dev-Docs command, such as "Generate Documentation" or "Create External Doc Page".
+1. **Command Palette**: Open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`) and search for the desired Dev-Docs command, such as "Generate Documentation" or "Create User-Facing Doc Page".
 
 2. **Context Menu**: Right-click on a file or folder in the Explorer pane and select the relevant Dev-Docs command from the context menu.
 
@@ -95,6 +106,8 @@ Using the Dev-Docs VS Code extension is straightforward and can be done in sever
 
 When generating documentation, Dev-Docs will analyze your code and present you with prompts or templates to provide additional context or descriptions. Once the documentation is generated, you can review and edit it directly within VS Code.
 
-For external documentation, Dev-Docs provides commands to create new pages, manage existing ones, and publish your documentation to platforms like Dev-Docs Cloud or GitHub Pages.
+For user-facing documentation, Dev-Docs provides commands to create new pages, manage existing ones, and publish your documentation to platforms like Dev-Docs Cloud or GitHub Pages.
 
-Remember, the power of Dev-Docs lies in its ability to streamline the documentation process and keep your documentation in sync with your codebase. By leveraging AI technologies and integrating with your development workflow, Dev-Docs aims to make maintaining high-quality documentation a more efficient and enjoyable experience.
+Remember, the power of Dev-Docs lies in its ability to streamline the documentation process and keep your documentation in sync with your codebase. By leveraging AI technologies and integrating with your development workflow, Dev-Docs aims to make maintaining high-quality onboarding and user-facing documentation a more efficient and enjoyable experience.
+
+  
