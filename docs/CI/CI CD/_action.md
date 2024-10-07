@@ -1,4 +1,6 @@
-name: Check for Updates
+
+
+  name: Check for Updates
 
 on:
   push:
@@ -23,8 +25,16 @@ jobs:
           GITHUB_REPOSITORY="${{ github.repository }}"
           GITHUB_ACTOR="${{ github.actor }}"
           curl -X POST -H "Content-Type: application/json" \
-               -H "X-API-KEY: $API_KEY" \
-               -d '{"apiKey": "'$API_KEY'", repo_gh_pat: "'$REPO_GH_PAT'", "timestamp": "'$TIMESTAMP'", "githubRepository": "'$GITHUB_REPOSITORY'", "githubActor": "'$GITHUB_ACTOR'"}' \
+               -H "X-API-Key: $API_KEY" \
+               -d '{"apiKey": "'$API_KEY'", "repo_gh_pat": "'$REPO_GH_PAT'", "timestamp": "'$TIMESTAMP'", "githubRepository": "'$GITHUB_REPOSITORY'", "githubActor": "'$GITHUB_ACTOR'"}' \
                "${{ secrets.ENDPOINT_URL }}"
         env:
           API_KEY: ${{ secrets.API_KEY }}
+
+      - name: Log Update Details
+        run: |
+          echo "Update sent to DevDocs at $(date)"
+          echo "Repository: ${{ github.repository }}"
+          echo "Actor: ${{ github.actor }}"
+
+  
