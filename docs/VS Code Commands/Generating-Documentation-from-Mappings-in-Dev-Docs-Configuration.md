@@ -1,8 +1,6 @@
----
-slug: /VS-Code-Commands/Generate-Documentation-From-Mappings
----
 
-# Generate Documentation From Mappings
+
+  # Generate Documentation From Mappings
 
 This VS Code extension command allows you to generate documentation for your codebase based on predefined mappings specified in the `dev-docs.json` configuration file. The mappings define which files or folders correspond to specific sections or categories of your documentation.
 
@@ -54,6 +52,16 @@ To generate documentation from the defined mappings, follow these steps:
 4. The extension will read the mappings from the `dev-docs.json` file and generate the documentation accordingly, organizing it based on the specified `cloudDir` values.
 5. The generated documentation will be available in the appropriate sections or categories within the Dev-Docs cloud service or your local documentation folder, depending on your configuration.
 
-By using this command, you can efficiently maintain and update your documentation in sync with your codebase, ensuring that developers have access to accurate and up-to-date information about different components or features of your project.
-  
+## Best Practices for Mapping Configuration
+
+To make the most of this feature, consider the following best practices:
+
+1. Organize your mappings logically: Group related files and folders under meaningful `cloudDir` categories.
+2. Use consistent naming conventions: Keep your `cloudDir` names consistent and descriptive to improve navigation.
+3. Regularly update mappings: As your project structure evolves, update the mappings to reflect changes in your codebase.
+4. Leverage wildcards: Use wildcards in file paths to include multiple files with similar patterns, e.g., `"files": ["src/**/*.ts"]`.
+5. Exclude unnecessary files: Use the `exclude` property to omit specific files or patterns from documentation generation.
+
+By following these practices and using this command, you can efficiently maintain and update your documentation in sync with your codebase, ensuring that developers have access to accurate and up-to-date information about different components or features of your project.
+
   
