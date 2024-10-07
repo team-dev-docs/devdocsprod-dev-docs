@@ -1,15 +1,15 @@
----
+
+
+  ---
 sidebar_position: 3
 ---
   
 # Sync Your Dev-Docs to Dev-Docs Cloud
 
-
 ## Step 1: Sign into Dev-Docs
 
 Open the command palette and Type **>sign** into the nav bar at the top and click on sign into Devdocs with GitHub.
 ![sync_your_dev-docs_to_dev-docs_cloud/step_1](/img/sync_your_dev-docs_to_dev-docs_cloud/step_1.png)
-
 
 ## Step 2: Select Org from Dropdown
 In your VS Code Editor select your org from the dropdown.
@@ -27,7 +27,7 @@ Select the icon on the top right of the editor and select **Codebase Settings**.
 
 ## Step 5: Name Your Documentation Wiki
 
-Fill out the form with your preferred name for a documentation wiki. In the example below, we name it **SpriteAI**.  Select your Github Repo and coding language from the dropdown menus then click **Save**.
+Fill out the form with your preferred name for a documentation wiki. In the example below, we name it **SpriteAI**. Select your Github Repo and coding language from the dropdown menus then click **Save**.
 
 ![sync_your_dev-docs_to_dev-docs_cloud/step_8](/img/sync_your_dev-docs_to_dev-docs_cloud/step_8.png)
 
@@ -47,6 +47,20 @@ Go to the Dev-Docs web app on [dev-docs.io](https://dev-docs.io) and you will se
 
 ![sync_your_dev-docs_to_dev-docs_cloud/step_13](/img/sync_your_dev-docs_to_dev-docs_cloud/step_13.png)
 
+## Step 9: Organize Your Onboarding-Docs
 
-  
+Create a new folder named 'Onboarding-Docs' in your repository. This folder will contain all the necessary documentation for new team members.
+
+## Step 10: Move Relevant Files
+
+Move any existing onboarding-related markdown files into the 'Onboarding-Docs' folder. This helps maintain a clean and organized structure for your documentation.
+
+## Step 11: Update Links and References
+
+After moving files, make sure to update any internal links or references in your markdown files to reflect the new 'Onboarding-Docs' folder structure.
+
+## Step 12: Sync Changes
+
+Once you've made these organizational changes, sync your Dev-Docs again to reflect the updated structure in your cloud-based documentation wiki.
+
   
