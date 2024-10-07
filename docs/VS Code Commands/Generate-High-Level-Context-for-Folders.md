@@ -1,4 +1,6 @@
----
+
+
+  ---
 slug: /VS-Code-Commands/Generate-High-Level-Context-for-the-Folder
 ---
 
@@ -15,7 +17,7 @@ Generating a high-level context for a folder can be extremely useful when workin
 The relevant configuration options for generating a high-level context for a folder in the `dev-docs.json` file are:
 
 1. **`ai.contextDirs`**: An array of directory paths that should be considered for context generation. By default, it includes `["src/utils", "src/helpers"]`.
-2. **`ai.internalTypeFilters`**: An array of types or elements that should be included in the context generation process. By default, it includes a wide range of types such as classes, methods, functions, and more.
+2. **`ai.onboardingTypeFilters`**: An array of types or elements that should be included in the context generation process. This option helps tailor the output for onboarding purposes.
 3. **`customRoot`**: A string that specifies the custom root directory for your project. This can be useful if your project is located within a monorepo or a specific subdirectory.
 4. **`workspaceRoot`**: A string that represents the absolute path to your project's root directory.
 
@@ -25,7 +27,7 @@ The relevant configuration options for generating a high-level context for a fol
 {
   "ai": {
     "contextDirs": ["src/utils", "src/helpers"],
-    "internalTypeFilters": [
+    "onboardingTypeFilters": [
       "file",
       "module",
       "namespace",
@@ -65,5 +67,17 @@ To generate a high-level context for a folder, follow these steps:
 Alternatively, you can also trigger the command from the Command Palette (Ctrl+Shift+P or Cmd+Shift+P) by typing "Generate High Level Context for the Folder" and selecting the command.
 
 After running the command, the extension will analyze all the code files within the selected folder and generate a high-level context document. This document will provide an overview of the folder's purpose and functionality, helping you understand the code structure and organization better.
-  
+
+## Customizing the Output for Onboarding
+
+The `ai.onboardingTypeFilters` option in the `dev-docs.json` file allows you to tailor the generated context specifically for onboarding purposes. By adjusting this array, you can focus on the most relevant code elements that new team members should understand first. For example, you might want to prioritize high-level structures like classes and interfaces while excluding lower-level details like individual variables or constants.
+
+To optimize the output for onboarding, consider the following tips:
+
+1. Start with a limited set of type filters, focusing on the most important elements for newcomers.
+2. Gradually expand the filters as team members become more familiar with the codebase.
+3. Include comments in your code that highlight key concepts or design decisions, as these will be captured in the generated context.
+
+By fine-tuning the `ai.onboardingTypeFilters`, you can create a more targeted and effective onboarding experience for new team members, helping them quickly grasp the essential components of your project's architecture.
+
   
