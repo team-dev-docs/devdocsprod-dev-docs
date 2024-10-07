@@ -1,4 +1,6 @@
-# Use AI to Generate API Documentation
+
+
+  # Use AI to Generate API Documentation
 
 ## Step 1: Sign in
 
@@ -17,34 +19,42 @@ Select your org from the dropdown.
 
 ## Step 2: Edit Your Dev-Docs.json
 
-Find or create Your `dev-docs.json`, it should be at the root of your VS Code workspace.  Here we are going to add AI functionality
-by editing this JSON to add the `ai` object with the `API` key set to true. Look at this code for reference
+Locate or create your `dev-docs.json` file at the root of your VS Code workspace. We'll add AI functionality by editing this JSON to include the `ai` object with the `API` key set to true. Use this code as a reference:
 
 ```json
-
 {
      "ai": {
         "onSave": false,
         "API": true
     },
 }
-
 ```
 
 ## Step 3: Generate the API Config
 
-In your VS Code Editor, find a code file with visible API Routes.  Then run <code>shift command a</code>
+In your VS Code Editor, find a code file containing visible API Routes. Then execute the command <code>shift command a</code>
 
 ![](/img/use_ai_to_generate_api_documentation/step_13.png)
 
-## Step 4:  Check the Config
+## Step 4: Check the Config
 
-After a couple of minutes you should see two files create `dev-docs-collection.json` and the `dev-docs-openapi-collection.yaml`.
+After a few minutes, you should see two new files created: `dev-docs-collection.json` and `dev-docs-openapi-collection.yaml`.
 
 **Post Collection**
 
 ![](/img/use_ai_to_generate_api_documentation/step_20.png)
 
-
 **Openapi Yaml**
 ![](/img/use_ai_to_generate_api_documentation/step_22.png)
+
+## Step 5: Organize Your Documentation
+
+Move your generated API documentation to the `Onboarding-Docs` folder in your repository. This centralized location will make it easier for new team members to find and access important API information during their onboarding process.
+
+## Step 6: Review and Refine
+
+Take some time to review the automatically generated documentation. While AI does an excellent job, it's always good to double-check for accuracy and completeness. Make any necessary adjustments to ensure the documentation aligns with your team's standards and practices.
+
+Remember, well-organized and up-to-date API documentation is crucial for smooth onboarding and efficient development processes.
+
+  
