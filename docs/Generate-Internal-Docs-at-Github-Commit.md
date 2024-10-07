@@ -1,4 +1,6 @@
-# Generate Internal Docs at Github Commit
+
+
+  # Generate Onboarding Docs at Github Commit
 
 ## Step 1: Navigate to the Actions tab
 
@@ -25,7 +27,7 @@ On the "Actions" page, click on the "set up a workflow yourself" link to create 
 
 ## Step 4: Enter a File Name
 
-In the file name text box, type the name for your file. For example, "gen_docs.yml".
+In the file name text box, type the name for your file. For example, "gen_onboarding_docs.yml".
 
 
 ![](/img/generate_internal_docs_at_github_commit/step_6.png)
@@ -35,7 +37,7 @@ In the file name text box, type the name for your file. For example, "gen_docs.y
 
 ```
 
-name: Gen Internal Docs
+name: Gen Onboarding Docs
 on:
   push:
     branches:
@@ -43,12 +45,12 @@ on:
     paths:
       - '/*.js'
 jobs:
-  dev-docs-app:
+  onboarding-docs-app:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
-      - name: Send Update to DevDocs
+      - name: Send Update to OnboardingDocs
         run: |
           TIMESTAMP=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
           API_KEY=${{ secrets.API_KEY }}
@@ -107,11 +109,11 @@ Click on the link with the text "Actions".
 
 ## Step 11: Create New Repository Secrets
 
-Click on the "New repository secret" span to create a new repository secret. `GENERATE_ENDPOINT_URL` is the specific endpoint we need to add for this workflow. Additionally make sure you add the Dev-Docs API-KEY and Github PAT with permissions to read commits, pull requests, and read and write permissions to commits.
+Click on the "New repository secret" span to create a new repository secret. `GENERATE_ENDPOINT_URL` is the specific endpoint we need to add for this workflow. Additionally make sure you add the Onboarding-Docs API-KEY and Github PAT with permissions to read commits, pull requests, and read and write permissions to commits.
 
 
 
-[Link to create the Dev-Docs API-Key](/docs/Generating%20an%20API%20Key)
+[Link to create the Onboarding-Docs API-Key](/docs/Generating%20an%20API%20Key)
 
 
 
@@ -123,7 +125,7 @@ Click on the "New repository secret" span to create a new repository secret. `GE
 
 ## Step 12: Add GENERATE_ENDPOINT_URL
 
-For the secret name name it `GENERATE_ENDPOINT_URL` and for the value provide your dev-docs base url with the path of `https://api.devdocsapp.com/company/{your org}/generate_internal_docs`
+For the secret name name it `GENERATE_ENDPOINT_URL` and for the value provide your onboarding-docs base url with the path of `https://api.onboardingdocsapp.com/company/{your org}/generate_onboarding_docs`
 
 
 ![](/img/generate_internal_docs_at_github_commit/step_22.png)
@@ -131,6 +133,12 @@ For the secret name name it `GENERATE_ENDPOINT_URL` and for the value provide yo
 
 Finally click the **Add secret** button to open the form to add a new secret.
 
+## Step 13: Verify Workflow
 
+After setting up the workflow, make a small change to a JavaScript file in your main branch and commit it. This will trigger the workflow, generating updated onboarding documentation based on your latest code changes.
 
+## Step 14: Access Generated Onboarding Docs
 
+Once the workflow has run successfully, you can access your newly generated onboarding documentation through the Onboarding Docs app. This will contain the latest information based on your recent code changes, helping to keep your onboarding process up-to-date and in sync with your codebase.
+
+  
