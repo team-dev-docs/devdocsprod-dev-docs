@@ -1,10 +1,12 @@
----
+
+
+  ---
 sidebar_position: 4
 ---
-  
+
 # Distribute Your Interactive Tutorials
 
-Log into [dev-docs.io](https://dev-docs.io) and click the button **Or go to External Docs**. 
+Log into [dev-docs.io](https://dev-docs.io) and click the button **Or go to User-facing docs**.
 
 ![distribute_your_interactive_tutorials/step_1](/img/distribute_your_interactive_tutorials/step_1.png)
 
@@ -48,8 +50,19 @@ From the dropdown select the config file that matches the name of the tutorial y
 
 ![distribute_your_interactive_tutorials/step_11](/img/distribute_your_interactive_tutorials/step_11.png)
 
-Now you have a link to your tutorial ready to share! Copy that link and share to through the proper medium and to the proper audience.
+Now you have a link to your tutorial ready to share! Copy that link and share it through the appropriate medium and to the intended audience.
 
 ![distribute_your_interactive_tutorials/step_12](/img/distribute_your_interactive_tutorials/step_12.png)
-  
+
+Remember, the link you've created will allow users to instantly launch an interactive environment with your tutorial pre-configured. This can significantly enhance the learning experience for your audience, as they can follow along and experiment in real-time.
+
+To ensure the best experience for your users, consider the following tips:
+
+1. Test the link yourself before distributing it widely.
+2. Provide clear instructions on how to use the interactive environment.
+3. Consider adding a brief introduction or context at the beginning of your tutorial.
+4. Encourage feedback from users to continually improve your interactive tutorials.
+
+By following these steps and best practices, you'll be able to create and distribute engaging, interactive tutorials that help your audience learn and explore your content more effectively.
+
   
