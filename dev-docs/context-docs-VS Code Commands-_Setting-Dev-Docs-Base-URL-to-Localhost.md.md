@@ -14,3 +14,16 @@ The document explains:
 It's primarily intended for developers who are working on or testing the Dev-Docs application locally and need to configure their VS Code extension to communicate with this local instance. The document also mentions that while there's no specific configuration option in the dev-docs.json file for this setting, the base URL can be set programmatically using the storageManager API provided by the extension.
 
   
+---
+# devdocs.setLocal docs/VS Code Commands/_Setting-Dev-Docs-Base-URL-to-Localhost.md
+## Imported Code Object
+Your explanation is already concise and accurate. To break it down further:
+
+1. `devdocs.setLocal` is a command specific to the Dev-Docs extension.
+2. It sets the base URL for the extension to `http://localhost:3000`.
+3. This URL is used for communication between the extension and a locally running instance of the Dev-Docs application.
+4. It's typically used during development or when running a local version of Dev-Docs.
+
+This command is useful for developers working on or testing the Dev-Docs application locally, allowing the extension to interact with their local instance instead of a remote server.
+
+  
