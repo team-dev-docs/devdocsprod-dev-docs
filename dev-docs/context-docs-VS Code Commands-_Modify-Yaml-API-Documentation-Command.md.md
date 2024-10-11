@@ -38,3 +38,20 @@ To use:
 This command streamlines API documentation maintenance, saving time and ensuring consistency with the API specification.
 
   
+---
+# Example JSON of Relevant `dev-docs.json` Options docs/VS Code Commands/_Modify-Yaml-API-Documentation-Command.md
+## Imported Code Object
+Certainly! This JSON snippet represents configuration options for a development documentation system. Here's a concise explanation:
+
+1. The outer object contains an "ai" key, suggesting AI-related settings.
+
+2. Within "ai", there's an "openapi" object, which likely refers to OpenAPI (formerly Swagger) configuration.
+
+3. The "file" key specifies the location of the OpenAPI specification file: "src/api/openapi.yaml".
+
+4. The "x-codeSamples" object is a custom extension (indicated by the "x-" prefix) for code samples:
+   - "langs" array lists programming languages for which code samples should be generated: JavaScript, Python, and Ruby.
+
+This configuration would be used to generate API documentation with code samples in the specified languages based on the OpenAPI specification file.
+
+  
