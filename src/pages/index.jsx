@@ -16,7 +16,6 @@ import LandingPageHeader from '../components/landing-page-components/sections/la
 
 import "../css/landingpage.scss";
 
-
 const LandingPage = () => {
   return (
     <MobileContextProvider>
