@@ -45,4 +45,17 @@ This code snippet is explaining the key configuration options in a `dev-docs.jso
 
 These options are likely part of a larger configuration file used by a documentation generation tool or system that utilizes AI to create or manage documentation in markdown format.
 
+---
+# Example JSON of relevant Dev-Docs.json options docs/VS Code Commands/_Enable-Markdown-Mode-in-VS-Code-for-in-Editor-Documentation.md
+## Imported Code Object
+The provided code snippet is an example of a JSON configuration that could be part of a `Dev-Docs.json` file. This configuration is likely used to specify settings for an AI-assisted documentation generation process. Here's a concise explanation of the options:
+
+1. `ai`: The main object containing AI-related settings.
+2. `components`: 
+   - `template`: Specifies the path to a Markdown template file used for generating component documentation.
+3. `docPath`: Indicates the directory where the generated API reference documentation will be saved.
+4. `branch`: Specifies the Git branch name (in this case, "main") where the documentation should be applied or generated.
+
+This configuration helps automate and standardize the process of creating and managing API documentation using AI tools, ensuring consistency and specifying where the generated content should be stored within a project's structure.
+
   
