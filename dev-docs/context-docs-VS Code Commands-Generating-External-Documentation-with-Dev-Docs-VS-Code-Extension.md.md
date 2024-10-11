@@ -63,4 +63,26 @@ This code snippet explains the relevant configuration options in the `dev-docs.j
 
 These options allow users to customize how the documentation is generated, what content is included, and how it's structured in the external documentation website.
 
+---
+# Example JSON of relevant `dev-docs.json` options docs/VS Code Commands/Generating-External-Documentation-with-Dev-Docs-VS-Code-Extension.md
+## Imported Code Object
+This code snippet shows an example of a JSON configuration file named `dev-docs.json`. It contains options that are relevant for using a "Populate External Docs" command. Here's a brief explanation of the key elements:
+
+1. "ai": The main object containing all the configuration options.
+
+2. "internalTypeFilters": An array specifying which code elements to include (classes, methods, functions).
+
+3. "codeFilters": An array of code patterns to look for in the source files.
+
+4. "nameFilters": An array of specific function or method names to include.
+
+5. "branch": Specifies which Git branch to use (in this case, "main").
+
+6. "mappings": An array of objects that define how local files/folders map to cloud directories:
+   - "files": Maps specific files to a cloud directory.
+   - "folder": Maps entire folders to a cloud directory.
+   - "cloudDir": Specifies the target cloud directory for the mapping.
+
+This configuration helps automate the process of populating external documentation by defining what code elements to include and how to organize them in the cloud storage.
+
   
