@@ -15,3 +15,15 @@ This file provides documentation for the "Populate External Docs" command in a V
 The file also includes an example JSON configuration and explains the benefits of using this command for keeping documentation up-to-date with code changes.
 
   
+---
+# Populate External Docs docs/_AI-VS-Code-Extension-Commands/Populate-External-Docs.md
+## Imported Code Object
+Your explanation of the "Populate External Docs" command in the VS Code extension is already quite concise and informative. It covers the key points about what the command does, why it's useful, relevant configuration options, prerequisites, and how to use it. 
+
+If you're looking for an even more condensed version, here's a brief summary:
+
+"Populate External Docs" is a VS Code extension command that automatically generates external documentation for code symbols (classes, methods, functions) and stores it in a JSON file. This feature saves time in creating and maintaining up-to-date documentation. It's configurable through the `dev-docs.json` file, allowing control over which symbols and files to include. To use it, ensure you're signed into Dev-Docs in VS Code, have a default organization set, and a `dev-docs.json` file in your project root. Execute the command via the Command Palette to generate documentation in your Dev-Docs Repo file.
+
+This condensed version captures the essence of the feature while omitting some of the more detailed information about configuration options and specific steps.
+
+  
