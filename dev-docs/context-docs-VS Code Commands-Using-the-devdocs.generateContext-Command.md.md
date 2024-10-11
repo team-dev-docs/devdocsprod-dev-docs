@@ -12,4 +12,11 @@ This markdown file describes the "Generate Context Command" (`devdocs.generateCo
 
 The document highlights the command's usefulness for onboarding new team members, code documentation, code reviews, and as a personal reference. It also provides an example JSON configuration and details on how to access and use the command within VS Code.
 
+---
+# devdocs.generateContext docs/VS Code Commands/Using-the-devdocs.generateContext-Command.md
+## Imported Code Object
+Your explanation is actually quite good and accurate. To summarize it even more concisely:
+
+`devdocs.generateContext` is a VS Code extension command that uses AI to analyze a selected file or document in your project. It generates a brief, high-level summary explaining the file's purpose and how it fits into the overall project structure. This helps developers quickly understand the context of specific project components.
+
   
