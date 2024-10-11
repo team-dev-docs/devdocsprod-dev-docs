@@ -16,3 +16,28 @@ Key points:
 This document serves as a guide for developers using the VS Code extension to efficiently generate and organize their project documentation.
 
   
+---
+# Generate Documentation From Mappings docs/VS Code Commands/_Generating-Documentation-from-Mappings-in-Dev-Docs-Configuration.md
+## Imported Code Object
+Your explanation of "Generate Documentation From Mappings" is already quite concise and informative. However, I can provide an even more condensed version:
+
+"Generate Documentation From Mappings" is a VS Code extension command that automatically creates documentation for your codebase based on predefined mappings in a `dev-docs.json` configuration file. These mappings link specific files or folders to corresponding documentation sections or categories. 
+
+Key benefits:
+1. Organizes documentation according to project structure
+2. Ensures documentation stays current with code changes
+3. Streamlines the documentation process
+
+The command uses the `mappings` property in `dev-docs.json`, which specifies:
+- `files`: Individual file paths
+- `folder`: Folder paths
+- `cloudDir`: Target documentation section
+
+To use:
+1. Set up `dev-docs.json` with desired mappings
+2. Run the "Generate From Mappings" command in VS Code
+3. Documentation is generated and organized based on the specified structure
+
+This approach helps maintain accurate, up-to-date documentation that aligns with your project's architecture.
+
+  
