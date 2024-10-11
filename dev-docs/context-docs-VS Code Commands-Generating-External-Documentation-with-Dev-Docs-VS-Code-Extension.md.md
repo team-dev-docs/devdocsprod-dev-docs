@@ -50,4 +50,17 @@ The snippet is describing why a developer should use this particular VS Code ext
 
 The text is formatted using Markdown, with headings, bullet points, and emphasis to structure the information clearly for readers.
 
+---
+# What are relevant configuration Options in the `dev-docs.json`? docs/VS Code Commands/Generating-External-Documentation-with-Dev-Docs-VS-Code-Extension.md
+## Imported Code Object
+This code snippet explains the relevant configuration options in the `dev-docs.json` file for the "Populate External Docs" command. It lists and briefly describes ten key options that can be set in this JSON configuration file:
+
+1. Filters for internal types, code patterns, and names
+2. Options to import additional files and folders
+3. Filters for imported content
+4. Git branch specification
+5. Mappings for organizing the generated documentation
+
+These options allow users to customize how the documentation is generated, what content is included, and how it's structured in the external documentation website.
+
   
