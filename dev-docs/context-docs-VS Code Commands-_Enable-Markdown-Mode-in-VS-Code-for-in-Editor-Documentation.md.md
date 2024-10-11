@@ -73,4 +73,11 @@ Prerequisites refer to the conditions or requirements that need to be met before
 
 These configurations need to be properly set up in the `dev-docs.json` file before the command can be executed successfully. Essentially, prerequisites are the setup steps that must be completed prior to using the command.
 
+---
+# How Do I Use This VS Code Extension Command? docs/VS Code Commands/_Enable-Markdown-Mode-in-VS-Code-for-in-Editor-Documentation.md
+## Imported Code Object
+The code snippet you provided is not actually code, but rather a section of documentation or a README file. It explains how to use a specific VS Code extension command called "Turn on Markdown Mode." Here's a concise explanation:
+
+This section provides instructions for users on how to activate a feature called "Markdown Mode" in Visual Studio Code. It outlines the steps to access the command through the Command Palette, enable the mode, and explains the benefits of using Markdown for in-code documentation. It also includes a brief note on best practices for maintaining documentation within code files.
+
   
