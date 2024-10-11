@@ -16,4 +16,19 @@ This file documents a Visual Studio Code extension command called "DevDocs Short
 
 This file serves as a user guide for developers using the DevDocs extension, helping them understand and utilize its shortcut features efficiently.
 
+---
+# devdocs.showShortCuts docs/_VS Code Ext Commands/Dev-Docs-Extension-Shortcuts.md
+## Imported Code Object
+Based on the description you've provided, `devdocs.showShortCuts` appears to be a command in a Visual Studio Code extension, likely named "DevDocs". Here's a concise explanation:
+
+`devdocs.showShortCuts` is a VS Code extension command that:
+
+1. Opens a modal window when executed.
+2. Displays a table of keyboard shortcuts specific to the DevDocs extension.
+3. Shows two main shortcuts:
+   - `Shift + Command + A`: Generates API documentation as a Postman collection for files with API routes.
+   - `Shift + Command + D`: Generates internal documentation within the current code file.
+
+This command serves as a quick reference for users to recall the extension's main functionalities and their corresponding keyboard shortcuts.
+
   
