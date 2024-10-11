@@ -15,3 +15,13 @@ This file documents the "Generate Context for Multiple Documents" command in a V
 This documentation serves as a guide for developers using the DevDocs extension, explaining how to leverage the multi-document context generation feature effectively.
 
   
+---
+# devdocs.generateMultiContext docs/VS Code Commands/Generate-Context-for-Multiple-Documents.md
+## Imported Code Object
+Your explanation is actually quite accurate and concise. Here's a slight rephrasing to make it even more concise:
+
+The `devdocs.generateMultiContext` command generates high-level context for multiple files or directories in the current workspace. It provides brief overviews or summaries for each, which is useful for projects with multiple components.
+
+This command helps developers quickly understand the structure and purpose of different parts of a complex project without having to examine each file in detail.
+
+  
