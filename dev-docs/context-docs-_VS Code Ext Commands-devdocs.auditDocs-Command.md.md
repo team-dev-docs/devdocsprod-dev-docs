@@ -14,4 +14,19 @@ Key features of the command include:
 
 The file also explains why this command is useful, how to use it, and what configuration options are available in the dev-docs.json file. It emphasizes the benefits of maintaining high-quality documentation and how this automated process can save time and effort for developers and technical writers.
 
+---
+# Example JSON of Relevant `dev-docs.json` Options docs/_VS Code Ext Commands/devdocs.auditDocs-Command.md
+## Imported Code Object
+Certainly! Here's a concise explanation:
+
+This JSON snippet represents a portion of a `dev-docs.json` configuration file. It defines options for AI-assisted tasks related to documentation auditing. Specifically:
+
+1. The `ai` object contains settings for AI-related features.
+2. The `auditTasks` array lists specific tasks for the AI to perform during documentation audits.
+3. In this example, there are two audit tasks defined:
+   - Checking compliance with project-specific style guides
+   - Ensuring technical accuracy and correctness of code examples
+
+This configuration would be used to guide AI-powered tools in performing automated checks on development documentation, focusing on these specific aspects of quality assurance.
+
   
