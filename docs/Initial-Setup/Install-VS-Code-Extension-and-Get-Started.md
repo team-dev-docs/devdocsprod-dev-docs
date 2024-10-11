@@ -8,7 +8,7 @@ Step by step guide to installing the Dev-Docs VS Code extension.
 
 ## Step 1: Go to VS Code Extensions
 
-In Your Vscode Editor find the Extensions icon in the left side of the page.
+In your VS Code editor find the Extensions icon in the left side of the page.
 ![](/img/install_the_vscode_extension/step_2.png)
 
 
