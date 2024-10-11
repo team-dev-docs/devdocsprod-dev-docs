@@ -41,4 +41,15 @@ The "Why Should I Use This VS Code Extension Command?" section outlines four key
 
 These points highlight the practical benefits of using the extension for maintaining up-to-date and accurate API documentation, which can lead to improved efficiency and collaboration in software development projects.
 
+---
+# What are relevant configuration Options in the `dev-docs.json`? docs/VS Code Commands/Generate-API-Documentation-from-Codebase.md
+## Imported Code Object
+Certainly! Here's a concise explanation of the code snippet you provided:
+
+The snippet describes relevant configuration options in the `dev-docs.json` file, specifically for the `devdocs.generateAPIDocumentation` command. It mentions one key option:
+
+- `ai.openapi.file`: This option defines the file path where the generated OpenAPI specification file should be saved.
+
+This configuration allows users to specify where the output of the API documentation generation process should be stored, giving them control over the location of the resulting OpenAPI specification file.
+
   
