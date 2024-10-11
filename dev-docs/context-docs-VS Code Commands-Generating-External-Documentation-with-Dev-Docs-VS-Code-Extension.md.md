@@ -66,26 +66,24 @@ These options allow users to customize how the documentation is generated, what 
 ---
 # Example JSON of relevant `dev-docs.json` options docs/VS Code Commands/Generating-External-Documentation-with-Dev-Docs-VS-Code-Extension.md
 ## Imported Code Object
-This code snippet shows an example of a JSON configuration file named `dev-docs.json`. It contains options that are relevant for using a "Populate External Docs" command. Here's a brief explanation of the key elements:
+This JSON snippet represents configuration options for an AI-assisted documentation system. Here's a concise explanation of its contents:
 
-1. "ai": The main object containing all the configuration options.
+1. "ai" object: Contains AI-related settings.
 
-2. "internalTypeFilters": An array specifying which code elements to include (classes, methods, functions).
+2. "internalTypeFilters": Specifies which code elements to focus on (classes, methods, functions).
 
-3. "codeFilters": An array of code patterns to look for in the source files.
+3. "codeFilters": Indicates specific code patterns to look for (async functions, default exports).
 
-4. "nameFilters": An array of specific function or method names to include.
+4. "nameFilters": Lists specific function or method names to target.
 
-5. "branch": Specifies which Git branch to use (in this case, "main").
+5. "branch": Specifies the Git branch to use (main).
 
-6. "mappings": An array of objects that define how local files/folders map to cloud directories:
-   - "files": Maps specific files to a cloud directory.
-   - "folder": Maps entire folders to a cloud directory.
-   - "cloudDir": Specifies the target cloud directory for the mapping.
+6. "mappings": Defines how files and folders correspond to documentation sections:
+   - Files from "src/main.ts" go to "Getting Started" section.
+   - Files in "src/components" folder go to "Components" section.
 
-This configuration helps automate the process of populating external documentation by defining what code elements to include and how to organize them in the cloud storage.
+This configuration helps the AI system understand what code elements to analyze and how to organize the resulting documentation.
 
----
 # Prerequisites docs/VS Code Commands/Generating-External-Documentation-with-Dev-Docs-VS-Code-Extension.md
 ## Imported Code Object
 Certainly! Here's a concise explanation of what Prerequisites means in this context:
