@@ -14,4 +14,17 @@ It also outlines the relevant configuration options in the `dev-docs.json` file,
 
 Overall, this file serves as a guide for developers to understand and utilize the automatic API documentation generation feature provided by this VS Code extension.
 
+---
+# Generating API Documentation and Config docs/VS Code Commands/Generate-API-Documentation-from-Codebase.md
+## Imported Code Object
+Certainly! Here's a concise explanation of "Generating API Documentation and Config" based on the provided code snippet:
+
+"Generating API Documentation and Config" refers to an automated process that:
+
+1. Analyzes the codebase to identify API routes.
+2. Creates a Postman Collection JSON file containing all detected API routes.
+3. Optionally generates an OpenAPI (Swagger) specification file for the API.
+
+This process is triggered by the `devdocs.generateAPIDocumentation` command, which automates the creation of API documentation and configuration files directly from the source code. This automation helps maintain up-to-date and accurate API documentation, making it easier for developers to understand and interact with the API.
+
   
