@@ -14,4 +14,19 @@ This Markdown file provides documentation for the "Audit Docs" command in a VS C
 
 The document serves as a guide for developers to understand and effectively use the audit functionality provided by the Dev-Docs extension to improve their project documentation.
 
+---
+# Example JSON of relevant Dev-Docs.json options docs/VS Code Commands/Auditing-Documentation-Using-the-devdocs.auditdocs-Command.md
+## Imported Code Object
+This JSON snippet represents a configuration for AI-related tasks, specifically focusing on document auditing. Here's a concise explanation:
+
+1. The `ai` object contains settings related to AI functionality.
+
+2. Within `ai`, there's an `auditTasks` array that lists specific tasks for the AI to perform during a document audit.
+
+3. The two tasks listed are:
+   - Checking sections where code blocks might result in errors
+   - Ensuring consistent formatting and styling throughout the document
+
+This configuration would likely be used to guide an AI system in performing automated quality checks on technical documentation or code samples.
+
   
