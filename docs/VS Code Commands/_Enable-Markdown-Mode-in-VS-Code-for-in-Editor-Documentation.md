@@ -16,7 +16,7 @@ Writing documentation alongside your code has several advantages:
 
 3. **Version Control**: Since your documentation resides within the same codebase, it can be version-controlled alongside your code, ensuring that changes to the documentation are tracked and can be easily reviewed or reverted if necessary.
 
-## What are relevant configuration Options in the `dev-docs.json`?
+## What Are Relevant Configuration Options in the `dev-docs.json`?
 
 The relevant configuration options for enabling the markdown mode in the `dev-docs.json` file are:
 
@@ -24,7 +24,7 @@ The relevant configuration options for enabling the markdown mode in the `dev-do
 - `ai.docPath`: Defines the custom path where the generated documentation will be stored.
 - `ai.branch`: Specifies the Git branch where the documentation changes will be committed.
 
-## Example JSON of relevant Dev-Docs.json options
+## Example JSON of Relevant `dev-docs.json` Options
 
 ```json
 {

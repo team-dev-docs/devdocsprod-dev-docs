@@ -16,7 +16,7 @@ Using the `devdocs.folderDocument` command can be beneficial in several ways:
 
 3. **Collaboration and Onboarding**: Comprehensive folder-level documentation can facilitate collaboration among team members and streamline the onboarding process for new developers joining the project.
 
-## What are relevant configuration Options in the `dev-docs.json`?
+## What Are Relevant Configuration Options in the `dev-docs.json`?
 
 The following configuration options in the `dev-docs.json` file are relevant for generating documentation for a folder:
 
@@ -24,7 +24,7 @@ The following configuration options in the `dev-docs.json` file are relevant for
 
 - `mappings`: This option allows you to map specific files or folders to cloud directories, which can be useful for organizing your documentation in a structured manner.
 
-## Example JSON of relevant Dev-Docs.json options
+## Example JSON of Relevant `dev-docs.json` Options
 
 ```json
 {

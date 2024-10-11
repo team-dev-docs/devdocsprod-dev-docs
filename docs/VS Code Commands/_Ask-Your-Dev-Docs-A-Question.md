@@ -22,7 +22,7 @@ Using this command can be beneficial in several ways:
 
 4. **Knowledge Sharing**: This command facilitates knowledge sharing within a team, as developers can ask questions and receive responses based on the collective understanding of the codebase.
 
-## What are relevant configuration Options in the `dev-docs.json`?
+## What Are Relevant Configuration Options in the `dev-docs.json`?
 
 The relevant configuration options for this command in the `dev-docs.json` file are:
 
@@ -32,7 +32,7 @@ The relevant configuration options for this command in the `dev-docs.json` file 
 
 3. `ai.docPath` (optional): This option allows you to specify a custom path for storing the AI assistant's generated documentation.
 
-## Example JSON of relevant Dev-Docs.json options
+## Example JSON of Relevant `dev-docs.json` Options
 
 ```json
 {

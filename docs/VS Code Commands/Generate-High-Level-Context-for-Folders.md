@@ -10,7 +10,7 @@ This VS Code extension command allows you to generate a high-level overview or c
 
 Generating a high-level context for a folder can be extremely useful when working on large codebases or projects with multiple files and directories. It helps you understand the overall purpose and functionality of a specific folder without having to dive into each individual file. This can be particularly beneficial when onboarding new team members, reviewing code, or documenting a project's architecture.
 
-## What are relevant configuration Options in the `dev-docs.json`?
+## What Are Relevant Configuration Options in the `dev-docs.json`?
 
 The relevant configuration options for generating a high-level context for a folder in the `dev-docs.json` file are:
 
@@ -21,7 +21,7 @@ The relevant configuration options for generating a high-level context for a fol
 3. **`customRoot`**: A string that specifies the custom root directory for your project. This can be useful if your project is located within a monorepo or a specific subdirectory.
 4. **`workspaceRoot`**: A string that represents the absolute path to your project's root directory.
 
-## Example JSON of relevant Dev-Docs.json options
+## Example JSON of Relevant `dev-docs.json` Options
 
 ```json
 {

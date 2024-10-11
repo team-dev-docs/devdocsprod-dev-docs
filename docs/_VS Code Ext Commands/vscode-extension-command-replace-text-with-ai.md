@@ -16,7 +16,7 @@ This command can be useful in various scenarios where you need to rephrase or re
 
 4. **Incorporating AI-assisted writing**: By integrating this command into your workflow, you can leverage the capabilities of AI language models to assist with writing tasks, potentially improving productivity and quality.
 
-## What are relevant configuration options in the `dev-docs.json`?
+## What Are Relevant Configuration Options in the `dev-docs.json`?
 
 While the provided code does not explicitly reference any configuration options from the `dev-docs.json` file, it does utilize values stored in the `storageManager` object. These values likely come from user preferences or settings managed by the extension. Relevant configuration options could include:
 

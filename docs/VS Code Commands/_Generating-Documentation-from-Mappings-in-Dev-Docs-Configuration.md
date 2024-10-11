@@ -10,7 +10,7 @@ This VS Code extension command allows you to generate documentation for your cod
 
 By using this command, you can easily organize and structure your documentation according to the logical components or features of your project. It streamlines the process of generating documentation for different parts of your codebase, ensuring that the documentation stays up-to-date and aligned with the actual implementation.
 
-## What are relevant configuration Options in the `dev-docs.json`?
+## What Are Relevant Configuration Options in the `dev-docs.json`?
 
 The most relevant configuration option for this command is the `mappings` property under the `ai` object in the `dev-docs.json` file. This property is an array of objects, where each object defines a mapping between files/folders and a corresponding documentation section or category.
 

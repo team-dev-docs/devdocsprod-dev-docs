@@ -28,7 +28,7 @@ The `devdocs.findMissingDocs` command performs the following tasks:
 
 Maintaining comprehensive and up-to-date documentation is crucial for any software project, but it can be challenging to identify gaps or areas that need more coverage manually. The `devdocs.findMissingDocs` command helps streamline this process by leveraging AI capabilities to analyze your codebase and existing documentation, ensuring that your documentation remains relevant and helpful for developers.
 
-## What are relevant configuration Options in the `dev-docs.json`?
+## What Are Relevant Configuration Options in the `dev-docs.json`?
 
 The following configuration options in the `dev-docs.json` file are relevant for the `devdocs.findMissingDocs` command:
 
@@ -37,7 +37,7 @@ The following configuration options in the `dev-docs.json` file are relevant for
 - `ai.nameFilters`: An array of strings used to filter code elements (e.g., functions, variables) based on their names.
 - `ai.missing_docs` (output): The suggested titles for missing documentation pages will be added to this property after running the command.
 
-## Example JSON of relevant Dev-Docs.json options
+## Example JSON of Relevant `dev-docs.json` Options
 
 ```json
 {

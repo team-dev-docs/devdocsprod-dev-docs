@@ -20,7 +20,7 @@ Generating API documentation from your codebase has several advantages:
 
 4. **Facilitates Testing and Collaboration**: The generated Postman Collection can be used for testing and sharing API documentation with team members or external partners, promoting collaboration and ensuring everyone is working with the same API specifications.
 
-## What are relevant configuration Options in the `dev-docs.json`?
+## What Are Relevant Configuration Options in the `dev-docs.json`?
 
 The following configuration options in the `dev-docs.json` file are relevant for the `devdocs.generateAPIDocumentation` command:
 
@@ -28,7 +28,7 @@ The following configuration options in the `dev-docs.json` file are relevant for
 
 - `ai.openapi.file`: Specifies the file path where the generated OpenAPI specification file should be saved.
 
-## Example JSON of relevant Dev-Docs.json options
+## Example JSON of Relevant `dev-docs.json` Options
 
 ```json
 {

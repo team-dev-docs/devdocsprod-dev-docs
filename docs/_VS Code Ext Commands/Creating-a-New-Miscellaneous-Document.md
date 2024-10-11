@@ -8,11 +8,11 @@ This command allows you to create a new Markdown file within the `dev-docs/misc`
 
 This command can be useful when you need to create a new documentation file that doesn't fit into any existing category or section of your project's documentation. It provides a quick and convenient way to generate a new Markdown file within a dedicated folder for miscellaneous documentation.
 
-## What are relevant configuration Options in the `dev-docs.json`?
+## What Are Relevant Configuration Options in the `dev-docs.json`?
 
 There are no specific configuration options in the `dev-docs.json` file that are directly related to this command. However, the `dev-docs.json` file may contain other settings that affect the overall behavior of the extension or the way it interacts with your project's files and directories.
 
-## Example JSON of relevant Dev-Docs.json options
+## Example JSON of Relevant `dev-docs.json` Options
 
 As mentioned above, there are no specific configuration options directly related to this command.
 

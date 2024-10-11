@@ -12,11 +12,11 @@ The `devdocs.auditDocs` command is used to audit the existing documentation file
 
 Maintaining high-quality documentation is crucial for effective communication and collaboration within a project. By using the `devdocs.auditDocs` command, you can ensure that your documentation remains accurate, clear, and visually appealing. This command helps you identify and address any issues or inconsistencies in your documentation, improving its overall quality and usefulness.
 
-## What are relevant configuration Options in the `dev-docs.json`?
+## What Are Relevant Configuration Options in the `dev-docs.json`?
 
 - `ai.auditTasks`: This option allows you to specify additional custom tasks or criteria for auditing the documentation. It is an array of strings, where each string represents a specific task or aspect to be evaluated during the audit process.
 
-## Example JSON of relevant Dev-Docs.json options
+## Example JSON of Relevant `dev-docs.json` Options
 ```json
 {
   "ai": {

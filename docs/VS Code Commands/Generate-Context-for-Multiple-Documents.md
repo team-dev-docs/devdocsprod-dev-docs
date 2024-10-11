@@ -10,7 +10,7 @@ The `devdocs.generateMultiContext` command is used to generate high-level contex
 
 Creating high-level context for multiple files or directories can be a time-consuming and repetitive task, especially in large projects. By using this command, you can automate the process of generating context, saving you time and effort. Additionally, having a concise overview of each file or directory can help you better understand the structure and purpose of your project, making it easier to navigate and maintain.
 
-## What are relevant configuration Options in the `dev-docs.json`?
+## What Are Relevant Configuration Options in the `dev-docs.json`?
 
 The following configuration options in the `dev-docs.json` file are relevant for this command:
 
@@ -18,7 +18,7 @@ The following configuration options in the `dev-docs.json` file are relevant for
 2. `customRoot`: The custom root directory for your project, relative to the workspace root. This option helps the extension find the correct files and directories.
 3. `workspaceRoot`: The absolute path to the root directory of your workspace.
 
-## Example JSON of relevant Dev-Docs.json options
+## Example JSON of Relevant `dev-docs.json` Options
 
 ```json
 {

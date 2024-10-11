@@ -19,7 +19,7 @@ Using the `devdocs.createExternalDoc` command can provide several benefits:
 3. **Discoverability**: Hosting your documentation on a separate platform can improve its visibility and discoverability, making it easier for others to find and reference.
 4. **Customization**: External documentation pages can be styled and formatted according to your preferences, allowing for a more polished and professional presentation.
 
-## What are relevant configuration Options in the `dev-docs.json`?
+## What Are Relevant Configuration Options in the `dev-docs.json`?
 
 The following configuration options in the `dev-docs.json` file are relevant for the `devdocs.createExternalDoc` command:
 
@@ -30,7 +30,7 @@ The following configuration options in the `dev-docs.json` file are relevant for
 - `ai.codeFilters`: This option allows you to filter the code snippets that should be included in the generated documentation based on specific patterns or keywords.
 - `ai.nameFilters`: This option allows you to filter the code elements that should be included in the generated documentation based on their names.
 
-## Example JSON of relevant Dev-Docs.json options
+## Example JSON of Relevant `dev-docs.json` Options
 
 ```json
 {

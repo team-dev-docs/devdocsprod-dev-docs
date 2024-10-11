@@ -14,7 +14,7 @@ This method ensures that a `dev-docs.json` file is present in the root directory
 
 By initializing the file with an empty JSON object, the extension can prevent errors that may occur if the file is missing or has an invalid format when other parts of the extension try to read or write to it.
 
-## What are relevant configuration options in the `dev-docs.json`?
+## What Are Relevant Configuration Options in the `dev-docs.json`?
 
 Based on the provided code, there are no specific configuration options mentioned for the `dev-docs.json` file. However, since the file is initialized with an empty JSON object (`{}`), it can potentially store any JSON-compatible data that the extension requires.
 

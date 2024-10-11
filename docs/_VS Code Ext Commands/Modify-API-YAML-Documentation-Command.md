@@ -8,7 +8,7 @@ This command allows you to modify the documentation of your API routes defined i
 
 Maintaining API documentation can be a tedious and time-consuming task, especially when dealing with large and complex APIs. This command leverages the power of AI to automate the process of updating API documentation, making it easier to keep your documentation up-to-date and in sync with your code changes. By using this command, you can save time and effort while ensuring that your API documentation remains accurate and consistent.
 
-## What are relevant configuration Options in the `dev-docs.json`?
+## What Are Relevant Configuration Options in the `dev-docs.json`?
 
 The `dev-docs.json` file is used to configure various settings for the extension. The relevant options for this command are:
 

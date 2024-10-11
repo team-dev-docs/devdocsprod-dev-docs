@@ -8,7 +8,7 @@ The `Populate External Docs` command in the VS Code extension allows you to auto
 
 Using the `Populate External Docs` command can save you time and effort in creating and maintaining external documentation for your code. It allows you to easily generate documentation for multiple symbols at once, and it ensures that your documentation is always up-to-date with your code.
 
-## What are relevant configuration Options in the `dev-docs.json`?
+## What Are Relevant Configuration Options in the `dev-docs.json`?
 
 The `dev-docs.json` file contains various configuration options that control how the `Populate External Docs` command works. Some of the relevant options include:
 

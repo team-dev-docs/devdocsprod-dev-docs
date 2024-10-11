@@ -8,7 +8,7 @@ This command generates a high-level overview or context for individual code file
 
 Generating high-level context documentation is essential for understanding and maintaining codebases, especially in large projects or when working with unfamiliar code. This command automates the process of creating documentation, saving developers time and effort. Additionally, having up-to-date and accurate documentation can improve code readability, facilitate knowledge sharing, and make it easier for new team members or contributors to onboard.
 
-## What are relevant configuration Options in the `dev-docs.json`?
+## What Are Relevant Configuration Options in the `dev-docs.json`?
 
 The `dev-docs.json` file contains configuration options that control the behavior of the context generation process. The relevant options are:
 
@@ -16,7 +16,7 @@ The `dev-docs.json` file contains configuration options that control the behavio
 - `workspaceRoot`: If set, this option specifies the root directory of the workspace for which the documentation should be generated.
 - `customRoot`: If set, this option specifies a custom root directory within the workspace for which the documentation should be generated.
 
-## Example JSON of relevant Dev-Docs.json options
+## Example JSON of Relevant `dev-docs.json` Options
 
 ```json
 {

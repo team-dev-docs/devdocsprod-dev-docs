@@ -24,7 +24,7 @@ Using the `devdocs.generateContext` command can be beneficial in the following s
 
 4. **Personal reference**: Even for developers who are familiar with the codebase, the generated context can serve as a useful reference, helping them quickly recall the purpose and role of a specific file or document.
 
-## What are relevant configuration Options in the `dev-docs.json`?
+## What Are Relevant Configuration Options in the `dev-docs.json`?
 
 The following configuration options in the `dev-docs.json` file are relevant for the `devdocs.generateContext` command:
 
@@ -35,7 +35,7 @@ The following configuration options in the `dev-docs.json` file are relevant for
 3. `ai.codeFilters`: An array of strings that the command uses to filter specific code patterns or structures when generating context.
 4. `ai.nameFilters`: An array of strings that the command uses to filter specific function or variable names when generating context.
 
-## Example JSON of relevant Dev-Docs.json options
+## Example JSON of Relevant `dev-docs.json` Options
 
 ```json
 {

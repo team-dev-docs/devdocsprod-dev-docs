@@ -25,7 +25,7 @@ Maintaining high-quality documentation is crucial for any project, but it can be
 4. **Optimize Aesthetics**: The command can suggest improvements to the visual appearance and formatting of your documentation, ensuring a pleasing and consistent look across all files.
 5. **Save Time and Effort**: By automating the auditing process, you can save significant time and effort that would otherwise be spent manually reviewing and editing your documentation.
 
-## What are relevant configuration Options in the `dev-docs.json`?
+## What Are Relevant Configuration Options in the `dev-docs.json`?
 
 The `dev-docs.json` file allows you to configure various aspects of the extension's behavior. The relevant configuration options for the `devdocs.auditDocs` command include:
 
@@ -33,7 +33,7 @@ The `dev-docs.json` file allows you to configure various aspects of the extensio
 2. **`workspaceRoot`**: If set, this option specifies the root directory of your project, overriding the default behavior of using the workspace's root directory.
 3. **`customRoot`**: If set, this option allows you to specify a subdirectory within your project as the root for the documentation directory. This can be useful if your documentation files are organized in a specific subdirectory.
 
-## Example JSON of relevant Dev-Docs.json options
+## Example JSON of Relevant `dev-docs.json` Options
 
 ```json
 {

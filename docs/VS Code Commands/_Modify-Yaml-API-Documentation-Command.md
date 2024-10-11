@@ -11,14 +11,14 @@ The `devdocs.modifyAPIYAMLDocumentation` command is a Visual Studio Code extensi
 
 Maintaining accurate and up-to-date API documentation is crucial for developers who work on projects with APIs. This command streamlines the process of updating API documentation by leveraging the power of AI to generate or modify the content based on the existing YAML file and your input. It saves time and effort compared to manually editing the YAML file, especially when dealing with large and complex API specifications.
 
-## What are relevant configuration Options in the `dev-docs.json`?
+## What Are Relevant Configuration Options in the `dev-docs.json`?
 
 The following configuration options in the `dev-docs.json` file are relevant for this command:
 
 - `ai.openapi.file`: The path to your OpenAPI YAML file (e.g., `src/api/openapi.yaml`).
 - `ai.openapi.x-codeSamples.langs`: An array of programming languages for which code samples should be generated (e.g., `["javascript", "python", "ruby"]`).
 
-## Example JSON of relevant Dev-Docs.json options
+## Example JSON of Relevant `dev-docs.json` Options
 
 ```json
 {

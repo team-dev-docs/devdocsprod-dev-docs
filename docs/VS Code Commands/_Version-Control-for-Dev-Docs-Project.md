@@ -16,7 +16,7 @@ Using version control for your Dev-Docs project offers several benefits:
 4. **Code Reviews**: Version control systems like Git allow for code reviews, ensuring that changes made to the documentation are reviewed and approved before being merged.
 5. **Backup and Restore**: Your documentation files are backed up in a remote repository, allowing you to restore them in case of data loss or accidental deletion.
 
-## What are relevant configuration Options in the `dev-docs.json`?
+## What Are Relevant Configuration Options in the `dev-docs.json`?
 
 The relevant configuration options in the `dev-docs.json` file for version control are:
 
@@ -24,7 +24,7 @@ The relevant configuration options in the `dev-docs.json` file for version contr
 2. **`customRoot`**: Specifies the root directory for your Dev-Docs project, relative to the workspace root. The default value is `"packages/my-package"`.
 3. **`workspaceRoot`**: Specifies the absolute path to the root directory of your project workspace. The default value is `"/path/to/project"`.
 
-## Example JSON of relevant Dev-Docs.json options
+## Example JSON of Relevant `dev-docs.json` Options
 
 ```json
 {

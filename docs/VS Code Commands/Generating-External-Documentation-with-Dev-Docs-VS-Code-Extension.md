@@ -30,7 +30,7 @@ Using the "Populate External Docs" command offers several benefits:
 3. **Consistency and Maintainability**: By tying the documentation to your codebase, you ensure that your documentation remains up-to-date as your code evolves.
 4. **Customizable Configuration**: The `dev-docs.json` configuration file allows you to tailor the documentation generation process to your project's specific needs, including filtering code elements, specifying import paths, and organizing the documentation structure.
 
-## What are relevant configuration Options in the `dev-docs.json`?
+## What Are Relevant Configuration Options in the `dev-docs.json`?
 
 The following configuration options in the `dev-docs.json` file are relevant for the "Populate External Docs" command:
 

@@ -20,11 +20,11 @@ Using the `devdocs.showShortCuts` command can be helpful in the following scenar
 
 3. **Quick Reference**: Instead of memorizing all the shortcuts, you can use this command as a quick reference to look up the desired shortcut and its corresponding action.
 
-## What are relevant configuration Options in the `dev-docs.json`?
+## What Are Relevant Configuration Options in the `dev-docs.json`?
 
 There are no specific configuration options in the `dev-docs.json` file related to the `devdocs.showShortCuts` command. This command is a built-in functionality of the Dev-Docs extension and does not require any additional configuration.
 
-## Example JSON of relevant Dev-Docs.json options
+## Example JSON of Relevant `dev-docs.json` Options
 
 Since there are no relevant configuration options for this command, there is no need to provide an example JSON.
 

@@ -24,7 +24,7 @@ The Dev-Docs VS Code extension provides a range of features to streamline the do
 
 Maintaining up-to-date and comprehensive documentation is crucial for software development projects, but it can be a time-consuming and tedious task. The Dev-Docs VS Code extension helps alleviate this burden by automating many aspects of the documentation process, saving you valuable time and effort. Additionally, by leveraging AI technologies, Dev-Docs ensures that your documentation is accurate, consistent, and aligned with your codebase.
 
-## What are relevant configuration options in the `dev-docs.json`?
+## What Are Relevant Configuration Options in the `dev-docs.json`?
 
 The `dev-docs.json` file is the central configuration file for the Dev-Docs extension. Here are some of the most relevant configuration options:
 

@@ -16,11 +16,11 @@ You should use this command when you want to work with the Dev-Docs application 
 
 By setting the base URL to `http://localhost:3000`, you can easily interact with the local instance of the Dev-Docs application from within Visual Studio Code.
 
-## What are relevant configuration Options in the `dev-docs.json`?
+## What Are Relevant Configuration Options in the `dev-docs.json`?
 
 The `dev-docs.json` configuration file does not seem to have a specific option for setting the base URL. However, you can use the `storageManager` API provided by the Dev-Docs extension to set the base URL programmatically.
 
-## Example JSON of relevant Dev-Docs.json options
+## Example JSON of Relevant `dev-docs.json` Options
 
 Since there is no specific configuration option for setting the base URL in the `dev-docs.json` file, you can omit this section.
 

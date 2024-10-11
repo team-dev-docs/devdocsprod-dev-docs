@@ -8,7 +8,7 @@ The `devdocs.outline` command is responsible for generating an outline or struct
 
 This command is useful for creating a solid foundation for your project's documentation. It streamlines the process of identifying the relevant parts of the codebase that should be included in the documentation, and generates a structured outline based on that analysis. This can save a significant amount of time and effort compared to manually creating the documentation structure from scratch.
 
-## What are relevant configuration Options in the `dev-docs.json`?
+## What Are Relevant Configuration Options in the `dev-docs.json`?
 
 The `dev-docs.json` file contains several configuration options that are relevant to the `devdocs.outline` command:
 
@@ -17,7 +17,7 @@ The `dev-docs.json` file contains several configuration options that are relevan
 - `workspaceRoot`: The root directory of the workspace or project.
 - `customRoot`: A custom root directory path within the workspace, if different from the default workspace root.
 
-## Example JSON of relevant Dev-Docs.json options
+## Example JSON of Relevant `dev-docs.json` Options
 
 ```json
 {

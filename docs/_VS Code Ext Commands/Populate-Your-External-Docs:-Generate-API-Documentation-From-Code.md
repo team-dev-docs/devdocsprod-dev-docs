@@ -8,7 +8,7 @@ This VS Code extension command allows you to generate external documentation for
 
 Maintaining up-to-date documentation is crucial for any software project, especially as the codebase grows in size and complexity. This extension automates the process of generating documentation, saving you time and effort. It ensures that your documentation is always in sync with your codebase, reducing the risk of outdated or incomplete information.
 
-## What are relevant configuration options in the `dev-docs.json`?
+## What Are Relevant Configuration Options in the `dev-docs.json`?
 
 The `dev-docs.json` file is used to configure various aspects of the documentation generation process. Here are some relevant options:
 

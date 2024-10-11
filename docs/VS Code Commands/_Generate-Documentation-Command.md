@@ -19,7 +19,7 @@ Maintaining comprehensive and up-to-date documentation for a codebase can be a t
 3. **Accuracy**: The command analyzes the actual code, reducing the risk of errors or inconsistencies that may arise from manually written documentation.
 4. **Scalability**: As your codebase grows, generating documentation manually becomes increasingly challenging. This command scales seamlessly, allowing you to maintain comprehensive documentation with ease.
 
-## What are relevant configuration Options in the `dev-docs.json`?
+## What Are Relevant Configuration Options in the `dev-docs.json`?
 
 The `dev-docs.json` file contains several configuration options that control the behavior of the `devdocs.generateDocumentation` command. Some relevant options include:
 
@@ -29,7 +29,7 @@ The `dev-docs.json` file contains several configuration options that control the
 - `ai.docPath`: The path where the generated documentation files should be stored.
 - `ai.branch`: The Git branch where the generated documentation should be committed and pushed.
 
-## Example JSON of relevant Dev-Docs.json options
+## Example JSON of Relevant `dev-docs.json` Options
 
 ```json
 {

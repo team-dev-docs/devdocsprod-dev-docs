@@ -10,7 +10,7 @@ The `devdocs.generateBatchDocumentation` command is used to generate documentati
 
 Generating documentation for an entire project or large parts of a codebase can be a time-consuming and tedious task if done manually. The `devdocs.generateBatchDocumentation` command automates this process, saving you time and effort. It allows you to quickly generate documentation for a codefile.
 
-## What are relevant configuration options in the `dev-docs.json`?
+## What Are Relevant Configuration Options in the `dev-docs.json`?
 
 The `dev-docs.json` file is the central configuration file for the Dev-Docs extension. Here are some of the most relevant configuration options:
 

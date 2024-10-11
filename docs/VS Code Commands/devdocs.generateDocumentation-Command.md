@@ -29,7 +29,7 @@ Generating documentation manually can be a tedious and time-consuming task, espe
 3. **Productivity**: Instead of spending time writing documentation, you can focus on writing code, knowing that the documentation will be automatically generated.
 4. **Onboarding**: Well-documented code makes it easier for new team members or contributors to understand and work with the codebase.
 
-## What are relevant configuration Options in the `dev-docs.json`?
+## What Are Relevant Configuration Options in the `dev-docs.json`?
 
 The `dev-docs.json` file contains various configuration options that control the behavior of the Dev-Docs extension, including the documentation generation process. Some relevant options for the `devdocs.generateDocumentation` command include:
 
@@ -41,7 +41,7 @@ The `dev-docs.json` file contains various configuration options that control the
 4. **ai.populateDoc**: The path to a Markdown template file that should be used as the basis for the generated documentation.
 5. **ai.docSubFolder**: The name of the subfolder within the project where the generated documentation files should be saved.
 
-## Example JSON of relevant Dev-Docs.json options
+## Example JSON of Relevant `dev-docs.json` Options
 
 ```json
 {

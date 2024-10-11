@@ -14,7 +14,7 @@ Using this command can be helpful in the following scenarios:
 
 3. **Automation and Scripting**: The `dev-docs.json` file can be used as a data source for automation scripts or build processes. By reading and parsing the JSON data, scripts can dynamically configure various aspects of the project or development workflow.
 
-## What are relevant configuration options in the `dev-docs.json`?
+## What Are Relevant Configuration Options in the `dev-docs.json`?
 
 The code provided does not specify any particular configuration options for the `dev-docs.json` file. The content of the file is initialized with an empty JSON object `{}`. However, you can define custom configuration options based on your project's requirements.
 

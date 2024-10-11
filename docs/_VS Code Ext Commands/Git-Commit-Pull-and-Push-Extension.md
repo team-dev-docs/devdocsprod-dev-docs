@@ -16,11 +16,11 @@ This VS Code extension command automates the process of committing, pulling, and
 
 Using this extension command can streamline the process of committing and synchronizing changes with a remote Git repository. It saves time by automating the repetitive steps involved in the Git workflow, allowing developers to focus on writing code and documenting changes efficiently. Additionally, it ensures consistent commit messages with timestamped information, making it easier to track changes over time.
 
-## What are relevant configuration Options in the `dev-docs.json`?
+## What Are Relevant Configuration Options in the `dev-docs.json`?
 
 This code does not reference any configuration options from a `dev-docs.json` file. It appears to be a standalone command that does not require any external configuration.
 
-## Example JSON of relevant Dev-Docs.json options
+## Example JSON of Relevant `dev-docs.json` Options
 
 Since this code does not use any configuration options from a `dev-docs.json` file, there are no relevant examples to provide.
 
