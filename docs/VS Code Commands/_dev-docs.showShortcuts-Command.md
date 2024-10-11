@@ -6,11 +6,11 @@ slug: /VS-Code-Commands/Show-Shortcuts-Command
 
 The `devdocs.showShortCuts` command displays a table with keyboard shortcuts and a brief description of their functionality within the Dev-Docs extension.
 
-## What does this VS Code Extension Command do?
+## What Does This VS Code Extension Command Do?
 
 The `devdocs.showShortCuts` command opens a modal window that displays a table with two columns: Keyboard Shortcut and Description. The table provides information about the available keyboard shortcuts and their corresponding actions within the Dev-Docs extension.
 
-## Why should I use this VS Code Extension Command?
+## Why Should I Use This VS Code Extension Command?
 
 Using the `devdocs.showShortCuts` command can be helpful in the following scenarios:
 
@@ -32,7 +32,7 @@ Since there are no relevant configuration options for this command, there is no 
 
 There are no specific prerequisites for using the `devdocs.showShortCuts` command. It is a built-in functionality of the Dev-Docs extension and should be available as soon as the extension is installed and enabled in Visual Studio Code.
 
-## How do I use this VS Code Extension Command?
+## How Do I Use This VS Code Extension Command?
 
 To use the `devdocs.showShortCuts` command, follow these steps:
 

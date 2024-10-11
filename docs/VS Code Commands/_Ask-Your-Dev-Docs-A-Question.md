@@ -6,11 +6,11 @@ slug: /VS-Code-Commands/Asking-Your-Dev-Docs-A-Question
 
 The `devdocs.askYourDevDocsAQuestion` command allows you to ask natural language questions about your codebase, and receive responses from an AI assistant. This command leverages the power of natural language processing and machine learning to provide you with relevant information and insights based on your code.
 
-## What does this VS Code Extension Command do?
+## What Does This VS Code Extension Command Do?
 
 This command opens an input box where you can enter your question related to your codebase. The AI assistant then analyzes your question, processes the relevant code files, and provides an appropriate response based on its understanding of your codebase's context.
 
-## Why should I use this VS Code Extension Command?
+## Why Should I Use This VS Code Extension Command?
 
 Using this command can be beneficial in several ways:
 
@@ -60,7 +60,7 @@ The relevant configuration options for this command in the `dev-docs.json` file 
 
 Before using this command, make sure you have configured the necessary prompts and documentation in the `dev-docs.json` file. This will ensure that the AI assistant has access to the relevant information required to provide accurate responses.
 
-## How do I use this VS Code Extension Command?
+## How Do I Use This VS Code Extension Command?
 
 To use the `devdocs.askYourDevDocsAQuestion` command, follow these steps:
 

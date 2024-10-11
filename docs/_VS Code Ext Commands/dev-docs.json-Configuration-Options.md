@@ -1,11 +1,11 @@
 
 # Turn Markdown On
 
-## What does this VS Code Extension Command do?
+## What Does This VS Code Extension Command Do?
 
 This command enables the "Turn Markdown On" functionality of the VS Code extension. It creates a `dev-docs` folder in the workspace root directory (or a custom root directory specified in the `dev-docs.json` file), and initializes two Markdown files: `reference.md` and `general.md`. These files are intended to be used for documenting the codebase.
 
-## Why should I use this VS Code Extension Command?
+## Why Should I Use This VS Code Extension Command?
 
 The "Turn Markdown On" command provides a convenient way to set up a documentation structure within your project. By creating dedicated Markdown files, you can easily document your codebase, APIs, or any other relevant information. This can be particularly useful for maintaining comprehensive documentation alongside your code, making it easier for developers to understand and contribute to the project.
 
@@ -16,7 +16,7 @@ Before using the "Turn Markdown On" command, make sure you have:
 1. A valid workspace open in VS Code.
 2. The `dev-docs` extension installed and enabled.
 
-## How do I use this VS Code Extension Command?
+## How Do I Use This VS Code Extension Command?
 
 To use the "Turn Markdown On" command, follow these steps:
 

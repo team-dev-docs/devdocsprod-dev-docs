@@ -6,7 +6,7 @@ slug: /VS-Code-Commands/Initial-Dev-Docs
 
 This VS Code Extension Command allows you to initialize and set up version control for your Dev-Docs project. It enables you to keep track of changes made to your documentation files and collaborate with others on the project.
 
-## Why should I use this VS Code Extension Command?
+## Why Should I Use This VS Code Extension Command?
 
 Using version control for your Dev-Docs project offers several benefits:
 
@@ -43,7 +43,7 @@ Before using this command, ensure that you have the following prerequisites:
 1. Git installed on your local machine.
 2. A remote repository (e.g., GitHub, GitLab, or Bitbucket) where you want to host your Dev-Docs project.
 
-## How do I use this VS Code Extension Command?
+## How Do I Use This VS Code Extension Command?
 
 To initialize version control for your Dev-Docs project, follow these steps:
 

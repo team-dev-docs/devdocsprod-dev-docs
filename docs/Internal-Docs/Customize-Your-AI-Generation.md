@@ -29,7 +29,7 @@ Find your `dev-docs.json` file.
 
 ## Step 4: Customize the JSON
 
-Now we are going to make your Dev-Docs JSON look similar to the one in the step above.  The goal is have the AI answer custom questions and prompts on our code.  Replace your JSON with JSON below:
+Now we are going to make your Dev-Docs JSON look similar to the one in the step above. The goal is have the AI answer custom questions and prompts on our code. Replace your JSON with JSON below:
 
 ```json
 
@@ -44,7 +44,7 @@ Now we are going to make your Dev-Docs JSON look similar to the one in the step 
                     "documentation": ""
                 },
                 {
-                    "question": "Is this code written well?  if so Why?",
+                    "question": "Is this code written well? If so why?",
                     "title": "Quality of Code",
                     "documentation": ""
                 }

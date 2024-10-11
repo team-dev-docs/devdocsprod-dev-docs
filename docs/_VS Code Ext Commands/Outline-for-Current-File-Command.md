@@ -1,10 +1,10 @@
 # Outline for Current File
 
-## What does this VS Code Extension Command do?
+## What Does This VS Code Extension Command Do?
 
 This command, `devdocs.outlineForCurrentFile`, generates an outline of the symbols (variables, functions, classes, etc.) present in the currently open file in the VS Code editor. It provides a structured representation of the code elements, allowing you to navigate and understand the code structure more easily.
 
-## Why should I use this VS Code Extension Command?
+## Why Should I Use This VS Code Extension Command?
 
 Using this command can be beneficial for several reasons:
 
@@ -42,7 +42,7 @@ To use the `devdocs.outlineForCurrentFile` command, you need to have the followi
 1. **VS Code**: The command is part of a VS Code extension, so you need to have Visual Studio Code installed on your machine.
 2. **Extension Installed**: The extension that provides this command should be installed and enabled in your VS Code instance.
 
-## How do I use this VS Code Extension Command?
+## How Do I Use This VS Code Extension Command?
 
 To use the `devdocs.outlineForCurrentFile` command, follow these steps:
 

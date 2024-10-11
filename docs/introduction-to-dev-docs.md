@@ -11,11 +11,17 @@ Dev-Docs is a powerful documentation solution that streamlines the process of cr
 ## Why Choose Dev-Docs?
 
 - **Seamless Integration**: Integrate Dev-Docs directly into your development workflow with our VS Code extension and into your CI/CD with our GitHub App. Generate Markdown files and manage your docs without ever leaving your familiar environment. Push the docs to where your teams or users are already reading them.
+
 <br></br>
+
 - **Customizable Output**: Tailor the AI-generated content to your specific needs with customizable prompts and filters. Dev-Docs adapts to your project's unique requirements, ensuring that the generated documentation aligns perfectly with your standards. Edit the final output as you see fit. The final say is always yours!
+
 <br></br>
+
 - **Improved SEO and Developer Experience**: Well-documented projects are more discoverable and attractive to potential users and customers. Dev-Docs helps you create comprehensive, SEO-friendly documentation that can boost your project's visibility, enable faster customer onboarding and drive sales.
+
 <br></br>
+
 - **Time and Cost Savings**: By automating much of the documentation process, Dev-Docs helps your team save valuable time and resources, allowing them to focus on core development and documentation tasks while maintaining high-quality content for your docs. 
 
 
@@ -32,8 +38,12 @@ Dev-Docs helps you create clear, concise, and user-friendly documentation. From 
 ## Getting Started
 
 Whether you're working on a small project or managing a large-scale application, Dev-Docs has the tools and features to elevate your documentation process. Explore our guides and tutorials to learn how Dev-Docs can revolutionize your approach to documentation and enhance your overall development experience.
+
 <br></br>
-[Get Started Now](docs/Initial-Setup/Dev-Docs-Quickstart.md)
+
+[Get Started Now](docs/Dev-Docs-Quickstart)
+
 <br></br>
+
 Empower your team, enhance your documentation, and accelerate your product's success with Dev-Docs – the future of developer documentation.
   

@@ -6,7 +6,7 @@ slug: /VS-Code-Commands/Dev-Docs-Batch-Documentation
 
 The `devdocs.generateBatchDocumentation` command is used to generate documentation for a codefile's functions in a batch process. This command can be helpful when you want to quickly document all the functions in a codefile.
 
-## Why should I use this VS Code Extension Command?
+## Why Should I Use This VS Code Extension Command?
 
 Generating documentation for an entire project or large parts of a codebase can be a time-consuming and tedious task if done manually. The `devdocs.generateBatchDocumentation` command automates this process, saving you time and effort. It allows you to quickly generate documentation for a codefile.
 
@@ -67,7 +67,7 @@ Before using the `devdocs.generateBatchDocumentation` command, ensure that you h
 2. A Markdown template file specified in the `ai.components.template` configuration option.
 3. The necessary permissions to write documentation files to the specified `docPath`.
 
-## How do I use this VS Code Extension Command?
+## How Do I Use This VS Code Extension Command?
 
 To use the `devdocs.generateBatchDocumentation` command, follow these steps:
 

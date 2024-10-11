@@ -2,13 +2,15 @@
 slug: /VS-Code-Commands/Generate-External-Documentation
 ---
 
-# Generate External Documentation
+# Generate User-Facing Documentation
 
-The "Populate External Docs" command (`devdocs.generateExternalDocs`) is a crucial feature of the Dev-Docs VS Code extension that allows you to generate comprehensive documentation for your codebase. This command analyzes your project's files and generates an external documentation website, which serves as a centralized hub for all your project's documentation.
+The "Populate External Docs" command (`devdocs.generateExternalDocs`) is a crucial feature of the Dev-Docs VS Code extension that allows you to generate comprehensive documentation for your users. This command analyzes your project's files and generates an external documentation website, which serves as a centralized hub for all your project's documentation.
 
-## What does this VS Code Extension Command do?
+## What Does This VS Code Extension Command Do?
 
 The "Populate External Docs" command performs the following tasks:
+
+<br></br>
 
 1. Scans your project's codebase and identifies relevant code elements (classes, functions, methods, etc.) based on the specified filters (`internalTypeFilters`, `codeFilters`, `nameFilters`).
 2. Optionally includes code snippets from other files or folders specified in the configuration (`importFiles`, `importFolders`).
@@ -17,9 +19,11 @@ The "Populate External Docs" command performs the following tasks:
 5. Updates the `dev-docs.json` file with the generated mappings.
 6. Optionally, pushes the updated documentation to a specified Git branch (`branch`).
 
-## Why should I use this VS Code Extension Command?
+## Why Should I Use This VS Code Extension Command?
 
 Using the "Populate External Docs" command offers several benefits:
+
+<br></br>
 
 1. **Centralized Documentation Hub**: It creates a dedicated website for your project's documentation, making it easily accessible and shareable with team members or external stakeholders.
 2. **Automated Documentation Generation**: The command automates the documentation process, saving you time and effort by generating documentation directly from your codebase.
@@ -30,16 +34,18 @@ Using the "Populate External Docs" command offers several benefits:
 
 The following configuration options in the `dev-docs.json` file are relevant for the "Populate External Docs" command:
 
-- `ai.internalTypeFilters`: An array of strings specifying the types of code elements to include in the documentation (e.g., `["class", "method", "function"]`).
-- `ai.codeFilters`: An array of strings used to filter code elements based on specific patterns (e.g., `["async function", "export default"]`).
-- `ai.nameFilters`: An array of strings used to filter code elements based on their names (e.g., `["handleSubmit", "render"]`).
-- `ai.importFiles`: An array of file paths specifying additional files to include in the documentation.
-- `ai.importFolders`: An array of folder paths specifying additional folders to include in the documentation.
-- `ai.importTypeFilters`: An array of strings specifying the types of code elements to include from the imported files and folders.
-- `ai.importCodeFilters`: An array of strings used to filter code elements from the imported files and folders based on specific patterns.
-- `ai.importNameFilters`: An array of strings used to filter code elements from the imported files and folders based on their names.
-- `ai.branch`: The Git branch to which the updated documentation will be pushed (default: `"main"`).
-- `ai.mappings`: An array of objects specifying how the generated documentation should be organized and mapped to specific folders or files in the external documentation website.
+<br></br>
+
+1. `ai.internalTypeFilters`: An array of strings specifying the types of code elements to include in the documentation (e.g., `["class", "method", "function"]`).
+2. `ai.codeFilters`: An array of strings used to filter code elements based on specific patterns (e.g., `["async function", "export default"]`).
+3. `ai.nameFilters`: An array of strings used to filter code elements based on their names (e.g., `["handleSubmit", "render"]`).
+4. `ai.importFiles`: An array of file paths specifying additional files to include in the documentation.
+5. `ai.importFolders`: An array of folder paths specifying additional folders to include in the documentation.
+6. `ai.importTypeFilters`: An array of strings specifying the types of code elements to include from the imported files and folders.
+7. `ai.importCodeFilters`: An array of strings used to filter code elements from the imported files and folders based on specific patterns.
+8. `ai.importNameFilters`: An array of strings used to filter code elements from the imported files and folders based on their names.
+9. `ai.branch`: The Git branch to which the updated documentation will be pushed (default: `"main"`).
+10. `ai.mappings`: An array of objects specifying how the generated documentation should be organized and mapped to specific folders or files in the external documentation website.
 
 ## Example JSON of relevant `dev-docs.json` options
 
@@ -70,10 +76,12 @@ Here's an example JSON configuration with the minimum required options to use th
 
 Before using the "Populate External Docs" command, ensure that you have the following prerequisites in place:
 
+<br></br>
+
 1. A `dev-docs.json` configuration file present in your project's root directory, with the necessary configuration options set.
 2. A valid authentication token (`devdocs_id_token`) stored in the VS Code extension's storage, which can be obtained by running the `devdocs.getGitHubUser` command and authenticating with your GitHub account.
 
-## How do I use this VS Code Extension Command?
+## How Do I Use This VS Code Extension Command?
 
 To use the "Populate External Docs" command, follow these steps:
 
@@ -84,6 +92,6 @@ To use the "Populate External Docs" command, follow these steps:
 5. The extension will start analyzing your codebase and generating the external documentation based on the configured settings.
 6. Once the process is complete, you should see a success message in the VS Code output panel, indicating that the external documentation has been generated and updated.
 
-It's important to note that this command is designed to work seamlessly with the Dev-Docs cloud platform, where your generated documentation will be hosted and accessible through a dedicated website. Make sure you have the appropriate authentication and configuration set up to ensure a smooth integration with the Dev-Docs cloud platform.
+<br></br>
   
   

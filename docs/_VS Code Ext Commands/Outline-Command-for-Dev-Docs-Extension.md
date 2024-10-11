@@ -1,10 +1,10 @@
 # Outline Command for Dev-Docs Extension
 
-## What does this Vs Code Extension Command do?
+## What Does This VS Code Extension Command Do?
 
 The `devdocs.outline` command is responsible for generating an outline or structure for the documentation of a project based on the codebase. It analyzes the project's files, directories, and the existing `dev-docs.json` file to determine which parts of the codebase should be documented and how they should be organized.
 
-## Why should I use this Vs Code Extension Command?
+## Why Should I Use This VS Code Extension Command?
 
 This command is useful for creating a solid foundation for your project's documentation. It streamlines the process of identifying the relevant parts of the codebase that should be included in the documentation, and generates a structured outline based on that analysis. This can save a significant amount of time and effort compared to manually creating the documentation structure from scratch.
 
@@ -46,7 +46,7 @@ Before running the `devdocs.outline` command, ensure that:
 1. Your project has a `dev-docs.json` file at the root level.
 2. The `dev-docs.json` file contains the necessary configuration options, such as `ai.contextDirs`, `workspaceRoot`, or `customRoot`.
 
-## How do I use this Vs Code Extension Command?
+## How Do I Use This VS Code Extension Command?
 
 1. Open your project in Visual Studio Code.
 2. Open the Command Palette by pressing `Ctrl+Shift+P` (Windows/Linux) or `Cmd+Shift+P` (macOS).

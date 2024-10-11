@@ -4,11 +4,11 @@ slug: /VS-Code-Commands/Replace-Selected-Text-with-AI-Generated-Content
 
 # Replace Selected Text with AI-Generated Content
 
-## What does this VS Code Extension Command do?
+## What Does This VS Code Extension Command Do?
 
 The `devdocs.replaceText` command allows you to use the Dev-Docs AI to replace the currently selected text in your code editor with an AI-generated alternative. This feature can be particularly useful when you want to rephrase or rewrite a section of code or documentation in a more concise or clearer manner.
 
-## Why should I use this VS Code Extension Command?
+## Why Should I Use This VS Code Extension Command?
 
 Using the `devdocs.replaceText` command can be beneficial in several scenarios:
 
@@ -21,7 +21,7 @@ Using the `devdocs.replaceText` command can be beneficial in several scenarios:
 4. **Exploring Alternatives**: The AI can offer different perspectives or approaches to solving a problem, allowing you to explore alternative solutions you might not have considered.
 
 
-## How do I use this VS Code Extension Command?
+## How Do I Use This VS Code Extension Command?
 
 To use the `devdocs.replaceText` command, follow these steps:
 

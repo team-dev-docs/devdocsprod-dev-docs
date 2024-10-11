@@ -6,7 +6,7 @@ slug: /VS-Code-Commands/Generate-Documentation-From-Mappings
 
 This VS Code extension command allows you to generate documentation for your codebase based on predefined mappings specified in the `dev-docs.json` configuration file. The mappings define which files or folders correspond to specific sections or categories of your documentation.
 
-## Why should I use this VS Code Extension Command?
+## Why Should I Use This VS Code Extension Command?
 
 By using this command, you can easily organize and structure your documentation according to the logical components or features of your project. It streamlines the process of generating documentation for different parts of your codebase, ensuring that the documentation stays up-to-date and aligned with the actual implementation.
 
@@ -44,7 +44,7 @@ Before using this command, ensure that you have:
 1. A `dev-docs.json` configuration file in your project root with the desired mappings defined.
 2. An authenticated connection to the Dev-Docs cloud service (if required).
 
-## How do I use this VS Code Extension Command?
+## How Do I Use This VS Code Extension Command?
 
 To generate documentation from the defined mappings, follow these steps:
 

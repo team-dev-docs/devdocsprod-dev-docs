@@ -1,10 +1,10 @@
 # Audit Markdown
 
-## What does this VS Code Extension Command do?
+## What Does This VS Code Extension Command Do?
 
 The `Audit Markdown` command helps you identify and fix issues in your Markdown documentation. It checks for grammar and spelling errors, nonsensical paragraphs or sentences, unhelpful content, and aesthetic improvements.
 
-## Why should I use this Vs Code Extension Command?
+## Why Should I Use This VS Code Extension Command?
 
 Using the `Audit Markdown` command can help you improve the quality and readability of your Markdown documentation, making it more useful and engaging for your readers.
 
@@ -17,7 +17,7 @@ To use the `Audit Markdown` command, you must have the following prerequisites:
 - A `dev-docs.json` file in your project root directory.
 - Make sure you have External Docs set up, where you can learn more about [here](/docs/external%20docs/How%20to%20Get%20Started%20With%20External%20Docs).
 
-## How do I use this VS Code Extension Command?
+## How Do I Use This VS Code Extension Command?
 
 To use the `Audit Markdown` command, follow these steps:
 

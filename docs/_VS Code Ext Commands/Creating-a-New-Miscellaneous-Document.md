@@ -1,10 +1,10 @@
 # Creating a new Miscellaneous Document
 
-## What does this VS Code Extension Command do?
+## What Does This VS Code Extension Command Do?
 
 This command allows you to create a new Markdown file within the `dev-docs/misc` directory of your project. It prompts you to enter a name for the file, and then creates a new file with that name and an `.md` extension. The newly created file is initially blank, but you can open it and start adding content.
 
-## Why should I use this VS Code Extension Command?
+## Why Should I Use This VS Code Extension Command?
 
 This command can be useful when you need to create a new documentation file that doesn't fit into any existing category or section of your project's documentation. It provides a quick and convenient way to generate a new Markdown file within a dedicated folder for miscellaneous documentation.
 
@@ -23,7 +23,7 @@ To use this command, you need to have the following prerequisites:
 1. A valid Visual Studio Code workspace or project opened.
 2. The `dev-docs` directory should exist in your project's root directory. If it doesn't exist, the command will create it automatically.
 
-## How do I use this VS Code Extension Command?
+## How Do I Use This VS Code Extension Command?
 
 To use this command, follow these steps:
 

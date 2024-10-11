@@ -6,13 +6,13 @@ slug: /VS-Code-Commands/Open-Dev-Docs-Local-Markdown-File
 
 This VS Code extension command allows you to open and edit a local Markdown file within the Dev-Docs environment. It provides a seamless integration between your code and documentation, enabling you to work on both simultaneously.
 
-## Why should I use this VS Code Extension Command?
+## Why Should I Use This VS Code Extension Command?
 
 Using this command streamlines your documentation workflow by eliminating the need to switch between different applications or windows. It allows you to keep your documentation in sync with your codebase, ensuring that any changes you make to the code are reflected in the corresponding documentation.
 
 Additionally, the Dev-Docs environment provides various features and tools tailored for efficient documentation creation and management, such as syntax highlighting, auto-formatting, and integration with version control systems.
 
-## How do I use this VS Code Extension Command?
+## How Do I Use This VS Code Extension Command?
 
 To open and edit a local Markdown file using the Dev-Docs environment, follow these steps:
 

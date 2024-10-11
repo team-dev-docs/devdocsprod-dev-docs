@@ -1,10 +1,10 @@
 # Creating a dev-docs.json File
 
-## What does this VS Code Extension Command do?
+## What Does This VS Code Extension Command Do?
 
 This VS Code extension command creates a new `dev-docs.json` file in the workspace folder or a specified directory. The `dev-docs.json` file is typically used to store configuration settings or metadata related to a project or codebase.
 
-## Why should I use this VS Code Extension Command?
+## Why Should I Use This VS Code Extension Command?
 
 Using this command can be helpful in the following scenarios:
 
@@ -49,7 +49,7 @@ To use this VS Code extension command, you need to have the following:
 1. **Visual Studio Code**: The command is designed to work within the Visual Studio Code environment.
 2. **Workspace Folder or Directory**: You should have a workspace folder or a directory specified where the `dev-docs.json` file will be created.
 
-## How do I use this VS Code Extension Command?
+## How Do I Use This VS Code Extension Command?
 
 To use this VS Code extension command, follow these steps:
 

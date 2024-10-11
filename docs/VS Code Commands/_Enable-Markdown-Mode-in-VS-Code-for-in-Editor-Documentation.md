@@ -6,7 +6,7 @@ slug: /VS-Code-Commands/Turn-On-Markdown-Mode
 
 This VS Code extension command allows you to switch to a markdown mode within your code editor, enabling you to write documentation directly within your codebase using the familiar Markdown syntax.
 
-## Why should I use this VS Code Extension Command?
+## Why Should I Use This VS Code Extension Command?
 
 Writing documentation alongside your code has several advantages:
 
@@ -42,7 +42,7 @@ The relevant configuration options for enabling the markdown mode in the `dev-do
 
 Before using this command, ensure that you have set up the necessary configurations in your `dev-docs.json` file, such as the template file path, documentation path, and Git branch.
 
-## How do I use this VS Code Extension Command?
+## How Do I Use This VS Code Extension Command?
 
 To turn on the markdown mode, follow these steps:
 

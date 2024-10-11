@@ -6,7 +6,7 @@ slug: /VS-Code-Commands/Generate-Documentation-for-a-Folder
 
 The command `devdocs.folderDocument` allows you to create documentation for the current folder you have open in your workspace. This command is particularly useful when you want to generate high-level documentation for a specific directory in your project, providing an overview of the folder's contents and its purpose.
 
-## Why should I use this VS Code Extension Command?
+## Why Should I Use This VS Code Extension Command?
 
 Using the `devdocs.folderDocument` command can be beneficial in several ways:
 
@@ -51,7 +51,7 @@ Before using the `devdocs.folderDocument` command, ensure that you have:
 1. Installed the Dev-Docs extension in your Visual Studio Code instance.
 2. Configured the necessary settings in your `dev-docs.json` file, such as `contextDirs` and `mappings`.
 
-## How do I use this VS Code Extension Command?
+## How Do I Use This VS Code Extension Command?
 
 To generate documentation for a folder, follow these steps:
 
