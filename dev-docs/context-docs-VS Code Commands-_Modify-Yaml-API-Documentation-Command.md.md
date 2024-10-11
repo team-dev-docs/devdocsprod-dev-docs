@@ -15,4 +15,26 @@ Key points:
 
 Overall, this document serves as a comprehensive guide for developers who want to efficiently manage their API documentation using this VS Code extension command.
 
+---
+# Modify YAML Documentation Command docs/VS Code Commands/_Modify-Yaml-API-Documentation-Command.md
+## Imported Code Object
+Your explanation of the "Modify YAML Documentation Command" is already quite concise and informative. However, I can provide a more condensed version:
+
+The `devdocs.modifyAPIYAMLDocumentation` is a VS Code extension command that facilitates updating API documentation in OpenAPI (Swagger) YAML files. It uses AI to modify specific sections like tags, summaries, code samples, and descriptions for given API routes.
+
+Key features:
+1. User-friendly interface for updating API docs
+2. AI-powered content generation
+3. Supports multiple programming languages for code samples
+4. Configurable through `dev-docs.json`
+
+To use:
+1. Ensure prerequisites are met (OpenAPI YAML file, configured `dev-docs.json`)
+2. Open Command Palette in VS Code
+3. Run "Modify Yaml" command
+4. Select API route and documentation section to update
+5. Review and confirm AI-generated changes
+
+This command streamlines API documentation maintenance, saving time and ensuring consistency with the API specification.
+
   
