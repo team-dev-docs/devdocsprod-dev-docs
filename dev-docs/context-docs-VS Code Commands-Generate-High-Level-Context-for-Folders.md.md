@@ -14,3 +14,19 @@ This markdown file describes a VS Code extension command called "Generate High L
 7. The generated high-level context document aims to improve understanding of code structure and organization within the selected folder.
 
   
+---
+# Example JSON of Relevant `dev-docs.json` Options docs/VS Code Commands/Generate-High-Level-Context-for-Folders.md
+## Imported Code Object
+This JSON snippet represents configuration options for a development documentation tool. Here's a concise explanation of its key components:
+
+1. "ai" object:
+   - "contextDirs": Specifies directories to include for AI context.
+   - "internalTypeFilters": Lists types of code elements to consider.
+
+2. "customRoot": Defines a custom root directory for the package.
+
+3. "workspaceRoot": Specifies the absolute path to the project's root directory.
+
+These options likely control how the documentation tool processes and generates documentation for a project, including which directories to analyze, what types of code elements to document, and where to locate project files.
+
+  
