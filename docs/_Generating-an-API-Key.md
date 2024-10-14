@@ -1,7 +1,7 @@
 # Generating an API Key
 
 ## Step 1: Click on the Avatar Icon
-Click on the circular avatar icon to open the profile menu.
+Click on the circular avatar icon to open the profile menu.xzcxzc
 
 
 ![generating_an_api_key/step_2](/img/generating_an_api_key/step_2.png)
