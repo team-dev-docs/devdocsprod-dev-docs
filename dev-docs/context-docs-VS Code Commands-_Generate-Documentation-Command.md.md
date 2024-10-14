@@ -3,7 +3,7 @@
   ---
 # High Level Context
 ## context
-This Markdown file describes the "Generate Documentation" command, which is part of the Dev-Docs VSCode extension. The command uses AI to automatically generate comprehensive documentation for a codebase. Key points include:
+This Markdown file describes the "Generate Documentation" command, which is part of the Dev-Docs VS Code extension. The command uses AI to automatically generate comprehensive documentation for a codebase. Key points include:
 
 1. The command's purpose and benefits, such as time-saving and consistency in documentation.
 2. Relevant configuration options in the dev-docs.json file, including filters for code elements and output settings.
@@ -17,7 +17,7 @@ The file serves as a guide for developers to understand and utilize this automat
 ## Imported Code Object
 Based on the provided snippet, here's a concise explanation of `devdocs.generateDocumentation`:
 
-`devdocs.generateDocumentation` is a command in the Dev-Docs VSCode extension that uses AI to automatically generate comprehensive documentation for your codebase. It analyzes your code structure, functions, and classes, then produces human-readable documentation with explanations, examples, and usage instructions. This feature aims to save developers time and effort in creating and maintaining documentation for their projects.
+`devdocs.generateDocumentation` is a command in the Dev-Docs VS Code extension that uses AI to automatically generate comprehensive documentation for your codebase. It analyzes your code structure, functions, and classes, then produces human-readable documentation with explanations, examples, and usage instructions. This feature aims to save developers time and effort in creating and maintaining documentation for their projects.
 
   
 ---
@@ -25,7 +25,7 @@ Based on the provided snippet, here's a concise explanation of `devdocs.generate
 ## Imported Code Object
 Certainly! Here's a concise explanation of the Generate Documentation Command mentioned in the code snippet:
 
-The Generate Documentation Command (`devdocs.generateDocumentation`) is a feature of the Dev-Docs VSCode extension that automatically generates comprehensive documentation for a codebase. It uses AI to analyze code structure, functions, and classes, producing human-readable documentation with explanations, examples, and usage instructions. This command saves time, ensures consistency, improves accuracy, and scales well for large projects.
+The Generate Documentation Command (`devdocs.generateDocumentation`) is a feature of the Dev-Docs VS Code extension that automatically generates comprehensive documentation for a codebase. It uses AI to analyze code structure, functions, and classes, producing human-readable documentation with explanations, examples, and usage instructions. This command saves time, ensures consistency, improves accuracy, and scales well for large projects.
 
 Key benefits include:
 1. Time-saving automation

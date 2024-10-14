@@ -3,7 +3,7 @@
   ---
 # High Level Context
 ## context
-This Markdown file describes a VSCode extension command that generates high-level context documentation for code files and folders. The command's main features include:
+This Markdown file describes a VS Code extension command that generates high-level context documentation for code files and folders. The command's main features include:
 
 1. Analyzing individual code files to provide summaries of main objects or classes, including descriptions, method lists, and explanations.
 2. Recursively generating overviews for entire folders, creating comprehensive documentation for the folder's purpose and functionality.

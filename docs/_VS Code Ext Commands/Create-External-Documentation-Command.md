@@ -1,11 +1,11 @@
 
 # Create External Documentation Command
 
-## What does this VSCode Extension Command do?
+## What does this VS Code Extension Command do?
 
 This command allows you to generate external documentation for your code snippets or entire files directly from within Visual Studio Code. It leverages the power of AI to understand your code and automatically generate helpful documentation, making it easier for developers to document their codebase.
 
-## Why should I use this VSCode Extension Command?
+## Why should I use this VS Code Extension Command?
 
 Writing documentation can be a tedious and time-consuming task, especially for complex codebases. This command streamlines the process by automatically generating documentation based on your code. It saves you time and effort, allowing you to focus on coding while still maintaining a well-documented codebase!!!
 
