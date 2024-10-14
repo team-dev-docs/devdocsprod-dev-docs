@@ -16,4 +16,19 @@ This file describes a VS Code extension command called "Create External Document
 
 The file provides a comprehensive overview of the command's functionality, configuration options, prerequisites, and step-by-step usage instructions, making it a valuable resource for developers using this VS Code extension.
 
+---
+# Create External Documentation Command docs/_VS Code Ext Commands/Create-External-Documentation-Command.md
+## Imported Code Object
+Certainly! Here's a concise explanation of the "Create External Documentation Command" based on the provided code snippet:
+
+The "Create External Documentation Command" is a feature in a Visual Studio Code extension that:
+
+1. Automatically generates documentation for code snippets or entire files within VS Code.
+2. Uses AI to analyze and understand the code.
+3. Produces helpful external documentation without manual writing.
+4. Aims to save developers time and effort in documenting their codebase.
+5. Helps maintain well-documented projects while allowing developers to focus on coding.
+
+This command essentially automates the documentation process, making it easier for developers to keep their code well-documented without the tedious task of writing documentation manually.
+
   
