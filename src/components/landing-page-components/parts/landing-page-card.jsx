@@ -7,6 +7,8 @@ const LandingPageCard = ({
 }) => {
   const { isMobile } = useIsMobile();
 
+  // test
+
   return (
     <div
       className={isMobile ?
