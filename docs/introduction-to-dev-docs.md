@@ -6,7 +6,7 @@ sidebar_position: 1
 
   # Welcome to Dev-Docs
 
-Dev-Docs is a powerful documentation solution that streamlines the process of creating, managing, and maintaining high-quality documentation for your codebase. Using AI-powered analysis and Markdown formatting, Dev-Docs ensures that your documentation is always up-to-date, comprehensive, and easily accessible. Use Dev-Docs to document your codebase, APIs, and SDKs, as well as new features and use cases of your product.
+Dev-Docs is a powerful documentation solution that streamlines the process of creating, managing, and maintaining high-quality documentation for your codebase. Using AI-powered analysis and Markdown formatting, Dev-Docs ensures that your documentation is always up-to-date, comprehensive, and easily accessible. Use Dev-Docs to document your codebase, APIs, and SDKs, as well as new features and use cases of your product. 
 
 ## Why Choose Dev-Docs?
 
