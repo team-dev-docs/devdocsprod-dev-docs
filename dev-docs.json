@@ -5,5 +5,11 @@
       "docs"
     ],
     "mappings": []
+  },
+  "gitHubApp": {
+    "workflows": [
+      "generateDocs",
+      "generateChangelog"
+    ]
   }
 }
