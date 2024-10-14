@@ -1,9 +1,6 @@
 {
   "external": true,
   "ai": {
-    "contextDirs": [
-      "docs"
-    ],
     "mappings": []
   },
   "gitHubApp": {
