@@ -2,16 +2,16 @@
 
   ---
 # High Level Context
-## context
+## Context
 This file provides documentation for the "Generate Documentation for a Folder" command in the Dev-Docs VS Code extension. It explains:
 
-1. What the command does (creates documentation for the current folder in the workspace)
-2. Why it's useful (improves project organization, provides context, aids collaboration)
+1. What the command does (creates comprehensive documentation for the current folder in the workspace)
+2. Why it's useful (enhances project organization, provides valuable context, and facilitates collaboration)
 3. Relevant configuration options in dev-docs.json (contextDirs and mappings)
-4. Prerequisites for using the command
-5. Step-by-step instructions on how to use the command
+4. Prerequisites for using the command effectively
+5. Step-by-step instructions on how to use the command efficiently
 
-The document is structured to give users a comprehensive understanding of the feature, its benefits, and how to implement it effectively in their projects. It serves as a guide for developers looking to improve their project documentation using the Dev-Docs extension in Visual Studio Code.
+The document is structured to give users a thorough understanding of the feature, its benefits, and how to implement it effectively in their projects. It serves as a detailed guide for developers looking to improve their project documentation using the Dev-Docs extension in Visual Studio Code. Additionally, it highlights best practices for organizing and structuring project files to maximize the utility of the generated documentation.
 
   
 ---
@@ -30,6 +30,6 @@ Certainly! This JSON snippet represents a configuration for organizing and mappi
    - Files from "src/components" will be mapped to "UI Components" in the cloud or documentation structure.
    - Files from "src/utils" will be mapped to "Utility Functions" in the cloud or documentation structure.
 
-This configuration helps in organizing and structuring project files when generating documentation or syncing with cloud storage.
+This configuration helps in organizing and structuring project files when generating documentation or syncing with cloud storage. It allows for a more logical and intuitive organization of documentation, making it easier for team members to navigate and understand the project structure.
 
   
