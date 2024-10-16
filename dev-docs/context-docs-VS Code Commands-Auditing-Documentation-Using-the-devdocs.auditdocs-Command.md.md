@@ -2,47 +2,46 @@
 
   ---
 # High Level Context
-## context
-This Markdown file provides documentation for the "Audit Docs" command in a VS Code extension called Dev-Docs. The command, `devdocs.auditDocs`, is used to analyze and improve the quality of existing documentation in a project. The file explains:
+## Context
+This Markdown file provides comprehensive documentation for the "Audit Docs" command in the Dev-Docs VS Code extension. The `devdocs.auditDocs` command is designed to analyze and enhance the quality of existing project documentation. Here's an overview of the key aspects covered:
 
-1. The purpose of the command: to audit Markdown files for issues like grammar, spelling, clarity, and visual appeal.
-2. Why it's useful: to maintain high-quality, accurate, and clear documentation.
-3. Relevant configuration options in the `dev-docs.json` file, including custom audit tasks.
-4. Prerequisites for using the command.
-5. Step-by-step instructions on how to use the command within VS Code.
-6. The output of the command: a generated `dev-docs_audit.md` file with audit results and potential GitHub issues for identified problems.
+1. Purpose: To audit Markdown files for various issues, including grammar, spelling, clarity, and visual appeal.
+2. Benefits: Helps maintain high-quality, accurate, and clear documentation throughout the project lifecycle.
+3. Configuration: Explains relevant options in the `dev-docs.json` file, including customizable audit tasks.
+4. Prerequisites: Outlines necessary setup before using the command.
+5. Usage Instructions: Provides a step-by-step guide on how to utilize the command within VS Code.
+6. Output: Details the generated `dev-docs_audit.md` file containing audit results and potential GitHub issues for identified problems.
 
-The document serves as a guide for developers to understand and effectively use the audit functionality provided by the Dev-Docs extension to improve their project documentation.
+This document serves as a comprehensive guide for developers to effectively leverage the audit functionality provided by the Dev-Docs extension, ultimately improving their project documentation.
 
 ---
-# Example JSON of relevant Dev-Docs.json options docs/VS Code Commands/Auditing-Documentation-Using-the-devdocs.auditdocs-Command.md
+# Example JSON of Relevant `dev-docs.json` Options
 ## Imported Code Object
-This JSON snippet represents a configuration for AI-related tasks, specifically focusing on document auditing. Here's a concise explanation:
+```json
+{
+  "ai": {
+    "auditTasks": [
+      "Check sections where code blocks might result in errors",
+      "Ensure consistent formatting and styling throughout the document",
+      "Verify accuracy of technical terms and concepts",
+      "Identify and suggest improvements for unclear explanations"
+    ]
+  }
+}
+```
 
-1. The `ai` object contains settings related to AI functionality.
+This JSON snippet illustrates the configuration for AI-powered document auditing tasks. Here's a breakdown of its structure and purpose:
 
-2. Within `ai`, there's an `auditTasks` array that lists specific tasks for the AI to perform during a document audit.
+1. The `ai` object encapsulates settings related to AI functionality within the Dev-Docs extension.
 
-3. The two tasks listed are:
-   - Checking sections where code blocks might result in errors
-   - Ensuring consistent formatting and styling throughout the document
+2. The `auditTasks` array within `ai` specifies a list of tasks for the AI to perform during document audits.
 
-This configuration would likely be used to guide an AI system in performing automated quality checks on technical documentation or code samples.
+3. The tasks include:
+   - Checking for potential errors in code blocks
+   - Ensuring consistent formatting and styling
+   - Verifying the accuracy of technical content
+   - Identifying areas where explanations could be improved for clarity
 
-  
----
-# Example JSON of Relevant `dev-docs.json` Options docs/VS Code Commands/Auditing-Documentation-Using-the-devdocs.auditdocs-Command.md
-## Imported Code Object
-This JSON snippet represents a configuration option for an AI-related task, specifically for auditing documentation. Here's a concise explanation:
-
-1. The `ai` object contains settings related to AI functionalities.
-
-2. Within `ai`, there's an `auditTasks` array that lists specific tasks for the AI to perform when auditing documentation.
-
-3. The two tasks specified are:
-   - Checking sections where code blocks might result in errors
-   - Ensuring consistent formatting and styling throughout the documentation
-
-This configuration would likely be used to guide an AI system in performing automated quality checks on developer documentation, focusing on code accuracy and overall document consistency.
+This configuration guides the AI system in conducting thorough, automated quality checks on technical documentation, focusing on code accuracy, document consistency, and overall clarity of explanations.
 
   
