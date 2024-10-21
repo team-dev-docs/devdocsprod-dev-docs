@@ -1,0 +1,69 @@
+
+
+  ## Step 1: Login to Dev-Docs
+
+Click on the "Login with GitHub" button on the Dev-Docs homepage.
+
+![Login with GitHub button](/img/installing_the_github_app_on_your_repos/step_1.png)
+
+## Step 2: Navigate to GitHub App Installation
+
+On the dashboard, locate and click on the "GitHub App and Action" card.
+
+![GitHub App and Action card](/img/installing_the_github_app_on_your_repos/step_2.png)
+
+## Step 3: Begin Installation Process
+
+Click the "Get started" button to initiate the GitHub App installation process.
+
+![Get started button](/img/installing_the_github_app_on_your_repos/step_3.png)
+
+## Step 4: Install GitHub App
+
+Click on the "Install Github App" button to proceed to GitHub's app installation page.
+
+![Install Github App button](/img/installing_the_github_app_on_your_repos/step_4.png)
+
+## Step 5: Configure GitHub App
+
+On the GitHub App page, click the "Configure" button to set up the app for your account.
+
+![Configure button](/img/installing_the_github_app_on_your_repos/step_5.png)
+
+## Step 6: Select Account
+
+Choose the GitHub account where you want to install the Dev-Docs GitHub App.
+
+![Select GitHub account](/img/installing_the_github_app_on_your_repos/step_6.png)
+
+## Step 7: Access Repository Selection
+
+Click on the icon button to open the repository selection options.
+
+![Repository selection icon](/img/installing_the_github_app_on_your_repos/step_7.png)
+
+## Step 8: Choose Repositories
+
+Select whether to install the app on all repositories or only specific ones. Review the permissions requested by the app.
+
+![Repository and permission selection](/img/installing_the_github_app_on_your_repos/step_8.png)
+
+## Step 9: Confirm Installation Settings
+
+Review your selected settings and ensure all repositories and permissions are correct.
+
+![Confirm installation settings](/img/installing_the_github_app_on_your_repos/step_9.png)
+
+## Step 10: Install the GitHub App
+
+Click the "Install" button to complete the GitHub App installation process.
+
+![Install button](/img/installing_the_github_app_on_your_repos/step_10.png)
+
+## Step 11: Finalize Setup on Dev-Docs
+
+Return to the Dev-Docs site and click "Complete Github App Setup" to finalize the installation.
+
+![Complete Github App Setup button](/img/installing_the_github_app_on_your_repos/step_11.png)
+
+  
