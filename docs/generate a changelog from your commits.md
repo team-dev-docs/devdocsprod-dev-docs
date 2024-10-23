@@ -1,6 +1,6 @@
 
 
-  # Generate a Changelog from Your Commits
+# Generate a Changelog from Your Commits
 
 ## Step 1: Access the Dev-Docs Platform
 
@@ -41,8 +41,6 @@ Select the checkbox next to the desired repository.
 ## Step 7: Configure Changelog Settings
 
 Adjust the settings for your changelog generation, including the commit selection method and the location for the new document.
-
-![image for /img/generate_a_changelog_from_your_commits/step_7](/img/generate_a_changelog_from_your_commits/step_7.png)
 
 ## Step 8: Select Commit Range
 

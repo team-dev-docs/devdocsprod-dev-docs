@@ -1,6 +1,6 @@
 
 
-  ## Step 1: Navigate to Dev-Docs Homepage
+## Step 1: Navigate to Dev-Docs Homepage
 
 Visit the Dev-Docs homepage to begin the process of generating new documentation from your existing docs.
 
@@ -51,8 +51,6 @@ Review and adjust the settings for your new document or page creation, including
 ## Step 9: Enter Document Prompt
 
 Write your response in the text area, providing a prompt for the new document you want to generate.
-
-![image for /img/generate_new_docs_from_your_existing_docs/step_9](/img/generate_new_docs_from_your_existing_docs/step_9.png)
 
 ## Step 10: Submit Generation Request
 
