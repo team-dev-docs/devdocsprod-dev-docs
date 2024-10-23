@@ -74,7 +74,7 @@ Click the "Publish" button to finalize and make your new documentation live.
 
 Navigate to your GitHub repository to view the newly published documentation.
 
-![image for /img/generate_new_docs_from_your_existing_docs/step_13](/img/generate_new_docs_from_your_existing_docs/step_13.png)
+
 
 ## Step 14: Review Branch Information
 

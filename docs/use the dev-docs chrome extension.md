@@ -18,6 +18,6 @@ Navigate through the extension's user interface by clicking on various elements 
 
 When you're finished interacting with the extension, open the Chrome extension menu and select the "Complete Capture" option to finalize your session.
 
-![image for /img/use_the_dev-docs_chrome_extension/step_4](/img/use_the_dev-docs_chrome_extension/step_4.png)
+
 
   
