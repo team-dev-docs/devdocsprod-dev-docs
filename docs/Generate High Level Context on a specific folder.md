@@ -2,26 +2,23 @@
 
   ## Generate High Level Context on a Specific Folder
 
-## Step 1: Access Folder Context Menu
+## Step 1: Access the Complete Capture Feature
 
-Right-click on the desired folder and select the "Generate context for folder" option.
+Click on the icon button to initiate the Complete Capture process.
 
 ![image for /img/generate_high_level_context_on_a_specific_folder/step_1](/img/generate_high_level_context_on_a_specific_folder/step_1.png)
 
-## Step 2: Review Generated Context
+## Step 2: Review the Generated High Level Context
 
-Navigate to the generated high-level context for the selected folder. You will find a summary of the folder's purpose and functionality.
+Examine the generated High Level Context for the specific folder. This context includes:
+
+- Last update timestamp
+- Summary of the code file
+- Main code object description
+- List of methods and their descriptions
 
 ![image for /img/generate_high_level_context_on_a_specific_folder/step_2](/img/generate_high_level_context_on_a_specific_folder/step_2.png)
 
-The generated context will include:
-
-- Last updated timestamp
-- Purpose of the folder
-- High-level overview of the folder's contents and functionality
-- Specific features or components present in the folder (e.g., Image Background Removal, Sprite Generation)
-- Details about test files and their purposes
-
-This high-level context provides a quick understanding of the folder's contents and helps in navigating complex project structures.
+The generated context provides an overview of the code file, including its purpose, main components, and key methods. This information helps in quickly understanding the structure and functionality of the code within the selected folder.
 
   
