@@ -59,7 +59,7 @@ Wait for the documentation to generate, and then right click to open the context
 
 ### Step 1: Click on the 'dev-docs: Populate External Docs' option to generate user-facing content for your public docs
 
-Open the command palette with `shift cmd P`, and find/click on the 'dev-docs: Populate External Docs' option.
+Open the command palette with `shift cmd P`, and find/click on the 'dev-docs: Populate External Docs' option. You can navigate to the repo in GitHub to view the output. 
 
 ![This is the image for SPAN with the text: dev-docs: Populate External Docs and then clicked](/img/devdocs_quickstart/step_5.png)
 

@@ -50,7 +50,7 @@ json
 - Visual Studio Code
 - The DevDocs extension installed and configured
 
-## How do I use this VSCode Extension Command?
+## How do I use this VS Code Extension Command?
 
 1. Open your project in Visual Studio Code.
 2. In the editor, select the code snippet or file you want to generate documentation for.

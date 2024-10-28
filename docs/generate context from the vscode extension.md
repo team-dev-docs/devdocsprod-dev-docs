@@ -1,10 +1,10 @@
 
 
-  ## Generate Context from the VSCode Extension
+  ## Generate Context from the VS Code Extension
 
 ### Step 1: Access the Extension Menu
 
-Click on the "Generate Context" button in the welcome view of the VSCode extension.
+Click on the "Generate Context" button in the Dev-Docs menu within VS Code.
 
 ![image for /img/generate_context_from_the_vscode_extension/step_1](/img/generate_context_from_the_vscode_extension/step_1.png)
 
