@@ -1,14 +1,14 @@
 # Outline Command for Dev-Docs Extension
 
-## What does this Vs Code Extension Command do?
+## What Does This VS Code Extension Command Do?
 
 The `devdocs.outline` command is responsible for generating an outline or structure for the documentation of a project based on the codebase. It analyzes the project's files, directories, and the existing `dev-docs.json` file to determine which parts of the codebase should be documented and how they should be organized.
 
-## Why should I use this Vs Code Extension Command?
+## Why Should I Use This VS Code Extension Command?
 
 This command is useful for creating a solid foundation for your project's documentation. It streamlines the process of identifying the relevant parts of the codebase that should be included in the documentation, and generates a structured outline based on that analysis. This can save a significant amount of time and effort compared to manually creating the documentation structure from scratch.
 
-## What are relevant configuration Options in the `dev-docs.json`?
+## What Are Relevant Configuration Options in the `dev-docs.json`?
 
 The `dev-docs.json` file contains several configuration options that are relevant to the `devdocs.outline` command:
 
@@ -17,7 +17,7 @@ The `dev-docs.json` file contains several configuration options that are relevan
 - `workspaceRoot`: The root directory of the workspace or project.
 - `customRoot`: A custom root directory path within the workspace, if different from the default workspace root.
 
-## Example JSON of relevant Dev-Docs.json options
+## Example JSON of Relevant `dev-docs.json` Options
 
 ```json
 {
@@ -46,7 +46,7 @@ Before running the `devdocs.outline` command, ensure that:
 1. Your project has a `dev-docs.json` file at the root level.
 2. The `dev-docs.json` file contains the necessary configuration options, such as `ai.contextDirs`, `workspaceRoot`, or `customRoot`.
 
-## How do I use this Vs Code Extension Command?
+## How Do I Use This VS Code Extension Command?
 
 1. Open your project in Visual Studio Code.
 2. Open the Command Palette by pressing `Ctrl+Shift+P` (Windows/Linux) or `Cmd+Shift+P` (macOS).

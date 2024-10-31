@@ -3,7 +3,7 @@ import PrimaryButtonWhiteText from '../parts/landing-page-button-primary-white-t
 import { useIsMobile } from '../context-providers/mobile-context-provider';
 
 const LandingPageCommunityCard = () => {
-  const isMobile = useIsMobile();
+  const { isMobile } = useIsMobile();
 
   return (
     <div

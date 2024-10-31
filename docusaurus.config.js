@@ -16,6 +16,10 @@ const logoJson = require('./logo.json')
 const config = {
   scripts: [
     {
+      src: 'https://app.termly.io/resource-blocker/ee5d9b1d-d5ea-431c-baff-84e1083d2614?autoBlock=on',
+      async: true
+    },
+    {
       src: 'https://kit.fontawesome.com/c11e540390.js',
       crossorigin: 'anonymous',
     },
@@ -59,6 +63,14 @@ const config = {
         id: "apiDocs",
         docsPluginId: "classic",
         config: openApiCongfig
+      },
+    ],
+    [
+      "posthog-docusaurus",
+      {
+        apiKey: "phc_Q3Rna4XzIjrTqqUDwIPTffPplnZXKDQvGaYA5OsVPtA",
+        appUrl: "https://us.i.posthog.com", // optional, defaults to "https://us.i.posthog.com"
+        enableInDevelopment: false, // optional
       },
     ],
     async function myPlugin(context, options) {

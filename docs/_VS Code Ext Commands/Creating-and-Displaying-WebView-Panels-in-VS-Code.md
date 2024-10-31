@@ -15,7 +15,7 @@ WebView panels provide a way to embed web content (HTML, CSS, and JavaScript) wi
 - Creating custom tooling or development environments
 - Integrating web-based tools or services
 
-## What are relevant configuration options in the `dev-docs.json`?
+## What Are Relevant Configuration Options in the `dev-docs.json`?
 As this code does not directly interact with the `dev-docs.json` configuration file, there are no specific configuration options relevant to its functionality.
 
 ## Prerequisites

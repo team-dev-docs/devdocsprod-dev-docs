@@ -7,7 +7,7 @@ const LandingPageFeatureCard = ({
   title,
   description,
 }) => {
-  const isMobile = useIsMobile();
+  const { isMobile } = useIsMobile();
 
   return (
     <CardSpotlight

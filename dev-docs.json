@@ -1,11 +1,12 @@
 {
   "external": true,
   "ai": {
-    "contextDirs": [
-      "docs"
-    ],
-    "task": "dev-docs/task.md",
-    "auditTasks": ["dev-docs/audit_task_one.md"],
     "mappings": []
+  },
+  "gitHubApp": {
+    "workflows": [
+      "generateDocs",
+      "generateChangelog"
+    ]
   }
 }

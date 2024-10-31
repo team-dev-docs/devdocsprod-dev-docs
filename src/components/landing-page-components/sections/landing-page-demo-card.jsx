@@ -4,7 +4,7 @@ import LandingPageLink from '../parts/landing-page-link';
 import { useIsMobile } from '../context-providers/mobile-context-provider';
 
 const LandingPageDemoCard = () => {
-  const isMobile = useIsMobile();
+  const { isMobile } = useIsMobile();
 
   return (
     <LandingPageCard>

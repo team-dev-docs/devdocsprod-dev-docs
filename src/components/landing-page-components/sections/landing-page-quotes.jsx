@@ -56,7 +56,7 @@ const QUOTES = [
 ];
 
 const LandingPageQuotes = () => {
-  const isMobile = useIsMobile();
+  const { isMobile } = useIsMobile();
 
   return (
     <div
@@ -77,6 +77,7 @@ const LandingPageQuotes = () => {
 
       <InfiniteMovingCards
         items={QUOTES}
+        speed="slow"
       />
 
       {/* <div

@@ -1,6 +1,6 @@
 # Audit Markdown Documents
 
-## What does this Vs Code Extension Command do?
+## What Does This VS Code Extension Command Do?
 
 This Visual Studio Code extension command, `devdocs.auditDocs`, is designed to analyze and audit the markdown files in a project's documentation directory. It leverages the power of AI to identify and suggest improvements for various aspects of the documentation, including grammar, spelling, clarity, and aesthetics.
 
@@ -15,7 +15,7 @@ The command performs the following tasks:
 7. The suggestions for each file are collected and formatted into a new markdown document named `_audit.md`, which is saved in the documentation directory.
 8. Additionally, the command creates GitHub issues for each file, including the suggestions from the AI service.
 
-## Why should I use this Vs Code Extension Command?
+## Why Should I Use This VS Code Extension Command?
 
 Maintaining high-quality documentation is crucial for any project, but it can be a time-consuming and tedious task. This extension command automates the process of auditing and improving documentation, leveraging the capabilities of AI to identify areas for improvement and provide suggestions. By using this command, you can:
 
@@ -25,7 +25,7 @@ Maintaining high-quality documentation is crucial for any project, but it can be
 4. **Optimize Aesthetics**: The command can suggest improvements to the visual appearance and formatting of your documentation, ensuring a pleasing and consistent look across all files.
 5. **Save Time and Effort**: By automating the auditing process, you can save significant time and effort that would otherwise be spent manually reviewing and editing your documentation.
 
-## What are relevant configuration Options in the `dev-docs.json`?
+## What Are Relevant Configuration Options in the `dev-docs.json`?
 
 The `dev-docs.json` file allows you to configure various aspects of the extension's behavior. The relevant configuration options for the `devdocs.auditDocs` command include:
 
@@ -33,7 +33,7 @@ The `dev-docs.json` file allows you to configure various aspects of the extensio
 2. **`workspaceRoot`**: If set, this option specifies the root directory of your project, overriding the default behavior of using the workspace's root directory.
 3. **`customRoot`**: If set, this option allows you to specify a subdirectory within your project as the root for the documentation directory. This can be useful if your documentation files are organized in a specific subdirectory.
 
-## Example JSON of relevant Dev-Docs.json options
+## Example JSON of Relevant `dev-docs.json` Options
 
 ```json
 {
@@ -61,7 +61,7 @@ To use the `devdocs.auditDocs` command effectively, you should have the followin
 3. **AI Service Integration**: The extension must be configured to communicate with an AI service capable of analyzing and suggesting improvements for your documentation. This may require setting up credentials or API keys for the AI service.
 4. **Documentation Directory**: Your project should have a dedicated directory for storing documentation files, typically named `docs`.
 
-## How do I use this Vs Code Extension Command?
+## How Do I Use This VS Code Extension Command?
 
 To use the `devdocs.auditDocs` command, follow these steps:
 

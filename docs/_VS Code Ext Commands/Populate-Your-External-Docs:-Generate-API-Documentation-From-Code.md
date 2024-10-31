@@ -1,14 +1,14 @@
 # Populate Your External Docs
 
-## What does this VS Code Extension Command do?
+## What Does This VS Code Extension Command Do?
 
 This VS Code extension command allows you to generate external documentation for your codebase, specifically for methods, classes, and functions. It analyzes your code, identifies relevant symbols (methods, classes, functions), and generates detailed documentation pages for each symbol. These documentation pages are then published to an external location, such as a documentation website or a cloud storage service.
 
-## Why should I use this VS Code Extension Command?
+## Why Should I Use This VS Code Extension Command?
 
 Maintaining up-to-date documentation is crucial for any software project, especially as the codebase grows in size and complexity. This extension automates the process of generating documentation, saving you time and effort. It ensures that your documentation is always in sync with your codebase, reducing the risk of outdated or incomplete information.
 
-## What are relevant configuration options in the `dev-docs.json`?
+## What Are Relevant Configuration Options in the `dev-docs.json`?
 
 The `dev-docs.json` file is used to configure various aspects of the documentation generation process. Here are some relevant options:
 
@@ -38,7 +38,7 @@ The `dev-docs.json` file is used to configure various aspects of the documentati
 - A configured `dev-docs.json` file with the desired settings for documentation generation.
 - An external location or service to publish the generated documentation pages.
 
-## How do I use this VS Code Extension Command?
+## How Do I Use This VS Code Extension Command?
 
 1. Open your project in Visual Studio Code.
 2. Ensure that the `dev-docs.json` file is correctly configured for your project.

@@ -1,14 +1,14 @@
 # Generating High-Level Context for Code Files and Folders
 
-## What does this VSCode Extension Command do?
+## What does this VS Code Extension Command do?
 
 This command generates a high-level overview or context for individual code files or entire folders. For code files, it analyzes the code and provides a summary of the main object or class, including a description, a list of methods with code examples, and explanations for each public method. For folders, it recursively generates high-level overviews for each code file within the folder and then creates a comprehensive overview that describes the purpose and functionality of the folder as a whole.
 
-## Why should I use this VSCode Extension Command?
+## Why should I use this VS Code Extension Command?
 
 Generating high-level context documentation is essential for understanding and maintaining codebases, especially in large projects or when working with unfamiliar code. This command automates the process of creating documentation, saving developers time and effort. Additionally, having up-to-date and accurate documentation can improve code readability, facilitate knowledge sharing, and make it easier for new team members or contributors to onboard.
 
-## What are relevant configuration Options in the `dev-docs.json`?
+## What Are Relevant Configuration Options in the `dev-docs.json`?
 
 The `dev-docs.json` file contains configuration options that control the behavior of the context generation process. The relevant options are:
 
@@ -16,7 +16,7 @@ The `dev-docs.json` file contains configuration options that control the behavio
 - `workspaceRoot`: If set, this option specifies the root directory of the workspace for which the documentation should be generated.
 - `customRoot`: If set, this option specifies a custom root directory within the workspace for which the documentation should be generated.
 
-## Example JSON of relevant Dev-Docs.json options
+## Example JSON of Relevant `dev-docs.json` Options
 
 ```json
 {
@@ -34,7 +34,7 @@ Before using this command, ensure that you have the following:
 2. The `dev-docs.json` file configured with the desired settings.
 3. A supported code file or folder within the workspace.
 
-## How do I use this VSCode Extension Command?
+## How do I use this VS Code Extension Command?
 
 To generate high-level context documentation for a code file or folder, follow these steps:
 

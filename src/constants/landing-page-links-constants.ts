@@ -2,9 +2,13 @@ export const LINK_HOW_IT_WORKS = '#features';
 export const LINK_PRICING = '/pricing';
 export const LINK_DOCS = '/docs';
 export const LINK_BLOG = '/blog';
-export const LINK_GET_STARTED = '/docs/category/initial-setup-and-quickstart';
+export const LINK_GET_STARTED = '/docs/category/initial-setup';
 export const LINK_SIGN_IN = 'https://dev-docs.io';
 export const LINK_BOOK_MEETING = 'https://dub.sh/devdocs';
 export const LINK_CHAT_WITH_FOUNDERS = 'https://dub.sh/devdocs';
 export const LINK_LINKEDIN = 'https://www.linkedin.com/company/dev-docs';
 export const LINK_GITHUB = 'https://github.com/team-dev-docs';
+export const HOME_PAGE = '/';
+export const LINK_PRIVACY_POLICY = 'https://app.termly.io/document/privacy-policy/f93b0777-1325-40b0-b83a-e8f1fc82c82c';
+export const LINK_TERMS_OF_SERVICE = 'https://app.termly.io/policy-viewer/policy.html?policyUUID=32f204fe-a9c2-468e-ae48-a49decd878f9';
+export const INTEGRATION_REQUEST = 'https://pgdaqkquqfk.typeform.com/to/R1JwhIH6'

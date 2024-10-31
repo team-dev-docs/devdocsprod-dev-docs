@@ -1,6 +1,6 @@
 # Git Commit, Pull and Push Extension
 
-## What does this VS Code Extension Command do?
+## What Does This VS Code Extension Command Do?
 
 This VS Code extension command automates the process of committing, pulling, and pushing changes to a Git repository. It performs the following steps:
 
@@ -12,15 +12,15 @@ This VS Code extension command automates the process of committing, pulling, and
    - `git pull origin [current branch]`: Pulls the latest changes from the remote repository's current branch.
    - `git push origin [current branch]`: Pushes the committed changes to the remote repository's current branch.
 
-## Why should I use this VS Code Extension Command?
+## Why Should I Use This VS Code Extension Command?
 
 Using this extension command can streamline the process of committing and synchronizing changes with a remote Git repository. It saves time by automating the repetitive steps involved in the Git workflow, allowing developers to focus on writing code and documenting changes efficiently. Additionally, it ensures consistent commit messages with timestamped information, making it easier to track changes over time.
 
-## What are relevant configuration Options in the `dev-docs.json`?
+## What Are Relevant Configuration Options in the `dev-docs.json`?
 
 This code does not reference any configuration options from a `dev-docs.json` file. It appears to be a standalone command that does not require any external configuration.
 
-## Example JSON of relevant Dev-Docs.json options
+## Example JSON of Relevant `dev-docs.json` Options
 
 Since this code does not use any configuration options from a `dev-docs.json` file, there are no relevant examples to provide.
 
@@ -32,7 +32,7 @@ To use this VS Code extension command, the following prerequisites must be met:
 2. The current working directory must be a Git repository or a subdirectory within a Git repository.
 3. You must have the necessary permissions to commit and push changes to the remote repository.
 
-## How do I use this VS Code Extension Command?
+## How Do I Use This VS Code Extension Command?
 
 To use this VS Code extension command, follow these steps:
 

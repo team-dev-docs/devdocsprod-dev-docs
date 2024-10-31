@@ -6,6 +6,8 @@ The `dev-docs.json` file is a configuration file used by the Dev-Docs extension 
 
 The `quickDoc` object in the JSON schema defines configuration options related to generating quick documentation for variables and functions.
 
+<br></br>
+
 | Configuration Option | Description | Relevant VS Code Commands |
 | -------------------- | ----------- | -------------------------- |
 | `quickDoc.variablesAndFunctions.prompts` | An array of objects defining prompts for generating documentation for variables and functions. Each object has `title` and `question` properties. | `generate documentation` |
@@ -34,5 +36,11 @@ The `ai` object within the `dev-docs.json` schema contains several configuration
 The `dev-docs.json` schema also includes the following configuration options:
 
 - `quickDoc`: Configures the prompts and behavior for generating quick documentation for variables and functions.
+
+<br></br>
+
 - `customRoot`: Specifies the custom root directory for your project, relative to the workspace root.
+
+<br></br>
+
 - `workspaceRoot`: Sets the workspace root directory for your project.

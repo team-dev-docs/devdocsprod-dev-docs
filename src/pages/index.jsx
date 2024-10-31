@@ -16,14 +16,12 @@ import LandingPageHeader from '../components/landing-page-components/sections/la
 
 import "../css/landingpage.scss";
 
-
 const LandingPage = () => {
   return (
     <MobileContextProvider>
       <div
         className={"w-full font-sans bg-repeat-y bg-cover bg-landing-page text-[#ECECEC] flex flex-col"}
       >
-        <LandingPageHeader />
         <LandingPageInitial />
         <LandingPageDemoCard />
         <LandingPageHasYourBack />

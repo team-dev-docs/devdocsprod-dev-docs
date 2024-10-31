@@ -5,7 +5,9 @@ const LandingPageCard = ({
   className = '',
   children,
 }) => {
-  const isMobile = useIsMobile();
+  const { isMobile } = useIsMobile();
+
+  // test tes
 
   return (
     <div

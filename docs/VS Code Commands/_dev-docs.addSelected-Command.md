@@ -4,10 +4,10 @@ slug: /VS-Code-Commands/Add-Selected
 
 # Add Selected
 
-**What does this VS Code Extension Command do?**
+**What Does This VS Code Extension Command Do?**
 The `devdocs.addSelected` command allows you to generate documentation for the selected code in your editor. It analyzes the selected code and provides relevant documentation, explanations, and context to help you understand and work with that code more effectively.
 
-**Why should I use this VS Code Extension Command?**
+**Why Should I Use This VS Code Extension Command?**
 This command is useful when you need to quickly understand the purpose, functionality, or usage of a specific piece of code. Instead of manually searching through documentation or sifting through comments, you can simply select the code and let the extension generate the relevant documentation for you. This can save you time and effort, especially when working with complex codebases or unfamiliar libraries.
 
 **What are relevant configuration Options in the `dev-docs.json`?**
@@ -53,7 +53,7 @@ The following configuration options in the `dev-docs.json` file are relevant for
 **Prerequisites**
 To use the `devdocs.addSelected` command, you need to have the Dev-Docs extension installed and configured in your Visual Studio Code environment. Additionally, you should have a `dev-docs.json` configuration file set up in your project with the relevant options defined.
 
-**How do I use this VS Code Extension Command?**
+**How Do I Use This VS Code Extension Command?**
 1. Open the file containing the code you want to document in Visual Studio Code.
 2. Select the code you want to generate documentation for.
 3. Right-click on the selected code, or open the command palette (`Ctrl+Shift+P` on Windows/Linux, `Cmd+Shift+P` on macOS).

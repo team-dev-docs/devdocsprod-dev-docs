@@ -1,10 +1,10 @@
 # Dev-Docs Search Extension
 
-## What does this VS Code Extension Command do?
+## What Does This VS Code Extension Command Do?
 
 The `devdocs.showSearchResults` command in the provided code allows users to search for specific content within the documentation files (`.md` files) present in the `dev-docs` directory of their project. When triggered, the command prompts the user to enter a search query and then performs a full-text search across all the `.md` files, excluding the `reference.md` file(s). The search results are then displayed within VS Code, providing easy access to the relevant documentation sections.
 
-## Why should I use this VS Code Extension Command?
+## Why Should I Use This VS Code Extension Command?
 
 This command is particularly useful when working on large codebases with extensive documentation. It allows developers to quickly find information related to specific topics, classes, methods, or concepts without having to manually browse through multiple files. By enabling efficient searching within the documentation, this command can significantly improve productivity and make it easier to understand and navigate the codebase.
 
@@ -16,7 +16,7 @@ To use the `devdocs.showSearchResults` command, the following prerequisites must
 2. The VS Code extension that provides this command must be installed and enabled.
 3. The project must be opened in VS Code, and the workspace must be properly configured.
 
-## How do I use this VS Code Extension Command?
+## How Do I Use This VS Code Extension Command?
 
 To use the `devdocs.showSearchResults` command, follow these steps:
 

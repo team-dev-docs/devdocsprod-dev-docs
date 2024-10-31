@@ -10,7 +10,7 @@ This extension command, triggered by the `devdocs.generateDocumentation` command
 
 Generating documentation for code can be a time-consuming and tedious task, especially for large codebases or complex functions. This extension automates the process, saving developers time and effort. It can be particularly useful in scenarios where documentation is lacking or outdated, or when onboarding new team members who need to quickly understand the codebase.
 
-## What are relevant configuration options in the `dev-docs.json`?
+## What Are Relevant Configuration Options in the `dev-docs.json`?
 
 The `dev-docs.json` file contains configuration options that control the behavior of the documentation generation process. Some relevant options include:
 

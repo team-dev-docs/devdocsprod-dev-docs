@@ -1,14 +1,14 @@
 # Modify API YAML Documentation
 
-## What does this VS Code Extension Command do?
+## What Does This VS Code Extension Command Do?
 
 This command allows you to modify the documentation of your API routes defined in an OpenAPI YAML file. It provides a user interface to select a specific API route and the section of the route documentation that you want to update, such as the `tags`, `summary`, `x-codeSamples`, or `description`. The command then calls an AI service to generate the updated content for the selected section based on the existing documentation and the code context.
 
-## Why should I use this VS Code Extension Command?
+## Why Should I Use This VS Code Extension Command?
 
 Maintaining API documentation can be a tedious and time-consuming task, especially when dealing with large and complex APIs. This command leverages the power of AI to automate the process of updating API documentation, making it easier to keep your documentation up-to-date and in sync with your code changes. By using this command, you can save time and effort while ensuring that your API documentation remains accurate and consistent.
 
-## What are relevant configuration Options in the `dev-docs.json`?
+## What Are Relevant Configuration Options in the `dev-docs.json`?
 
 The `dev-docs.json` file is used to configure various settings for the extension. The relevant options for this command are:
 
@@ -42,7 +42,7 @@ To use this command effectively, you need to have the following:
 2. A `dev-docs.json` file in your workspace with the appropriate configurations for the AI service and the OpenAPI YAML file.
 3. An AI service set up and configured to generate API documentation based on the provided code context.
 
-## How do I use this VS Code Extension Command?
+## How Do I Use This VS Code Extension Command?
 
 1. Open the command palette in VS Code (`Ctrl+Shift+P` or `Cmd+Shift+P`).
 2. Search for the command "Modify API YAML Documentation" and select it.

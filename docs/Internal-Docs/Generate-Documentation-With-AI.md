@@ -14,6 +14,7 @@ sidebar_position: 4
 
 # Generate Documentation with AI
 
+Out of the box, Dev-Docs will document your codebase by letting you know what each function, class, or variable does on a case by base basis. Below you'll see a step by step guide on how to start generating docs from your VS Code editor.
 
 ## Step 1: Sign into Dev-Docs in VS Code
 
@@ -39,7 +40,7 @@ Select the file you wish to be documented. From there, open the command palette,
 
 ## Step 4: Review the AI Generated Documentation
 
-Wait a couple minutes and find the corresponding Dev-Docs markdown file to check if documentation was generated.
+In just a few minutes you'll see a new Markdown file generated in the Dev-Docs folder in your repo. You can view the raw Markdown there or right click on the file you generated docs for and navigate to **Open Devdocs Markdown** to view it in a rich text editor right next to the file itself. 
 
 ![](/img/generate_documentation_with_ai/step_7.png)
 

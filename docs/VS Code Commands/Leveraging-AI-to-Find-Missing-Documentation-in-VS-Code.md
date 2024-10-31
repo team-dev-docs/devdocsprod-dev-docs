@@ -6,9 +6,11 @@ slug: /VS-Code-Commands/Find-Missing-Documentation
 
 The `devdocs.findMissingDocs` command is a powerful feature of the Dev-Docs VS Code extension that helps you identify gaps in your project's documentation. By analyzing the existing documentation and code, this command suggests titles for new documentation pages that could improve the overall understanding and experience for developers working with your codebase.
 
-## What does this VS Code Extension Command do?
+## What Does This VS Code Extension Command Do?
 
 The `devdocs.findMissingDocs` command performs the following tasks:
+
+<br></br>
 
 1. **Analyzes Existing Documentation**: The command reads and processes all the existing documentation files in your project, gathering information about the covered topics and concepts.
 
@@ -22,11 +24,11 @@ The `devdocs.findMissingDocs` command performs the following tasks:
 
 6. **Creates GitHub Issues**: For each suggested title, the command creates a new GitHub issue explaining why adding a page with that title would be helpful. These issues can serve as a starting point for documenting the missing topics.
 
-## Why should I use this VS Code Extension Command?
+## Why Should I Use This VS Code Extension Command?
 
 Maintaining comprehensive and up-to-date documentation is crucial for any software project, but it can be challenging to identify gaps or areas that need more coverage manually. The `devdocs.findMissingDocs` command helps streamline this process by leveraging AI capabilities to analyze your codebase and existing documentation, ensuring that your documentation remains relevant and helpful for developers.
 
-## What are relevant configuration Options in the `dev-docs.json`?
+## What Are Relevant Configuration Options in the `dev-docs.json`?
 
 The following configuration options in the `dev-docs.json` file are relevant for the `devdocs.findMissingDocs` command:
 
@@ -35,7 +37,7 @@ The following configuration options in the `dev-docs.json` file are relevant for
 - `ai.nameFilters`: An array of strings used to filter code elements (e.g., functions, variables) based on their names.
 - `ai.missing_docs` (output): The suggested titles for missing documentation pages will be added to this property after running the command.
 
-## Example JSON of relevant Dev-Docs.json options
+## Example JSON of Relevant `dev-docs.json` Options
 
 ```json
 {
@@ -52,11 +54,13 @@ The following configuration options in the `dev-docs.json` file are relevant for
 
 Before running the `devdocs.findMissingDocs` command, ensure that:
 
+<br></br>
+
 1. You have a valid GitHub authentication token set up in the Dev-Docs extension.
 2. Your project has existing documentation files and a `dev-docs.json` configuration file.
 3. The `ai` configuration section in `dev-docs.json` is properly set up with the desired filters and options.
 
-## How do I use this VS Code Extension Command?
+## How Do I Use This VS Code Extension Command?
 
 To use the `devdocs.findMissingDocs` command, follow these steps:
 

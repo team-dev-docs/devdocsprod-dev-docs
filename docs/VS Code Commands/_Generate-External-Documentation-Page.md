@@ -6,11 +6,11 @@ slug: /VS-Code-Commands/Generate-an-External-Doc-Page
 
 The `devdocs.createExternalDoc` command allows you to generate an external documentation page for your code or project. This command is particularly useful when you want to create a standalone documentation page that can be hosted separately from your codebase, making it accessible to a wider audience or for reference purposes.
 
-## What does this VS Code Extension Command do?
+## What Does This VS Code Extension Command Do?
 
 The `devdocs.createExternalDoc` command generates an external documentation page based on the code you have open in your editor. It analyzes the code, extracts relevant information, and generates a markdown file containing the documentation. This markdown file can then be hosted on a separate platform, such as a GitHub Pages site or a documentation hosting service.
 
-## Why should I use this VS Code Extension Command?
+## Why Should I Use This VS Code Extension Command?
 
 Using the `devdocs.createExternalDoc` command can provide several benefits:
 
@@ -19,7 +19,7 @@ Using the `devdocs.createExternalDoc` command can provide several benefits:
 3. **Discoverability**: Hosting your documentation on a separate platform can improve its visibility and discoverability, making it easier for others to find and reference.
 4. **Customization**: External documentation pages can be styled and formatted according to your preferences, allowing for a more polished and professional presentation.
 
-## What are relevant configuration Options in the `dev-docs.json`?
+## What Are Relevant Configuration Options in the `dev-docs.json`?
 
 The following configuration options in the `dev-docs.json` file are relevant for the `devdocs.createExternalDoc` command:
 
@@ -30,7 +30,7 @@ The following configuration options in the `dev-docs.json` file are relevant for
 - `ai.codeFilters`: This option allows you to filter the code snippets that should be included in the generated documentation based on specific patterns or keywords.
 - `ai.nameFilters`: This option allows you to filter the code elements that should be included in the generated documentation based on their names.
 
-## Example JSON of relevant Dev-Docs.json options
+## Example JSON of Relevant `dev-docs.json` Options
 
 ```json
 {
@@ -63,7 +63,7 @@ Before using the `devdocs.createExternalDoc` command, make sure you have the fol
 2. A Git repository initialized in your project.
 3. The `dev-docs.json` configuration file set up with the relevant options for generating external documentation.
 
-## How do I use this VS Code Extension Command?
+## How Do I Use This VS Code Extension Command?
 
 To use the `devdocs.createExternalDoc` command, follow these steps:
 
