@@ -1,4 +1,4 @@
-# Configuring Dev-Docs: A User Guide
+# Configuring Dev-Docs: Setting Up the Dev-Docs.JSON
 
 This guide will walk you through the configuration options available in the `dev-docs.json` file for the Dev-Docs extension.
 
