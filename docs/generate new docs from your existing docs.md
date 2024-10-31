@@ -1,6 +1,5 @@
 
-
-  ## Step 1: Navigate to Dev-Docs Homepage
+## Step 1: Navigate to Dev-Docs Homepage
 
 Visit the Dev-Docs homepage to begin the process of generating new documentation from your existing docs.
 
@@ -52,7 +51,6 @@ Review and adjust the settings for your new document or page creation, including
 
 Write your response in the text area, providing a prompt for the new document you want to generate.
 
-![image for /img/generate_new_docs_from_your_existing_docs/step_9](/img/generate_new_docs_from_your_existing_docs/step_9.png)
 
 ## Step 10: Submit Generation Request
 
@@ -76,7 +74,6 @@ Click the "Publish" button to finalize and make your new documentation live.
 
 Navigate to your GitHub repository to view the newly published documentation.
 
-![image for /img/generate_new_docs_from_your_existing_docs/step_13](/img/generate_new_docs_from_your_existing_docs/step_13.png)
 
 ## Step 14: Review Branch Information
 
