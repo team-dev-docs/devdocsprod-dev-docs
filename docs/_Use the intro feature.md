@@ -24,22 +24,6 @@ Study the main JavaScript file, which contains important functions and logic for
 
 ![image for /img/use_the_intro_feature/step_4](/img/use_the_intro_feature/step_4.png)
 
-## Step 5: Understand the Sprite Generation Function
 
-Examine the `generateSprite` function, which is responsible for creating sprite animations.
-
-![image for /img/use_the_intro_feature/step_5](/img/use_the_intro_feature/step_5.png)
-
-## Step 6: Review the DALL-E Integration
-
-Look at how the DALL-E API is integrated into the sprite generation process.
-
-![image for /img/use_the_intro_feature/step_6](/img/use_the_intro_feature/step_6.png)
-
-## Step 7: Explore Additional Functionality
-
-Investigate other functions and features within the project, such as file saving and image processing.
-
-![image for /img/use_the_intro_feature/step_7](/img/use_the_intro_feature/step_7.png)
 
   

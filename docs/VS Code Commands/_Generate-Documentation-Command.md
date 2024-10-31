@@ -4,7 +4,7 @@ slug: /VS-Code-Commands/Generate-Documentation-Command
 
 # Generate Documentation Command
 
-The `devdocs.generateDocumentation` command is a powerful feature of the Dev-Docs VSCode extension that allows you to automatically generate documentation for your codebase. This command leverages the power of artificial intelligence to analyze your code and generate comprehensive documentation, saving you valuable time and effort.
+The `devdocs.generateDocumentation` command is a powerful feature of the Dev-Docs VS Code extension that allows you to automatically generate documentation for your codebase. This command leverages the power of artificial intelligence to analyze your code and generate comprehensive documentation, saving you valuable time and effort.
 
 ## What Does This VS Code Extension Command Do?
 
