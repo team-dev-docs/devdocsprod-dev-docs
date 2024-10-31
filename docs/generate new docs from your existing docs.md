@@ -77,7 +77,7 @@ Navigate to your GitHub repository to view the newly published documentation.
 
 ## Step 14: Review Branch Information
 
-Examine the branch information to ensure your new documentation has been properly integrated.
+Examine the branch information to ensure your new documentation has been properly created.
 
 ![image for /img/generate_new_docs_from_your_existing_docs/step_14](/img/generate_new_docs_from_your_existing_docs/step_14.png)
 
