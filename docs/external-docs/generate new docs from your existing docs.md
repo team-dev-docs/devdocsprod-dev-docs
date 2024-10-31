@@ -51,7 +51,6 @@ Review and adjust the settings for your new document or page creation, including
 
 Write your response in the text area, providing a prompt for the new document you want to generate.
 
-
 ## Step 10: Submit Generation Request
 
 Click on the icon button to submit your document generation request.

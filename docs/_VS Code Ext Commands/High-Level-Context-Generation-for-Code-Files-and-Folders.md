@@ -38,7 +38,7 @@ Before using this command, ensure that you have the following:
 
 To generate high-level context documentation for a code file or folder, follow these steps:
 
-1. Open the command palette in VSCode (`Ctrl+Shift+P` or `Cmd+Shift+P`).
+1. Open the command palette in VS Code (`Ctrl+Shift+P` or `Cmd+Shift+P`).
 2. Search for and select the "Generate Folder Context" or "Generate High-Level Context" command.
 3. If prompted, select the code file or folder for which you want to generate the documentation.
 4. Wait for the command to complete. The generated documentation will be displayed in the output panel or a new file will be created with the documentation content.

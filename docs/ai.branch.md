@@ -1,4 +1,9 @@
-# Dev-Docs.JSON Configuration
+---
+slug: /ai.branch
+---
+
+
+# Further Dev-Docs.JSON Configurations
 
 The `dev-docs.json` file is a configuration file used by the Dev-Docs extension to customize various aspects of its behavior, such as documentation generation, AI integration, and code analysis. It follows the JSON format and adheres to a predefined schema.  For most commands configuration is optional but recommended.
 
