@@ -1,6 +1,6 @@
 
 
-  # Guide: Using the Dev-Docs Chrome Extension
+  # Generate Step-by-Step Guides with the Chrome Extension
 
 ## Step 1: Open the Extension
 
