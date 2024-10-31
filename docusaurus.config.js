@@ -1,8 +1,8 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const lightCodeTheme = require('prism-react-renderer').themes.github;
+const darkCodeTheme = require('prism-react-renderer').themes.dracula;
 
 // [item, [[], [], []]]
 const apiConfig = require('./dev-docs-openapi.js');
@@ -31,7 +31,11 @@ const config = {
     'src/css/custom.css',
     {
       href: 'https://cdn.tailwindcss.com/2.2.19/tailwind.min.css'
-    }
+    },
+    {
+      href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap',
+      rel: 'stylesheet',
+    },
   ],
   title: 'Your Dev-Docs',
   tagline: 'Lets Dev-Doc and Roll',
@@ -45,7 +49,10 @@ const config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'facebook', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
-  plugins: ['docusaurus-plugin-sass', "@orama/plugin-docusaurus",
+  plugins: [
+    'docusaurus-plugin-sass',
+    '@orama/plugin-docusaurus-v3',
+    // '@docusaurus/plugin-content-docs',
     [
       'docusaurus-plugin-openapi-docs',
       {
@@ -53,7 +60,8 @@ const config = {
         docsPluginId: "classic",
         config: openApiCongfig
       },
-    ], async function myPlugin(context, options) {
+    ],
+    async function myPlugin(context, options) {
       return {
         name: "docusaurus-tailwindcss",
         configurePostCss(postcssOptions) {
@@ -81,13 +89,13 @@ const config = {
       ({
         docs: {
           docItemComponent: "@theme/ApiItem",
-          docLayoutComponent: "@theme/DocPage",
+          // docLayoutComponent: "@theme/DocPage",
           sidebarPath: require.resolve('./sidebars.js'),
-          sidebarCollapsed: false,
+          sidebarCollapsed: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/team-dev-docs/devdocsprod-dev-docs',
         },
         blog: {
           showReadingTime: true,
@@ -101,7 +109,7 @@ const config = {
                 console.log("###########")
                 console.log(blogPosts)
                 return defaultCreateFeedItems({
-              
+
                   // keep only the 10 most recent blog posts in the feed
                   blogPosts: blogPosts.filter((item, index) => index < 10),
                   ...rest,

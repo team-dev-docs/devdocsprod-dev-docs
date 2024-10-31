@@ -26,10 +26,13 @@ import js from 'highlight.js/lib/languages/javascript'
 import python from 'highlight.js/lib/languages/python'
 import ts from 'highlight.js/lib/languages/typescript'
 import html from 'highlight.js/lib/languages/xml'
-import { lowlight } from 'lowlight'
+// import lowlight from 'lowlight'
+import { createLowlight } from 'lowlight';
 import Accordion from "./Accordion";
 import Tabs from "./Tabs";
 import Heading from "@tiptap/extension-heading"
+
+const lowlight = createLowlight();
 
 const HeadingWithID = Heading.extend({
   addAttributes() {
@@ -58,7 +61,7 @@ export const inputRegex = /https:\/\/www\.youtube\.com\/[a-zA-Z?=\-0-9&_]+|https
 const Iframe = Node.create({
 	name: "iframe",
 	group: "block",
-	defaultOptions: {
+	addOptions: {
 		allowFullscreen: true,
 		HTMLAttributes: {
 			class: "iframe-wrapper"
@@ -102,11 +105,11 @@ const Iframe = Node.create({
 	},
 })
 
-lowlight.registerLanguage('html', html)
-lowlight.registerLanguage('css', css)
-lowlight.registerLanguage('js', js)
-lowlight.registerLanguage('ts', ts)
-lowlight.registerLanguage('python', python)
+lowlight.register('html', html)
+lowlight.register('css', css)
+lowlight.register('js', js)
+lowlight.register('ts', ts)
+lowlight.register('python', python)
 
 const MenuBar = ({ editor }) => {
   if (!editor) {

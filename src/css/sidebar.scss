@@ -1,7 +1,9 @@
 
 // import design-preferences.scss
 
-
+.spark-circle {
+  display: none !important;
+}
 
 .menu__link--active:not(.menu__link--sublist) {
   border-radius: 7px;
