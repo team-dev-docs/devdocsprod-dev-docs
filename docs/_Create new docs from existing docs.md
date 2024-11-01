@@ -1,6 +1,6 @@
 
 
-# Create New Docs from Existing Docs
+  # Create New Docs from Existing Docs
 
 ## Step 1: Go to the user-facing docs page
 ![Documentation Site](/img/create_new_docs_from_existing_docs/step_1.png)
