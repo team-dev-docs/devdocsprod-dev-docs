@@ -1,61 +1,59 @@
 
 
-  ## Step 1: Open Continue
+  # Use our VS Code Extension with Continue
 
-Open your VS Code workspace and ensure the Continue extension is installed and running.
+## Step 1: Open the Continue Extension
 
-![Continue extension interface](/img/use_our_vs_code_extension_with_continue/step_1.png)
-## Step 2: Navigate to the Continue Interface
+Open VS Code and navigate to the Continue extension. You should see a sidebar with options like "Sign Out", "Generate Context", and "Create Custom Doc".
 
-Click on the Continue icon in the sidebar to open the Continue interface.
+![Continue Extension Sidebar](/img/use_our_vs_code_extension_with_continue/step_2.png)
 
-![Continue sidebar icon](/img/use_our_vs_code_extension_with_continue/step_2.png)
-## Step 3: View the Tutorial
+## Step 2: Access the Chat Interface
 
-The Continue tutorial will be displayed, showing a sample Python sorting algorithm.
+In the main editor window, you'll see a "Chat, Edit, and Autocomplete tutorial". This interface allows you to interact with the AI assistant.
 
-![Continue tutorial](/img/use_our_vs_code_extension_with_continue/step_3.png)
-## Step 4: Access Dev-Docs
+![Chat Interface](/img/use_our_vs_code_extension_with_continue/step_3.png)
 
-Click on the "Dev-Docs logo icon" button in the sidebar to open the Dev-Docs interface.  Then click the button generate context.
+## Step 3: Generate New Documentation
 
-![Dev-Docs interface](/img/use_our_vs_code_extension_with_continue/step_4.png)
-## Step 5: Generate New Document
+Click on the "Generate Context" button in the sidebar. This will open a new panel where you can select files to use as context for generating new documentation.
 
-In the Dev-Docs interface, you can generate new high level documentation for your repository. Select the files you want to generate documentation on.
+![Generate New Doc](/img/use_our_vs_code_extension_with_continue/step_4.png)
 
-![Generate new document](/img/use_our_vs_code_extension_with_continue/step_5.png)
-## Step 6: View File Explorer
+## Step 4: Select Context Files
 
-Markdown files will now populate in the "dev-docs" folder.
+Choose the relevant files for your documentation. You can select multiple files like "index.js", "package.json", "test.js", etc.
 
-![File explorer](/img/use_our_vs_code_extension_with_continue/step_6.png)
-## Step 7: Use Continue Search
+![Select Context Files](/img/use_our_vs_code_extension_with_continue/step_5.png)
 
-In the Continue interface, use the search functionality to find specific folders or files in your project.
+## Step 5: Choose Documentation Type
 
-![Continue search](/img/use_our_vs_code_extension_with_continue/step_8.png)
-## Step 8: Search for Dev-Docs
+Decide where the context should be created. You can choose between "codebase" and "user-facing docs".
 
-Type "@dev-docs" in the Continue search bar to quickly access the Dev-Docs related files and folders.
+![Choose Doc Type](/img/use_our_vs_code_extension_with_continue/step_6.png)
 
-![Search for Dev-Docs](/img/use_our_vs_code_extension_with_continue/step_9.png)
-## Step 9: Access Dev-Docs Content
+## Step 6: Explore File Structure
 
-After searching for "@dev-docs", you can now easily access and navigate through your Dev-Docs content.
+Use the file explorer on the left to navigate through your project structure. This helps in selecting the right files for context.
 
-![Access Dev-Docs content](/img/use_our_vs_code_extension_with_continue/step_10.png)
-## Step 10: Ask Questions
+![File Explorer](/img/use_our_vs_code_extension_with_continue/step_7.png)
 
-Use the Continue interface to ask questions about your project using the "dev-docs folder" For example here we ask "What AI model does spriteai use?"
+## Step 7: Access Continue Commands
 
-![Ask questions](/img/use_our_vs_code_extension_with_continue/step_11.png)
-## Step 11: View AI Model Information
+Use the "@" symbol to access Continue-specific commands. This will show a dropdown with options like "github" and "dev-docs".
 
-Continue will provide information about the AI models used in your project based on the Dev-Docs content.
+![Continue Commands](/img/use_our_vs_code_extension_with_continue/step_8.png)
 
-![View AI model information](/img/use_our_vs_code_extension_with_continue/step_14.png)
+## Step 8: Use AI Assistance
 
-By following these steps, you can effectively use the Dev-Docs VS Code extension in conjunction with the Continue extension to improve your development workflow and easily access project documentation.
+Type your questions or commands in the chat interface. For example, you can ask "What AI model does spriteai use?"
+
+![AI Assistance](/img/use_our_vs_code_extension_with_continue/step_10.png)
+
+## Step 9: Review AI Responses
+
+The AI will provide detailed responses based on your project context. In this example, it explains the AI models used by the spriteAI module.
+
+![AI Response](/img/use_our_vs_code_extension_with_continue/step_14.png)
 
   
