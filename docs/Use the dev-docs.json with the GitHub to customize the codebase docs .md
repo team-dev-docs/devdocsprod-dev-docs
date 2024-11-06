@@ -1,6 +1,4 @@
-
-
-  # Customizing dev-docs.json for Internal Documentation Generation
+# Customizing dev-docs.json for Internal Documentation Generation
 
 ## Overview
 
