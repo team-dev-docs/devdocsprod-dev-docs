@@ -2,11 +2,5 @@
   "external": true,
   "ai": {
     "mappings": []
-  },
-  "gitHubApp": {
-    "workflows": [
-      "generateDocs",
-      "generateChangelog"
-    ]
   }
 }
