@@ -1,6 +1,4 @@
-
-
-  # Setup your user facing docs
+# Setup your user facing docs
 
 ## Step 1: Access Dev-Docs interface
 ![Dev-Docs interface](/img/setup_your_user_facing_docs/step_3.png)
