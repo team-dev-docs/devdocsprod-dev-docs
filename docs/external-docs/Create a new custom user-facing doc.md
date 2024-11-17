@@ -4,7 +4,7 @@
 
 ## Step 1: Access the Dev-Docs menu
 
-Open your development environment and locate the "DEV-DOCS: YOUR DEV-DOCS" menu on the left sidebar.
+Open your development environment and locate the Dev-Docs icon on the left sidebar.
 
 ![Dev-Docs menu](/img/create_a_new_custom_user-facing_doc/step_2.png)
 
@@ -26,42 +26,31 @@ In the "Task" field, enter a description of what you want the document to cover.
 
 ![Enter document task](/img/create_a_new_custom_user-facing_doc/step_5.png)
 
-## Step 5: Generate the new document
+## Step 5: Push the markdown doc up
 
-Click the "Generate New Doc" button to create your custom document.
+You should now have a new markdown doc for your prompt.  Feel free to edit and review as you wish.  When you are ready you can now right click the markdown file and from the sub-menu select "push user-facing docs site" to push up your new document.
 
 ![Generate New Doc button](/img/create_a_new_custom_user-facing_doc/step_6.png)
 
-## Step 6: Review the generated document
 
-The system will generate a new markdown file with the content you requested. Review the generated document to ensure it meets your requirements.
+## Step 6: Provide a title to the document
+
+Before your document is pushed up, you have to give it a title so when prompted enter a title for the document you are going to pushing up.
 
 ![Review generated document](/img/create_a_new_custom_user-facing_doc/step_7.png)
 
-## Step 7: Name the file
+## Step 7: View changes to GitHub
 
-When prompted, enter a name for your new file. In this case, we'll use "misc-sprite-ai-sdk-overview.md".
-
-![Name the file](/img/create_a_new_custom_user-facing_doc/step_8.png)
-
-## Step 8: Commit changes to GitHub
-
-Once you're satisfied with the document, commit your changes to GitHub. Navigate to your repository page and create a new pull request.
+Now visit your connected user-facing docs repo and look for the generated pull-request.
 
 ![GitHub repository page](/img/create_a_new_custom_user-facing_doc/step_11.png)
 
-## Step 9: Review and merge the pull request
+## Step 8: Review and merge the pull request
 
 Review the changes in the pull request. If everything looks good, merge the pull request to add your new custom user-facing document to the main branch.
 
-![Review pull request](/img/create_a_new_custom_user-facing_doc/step_12.png)
-
-## Step 10: Confirm the merge
-
-After reviewing, click the "Merge pull request" button to finalize the addition of your new document to the repository.
-
 ![Merge pull request](/img/create_a_new_custom_user-facing_doc/step_13.png)
 
-Your new custom user-facing document is now created and added to your repository!
+
 
   
