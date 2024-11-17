@@ -5,7 +5,7 @@
 
 Click the Dev-Docs icon on the left sidebar.
 
-## Step 2: Turn on Markdown Mode
+## Step 2: Check your connected docs
 ![Turn on Markdown Mode](/img/setup_your_user_facing_docs/step_4.png)
 
 Click "view your connected docs".
