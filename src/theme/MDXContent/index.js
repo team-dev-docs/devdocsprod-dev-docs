@@ -56,7 +56,7 @@ export default function MDXContentWrapper(props) {
                   <span style={{color: props?.children?.type?.frontMatter?.text_color}} key={index}>{" " + item.name + ","}</span>
                 ))}
               
-              &nbsp; <span style={{color: props?.children?.type?.frontMatter?.text_color}}>On {props.children.type.metadata.formattedDate},</span>{" "}
+              &nbsp; <span style={{color: props?.children?.type?.frontMatter?.text_color}}>Est Reading Time: {props.children.type.metadata.formattedDate}</span>{" "}
               <span style={{color: props?.children?.type?.frontMatter?.text_color}}>{Math.ceil(props.children.type.metadata.readingTime * 10) / 1} min</span>
             </h3>
             <div className="flex flex-row items-center mb-10 w-full">
