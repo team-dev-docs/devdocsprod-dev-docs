@@ -1,0 +1,127 @@
+---
+title: Contextual documentation with Dev-Docs and Continue
+authors: andrew
+header_image: /img/dev-docs-assets/ClippedHeroBg.png
+text_color: white
+tags: [docs, seo, sales]
+---
+
+# **Contextual documentation with Dev-Docs and Continue**
+
+[Continue](https://www.continue.dev/) is the leading open-source AI code assistant. Its IDE extensions allow you to leverage AI in your code editor to ask questions about your codebase and generate code. What’s even more awesome is that it is extensible—for example, you can use any models you want with it!
+
+<br></br>
+
+[Dev-Docs](https://www.docs.dev/) is an AI developer tool that provides a VS Code extension for generating custom markdown documentation on your codebase that can be used by tools like Continue. Today, we are going to show how you can use Dev-Docs to generate custom, contextual documentation for a codebase, which can be used as context in Continue.
+
+# Before you get started
+
+Install Dev-Docs in VS Code
+
+<br></br>
+
+![step_3.png](/img/use_dev-docs_with_continue/step_3.png)
+
+<br></br>
+
+Install Continue in VS Code
+
+<br></br>
+
+![step_6.png](/img/use_dev-docs_with_continue/step_6.png)
+
+<br></br>
+
+# **Step 1: Open the Dev-Docs extension and sign in**
+
+Select the “Dev-Docs” extension icon from the Activity Bar on the left and then “Sign In”
+
+<br></br>
+
+![image.png](/img/use_dev-docs_with_continue/step_8.png)
+
+<br></br>
+
+Once you are signed in, you will need to create an org name for your team.  For example, our org name here is “devdocscontinueblog”
+
+<br></br>
+
+![step_11.png](/img/use_dev-docs_with_continue/step_11.png)
+
+<br></br>
+
+Step 2: Click the “Setup my repo” button and then the “Generate Context” button
+
+<br></br>
+
+![step_7.png](/img/use_dev-docs_with_continue/step_7.png)
+
+<br></br>
+
+This will create a `dev-docs.json` file and `dev-docs` folder in your repo
+
+<br></br>
+
+![step_14.png](/img/use_dev-docs_with_continue/step_14.png)
+
+<br></br>
+
+Select the "Generate Context" button
+
+<br></br>
+
+![step_15.png](/img/use_dev-docs_with_continue/step_15.png)
+
+<br></br>
+
+# **Step 3: Select the files you want to use and generate the contextual documentation[](https://www.docs.dev/docs/Internal-Docs/Use%20our%20Vs%20Code%20Extension%20with%20continue#step-4-select-files)**
+
+<br></br>
+
+Choose the files you want to be used as input for the contextual documentation, making sure "Codebase" is selected, and then click “Generate New Doc”
+
+<br></br>
+
+![step_16.png](/img/use_dev-docs_with_continue/step_16.png)
+
+<br></br>
+
+When you navigate back to the file explorer you should see some files populated in dev-docs folder
+
+<br></br>
+
+![step_31.png](/img/use_dev-docs_with_continue/step_31.png)
+
+<br></br>
+
+# **Step 4: Open the Continue extension and sign in**
+
+<br></br>
+
+Click the Continue extension icon in the Activity Bar and sign in with your GitHub account to use the Continue free trial models (or add your own API keys if you’d like instead)
+
+<br></br>
+
+![step_22.png](/img/use_dev-docs_with_continue/step_22.png)
+
+<br></br>
+
+# Step 5: Use @dev-docs as context and ask questions
+
+<br></br>
+
+Continue will automatically allow you to use dev-docs folder as context (using the folder context provider)
+
+<br></br>
+
+![step_24.png](/img/use_dev-docs_with_continue/step_24.png)
+
+<br></br>
+
+Try asking questions like “@dev-docs what technologies are used?“
+
+<br></br>
+
+![step_28.png](/img/use_dev-docs_with_continue/step_28.png)
+
+<br></br>
