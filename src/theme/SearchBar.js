@@ -6,7 +6,7 @@ export default function SearchBarWrapper(props) {
   // Console log the props
   console.log("this is search", props);
 
-  // Use useEffect to change the colorMode
+  // Use useEffect to change the colorModeuhihuig
   const { colorMode, setColorMode } = useColorMode();
 
   useEffect(() => {
