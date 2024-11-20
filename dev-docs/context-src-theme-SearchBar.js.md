@@ -22,18 +22,22 @@ This wrapper component enhances the original SearchBar with additional interacti
 ---
 # SearchBarWrapper src/theme/SearchBar.js
 ## Imported Code Object
-The `SearchBarWrapper` is a React functional component that serves as a wrapper around a `SearchBar` component. Its main purposes are:
+The `SearchBarWrapper` is a React functional component that wraps around a `SearchBar` component, adding additional functionality and styling. Here's a concise explanation of its key features:
 
-1. Event Handling: It sets up event listeners for the 'Command + K' keyboard shortcut and for clicks on the search bar.
+1. It logs the received props to the console.
 
-2. Color Mode Toggle: It manages the color mode (light/dark) of the application, toggling it when the search bar is clicked or the keyboard shortcut is used.
+2. It uses the `useColorMode` hook to manage color mode (light/dark).
 
-3. Prop Modification: It allows for modification of props passed to the `SearchBar` component.
+3. It sets up event listeners for:
+   - Command+K keypress
+   - Click on the search bar
 
-4. Layout: It provides a specific layout structure for the search bar, wrapping it in centered divs.
+4. These events toggle between light and dark modes, updating the DOM and component state accordingly.
 
-5. Lifecycle Management: It uses `useEffect` to handle adding and removing event listeners based on the component's lifecycle.
+5. It modifies the props passed to the `SearchBar` component, allowing for customization (e.g., changing the placeholder text).
 
-This wrapper enhances the functionality of the basic `SearchBar` component by adding these additional features and behaviors.
+6. It renders the `SearchBar` component within a styled container, passing along the modified props.
+
+In essence, this wrapper enhances the basic `SearchBar` component with color mode toggling functionality and custom styling, while allowing for easy prop manipulation.
 
   
