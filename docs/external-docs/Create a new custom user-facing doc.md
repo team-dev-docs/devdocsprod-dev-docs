@@ -1,6 +1,6 @@
 
 
-  # Create a new custom user-facing doc
+  # Create a New Custom User-Facing Doc
 
 ## Step 1: Access the Dev-Docs menu
 

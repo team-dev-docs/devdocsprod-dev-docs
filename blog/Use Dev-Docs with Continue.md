@@ -1,5 +1,5 @@
 ---
-title: Contextual documentation with Dev-Docs and Continue
+title: Contextual Documentation with Dev-Docs and Continue
 authors: andrew
 header_image: /img/dev-docs-assets/ClippedHeroBg.png
 text_color: white
