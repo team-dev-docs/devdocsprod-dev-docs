@@ -1,3 +1,5 @@
+# Using Dev-Docs with Continue in VS Code
+
 ## Step 1: Open the Continue Extension
 
 Open Visual Studio Code and find the Continue extension in the sidebar. Click to open it.
