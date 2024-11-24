@@ -1,0 +1,74 @@
+// Color 1 and its variations
+$color-1: if(global-variable-exists(color-1), $color-1, #7984EB);
+$color-1-1: if(global-variable-exists(color-1-1), $color-1-1, #c3c3ff);
+$color-1-2: if(global-variable-exists(color-1-2), $color-1-2, #b6b6ff);
+$color-1-3: if(global-variable-exists(color-1-3), $color-1-3, #a8a8ff);
+$color-1-4: if(global-variable-exists(color-1-4), $color-1-4, #9a9aff);
+$color-1-5: if(global-variable-exists(color-1-5), $color-1-5, #8c8cff);
+$color-1-6: if(global-variable-exists(color-1-6), $color-1-6, #7e7eff);
+$color-1-7: if(global-variable-exists(color-1-7), $color-1-7, #7070ff);
+$color-1-8: if(global-variable-exists(color-1-8), $color-1-8, #6262ff);
+$color-1-9: if(global-variable-exists(color-1-9), $color-1-9, #5454ff);
+$color-1-10: if(global-variable-exists(color-1-10), $color-1-10, #4646ff);
+$color-1-11: if(global-variable-exists(color-1-11), $color-1-11, #3838ff);
+$color-1-12: if(global-variable-exists(color-1-12), $color-1-12, #2a2aff);
+
+// Color 2 and its variations
+$color-2: if(global-variable-exists(color-2), $color-2, rgba(199, 21, 133, 1));
+$color-2-1: if(global-variable-exists(color-2-1), $color-2-1, #fe58b5);
+$color-2-2: if(global-variable-exists(color-2-2), $color-2-2, #ef48a7);
+$color-2-3: if(global-variable-exists(color-2-3), $color-2-3, #e0389a);
+$color-2-4: if(global-variable-exists(color-2-4), $color-2-4, #d1258d);
+$color-2-5: if(global-variable-exists(color-2-5), $color-2-5, #c21381);
+$color-2-6: if(global-variable-exists(color-2-6), $color-2-6, #b30c74);
+$color-2-7: if(global-variable-exists(color-2-7), $color-2-7, #a50668);
+$color-2-8: if(global-variable-exists(color-2-8), $color-2-8, #96015c);
+$color-2-9: if(global-variable-exists(color-2-9), $color-2-9, #880050);
+$color-2-10: if(global-variable-exists(color-2-10), $color-2-10, #7a0044);
+$color-2-11: if(global-variable-exists(color-2-11), $color-2-11, #6b0039);
+$color-2-12: if(global-variable-exists(color-2-12), $color-2-12, #5d002f);
+
+// Color 3 and its variations
+$color-3: if(global-variable-exists(color-3), $color-3, rgba(30, 144, 255, 1));
+$color-3-1: if(global-variable-exists(color-3-1), $color-3-1, #6fc0ff);
+$color-3-2: if(global-variable-exists(color-3-2), $color-3-2, #58b3ff);
+$color-3-3: if(global-variable-exists(color-3-3), $color-3-3, #41a7ff);
+$color-3-4: if(global-variable-exists(color-3-4), $color-3-4, #2b99ff);
+$color-3-5: if(global-variable-exists(color-3-5), $color-3-5, #1c8cfa);
+$color-3-6: if(global-variable-exists(color-3-6), $color-3-6, #157fec);
+$color-3-7: if(global-variable-exists(color-3-7), $color-3-7, #0d73de);
+$color-3-8: if(global-variable-exists(color-3-8), $color-3-8, #0367d0);
+$color-3-9: if(global-variable-exists(color-3-9), $color-3-9, #015cc2);
+$color-3-10: if(global-variable-exists(color-3-10), $color-3-10, #0251b4);
+$color-3-11: if(global-variable-exists(color-3-11), $color-3-11, #0146a7);
+$color-3-12: if(global-variable-exists(color-3-12), $color-3-12, #003b99);
+
+// Color 4 and its variations
+$color-4: if(global-variable-exists(color-4), $color-4, rgba(160, 79, 49, 1));
+$color-4-1: if(global-variable-exists(color-4-1), $color-4-1, #d57d5b);
+$color-4-2: if(global-variable-exists(color-4-2), $color-4-2, #c67050);
+$color-4-3: if(global-variable-exists(color-4-3), $color-4-3, #b86344);
+$color-4-4: if(global-variable-exists(color-4-4), $color-4-4, #aa5738);
+$color-4-5: if(global-variable-exists(color-4-5), $color-4-5, #9b4b2d);
+$color-4-6: if(global-variable-exists(color-4-6), $color-4-6, #8d3f22);
+$color-4-7: if(global-variable-exists(color-4-7), $color-4-7, #7f3318);
+$color-4-8: if(global-variable-exists(color-4-8), $color-4-8, #71280d);
+$color-4-9: if(global-variable-exists(color-4-9), $color-4-9, #651c09);
+$color-4-10: if(global-variable-exists(color-4-10), $color-4-10, #581208);
+$color-4-11: if(global-variable-exists(color-4-11), $color-4-11, #4c0705);
+$color-4-12: if(global-variable-exists(color-4-12), $color-4-12, #3f0000);
+
+// Color 5 and its variations
+$color-5: if(global-variable-exists(color-5), $color-5, rgba(30, 144, 255, 1));
+$color-5-1: if(global-variable-exists(color-5-1), $color-5-1, #6fc0ff);
+$color-5-2: if(global-variable-exists(color-5-2), $color-5-2, #58b3ff);
+$color-5-3: if(global-variable-exists(color-5-3), $color-5-3, #41a7ff);
+$color-5-4: if(global-variable-exists(color-5-4), $color-5-4, #2b99ff);
+$color-5-5: if(global-variable-exists(color-5-5), $color-5-5, #1c8cfa);
+$color-5-6: if(global-variable-exists(color-5-6), $color-5-6, #157fec);
+$color-5-7: if(global-variable-exists(color-5-7), $color-5-7, #0d73de);
+$color-5-8: if(global-variable-exists(color-5-8), $color-5-8, #0367d0);
+$color-5-9: if(global-variable-exists(color-5-9), $color-5-9, #015cc2);
+$color-5-10: if(global-variable-exists(color-5-10), $color-5-10, #0251b4);
+$color-5-11: if(global-variable-exists(color-5-11), $color-5-11, #0146a7);
+$color-5-12: if(global-variable-exists(color-5-12), $color-5-12, #003b99);

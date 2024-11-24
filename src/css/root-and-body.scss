@@ -1,18 +1,3 @@
-
-
-// :root {
-//   --ifm-color-primary: $color-1;
-//   --ifm-color-primary-dark: #4600dd;
-//   --ifm-color-primary-darker: #4200d0;
-//   --ifm-color-primary-darkest: #3700ab;
-//   --ifm-color-primary-light: #5b0fff;
-//   --ifm-color-primary-lighter: #631bff;
-//   --ifm-color-primary-lightest: #7c40ff;
-//   --ifm-code-font-size: 95%;
-//   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-// }
-
-
 $primary: $color-1;
 $light-darkest: $color-1-11;
 $light-darker: $color-1-10;
@@ -37,7 +22,7 @@ $dark-darkest: $color-1-6;
   --ifm-color-primary-lighter: #{$light-lighter};
   --ifm-color-primary-lightest: #{$light-lightest};
   --ellipis-color: #{$color-1};
-  --ellipis-transparency: 80%
+  --ellipis-transparency: 80%;
 }
 
 [data-theme="dark"] {
@@ -58,29 +43,29 @@ $dark-darkest: $color-1-6;
 //   border: none;
 // }
 
-[data-theme="dark"] #__docusaurus__skipToContent__fallback > div {
-  backdrop-filter: blur(16px) saturate(180%);
-  -webkit-backdrop-filter: blur(16px) saturate(180%);
-  background: radial-gradient(circle at 50% 50%, #ff3366, #c766ff, #ff3366);
-  background-size: 200% 200%;
-  animation: gradientAnimation 10s ease infinite;
-  border: none;
-}
+// [data-theme="dark"] #__docusaurus__skipToContent__fallback > div {
+//   backdrop-filter: blur(16px) saturate(180%);
+//   -webkit-backdrop-filter: blur(16px) saturate(180%);
+//   background: radial-gradient(circle at 50% 50%, #ff3366, #c766ff, #ff3366);
+//   background-size: 200% 200%;
+//   animation: gradientAnimation 10s ease infinite;
+//   border: none;
+// }
 
-@keyframes gradientAnimation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
+// @keyframes gradientAnimation {
+//   0% {
+//     background-position: 0% 50%;
+//   }
+//   50% {
+//     background-position: 100% 50%;
+//   }
+//   100% {
+//     background-position: 0% 50%;
+//   }
+// }
 
 .spark-circle {
-  background: #FFF;
+  background: #fff;
   .rounded-full {
     background: $color-1 !important;
     background-color: $color-1 !important;
@@ -95,11 +80,11 @@ $dark-darkest: $color-1-6;
   border: none;
 }
 
-html, body {
-  //  height: 100%;
-  // max-width: 100vw !important;
-  overflow-x: hidden;
-}
+// html, body {
+//   //  height: 100%;
+//   // max-width: 100vw !important;
+//   // overflow-x: hidden;
+// }
 
 #__docusaurus_skipToContent_fallback > main > pre {
   position: fixed;
@@ -143,6 +128,17 @@ html, body {
 
 // }
 
+$dark-gradient-color-1: if(
+  variable-exists(graident-dark-color-1),
+  $graident-dark-color-1,
+  #c070ff
+);
+$dark-gradient-color-2: if(
+  variable-exists(graident-dark-color-2),
+  $graident-dark-color-2,
+  #4e00f4
+);
+
 [data-theme="dark"] #__docusaurus::before {
   content: "";
   position: absolute;
@@ -150,7 +146,12 @@ html, body {
   left: 0;
   right: 0;
   height: 60vh; /* Adjust this value as needed */
-  background: radial-gradient(ellipse 349px 354px at 60% 40%, rgba(#C070FF, var(--ellipis-transparency)) 40%, transparent 90%) no-repeat;
+  // background: radial-gradient(
+  //     ellipse 349px 354px at 60% 40%,
+  //     rgba($dark-gradient-color-1, var(--ellipis-transparency)) 40%,
+  //     transparent 90%
+  //   )
+    // no-repeat;
   background-size: 100% 200%;
   animation: gradientAnimation 10s ease infinite;
   z-index: -1;
@@ -180,10 +181,41 @@ html, body {
   left: 0;
   right: 0;
   height: 70vh; /* Adjust this value as needed */
-  background: radial-gradient(ellipse 315.122px 352.987px at 80% 50%, rgba(#4E00F4, var(--ellipis-transparency)) 40%, transparent 90%) no-repeat;
+  // background: radial-gradient(
+  //     ellipse 315.122px 352.987px at 80% 50%,
+  //     rgba($dark-gradient-color-2, var(--ellipis-transparency)) 40%,
+  //     transparent 90%
+  //   )
+  //   no-repeat;
   background-size: 100% 200%;
   animation: gradientAnimation 10s ease infinite;
   z-index: -1;
+}
+
+[data-theme="dark"] [class^="docRoot"]::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70vh; /* Adjust this value as needed */
+  // background: radial-gradient(
+  //     ellipse 315.122px 352.987px at 80% 50%,
+  //     rgba($dark-gradient-color-2, var(--ellipis-transparency)) 40%,
+  //     transparent 90%
+  //   )
+  //   no-repeat;
+  // background-size: 100% 200%;
+  // //animation: gradientAnimation 10s ease infinite;
+  // z-index: -1;
+
+  // opacity: 0.35;
+  background-image: url("/static/img/newplanet.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 600px;
+
+  // clip-path: circle(80% at 20% 90%);
 }
 
 [class^="docPage"] {
@@ -197,6 +229,28 @@ html, body {
   // border: 1px solid rgba(209, 213, 219, 0.3);
 }
 
+// [class^="docRoot"] {
+//   position: relative;
+//   background-color: rgba(255, 255, 255, 0.68);
+//   overflow: visible;
+//   border: none;
+//   backdrop-filter: blur(25px) saturate(180%);
+//   -webkit-backdrop-filter: blur(25px) saturate(180%);
+//   border-radius: 12px;
+//   // border: 1px solid rgba(209, 213, 219, 0.3);
+// }
+
+$light-gradient-color-1: if(
+  variable-exists(graident-light-color-1),
+  $graident-light-color-1,
+  #ff83e2
+);
+$light-gradient-color-2: if(
+  variable-exists(graident-light-color-2),
+  $graident-light-color-2,
+  #3d3ada
+);
+
 [data-theme="light"] [class^="docPage"]::before {
   content: "";
   position: absolute;
@@ -204,12 +258,39 @@ html, body {
   left: 0;
   right: 0;
   height: 200px; /* Adjust this value as needed */
-  background: radial-gradient(ellipse 50vw 80px at 95% 40%, rgba(#ff83e2, 20%) 40%, transparent 95%);
+  // background: radial-gradient(
+  //   ellipse 50vw 80px at 95% 40%,
+  //   rgba($light-gradient-color-1, 20%) 40%,
+  //   transparent 95%
+  // );
   background-size: 100% 200%;
   animation: gradientAnimation 10s ease infinite;
   z-index: -1;
 }
 
+[data-theme="light"] [class^="docRoot"]::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70vh; /* Adjust this value as needed */
+  // background: radial-gradient(
+  //   ellipse 50vw 80px at 95% 40%,
+  //   rgba($light-gradient-color-1, 20%) 40%,
+  //   transparent 95%
+  // );
+  background-size: 100% 200%;
+  //animation: gradientAnimation 10s ease infinite;
+  z-index: -1;
+
+  background-image: url("/static/img/lightplanet.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 600px;
+  clip-path: circle(45% at 100% 49%);
+  // filter: blur(20px);
+}
 
 #__docusaurus {
   position: relative;
@@ -223,25 +304,33 @@ html, body {
   top: 0;
   left: 0;
   right: 0;
-  height: 200px; /* Adjust this value as needed */
-  background: radial-gradient(ellipse 50vw 80px at 70% 40%, rgba(#3d3ada, 20%) 40%, transparent 95%);
+  height: 70vh; /* Adjust this value as needed */
+  // background: radial-gradient(
+  //   ellipse 50vw 80px at 70% 40%,
+  //   rgba($light-gradient-color-2, 20%) 40%,
+  //   transparent 95%
+  // );
   background-size: 100% 200%;
-  animation: gradientAnimation 10s ease infinite;
+  // animation: gradientAnimation 10s ease infinite;
   z-index: -1;
+  opacity: 0.35;
+  background-image: url("https://media.discordapp.net/attachments/1089583922272272444/1281512339979636840/andrewv2968_3D_retro_pixel_art_computer_and_keyboard_centered_a_59e2b64e-cd5c-4927-bc28-7f0b59ee1d75.png?ex=673f861f&is=673e349f&hm=9eec61e05fc5ac01a2b74ed381e124ec2598e57904dff2a3511a0af32a59ea61&=&format=webp&quality=lossless&width=1196&height=1196");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 300px;
 }
 
-[class^="docPage"] {
+[class^="docRoot"] {
   background-color: transparent;
 
   @media (min-width: 1400px) {
-    padding-left: 5em;
-    padding-right: 5em;
+    // padding-left: 5em;
+    // padding-right: 5em;
     padding-top: 2em;
   }
 
   // backdrop-filter: blur(16px) saturate(10%);
   // -webkit-backdrop-filter: blur(16px) saturate(10%);
-
 
   img {
     margin-top: 1.25em;
