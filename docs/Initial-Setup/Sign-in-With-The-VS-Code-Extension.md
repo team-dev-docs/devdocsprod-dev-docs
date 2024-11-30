@@ -10,7 +10,7 @@ Get Dev-Docs set up in VS Code.
 
 ## Step 1: Find the Dev-Docs Login Button :
 
-In your VS Code editor, click on the Dev-Docs button!! ![](/img/use_ai_to_generate_api_documentation/step_1.png)
+In your VS Code editor, click on the Dev-Docs button ![](/img/use_ai_to_generate_api_documentation/step_1.png)
 
 ## Step 2: Login
 
