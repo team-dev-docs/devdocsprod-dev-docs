@@ -1,5 +1,6 @@
+---
 sidebar_position: 3
-***
+---
 
 # Sign In With the VS Code Extension
 
