@@ -1,5 +1,7 @@
 ---
-sidebar_position: 3---
+sidebar_position: 3
+---
+
 # Sign In With the VS Code Extension
 
 Get Dev-Docs set up in VS Code.
