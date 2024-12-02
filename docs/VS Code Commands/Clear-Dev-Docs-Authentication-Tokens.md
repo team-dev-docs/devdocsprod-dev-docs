@@ -1,4 +1,6 @@
----
+
+
+  ---
 slug: /VS-Code-Commands/Clear-Dev-Docs-Tokens
 ---
 
@@ -24,6 +26,8 @@ You might want to use this command in the following scenarios:
 
 4. **Troubleshooting**: In case of authentication issues or other token-related problems, clearing the existing tokens can help resolve the issue by starting with a clean slate.
 
+5. **Enhanced Security**: Regularly clearing tokens can improve your account's security by minimizing the risk of unauthorized access through potentially compromised tokens.
+
 ## Prerequisites
 
 To use the `devdocs.resetTokens` command, you must have previously authenticated with the Dev-Docs Cloud service using the `devdocs.getGitHubUser` command or an equivalent authentication flow.
@@ -35,11 +39,23 @@ To clear your Dev-Docs authentication tokens, follow these steps:
 <br></br>
 
 1. Open the VS Code Command Palette by pressing `Ctrl+Shift+P` (Windows/Linux) or `Cmd+Shift+P` (macOS).
-2. Type "Dev-Docs" and select the "Clear dev-docs tokens" command from the list.
-3. Alternatively, you can navigate to the Dev-Docs view in the Activity Bar and click the "Sign Out" link when logged in.
+2. Type "Dev-Docs: Clear tokens" in the search bar to quickly locate the command.
+3. Select the "Dev-Docs: Clear dev-docs tokens" command from the list of results.
+4. Alternatively, you can navigate to the Dev-Docs view in the Activity Bar and click the "Sign Out" link when logged in.
 
 <br></br>
 
 After running the command, your Dev-Docs authentication tokens will be removed from your local machine. You will need to sign in and re-authenticate with the `devdocs.getGitHubUser` command to regain access to the Dev-Docs Cloud service.
-  
+
+## Best Practices
+
+To maintain optimal security and smooth operation of the Dev-Docs extension:
+
+<br></br>
+
+- Regularly clear your tokens, especially on shared or public machines.
+- Always sign out (clear tokens) when you're done working on a non-personal device.
+- If you suspect any unauthorized access to your account, clear your tokens immediately and change your GitHub password.
+- Keep your VS Code and Dev-Docs extension up to date to ensure you have the latest security features and improvements.
+
   
