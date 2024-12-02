@@ -1,12 +1,14 @@
-
-
-  ---
+---
 title: Why a Static Generated Site is the Best Choice for Developer Docs and Landing Pages
 authors: andrew
 header_image: /img/dev-docs-assets/ClippedHeroBg.png
 text_color: white
 tags: [markdown, docusaurus, developerdocs]
 ---
+
+
+
+***
 
 # Why a Static Generated Site is the Best Choice for Developer Docs and Landing Pages
 
@@ -65,5 +67,3 @@ For global projects, static site generators often provide built-in support for m
 With open-source static site generators, you benefit from community contributions. This means continuous improvements and new features without additional cost.
 
 In conclusion, for developer docs and landing pages, a static generated site using Markdown and tools like Docusaurus provides an excellent balance of simplicity, performance, and functionality. It's a powerful approach that can help your project's documentation stand out on platforms like GitHub, while offering the flexibility and features needed for modern development ecosystems.
-
-  
