@@ -8,7 +8,7 @@ text_color: white
 tags: [docs, seo, sales, ai, code-assistant]
 ---
 
-# **Contextual Documentation with Dev-Docs and Continue**
+# **Contextual Documentation with Dev-Docs and Continue!!!!**
 
 [Continue](https://www.continue.dev/) is the leading open-source AI code assistant. Its IDE extensions allow you to leverage AI in your code editor to ask questions about your codebase and generate code. What's even more awesome is that it is extensible—for example, you can use any models you want with it!
 
