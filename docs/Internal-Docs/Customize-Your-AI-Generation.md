@@ -1,15 +1,16 @@
----
+
+
+  ---
 sidebar_position: 5
 ---
 
-# Customize Your AI Generation
+# Customize your AI generation
 
 ## Step 1: Sign into Dev-Docs in VS Code
 
 In your VS Code Editor, click on the Dev-Docs button.
 
 ![](/img/customize_your_ai_generation/step_1.png)
-
 
 Click on the **Sign In** button.
 
@@ -21,7 +22,6 @@ From the dropdown select your org.
 
 ![](/img/create_your_first_codelab_in_your_playgrounds_repo/step_8.png)
 
-
 ## Step 3: `dev-docs.json`
 
 Find your `dev-docs.json` file.
@@ -29,10 +29,9 @@ Find your `dev-docs.json` file.
 
 ## Step 4: Customize the JSON
 
-Now we are going to make your Dev-Docs JSON look similar to the one in the step above. The goal is have the AI answer custom questions and prompts on our code. Replace your JSON with JSON below:
+Now we are going to make your Dev-Docs JSON look similar to the one in the step above. The goal is to have the AI answer custom questions and prompts on our code. Replace your JSON with JSON below:
 
 ```json
-
 {
     "quickDoc": {
         "acceptedExtensions": [".js", ".py"],
@@ -55,15 +54,28 @@ Now we are going to make your Dev-Docs JSON look similar to the one in the step 
         "onSave": true
     }
 }
-
 ```
 
-You can then customize the questions you want the AI To answer from your code by adusting the questions in the JSON or adding new ones to the JSON. The title can be thought of as a header within your documentation. Here you can also set the AI to run every time you save by keeping the "onSave" prompt as true. Alternatively, you can turn the auto generate on save feature off by setting the "onSave" prompt to false.
+You can then customize the questions you want the AI to answer about your code by adjusting the questions in the JSON or adding new ones. The title can be thought of as a header within your documentation. Here you can also set the AI to run every time you save by keeping the "onSave" prompt as true. Alternatively, you can turn the auto-generate on save feature off by setting the "onSave" prompt to false.
 
 ## Step 5: Run the AI on Code File of Choice
 
 Make sure you are signed in and then select the file you wish to be documented. From there, open the command palette, search and select **dev-docs: generate documentation** or run <code>shift command d</code>.
 ![](/img/generate_documentation_with_ai/step_5.png)
 
+## Step 6: Review and Refine
 
+After generating the documentation, it's important to review the output. The AI-generated content may need some refinement to ensure it accurately represents your code and follows your project's documentation standards.
 
+## Step 7: Customize Further
+
+As you become more familiar with the AI generation process, consider adding more specific prompts to your `dev-docs.json` file. For example, you might want to add prompts that ask about:
+
+- The purpose of the code
+- Any dependencies or prerequisites
+- Potential edge cases or error handling
+- Performance considerations
+
+By tailoring these prompts, you can guide the AI to generate more relevant and comprehensive documentation for your specific project needs.
+
+  
