@@ -1,6 +1,6 @@
 
 
-  # Generate Context on Multiple Files
+  # Generate context on multiple files
 
 ## Step 1: Open the Dev-Docs Extension
 ![Step 1](/img/generate_context_on_multiple_files/step_1.png)
@@ -36,5 +36,15 @@ Click the "Generate New Doc" button to create the context document based on the 
 ![Step 7](/img/generate_context_on_multiple_files/step_7.png)
 
 The generated context document will open, showing a summary of the selected files. In this example, it displays information about the package.json configuration file, including project metadata, scripts, and dependencies.
+
+## Step 8: Review and Edit the Generated Context
+![Step 8](/img/generate_context_on_multiple_files/step_8.png)
+
+After the context is generated, review the document for accuracy and completeness. You can edit the content directly in the Dev-Docs extension if needed. This ensures that the generated context accurately represents your project's structure and functionality.
+
+## Step 9: Save and Share the Context
+![Step 9](/img/generate_context_on_multiple_files/step_9.png)
+
+Once you're satisfied with the generated context, save the document. You can now share this context with your team members or use it as a reference for future development work. This comprehensive overview of multiple files can significantly improve project understanding and collaboration.
 
   
