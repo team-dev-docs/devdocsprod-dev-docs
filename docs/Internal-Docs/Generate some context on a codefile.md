@@ -1,6 +1,6 @@
 
 
-  # How to Generate Context on a Code File
+  # How to generate context on a code file
 
 ## Step 1: Open the Code File
 
@@ -18,6 +18,21 @@ Right-click anywhere in the code editor to bring up the context menu. In the men
 
 From the "Dev-Docs" submenu, select "Generate Context". This will trigger the process of analyzing your code and generating contextual information about the file and its contents.
 
-By following these steps, you can easily generate context for your code file, which can be helpful for documentation, understanding complex codebases, or sharing information with team members.
+## Step 4: Review Generated Context
+
+Once the context generation is complete, a new panel or window will open displaying the generated context. This may include:
+
+- An overview of the file's purpose
+- Key functions or classes defined in the file
+- Dependencies and imports
+- Any notable algorithms or patterns used
+
+Take some time to review this information to gain a deeper understanding of your code.
+
+## Step 5: Save or Share Context
+
+Many context generation tools allow you to save the generated information or share it with team members. Look for options to export the context as a markdown file or integrate it with your project's documentation system.
+
+By following these steps, you can easily generate and utilize context for your code file, which can be helpful for documentation, understanding complex codebases, or sharing information with team members.
 
   
