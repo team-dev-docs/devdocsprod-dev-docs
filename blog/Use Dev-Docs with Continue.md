@@ -1,6 +1,4 @@
-
-
-  ---
+---
 title: Contextual Documentation with Dev-Docs and Continue
 authors: andrew
 header_image: /img/dev-docs-assets/ClippedHeroBg.png
@@ -8,148 +6,90 @@ text_color: white
 tags: [docs, seo, sales, ai, code-assistant]
 ---
 
+
+
+***
+
 # **Contextual Documentation with Dev-Docs and Continue!!!!**
 
-[Continue](https://www.continue.dev/) is the leading open-source AI code assistant. Its IDE extensions allow you to leverage AI in your code editor to ask questions about your codebase and generate code. What's even more awesome is that it is extensible—for example, you can use any models you want with it!
+Continue is the leading open-source AI code assistant. Its IDE extensions allow you to leverage AI in your code editor to ask questions about your codebase and generate code. What's even more awesome is that it is extensible—for example, you can use any models you want with it!
 
-<br></br>
-
-[Dev-Docs](https://www.docs.dev/) is an AI developer tool that provides a VS Code extension for generating custom markdown documentation on your codebase that can be used by tools like Continue. Today, we are going to show how you can use Dev-Docs to generate custom, contextual documentation for a codebase, which can be used as context in Continue.
+Dev-Docs is an AI developer tool that provides a VS Code extension for generating custom markdown documentation on your codebase that can be used by tools like Continue. Today, we are going to show how you can use Dev-Docs to generate custom, contextual documentation for a codebase, which can be used as context in Continue.
 
 # **Before You Get Started**
 
-Install [Dev-Docs](https://marketplace.visualstudio.com/items?itemName=dev-docs.dev-docs) in VS Code
+Install Dev-Docs in VS Code
 
-<br></br>
+![step\_3.png](/img/use_dev-docs_with_continue/step_3.png)
 
-![step_3.png](/img/use_dev-docs_with_continue/step_3.png)
+Install Continue in VS Code
 
-<br></br>
-
-Install [Continue](https://marketplace.visualstudio.com/items?itemName=Continue.continue) in VS Code
-
-<br></br>
-
-![step_6.png](/img/use_dev-docs_with_continue/step_6.png)
-
-<br></br>
+![step\_6.png](/img/use_dev-docs_with_continue/step_6.png)
 
 # **Step 1: Open the Dev-Docs Extension and Sign In**
 
 Select the "Dev-Docs" extension icon from the Activity Bar on the left and then "Sign In"
 
-<br></br>
-
 ![image.png](/img/use_dev-docs_with_continue/step_8.png)
-
-<br></br>
 
 Once you are signed in, you will need to create an org name for your team. For example, our org name here is "continuedev"
 
-<br></br>
-
-![step_11.png](/img/use_dev-docs_with_continue/step_11.png)
-
-<br></br>
+![step\_11.png](/img/use_dev-docs_with_continue/step_11.png)
 
 # **Step 2: Set Up Your Repository and Generate Context**
 
 Click the "Setup my repo" button and then the "Generate Context" button
 
-<br></br>
-
-![step_7.png](/img/use_dev-docs_with_continue/step_7.png)
-
-<br></br>
+![step\_7.png](/img/use_dev-docs_with_continue/step_7.png)
 
 This will create a `dev-docs.json` file and `dev-docs` folder in your repo
 
-<br></br>
-
-![step_14.png](/img/use_dev-docs_with_continue/step_14.png)
-
-<br></br>
+![step\_14.png](/img/use_dev-docs_with_continue/step_14.png)
 
 Select the "Generate Context" button
 
-<br></br>
-
-![step_15.png](/img/use_dev-docs_with_continue/step_15.png)
-
-<br></br>
+![step\_15.png](/img/use_dev-docs_with_continue/step_15.png)
 
 # **Step 3: Select Files and Generate Contextual Documentation**
 
-<br></br>
-
 Choose the files you want to be used as input for the contextual documentation, making sure "Codebase" is selected, and then click "Generate New Doc"
 
-<br></br>
-
-![step_16.png](/img/use_dev-docs_with_continue/step_16.png)
-
-<br></br>
+![step\_16.png](/img/use_dev-docs_with_continue/step_16.png)
 
 When you navigate back to the file explorer you should see some files populated in dev-docs folder
 
-<br></br>
-
-![step_31.png](/img/use_dev-docs_with_continue/step_31.png)
-
-<br></br>
+![step\_31.png](/img/use_dev-docs_with_continue/step_31.png)
 
 # **Step 4: Open the Continue Extension and Sign In**
 
-<br></br>
-
 Click the Continue extension icon in the Activity Bar and sign in with your GitHub account to use the Continue free trial models (or add your own API keys if you'd like instead)
 
-<br></br>
-
-![step_22.png](/img/use_dev-docs_with_continue/step_22.png)
-
-<br></br>
+![step\_22.png](/img/use_dev-docs_with_continue/step_22.png)
 
 # **Step 5: Use @dev-docs as Context and Ask Questions**
 
-<br></br>
+Continue will automatically allow you to use dev-docs folder as context (using the folder context provider)
 
-Continue will automatically allow you to use dev-docs folder as context (using the [folder context provider](https://docs.continue.dev/chat/context-selection#specific-folder))
-
-<br></br>
-
-![step_24.png](/img/use_dev-docs_with_continue/step_24.png)
-
-<br></br>
+![step\_24.png](/img/use_dev-docs_with_continue/step_24.png)
 
 Try asking questions like "@dev-docs what technologies are used?"
 
-<br></br>
-
-![step_28.png](/img/use_dev-docs_with_continue/step_40.png)
-
-<br></br>
+![step\_28.png](/img/use_dev-docs_with_continue/step_40.png)
 
 # **Step 6: Customize Your Documentation**
-
-<br></br>
 
 Dev-Docs allows you to tailor your documentation to your specific needs. You can add custom sections, include code snippets, or even integrate diagrams to make your documentation more comprehensive and user-friendly.
 
 To customize your documentation:
 
 1. Open the `dev-docs.json` file in your repository
+
 2. Modify the `sections` array to add or remove documentation sections
+
 3. Use the "Generate Context" button again to update your documentation
 
 This flexibility ensures that your team always has the most relevant and up-to-date information at their fingertips.
 
-<br></br>
-
 # **Conclusion**
 
-<br></br>
-
 Now that you have set up both Dev-Docs and Continue, you can take full advantage of the contextual documentation generated by Dev-Docs within Continue. Everything from code explanation, high-level context, best practices, and architecture are now supercharged with Continue and Dev-Docs. This powerful combination enhances your development workflow, improves code quality, and fosters better collaboration within your team. Thanks for reading, and happy coding!
-
-  
