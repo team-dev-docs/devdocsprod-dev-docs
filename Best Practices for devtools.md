@@ -1,1 +1,1 @@
-A cool blog about l
+A cool blog about life
