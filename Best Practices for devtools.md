@@ -1,1 +1,0 @@
-\# A Laid-Back Blog About Life's Little Adventures Hey there! 👋 Welcome to my chill corner of the internet where we chat about all the ups, downs, and in-betweens of this crazy ride called life. Grab a cup of coffee (or whatever floats your boat) and let's hang out!
