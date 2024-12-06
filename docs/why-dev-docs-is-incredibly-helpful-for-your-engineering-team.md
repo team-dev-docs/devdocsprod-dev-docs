@@ -1,6 +1,4 @@
-
-
-  # Why Dev-Docs is Incredibly Helpful for Your Engineering Team
+# Why Dev-Docs is Incredibly Helpful for Your Engineering Team
 
 ## 1. Streamlined Documentation Process
 
@@ -51,5 +49,3 @@ Dev-Docs can work alongside other development tools, such as Continue, enhancing
 By automating much of the documentation process, Dev-Docs can save significant time and resources that would otherwise be spent on manual documentation tasks.
 
 In conclusion, Dev-Docs offers a comprehensive solution to many common documentation challenges, improving code quality, team collaboration, and overall development efficiency. Its integration with familiar tools and AI-powered features make it an invaluable asset for modern engineering teams.
-
-  
