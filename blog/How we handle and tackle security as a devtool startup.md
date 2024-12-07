@@ -6,4 +6,4 @@ Now this last security principle is super important to us, AKA reducing our visi
 
 ## What event inspired this post
 
-From the last section
+From the last section you likely got a feel
