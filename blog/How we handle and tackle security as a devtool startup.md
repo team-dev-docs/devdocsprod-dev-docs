@@ -2,4 +2,4 @@ We are an AI devtool that turns code to content, and code is something we unders
 
 ## Reducing visibility
 
-Now this last security principle is super important to us, AKA reducing our visibility around things around such as the code our users send or any other sensitive information. Other AI companies might want to persist and train on your code, but I will make this clear we do not. As a developer myself with a security and privacy background I super sensitive
+Now this last security principle is super important to us, AKA reducing our visibility around things around such as the code our users send or any other sensitive information. Other AI companies might want to persist and train on your code, but I will make this clear we do not. As a developer myself with a security and privacy background I super sensitive to making sure our users feel
