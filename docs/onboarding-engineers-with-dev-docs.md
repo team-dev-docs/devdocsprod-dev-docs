@@ -1,8 +1,10 @@
-
-
-  ---
+---
 sidebar_position: 6
 ---
+
+
+
+***
 
 # Onboarding Engineers with Dev-Docs
 
@@ -10,7 +12,7 @@ Bringing new engineers up to speed on your codebase can be a challenging and tim
 
 ## Automated Documentation Generation
 
-Dev-Docs uses AI to automatically generate documentation for your codebase. This means that even if your team hasn't had time to write extensive documentation, new engineers can still get a comprehensive overview of the project structure and functionality.
+Dev-Docs uses AI to automatically generate documentation for your codebase. This means that even if your team hasn't had time to write extensive documentation, new engineers can still get a comprehensive overview of the project structure and functionality!
 
 ## Context-Aware Documentation
 
@@ -49,5 +51,3 @@ By providing comprehensive, easily accessible documentation, Dev-Docs significan
 Dev-Docs ensures that all new engineers have access to the same high-quality documentation, providing a consistent onboarding experience regardless of who is managing the process.
 
 By leveraging Dev-Docs in your onboarding process, you can help new engineers ramp up faster, reduce the burden on existing team members, and maintain a more comprehensive and up-to-date knowledge base for your entire engineering organization.
-
-  
