@@ -6,4 +6,4 @@ Now this last security principle is super important to us, AKA reducing our visi
 
 ## What event inspired this post
 
-At this point you have likely gathered I am paranoid and almost neurotic about security, so you might be wondering inspired this event! Funny enough this came down to logs in our dev/local/testing environment. On a screenshare I was demoing new functionality to someone I view as a trusted advisor and close friend to Dev-Docs, and realized my server logs showed for a split second. The server log in question a
+At this point you have likely gathered I am paranoid and almost neurotic about security, so you might be wondering inspired this event! Funny enough this came down to logs in our dev/local/testing environment. On a screenshare I was demoing new functionality to someone I view as a trusted advisor and close friend to Dev-Docs, and realized my server logs showed for a split second. Now remember for context the only time we log items is
