@@ -6,4 +6,4 @@ Now this last security principle is super important to us, AKA reducing our visi
 
 ## What event inspired this post
 
-At this point you have likely gathered I am paranoid and almost neurotic about security, so you might be wondering inspired this event! Es
+At this point you have likely gathered I am paranoid and almost neurotic about security, so you might be wondering inspired this event! Funny
