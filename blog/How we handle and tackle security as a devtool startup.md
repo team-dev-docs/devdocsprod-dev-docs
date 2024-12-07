@@ -2,3 +2,5 @@ We are an AI devtool that turns code to content, and code is something we unders
 \
 \
 Now this last security principle is super important to us, AKA reducing our visibility around things around our users info such as the code or sensitive information
+
+## Reducin
