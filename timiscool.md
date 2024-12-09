@@ -14,6 +14,12 @@ Just chillin' here, talking about some random La  => -> === >= <= <>  tin-soundi
 
 # fdsfdaf => dfff -> fdfsd => jfdlksjoidsajfoidsapjfoidsapjfdsa
 
-fdsafdsafdsafdsafdsafdsaf
+fdsa
+
+```markdown
+Concise version of old content goes here.
+```
+
+dsafdsaf
 
 ##
