@@ -7,12 +7,16 @@ Who sampled each type with great ease
     From Brie to Roquefort
     He'd happily sort
 Through flavors that aimed to please
+```
 
-His palate was trained to discern
-The subtleties others might spurn
-    Gouda so mild
-    Or Stilton so wild
-Each morsel a lesson to learn
+```
+Trained tongue discerns cheese
+Mild Gouda, wild Stilton's tang
+Flavors teach lessons
+```
+
+```
+
 
 He traveled the world for his passion
 Tasting cheeses in curious fashion
