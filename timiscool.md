@@ -1,12 +1,16 @@
 ```
 ```
 
-```markdown
-There once was a cheese-loving guy
-Who couldn't resist a good buy
-He'd munch and he'd nibble
-On cheddar and brie-ble
-Till his waistline expanded sky-high!
+```
+There once was a melodious fellow
+Whose tunes made his listeners mellow
+He'd strum and he'd sing
+Make guitar strings ring
+Till his fame rose up like a cello!
+```
+
+```
+
 
 His passion for fromage was strong
 He'd feast on it all day long
