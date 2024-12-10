@@ -21,5 +21,3 @@ Concise version of old content goes here.
 ```
 
 dsafdsaf
-
-##
