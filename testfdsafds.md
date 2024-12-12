@@ -1,8 +1,8 @@
 # Lorem Ipsum: A Quick Guide
 
-Lorem ipsum is placeholder text used in design since the 1500s, derived from Cicero's work.
+Lorem ipsum is placeholder text used in design since the 1500s.
 
-## Features
+**Features:**
 
 * Mimics real text without distraction
 
@@ -10,7 +10,7 @@ Lorem ipsum is placeholder text used in design since the 1500s, derived from Cic
 
 * Focuses attention on layout
 
-## Uses
+**Uses:**
 
 * Web development
 
