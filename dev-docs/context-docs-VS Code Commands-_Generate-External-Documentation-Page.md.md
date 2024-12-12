@@ -1,6 +1,4 @@
-
-
-  ---
+---
 # High Level Context
 ## context
 This Markdown file describes a Visual Studio Code extension command called "Generate an External Doc Page" (devdocs.createExternalDoc). The command is designed to automatically generate external documentation for code projects. Key points include:
@@ -20,8 +18,15 @@ This Markdown file describes a Visual Studio Code extension command called "Gene
 The file provides a comprehensive overview of the command's purpose, configuration options, prerequisites, and step-by-step usage instructions, making it a valuable resource for developers using this VS Code extension feature.
 
 ---
-# devdocs.createExternalDoc docs/VS Code Commands/_Generate-External-Documentation-Page.md
-## Imported Code Object
+
+
+
+***
+
+# devdocs.createExternalDoc docs/VS Code Commands/\_Generate-External-Documentation-Page.md
+
+## Imported Code Objectknjkb
+
 I apologize, but there's a misunderstanding in your question. The code snippet you provided is not actually code, but rather an explanation of a hypothetical command or function called `devdocs.createExternalDoc`.
 
 In reality, there is no standard or widely known command or function called `devdocs.createExternalDoc`. This appears to be a description of a fictional or custom tool that might exist in a specific development environment or documentation system.
@@ -29,10 +34,11 @@ In reality, there is no standard or widely known command or function called `dev
 The explanation describes a theoretical functionality where:
 
 1. The command analyzes code in an open editor.
+
 2. It extracts relevant information from the code.
+
 3. It generates a markdown file containing documentation based on this analysis.
+
 4. The resulting markdown file can be used for external documentation purposes.
 
 However, without more context about the specific system or tool being referred to, it's not possible to provide more details about how such a command would actually work or be implemented.
-
-  
