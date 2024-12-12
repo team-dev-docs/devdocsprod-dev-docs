@@ -1,6 +1,6 @@
 # Lorem Ipsum: A Quick Guide
 
-Lorem ipsum is placeholder text used in design since the 1500s.
+Lorem ipsum is placeholder texdsince the 1500s.
 
 **Features:**
 
