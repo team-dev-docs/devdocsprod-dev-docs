@@ -1,4 +1,4 @@
-# Lorem Ipsum: A sdde
+# Lorem Ipsum: A Quick Guide
 
 Lorem ipsum is placeholder text used in design since the 1500s.
 
