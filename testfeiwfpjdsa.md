@@ -1,6 +1,6 @@
 # Lorem Ipsum: A Deeper Dive
 
-Lorem ipsum [dolor](google.com) sit amet, consectetur adipiscing elit. This seemingly nonsensical phrase has been a staple in the design and publishing industry for centuries. Originally derived from Cicero's philosophical work "De Finibus Bonorum et Malorum," this pseudo-Latin text has evolved into a crucial tool for designers and typesetters worldwide.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. This seemingly nonsensical phrase has been a staple in the design and publishing industry for centuries. Originally derived from Cicero's philosophical work "De Finibus Bonorum et Malorum," this pseudo-Latin text has evolved into a crucial tool for designers and typesetters worldwide.
 
 ## Origins and Evolution
 
