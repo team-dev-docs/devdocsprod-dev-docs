@@ -1,4 +1,4 @@
-# Lorem Ipsum: A Quick Guide
+# Lorem Ipsum: A Quick Gfuide
 
 Lorem ipsum is placeholder texdsince the 1500s.
 
