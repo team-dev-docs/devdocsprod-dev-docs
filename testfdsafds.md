@@ -1,4 +1,4 @@
-# Lorem Ipuick sum: A QGuide
+# Lorem Ipsum: A Quick Guide
 
 Lorem ipsum is placeholder text used in design since the 1500s.
 
