@@ -2,8 +2,6 @@
 
 Lorem ipsum dolor sit [amet](https://www.google.com/), consectetur adipiscing elit. This seemingly nonsensical phrase has been a staple in the design and publishing industry for centuries. Originally derived from Cicero's philosophical work "De Finibus Bonorum et Malorum," this pseudo-Latin text has evolved into a crucial tool for designers and typesetters worldwide.
 
-/
-
 ## Origins and Evolution
 
 The story of Lorem Ipsum begins in the 1500s when an unknown printer scrambled parts of Cicero's work to create a type specimen book. This practice has survived not only five centuries but also the leap into electronic typesetting, remaining essentially unchanged.
