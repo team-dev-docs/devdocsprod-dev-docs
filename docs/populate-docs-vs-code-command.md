@@ -1,6 +1,6 @@
-# Populate Docs VS Code Command
+# Generating User-Facing API and SDK Documentation with Dev-Docs
 
-The "Populate Docs" VS Code command is a powerful feature in the Dev-Docs extension that allows you to automatically generate documentation for your codebase. This command can be configured using the `dev-docs.json` file to customize its behavior and output.
+The "Populate Docs" command in the Dev-Docs VS Code extension is a powerful tool for automatically generating user-facing documentation for your API or SDK. This feature streamlines the process of creating comprehensive, up-to-date documentation for your codebase.
 
 ## Accessing the Command
 
@@ -10,105 +10,73 @@ To use the Populate Docs command:
 
 2. Type "Dev-Docs: Populate External Docs" and select it.
 
-## Configuration Options
+## Configuring for API and SDK Documentation
 
-The `dev-docs.json` file allows you to fine-tune how the Populate Docs command works. Here are the key configuration options:
-
-### `ai` Section
-
-The `ai` section in `dev-docs.json` contains most of the settings for the Populate Docs command:
+The `dev-docs.json` file allows you to tailor the documentation generation process for your API or SDK. Here are key configuration options:
 
 ```json
 {
   "ai": {
-    "internalTypeFilters": ["class", "method", "function"],
-    "codeFilters": [],
-    "nameFilters": [],
-    "populateDoc": "path/to/template.md",
-    "docSubFolder": "api",
-    "importFolders": ["src/utils", "src/helpers"],
-    "importFiles": ["config.js", "constants.js"],
-    "importTypeFilters": ["class", "method", "function"],
-    "importCodeFilters": [],
-    "importNameFilters": [],
-    "branch": "documentation",
-    "contextPrompt": "path/to/prompt.md",
-    "externalDocPrompt": "Generate comprehensive documentation for this code...",
+    "internalTypeFilters": ["class", "method", "function", "interface"],
+    "populateDoc": "path/to/api_template.md",
+    "docSubFolder": "api_docs",
+    "importFolders": ["src/api", "src/sdk"],
+    "externalDocPrompt": "Generate user-friendly API documentation...",
     "merge": true
   }
 }
 ```
 
-#### Key Configuration Options:
+### Key Configuration Options for API/SDK Docs:
 
-1. `internalTypeFilters`: Array of symbol types to include (e.g., "class", "method", "function").
+* `internalTypeFilters`: Include symbol types relevant to your API/SDK (e.g., "class", "method", "function", "interface").
 
-2. `codeFilters`: Array of strings to filter code content.
+* `populateDoc`: Path to a template markdown file for API/SDK documentation.
 
-3. `nameFilters`: Array of strings to filter symbol names.
+* `docSubFolder`: Subdirectory where generated API/SDK docs will be saved.
 
-4. `populateDoc`: Path to a template markdown file for generated docs.
+* `importFolders`: Array of folders containing your API/SDK source code.
 
-5. `docSubFolder`: Subdirectory where generated docs will be saved.
+* `externalDocPrompt`: Custom prompt for generating user-facing API/SDK documentation.
 
-6. `importFolders`: Array of folders to import additional context from.
+## Best Practices for API/SDK Documentation
 
-7. `importFiles`: Array of specific files to import for context.
+1. **Use Clear Templates**: Create templates that include sections for:
 
-8. `importTypeFilters`, `importCodeFilters`, `importNameFilters`: Similar to their non-import counterparts, but for imported content.
+   * Endpoint descriptions
 
-9. `branch`: Git branch name for committing generated documentation.
+   * Request/Response examples
 
-10. `contextPrompt`: Path to a markdown file containing custom prompts for context generation.
+   * Parameter explanations
 
-11. `externalDocPrompt`: Custom prompt for generating external documentation.
+   * SDK usage examples
 
-12. `merge`: Boolean to enable merging of documentation for files with multiple symbols.
+2. **Custom Prompts**: Craft prompts that emphasize:
 
-## Advanced Configuration
+   * User-friendly language
 
-### Custom Prompts
+   * Practical code examples
 
-You can create custom prompts for documentation generation:
+   * Common use cases
 
-1. Create a markdown file (e.g., `custom_prompt.md`).
+   * Error handling
 
-2. Add your custom instructions in this file.
+3. **Consistent Formatting**: Ensure your configuration produces consistently formatted documentation across all API endpoints or SDK functions.
 
-3. Set the `contextPrompt` in `dev-docs.json` to the path of your custom prompt file.
+4. **Include Authentication**: If applicable, include sections on authentication methods and requirements.
 
-### Templating
+5. **Version Information**: Clearly indicate the version of the API or SDK the documentation applies to.
 
-Use the `populateDoc` option to specify a template for generated documentation:
+6. **Interactive Examples**: Consider including interactive examples or links to API playgrounds where possible.
 
-1. Create a markdown template file.
+7. **Error Codes and Responses**: Provide comprehensive information on possible error codes and their meanings.
 
-2. Include placeholders like `{{DocumentTitle}}` or `{{CodeExample}}`.
+8. **SDK-Specific Guidelines**: For SDK documentation, include:
 
-3. Set `populateDoc` in `dev-docs.json` to the path of your template.
+   * Installation instructions
 
-### Selective Documentation
+   * Quick start guides
 
-Use filters to focus on specific parts of your codebase:
+   * Language-specific considerations
 
-* `internalTypeFilters`: Include only certain types of symbols.
-
-* `codeFilters` and `nameFilters`: Include or exclude based on code content or symbol names.
-
-### Including External Context
-
-Leverage `importFolders` and `importFiles` to bring in additional context from other parts of your project, ensuring comprehensive documentation.
-
-## Best Practices
-
-1. Start with broad filters and narrow down as needed.
-
-2. Use custom prompts to guide the AI in generating documentation that matches your project's style and needs.
-
-3. Regularly review and update your `dev-docs.json` configuration as your project evolves.
-
-4. Utilize the `merge` option for cleaner documentation of files with multiple related symbols.
-
-5. Experiment with different combinations of filters and import options to find the best setup for your project structure.
-
-By effectively configuring the Populate Docs command through `dev-docs.json`, you can automate much of your documentation process, ensuring consistent and comprehensive documentation across your project.
+By effectively configuring the Populate Docs command, you can automate the creation of clear, comprehensive, and user-friendly documentation for your API or SDK, enhancing the developer experience for your users.
