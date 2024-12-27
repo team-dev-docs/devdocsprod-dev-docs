@@ -1,6 +1,6 @@
+# Create a New Custom User-Facing Doc
 
-
-  # Create a New Custom User-Facing Doc
+Creating custom user-facing documentation is essential for providing clear, tailored information to your users. It helps improve user experience, reduces support queries, and showcases the value of your product. This guide will walk you through the process of creating a new custom user-facing document using the Dev-Docs feature.
 
 ## Step 1: Access the Dev-Docs menu
 
@@ -28,14 +28,13 @@ In the "Task" field, enter a description of what you want the document to cover.
 
 ## Step 5: Push the markdown doc up
 
-You should now have a new markdown doc for your prompt.  Feel free to edit and review as you wish.  When you are ready you can now right click the markdown file and from the sub-menu select "push user-facing docs site" to push up your new document.
+You should now have a new markdown doc for your prompt. Feel free to edit and review as you wish. When you are ready, right-click the markdown file and from the sub-menu select "push user-facing docs site" to push up your new document.
 
 ![Generate New Doc button](/img/create_a_new_custom_user-facing_doc/step_6.png)
 
-
 ## Step 6: Provide a title to the document
 
-Before your document is pushed up, you have to give it a title so when prompted enter a title for the document you are going to pushing up.
+Before your document is pushed up, you have to give it a title. When prompted, enter a clear and descriptive title for the document you are pushing up.
 
 ![Review generated document](/img/create_a_new_custom_user-facing_doc/step_7.png)
 
@@ -47,10 +46,12 @@ Now visit your connected user-facing docs repo and look for the generated pull-r
 
 ## Step 8: Review and merge the pull request
 
-Review the changes in the pull request. If everything looks good, merge the pull request to add your new custom user-facing document to the main branch.
+Carefully review the changes in the pull request. Ensure that the content is accurate, well-formatted, and aligns with your documentation standards. If everything looks good, merge the pull request to add your new custom user-facing document to the main branch.
 
 ![Merge pull request](/img/create_a_new_custom_user-facing_doc/step_13.png)
 
+## Step 9: Verify the published document
 
+After merging the pull request, visit your user-facing documentation site to verify that the new document has been published correctly. Check for proper formatting, links, and overall consistency with your existing documentation.
 
-  
+By following these steps, you can efficiently create and publish custom user-facing documentation that enhances your product's usability and user satisfaction.
