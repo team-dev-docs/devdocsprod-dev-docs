@@ -1,40 +1,46 @@
 # Automatic Changelog Generation
 
-This document explains the automatic changelog generation feature implemented in the Visual Studio Code extension.
-
-## Overview
-
-The automatic changelog generation feature allows users to easily create and update changelogs based on Git commit history. It provides a structured way to document changes made to the project over time.
+Dev-Docs now includes an automatic changelog generation feature. This feature allows you to easily create and maintain a changelog for your project based on your git commit history.
 
 ## How to Use
 
-1. Open the command palette in VS Code (Ctrl+Shift+P or Cmd+Shift+P).
-2. Type "Generate Changelog" and select the command.
-3. Choose the desired time range for the changelog (e.g., since last tag, last week, or custom date range).
-4. The extension will analyze the Git commit history and generate a formatted changelog.
+To generate a changelog, use the following command:
 
-## Information Provided
+```
+vscode.commands.executeCommand('devdocs.changelog')
+```
+
+This command will:
+
+1. Fetch the most recent git commits
+2. Analyze the commit messages and changed files
+3. Generate a formatted changelog
+
+## What Information is Provided
 
 The generated changelog includes:
 
-- Commit messages grouped by type (e.g., feat, fix, docs)
-- Author names and commit dates
-- Links to related issues or pull requests (if available in the commit message)
+- Commit messages
+- Files changed in each commit
+- A summary of changes categorized into:
+  - Added
+  - Changed
+  - Deprecated
+  - Removed
+  - Fixed
+  - Security
 
 ## Configuration
 
-You can customize the changelog generation by modifying the extension settings:
+The changelog generation feature uses the settings defined in your `dev-docs.json` file. You can customize the behavior by modifying the following properties:
 
-- `changelogGeneration.includeTypes`: Array of commit types to include in the changelog
-- `changelogGeneration.excludeAuthors`: Array of author names to exclude from the changelog
-- `changelogGeneration.dateFormat`: Format string for displaying dates in the changelog
+- `ai.acceptedExtensions`: An array of file extensions to include in the changelog
+- `ai.excludedExpressions`: An array of patterns to exclude from the changelog
 
-## Troubleshooting
+## Important Notes
 
-If you encounter any issues with changelog generation:
+- The feature currently analyzes the last 10 commits.
+- It filters out third-party files and dependencies to focus on your project's core changes.
+- The changelog is generated using AI, so it provides a human-readable summary of changes.
 
-1. Ensure you have Git installed and configured properly.
-2. Check that your project has a valid Git repository.
-3. Verify that you have the necessary permissions to access the Git history.
-
-For more information on the implementation details, refer to the `src/GitServices.ts` and `src/extension.ts` files in the extension source code.
+By using this feature, you can keep your project's changelog up-to-date with minimal effort, providing clear and concise information about your project's evolution to both contributors and users.
