@@ -1,38 +1,40 @@
 # Automatic Changelog Generation
 
-GitLens now includes a powerful automatic changelog generation feature that helps you keep track of changes in your repository. This document explains how to use this feature and what information it provides.
+This document explains the automatic changelog generation feature implemented in the Visual Studio Code extension.
+
+## Overview
+
+The automatic changelog generation feature allows users to easily create and update changelogs based on Git commit history. It provides a structured way to document changes made to the project over time.
 
 ## How to Use
 
-To generate a changelog automatically:
-
-1. Open the Command Palette (Ctrl+Shift+P or Cmd+Shift+P on Mac).
-2. Type "GitLens: Generate Changelog" and select the command.
-3. Choose the range of commits you want to include in the changelog.
+1. Open the command palette in VS Code (Ctrl+Shift+P or Cmd+Shift+P).
+2. Type "Generate Changelog" and select the command.
+3. Choose the desired time range for the changelog (e.g., since last tag, last week, or custom date range).
+4. The extension will analyze the Git commit history and generate a formatted changelog.
 
 ## Information Provided
 
-The automatically generated changelog includes:
+The generated changelog includes:
 
-- Commit messages grouped by type (e.g., features, bug fixes, documentation)
-- Author information for each commit
-- Date of each commit
-- Links to the full commit details
+- Commit messages grouped by type (e.g., feat, fix, docs)
+- Author names and commit dates
+- Links to related issues or pull requests (if available in the commit message)
 
-## Customization
+## Configuration
 
-You can customize the changelog generation process by:
+You can customize the changelog generation by modifying the extension settings:
 
-- Configuring commit message conventions in your repository
-- Adjusting the grouping of commit types
-- Excluding certain types of commits from the changelog
+- `changelogGeneration.includeTypes`: Array of commit types to include in the changelog
+- `changelogGeneration.excludeAuthors`: Array of author names to exclude from the changelog
+- `changelogGeneration.dateFormat`: Format string for displaying dates in the changelog
 
-For more detailed configuration options, refer to the GitLens documentation.
+## Troubleshooting
 
-## Benefits
+If you encounter any issues with changelog generation:
 
-- Saves time by automating the changelog creation process
-- Ensures consistency in changelog format
-- Provides a clear overview of changes for team members and users
+1. Ensure you have Git installed and configured properly.
+2. Check that your project has a valid Git repository.
+3. Verify that you have the necessary permissions to access the Git history.
 
-By leveraging this feature, you can maintain a comprehensive and up-to-date record of your project's evolution with minimal effort.
+For more information on the implementation details, refer to the `src/GitServices.ts` and `src/extension.ts` files in the extension source code.
