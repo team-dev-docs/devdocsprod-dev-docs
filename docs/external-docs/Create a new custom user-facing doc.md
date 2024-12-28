@@ -1,6 +1,4 @@
-
-
-  # Create a New Custom User-Facing Doc
+# Create a New Custom User-Facing Doc
 
 ## Step 1: Access the Dev-Docs menu
 
@@ -8,11 +6,13 @@ Open your development environment and locate the Dev-Docs icon on the left sideb
 
 ![Dev-Docs menu](/img/create_a_new_custom_user-facing_doc/step_2.png)
 
-## Step 2: Select "Create Custom Doc"
+## Step 2: Select "Create Custom Doc" or "More with AI"
 
-From the Dev-Docs menu, click on the "Create Custom Doc" button.
+From the Dev-Docs menu, you have two options:
+1. Click on the "Create Custom Doc" button for a guided process.
+2. Choose "More with AI" and select "Generate New Doc" for an AI-assisted approach.
 
-![Create Custom Doc button](/img/create_a_new_custom_user-facing_doc/step_2.png)
+![Create Custom Doc and More with AI options](/img/create_a_new_custom_user-facing_doc/step_2_updated.png)
 
 ## Step 3: Choose context files
 
@@ -24,33 +24,36 @@ In the "Generate a new document for your repo" window, select the files you want
 
 In the "Task" field, enter a description of what you want the document to cover. For this example, we'll use "A Overview page on why the Sprite AI SDK is awesome".
 
-![Enter document task](/img/create_a_new_custom_user-facing_doc/step_5.png)
+If you chose the "Generate New Doc" option under "More with AI", you can provide more detailed instructions for the AI to generate comprehensive documentation content.
 
-## Step 5: Push the markdown doc up
+![Enter document task](/img/create_a_new_custom_user-facing_doc/step_5_updated.png)
 
-You should now have a new markdown doc for your prompt.  Feel free to edit and review as you wish.  When you are ready you can now right click the markdown file and from the sub-menu select "push user-facing docs site" to push up your new document.
+## Step 5: Generate and review the document
 
-![Generate New Doc button](/img/create_a_new_custom_user-facing_doc/step_6.png)
+Click on the "Generate New Doc" button to create your markdown document. The AI will use the context files and your task description to generate relevant content.
 
+![Generate New Doc button](/img/create_a_new_custom_user-facing_doc/step_6_updated.png)
 
-## Step 6: Provide a title to the document
+Review the generated document and make any necessary edits or improvements.
 
-Before your document is pushed up, you have to give it a title so when prompted enter a title for the document you are going to pushing up.
+## Step 6: Push the markdown doc up
+
+When you are satisfied with the document, right-click the markdown file and select "push user-facing docs site" from the sub-menu to push up your new document.
+
+## Step 7: Provide a title to the document
+
+Before your document is pushed up, you will be prompted to enter a title for the document.
 
 ![Review generated document](/img/create_a_new_custom_user-facing_doc/step_7.png)
 
-## Step 7: View changes to GitHub
+## Step 8: View changes to GitHub
 
 Now visit your connected user-facing docs repo and look for the generated pull-request.
 
 ![GitHub repository page](/img/create_a_new_custom_user-facing_doc/step_11.png)
 
-## Step 8: Review and merge the pull request
+## Step 9: Review and merge the pull request
 
 Review the changes in the pull request. If everything looks good, merge the pull request to add your new custom user-facing document to the main branch.
 
 ![Merge pull request](/img/create_a_new_custom_user-facing_doc/step_13.png)
-
-
-
-  
