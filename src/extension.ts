@@ -1,16 +1,34 @@
-# Dev-Docs VSCode Extension
+# devdocs.helloWorld Documentation
 
-## Overview
+## Brief Description
+The `devdocs.helloWorld` command opens the Dev-docs interface, allowing users to access and manage their project documentation.
 
-Dev-Docs is a Visual Studio Code extension that helps developers generate and manage documentation for their codebase. It provides features for automatically generating documentation, organizing documentation files, and integrating with external documentation systems.
+## Usage
+To use the `devdocs.helloWorld` command, you can either:
+1. Run it from the VSCode command palette
+2. Use the keyboard shortcut assigned to it
+3. Click on the "Open Dev-docs" button in the Dev-docs sidebar
 
-Key features include:
+## Parameters
+This command does not accept any parameters.
 
-- Automatic documentation generation for code files and symbols
-- Organization of documentation into general, reference, context, and misc categories 
-- Integration with external documentation systems and Git repositories
-- Custom AI-powered documentation generation and summarization
-- Search capabilities across documentation
-- API documentation generation from code
+## Return Value
+This command does not return a value. Instead, it opens the Dev-docs interface within VSCode.
 
-The extension aims to streamline the process of creating and maintaining technical documentation alongside code. It leverages AI and static analysis to generate documentation content while providing developers with tools to organize and customize that content.
+## Examples
+
+### Opening Dev-docs from the command palette
+1. Open the VSCode command palette (Ctrl+Shift+P or Cmd+Shift+P on Mac)
+2. Type "Open Dev-docs" and select the `Dev-docs: Open Dev-docs` command
+
+### Using a custom keyboard shortcut
+1. Open VSCode settings
+2. Search for "keyboard shortcuts"
+3. Add a new shortcut for the `devdocs.helloWorld` command
+4. Use your custom shortcut to quickly open Dev-docs
+
+## Notes or Considerations
+- Ensure you have initialized Dev-docs for your project before using this command
+- The Dev-docs interface will open in a new editor tab within VSCode
+- If you have previously opened Dev-docs and have unsaved changes, they will be preserved when reopening
+- This command is part of the Dev-docs extension and requires the extension to be installed and activated in your VSCode environment
