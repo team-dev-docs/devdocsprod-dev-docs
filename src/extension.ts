@@ -1,34 +1,40 @@
-# devdocs.helloWorld Documentation
+# devdocs.runProject Documentation
 
 ## Brief Description
-The `devdocs.helloWorld` command opens the Dev-docs interface, allowing users to access and manage their project documentation.
+`devdocs.runProject` is a command that runs the project associated with the current workspace in Visual Studio Code.
 
 ## Usage
-To use the `devdocs.helloWorld` command, you can either:
-1. Run it from the VSCode command palette
-2. Use the keyboard shortcut assigned to it
-3. Click on the "Open Dev-docs" button in the Dev-docs sidebar
+This command can be executed from the VS Code command palette or through a keyboard shortcut. It creates a new terminal and runs the project using a predefined npm script.
 
 ## Parameters
 This command does not accept any parameters.
 
 ## Return Value
-This command does not return a value. Instead, it opens the Dev-docs interface within VSCode.
+This command does not return a value. It executes an action within VS Code.
 
 ## Examples
 
-### Opening Dev-docs from the command palette
-1. Open the VSCode command palette (Ctrl+Shift+P or Cmd+Shift+P on Mac)
-2. Type "Open Dev-docs" and select the `Dev-docs: Open Dev-docs` command
+1. Running the project from the command palette:
+   ```
+   1. Open the command palette (Ctrl+Shift+P or Cmd+Shift+P)
+   2. Type "Dev-docs: Run Project"
+   3. Press Enter to execute the command
+   ```
 
-### Using a custom keyboard shortcut
-1. Open VSCode settings
-2. Search for "keyboard shortcuts"
-3. Add a new shortcut for the `devdocs.helloWorld` command
-4. Use your custom shortcut to quickly open Dev-docs
+2. Using a custom keybinding:
+   ```json
+   {
+     "key": "ctrl+alt+r",
+     "command": "devdocs.runProject"
+   }
+   ```
+   Add this to your `keybindings.json` file in VS Code, then use Ctrl+Alt+R to run the project.
 
 ## Notes or Considerations
-- Ensure you have initialized Dev-docs for your project before using this command
-- The Dev-docs interface will open in a new editor tab within VSCode
-- If you have previously opened Dev-docs and have unsaved changes, they will be preserved when reopening
-- This command is part of the Dev-docs extension and requires the extension to be installed and activated in your VSCode environment
+
+- This command assumes that your project can be started with the npm script `npm run start -- --host 0.0.0.0`.
+- Ensure that your `package.json` file has a `start` script defined.
+- The command creates a new terminal named "My Custom Terminal" for running the project.
+- If the project is already running in a terminal, executing this command will create a new terminal instance.
+- This command is particularly useful for projects that need to be run on a specific host (0.0.0.0) for development or testing purposes.
+- If your project requires a different start command, you may need to modify the extension or use a custom task instead.
