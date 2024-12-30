@@ -1,16 +1,36 @@
-# Dev-Docs VSCode Extension
+# devdocs.helloWorld Documentation
 
-## Overview
+## Brief Description
+devdocs.helloWorld is a command that opens the Dev-Docs panel in Visual Studio Code, allowing users to access and manage their development documentation.
 
-Dev-Docs is a Visual Studio Code extension that helps developers generate and manage documentation for their codebase. It provides features for automatically generating documentation, organizing documentation files, and integrating with external documentation systems.
+## Usage
+To use devdocs.helloWorld, execute it as a VS Code command. This can be done through the Command Palette or by binding it to a keyboard shortcut.
 
-Key features include:
+## Parameters
+This command does not accept any parameters.
 
-- Automatic documentation generation for code files and symbols
-- Organization of documentation into general, reference, context, and misc categories 
-- Integration with external documentation systems and Git repositories
-- Custom AI-powered documentation generation and summarization
-- Search capabilities across documentation
-- API documentation generation from code
+## Return Value
+This command returns a WebviewPanel object, which represents the Dev-Docs panel in the VS Code interface.
 
-The extension aims to streamline the process of creating and maintaining technical documentation alongside code. It leverages AI and static analysis to generate documentation content while providing developers with tools to organize and customize that content.
+## Examples
+
+### Opening Dev-Docs Panel
+```typescript
+await vscode.commands.executeCommand('devdocs.helloWorld');
+```
+
+### Binding to a Keyboard Shortcut
+Add the following to your `keybindings.json` file:
+```json
+{
+  "key": "ctrl+shift+d",
+  "command": "devdocs.helloWorld"
+}
+```
+
+## Notes or Considerations
+- The devdocs.helloWorld command initializes the Dev-Docs panel if it doesn't exist, or brings it into focus if it's already open.
+- It automatically clears any existing draft content in the panel.
+- The command sets up event listeners for messages from the webview, allowing interaction between the extension and the Dev-Docs panel.
+- If you're using this command programmatically, you can access the WebviewPanel object it returns for further customization or interaction.
+- This command is part of the broader Dev-Docs extension functionality, which includes features for managing and generating documentation within your project.
