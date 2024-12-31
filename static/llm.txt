@@ -4,160 +4,1800 @@ Below is all the contents of our docs:
 
  This is the content for the doc Create user-facing docs from your codebase.md 
 
- [object Object]
+ 
+
+  # How to Use and Customize the "Populate External Docs" Command in the VS Code Extension
+
+## Step 1: Access the Command
+
+1. Open your VS Code workspace
+2. Press `Cmd+Shift+P` (Mac) or `Ctrl+Shift+P` (Windows/Linux) to open the command palette
+3. Type "Populate External Docs" and select the command
+
+
+## Step 2: Customizing Generation with dev-docs.json
+
+To customize the documentation generation, modify the `dev-docs.json` file in your project root:
+
+1. Create or open `dev-docs.json`
+2. Add an `ai` object with customization options
+
+Example `dev-docs.json`:
+
+```json
+{
+  "ai": {
+    "internalTypeFilters": ["class", "method", "function"],
+    "codeFilters": [],
+    "nameFilters": [],
+    "docSubFolder": "api/",
+    "merge": true,
+    "externalDocPrompt": "Generate comprehensive API documentation"
+  }
+}
+```
+
+Key customization options:
+
+- `internalTypeFilters`: Specify which code elements to document
+- `docSubFolder`: Set the output folder for generated docs
+- `merge`: Combine multiple elements into a single document
+- `externalDocPrompt`: Customize the AI prompt for doc generation
+
+The `generateBySymbols` function in `src/AiServices.ts` uses these settings to generate documentation.
+
+## Step 3: Review and Edit
+
+After running the command:
+
+1. Check the `docs` folder (or your specified `docSubFolder`) for generated files
+2. Review and edit the generated content as needed
+3. Commit changes to your repository
+
+By following these steps and customizing the `dev-docs.json`, you can efficiently generate and manage external documentation for your project using the VS Code extension.
+
+  
 
  This is the content for the doc Enable generating codebase docs for the GitHub App.md 
 
- [object Object]
+ 
+
+  # Configuring dev-docs.json for GitHub App Documentation Generation
+
+This guide will walk you through the process of configuring the `dev-docs.json` file to enable automatic documentation generation using the Dev-Docs GitHub App.
+
+## Step 1: Locate the dev-docs.json file
+
+The `dev-docs.json` file should be located in the root directory of your repository.
+
+## Step 2: Basic Structure
+
+Ensure your `dev-docs.json` file has the following basic structure:
+
+```json
+{
+  "gitHubApp": {
+    "workflows": []
+  }
+}
+```
+
+## Step 3: Configure Workflows
+
+To enable documentation generation, add the `generateDocs` workflow to the `workflows` array:
+
+```json
+{
+  "gitHubApp": {
+    "workflows": ["generateDocs"]
+  }
+}
+```
+
+Note: The `workflows` array accepts specific enum values. Currently, the supported values are:
+
+- `generateDocs`: Enables automatic documentation generation
+- `generateChangelog`: Enables automatic changelog generation
+
+## Step 4: Additional Configuration (Optional)
+
+Depending on your project's needs, you may want to add more configuration options. For example:
+
+```json
+{
+  "ai":{
+    "contextDirs": ["src", "lib"],
+  },
+  "gitHubApp": {
+    "workflows": ["generateDocs"]
+  }
+}
+```
+
+## Step 5: Commit and Push
+
+After configuring your `dev-docs.json` and installing the GitHub app, commit the changes and push them to your repository.
+
+
+
+  
 
  This is the content for the doc Generate High Level Context for a folder.md 
 
- [object Object]
+ 
+
+  # Using the "Generate High Level Context for the Folder" Command
+
+## Overview
+
+The "Generate High Level Context for the Folder" command is a powerful feature in Dev-Docs that allows you to automatically generate high-level documentation for an entire folder in your project. This guide will walk you through how to use this command and customize its behavior using the `dev-docs.json` configuration file.
+
+## Step-by-Step Guide
+
+### 1. Right-Click on a Folder
+In your VS Code file explorer, right-click on the folder you want to document.
+
+### 2. Select the Command
+From the context menu, choose "Generate High Level Context for the Folder".
+
+### 3. Wait for Processing
+The extension will analyze the folder contents and generate documentation. This may take a moment depending on the folder size and complexity.
+
+### 4. Review Generated Documentation
+Once complete, a new Markdown file will be created in your `dev-docs` folder, containing the high-level context for the selected folder.
+
+## Customizing with dev-docs.json
+
+You can customize the behavior of this command by modifying the `dev-docs.json` file in your project root. Here are some key configurations:
+
+### 1. Customizing the Context Prompt
+
+```json
+{
+  "ai": {
+    "contextPrompt": "your_custom_prompt_here"
+  }
+}
+```
+
+This allows you to specify a custom prompt for generating the context. You can also use a Markdown file for more complex prompts:
+
+```json
+{
+  "ai": {
+    "contextPrompt": "dev-docs/prompt.md"
+  }
+}
+```
+
+### 2. Specifying Context Directories
+
+```json
+{
+  "ai": {
+    "contextDirs": ["src", "lib", "utils"]
+  }
+}
+```
+
+This limits the context generation to specific directories, which is useful for large projects.
+
+
+
+
+  
 
  This is the content for the doc Generate an Openapi file from your server code.md 
 
- [object Object]
+ 
+
+  # How generate an OpenAPI file from your server code
+
+This guide will walk you through using generating an OpenAPI file from your server code using a keyboard shortcut.
+
+## Step 1: Locate the Relevant Code
+
+Find a codefile that owns your server logic, for example a `server.js`.
+
+## Step 2: Using the Command
+
+1. Open your server file containing API routes.
+2. Press Shift+Cmd+A (Mac) or Shift+Ctrl+A (Windows/Linux).
+3. The extension will automatically:
+   - Parse your code for API routes
+   - Generate a Postman collection
+   - Convert it to an OpenAPI specification
+
+
+
+  
 
  This is the content for the doc Generate codebase docs.md 
 
- [object Object]
+ 
+
+  # How to Use the "Generate Documentation" Command in Dev-Docs VS Code Extension
+
+## Using the Command
+
+### From the Context Menu
+
+1. Right-click in your code file.
+2. Select "Generate Documentation" from the context menu.
+
+### Using the Shortcut
+
+- On Mac: Press `Shift + Command + D`
+- On Windows/Linux: Press `Shift + Ctrl + D`
+
+## Customizing AI Generation
+
+To customize the AI generation of the "Generate Documentation" command, you can modify the `dev-docs.json` file in your project root.
+
+1. Open `dev-docs.json` in your project root.
+2. Locate the `ai` section in the JSON.
+3. Customize the following properties:
+
+```json
+{
+  "ai": {
+    "internalTypeFilters": ["class", "method", "function"],
+    "codeFilters": ["async function", "export default"],
+    "nameFilters": ["handleSubmit", "render"],
+    "contextPrompt": "your custom prompt or path to prompt template",
+    "defaultLength": "3-5 Sentences"
+  }
+}
+```
+
+### Key Properties:
+
+- `internalTypeFilters`: Array of symbol types to include in documentation.
+- `codeFilters`: Array of code patterns to filter for documentation.
+- `nameFilters`: Array of function or method names to specifically target.
+- `contextPrompt`: Custom prompt for AI generation or path to a prompt template file.
+- `defaultLength`: Desired length of generated documentation.
+
+By adjusting these properties, you can fine-tune the AI-generated documentation to better suit your project's needs.
+
+  
 
  This is the content for the doc README.md 
 
- [object Object]
+ # Welcome to your Dev-Docs Repo
+
+This Repo is the Starter Template and it was made by AVB
+
+```
+npm run start -- --host 0.0.0.0
+```
+
+
+
 
  This is the content for the doc blog/Static Generated Sites are You Need.md 
 
- [object Object]
+ ---
+title: Why a Static Generated Site is the Best Choice for Developer Docs and Landing Pages
+authors: andrew
+header_image: /img/dev-docs-assets/ClippedHeroBg.png
+text_color: white
+tags: [markdown, docusaurus, developerdocs]
+---
+
+# Why a Static Generated Site is the Best Choice for Developer Docs and Landing Pages
+
+In the fast-paced world of software development, efficient documentation is crucial. Static generated sites, particularly those using Markdown and platforms like GitHub and Docusaurus, offer an optimal solution for developer docs and landing pages. Here's why:
+
+## 1. Simplicity and Speed with Markdown
+
+Static site generators like Docusaurus leverage Markdown, allowing developers to create lightning-fast documentation. Pages load instantly, enhancing user experience and reducing bounce rates.
+
+## 2. Cost-Effective Hosting on GitHub or Vercel
+
+Hosting developer docs on platforms like GitHub Pages is incredibly cost-effective, often free. This is perfect for open-source projects and startups looking to minimize expenses.
+
+## 3. Enhanced Security for Developer Docs
+
+Static sites, including those built with Docusaurus, are inherently more secure. With no dynamic content or databases, there are fewer vulnerabilities for potential attackers to exploit.
+
+## 4. Version Control with GitHub
+
+Integrating your developer docs with GitHub allows for seamless version control. This makes collaboration easier and provides a comprehensive history of documentation changes.
+
+## 5. Focus on Content with Markdown
+
+Markdown, the preferred format for many static site generators, allows developers to focus on writing clear, concise documentation without worrying about complex formatting.
+
+## 6. SEO-Friendly Developer Docs
+
+Static sites built with tools like Docusaurus are easily crawlable by search engines. Their fast load times and structured content contribute to better SEO rankings for your developer docs.
+
+## 7. Easy Maintenance with Docusaurus
+
+Once set up, maintaining developer docs on a static site is straightforward. Docusaurus makes it easy to update content without dealing with complex CMS systems.
+
+## 8. Scalability for Growing Projects
+
+Static sites can handle high traffic volumes, making them ideal for popular open-source projects hosted on GitHub with extensive developer docs.
+
+## 9. Modern Development Workflow
+
+Static site generators like Docusaurus integrate well with modern development tools and practices, facilitating continuous integration and deployment of your developer docs.
+
+## 10. Flexibility with Markdown and JavaScript
+
+Despite being "static," these sites can incorporate dynamic elements through JavaScript and APIs, giving your developer docs the best of both worlds.
+
+In conclusion, for developer docs and landing pages, a static generated site using Markdown and tools like Docusaurus provides an excellent balance of simplicity, performance, and functionality. It's a powerful approach that can help your project's documentation stand out on platforms like GitHub.
+
+  
+
 
  This is the content for the doc blog/Supercharge Your API and SDK Documentation.md 
 
- [object Object]
+ ---
+title: Supercharge Your API and SDK Documentation with AI-Powered Dev-Docs
+authors: andrew
+tags: [docs, sdks, vscode, seo, sales]
+---
+
+Are you a developer building APIs, SDKs, or other developer tools? Maintaining comprehensive and up-to-date documentation can be a daunting task, especially as your codebase grows in complexity. Enter Dev-Docs, an AI-powered documentation solution that streamlines the process of generating and managing documentation for your projects.
+
+## The Challenges of API and SDK Documentation
+
+Developing APIs, SDKs, and other developer tools require meticulous attention to detail and a deep understanding of the underlying code. However, keeping the documentation in sync with the codebase can be a time-consuming and error-prone process. Manual documentation efforts often lead to inconsistencies, outdated information, and a lack of cohesion across different components.
+
+## The Dev-Docs Solution
+
+Dev-Docs is a cutting-edge solution that leverages the power of artificial intelligence to automate the documentation process. By analyzing your codebase and leveraging natural language processing, Dev-Docs can generate comprehensive and accurate documentation for your APIs, SDKs, and other developer tools.
+
+### Seamless Integration with Your Workflow
+
+One of the key advantages of Dev-Docs is its seamless integration with your existing development workflow. With the Dev-Docs VS Code extension, you can generate and manage documentation directly within your code editor, ensuring that your documentation stays in sync with your codebase.
+
+### AI-Powered Documentation Generation
+
+Dev-Docs utilizes advanced AI algorithms to analyze your code and generate human-readable documentation. Whether it's API endpoints, function definitions, or class structures, Dev-Docs can provide detailed explanations, examples, and usage instructions, making it easier for developers to understand and work with your tools.
+
+### Customizable and Extensible
+
+Dev-Docs is highly customizable, allowing you to tailor the documentation generation process to your specific needs. You can define filters, templates, and prompts to ensure that the generated documentation aligns with your project's conventions and standards.
+
+### Version Control and Collaboration
+
+With Dev-Docs, your documentation is treated as code, enabling version control and seamless collaboration among team members. You can track changes, review diffs, and merge updates, ensuring that your documentation remains up-to-date and consistent across different branches and releases.
+
+## Get Started with Dev-Docs Today
+
+Elevate your API, SDK, and developer tool documentation game with Dev-Docs. By leveraging the power of AI, you can save time, reduce errors, and provide a better developer experience for your users. Visit our website at [dev-docs.io](https://dev-docs.io) to learn more and get started with Dev-Docs today.
+  
+  
+
 
  This is the content for the doc blog/Use Dev-Docs with Continue.md 
 
- [object Object]
+ ---
+title: Contextual Documentation with Dev-Docs and Continue
+authors: andrew
+header_image: /img/dev-docs-assets/ClippedHeroBg.png
+text_color: white
+tags: [docs, seo, sales, ai, code-assistant]
+---
+
+# **Contextual documentation with Dev-Docs and Continue**
+
+[Continue](https://www.continue.dev/) is the leading open-source AI code assistant. Its IDE extensions allow you to leverage AI in your code editor to ask questions about your codebase and generate code. What's even more awesome is that it is extensible—for example, you can use any models you want with it!
+
+<br></br>
+
+[Dev-Docs](https://www.docs.dev/) is an AI developer tool that provides a VS Code extension for generating custom markdown documentation on your codebase that can be used by tools like Continue. Today, we are going to show how you can use Dev-Docs to generate custom, contextual documentation for a codebase, which can be used as context in Continue.
+
+# Before you get started
+
+Install [Dev-Docs](https://marketplace.visualstudio.com/items?itemName=dev-docs.dev-docs) in VS Code
+
+<br></br>
+
+![step_3.png](/img/use_dev-docs_with_continue/step_3.png)
+
+<br></br>
+
+Install [Continue](https://marketplace.visualstudio.com/items?itemName=Continue.continue) in VS Code
+
+<br></br>
+
+![step_6.png](/img/use_dev-docs_with_continue/step_6.png)
+
+<br></br>
+
+# **Step 1: Open the Dev-Docs extension and sign in**
+
+Select the "Dev-Docs" extension icon from the Activity Bar on the left and then "Sign In"
+
+<br></br>
+
+![image.png](/img/use_dev-docs_with_continue/step_8.png)
+
+<br></br>
+
+Once you are signed in, you will need to create an org name for your team.  For example, our org name here is "continuedev"
+
+<br></br>
+
+![step_11.png](/img/use_dev-docs_with_continue/step_11.png)
+
+<br></br>
+
+# **Step 2: Set up your repository and generate context**
+
+Click the "Setup my repo" button and then the "Generate Context" button
+
+<br></br>
+
+![step_7.png](/img/use_dev-docs_with_continue/step_7.png)
+
+<br></br>
+
+This will create a `dev-docs.json` file and `dev-docs` folder in your repo
+
+<br></br>
+
+![step_14.png](/img/use_dev-docs_with_continue/step_14.png)
+
+<br></br>
+
+Select the "Generate Context" button
+
+<br></br>
+
+![step_15.png](/img/use_dev-docs_with_continue/step_15.png)
+
+<br></br>
+
+# **Step 3: Select files and generate contextual documentation**
+
+<br></br>
+
+Choose the files you want to be used as input for the contextual documentation, making sure "Codebase" is selected, and then click "Generate New Doc"
+
+<br></br>
+
+![step_16.png](/img/use_dev-docs_with_continue/step_16.png)
+
+<br></br>
+
+When you navigate back to the file explorer you should see some files populated in dev-docs folder
+
+<br></br>
+
+![step_31.png](/img/use_dev-docs_with_continue/step_31.png)
+
+<br></br>
+
+# **Step 4: Open the Continue extension and sign in**
+
+<br></br>
+
+Click the Continue extension icon in the Activity Bar and sign in with your GitHub account to use the Continue free trial models (or add your own API keys if you'd like instead)
+
+<br></br>
+
+![step_22.png](/img/use_dev-docs_with_continue/step_22.png)
+
+<br></br>
+
+# Step 5: Use @dev-docs as context and ask questions
+
+<br></br>
+
+Continue will automatically allow you to use dev-docs folder as context (using the [folder context provider](https://docs.continue.dev/chat/context-selection#specific-folder))
+
+<br></br>
+
+![step_24.png](/img/use_dev-docs_with_continue/step_24.png)
+
+<br></br>
+
+Try asking questions like "@dev-docs what technologies are used?"
+
+<br></br>
+
+![step_28.png](/img/use_dev-docs_with_continue/step_40.png)
+
+<br></br>
+
+# Conclusion
+
+
+<br></br>
+
+Now that you have set up both Dev-Docs and Continue, you can take full advantage of the contextual documentation generated by Dev-Docs within Continue.  Everything from code explaination, high level context, best practices, and architecture are now super charged with Continue and Dev-Docs.  Thanks for reading!
+
+  
 
  This is the content for the doc blog/docs-seo-sales.md 
 
- [object Object]
+ ---
+title: Why Developer Documentation is Important for SEO and Sales
+authors: andrew
+header_image: /img/dev-docs-assets/ClippedHeroBg.png
+text_color: white
+tags: [docs, seo, sales]
+---
+
+Developer documentation plays a crucial role in enhancing both SEO and sales for software products and services. In today's digital landscape, where potential customers heavily rely on online resources for research and decision-making, well-crafted documentation can significantly impact a company's visibility, credibility, and success.
+
+## Importance for SEO
+
+1. **Search Engine Visibility**: High-quality documentation that addresses common questions, challenges, and use cases can improve a website's search engine ranking for relevant keywords. By providing valuable content to users, search engines recognize the website as a trustworthy and authoritative source, leading to better visibility and organic traffic.<br></br>
+
+2. **Topical Relevance and Keyword Optimization**: Comprehensive documentation allows for the strategic inclusion of relevant keywords and phrases related to the product or service. This helps search engines better understand the topical relevance of the website, increasing its chances of appearing in relevant search results.<br></br>
+
+3. **Content Freshness and Updates**: Regular updates and additions to the documentation create new, fresh content that search engines value. This signals that the website is actively maintained and provides up-to-date information, contributing to better search engine rankings.
+
+## Importance for Sales
+
+1. **Product Understanding and Adoption**: Well-documented products make it easier for potential customers to understand the features, capabilities, and use cases of the software. This increased understanding facilitates product adoption, reducing friction in the sales process.
+
+2. **Self-Service Support**: Detailed documentation empowers users to find answers to their questions independently, reducing the need for direct sales or support interactions. This self-service approach streamlines the customer journey and frees up sales resources to focus on higher-value tasks.
+
+3. **Credibility and Trust Building**: High-quality documentation demonstrates a commitment to transparency and customer support. This builds trust and credibility with potential customers, increasing the likelihood of closing sales and retaining existing customers.
+
+4. **Lowering Sales Barriers**: Clear and comprehensive documentation can address common objections, concerns, or misconceptions that potential customers may have about the product or service. By proactively addressing these issues, sales teams can more effectively overcome objections and close deals.
+
+5. **Onboarding and Training**: Detailed documentation serves as a valuable resource for onboarding new customers and training existing ones on product updates or advanced features. This helps ensure seamless adoption and maximizes the value customers derive from the product, leading to higher customer satisfaction and retention.
+
+In summary, developer documentation plays a pivotal role in improving both SEO and sales for software companies. By providing valuable, comprehensive, and up-to-date information, documentation enhances search engine visibility, builds trust and credibility, streamlines the sales process, and improves customer onboarding and retention.
+  
+  
+
 
  This is the content for the doc dev-docs/audit_task_one.md 
 
- [object Object]
+ Please find any documentation that specifics a JSON configuration that does not match the schema below:
+
+JSON Schema
+
+```json
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "quickDoc": {
+      "type": "object",
+      "properties": {
+        "variablesAndFunctions": {
+          "type": "object",
+          "properties": {
+            "prompts": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "title": {
+                    "type": "string"
+                  },
+                  "question": {
+                    "type": "string"
+                  }
+                },
+                "required": ["title", "question"]
+              }
+            }
+          },
+          "required": ["prompts"]
+        }
+      },
+      "required": ["variablesAndFunctions"]
+    },
+    "ai": {
+      "type": "object",
+      "properties": {
+        "variablesAndFunctions": {
+          "type": "object",
+          "patternProperties": {
+            ".*": {
+              "type": "object",
+              "properties": {
+                "prompts": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "title": {
+                        "type": "string"
+                      },
+                      "question": {
+                        "type": "string"
+                      },
+                      "documentation": {
+                        "type": "string"
+                      }
+                    },
+                    "required": ["title", "question", "documentation"]
+                  }
+                }
+              },
+              "required": ["prompts"]
+            }
+          }
+        },
+        "components": {
+          "type": "object",
+          "properties": {
+            "template": {
+              "type": "string",
+              "default": "path to markdown file"
+            }
+          }
+        },
+        "docPath": {
+          "type": "string",
+          "default": "some custom path"
+        },
+        "branch": {
+          "type": "string",
+          "default": "main"
+        },
+        "internalTypeFilters": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "file",
+              "module",
+              "namespace",
+              "package",
+              "class",
+              "method",
+              "property",
+              "field",
+              "constructor",
+              "enum",
+              "interface",
+              "function",
+              "variable",
+              "constant",
+              "string",
+              "number",
+              "boolean",
+              "array",
+              "object",
+              "key",
+              "null",
+              "enummember",
+              "struct",
+              "event",
+              "operator",
+              "typeParameter"
+            ]
+          },
+          "default": [
+            "file",
+            "module",
+            "namespace",
+            "package",
+            "class",
+            "method",
+            "property",
+            "field",
+            "constructor",
+            "enum",
+            "interface",
+            "function",
+            "variable",
+            "constant",
+            "string",
+            "number",
+            "boolean",
+            "array",
+            "object",
+            "key",
+            "null",
+            "enummember",
+            "struct",
+            "event",
+            "operator",
+            "typeParameter"
+          ]
+        },
+        "codeFilters": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": ["async function", "export default"]
+        },
+        "nameFilters": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": ["handleSubmit", "render"]
+        },
+        "populateDoc": {
+          "type": "string",
+          "default": "docs/template.md"
+        },
+        "docSubFolder": {
+          "type": "string",
+          "default": "api-reference"
+        },
+        "contextDirs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": ["src/utils", "src/helpers"]
+        },
+        "mappings": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "files": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "folder": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "cloudDir": {
+                "type": "string"
+              }
+            },
+            "oneOf": [
+              {
+                "required": ["files", "cloudDir"]
+              },
+              {
+                "required": ["folder", "cloudDir"]
+              }
+            ]
+          },
+          "default": [
+            {
+              "files": ["src/main.ts"],
+              "cloudDir": "Getting Started"
+            },
+            {
+              "folder": ["src/components"],
+              "cloudDir": "Components"
+            }
+          ]
+        },
+        "openapi": {
+          "type": "object",
+          "properties": {
+            "file": {
+              "type": "string",
+              "default": "src/api/openapi.yaml"
+            },
+            "x-codeSamples": {
+              "type": "object",
+              "properties": {
+                "langs": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "default": ["javascript", "python", "ruby"]
+                }
+              },
+              "required": ["langs"]
+            }
+          },
+          "required": ["file", "x-codeSamples"]
+        }
+      }
+    },
+    "customRoot": {
+      "type": "string",
+      "default": "packages/my-package"
+    },
+    "workspaceRoot": {
+      "type": "string",
+      "default": "/path/to/project"
+    }
+  }
+}
+```
 
  This is the content for the doc dev-docs/context-.devcontainer-devcontainer.json.md 
 
- [object Object]
+ 
+
+  ---
+# High Level Context
+## context
+This file is a DevContainer configuration for a Docusaurus project. It defines the development environment for use with Visual Studio Code's Remote - Containers feature or GitHub Codespaces. Key aspects include:
+
+1. It uses a Node.js 18 base image
+2. It forwards port 3000 for local development
+3. It automatically installs dependencies using npm
+4. It sets the default shell to bash
+5. It includes the Dev Docs extension
+6. It adds Deno as an additional feature to the container
+
+This configuration ensures a consistent development environment across different machines and simplifies the setup process for new contributors to the Docusaurus project.
+
+---
+# Docusaurus Project .devcontainer/devcontainer.json
+## Imported Code Object
+I apologize, but I cannot provide an explanation based on the code snippet you've provided. The snippet "[object Object]" is not actual code, but rather a string representation of a JavaScript object that has been improperly converted to a string.
+
+To get a meaningful explanation, you would need to provide the actual code or configuration related to the Docusaurus project. Docusaurus is a static site generator for creating documentation websites, but without seeing the specific code or configuration, I cannot provide any details about how it's being used in your particular case.
+
+If you have a specific code snippet or configuration file related to Docusaurus, please share that, and I'll be happy to explain it.
+
+  
 
  This is the content for the doc dev-docs/context-CNAME.md 
 
- [object Object]
+ 
+
+  ---
+# High Level Context
+## context
+The CNAME file contains a single line with the domain name "ai-generated.docs.dev". This file is typically used in web hosting and DNS configuration, particularly for GitHub Pages or similar static site hosting services. Its purpose is to specify a custom domain for a website, indicating that the site should be accessible via this custom domain rather than the default hosting URL. In this case, it suggests that the associated website or documentation is intended to be accessed through the domain "ai-generated.docs.dev".
+
+  
 
  This is the content for the doc dev-docs/context-blog-.md.md 
 
- [object Object]
+ 
+
+  ---
+# High Level Context
+## context
+This Markdown file appears to be a blog post or article discussing the advantages of using static generated sites for developer documentation and landing pages. The content focuses on ten key points explaining why static sites, particularly those using Markdown and platforms like GitHub and Docusaurus, are beneficial for creating and hosting developer docs.
+
+The article covers various aspects such as:
+1. Simplicity and speed of Markdown
+2. Cost-effectiveness of hosting on GitHub
+3. Enhanced security
+4. Version control integration
+5. Focus on content creation
+6. SEO-friendliness
+7. Easy maintenance
+8. Scalability
+9. Integration with modern development workflows
+10. Flexibility in incorporating dynamic elements
+
+The post is structured with a brief introduction followed by numbered sections elaborating on each point. It's designed to inform developers and project managers about the benefits of using static site generators for their documentation needs.
+
+  
 
  This is the content for the doc dev-docs/context-blog-Static Generated Sites are You Need.md.md 
 
- [object Object]
+ 
+
+  ---
+# High Level Context
+## context
+This Markdown file appears to be a blog post or article discussing the benefits of using static generated sites for developer documentation and landing pages. The content is structured with a YAML front matter at the top, followed by the main body of the article.
+
+Key points covered in the article include:
+
+1. The advantages of using Markdown and static site generators like Docusaurus
+2. Cost-effectiveness of hosting on platforms like GitHub Pages
+3. Enhanced security of static sites
+4. Version control benefits when integrated with GitHub
+5. SEO-friendliness of static generated sites
+6. Easy maintenance and scalability
+7. Compatibility with modern development workflows
+
+The article is aimed at developers and project managers, explaining why static generated sites are an optimal choice for creating and hosting developer documentation and project landing pages.
+
+  
 
  This is the content for the doc dev-docs/context-blog-Use Dev-Docs with Continue.md.md 
 
- [object Object]
+ 
+
+  ---
+# High Level Context
+## context
+This Markdown file is a blog post or tutorial that explains how to use Dev-Docs in conjunction with Continue, two AI-powered developer tools for VS Code. The post covers the following main points:
+
+1. Introduction to Continue and Dev-Docs
+2. Installation instructions for both extensions
+3. Step-by-step guide on setting up and using Dev-Docs to generate contextual documentation
+4. Instructions on how to set up and use Continue
+5. Explanation of how to use the generated Dev-Docs documentation as context within Continue
+6. Examples of how to ask questions using the @dev-docs tag in Continue
+
+The tutorial is designed to help developers leverage AI-powered tools to generate and use contextual documentation for their codebases, enhancing their ability to understand and work with their projects more efficiently.
+
+  
 
  This is the content for the doc dev-docs/context-docs-Dev-Docs-Quickstart.md.md 
 
- [object Object]
+ 
+
+  ---
+# High Level Context
+## context
+This file, "Dev-Docs-Quickstart.md", is a Markdown document that serves as a quickstart guide for using the Dev-Docs tool. It provides step-by-step instructions for new users to get started with Dev-Docs in about five minutes. The guide covers:
+
+1. Creating an account on dev-docs.io
+2. Opening a sample repo in GitHub Codespaces
+3. Installing and setting up the Dev-Docs extension in VS Code
+4. Generating onboarding documentation for a code file
+5. Creating user-facing documentation
+
+The document includes visual aids (images) to help users follow along with each step. It also briefly explains how Dev-Docs works, mentioning the `dev-docs.json` configuration file and the tool's customization capabilities. This quickstart guide is designed to give users a quick and practical introduction to the Dev-Docs platform and its core features.
+
+  
 
  This is the content for the doc dev-docs/context-docs-Initial-Setup-Install-VS-Code-Extension-and-Get-Started.md.md 
 
- [object Object]
+ 
+
+  ---
+# High Level Context
+## context
+This Markdown file is a guide for installing the Dev-Docs VS Code extension. It appears to be part of a documentation website, likely built with a static site generator that uses frontmatter (such as Docusaurus, given the 'sidebar_position' metadata). The document provides a step-by-step tutorial with visual aids (screenshots) to help users install the extension in Visual Studio Code. It's structured in a clear, user-friendly manner, making it easy for developers to follow along and set up the Dev-Docs extension in their VS Code environment.
+
+  
 
  This is the content for the doc dev-docs/context-docs-Initial-Setup-Sign-in-With-The-VS-Code-Extension.md.md 
 
- [object Object]
+ 
+
+  ---
+# High Level Context
+## context
+This Markdown file provides instructions for users to sign in to the Dev-Docs extension in Visual Studio Code. It is part of an initial setup guide, specifically focused on authenticating users within the VS Code environment. The document outlines a three-step process:
+
+1. Locating the Dev-Docs login button in VS Code
+2. Clicking the Sign In button to initiate the login process
+3. Selecting the user's organization from a dropdown menu
+
+The file includes images to visually guide users through each step, making the process more accessible. The sidebar_position metadata suggests this is part of a larger documentation structure, likely the third item in a series of setup instructions.
+
+  
 
  This is the content for the doc dev-docs/context-docs-Initial-Setup-_category_.json.md 
 
- [object Object]
+ 
+
+  ---
+# High Level Context
+## context
+This JSON file is likely part of a documentation system or website structure, possibly using a framework like Docusaurus. It defines metadata for a category of documentation called "Initial Setup":
+
+1. The "label" field sets the display name for this category.
+2. The "position" field (value 3) probably determines the order in which this category appears relative to others.
+3. The "link" object with "type": "generated-index" suggests that an index page will be automatically generated for this category, listing its contents.
+
+This file helps organize and structure the documentation, making it easier for users to navigate and find information about the initial setup process for the documented project or system.
+
+  
 
  This is the content for the doc dev-docs/context-docs-Internal-Docs-Customize-Your-AI-Generation.md.md 
 
- [object Object]
+ 
+
+  ---
+# High Level Context
+## context
+This Markdown file provides instructions for customizing AI-generated documentation in the Dev-Docs VS Code extension. It covers the following key steps:
+
+1. Signing into Dev-Docs in VS Code
+2. Selecting an organization
+3. Locating the dev-docs.json configuration file
+4. Customizing the JSON configuration to tailor AI-generated documentation
+5. Running the AI documentation generation on a chosen code file
+
+The file explains how to modify the dev-docs.json file to include custom questions for the AI to answer about the code, set accepted file extensions, and configure whether documentation should be generated automatically on save. It also provides instructions on how to manually trigger documentation generation using the command palette or keyboard shortcut.
+
+Overall, this guide helps users personalize their AI-assisted documentation process within the Dev-Docs extension.
+
+  
 
  This is the content for the doc dev-docs/context-docs-Internal-Docs-Generate-Documentation-With-AI.md.md 
 
- [object Object]
+ 
+
+  ---
+# High Level Context
+## context
+This Markdown file provides a step-by-step guide on how to use Dev-Docs, an AI-powered documentation generation tool, within Visual Studio Code. The document outlines the process of:
+
+1. Signing into Dev-Docs in VS Code
+2. Selecting the user's organization
+3. Running the AI documentation generator on a chosen code file
+4. Reviewing the AI-generated documentation
+
+The guide includes visual aids (referenced image files) to help users navigate through each step. It explains how to access the Dev-Docs feature, use keyboard shortcuts, and where to find the generated documentation within the project structure. This document serves as a user manual for developers looking to automatically generate documentation for their codebase using AI technology integrated into their development environment.
+
+  
 
  This is the content for the doc dev-docs/context-docs-Internal-Docs-Intro-to-Dev-Docs-Internal-Documentation.md.md 
 
- [object Object]
+ 
+
+  ---
+# High Level Context
+## context
+This file serves as an introduction to Dev-Docs' internal documentation feature. It explains:
+
+1. The concept of internal documentation and its importance for teams, projects, and organizations.
+2. Dev-Docs' ability to automatically generate Markdown files for documentation.
+3. The option to customize documentation using the `dev-docs.json` configuration file.
+4. Possible use cases for internal documentation, such as onboarding new hires and keeping teams informed.
+5. The file's position in the documentation structure (sidebar_position: 1).
+
+The document sets the stage for more detailed explanations on how to generate and configure internal documentation using Dev-Docs, which are likely covered in subsequent files or sections.
+
+  
 
  This is the content for the doc dev-docs/context-docs-Internal-Docs-Use our Vs Code Extension with continue.md.md 
 
- [object Object]
+ 
+
+  ---
+# High Level Context
+## context
+This document provides a step-by-step guide for using the Continue extension in Visual Studio Code. It covers the process of:
+
+1. Opening the Continue extension
+2. Navigating to the Dev-Docs section
+3. Generating context by selecting project files
+4. Choosing the type of documentation to generate
+5. Creating new documentation
+6. Accessing the generated files in the file explorer
+7. Using the Continue extension to ask questions about the project
+8. Reviewing AI-generated answers
+
+The guide is structured with clear instructions and accompanying screenshots for each step, making it easy for users to follow along and utilize the Continue extension effectively within their VS Code environment.
+
+  
 
  This is the content for the doc dev-docs/context-docs-Internal-Docs-_Generate some context on multiple files.md.md 
 
- [object Object]
+ 
+
+  ---
+# High Level Context
+## context
+This file appears to be a guide or tutorial on how to generate context from multiple files within a development environment, likely using a specific code editor or IDE with a "DEV-DOCS" feature. The process involves:
+
+1. Opening the project in the code editor
+2. Accessing the "DEV-DOCS" menu
+3. Clicking on the "Generate Context" button
+4. Waiting for the loading process to complete
+5. Selecting specific files to use for context generation
+6. Choosing where to create the context (either in the codebase or user-facing docs)
+7. Generating a new document with the compiled context
+
+This feature seems designed to help developers create comprehensive documentation or context for their projects by analyzing multiple files simultaneously. It's likely part of a larger documentation or project management tool integrated into the development environment.
+
+  
 
  This is the content for the doc dev-docs/context-docs-Internal-Docs-_Install-the-Extension-and-Create-Your-First-Internal-Docs.md.md 
 
- [object Object]
+ 
+
+  ---
+# High Level Context
+## context
+This file is a Markdown document that provides a step-by-step guide for installing and using the Dev-Docs extension in Visual Studio Code. It covers:
+
+1. Installing the Dev-Docs extension from the VS Code marketplace
+2. Initializing the Dev-Docs configuration in a codebase
+3. Enabling markdown mode for Dev-Docs
+4. Opening and using the Dev-Docs editor
+5. Creating general documentation for the codebase
+6. Creating documentation tied to specific code files
+7. Explaining where the generated documentation is saved
+
+The document includes images to illustrate each step and provides clear instructions for users to follow. It is likely part of a larger documentation set for the Dev-Docs tool, aimed at helping developers quickly set up and start using the extension for creating and managing code documentation within their projects.
+
+  
 
  This is the content for the doc dev-docs/context-docs-Internal-Docs-_Sync-Your-Dev-Docs-to-Dev-Docs-Cloud.md.md 
 
- [object Object]
+ 
+
+  ---
+# High Level Context
+## context
+This file is a markdown document that provides step-by-step instructions for syncing Dev-Docs to Dev-Docs Cloud. It appears to be part of an internal documentation set, likely for a development team or organization using Dev-Docs, a documentation management tool integrated with VS Code.
+
+The document outlines a process that includes:
+1. Signing into Dev-Docs using GitHub
+2. Selecting an organization
+3. Opening Dev-Docs in VS Code
+4. Setting up codebase settings
+5. Creating a documentation wiki
+6. Opening and syncing a Dev-Doc to the cloud
+7. Verifying the synced wiki on the Dev-Docs web application
+
+The instructions are accompanied by screenshots to guide users through each step, making it a comprehensive tutorial for team members to set up and use the Dev-Docs Cloud syncing feature.
+
+  
 
  This is the content for the doc dev-docs/context-docs-VS Code Commands-Auditing-Documentation-Using-the-devdocs.auditdocs-Command.md.md 
 
- [object Object]
+ 
+
+  ---
+# High Level Context
+## context
+This Markdown file provides documentation for the "Audit Docs" command in a VS Code extension called Dev-Docs. The command, `devdocs.auditDocs`, is used to analyze and improve the quality of existing documentation in a project. The file explains:
+
+1. The purpose of the command: to audit Markdown files for issues like grammar, spelling, clarity, and visual appeal.
+2. Why it's useful: to maintain high-quality, accurate, and clear documentation.
+3. Relevant configuration options in the `dev-docs.json` file, including custom audit tasks.
+4. Prerequisites for using the command.
+5. Step-by-step instructions on how to use the command within VS Code.
+6. The output of the command: a generated `dev-docs_audit.md` file with audit results and potential GitHub issues for identified problems.
+
+The document serves as a guide for developers to understand and effectively use the audit functionality provided by the Dev-Docs extension to improve their project documentation.
+
+---
+# Example JSON of relevant Dev-Docs.json options docs/VS Code Commands/Auditing-Documentation-Using-the-devdocs.auditdocs-Command.md
+## Imported Code Object
+This JSON snippet represents a configuration for AI-related tasks, specifically focusing on document auditing. Here's a concise explanation:
+
+1. The `ai` object contains settings related to AI functionality.
+
+2. Within `ai`, there's an `auditTasks` array that lists specific tasks for the AI to perform during a document audit.
+
+3. The two tasks listed are:
+   - Checking sections where code blocks might result in errors
+   - Ensuring consistent formatting and styling throughout the document
+
+This configuration would likely be used to guide an AI system in performing automated quality checks on technical documentation or code samples.
+
+  
+---
+# Example JSON of Relevant `dev-docs.json` Options docs/VS Code Commands/Auditing-Documentation-Using-the-devdocs.auditdocs-Command.md
+## Imported Code Object
+This JSON snippet represents a configuration option for an AI-related task, specifically for auditing documentation. Here's a concise explanation:
+
+1. The `ai` object contains settings related to AI functionalities.
+
+2. Within `ai`, there's an `auditTasks` array that lists specific tasks for the AI to perform when auditing documentation.
+
+3. The two tasks specified are:
+   - Checking sections where code blocks might result in errors
+   - Ensuring consistent formatting and styling throughout the documentation
+
+This configuration would likely be used to guide an AI system in performing automated quality checks on developer documentation, focusing on code accuracy and overall document consistency.
+
+  
 
  This is the content for the doc dev-docs/context-docs-VS Code Commands-Clear-Dev-Docs-Authentication-Tokens.md.md 
 
- [object Object]
+ 
+
+  ---
+# High Level Context
+## context
+This Markdown file describes a VS Code extension command called "Clear Dev-Docs Tokens" (command ID: devdocs.resetTokens). The command is used to clear locally stored authentication tokens for the Dev-Docs Cloud service. The document explains:
+
+1. What the command does: Removes GitHub access and refresh tokens used for Dev-Docs authentication.
+2. Why to use it: For signing out, handling token expiration, switching accounts, or troubleshooting.
+3. Prerequisites: Previous authentication with Dev-Docs Cloud service.
+4. How to use the command: Through the VS Code Command Palette or the Dev-Docs view in the Activity Bar.
+
+The file provides context for when and why a user might want to clear their Dev-Docs tokens, and gives step-by-step instructions on how to execute the command within VS Code. It's part of the documentation for a VS Code extension that integrates with the Dev-Docs Cloud service.
+
+---
+# devdocs.resetTokens docs/VS Code Commands/Clear-Dev-Docs-Authentication-Tokens.md
+## Imported Code Object
+I apologize, but there seems to be a misunderstanding in your question. The explanation you provided is not a code snippet; it's actually a textual description of what a hypothetical `devdocs.resetTokens` command might do.
+
+There isn't a widely known or standard `devdocs.resetTokens` command in common programming languages or development tools. The description you've provided appears to be explaining the functionality of a custom or specific tool or service called "Dev-Docs."
+
+Without more context about the specific system or tool you're referring to, I can't provide a more accurate explanation. If you have a actual code snippet or more details about the environment where this command is used, I'd be happy to help explain it further.
+
+---
+# devdocs.getGitHubUser docs/VS Code Commands/Clear-Dev-Docs-Authentication-Tokens.md
+## Imported Code Object
+In the context of that code snippet, `devdocs.getGitHubUser` appears to be a command or function that is part of an authentication process for a service called "Dev-Docs Cloud."
+
+Specifically:
+
+1. It's likely a method used to authenticate a user through their GitHub account.
+
+2. This command probably initiates an OAuth flow or similar authentication process with GitHub.
+
+3. It's used to obtain the necessary credentials or tokens to access the Dev-Docs Cloud service.
+
+4. Successfully running this command is a prerequisite for using other commands like `devdocs.resetTokens`.
+
+5. It's part of the overall authentication and authorization system for the Dev-Docs Cloud service.
+
+Without more context about the specific system or API, it's not possible to provide more detailed information about its exact implementation or usage. However, the name suggests it retrieves user information from GitHub as part of an authentication process.
+
+  
 
  This is the content for the doc dev-docs/context-docs-VS Code Commands-Generate-API-Documentation-from-Codebase.md.md 
 
- [object Object]
+ 
+
+  ---
+# High Level Context
+## context
+This file describes a VS Code extension command called `devdocs.generateAPIDocumentation` that automatically generates API documentation from a codebase. The command analyzes the code to identify API routes and creates two main outputs:
+
+1. A Postman Collection JSON file containing all detected API routes.
+2. An OpenAPI (Swagger) specification file for the API.
+
+The document explains the benefits of using this command, including keeping documentation synchronized with code, saving time, improving developer experience, and facilitating testing and collaboration.
+
+It also outlines the relevant configuration options in the `dev-docs.json` file, prerequisites for using the command, and step-by-step instructions on how to use it within VS Code.
+
+Overall, this file serves as a guide for developers to understand and utilize the automatic API documentation generation feature provided by this VS Code extension.
+
+---
+# Generating API Documentation and Config docs/VS Code Commands/Generate-API-Documentation-from-Codebase.md
+## Imported Code Object
+Certainly! Here's a concise explanation of "Generating API Documentation and Config" based on the provided code snippet:
+
+"Generating API Documentation and Config" refers to an automated process that:
+
+1. Analyzes the codebase to identify API routes.
+2. Creates a Postman Collection JSON file containing all detected API routes.
+3. Optionally generates an OpenAPI (Swagger) specification file for the API.
+
+This process is triggered by the `devdocs.generateAPIDocumentation` command, which automates the creation of API documentation and configuration files directly from the source code. This automation helps maintain up-to-date and accurate API documentation, making it easier for developers to understand and interact with the API.
+
+---
+# Why Should I Use This VS Code Extension Command? docs/VS Code Commands/Generate-API-Documentation-from-Codebase.md
+## Imported Code Object
+This code snippet appears to be a section of documentation or a README file explaining the benefits of using a specific VS Code extension command for generating API documentation. Here's a concise explanation:
+
+The "Why Should I Use This VS Code Extension Command?" section outlines four key advantages of using the extension to automatically generate API documentation from your codebase:
+
+1. It keeps documentation in sync with code changes.
+2. It saves time and effort compared to manual documentation.
+3. It improves the developer experience by providing clear API information.
+4. It facilitates testing and collaboration through generated Postman Collections.
+
+These points highlight the practical benefits of using the extension for maintaining up-to-date and accurate API documentation, which can lead to improved efficiency and collaboration in software development projects.
+
+---
+# What are relevant configuration Options in the `dev-docs.json`? docs/VS Code Commands/Generate-API-Documentation-from-Codebase.md
+## Imported Code Object
+Certainly! Here's a concise explanation of the code snippet you provided:
+
+The snippet describes relevant configuration options in the `dev-docs.json` file, specifically for the `devdocs.generateAPIDocumentation` command. It mentions one key option:
+
+- `ai.openapi.file`: This option defines the file path where the generated OpenAPI specification file should be saved.
+
+This configuration allows users to specify where the output of the API documentation generation process should be stored, giving them control over the location of the resulting OpenAPI specification file.
+
+---
+# Example JSON of relevant Dev-Docs.json options docs/VS Code Commands/Generate-API-Documentation-from-Codebase.md
+## Imported Code Object
+Certainly! Here's a concise explanation:
+
+The code snippet you provided is an example of a JSON configuration that might be found in a `Dev-Docs.json` file. This particular configuration is specifying options related to AI and OpenAPI:
+
+1. It defines an "ai" object.
+2. Within the "ai" object, there's an "openapi" object.
+3. The "openapi" object contains a "file" property.
+4. The "file" property specifies the path to an OpenAPI specification file: "src/api/openapi.yaml".
+
+This configuration is likely used to tell a development tool or documentation generator where to find the OpenAPI specification for an API, which can be used for various purposes such as generating documentation, client libraries, or server stubs.
+
+---
+# Prerequisites docs/VS Code Commands/Generate-API-Documentation-from-Codebase.md
+## Imported Code Object
+Certainly! In the context of the code snippet you provided, "Prerequisites" refers to the necessary conditions or requirements that must be met before using or implementing the code or system being described. Specifically:
+
+1. The project must have a specific file named `dev-docs.json` located in the root directory of the project.
+
+2. This `dev-docs.json` file needs to be correctly set up with the appropriate configuration options, which were presumably described earlier in the documentation.
+
+These prerequisites are essential steps that need to be completed before the main functionality or process can be initiated. They ensure that the system has the necessary configuration in place to operate correctly.
+
+---
+# How Do I Use This VS Code Extension Command? docs/VS Code Commands/Generate-API-Documentation-from-Codebase.md
+## Imported Code Object
+This code snippet is not actually code, but rather a set of instructions on how to use a specific VS Code extension command. Here's a concise explanation:
+
+"How Do I Use This VS Code Extension Command?" is a section that provides step-by-step instructions for using a VS Code extension command called "devdocs.generateAPIDocumentation". This command is designed to automatically generate API documentation for a codebase. 
+
+The instructions cover:
+1. How to open the VS Code command palette
+2. How to search for and select the specific command
+3. What to expect during the generation process
+4. Where to find and how to use the generated documentation files
+
+The section also briefly explains the purpose and benefits of using this command, emphasizing its role in maintaining up-to-date API documentation and improving developer collaboration.
+
+  
 
  This is the content for the doc dev-docs/context-docs-VS Code Commands-Generate-Context-for-Multiple-Documents.md.md 
 
- [object Object]
+ 
+
+  ---
+# High Level Context
+## context
+This file documents the "Generate Context for Multiple Documents" command in a VS Code extension called DevDocs. The command is used to automatically generate high-level context or summaries for multiple code files or directories within a workspace. Key points include:
+
+1. The command's purpose is to save time and provide quick overviews of project components.
+2. It relies on configuration options in a dev-docs.json file, including AI context directories and custom root settings.
+3. Prerequisites and usage instructions are provided.
+4. The command scans specified directories, generates context summaries, and displays results in the output panel or a new editor tab.
+5. It's useful for understanding project structure and individual file purposes, especially in large codebases.
+6. The document notes that the quality of generated context may vary based on code complexity and AI model capabilities.
+
+This documentation serves as a guide for developers using the DevDocs extension, explaining how to leverage the multi-document context generation feature effectively.
+
+  
+---
+# devdocs.generateMultiContext docs/VS Code Commands/Generate-Context-for-Multiple-Documents.md
+## Imported Code Object
+Your explanation is actually quite accurate and concise. Here's a slight rephrasing to make it even more concise:
+
+The `devdocs.generateMultiContext` command generates high-level context for multiple files or directories in the current workspace. It provides brief overviews or summaries for each, which is useful for projects with multiple components.
+
+This command helps developers quickly understand the structure and purpose of different parts of a complex project without having to examine each file in detail.
+
+  
 
  This is the content for the doc dev-docs/context-docs-VS Code Commands-Generate-High-Level-Context-for-Folders.md.md 
 
- [object Object]
+ 
+
+  ---
+# High Level Context
+## context
+This markdown file describes a VS Code extension command called "Generate High Level Context for the Folder". The command analyzes all code files within a selected folder and generates a comprehensive summary of the folder's purpose and functionality. Key points include:
+
+1. The command's purpose is to provide a high-level overview of a folder's contents without examining individual files.
+2. It's useful for large codebases, onboarding new team members, code reviews, and documenting project architecture.
+3. The file details relevant configuration options in the `dev-docs.json` file, including `ai.contextDirs`, `ai.internalTypeFilters`, `customRoot`, and `workspaceRoot`.
+4. It provides an example JSON configuration for the relevant options.
+5. The file outlines prerequisites for using the command, including a valid `dev-docs.json` file and proper folder location.
+6. Instructions for using the command are provided, both through the Explorer view context menu and the Command Palette.
+7. The generated high-level context document aims to improve understanding of code structure and organization within the selected folder.
+
+  
+---
+# Example JSON of Relevant `dev-docs.json` Options docs/VS Code Commands/Generate-High-Level-Context-for-Folders.md
+## Imported Code Object
+This JSON snippet represents configuration options for a development documentation tool. Here's a concise explanation of its key components:
+
+1. "ai" object:
+   - "contextDirs": Specifies directories to include for AI context.
+   - "internalTypeFilters": Lists types of code elements to consider.
+
+2. "customRoot": Defines a custom root directory for the package.
+
+3. "workspaceRoot": Specifies the absolute path to the project's root directory.
+
+These options likely control how the documentation tool processes and generates documentation for a project, including which directories to analyze, what types of code elements to document, and where to locate project files.
+
+  
 
  This is the content for the doc dev-docs/context-docs-VS Code Commands-Generating-External-Documentation-with-Dev-Docs-VS-Code-Extension.md.md 
 
- [object Object]
+ 
+
+  ---
+# High Level Context
+## context
+This file provides comprehensive documentation for the "Populate External Docs" command in the Dev-Docs VS Code extension. It explains the purpose, functionality, and usage of this command, which is designed to generate user-facing documentation for a project. The document covers:
+
+1. The command's main functions and tasks
+2. Benefits of using the command
+3. Relevant configuration options in the dev-docs.json file
+4. An example JSON configuration
+5. Prerequisites for using the command
+6. Step-by-step instructions on how to use the command
+
+The file is structured as a detailed guide, helping users understand how to leverage this feature to automatically generate and maintain external documentation for their projects. It emphasizes the command's ability to create a centralized documentation hub, automate the documentation process, and maintain consistency between code and documentation.
+
+---
+# Generate User-Facing Documentation docs/VS Code Commands/Generating-External-Documentation-with-Dev-Docs-VS-Code-Extension.md
+## Imported Code Object
+Certainly! Here's a concise explanation of "Generate User-Facing Documentation" based on the provided code snippet:
+
+Generate User-Facing Documentation refers to the process of automatically creating comprehensive, user-friendly documentation for a software project. In this context, it's a feature of the Dev-Docs VS Code extension that:
+
+1. Analyzes the project's files
+2. Extracts relevant information
+3. Generates an external documentation website
+
+This documentation is intended for end-users or consumers of the project, providing a centralized resource for understanding and using the software. The process is triggered by the "Populate External Docs" command (`devdocs.generateExternalDocs`) within the extension.
+
+The resulting documentation website serves as a single point of reference for users to access all the project's documentation, making it easier for them to understand and utilize the software effectively.
+
+---
+# What Does This VS Code Extension Command Do? docs/VS Code Commands/Generating-External-Documentation-with-Dev-Docs-VS-Code-Extension.md
+## Imported Code Object
+This code snippet appears to be an explanation of a VS Code extension command called "Populate External Docs." Here's a concise explanation of what it does:
+
+The command automates the process of generating and organizing external documentation for a software project. It scans the codebase, identifies important code elements, generates documentation (possibly using AI), structures the content according to specified rules, updates a JSON file with the new information, and optionally pushes the changes to a Git repository. This helps maintain up-to-date, well-organized documentation that's separate from but linked to the source code.
+
+---
+# Why Should I Use This VS Code Extension Command? docs/VS Code Commands/Generating-External-Documentation-with-Dev-Docs-VS-Code-Extension.md
+## Imported Code Object
+This code snippet appears to be a section explaining the benefits of using a specific VS Code extension command called "Populate External Docs." Here's a concise explanation:
+
+The snippet is describing why a developer should use this particular VS Code extension command. It outlines four main advantages:
+
+1. It creates a centralized website for project documentation.
+2. It automates the process of generating documentation from the codebase.
+3. It helps maintain consistency between the code and its documentation.
+4. It offers customizable configuration options to tailor the documentation process to specific project needs.
+
+The text is formatted using Markdown, with headings, bullet points, and emphasis to structure the information clearly for readers.
+
+---
+# What are relevant configuration Options in the `dev-docs.json`? docs/VS Code Commands/Generating-External-Documentation-with-Dev-Docs-VS-Code-Extension.md
+## Imported Code Object
+This code snippet explains the relevant configuration options in the `dev-docs.json` file for the "Populate External Docs" command. It lists and briefly describes ten key options that can be set in this JSON configuration file:
+
+1. Filters for internal types, code patterns, and names
+2. Options to import additional files and folders
+3. Filters for imported content
+4. Git branch specification
+5. Mappings for organizing the generated documentation
+
+These options allow users to customize how the documentation is generated, what content is included, and how it's structured in the external documentation website.
+
+---
+# Example JSON of relevant `dev-docs.json` options docs/VS Code Commands/Generating-External-Documentation-with-Dev-Docs-VS-Code-Extension.md
+## Imported Code Object
+This JSON snippet represents configuration options for an AI-assisted documentation system. Here's a concise explanation of its contents:
+
+1. "ai" object: Contains AI-related settings.
+
+2. "internalTypeFilters": Specifies which code elements to focus on (classes, methods, functions).
+
+3. "codeFilters": Indicates specific code patterns to look for (async functions, default exports).
+
+4. "nameFilters": Lists specific function or method names to target.
+
+5. "branch": Specifies the Git branch to use (main).
+
+6. "mappings": Defines how files and folders correspond to documentation sections:
+   - Files from "src/main.ts" go to "Getting Started" section.
+   - Files in "src/components" folder go to "Components" section.
+
+This configuration helps the AI system understand what code elements to analyze and how to organize the resulting documentation.
+
+# Prerequisites docs/VS Code Commands/Generating-External-Documentation-with-Dev-Docs-VS-Code-Extension.md
+## Imported Code Object
+Certainly! Here's a concise explanation of what Prerequisites means in this context:
+
+Prerequisites refers to the essential conditions or requirements that need to be met before using the "Populate External Docs" command. In this case, there are two main prerequisites:
+
+1. A properly configured `dev-docs.json` file in the project's root directory.
+2. A valid authentication token stored in the VS Code extension's storage.
+
+These prerequisites ensure that the command has the necessary configuration and authentication in place to function correctly. Without meeting these requirements, the command may not work as intended or may fail to execute altogether.
+
+---
+# How Do I Use This VS Code Extension Command? docs/VS Code Commands/Generating-External-Documentation-with-Dev-Docs-VS-Code-Extension.md
+## Imported Code Object
+The code snippet you provided is not actual code, but rather a section of documentation or instructions. It's explaining how to use a specific VS Code extension command called "Populate External Docs."
+
+This section provides step-by-step instructions for users on how to execute and utilize this particular command within Visual Studio Code. It outlines the process of setting up the necessary configuration file, accessing the command through VS Code's Command Palette, and what to expect when the command is run.
+
+The purpose of this command appears to be generating or updating external documentation for a project based on the codebase and some predefined settings. It's likely part of a larger VS Code extension designed to assist with documentation tasks.
+
+  
 
  This is the content for the doc dev-docs/context-docs-VS Code Commands-Leveraging-AI-to-Find-Missing-Documentation-in-VS-Code.md.md 
 
- [object Object]
+ 
+
+  ---
+# High Level Context
+## context
+This Markdown file describes a VS Code extension command called "Find Missing Documentation" (devdocs.findMissingDocs) that is part of the Dev-Docs extension. The command uses AI to analyze a project's existing documentation and codebase to identify potential gaps in documentation coverage. It then suggests titles for new documentation pages and creates GitHub issues for each suggestion.
+
+Key points covered in the file include:
+1. An explanation of what the command does and why it's useful
+2. Relevant configuration options in the dev-docs.json file
+3. Prerequisites for using the command
+4. Step-by-step instructions on how to use the command
+5. The benefits of regularly using this feature to maintain comprehensive documentation
+
+The file is structured to provide developers with a clear understanding of the command's purpose, functionality, and implementation, encouraging its use to improve project documentation.
+
+---
+# devdocs.findMissingDocs docs/VS Code Commands/Leveraging-AI-to-Find-Missing-Documentation-in-VS-Code.md
+## Imported Code Object
+Based on the provided code snippet, `devdocs.findMissingDocs` appears to be a command or function that automates the process of identifying and suggesting improvements for project documentation. Here's a concise explanation:
+
+`devdocs.findMissingDocs` is an AI-powered tool that analyzes existing project documentation and code, identifies gaps in the documentation, and suggests new topics to cover. It then updates the project's configuration file with these suggestions and creates corresponding GitHub issues to track the proposed documentation improvements.
+
+This tool aims to enhance the completeness and quality of project documentation by automatically detecting areas that may need additional explanation or coverage.
+
+  
 
  This is the content for the doc dev-docs/context-docs-VS Code Commands-Setting-the-Root-Directory-for-Dev-Docs-Extension.md.md 
 
- [object Object]
+ 
+
+  ---
+# High Level Context
+## context
+This file provides documentation for a VS Code command that sets the root directory for the Dev-Docs extension. It explains the importance of setting the root directory, prerequisites for using the command, and step-by-step instructions on how to use it. The command is crucial for configuring where the Dev-Docs extension will read from and write to within a project, ensuring proper functionality and correct placement of documentation files. The file is structured as a markdown document, likely part of a larger documentation set for the Dev-Docs extension, and includes information on why the command is useful, especially in the context of monorepo projects.
+
+  
 
  This is the content for the doc dev-docs/context-docs-VS Code Commands-Using-the-devdocs.generateContext-Command.md.md 
 
- [object Object]
+ 
+
+  ---
+# High Level Context
+## context
+This markdown file describes the "Generate Context Command" (`devdocs.generateContext`) in a Visual Studio Code extension. The command uses AI to analyze a selected file or document and generate a high-level summary of its purpose and role within a project. The file explains:
+
+1. What the command does and its benefits
+2. Relevant configuration options in the `dev-docs.json` file
+3. Prerequisites for using the command
+4. Step-by-step instructions on how to use the command
+
+The document highlights the command's usefulness for onboarding new team members, code documentation, code reviews, and as a personal reference. It also provides an example JSON configuration and details on how to access and use the command within VS Code.
+
+---
+# devdocs.generateContext docs/VS Code Commands/Using-the-devdocs.generateContext-Command.md
+## Imported Code Object
+Your explanation is actually quite good and accurate. To summarize it even more concisely:
+
+`devdocs.generateContext` is a VS Code extension command that uses AI to analyze a selected file or document in your project. It generates a brief, high-level summary explaining the file's purpose and how it fits into the overall project structure. This helps developers quickly understand the context of specific project components.
+
+  
+---
+# Example JSON of Relevant `dev-docs.json` Options docs/VS Code Commands/Using-the-devdocs.generateContext-Command.md
+## Imported Code Object
+Certainly! This JSON snippet represents configuration options for an AI-assisted development tool or documentation generator. Here's a concise explanation of each option:
+
+1. "contextDirs": Specifies directories to be included for context when analyzing code.
+
+2. "internalTypeFilters": Defines which code constructs (classes, interfaces, functions) should be considered.
+
+3. "codeFilters": Lists specific code patterns or keywords to look for in the analysis.
+
+4. "nameFilters": Specifies particular function or method names to focus on during the analysis.
+
+These options help tailor the AI tool's focus, ensuring it analyzes relevant parts of the codebase and generates appropriate documentation or assistance.
+
+  
 
  This is the content for the doc dev-docs/context-docs-VS Code Commands-_Ask-Dev-Docs-A-Question-Command.md.md 
 
- [object Object]
+ 
+
+  ---
+# High Level Context
+## context
+This file describes the "Ask Dev-Docs A Question" command in the Dev-Docs Visual Studio Code extension. The command allows users to ask questions about their codebase and receive AI-generated answers. Key points include:
+
+1. The command is activated using `devdocs.askDocs`.
+2. It uses AI to process questions and generate answers based on the codebase context.
+3. The feature aims to improve code comprehension and documentation efficiency.
+4. Users can access the command through the VS Code Command Palette.
+5. Prerequisites include having local dev-doc markdown files.
+6. The file explains the benefits of using this command, such as saving time and effort in understanding code.
+7. Step-by-step instructions for using the command are provided.
+
+Overall, this document serves as a user guide and explanation for the AI-powered question-answering feature within the Dev-Docs extension.
+
+---
+# devdocs.askDocs docs/VS Code Commands/_Ask-Dev-Docs-A-Question-Command.md
+## Imported Code Object
+Based on the provided explanation, `devdocs.askDocs` appears to be a command within a Visual Studio Code extension called "Dev-Docs." Here's a concise explanation:
+
+`devdocs.askDocs` is a command that:
+
+1. Allows users to ask questions about their codebase
+2. Uses an AI model to generate answers
+3. Works within the Dev-Docs extension for Visual Studio Code
+4. Prompts users to input questions via a text box
+5. Sends the question and relevant project context to an AI model
+6. Processes the input and generates a tailored answer
+7. Displays the answer in a Visual Studio Code information message
+
+This command aims to improve code comprehension and documentation by providing AI-powered assistance directly within the development environment.
+
+  
 
  This is the content for the doc dev-docs/context-docs-VS Code Commands-_Ask-Your-Dev-Docs-A-Question.md.md 
 
- [object Object]
+ 
+
+  ---
+# High Level Context
+## context
+This file describes a VS Code extension command called "Ask Your Dev-Docs A Question". The command allows developers to ask natural language questions about their codebase and receive AI-generated responses. Key points include:
+
+1. The command's purpose and functionality
+2. Benefits of using the command (code comprehension, debugging assistance, documentation help, knowledge sharing)
+3. Relevant configuration options in the dev-docs.json file
+4. An example JSON configuration
+5. Prerequisites for using the command
+6. Step-by-step instructions on how to use the command in VS Code
+
+The document serves as a guide for developers to understand and utilize this AI-powered feature within their development environment, enhancing their ability to interact with and understand their codebase through natural language queries.
+
+---
+# devdocs.askYourDevDocsAQuestion docs/VS Code Commands/_Ask-Your-Dev-Docs-A-Question.md
+## Imported Code Object
+I apologize, but there seems to be a misunderstanding. The code snippet you provided is not actually code, but rather a description of a hypothetical command or feature.
+
+There is no standard or widely known `devdocs.askYourDevDocsAQuestion` command in any common programming language or development environment. This appears to be a made-up or conceptual feature that someone has described.
+
+The description suggests a tool that would allow developers to ask questions about their codebase in natural language and receive AI-generated responses. However, this is not a real, existing command or function in any standard programming context.
+
+If you've encountered this in some specific tool or platform, it would be helpful to have more context about where you saw it, as it's likely specific to that particular environment or application.
+
+  
+---
+# Example JSON of Relevant `dev-docs.json` Options docs/VS Code Commands/_Ask-Your-Dev-Docs-A-Question.md
+## Imported Code Object
+This JSON snippet represents a configuration for AI-assisted documentation generation. Here's a concise explanation:
+
+1. It defines options for documenting AI-related aspects of a project.
+2. Under "variablesAndFunctions", it specifies documentation for a function called "myFunction".
+3. For "myFunction", it includes prompts with questions about its purpose and functionality.
+4. The "components" section specifies a template file for AI responses.
+5. "docPath" indicates where the AI-generated documentation will be saved.
+
+This structure allows for automated generation of documentation for functions and variables, using AI to provide explanations based on the specified prompts and templates.
+
+  
 
  This is the content for the doc dev-docs/context-docs-VS Code Commands-_Dev-Docs-VS-Code-Extension:-Streamlining-Documentation-for-Your-Codebase.md.md 
 
- [object Object]
+ 
+
+  ---
+# High Level Context
+## context
+This file provides a comprehensive overview of the Dev-Docs VS Code Extension, a tool designed to streamline the process of creating and managing documentation for codebases. The document covers:
+
+1. The extension's main features, including automatic documentation generation, outline and context generation, external documentation management, AI-assisted editing, and version control integration.
+
+2. The benefits of using the extension, emphasizing time-saving and improved documentation quality through AI-powered assistance.
+
+3. Key configuration options in the `dev-docs.json` file, which controls the extension's behavior.
+
+4. Prerequisites for using the extension.
+
+5. Instructions on how to use the extension within VS Code, including various methods to access its functionality.
+
+6. An explanation of how the extension works to generate and manage documentation, leveraging AI technologies to keep documentation synchronized with the codebase.
+
+Overall, this document serves as a user guide and reference for developers looking to improve their documentation workflow using the Dev-Docs VS Code Extension.
+
+  
+---
+# What Are Relevant Configuration Options in the `dev-docs.json`? docs/VS Code Commands/_Dev-Docs-VS-Code-Extension:-Streamlining-Documentation-for-Your-Codebase.md
+## Imported Code Object
+This code snippet provides an explanation of the key configuration options available in the `dev-docs.json` file for the Dev-Docs extension. It describes:
+
+1. The `quickDoc` option for configuring quick documentation generation.
+2. The `ai` option, which includes various sub-options for AI-assisted documentation generation, such as:
+   - Prompts for variables and functions
+   - Component documentation templates
+   - Custom documentation paths
+   - Filters for internal types, code patterns, and element names
+   - OpenAPI configuration for API documentation
+3. The `customRoot` option for specifying a custom project root directory.
+4. The `workspaceRoot` option for setting the workspace root directory.
+
+These options allow users to customize how the Dev-Docs extension generates and organizes documentation for their projects.
+
+  
 
  This is the content for the doc dev-docs/context-docs-VS Code Commands-_Enable-Markdown-Mode-in-VS-Code-for-in-Editor-Documentation.md.md 
 
- [object Object]
+ 
+
+  ---
+# High Level Context
+## context
+This file describes a VS Code extension command that enables Markdown mode for in-editor documentation. It explains the benefits of writing documentation alongside code, including improved maintainability, streamlined workflow, and version control integration. The document outlines relevant configuration options in the dev-docs.json file, provides an example JSON configuration, lists prerequisites, and offers step-by-step instructions on how to use the command. The overall context is to help developers seamlessly integrate documentation writing into their coding process within VS Code, emphasizing the importance of keeping documentation close to the code it describes while maintaining clear separation between code and documentation.
+
+---
+# Turn On Markdown Mode docs/VS Code Commands/_Enable-Markdown-Mode-in-VS-Code-for-in-Editor-Documentation.md
+## Imported Code Object
+The comment "# Turn On Markdown Mode" likely refers to a feature or command in a code editor or development environment that enables a special mode for writing and rendering Markdown content.
+
+When activated, this mode typically:
+
+1. Enhances the editor's ability to recognize and syntax-highlight Markdown formatting.
+2. May provide a live preview of the formatted Markdown.
+3. Could offer additional tools or shortcuts for common Markdown elements.
+4. Might adjust the editor's behavior to better suit writing documentation or comments in Markdown format.
+
+This feature is particularly useful for developers who want to write documentation, comments, or README files using Markdown syntax directly within their code editor, providing a seamless experience for both coding and documentation tasks.
+
+---
+# Why Should I Use This VS Code Extension Command? docs/VS Code Commands/_Enable-Markdown-Mode-in-VS-Code-for-in-Editor-Documentation.md
+## Imported Code Object
+The code snippet you provided is not actually code, but rather a markdown-formatted section explaining the benefits of using a particular VS Code extension command for writing documentation.
+
+This section, titled "Why Should I Use This VS Code Extension Command?", outlines three key advantages of using the extension:
+
+1. It keeps documentation close to the code it describes, improving maintainability.
+2. It streamlines the workflow by allowing users to write both code and documentation in the same editor.
+3. It allows documentation to be version-controlled alongside the code.
+
+This explanation is likely part of a README file or documentation for a VS Code extension that helps developers write and manage documentation within their codebase. The purpose of this section is to convince potential users of the benefits of using the extension for their documentation needs.
+
+---
+# What are relevant configuration Options in the `dev-docs.json`? docs/VS Code Commands/_Enable-Markdown-Mode-in-VS-Code-for-in-Editor-Documentation.md
+## Imported Code Object
+This code snippet is explaining the key configuration options in a `dev-docs.json` file that are relevant for enabling and customizing a markdown documentation generation mode. Here's a concise explanation:
+
+1. `ai.components.template`: This option specifies where to find the markdown template file that will be used as a base for generating documentation.
+
+2. `ai.docPath`: This option allows you to set a custom directory where the generated documentation files will be saved.
+
+3. `ai.branch`: This option determines which Git branch the documentation changes will be committed to when using version control.
+
+These options are likely part of a larger configuration file used by a documentation generation tool or system that utilizes AI to create or manage documentation in markdown format.
+
+---
+# Example JSON of relevant Dev-Docs.json options docs/VS Code Commands/_Enable-Markdown-Mode-in-VS-Code-for-in-Editor-Documentation.md
+## Imported Code Object
+The provided code snippet is an example of a JSON configuration that could be part of a `Dev-Docs.json` file. This configuration is likely used to specify settings for an AI-assisted documentation generation process. Here's a concise explanation of the options:
+
+1. `ai`: The main object containing AI-related settings.
+2. `components`: 
+   - `template`: Specifies the path to a Markdown template file used for generating component documentation.
+3. `docPath`: Indicates the directory where the generated API reference documentation will be saved.
+4. `branch`: Specifies the Git branch name (in this case, "main") where the documentation should be applied or generated.
+
+This configuration helps automate and standardize the process of creating and managing API documentation using AI tools, ensuring consistency and specifying where the generated content should be stored within a project's structure.
+
+---
+# Prerequisites docs/VS Code Commands/_Enable-Markdown-Mode-in-VS-Code-for-in-Editor-Documentation.md
+## Imported Code Object
+Certainly! Here's a concise explanation of "Prerequisites" in the given code snippet:
+
+Prerequisites refer to the conditions or requirements that need to be met before using the command described. In this case, it specifically means:
+
+1. You must have a `dev-docs.json` file in your project.
+2. This file should contain essential configurations, including:
+   - The path to the template file
+   - The path where documentation will be stored
+   - The Git branch to be used
+
+These configurations need to be properly set up in the `dev-docs.json` file before the command can be executed successfully. Essentially, prerequisites are the setup steps that must be completed prior to using the command.
+
+---
+# How Do I Use This VS Code Extension Command? docs/VS Code Commands/_Enable-Markdown-Mode-in-VS-Code-for-in-Editor-Documentation.md
+## Imported Code Object
+The code snippet you provided is not actually code, but rather a section of documentation or a README file. It explains how to use a specific VS Code extension command called "Turn on Markdown Mode." Here's a concise explanation:
+
+This section provides instructions for users on how to activate a feature called "Markdown Mode" in Visual Studio Code. It outlines the steps to access the command through the Command Palette, enable the mode, and explains the benefits of using Markdown for in-code documentation. It also includes a brief note on best practices for maintaining documentation within code files.
+
+  
+---
+# Example JSON of Relevant `dev-docs.json` Options docs/VS Code Commands/_Enable-Markdown-Mode-in-VS-Code-for-in-Editor-Documentation.md
+## Imported Code Object
+Certainly! Here's a concise explanation of the "Example JSON of Relevant `dev-docs.json` Options" shown in the code snippet:
+
+This JSON configuration snippet is likely part of a `dev-docs.json` file used for setting up documentation generation or management for an AI-related project. It specifies:
+
+1. A template file location for AI components documentation.
+2. The path where API reference documentation should be stored.
+3. The main branch of the repository to use for documentation.
+
+These options help automate and standardize the process of generating and organizing documentation for AI components and APIs within a development project.
+
+  
