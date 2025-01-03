@@ -2,70 +2,42 @@
 
 This guide will help you quickly set up and start using Dev-Docs to generate documentation for your codebase.
 
+## Prerequisites
+
+- Visual Studio Code installed
+- A GitHub account
+
 ## Installation
 
-1. Install the Dev-Docs extension for VS Code from the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=dev-docs.dev-docs).
+1. Open Visual Studio Code
+2. Go to the Extensions view (Ctrl+Shift+X)
+3. Search for "Dev-Docs" 
+4. Click Install
 
-2. Open your project in VS Code.
+## Setup
 
-## Configuration
-
-1. Create a `dev-docs.json` file in the root of your project. This file will contain configuration options for Dev-Docs.
-
-2. Add basic configuration to `dev-docs.json`:
-
-```json
-{
-  "ai": {
-    "contextDirs": ["src", "lib"],
-    "internalTypeFilters": ["class", "method", "function"],
-    "docSubFolder": "api/"
-  }
-}
-```
-
-Adjust the `contextDirs` to match your project structure.
+1. Open your project in VS Code
+2. Press Ctrl+Shift+P to open the Command Palette
+3. Type "Dev-Docs: Sign In" and select it
+4. Follow the prompts to sign in with your GitHub account
+5. Select or create an organization for your project
 
 ## Generating Documentation
 
-### For a Single File
+1. Right-click on a file or folder in the Explorer view
+2. Select "Generate Documentation" from the context menu
+3. Choose the type of documentation to generate (e.g. API docs, README, etc.)
+4. Review and edit the generated documentation in the editor
 
-1. Open the file you want to document.
-2. Press `Shift + Cmd + D` (Mac) or `Shift + Ctrl + D` (Windows/Linux).
-3. Dev-Docs will generate documentation for the file.
+## Customizing
 
-### For Multiple Files
-
-1. Right-click on a folder in the VS Code Explorer.
-2. Select "Generate High Level Context for the Folder".
-3. Dev-Docs will analyze the folder and generate documentation.
-
-### For External Documentation
-
-1. Open the Command Palette (`Cmd+Shift+P` or `Ctrl+Shift+P`).
-2. Type "Populate External Docs" and select the command.
-3. Follow the prompts to generate external documentation.
-
-## Viewing Generated Documentation
-
-Generated documentation will be saved in the `docs` folder (or the folder specified by `docSubFolder` in your configuration).
-
-## Using AI-Powered Features
-
-1. To ask questions about your codebase:
-   - Open the Command Palette.
-   - Type "Ask Dev-Docs A Question" and select the command.
-   - Enter your question when prompted.
-
-2. To find missing documentation:
-   - Open the Command Palette.
-   - Type "Find Missing Documentation" and select the command.
-   - Dev-Docs will analyze your project and suggest areas that need documentation.
+- Create a `dev-docs.json` file in your project root to customize options
+- See the [configuration guide](https://docs.dev-docs.io/configuration) for available options
 
 ## Next Steps
 
-- Explore the [VS Code Commands](docs/VS%20Code%20Commands) documentation for more advanced features.
-- Customize your `dev-docs.json` file to tailor the documentation generation to your project's needs.
-- Use the "Generate API Documentation from Codebase" command to automatically create API documentation.
+- Try generating documentation for different parts of your codebase
+- Explore other Dev-Docs commands in the Command Palette
+- Check out the [full documentation](https://docs.dev-docs.io) for advanced features
 
-For more detailed information on each feature, refer to the specific command documentation in the [docs](docs/) folder.
+Need help? Join our [community forum](https://community.dev-docs.io) or [open an issue](https://github.com/dev-docs/dev-docs/issues).
