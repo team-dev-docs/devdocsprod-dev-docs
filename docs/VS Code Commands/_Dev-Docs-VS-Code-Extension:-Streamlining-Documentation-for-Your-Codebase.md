@@ -1,54 +1,61 @@
-# How to Use and Customize the "Populate External Docs" Command in the VS Code Extension
+# Dev-Docs VS Code Extension: Streamlining Documentation for Your Codebase
 
-## Step 1: Access the Command
+The Dev-Docs VS Code extension helps developers streamline the process of creating and managing documentation for their codebase. This guide provides an overview of key features and how to use them.
 
-1. Open your VS Code workspace
-2. Press `Cmd+Shift+P` (Mac) or `Ctrl+Shift+P` (Windows/Linux) to open the command palette
-3. Type "Populate External Docs" and select the command
+## Key Features
 
-![Command Palette](https://docs.dev/img/populate-external-docs-command.png)
+### Automatic Documentation Generation
 
-## Step 2: Customizing Generation with dev-docs.json
+![Auto-generate docs](https://example.com/auto-generate-docs.png)
 
-To customize the documentation generation, modify the `dev-docs.json` file in your project root:
+The extension can automatically generate documentation by analyzing your code and extracting relevant information.
 
-1. Create or open `dev-docs.json`
-2. Add an `ai` object with customization options
+### AI-Assisted Editing 
 
-Example `dev-docs.json`:
+![AI editing](https://example.com/ai-editing.png)
+
+Get AI-powered suggestions and auto-completion as you write documentation to improve quality and consistency.
+
+### External Documentation Management
+
+![External docs](https://example.com/external-docs.png)
+
+Easily manage external documentation separate from your code while keeping it in sync.
+
+### Version Control Integration
+
+![Version control](https://example.com/version-control.png)
+
+Documentation changes are tracked alongside code changes in your version control system.
+
+## Using the Extension
+
+1. Install the Dev-Docs extension from the VS Code marketplace
+2. Open your project in VS Code 
+3. Access Dev-Docs commands via:
+   - Command palette (Cmd/Ctrl + Shift + P)
+   - Context menu (right-click)
+   - Dev-Docs sidebar
+
+![Accessing commands](https://example.com/accessing-commands.png)
+
+4. Configure options in dev-docs.json file
+5. Use commands like "Generate Docs" to create documentation
+
+## Configuration Options
+
+Key options in dev-docs.json:
 
 ```json
 {
   "ai": {
-    "internalTypeFilters": ["class", "method", "function"],
-    "codeFilters": [],
-    "nameFilters": [],
-    "docSubFolder": "api/",
-    "merge": true,
-    "externalDocPrompt": "Generate comprehensive API documentation"
+    "components": {
+      "template": "path/to/template.md"  
+    },
+    "docPath": "docs/api",
+    "branch": "main"
   }
 }
 ```
 
-Key customization options:
-
-- `internalTypeFilters`: Specify which code elements to document
-- `docSubFolder`: Set the output folder for generated docs
-- `merge`: Combine multiple elements into a single document
-- `externalDocPrompt`: Customize the AI prompt for doc generation
-
-![dev-docs.json config](https://docs.dev/img/dev-docs-json-config.png)
-
-The `generateBySymbols` function in `src/AiServices.ts` uses these settings to generate documentation.
-
-## Step 3: Review and Edit
-
-After running the command:
-
-1. Check the `docs` folder (or your specified `docSubFolder`) for generated files
-2. Review and edit the generated content as needed
-3. Commit changes to your repository
-
-![Generated docs](https://docs.dev/img/generated-docs-folder.png)
-
-By following these steps and customizing the `dev-docs.json`, you can efficiently generate and manage external documentation for your project using the VS Code extension.
+Customize settings to fit your project's documentation needs.
