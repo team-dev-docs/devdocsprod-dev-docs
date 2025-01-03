@@ -1,85 +1,100 @@
 # AI Documentation Deep Dive
 
-## Introduction
-This document provides a more in-depth look at the AI capabilities and configurations available in Dev-Docs. As AI plays an increasingly important role in documentation generation and management, understanding these features can help you leverage Dev-Docs more effectively.
+Artificial intelligence (AI) is a rapidly evolving field that encompasses machine learning, natural language processing, computer vision, and more. This document provides an in-depth look at documenting AI systems and models to improve understanding and maintainability.
 
-## AI-Powered Documentation Generation
+## Key Components to Document
 
-Dev-Docs uses advanced AI models to analyze your codebase and generate comprehensive documentation. Some key capabilities include:
+When documenting AI systems, be sure to cover:
 
-- Automatic generation of high-level context for files and folders
-- Creation of detailed API documentation from code
-- Identification of missing documentation
-- Answering questions about the codebase
+1. Model Architecture
+   - Type of model (e.g. neural network, decision tree, etc.)
+   - Layer structure and sizes
+   - Activation functions
+   - Loss functions and optimizers
 
-## Configuring AI Behavior
+2. Training Data
+   - Sources and preparation methods
+   - Data formats
+   - Preprocessing steps
+   - Train/test split ratios
 
-The `dev-docs.json` file allows fine-grained control over how AI is used in your documentation workflow. Some important configuration options include:
+3. Training Process  
+   - Hardware used (GPUs, TPUs, etc)
+   - Training time
+   - Hyperparameters
+   - Stopping criteria
 
-```json
-{
-  "ai": {
-    "internalTypeFilters": ["class", "method", "function"],
-    "codeFilters": ["async function", "export default"],
-    "nameFilters": ["handleSubmit", "render"],
-    "contextPrompt": "Generate comprehensive documentation for this codebase",
-    "variablesAndFunctions": {
-      "myFunction": {
-        "prompts": [
-          {
-            "title": "Purpose",
-            "question": "What is the main purpose of this function?"
-          },
-          {
-            "title": "Usage",
-            "question": "How should this function be used?"
-          }
-        ]
-      }
-    },
-    "components": {
-      "template": "path/to/template.md"
-    },
-    "docPath": "docs/api-reference",
-    "branch": "main"
-  }
-}
+4. Model Performance
+   - Evaluation metrics  
+   - Benchmark results
+   - Known limitations
+
+5. Deployment
+   - Required dependencies
+   - Inference hardware  
+   - Serving infrastructure
+
+6. Ethical Considerations
+   - Potential biases
+   - Privacy implications
+   - Intended use cases
+
+## Best Practices
+
+- Use diagrams to illustrate model architecture
+- Include code snippets for key functions
+- Document version history and changes between iterations
+- Provide examples of inputs and outputs
+- Explain your reasoning for key design decisions
+- Include contact information for model owners/maintainers
+
+## Tools for AI Documentation
+
+- Jupyter Notebooks: Great for combining code, visualizations and explanations
+- MLflow: For tracking experiments and model versions
+- TensorBoard: Visualizing training metrics and model graphs
+- Weight & Biases: Experiment tracking and visualization
+- GitHub: Version control and collaborative documentation
+
+## Sample Documentation Template
+
+```markdown
+# Model Name
+
+## Overview
+Brief description of model purpose and capabilities
+
+## Architecture
+Detailed explanation of model structure with diagram
+
+## Training
+- Dataset: [link to dataset]
+- Hardware: 4x NVIDIA V100 GPUs
+- Training time: 72 hours
+- Hyperparameters: 
+  - Learning rate: 0.001
+  - Batch size: 64
+  - ...
+
+## Performance
+- Accuracy on test set: 95%
+- F1 score: 0.92
+- Known limitations: Struggles with low-light images
+
+## Deployment
+- Required packages: tensorflow>=2.4, numpy, pillow
+- Recommended hardware: NVIDIA T4 GPU or higher
+- API endpoints: 
+  - /predict: Accepts POST requests with image data
+  - ...
+
+## Ethical Considerations
+- Model trained on diverse dataset to mitigate bias
+- Does not collect or store personal information
+- Not suitable for use in critical decision-making without human oversight
+
+## Contact
+For questions or issues, contact ai-team@example.com
 ```
 
-- `internalTypeFilters`: Specify which code elements to document
-- `codeFilters`: Define code patterns to look for
-- `nameFilters`: Target specific function or method names  
-- `contextPrompt`: Customize the overall prompt for context generation
-- `variablesAndFunctions`: Configure custom prompts for specific functions
-- `components.template`: Set a template for component documentation
-- `docPath`: Specify where generated docs should be saved
-- `branch`: Set which git branch to use for documentation
-
-## AI Models and Performance
-
-Dev-Docs utilizes state-of-the-art language models to power its AI capabilities. While the exact models used may be updated over time to provide the best performance, you can expect:
-
-- Fast processing of large codebases
-- High-quality, coherent documentation output
-- Ability to understand context and generate appropriate content
-
-## Best Practices for AI-Assisted Documentation
-
-To get the most out of Dev-Docs' AI features:
-
-1. Provide clear, well-structured code as input
-2. Use descriptive variable and function names
-3. Include comments for complex logic
-4. Regularly update your dev-docs.json configuration
-5. Review and refine AI-generated content
-
-## Future AI Enhancements
-
-The Dev-Docs team is continuously working to improve our AI capabilities. Some areas of ongoing development include:
-
-- Enhanced code understanding across multiple programming languages
-- Improved context awareness for large, complex projects
-- More customizable AI behaviors and outputs
-- Integration with other AI-powered development tools
-
-Stay tuned to our release notes for the latest AI-related improvements and features.
+By following these guidelines and using appropriate tools, you can create comprehensive and useful documentation for your AI projects, improving collaboration, reproducibility, and long-term maintainability.
