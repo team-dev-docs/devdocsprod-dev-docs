@@ -1,48 +1,53 @@
-# Dev-Docs Troubleshooting Guide
+# Troubleshooting Guide
 
-This guide covers common issues you may encounter when using Dev-Docs and how to resolve them.
+This guide provides solutions to common issues you may encounter when using Dev-Docs.
 
 ## Authentication Issues
 
-If you're having trouble signing in to Dev-Docs:
+If you're having trouble signing in:
 
 1. Ensure you have a valid Dev-Docs account
-2. Check that you're using the correct email and password
-3. Try clearing your browser cache and cookies
-4. If issues persist, use the "Clear Dev-Docs Tokens" command in VS Code to reset authentication
+2. Clear your authentication tokens using the "Clear Dev-Docs Tokens" command (Cmd+Shift+P / Ctrl+Shift+P and search for "Clear Dev-Docs Tokens")
+3. Try signing in again
 
 ## Configuration Problems
 
-If Dev-Docs isn't working as expected:
+If commands aren't working as expected:
 
-1. Verify your `dev-docs.json` file exists in the project root
-2. Check that the JSON is valid and properly formatted  
-3. Ensure all required fields are populated
-4. Try reloading the VS Code window after making changes
+1. Check that your `dev-docs.json` file is properly configured
+2. Ensure the file is in the root directory of your project
+3. Validate the JSON syntax for any errors
 
-## Generation Failures
+## Documentation Generation Fails
 
-If documentation isn't generating properly:
+If documentation isn't generating:
 
-1. Check your `dev-docs.json` configuration, especially file paths and filters
-2. Ensure you have write permissions for the output directories
-3. Try running the command on a smaller subset of files first
-4. Check the Dev-Docs output panel in VS Code for any error messages
+1. Verify you have the necessary permissions for the target directories
+2. Check your `dev-docs.json` configuration, especially file paths and filters
+3. Ensure you have a stable internet connection for AI-powered features
 
-## Integration Issues
+## Context Generation Issues
 
-If Dev-Docs isn't integrating properly with other tools:
+If context generation produces unexpected results:
 
-1. Verify you have the latest versions of Dev-Docs and any integrated extensions
-2. Check that API keys and access tokens are valid and have proper permissions
-3. Ensure firewalls or security settings aren't blocking connections
+1. Review your `contextDirs` settings in `dev-docs.json`
+2. Check that specified directories exist and contain relevant files
+3. Try regenerating context for specific folders or files
 
-## Performance Problems
+## VS Code Extension Not Working
 
-If Dev-Docs is running slowly:
+If the Dev-Docs extension seems unresponsive:
 
-1. Try generating documentation for smaller parts of your codebase at a time
-2. Check your `dev-docs.json` filters to ensure you're not processing unnecessary files
-3. Verify you have sufficient system resources (CPU, RAM) available
+1. Ensure you have the latest version installed
+2. Try disabling and re-enabling the extension
+3. Restart VS Code
 
-For any persistent issues not covered here, please consult our [official documentation](https://docs.dev/) or [contact support](mailto:support@dev-docs.io).
+## OpenAPI Generation Fails
+
+If you're having issues generating OpenAPI documentation:
+
+1. Verify your server code follows expected patterns for route definitions
+2. Check the `ai.openapi.file` setting in your `dev-docs.json`
+3. Ensure you have write permissions for the target OpenAPI file location
+
+For any persistent issues not covered here, please visit our [support forum](https://devdocs.io/support) or [open an issue](https://github.com/dev-docs/dev-docs/issues) on our GitHub repository.
