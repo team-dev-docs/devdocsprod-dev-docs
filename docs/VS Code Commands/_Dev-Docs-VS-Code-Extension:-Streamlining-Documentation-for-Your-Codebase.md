@@ -1,75 +1,52 @@
-# Visual Aids for Explaining Complex Concepts in Dev-Docs VS Code Extension
+# How to Use and Customize the "Populate External Docs" Command in the VS Code Extension
 
-To help explain some of the complex concepts in the Dev-Docs VS Code extension, here are some visual aids:
+## Step 1: Access the Command
 
-## Extension Architecture Overview
+1. Open your VS Code workspace
+2. Press `Cmd+Shift+P` (Mac) or `Ctrl+Shift+P` (Windows/Linux) to open the command palette
+3. Type "Populate External Docs" and select the command
 
-```mermaid
-graph TD
-    A[VS Code] --> B[Dev-Docs Extension]
-    B --> C[AI Service]
-    B --> D[Documentation Generator]
-    B --> E[File Analyzer]
-    C --> F[OpenAI API]
-    D --> G[Markdown Files]
-    E --> H[Project Files]
+![Command Palette](https://docs.dev/img/populate-external-docs-command.png)
+
+## Step 2: Customizing Generation with dev-docs.json
+
+To customize the documentation generation, modify the `dev-docs.json` file in your project root:
+
+1. Create or open `dev-docs.json`
+2. Add an `ai` object with customization options
+
+Example `dev-docs.json`:
+
+```json
+{
+  "ai": {
+    "internalTypeFilters": ["class", "method", "function"],
+    "codeFilters": [],
+    "nameFilters": [],
+    "docSubFolder": "api/",
+    "merge": true,
+    "externalDocPrompt": "Generate comprehensive API documentation"
+  }
+}
 ```
 
-## Documentation Generation Process
+Key customization options:
 
-```mermaid
-sequenceDiagram
-    participant User
-    participant Extension
-    participant AI
-    participant Files
-    
-    User->>Extension: Trigger doc generation
-    Extension->>Files: Analyze project files
-    Files-->>Extension: File contents
-    Extension->>AI: Send file contents
-    AI-->>Extension: Generated documentation
-    Extension->>Files: Write .md files
-    Extension-->>User: Doc generation complete
-```
+![Customization Options](https://docs.dev/img/dev-docs-json-options.png)
 
-## Configuration Options Visualization
+- `internalTypeFilters`: Specify which code elements to document
+- `docSubFolder`: Set the output folder for generated docs
+- `merge`: Combine multiple elements into a single document
+- `externalDocPrompt`: Customize the AI prompt for doc generation
 
-```mermaid
-classDiagram
-    class DevDocsConfig {
-        +ai: AIConfig
-        +customRoot: string
-        +workspaceRoot: string
-    }
-    
-    class AIConfig {
-        +components: ComponentConfig
-        +docPath: string
-        +branch: string
-        +internalTypeFilters: string[]
-        +codeFilters: string[]
-        +nameFilters: string[]
-        +openapi: OpenAPIConfig
-    }
-    
-    class ComponentConfig {
-        +template: string  
-    }
-    
-    class OpenAPIConfig {
-        +file: string
-        +x-codeSamples: CodeSampleConfig
-    }
-    
-    class CodeSampleConfig {
-        +langs: string[]
-    }
-    
-    DevDocsConfig --> AIConfig
-    AIConfig --> ComponentConfig
-    AIConfig --> OpenAPIConfig
-    OpenAPIConfig --> CodeSampleConfig
-```
+## Step 3: Review and Edit
 
-These diagrams provide visual representations of the extension's architecture, documentation generation process, and configuration options structure to help explain these complex concepts more clearly.
+After running the command:
+
+1. Check the `docs` folder (or your specified `docSubFolder`) for generated files
+2. Review and edit the generated content as needed
+3. Commit changes to your repository
+
+![Generated Docs](https://docs.dev/img/generated-docs-folder.png)
+
+By following these steps and customizing the `dev-docs.json`, you can efficiently generate and manage external documentation for your project using the VS Code extension.
