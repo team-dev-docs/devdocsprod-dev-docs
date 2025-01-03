@@ -1,34 +1,31 @@
 # Dev-Docs Case Studies
 
-## Acme Corp: Streamlining API Documentation
+## Improving Documentation at TechCorp
 
-Acme Corp, a leading e-commerce platform, was struggling to keep their API documentation up-to-date as their codebase rapidly evolved. By implementing Dev-Docs, they were able to:
+TechCorp, a mid-sized software company, struggled with outdated and inconsistent documentation across their projects. After implementing Dev-Docs:
 
-- Automatically generate OpenAPI specs from their code comments
-- Reduce time spent on documentation by 70%
-- Improve developer onboarding time by 50%
-- Increase API adoption rate among partners by 35%
+- Documentation coverage increased by 40%
+- Developer onboarding time reduced from 2 weeks to 3 days
+- Customer support tickets related to documentation decreased by 60%
 
-"Dev-Docs has been a game-changer for our API documentation workflow. Our docs are now always in sync with our code, which has dramatically improved our developer experience." - Jane Smith, CTO of Acme Corp
+"Dev-Docs has revolutionized how we approach documentation. Our codebase is now self-documenting, and our developers actually enjoy writing docs!" - Sarah Chen, CTO of TechCorp
 
-## TechStart: Enhancing Code Understanding
+## Streamlining API Documentation at FinTech Solutions
 
-TechStart, a fast-growing startup, needed a way to quickly bring new developers up to speed on their complex codebase. Using Dev-Docs, they were able to:
+FinTech Solutions, a financial technology startup, needed a better way to keep their API documentation in sync with rapid code changes. With Dev-Docs:
 
-- Generate high-level context summaries for each module
-- Create interactive documentation with AI-powered Q&A 
-- Reduce onboarding time for new developers by 40%
-- Improve code quality and reduce bugs by 25%
+- API documentation is now automatically generated and updated
+- Time spent on documentation reduced by 75% 
+- API adoption rate increased by 35% due to improved documentation
 
-"The AI-generated summaries and Q&A feature in Dev-Docs have made it so much easier for our new hires to understand our codebase. It's like having an always-available expert to explain our code." - John Doe, Lead Developer at TechStart
+"Dev-Docs has been a game-changer for our API. Our documentation is always up-to-date, and our developers can focus on building great features instead of writing docs." - Michael Lee, Lead Developer at FinTech Solutions
 
-## Global Bank: Ensuring Regulatory Compliance
+## Enhancing Collaboration at Global Systems Inc.
 
-Global Bank needed to ensure their code documentation met strict regulatory requirements. With Dev-Docs, they were able to:
+Global Systems Inc., an enterprise software provider, wanted to improve collaboration between distributed development teams. After adopting Dev-Docs:
 
-- Automatically audit documentation coverage
-- Generate compliance reports for regulators
-- Reduce audit preparation time by 60% 
-- Avoid potential fines by ensuring 100% documentation coverage
+- Cross-team knowledge sharing improved by 50%
+- Code review time decreased by 30% due to better in-code documentation
+- New feature development time reduced by 20%
 
-"Dev-Docs has transformed our documentation process from a regulatory burden to a streamlined, automated workflow. It's given us confidence in our compliance and saved countless hours of manual work." - Sarah Johnson, Compliance Officer at Global Bank
+"Dev-Docs has broken down the silos between our teams. Everyone can now easily understand and contribute to any part of our codebase." - Emma Rodriguez, VP of Engineering at Global Systems Inc.
