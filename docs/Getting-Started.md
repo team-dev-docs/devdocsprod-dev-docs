@@ -1,49 +1,48 @@
 # Getting Started with Dev-Docs
 
-Welcome to Dev-Docs! This guide will help you quickly set up and start using Dev-Docs to generate documentation for your codebase.
+Dev-Docs is a powerful VS Code extension that helps you generate and manage documentation for your codebase. This guide will walk you through the basic setup and usage to get you up and running quickly.
 
 ## Installation
 
-1. Install the Dev-Docs extension for VS Code:
-   - Open VS Code
-   - Go to the Extensions view (Ctrl+Shift+X)
-   - Search for "Dev-Docs"
-   - Click "Install"
+1. Open VS Code
+2. Go to the Extensions view (Ctrl+Shift+X)
+3. Search for "Dev-Docs"
+4. Click "Install"
 
-2. Sign in to Dev-Docs:
-   - Click the Dev-Docs icon in the VS Code sidebar
-   - Click "Sign In" and follow the prompts
+## Initial Setup
 
-## Basic Usage
+1. Open your project folder in VS Code
+2. Press Ctrl+Shift+P to open the Command Palette
+3. Type "Dev-Docs: Initialize" and select it
+4. This will create a `dev-docs.json` file in your project root
 
-1. Open your project in VS Code
+## Generating Documentation
 
-2. Configure Dev-Docs:
-   - Create a `dev-docs.json` file in your project root
-   - Add basic configuration:
-     ```json
-     {
-       "ai": {
-         "contextDirs": ["src"],
-         "docSubFolder": "docs"
-       }
-     }
-     ```
+1. Open a code file you want to document
+2. Press Shift+Cmd+D (Mac) or Shift+Ctrl+D (Windows/Linux)
+3. Dev-Docs will analyze your code and generate documentation
 
-3. Generate documentation:
-   - Right-click a file or folder in the Explorer
-   - Select "Generate Documentation" 
-   - Or use the keyboard shortcut: 
-     - Mac: Shift + Cmd + D
-     - Windows/Linux: Shift + Ctrl + D
+## Customizing Generation
 
-4. View generated docs in the `docs` folder
+Edit the `dev-docs.json` file to customize how Dev-Docs generates documentation:
+
+```json
+{
+  "ai": {
+    "internalTypeFilters": ["class", "method", "function"],
+    "docSubFolder": "api/",
+    "contextPrompt": "Generate comprehensive API documentation"
+  }
+}
+```
+
+## Viewing Documentation
+
+Generated docs will be saved in your project's `docs` folder (or the folder specified in `docSubFolder`).
 
 ## Next Steps
 
-- Customize AI generation in `dev-docs.json`
-- Try other commands like "Generate High Level Context for Folder"
-- Explore external documentation generation
-- Check out the full documentation at [docs.dev](https://docs.dev) for advanced features
+- Explore other commands like "Generate High Level Context" and "Find Missing Documentation"
+- Check out the full documentation at https://dev-docs.ai for advanced features and customization options
 
-Start documenting your codebase with ease using Dev-Docs!
+With these basic steps, you're ready to start using Dev-Docs to streamline your documentation process!
