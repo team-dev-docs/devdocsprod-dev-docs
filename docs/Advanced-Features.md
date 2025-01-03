@@ -1,44 +1,46 @@
-# Advanced Features of Dev-Docs
+# Advanced Features
 
-## Custom AI Prompts
+This document covers more advanced features and use cases for the Dev-Docs VS Code extension.
 
-You can customize the AI prompts used to generate documentation by modifying the `ai.variablesAndFunctions` section of your `dev-docs.json` file:
+## Customizing AI Generation
+
+You can customize how the AI generates documentation by modifying the `dev-docs.json` file in your project root. Some key options include:
 
 ```json
 {
   "ai": {
-    "variablesAndFunctions": {
-      "myCustomPrompt": {
-        "prompts": [
-          {
-            "title": "Purpose",
-            "question": "What is the main purpose of this code?",
-            "documentation": "Describe the high-level purpose in 2-3 sentences."
-          },
-          {
-            "title": "Usage", 
-            "question": "How is this code used?",
-            "documentation": "Provide a brief example of how to use this code."
-          }
-        ]
-      }
-    }
+    "internalTypeFilters": ["class", "method", "function"],
+    "codeFilters": ["async function", "export default"],
+    "nameFilters": ["handleSubmit", "render"],
+    "contextPrompt": "your custom prompt or path to prompt template",
+    "defaultLength": "3-5 Sentences"
   }
 }
 ```
 
-## OpenAPI Integration  
+- `internalTypeFilters`: Specify which code elements to include in documentation
+- `codeFilters`: Filter for specific code patterns
+- `nameFilters`: Target specific function or method names  
+- `contextPrompt`: Provide a custom prompt for AI generation
+- `defaultLength`: Set desired length of generated documentation
 
-Dev-Docs can automatically generate OpenAPI specifications from your API code. Configure the OpenAPI options in your `dev-docs.json`:
+## Generating API Documentation
+
+The extension can automatically generate API documentation from your codebase:
+
+1. Open the Command Palette (Cmd+Shift+P / Ctrl+Shift+P)
+2. Search for "Generate API Documentation" and select the command
+3. The extension will analyze your code and generate:
+   - A Postman Collection JSON file with all detected API routes
+   - An OpenAPI (Swagger) specification file
+
+You can configure the output location in `dev-docs.json`:
 
 ```json
 {
   "ai": {
     "openapi": {
-      "file": "src/api/openapi.yaml",
-      "x-codeSamples": {
-        "langs": ["javascript", "python", "ruby"]
-      }
+      "file": "src/api/openapi.yaml"
     }
   }
 }
@@ -46,38 +48,38 @@ Dev-Docs can automatically generate OpenAPI specifications from your API code. C
 
 ## Multi-File Context Generation
 
-Generate high-level context for multiple files or folders at once using the `devdocs.generateMultiContext` command. This is useful for understanding the structure of large projects.
+Generate high-level context for multiple files or folders at once:
 
-## Custom Documentation Templates
+1. Right-click on a folder in the Explorer view
+2. Select "Generate High Level Context for the Folder"
+3. The extension will analyze all files and generate a summary document
 
-Specify custom Markdown templates for generated documentation:
+Configure which directories to include:
 
-```json 
+```json
 {
   "ai": {
-    "components": {
-      "template": "path/to/custom/template.md"  
-    }
+    "contextDirs": ["src", "lib", "utils"]
   }
 }
 ```
 
-## Automated Missing Docs Detection
+## AI-Powered Documentation Gap Analysis
 
-Use the `devdocs.findMissingDocs` command to automatically detect gaps in your documentation and create GitHub issues for missing sections.
+Use AI to identify missing documentation:
+
+1. Run the "Find Missing Documentation" command
+2. The extension will analyze your codebase and existing docs
+3. It will suggest new documentation topics and create GitHub issues for each
 
 ## Integration with Continue
 
-Dev-Docs integrates seamlessly with the Continue AI code assistant. Use the `@dev-docs` tag in Continue to leverage your generated documentation when asking questions about your codebase.
+Dev-Docs integrates with the Continue AI code assistant:
 
-## Custom Root Directory
+1. Install both Dev-Docs and Continue extensions
+2. Generate context documentation using Dev-Docs
+3. In Continue, use @dev-docs to reference the generated documentation when asking questions
 
-For monorepo setups, specify a custom root directory:
+This allows for more intelligent, context-aware responses from Continue based on your project's documentation.
 
-```json
-{
-  "customRoot": "packages/my-package"
-}
-```
-
-This allows Dev-Docs to properly locate and generate documentation for specific packages or subprojects.
+By leveraging these advanced features, you can create a powerful, AI-assisted documentation workflow tailored to your project's specific needs.
