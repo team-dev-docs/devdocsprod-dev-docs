@@ -2,53 +2,40 @@
 
 ## What is Dev-Docs?
 
-Dev-Docs is an AI-powered documentation tool that helps you automatically generate and manage documentation for your codebase. It provides a VS Code extension with features like context generation, API documentation, and AI-assisted question answering.
+Dev-Docs is a VS Code extension that uses AI to automatically generate and manage documentation for your codebase. It can create both internal documentation for developers and external documentation for users.
 
 ## How do I install Dev-Docs?
 
-You can install the Dev-Docs extension from the VS Code marketplace. Search for "Dev-Docs" and click Install.
+You can install Dev-Docs from the VS Code marketplace. Search for "Dev-Docs" and click "Install".
 
 ## How do I generate documentation with Dev-Docs?
 
-To generate documentation:
-1. Open a code file in VS Code
-2. Press Shift+Cmd+D (Mac) or Shift+Ctrl+D (Windows/Linux)
-3. Select the type of documentation you want to generate
+You can generate documentation by right-clicking a file in VS Code and selecting "Generate Documentation" from the context menu, or by using the keyboard shortcut Shift+Cmd+D (Mac) or Shift+Ctrl+D (Windows/Linux).
 
 ## What types of documentation can Dev-Docs generate?
 
-Dev-Docs can generate:
-- High-level context for files and folders
-- API documentation 
-- User-facing external documentation
-- Internal documentation
+Dev-Docs can generate internal code documentation, external API documentation, high-level context for folders, OpenAPI specifications, and more.
+
+## How do I customize the documentation generation?
+
+You can customize the documentation generation by modifying the `dev-docs.json` file in your project root. This file allows you to specify which code elements to document, output folders, AI prompts, and more.
+
+## Can Dev-Docs integrate with my existing documentation workflow?
+
+Yes, Dev-Docs can integrate with existing documentation workflows. It can generate Markdown files that can be used with static site generators like Docusaurus, and can push changes to Git repositories.
+
+## Is Dev-Docs suitable for large projects?
+
+Yes, Dev-Docs is designed to handle large projects. It includes features like folder context generation and multi-file documentation that are specifically useful for complex codebases.
 
 ## How does Dev-Docs use AI?
 
-Dev-Docs uses AI to:
-- Analyze your code and generate relevant documentation
-- Answer questions about your codebase
-- Identify gaps in existing documentation
-- Suggest improvements to documentation
+Dev-Docs uses AI to analyze your code, generate documentation content, identify missing documentation, and answer questions about your codebase. The AI capabilities can be customized through the `dev-docs.json` configuration file.
 
-## How do I configure Dev-Docs?
+## Is my code secure when using Dev-Docs?
 
-You can configure Dev-Docs by modifying the `dev-docs.json` file in your project root. This allows you to customize options like:
-- Which files/folders to include
-- Documentation output location
-- AI prompts and settings
+Dev-Docs processes your code locally on your machine. No code is sent to external servers. Only the generated documentation can optionally be synced to Dev-Docs Cloud if you choose to use that feature.
 
-## Can I use Dev-Docs with GitHub?
+## How do I get support for Dev-Docs?
 
-Yes, Dev-Docs integrates with GitHub. You can configure it to automatically generate documentation on commits and pull requests.
-
-## Is Dev-Docs free to use?
-
-Dev-Docs offers both free and paid plans. The VS Code extension is free to install, but some advanced AI features may require a paid subscription.
-
-## Where can I get help if I have issues?
-
-You can get help by:
-- Checking the Dev-Docs documentation
-- Asking a question using the "Ask Dev-Docs A Question" command in VS Code
-- Filing an issue on the Dev-Docs GitHub repository
+You can get support for Dev-Docs by visiting our website at dev-docs.io or by opening an issue on our GitHub repository.
