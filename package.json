@@ -1,47 +1,128 @@
-# Dev-Docs VSCode Extension
-
-Dev-Docs is a powerful VSCode extension designed to streamline the process of creating and managing documentation for your projects. It offers a wide range of features to help developers generate, organize, and maintain both internal and external documentation.
-
-## Key Features
-
-1. **Automatic Documentation Generation**: Generates documentation for your code files, including functions, classes, and methods.
-2. **Context-Aware Documentation**: Creates high-level context documentation for files and folders.
-3. **API Documentation**: Automatically generates API documentation and Postman collections.
-4. **External Documentation Support**: Facilitates the creation and management of external-facing documentation.
-5. **Search Functionality**: Allows you to search through your documentation easily.
-6. **Version Control Integration**: Integrates with Git for documentation version control.
-7. **Customizable AI-Powered Documentation**: Uses AI to generate documentation based on customizable prompts and filters.
-
-## Getting Started
-
-1. Install the Dev-Docs extension from the VSCode marketplace.
-2. Sign in to Dev-Docs using your GitHub account by running the `devdocs.getGitHubUser` command.
-3. Initialize Dev-Docs in your project by running the `devdocs.versionControl` command.
-4. Start generating documentation using various commands like `devdocs.generateDocumentation` or `devdocs.generateAPIDocumentation`.
-
-## Commands
-
-- `devdocs.helloWorld`: Open the main Dev-Docs interface
-- `devdocs.generateDocumentation`: Generate documentation for the current file
-- `devdocs.generateAPIDocumentation`: Generate API documentation
-- `devdocs.generateContext`: Generate high-level context for the current file
-- `devdocs.generateMultiContext`: Generate context for multiple files
-- `devdocs.generateExternalDocs`: Generate external-facing documentation
-- `devdocs.search`: Search through your documentation
-- `devdocs.auditDocs`: Audit your documentation for improvements
-
-## Configuration
-
-You can customize Dev-Docs behavior by modifying the `dev-docs.json` file in your project root. This file allows you to set various options such as:
-
-- `ai.internalTypeFilters`: Specify which code elements to document
-- `ai.codeFilters`: Filter code based on specific criteria
-- `ai.nameFilters`: Filter elements by name
-- `ai.docSubFolder`: Specify a subfolder for documentation
-- `ai.branch`: Set a specific branch for documentation commits
-
-## Contributing
-
-To contribute to the Dev-Docs extension, please refer to the [CONTRIBUTING.md](CONTRIBUTING.md) file in the repository.
-
-For more detailed information and advanced usage, please refer to the [official Dev-Docs documentation](https://dev-docs.dev/docs).
+{
+    "name": "my-website",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+      "docusaurus": "docusaurus",
+      "start": "docusaurus start",
+      "build": "docusaurus build",
+      "swizzle": "docusaurus swizzle",
+      "deploy": "docusaurus deploy",
+      "clear": "docusaurus clear",
+      "serve": "docusaurus serve",
+      "migrate": "node migrate.js",
+      "write-translations": "docusaurus write-translations",
+      "write-heading-ids": "docusaurus write-heading-ids",
+      "devdocs-pft": "git merge template/main --allow-unrelated-histories",
+      "devdocs-rc": "git checkout --theirs .",
+      "typecheck": "tsc"
+    },
+    "dependencies": {
+      "@docusaurus/core": "^3.5.2",
+      "@docusaurus/plugin-content-docs": "^3.5.2",
+      "@docusaurus/preset-classic": "^3.5.2",
+      "@docusaurus/theme-live-codeblock": "^3.5.2",
+      "@fontsource/inter": "^5.1.0",
+      "@gocapsule/column-extension": "^1.0.0-beta-3",
+      "@mdx-js/react": "^3.0.1",
+      "@monaco-editor/react": "^4.6.0",
+      "@orama/plugin-docusaurus-v3": "2.0.19",
+      "@orama/searchbox": "1.0.0-rc33",
+      "@radix-ui/react-accordion": "^1.1.2",
+      "@radix-ui/react-alert-dialog": "^1.1.1",
+      "@radix-ui/react-aspect-ratio": "^1.0.3",
+      "@radix-ui/react-context-menu": "^2.1.5",
+      "@radix-ui/react-icons": "^1.3.0",
+      "@radix-ui/react-separator": "^1.0.3",
+      "@radix-ui/react-slot": "^1.1.0",
+      "@radix-ui/react-tabs": "^1.1.0",
+      "@react-three/fiber": "^8.17.7",
+      "@tabler/icons-react": "^3.16.0",
+      "@tailwindcss/aspect-ratio": "^0.4.2",
+      "@tanstack/react-table": "^8.10.7",
+      "@tiptap/core": "^2.6.6",
+      "@tiptap/extension-code-block-lowlight": "^2.6.6",
+      "@tiptap/extension-color": "^2.6.6",
+      "@tiptap/extension-image": "^2.6.6",
+      "@tiptap/extension-link": "^2.6.6",
+      "@tiptap/extension-table": "^2.6.6",
+      "@tiptap/extension-table-cell": "^2.6.6",
+      "@tiptap/extension-table-header": "^2.6.6",
+      "@tiptap/extension-table-row": "^2.6.6",
+      "@tiptap/extension-task-item": "^2.6.6",
+      "@tiptap/extension-task-list": "^2.6.6",
+      "@tiptap/extension-text-align": "^2.6.6",
+      "@tiptap/extension-text-style": "^2.6.6",
+      "@tiptap/pm": "^2.6.6",
+      "@tiptap/react": "^2.6.6",
+      "@tiptap/starter-kit": "^2.6.6",
+      "@types/three": "^0.168.0",
+      "autoprefixer": "^10.4.20",
+      "axios": "^1.7.7",
+      "caniuse-lite": "^1.0.30001660",
+      "cheerio": "^1.0.0",
+      "chroma-js": "^3.1.1",
+      "class-variance-authority": "^0.7.0",
+      "clsx": "^2.1.1",
+      "doc-detective": "^2.16.7",
+      "docusaurus-plugin-openapi-docs": "^4.0.1",
+      "docusaurus-plugin-sass": "^0.2.2",
+      "docusaurus-theme-openapi-docs": "^4.0.1",
+      "embla-carousel-react": "^8.2.1",
+      "framer-motion": "^11.8.0",
+      "highlight.js": "^11.10.0",
+      "js-yaml": "^4.1.0",
+      "json-beautify": "^1.1.1",
+      "jsonic": "^1.0.1",
+      "lowlight": "^3.1.0",
+      "lucide-react": "^0.441.0",
+      "marked": "^14.1.2",
+      "mini-svg-data-uri": "^1.4.4",
+      "postcss": "^8.4.45",
+      "postcss-import": "^16.1.0",
+      "posthog-docusaurus": "^2.0.1",
+      "prism-react-renderer": "^2.4.0",
+      "prosemirror-history": "^1.4.1",
+      "react": "^18.3.1",
+      "react-dom": "^18.3.1",
+      "react-monaco-editor": "^0.56.1",
+      "react-resizable": "^3.0.5",
+      "react-router-dom": "^6.26.2",
+      "react-transition-group": "^4.4.5",
+      "rehype-react": "^8.0.0",
+      "rehype-sanitize": "^6.0.0",
+      "remark": "^15.0.1",
+      "remark-parse": "^11.0.0",
+      "remark-react": "^9.0.1",
+      "remark-rehype": "^11.1.0",
+      "sass": "^1.78.0",
+      "sharp": "^0.33.5",
+      "simplex-noise": "^4.0.3",
+      "tailwind-merge": "^2.5.2",
+      "tailwindcss": "^3.4.11",
+      "tailwindcss-animate": "^1.0.7",
+      "three": "^0.168.0",
+      "tiptap": "^1.32.2",
+      "unified": "^11.0.5"
+    },
+    "devDependencies": {
+      "@docusaurus/module-type-aliases": "^3.5.2",
+      "@tsconfig/docusaurus": "^2.0.3",
+      "typescript": "^5.6.2"
+    },
+    "browserslist": {
+      "production": [
+        ">0.5%",
+        "not dead",
+        "not op_mini all"
+      ],
+      "development": [
+        "last 1 chrome version",
+        "last 1 firefox version",
+        "last 1 safari version"
+      ]
+    },
+    "engines": {
+      "node": ">=18.0"
+    }
+  }
