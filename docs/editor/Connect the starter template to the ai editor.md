@@ -4,13 +4,13 @@
 
 ![Dev-Docs dashboard](/img/connect_the_starter_template_to_the_ai_editor/step_1.png)
 
-Navigate to the Dev-Docs dashboard.
+Navigate to the Dev-Docs dashboard, and to the left click "User-facing docs"
 
 ## Step 2: Generate Starter template docs
 
-## ![](static/img/connect_the_starter_template_to_the_ai_editor/step_two.png)
+## ![](/img/connect_the_starter_template_to_the_ai_editor/step_8.png)
 
-Select "use our template" to generate your own starter docs repository for Dev-Docs to connect to.
+Click setup and then in the dialog select "use our template" to generate your own starter docs repository for Dev-Docs to connect to.
 
 ## Step 3: Create a new repository
 
@@ -76,7 +76,7 @@ Click "install" or "Configure" if you have installed already.
 
 ## Step 13: Open the editor on your new docs
 
-![](/img/connect_the_starter_template/addingthestarter.png)Now click "Edit docs"
+![](/img/starter_template_edit_docs.png)
 
 ## Step 14: Push changes to GitHub
 
