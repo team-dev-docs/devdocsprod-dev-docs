@@ -8,11 +8,7 @@
 
 Click the "Push to GitHub" button in the top right corner to open the push options.
 
-## Step 2: Select drafts to push
-
-In the "Push drafts to GitHub" menu, click "Select drafts to push" to choose which drafts you want to merge.
-
-## Step 5: Choose drafts
+## Step 2: Choose drafts
 
 ![Choose drafts](/img/merge_your_drafts_to_another_branch/step_5.png)
 
