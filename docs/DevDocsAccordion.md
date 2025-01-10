@@ -26,7 +26,7 @@ function MyComponent() {
 
 ## Return Value
 
-DevDocsAccordion returns a React component that renders an accordion UI element.
+Accordion returns a React component that renders an accordion UI element.
 
 ## Examples
 
