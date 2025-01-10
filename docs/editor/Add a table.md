@@ -12,8 +12,6 @@
 
 ![Step 3](/img/add_a_table/step_3.png)
 
-![](upload)
-
 Scroll down in the formatting menu and select "Add Table".
 
 ## Step 4
