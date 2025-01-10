@@ -32,13 +32,13 @@ Select the branch you want to merge your drafts into from the list of available 
 
 Ensure that the correct branch is selected as the target for merging your drafts.
 
-## Step 10: Push changes to GitHub
+## Step 6: Push changes to GitHub
 
 ![Push changes](/img/merge_your_drafts_to_another_branch/step_11.png)
 
 Click the "Push change to GitHub" button to start the merging process.
 
-## Step 11: Verify successful merge
+## Step 7: Verify successful merge
 
 ![Verify success](/img/merge_your_drafts_to_another_branch/step_12.png)
 
