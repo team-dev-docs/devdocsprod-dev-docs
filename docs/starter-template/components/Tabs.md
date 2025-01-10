@@ -16,9 +16,35 @@ The Tabs component and its subcomponents accept the following props:
 
 Here's a basic example of how to use the Tabs component:
 
-```jsx
-<component name="Tabs" original="PFRhYnMgZGVmYXVsdFZhbHVlPSJ0YWIxIj4KICA8VGFic0xpc3Q+CiAgICA8VGFic1RyaWdnZXIgdmFsdWU9InRhYjEiPlRhYiAxPC9UYWJzVHJpZ2dlcj4KICAgIDxUYWJzVHJpZ2dlciB2YWx1ZT0idGFiMiI+VGFiIDI8L1RhYnNUcmlnZ2VyPgogIDwvVGFic0xpc3Q+CiAgPFRhYnNDb250ZW50IHZhbHVlPSJ0YWIxIj5Db250ZW50IGZvciBUYWIgMTwvVGFic0NvbnRlbnQ+CiAgPFRhYnNDb250ZW50IHZhbHVlPSJ0YWIyIj5Db250ZW50IGZvciBUYWIgMjwvVGFic0NvbnRlbnQ+CjwvVGFicz4=" props="eyJkZWZhdWx0VmFsdWUiOiJ0YWIxIiwiY2hpbGRyZW4iOiI8VGFic0xpc3Q+XG4gICAgPFRhYnNUcmlnZ2VyIHZhbHVlPVwidGFiMVwiPlRhYiAxPC9UYWJzVHJpZ2dlcj5cbiAgICA8VGFic1RyaWdnZXIgdmFsdWU9XCJ0YWIyXCI+VGFiIDI8L1RhYnNUcmlnZ2VyPlxuICA8L1RhYnNMaXN0PlxuICA8VGFic0NvbnRlbnQgdmFsdWU9XCJ0YWIxXCI+Q29udGVudCBmb3IgVGFiIDE8L1RhYnNDb250ZW50PlxuICA8VGFic0NvbnRlbnQgdmFsdWU9XCJ0YWIyXCI+Q29udGVudCBmb3IgVGFiIDI8L1RhYnNDb250ZW50PiJ9"></component>
-```
+````jsx
+<Tabs defaultValue="preview">
+  <TabsList>
+    <TabsTrigger value="preview">Preview</TabsTrigger>
+    <TabsTrigger value="code">Code</TabsTrigger>
+  </TabsList>
+  <TabsContent value="preview">
+    <div className="p-4 border rounded">
+      A simple tabs example showing how the component works.
+    </div>
+  </TabsContent>
+  <TabsContent value="code">
+    ```jsx
+    <Tabs defaultValue="tab1">
+      <TabsList>
+        <TabsTrigger value="tab1">Tab 1</TabsTrigger>
+        <TabsTrigger value="tab2">Tab 2</TabsTrigger>
+      </TabsList>
+      <TabsContent value="tab1">
+        Content for tab 1
+      </TabsContent>
+      <TabsContent value="tab2">
+        Content for tab 2
+      </TabsContent>
+    </Tabs>
+    ```
+  </TabsContent>
+</Tabs>
+````
 
 ## Notes or Considerations
 

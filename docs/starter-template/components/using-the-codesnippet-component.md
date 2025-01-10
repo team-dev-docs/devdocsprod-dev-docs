@@ -1,6 +1,4 @@
-
-
-  # Using the CodeSnippet Component
+# Using the CodeSnippet Component
 
 The `CodeSnippet` component is a powerful tool for displaying multiple code examples in a tabbed interface within your documentation. It's particularly useful when you need to show code snippets in different languages or file types for the same concept.
 
@@ -8,6 +6,7 @@ The `CodeSnippet` component is a powerful tool for displaying multiple code exam
 
 To use the `CodeSnippet` component, wrap your code blocks with it in your MDX file:
 
+````
 <CodeSnippets>
 ```javascript::example.js
 const greeting = "Hello, world!";
@@ -18,6 +17,7 @@ greeting = "Hello, world!"
 print(greeting)
 ```
 </CodeSnippets>
+````
 
 ## Syntax
 
