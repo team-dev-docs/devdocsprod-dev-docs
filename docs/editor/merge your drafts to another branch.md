@@ -1,14 +1,8 @@
 # How to Merge Your Drafts to Another Branch
 
-## Step 1: Open the drafts menu
+##
 
-![Open drafts menu](/img/merge_your_drafts_to_another_branch/step_1.png)
-
-Click on the "Your user-facing docs" dropdown in the top left corner to open the drafts menu.
-
-Select a draft to view its contents in the main editor area.
-
-## Step 3: Open the "Push to GitHub" menu
+## Step 1: Open the "Push to GitHub" menu
 
 ![Open Push to GitHub menu](/img/merge_your_drafts_to_another_branch/step_3.png)
 
