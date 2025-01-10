@@ -46,10 +46,10 @@ Accordion returns a React component that renders an accordion UI element.
 
 * The accordion is collapsible by default, meaning it can be opened and closed by clicking on the title.
 
-* Only one accordion section can be open at a time within a group of DevDocsAccordion components.
+* Only one accordion section can be open at a time within a group of Accordion components.
 
 * The content inside the accordion supports Markdown formatting, allowing for rich text representation.
 
-* Ensure that the content passed to DevDocsAccordion is not too lengthy, as very long content may affect user experience.
+* Ensure that the content passed to Accordion is not too lengthy, as very long content may affect user experience.
 
 * The component automatically handles the styling and behavior of the accordion, including the expand/collapse animation.
