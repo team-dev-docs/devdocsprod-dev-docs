@@ -26,7 +26,7 @@ Verify that the correct drafts are selected.
 
 Select the branch you want to merge your drafts into from the list of available branches.
 
-## Step 9: Confirm branch selection
+## Step 5: Confirm branch selection
 
 ![Confirm branch](/img/merge_your_drafts_to_another_branch/step_9.png)
 
