@@ -18,9 +18,7 @@ Select the checkboxes next to the drafts you want to merge.
 
 ![Confirm selection](/img/merge_your_drafts_to_another_branch/step_6.png)
 
-Verify that the correct drafts are selected (you should see "2 items selected").
-
-## Step 7: Select the target branch
+Verify that the correct drafts are selected.
 
 ## Step 8: Choose the target branch
 
