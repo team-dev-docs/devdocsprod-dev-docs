@@ -1,6 +1,4 @@
-
-
-  # How to Rename a Draft
+# How to Rename a Draft
 
 ## Step 1
 Open the drafts section in the document editor.

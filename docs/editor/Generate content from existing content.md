@@ -1,6 +1,4 @@
-
-
-  # Generating Content from Existing Content
+# Generating Content from Existing Content
 
 ## Step 1: Access the Content Generation Interface
 ![Step 1](/img/generate_content_from_existing_content/step_1.png)
@@ -55,14 +53,17 @@ Adjust the formatting and structure of the generated content as needed, such as 
 Supplement the generated content with any additional information or context that may be relevant to your documentation.
 
 ## Step 14: Finalize Your Draft
+
 ![Step 14](/img/generate_content_from_existing_content/step_14.png)
 Continue refining and expanding your draft until you're satisfied with the result.
 
 ## Step 15: Save and Publish
+
 ![Step 15](/img/generate_content_from_existing_content/step_15.png)
 Once you've finished editing, save your draft and publish it to make it available to your intended audience.
 
 ## Step 16: Further Customization (Optional)
+
 ![Step 16](/img/generate_content_from_existing_content/step_16.png)
 Utilize additional features like code objects, auditing, or analysis tools to further enhance your documentation as needed.
 

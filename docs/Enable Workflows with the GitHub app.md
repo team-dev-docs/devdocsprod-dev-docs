@@ -1,6 +1,4 @@
-
-
-  # How to Enable Generate Internal Docs and Changelog Endpoints
+# How to Enable Generate Internal Docs and Changelog Endpoints
 
 ## Overview
 
