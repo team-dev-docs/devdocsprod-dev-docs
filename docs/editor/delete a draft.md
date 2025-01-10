@@ -6,9 +6,7 @@
 
 ## Step 2: Select the Draft to Delete
 
-![](/img/delete_a_draft/step_1.png)
-
-Hover your mouse over the draft you want to delete. This will reveal additional options, including a "Delete" button.
+![](/img/delete_a_draft/step_1.png)Hover your mouse over the draft you want to delete. This will reveal additional options, including a "Delete" button.
 
 ## Step 3: Click the Delete Button
 
