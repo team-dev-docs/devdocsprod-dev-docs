@@ -8,7 +8,7 @@
 
 Click the "Push to GitHub" button in the top right corner to open the push options.
 
-## Step 4: Select drafts to push
+## Step 2: Select drafts to push
 
 ![Select drafts](/img/merge_your_drafts_to_another_branch/step_4.png)
 
