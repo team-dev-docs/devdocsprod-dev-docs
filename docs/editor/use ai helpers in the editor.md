@@ -4,7 +4,7 @@
 
 ![Step 1](/img/use_ai_helpers_in_the_editor/step_1.png)
 
-Open your document in the editor. You'll see the title "Developer Best Practices: A Comprehensive Guide" and the initial content.
+Open your document in the editor.
 
 ## Step 2: Select Text to Edit
 
