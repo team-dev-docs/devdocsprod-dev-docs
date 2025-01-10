@@ -1,4 +1,4 @@
-# Generating Content from Existing Content
+# Generating content from Existing Content
 
 ## Step 1: Access the Content Generation Interface
 ![Step 1](/img/generate_content_from_existing_content/step_1.png)
