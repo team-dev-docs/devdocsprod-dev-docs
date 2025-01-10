@@ -9,7 +9,7 @@ Accordion is a React component that creates an expandable and collapsible accord
 To use DevDocsAccordion, import it from the appropriate file and include it in your React component. The accordion can contain any content you wish to display.
 
 ```jsx
-import { DevDocsAccordion } from '@site/src/components/ui/accordion';
+
 
 function MyComponent() {
   return (
