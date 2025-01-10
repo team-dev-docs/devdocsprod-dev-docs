@@ -22,10 +22,6 @@ Verify that the correct drafts are selected (you should see "2 items selected").
 
 ## Step 7: Select the target branch
 
-![Select branch](/img/merge_your_drafts_to_another_branch/step_7.png)
-
-Click on the branch selection dropdown to choose the target branch for merging.
-
 ## Step 8: Choose the target branch
 
 ![Choose branch](/img/merge_your_drafts_to_another_branch/step_8.png)
