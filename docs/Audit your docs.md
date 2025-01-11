@@ -12,11 +12,11 @@ Click on "Audit your docs" in the top bar. This area allows you to select specif
 
 In the "Describe what you want to audit" field, enter your audit criteria. You can use the suggested prompts or create your own. For this example, we'll use "Identify any inconsistent content".
 
-## Step 6: Initiate the Audit
+## Step 3: Provide an audit topic
 
 ![Step 6](/img/audit_your_docs/step_6.png)
 
-Click the "Submit" button to start the audit process.
+Provide a topic for dev-docs to audit for and then Click the "Submit" button to start the audit process.
 
 ## Step 7: View Audit Results
 
