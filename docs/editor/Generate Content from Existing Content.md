@@ -14,6 +14,8 @@
 
 ## Step 6: Provide a prompt
 
+![](upload)
+
 The system will process your request and generate content based on the provided context and prompt.
 
 ##
