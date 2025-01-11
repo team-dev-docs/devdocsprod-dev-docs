@@ -47,15 +47,3 @@ After submitting your request, review the AI-generated content based on your cod
 Use the available options to refine or regenerate the content as needed.
 
 ![Refine content](/img/generate_content_from_your_codebase_and_docs/step_13.png)
-
-## Step 9: Select additional context
-
-If needed, you can select additional documentation or code files to provide more context for content generation.
-
-![Select additional context](/img/generate_content_from_your_codebase_and_docs/step_16.png)
-
-## Step 10: Finalize and save
-
-Once you're satisfied with the generated content, finalize and save it to your documentation.
-
-![Finalize and save](/img/generate_content_from_your_codebase_and_docs/step_17.png)
