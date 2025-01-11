@@ -14,16 +14,6 @@
 
 ## Step 6: Choose a Prompt
 
-![Step 6](/img/generate_content_from_existing_content/step_6.png) Select a pre-defined prompt or enter your own. In this example, "Provide a high-level overview of core features and use cases for different developer roles" is chosen.
-
-## Step 7: Re
-
-## Step 8: Submit Your Request
-
-![Step 8](/img/generate_content_from_existing_content/step_8.png) Click the "Submit" button to generate content based on your selected context and prompt.
-
-## Step 9: Wait for Content Generation
-
 ![Step 9](/img/generate_content_from_existing_content/step_9.png) The system will process your request and generate content based on the provided context and prompt.
 
 ## Step 10: Review Generated Content
