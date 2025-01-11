@@ -6,9 +6,7 @@
 
 ## Step 3: Choose Specific Documents
 
-![](/img/generate_content_from_existing_content/step_7.png)
-
-Select the specific documents or folders you want to use as context. In this example, "docs" and "styling" are selected.
+![](/img/generate_content_from_existing_content/step_7.png)Select the specific documents or folders you want to use as context. In this example, "docs" and "styling" are selected.
 
 ## Step 5: Specify Your Task
 
