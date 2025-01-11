@@ -18,7 +18,7 @@
 
 ## Step 14: Submit and wait for response to load
 
-![Step 14](/img/generate_content_from_existing_content/step_14.png) Continue refining and expanding your draft until you're satisfied with the result.
+![Step 14](/img/generate_content_from_existing_content/step_14.png) Hit submit and wait for a response.
 
 ## Step 16: Further Customization (Optional)
 
