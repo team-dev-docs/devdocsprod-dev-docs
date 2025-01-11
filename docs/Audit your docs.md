@@ -12,12 +12,6 @@ Click on "Audit your docs" in the top bar. This area allows you to select specif
 
 In the "Describe what you want to audit" field, enter your audit criteria. You can use the suggested prompts or create your own. For this example, we'll use "Identify any inconsistent content".
 
-## Step 5: Review Audit Options
-
-![Step 5](/img/audit_your_docs/step_5.png)
-
-Ensure your selected documents and audit criteria are correct. You can also choose to verify if the documentation matches the current code by checking the corresponding box.
-
 ## Step 6: Initiate the Audit
 
 ![Step 6](/img/audit_your_docs/step_6.png)
