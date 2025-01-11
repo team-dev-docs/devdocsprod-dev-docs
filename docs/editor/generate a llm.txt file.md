@@ -8,7 +8,7 @@ Click on "Create/Update LLM.txt".
 
 ## Step 2: Locate the File Location Field
 
-In the dialog box, you'll see a field labeled "File Location". This is where you'll specify where you want the llm.txt file to be created or updated.
+In the dialog box, you'll see a field labeled "File Location". This is where you'll specify where you want the llm.txt file to be created or updated in your docs repo.
 
 ![Step 2](/img/generate_a_llm.txt_file/step_2.png)
 
