@@ -4,11 +4,11 @@
 
 ![Step 1](/img/generate_content_from_existing_content/step_1.png) This should open a drawer to the generate content ui.
 
-## Step 3: Choose Specific Documents
+## Step 2: Choose Specific Documents
 
 ![](/img/generate_content_from_existing_content/step_7.png)Select the specific documents or folders you want to use as context. In this example, "docs" and "styling" are selected.
 
-## Step 5: Specify Your Task
+## Step 3: Specify Your Task
 
 ![Step 5](/img/generate_content_from_existing_content/step_5.png) In the "Your task for Dev-Docs AI" field, enter your document prompt or select from popular prompts provided.
 
