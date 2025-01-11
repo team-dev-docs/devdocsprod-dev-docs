@@ -4,7 +4,7 @@
 
 ![Step 1](/img/audit_your_docs/step_1.png)
 
-Click on "Audit your docs" section in your documentation interface. This area allows you to select specific documents for auditing.
+Click on "Audit your docs" in the top bar. This area allows you to select specific documents for auditing.
 
 ## Step 2: Select Documents to Audit
 
