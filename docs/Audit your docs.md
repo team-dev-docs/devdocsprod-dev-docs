@@ -36,9 +36,7 @@ After selecting the issues, you'll see an option to copy the affected pages to y
 
 Click the "Copy Pages to \[Drafts]" button to create draft versions of the selected documents.
 
-## Step 11: Monitor the Copy Process
-
-## Step 13: Make Necessary Changes
+## Step 11: Make Necessary Changes
 
 ![Step 13](/img/audit_your_docs/step_13.png)
 
