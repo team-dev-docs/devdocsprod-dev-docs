@@ -14,7 +14,7 @@
 
 ## Step 6: Provide a prompt
 
-![Step 9](/img/generate_content_from_existing_content/step_9.png) The system will process your request and generate content based on the provided context and prompt.
+The system will process your request and generate content based on the provided context and prompt.
 
 ##
 
