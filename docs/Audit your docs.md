@@ -18,13 +18,13 @@ In the "Describe what you want to audit" field, enter your audit criteria. You c
 
 Provide a topic for dev-docs to audit for and then Click the "Submit" button to start the audit process.
 
-## Step 7: View Audit Results
+## Step 4: View Audit Results
 
 ![Step 8](/img/audit_your_docs/step_8.png)
 
 Review the identified issues and select the ones you want to address by checking the boxes next to them.
 
-## Step 9: Prepare for Modifications
+## Step 5: Prepare for Modifications
 
 ![Step 9](/img/audit_your_docs/step_9.png)
 
