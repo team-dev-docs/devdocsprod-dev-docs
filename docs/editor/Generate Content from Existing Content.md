@@ -24,12 +24,6 @@
 
 ![Step 11](/img/generate_content_from_existing_content/step_11.png) Review the generated content and make any necessary edits or refinements to suit your needs.
 
-## Step 12: Format and Structure
-
-![Step 12](/img/generate_content_from_existing_content/step_12.png) Adjust the formatting and structure of the generated content as needed, such as adding headings, bullet points, or emphasis.
-
-##
-
 ## Step 14: Wait for response to load
 
 ![Step 14](/img/generate_content_from_existing_content/step_14.png) Continue refining and expanding your draft until you're satisfied with the result.
