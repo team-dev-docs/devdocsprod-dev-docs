@@ -2,7 +2,7 @@
 
 ## Step 1: Authorize the Dev-Docs GitHub App
 
-Select the user account you want to use to authorize the Dev-Docs GitHub App. You can find it [here](https://github.com/apps/dev-docs-github-app)
+Select the user account you want to use to authorize the Dev-Docs GitHub App. You can the GitHub App [here](https://github.com/apps/dev-docs-github-app)
 
 ![Authorize Dev-Docs GitHub App](/img/generate_content_from_your_codebase_and_docs/step_3.png)
 
