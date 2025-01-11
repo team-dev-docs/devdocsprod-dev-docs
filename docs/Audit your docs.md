@@ -20,12 +20,6 @@ Provide a topic for dev-docs to audit for and then Click the "Submit" button to 
 
 ## Step 7: View Audit Results
 
-![Step 7](/img/audit_your_docs/step_7.png)
-
-Once the audit is complete, you'll see a list of issues found in your documents. Each issue includes the file path and the reason for flagging.
-
-## Step 8: Select Issues to Address
-
 ![Step 8](/img/audit_your_docs/step_8.png)
 
 Review the identified issues and select the ones you want to address by checking the boxes next to them.
