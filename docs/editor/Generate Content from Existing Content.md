@@ -16,7 +16,7 @@
 
 ![](/img/generate_content_from_existing_content/step_12.png)The system will process your request and generate content based on the provided context and prompt.
 
-## Step 7: Submit and wait for response to load
+## Step 7: Submit and wait for a response to load
 
 ![Step 14](/img/generate_content_from_existing_content/step_14.png) Hit submit and wait for a response(this can take a minute).
 
