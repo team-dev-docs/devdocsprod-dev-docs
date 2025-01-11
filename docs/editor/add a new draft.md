@@ -14,4 +14,4 @@
 
 ## Step 4: Draft is stored as markdown
 
-![Step 6](/img/add_a_new_draft/step_6.png) Your new draft is now stored as markdown in your connected docs repository. The interface confirms this with the message "Hey this a new draft that will be store as markdown in my connected docs repo! hooray!"
+![Step 6](/img/add_a_new_draft/step_6.png) Your new draft is now stored as markdown in your connected docs repository.
