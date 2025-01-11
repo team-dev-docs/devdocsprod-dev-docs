@@ -28,11 +28,9 @@
 
 ![Step 12](/img/generate_content_from_existing_content/step_12.png) Adjust the formatting and structure of the generated content as needed, such as adding headings, bullet points, or emphasis.
 
-## Step 13: Add Additional Information
+##
 
-![Step 13](/img/generate_content_from_existing_content/step_13.png) Supplement the generated content with any additional information or context that may be relevant to your documentation.
-
-## Step 14: Finalize Your Draft
+## Step 14: Wait for response to load
 
 ![Step 14](/img/generate_content_from_existing_content/step_14.png) Continue refining and expanding your draft until you're satisfied with the result.
 
