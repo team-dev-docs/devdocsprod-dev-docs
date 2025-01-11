@@ -30,7 +30,7 @@ Review the identified issues and select the ones you want to address by checking
 
 After selecting the issues, you'll see an option to copy the affected pages to your drafts. This allows you to make changes without altering the original documents.
 
-## Step 10: Initiate the Copy Process
+## Step 6: Initiate the Copy Process
 
 ![Step 10](/img/audit_your_docs/step_10.png)
 
