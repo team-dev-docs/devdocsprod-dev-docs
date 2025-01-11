@@ -18,7 +18,7 @@
 
 ## Step 7: Submit and wait for response to load
 
-![Step 14](/img/generate_content_from_existing_content/step_14.png) Hit submit and wait for a response.
+![Step 14](/img/generate_content_from_existing_content/step_14.png) Hit submit and wait for a response(this can take a minute).
 
 ## Step 8: Edit the generated content
 
