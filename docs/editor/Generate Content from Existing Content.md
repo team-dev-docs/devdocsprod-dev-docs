@@ -16,11 +16,7 @@
 
 ![Step 9](/img/generate_content_from_existing_content/step_9.png) The system will process your request and generate content based on the provided context and prompt.
 
-## Step 10: Review Generated Content
-
-![Step 10](/img/generate_content_from_existing_content/step_10.png) Once the content is generated, it will appear in the main editing area as a draft.
-
-## Step 11: Edit and Refine
+##
 
 ![Step 11](/img/generate_content_from_existing_content/step_11.png) Review the generated content and make any necessary edits or refinements to suit your needs.
 
