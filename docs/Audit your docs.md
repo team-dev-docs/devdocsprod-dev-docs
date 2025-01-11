@@ -6,19 +6,7 @@
 
 Click on "Audit your docs" in the top bar. This area allows you to select specific documents for auditing.
 
-## Step 2: Select Documents to Audit
-
-![Step 2](/img/audit_your_docs/step_2.png)
-
-Click on the dropdown menu under "Existing Docs to audit" to view available documents. If you can't find a specific codebase, you may need to add it using the GitHub App.
-
-## Step 3: Choose Audit Scope
-
-![Step 3](/img/audit_your_docs/step_3.png)
-
-Expand the folder structure and select the specific documents or folders you want to audit. In this example, the "docs" folder is selected.
-
-## Step 4: Specify Audit Criteria
+## Step 2: Select docs to audit
 
 ![Step 4](/img/audit_your_docs/step_4.png)
 
