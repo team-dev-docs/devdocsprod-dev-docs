@@ -14,11 +14,9 @@
 
 ## Step 6: Provide a prompt
 
-![](/img/generate_content_from_existing_content/step_12.png)The system will process your request and generate content based on the provided context and prompt. When
+![](/img/generate_content_from_existing_content/step_12.png)The system will process your request and generate content based on the provided context and prompt.
 
-##
-
-## Step 14: Wait for response to load
+## Step 14: Submit and wait for response to load
 
 ![Step 14](/img/generate_content_from_existing_content/step_14.png) Continue refining and expanding your draft until you're satisfied with the result.
 
