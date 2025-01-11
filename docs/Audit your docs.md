@@ -36,8 +36,8 @@ After selecting the issues, you'll see an option to copy the affected pages to y
 
 Click the "Copy Pages to \[Drafts]" button to create draft versions of the selected documents.
 
-## Step 11: Make Necessary Changes
+## Step 7: Make Necessary Changes
 
 ![Step 13](/img/audit_your_docs/step_13.png)
 
-Edit the draft to address the issues identified in the audit. In this example, you might want to review and complete any incomplete sections or add missing information about customizing blog styling.
+After the copies are generated you will be able to see them as drafts. Edit the draft to address the issues identified in the audit. In this example, you might want to review and complete any incomplete sections or add missing information about customizing blog styling.
