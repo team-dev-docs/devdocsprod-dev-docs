@@ -38,16 +38,6 @@ Click the "Copy Pages to \[Drafts]" button to create draft versions of the selec
 
 ## Step 11: Monitor the Copy Process
 
-![Step 11](/img/audit_your_docs/step_11.png)
-
-A progress bar will appear, showing the status of copying the selected documents to your drafts.
-
-## Step 12: Review the Updated Draft
-
-![Step 12](/img/audit_your_docs/step_12.png)
-
-Once the copying is complete, you can access the new drafts in your document editor. Here you can see the "Core Features of the Dev-Docs Styling System" draft ready for editing.
-
 ## Step 13: Make Necessary Changes
 
 ![Step 13](/img/audit_your_docs/step_13.png)
