@@ -1,10 +1,8 @@
-
-
-  # How to Generate a llm.txt File
+# How to Generate a llm.txt File
 
 ## Step 1: Open the Create/Update Dialog
 
-Click on the appropriate button or menu option to open the "Create/Update LLM.txt" dialog box.
+Click on "Create/Update LLM.txt".
 
 ![Step 1](/img/generate_a_llm.txt_file/step_1.png)
 
@@ -27,5 +25,3 @@ Once you've entered the file location, click on the "Generate" button to create 
 ![Step 4](/img/generate_a_llm.txt_file/step_4.png)
 
 After completing these steps, your llm.txt file should be generated in the location you specified.
-
-  
