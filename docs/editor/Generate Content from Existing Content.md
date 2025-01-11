@@ -2,7 +2,7 @@
 
 ## Step 1: Click generate content
 
-![Step 1](/img/generate_content_from_existing_content/step_1.png) Navigate to the "Generate content" interface in your documentation tool.
+![Step 1](/img/generate_content_from_existing_content/step_1.png) This should open a drawer.
 
 ## Step 2: Select Context Documents
 
