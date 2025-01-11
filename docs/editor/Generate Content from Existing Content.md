@@ -16,12 +16,10 @@
 
 ![](/img/generate_content_from_existing_content/step_12.png)The system will process your request and generate content based on the provided context and prompt.
 
-## Step 14: Submit and wait for response to load
+## Step 7: Submit and wait for response to load
 
 ![Step 14](/img/generate_content_from_existing_content/step_14.png) Hit submit and wait for a response.
 
-## Step 16: Further Customization (Optional)
+## Step 8: Edit the generated content
 
-![Step 16](/img/generate_content_from_existing_content/step_16.png) Utilize additional features like code objects, auditing, or analysis tools to further enhance your documentation as needed.
-
-Remember that the generated content serves as a starting point. You can always edit, expand, or refine the draft to better suit your specific documentation needs.
+![Step 16](/img/generate_content_from_existing_content/step_16.png) Now that your content is generated, you can edit as you see fit
