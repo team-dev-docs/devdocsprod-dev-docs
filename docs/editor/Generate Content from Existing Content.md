@@ -12,7 +12,7 @@
 
 ![Step 5](/img/generate_content_from_existing_content/step_5.png) In the "Your task for Dev-Docs AI" field, enter your document prompt or select from popular prompts provided.
 
-## Step 6: Choose a Prompt
+## Step 6: Provide a prompt
 
 ![Step 9](/img/generate_content_from_existing_content/step_9.png) The system will process your request and generate content based on the provided context and prompt.
 
