@@ -66,6 +66,14 @@ const config = {
       },
     ],
     [
+      "@docusaurus/plugin-content-blog",
+      {
+        id: "changelog",
+        routeBasePath: "changelog",
+        path: "./changelog",
+      },
+    ],
+    [
       "posthog-docusaurus",
       {
         apiKey: "phc_Q3Rna4XzIjrTqqUDwIPTffPplnZXKDQvGaYA5OsVPtA",

@@ -11,6 +11,12 @@
             "position": "left",
             "prependBaseUrlToHref": true,
             "href": "/blog"
+        },
+        {
+            "label": "Changelog",
+            "position": "left",
+            "prependBaseUrlToHref": true,
+            "href": "/changelog"
         }
     ]
 }
