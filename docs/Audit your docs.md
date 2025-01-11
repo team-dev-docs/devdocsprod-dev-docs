@@ -8,7 +8,7 @@ Click on "Audit your docs" in the top bar. This area allows you to select specif
 
 ## Step 2: Select docs to audit
 
-![Step 4](/img/audit_your_docs/step_4.png)
+![](upload)
 
 In the "Describe what you want to audit" field, enter your audit criteria. You can use the suggested prompts or create your own. For this example, we'll use "Identify any inconsistent content".
 
