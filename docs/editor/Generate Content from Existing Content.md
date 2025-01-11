@@ -4,13 +4,11 @@
 
 ![Step 1](/img/generate_content_from_existing_content/step_1.png) This should open a drawer.
 
-## Step 2: Select Context Documents
-
-![Step 2](/img/generate_content_from_existing_content/step_2.png) Click on the dropdown menu to select existing documents you want to use as context for generating new content.
-
 ## Step 3: Choose Specific Documents
 
-![Step 3](/img/generate_content_from_existing_content/step_3.png) Select the specific documents or folders you want to use as context. In this example, "docs" and "styling" are selected.
+![](upload)
+
+Select the specific documents or folders you want to use as context. In this example, "docs" and "styling" are selected.
 
 ## Step 5: Specify Your Task
 
