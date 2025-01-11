@@ -16,9 +16,7 @@
 
 ![Step 6](/img/generate_content_from_existing_content/step_6.png) Select a pre-defined prompt or enter your own. In this example, "Provide a high-level overview of core features and use cases for different developer roles" is chosen.
 
-## Step 7: Refine Your Prompt
-
-![Step 7](/img/generate_content_from_existing_content/step_7.png) You can modify the selected prompt if needed. Here, the prompt is slightly edited.
+## Step 7: Re
 
 ## Step 8: Submit Your Request
 
