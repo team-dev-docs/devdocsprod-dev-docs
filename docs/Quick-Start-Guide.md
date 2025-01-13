@@ -1,51 +1,49 @@
 # Dev-Docs Quick Start Guide
 
-This guide will help you get started with Dev-Docs in about 5 minutes.
-
 ## Installation
 
-1. Install the [Dev-Docs VS Code extension](https://marketplace.visualstudio.com/items?itemName=dev-docs.dev-docs) from the VS Code marketplace.
-
-2. Open your project in VS Code.
+1. Open VS Code
+2. Go to Extensions view (Ctrl+Shift+X)
+3. Search for "Dev-Docs"
+4. Click "Install"
 
 ## Setup
 
-1. Open the Command Palette (Cmd+Shift+P on Mac, Ctrl+Shift+P on Windows/Linux).
-
-2. Type "Dev-Docs: Setup my repo" and run the command.
-
-3. This will create a `dev-docs.json` file in your project root.
-
-## Generate Documentation
-
-1. Right-click on a file or folder in the VS Code Explorer.
-
-2. Select "Generate Documentation" from the context menu.
-
-3. The generated documentation will appear in the `docs` folder.
-
-## Customize Generation
-
-Edit the `dev-docs.json` file to customize documentation generation:
+1. Open your project in VS Code
+2. Create a `dev-docs.json` file in your project root if it doesn't exist
+3. Add basic configuration:
 
 ```json
 {
   "ai": {
-    "internalTypeFilters": ["class", "method", "function"],
-    "docSubFolder": "api/",
-    "merge": true
+    "contextDirs": ["src"],
+    "internalTypeFilters": ["class", "method", "function"]
   }
 }
 ```
 
-## Ask Questions
+## Usage
 
-1. Open the Command Palette.
+### Generate Documentation
 
-2. Type "Ask Dev-Docs A Question" and run the command.
+1. Right-click a file in Explorer
+2. Select "Generate Documentation"
+3. Review generated docs in `docs` folder
 
-3. Enter your question about the codebase.
+### Ask Questions
 
-4. View the AI-generated answer in VS Code.
+1. Open Command Palette (Ctrl+Shift+P)
+2. Type "Ask Dev-Docs A Question"
+3. Enter your question about the codebase
 
-For more detailed information, check out the [full documentation](https://docs.dev/).
+### Generate API Docs
+
+1. Open Command Palette (Ctrl+Shift+P) 
+2. Type "Generate API Documentation"
+3. Review generated OpenAPI spec and Postman collection
+
+## Next Steps
+
+- Customize `dev-docs.json` further
+- Explore other commands like "Generate Context" and "Find Missing Docs"
+- Check out full documentation at [dev-docs.io](https://dev-docs.io)
