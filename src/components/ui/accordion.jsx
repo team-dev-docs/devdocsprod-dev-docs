@@ -5,13 +5,19 @@ import { unified } from 'unified';
 import markdown from 'remark-parse';
 import remark2rehype from 'remark-rehype';
 import rehype2react from 'rehype-react';
+import * as runtime from 'react/jsx-runtime';
 
 import { cn } from "@site/src/utils"
 
 const processor = unified()
   .use(markdown)
   .use(remark2rehype)
-  .use(rehype2react, { createElement: React.createElement });
+  .use(rehype2react, { 
+    createElement: React.createElement,
+    Fragment: React.Fragment,
+    jsx: runtime.jsx,
+    jsxs: runtime.jsxs
+  });
 
 const Accordion = AccordionPrimitive.Root
 

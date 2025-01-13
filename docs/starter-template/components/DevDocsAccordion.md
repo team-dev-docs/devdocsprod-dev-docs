@@ -34,6 +34,16 @@ Accordion returns a React component that renders an accordion UI element.
 </Accordion>
 ```
 
+<Accordion title="Click me to expand">
+  This is the content that will be shown when the accordion is expanded.
+  
+  You can include any markdown content here.
+  - List items
+  - More items
+  
+  Or even code blocks!
+</Accordion>
+
 ## Notes or Considerations
 
 * The accordion is collapsible by default, meaning it can be opened and closed by clicking on the title.
