@@ -1,45 +1,62 @@
 # Dev-Docs Troubleshooting Guide
 
-This guide covers common issues you may encounter when using Dev-Docs and how to resolve them.
+This guide covers common issues you may encounter when using the Dev-Docs VS Code extension and how to resolve them.
+
+## Extension Not Loading
+
+If the Dev-Docs extension is not loading in VS Code:
+
+1. Check that you have the latest version installed from the VS Code Marketplace
+2. Try reloading the VS Code window (Ctrl+R or Cmd+R) 
+3. Ensure your VS Code version meets the minimum requirements
 
 ## Authentication Errors
 
-If you encounter authentication errors when trying to use Dev-Docs:
+If you're having trouble authenticating:
 
-1. Ensure you are signed in to your Dev-Docs account in VS Code
-2. Try clearing your authentication tokens (Cmd+Shift+P > "Clear Dev-Docs Tokens")
-3. Sign out and sign back in to Dev-Docs
+1. Check that your GitHub credentials are valid
+2. Clear cached tokens using the "Clear Dev-Docs Tokens" command
+3. Sign out and sign back in to refresh your authentication
 
-## Generation Fails
+## Documentation Not Generating
 
-If documentation generation is failing:
+If AI documentation generation is failing:
 
-1. Check that your `dev-docs.json` file is properly configured
-2. Ensure you have the necessary permissions for the target directories
-3. Try running the command with fewer files/folders selected
+1. Verify your dev-docs.json file is properly configured
+2. Check that the specified files/folders exist in your project
+3. Ensure you have an active internet connection for AI processing
+4. Try regenerating documentation for a smaller code sample first
 
-## Markdown Rendering Issues 
+## Context Generation Issues
 
-If generated Markdown is not rendering properly:
+If high-level context is not generating correctly:
 
-1. Verify the Markdown syntax is correct
-2. Check for any unsupported Markdown features
-3. Try regenerating the documentation
+1. Review the contextDirs setting in dev-docs.json
+2. Ensure the selected folder contains valid code files
+3. Try generating context for individual files instead of full folders
 
-## Performance Problems
+## OpenAPI/Swagger Generation Failing
 
-If Dev-Docs is running slowly:
+If API documentation is not generating:
 
-1. Select fewer files/folders when generating documentation
-2. Increase the `ai.maxTokens` value in `dev-docs.json` 
-3. Close other resource-intensive applications
+1. Verify your server code follows standard API patterns
+2. Check the openapi configuration in dev-docs.json
+3. Ensure the specified output file path is valid
 
-## Extension Not Working
+## Command Not Found
 
-If the Dev-Docs extension stops working entirely:
+If Dev-Docs commands are missing from the Command Palette:
 
-1. Reload the VS Code window 
-2. Uninstall and reinstall the extension
-3. Check for conflicts with other extensions
+1. Verify the extension is enabled in VS Code
+2. Try uninstalling and reinstalling the extension
+3. Check for any error messages in the Dev-Docs output channel
 
-For any other issues, please check our [GitHub issues page](https://github.com/dev-docs/dev-docs/issues) or contact support@dev-docs.com.
+## Performance Issues
+
+If the extension is running slowly:
+
+1. Limit the scope of documentation generation to smaller codebases
+2. Increase the AI processing timeout in settings if needed
+3. Ensure your machine meets the recommended system requirements
+
+For any persistent issues, please check our GitHub repository for known problems or file a new issue with details about your setup and the problem you're experiencing.
