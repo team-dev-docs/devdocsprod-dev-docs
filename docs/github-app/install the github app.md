@@ -10,4 +10,6 @@
 
 ## Step 3
 
-![](/img/generate_content_from_your_codebase_and_docs/step_6.png)
+![](/img/generate_content_from_your_codebase_and_docs/step_6.png)Choose which repos you want Dev-Docs to have access to.
+
+## Step 4:
