@@ -14,4 +14,4 @@
 
 ## Step 4:
 
-![](upload)
+![](/img/connect_the_starter_template_to_the_ai_editor/step_21.png)
