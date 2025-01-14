@@ -6,6 +6,6 @@
 
 ## Step 2
 
-![](/img/generate_content_from_your_codebase_and_docs/step_4.png)Select the org which to install the GitHub app on
+![](/img/generate_content_from_your_codebase_and_docs/step_4.png)Select the org which to install the GitHub app on.
 
 ![](/img/generate_content_from_your_codebase_and_docs/step_6.png)
