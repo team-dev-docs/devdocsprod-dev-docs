@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 ---
+
 # How to Get Started With User-Facing Docs
 
 ## Intro to Dev-Docs User-Facing Documentation
@@ -12,4 +13,3 @@ At Dev-Docs we believe in documentation as code. Using Dev-Docs you can start ge
 If you are new to Dev-Docs, just go [dev-docs.io](https://dev-docs.io) and sign up with GitHub. Click the User-facing docs tab and Dev-Docs will create a tailored made Dev-Docs GitHub repo and Dev-Docs GitHub codespace. From there you can start editing your docs! Alternatively, you can bring your existing docs repo to using Dev-Docs where your existing docs already live. 
 
 
- <Parser />
