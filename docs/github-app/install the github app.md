@@ -14,4 +14,4 @@
 
 ## Step 4:
 
-![](/img/connect_the_starter_template_to_the_ai_editor/step_21.png)finish up the setup flow back in dev-docs, and make sure your repo and org match. If you are only interested in internal documentation, skip the user-docs setup. **Sidenote if you do not see the right repo, trying refreshing the screen if you have installed the Gith**
+![](/img/connect_the_starter_template_to_the_ai_editor/step_21.png)finish up the setup flow back in dev-docs, and make sure your repo and org match. If you are only interested in internal documentation, skip the user-docs setup. **Sidenote if you do not see the right repo, trying refreshing the screen if you have installed the Github.**
