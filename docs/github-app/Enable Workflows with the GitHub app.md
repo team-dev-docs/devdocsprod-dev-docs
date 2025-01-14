@@ -1,4 +1,4 @@
-# How to Enable Generate Internal Docs and Changelog Endpoints
+# How to Enable Generate Internal Docs and Changelog in your repos
 
 ## Overview
 
