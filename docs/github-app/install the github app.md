@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # Install the GitHub app
 
 ## Step 1
