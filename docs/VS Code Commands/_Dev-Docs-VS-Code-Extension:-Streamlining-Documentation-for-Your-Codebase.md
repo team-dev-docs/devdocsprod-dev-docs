@@ -1,6 +1,6 @@
 # How to Use and Customize the "Populate External Docs" Command in the VS Code Extension
 
-## Step 1: Access the Command fsafdsafdsa
+## Step 1: Access the Command fsafdsafd4sa
 
 1. Open your VS Code workspace
 
