@@ -22,15 +22,9 @@ When your documentation is neat and modular, it's easier to update and maintain.
 
 Neat documentation makes it easier to conduct code reviews and documentation audits. With features like the audit tool described in our guide, you can quickly identify inconsistencies and areas that need improvement, maintaining the quality of your documentation over time.
 
-## Enhances User Experience
+## 6. Enhances User Experience
 
-Neat documentation improves user experience by:
-
-* Providing quick answers to questions
-
-* Reducing support team workload
-
-* Increasing overall user satisfaction
+For open-source projects or products with external users, neat documentation significantly improves the user experience. It helps users find answers to their questions quickly, reducing the burden on your support team and improving overall satisfaction.
 
 ## 7. Demonstrates Professionalism
 
