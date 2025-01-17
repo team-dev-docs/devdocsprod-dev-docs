@@ -4,7 +4,7 @@ This document outlines the error handling approach for our API. Proper error han
 
 ## Error Response Format
 
-![](upload)
+![](/img/customize_your_ai_generation/step_7.png)
 
 | Code                   | Description                                                  |
 | ---------------------- | ------------------------------------------------------------ |
