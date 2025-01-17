@@ -5,48 +5,30 @@ This guide will walk you through the process of setting up GitHub integration fo
 ## Prerequisites
 
 - A GitHub account
-- Admin access to your GitHub repository
-- A Dev-Docs account
+- Admin access to the repository you want to integrate
 
 ## Steps
 
-1. Sign in to your Dev-Docs account
+1. Navigate to the Dev-Docs dashboard and click on "Settings" in the left sidebar.
 
-2. Go to Settings > Integrations
+2. Select "Integrations" from the settings menu.
 
-3. Click "Connect GitHub Account"
+3. Click the "Connect GitHub" button.
 
-4. Authorize Dev-Docs to access your GitHub account
+4. You will be redirected to GitHub to authorize Dev-Docs. Click "Authorize" to grant access.
 
-5. Select the repository you want to integrate
+5. Once authorized, you'll be taken back to Dev-Docs. Select the repository you want to integrate from the dropdown menu.
 
-6. Configure permissions:
-   - Read access to code
-   - Write access to pull requests
-   - Write access to issues (optional)
+6. Choose the branch you want Dev-Docs to sync with (usually "main" or "master").
 
-7. Click "Connect Repository"
+7. Click "Save Changes" to finalize the integration.
 
-8. In your GitHub repository, add a `dev-docs.json` file to the root directory with the following content:
+8. Dev-Docs will now automatically sync changes from your GitHub repository.
 
-   ```json
-   {
-     "gitHubApp": {
-       "workflows": ["generateDocs"]
-     }
-   }
-   ```
-
-9. Commit and push the `dev-docs.json` file
-
-10. Back in Dev-Docs, go to your project and click "Sync with GitHub"
-
-11. Dev-Docs will now automatically generate documentation when changes are pushed to your repository
+9. To manually trigger a sync, go to the "Docs" page and click the "Sync with GitHub" button.
 
 ## Troubleshooting
 
-- If integration is not working, check that the `dev-docs.json` file is properly formatted
-- Ensure you have granted the necessary permissions to the Dev-Docs GitHub App
-- Check the GitHub App settings in your repository to verify the integration is active
-
-For additional help, please contact Dev-Docs support.
+- If you encounter any issues, ensure your GitHub access token has not expired.
+- Check that you have the necessary permissions for the repository.
+- For further assistance, contact Dev-Docs support.
