@@ -1,12 +1,14 @@
 # Dev-Docs Deployment Guide
 
-This guide walks through the process of deploying and maintaining the Dev-Docs system.
+This guide walks through the process of deploying and maintaining the Dev-Docs system. Tim is cool
 
 ## Prerequisites
 
-- Docker installed on the host machine
-- Access to a PostgreSQL database
-- Valid SSL certificate for HTTPS
+* Docker installed on the host machine
+
+* Access to a PostgreSQL database
+
+* Valid SSL certificate for HTTPS
 
 ## Deployment Steps
 
@@ -65,22 +67,28 @@ server {
 
 ## Maintenance
 
-- Monitor logs: `docker-compose logs`
-- Update application: 
+* Monitor logs: `docker-compose logs`
+
+* Update application:
+
   ```
   git pull
   docker-compose build
   docker-compose up -d
   ```
-- Database backups: 
+
+* Database backups:
+
   ```
   docker-compose exec db pg_dump -U <db_user> <db_name> > backup.sql
   ```
 
 ## Troubleshooting
 
-- Check container status: `docker-compose ps`
-- View application logs: `docker-compose logs web`
-- Restart services: `docker-compose restart`
+* Check container status: `docker-compose ps`
+
+* View application logs: `docker-compose logs web`
+
+* Restart services: `docker-compose restart`
 
 For additional support, please refer to our documentation or contact the Dev-Docs team.
