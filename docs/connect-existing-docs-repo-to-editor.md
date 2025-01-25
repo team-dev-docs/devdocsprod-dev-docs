@@ -24,7 +24,7 @@ Click "install" or "Configure" if you have installed already.
 
 ## Step 5: Add the docs repo
 
-![](/img/connect_the_starter_template_to_the_ai_editor/step_17.png)From the dropdown you should see the docs repo we created in the prior steps. Be sure to select it and click "save".
+![](/img/connect_the_starter_template_to_the_ai_editor/step_17.png)From the dropdown you find your docs repo we created in the prior steps. Be sure to select it and click "save".
 
 ## Step 6: Associate your repo with your Dev-Docs org
 
