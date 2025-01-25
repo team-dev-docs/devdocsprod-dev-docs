@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 # Connect the starter template to the AI editor
 
 ## Step 1: Navigate to the Dev-Docs dashboard
