@@ -1,4 +1,4 @@
-# Connect the starter template to the AI editor
+# Connect your existing docs to the AI editor
 
 ## Step 6: Return back to Dev-Docs to connect your new docs
 
