@@ -1,45 +1,5 @@
 # Connect the starter template to the AI editor
 
-## Step 1: Navigate to the Dev-Docs dashboard
-
-![Dev-Docs dashboard](/img/connect_the_starter_template_to_the_ai_editor/step_1.png)
-
-Navigate to the Dev-Docs dashboard, and to the left click "User-facing docs"
-
-## Step 2: Generate Starter template docs
-
-## ![](/img/connect_the_starter_template_to_the_ai_editor/step_8.png)
-
-Click setup and then in the dialog select "use our template" to generate your own starter docs repository for Dev-Docs to connect to.
-
-## Step 3: Create a new repository
-
-![Create new repository](/img/connect_the_starter_template_to_the_ai_editor/step_4.png)
-
-On the GitHub page, click on "New repository" to create a new repository for your documentation.
-
-## Step 4: Set up the repository
-
-![Set up repository](/img/connect_the_starter_template_to_the_ai_editor/step_5.png)
-
-Fill in the repository details:
-
-* Choose the repository template (e.g., team-dev-docs/starter-template-v3)
-
-* Set the owner
-
-* Name your repository (e.g., my\_cool\_new\_docs)
-
-* Choose visibility (public or private)
-
-Click "Create repository" when done.
-
-## Step 5: View the new repository
-
-![View new repository](/img/connect_the_starter_template_to_the_ai_editor/step_7.png)
-
-Your new repository is now created with the initial commit and files from the template.
-
 ## Step 6: Return back to Dev-Docs to connect your new docs
 
 ![Set up docs](/img/connect_the_starter_template_to_the_ai_editor/step_8.png)
