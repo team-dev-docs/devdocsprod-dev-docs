@@ -1,3 +1,7 @@
+---
+sidebar_position: 3
+---
+
 # Connect your existing docs to the AI editor
 
 ## Step 1: Click connect your own docs
