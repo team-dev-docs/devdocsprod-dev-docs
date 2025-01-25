@@ -12,7 +12,7 @@ Back in Dev-Docs, you'll see a prompt to set up your docs. Click "Connect your o
 
 Click on "install the GitHub App".
 
-## Step 8: Confirm repository selection
+## Step 3: Confirm repository selection
 
 ![](/img/connect_the_starter_template_to_the_ai_editor/step_13.png)
 
