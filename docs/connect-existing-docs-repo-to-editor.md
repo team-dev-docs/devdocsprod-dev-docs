@@ -1,64 +1,83 @@
+# Connect the starter template to the AI editor
 
+## Step 1: Navigate to the Dev-Docs dashboard
 
-  # How to Connect an Existing Docs Repo to the Editor
+![Dev-Docs dashboard](/img/connect_the_starter_template_to_the_ai_editor/step_1.png)
 
-## Prerequisites
-- A GitHub account
-- An existing documentation repository on GitHub
-- Dev-Docs account
+Navigate to the Dev-Docs dashboard, and to the left click "User-facing docs"
 
-## Steps
+## Step 2: Generate Starter template docs
 
-1. **Install the Dev-Docs GitHub App**
-   - Go to the Dev-Docs GitHub App installation page
-   - Select the organization or account where your docs repo is located
-   - Choose the repository you want to connect
+## ![](/img/connect_the_starter_template_to_the_ai_editor/step_8.png)
 
-2. **Set Up in Dev-Docs Platform**
-   - Log in to your Dev-Docs account
-   - Navigate to the "Integrations" or "GitHub" section in your dashboard
+Click setup and then in the dialog select "use our template" to generate your own starter docs repository for Dev-Docs to connect to.
 
-3. **Configure Dev-Docs.json**
-   - In your repository, create a `dev-docs.json` file in the root directory if it doesn't exist
-   - Add the following configuration:
-     ```json
-     {
-       "gitHubApp": {
-         "workflows": ["generateDocs"]
-       }
-     }
-     ```
+## Step 3: Create a new repository
 
-4. **Specify Documentation Location**
-   - In the `dev-docs.json` file, add the location of your documentation:
-     ```json
-     {
-       "ai": {
-         "docSubFolder": "docs/"
-       },
-       "gitHubApp": {
-         "workflows": ["generateDocs"]
-       }
-     }
-     ```
+![Create new repository](/img/connect_the_starter_template_to_the_ai_editor/step_4.png)
 
-5. **Commit and Push Changes**
-   - Commit the `dev-docs.json` file to your repository
-   - Push the changes to GitHub
+On the GitHub page, click on "New repository" to create a new repository for your documentation.
 
-6. **Access the Editor**
-   - In the Dev-Docs platform, navigate to the "Editor" section
-   - Your connected repository should now be visible and accessible
+## Step 4: Set up the repository
 
-7. **View and Edit Documentation**
-   - Click on your repository in the Editor
-   - You should now see your existing documentation files
-   - You can now view, edit, and manage your docs directly in the Dev-Docs editor
+![Set up repository](/img/connect_the_starter_template_to_the_ai_editor/step_5.png)
 
-8. **Sync Changes**
-   - Any changes made in the editor will be automatically synced with your GitHub repository
-   - You can also use the "Push to GitHub" feature to manually sync changes
+Fill in the repository details:
 
-By following these steps, you'll successfully connect your existing documentation repository to the Dev-Docs editor, allowing for seamless management and collaboration on your documentation.
+* Choose the repository template (e.g., team-dev-docs/starter-template-v3)
 
-  
+* Set the owner
+
+* Name your repository (e.g., my\_cool\_new\_docs)
+
+* Choose visibility (public or private)
+
+Click "Create repository" when done.
+
+## Step 5: View the new repository
+
+![View new repository](/img/connect_the_starter_template_to_the_ai_editor/step_7.png)
+
+Your new repository is now created with the initial commit and files from the template.
+
+## Step 6: Return back to Dev-Docs to connect your new docs
+
+![Set up docs](/img/connect_the_starter_template_to_the_ai_editor/step_8.png)
+
+Back in Dev-Docs, you'll see a prompt to set up your docs. Click "Connect your own docs" to proceed.
+
+## Step 7: Set up User-Facing Docs
+
+![Set up User-Facing Docs](/img/connect_the_starter_template_to_the_ai_editor/step_11.png)
+
+Click on "install the GitHub App".
+
+## Step 8: Confirm repository selection
+
+![](/img/connect_the_starter_template_to_the_ai_editor/step_13.png)
+
+Click "install" or "Configure" if you have installed already.
+
+## Step 9: Select your account or org
+
+![](/img/connect_the_starter_template_to_the_ai_editor/step_16.png)Select your GitHub account you want to install it on
+
+## Step 10: Add the docs repo
+
+![](/img/connect_the_starter_template_to_the_ai_editor/step_17.png)From the dropdown you should see the docs repo we created in the prior steps. Be sure to select it and click "save".
+
+## Step 11: Associate your repo with your Dev-Docs org
+
+![](/img/connect_the_starter_template_to_the_ai_editor/step_22.png)Check to make sure your repo name matches your desired Dev-Docs org and click "complete GitHub App Setup"
+
+## Step 12: Set your documentation repo
+
+![](/img/connect_the_starter_template_to_the_ai_editor/step_25.png)You should now see a dialog that tells you to select your documentation repo. Make sure to select the one we set up from the dropdown. This is basically telling Dev-Docs this is where my docs will live, and therefore is the location the Dev-Docs editor should connect to.
+
+## Step 13: Open the editor on your new docs
+
+![](/img/starter_template_edit_docs.png)
+
+## Step 14: Push changes to GitHub
+
+![Push to GitHub](/img/connect_the_starter_template_to_the_ai_editor/step_28.png)You'll now have access to the AI editor interface where you can start creating and editing your documentation.
