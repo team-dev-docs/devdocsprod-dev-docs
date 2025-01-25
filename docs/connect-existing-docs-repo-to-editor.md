@@ -1,6 +1,6 @@
 # Connect your existing docs to the AI editor
 
-## Step 1: Return back to Dev-Docs to connect your new docs
+## Step 1: Click connect your own docs
 
 ![Set up docs](/img/connect_the_starter_template_to_the_ai_editor/step_8.png)
 
