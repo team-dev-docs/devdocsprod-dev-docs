@@ -43,7 +43,7 @@ To apply prompts to all files within a specific directory:
         {
           "title": "Component Overview",
           "question": "Provide a brief overview of this component.",
-          "documentation": "Describe the component's purpose and main features."
+          "documentation": ""
         }
       ]
     }
