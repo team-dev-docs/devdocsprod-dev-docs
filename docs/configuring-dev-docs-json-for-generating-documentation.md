@@ -1,6 +1,4 @@
-
-
-  # Configuring dev-docs.json for Generating Documentation
+# Advanced configuring dev-docs.json for Generating Documentation
 
 The `dev-docs.json` file offers various configuration options to customize how Dev-Docs generates documentation for your code files. This guide focuses on the "ai" section of the configuration, which provides powerful features for tailoring the documentation process.
 
@@ -25,7 +23,7 @@ You can define custom prompts for individual files using the following structure
         {
           "title": "Input Parameters",
           "question": "What are the input parameters for this function?",
-          "documentation": "List and describe each input parameter."
+          "documentation": ""
         }
       ]
     }
@@ -151,11 +149,13 @@ Set up OpenAPI documentation generation:
 ## Best Practices
 
 1. Start with global filters and gradually add file-specific or directory-specific prompts as needed.
+
 2. Use context prompts to provide additional information about your project's structure or conventions.
+
 3. Regularly review and update your `dev-docs.json` configuration as your project evolves.
+
 4. Utilize the `mappings` feature to organize your documentation in a logical structure.
+
 5. Leverage import handling to ensure comprehensive documentation of dependencies and utilities.
 
 By carefully configuring these options in your `dev-docs.json` file, you can create highly tailored and comprehensive documentation for your codebase, enhancing its maintainability and accessibility for developers.
-
-  
