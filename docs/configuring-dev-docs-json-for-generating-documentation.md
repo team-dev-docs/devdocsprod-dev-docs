@@ -131,21 +131,6 @@ Define custom mappings for documentation organization:
 }
 ```
 
-### 9. OpenAPI Configuration
-
-Set up OpenAPI documentation generation:
-
-```json
-"ai": {
-  "openapi": {
-    "file": "src/api/openapi.yaml",
-    "x-codeSamples": {
-      "langs": ["javascript", "python", "ruby"]
-    }
-  }
-}
-```
-
 ## Best Practices
 
 1. Start with global filters and gradually add file-specific or directory-specific prompts as needed.
