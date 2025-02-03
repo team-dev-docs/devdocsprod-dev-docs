@@ -1,6 +1,6 @@
 # Connect the starter template to the AI editor
 
-## Step 1: Navigate to the Dev-Docs dashboard
+## Step 1: Navigate to the Dev-Docs dashboard!!! Jamie is cool
 
 ![Dev-Docs dashboard](/img/connect_the_starter_template_to_the_ai_editor/step_1.png)
 
