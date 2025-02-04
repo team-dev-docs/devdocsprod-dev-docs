@@ -2,7 +2,9 @@
 sidebar_position: 1
 ---
 
-  # Web Editor Overview
+
+
+# Web Editor Overview
 
 The Dev-Docs web editor is a powerful tool designed to streamline the process of creating, editing, and managing documentation. It offers a range of features that enhance the documentation workflow, particularly in conjunction with GitHub integration.
 
@@ -36,11 +38,12 @@ The web editor interacts seamlessly with GitHub, offering several key functional
 
 ## Benefits
 
-- Streamlined Documentation Process: The web editor simplifies the creation and management of both internal and user-facing documentation.
-- Improved Collaboration: GitHub integration allows for better team collaboration on documentation projects.
-- Enhanced SEO and Sales Support: By facilitating comprehensive and up-to-date documentation, the web editor indirectly supports improved SEO and sales efforts.
-- Consistency and Quality: Features like AI-assisted generation and auditing tools help maintain consistency and quality across documentation.
+* Streamlined Documentation Process: The web editor simplifies the creation and management of both internal and user-facing documentation.
+
+* Improved Collaboration: GitHub integration allows for better team collaboration on documentation projects.
+
+* Enhanced SEO and Sales Support: By facilitating comprehensive and up-to-date documentation, the web editor indirectly supports improved SEO and sales efforts.
+
+* Consistency and Quality: Features like AI-assisted generation and auditing tools help maintain consistency and quality across documentation.
 
 The Dev-Docs web editor, with its robust features and GitHub integration, serves as a comprehensive solution for managing documentation alongside code development, catering to both technical and non-technical users involved in the documentation process.
-
-  
