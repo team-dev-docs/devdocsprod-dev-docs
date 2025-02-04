@@ -16,9 +16,9 @@ Make your desired modifications to the draft. As you edit, the draft will automa
 ![Step 3: Make Modifications](/img/modify_a_draft/step_5.png)
 
 ## Step 4: Review and Finalize
-After completing your modifications, carefully review your changes to ensure accuracy and coherence. Use the preview function, if available, to see how your draft will appear when published.
+After completing your modifications, carefully review the changes to ensure accuracy and completeness. You can continue editing as needed or prepare the draft for republishing.
 
-## Step 5: Save or Submit for Review
-Once you're satisfied with your modifications, you can either save the draft for further editing later or submit it for review if your workflow requires approval before republishing.
+## Step 5: Prepare for Republishing
+Once you're satisfied with the modifications, you can push the changes for review when ready to republish. This step ensures that your updated content goes through any necessary approval processes before being made public again.
 
-After completing these steps, your modified draft will be ready for the next stage in your content publishing process.
+After completing these steps, your modified draft will be ready for the next stages of your publishing workflow.
