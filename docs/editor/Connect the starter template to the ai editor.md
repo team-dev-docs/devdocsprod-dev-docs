@@ -35,7 +35,7 @@ Fill in the repository details:
 
 Click "Create repository" when done.
 
-## Step 5: View your newly created repository
+## Step 5: View the newly created repository
 
 ![View new repository](/img/connect_the_starter_template_to_the_ai_editor/step_7.png)
 
@@ -47,54 +47,61 @@ Your new repository is now created with the initial commit and files from the te
 
 Back in Dev-Docs, you'll see a prompt to set up your docs. Click "Connect your own docs" to proceed.
 
-## Step 7: Begin User-Facing Docs setup
+## Step 7: Set up User-Facing Docs by installing GitHub App
 
 ![Set up User-Facing Docs](/img/connect_the_starter_template_to_the_ai_editor/step_11.png)
 
-Click on "install the GitHub App" to start the integration process.
+Click on "install the GitHub App" to begin the connection process.
 
-## Step 8: Confirm and configure repository selection
+## Step 8: Confirm repository selection for GitHub App
 
 ![Confirm repository selection](/img/connect_the_starter_template_to_the_ai_editor/step_13.png)
 
-Click "Install" or "Configure" if you have installed the app already.
+Click "install" or "Configure" if you have installed the app already.
 
-## Step 9: Choose your GitHub account or organization
+## Step 9: Select your GitHub account or organization
 
 ![Select GitHub account](/img/connect_the_starter_template_to_the_ai_editor/step_16.png)
 
-Select the GitHub account or organization where you want to install the Dev-Docs app.
+Select the GitHub account or organization where you want to install the app.
 
-## Step 10: Add your documentation repository
+## Step 10: Add the documentation repository
 
 ![Add docs repo](/img/connect_the_starter_template_to_the_ai_editor/step_17.png)
 
-From the dropdown, select the docs repository you created earlier. Ensure it's the correct one and click "Save".
+From the dropdown, select the docs repo we created in the prior steps. Be sure to select it and click "save".
 
-## Step 11: Link your repo to your Dev-Docs organization
+## Step 11: Associate your repository with your Dev-Docs organization
 
 ![Associate repo with Dev-Docs org](/img/connect_the_starter_template_to_the_ai_editor/step_22.png)
 
-Verify that your repo name matches your desired Dev-Docs organization and click "Complete GitHub App Setup".
+Check to make sure your repo name matches your desired Dev-Docs organization and click "complete GitHub App Setup".
 
-## Step 12: Designate your documentation repository
+## Step 12: Set your documentation repository in Dev-Docs
 
 ![Set documentation repo](/img/connect_the_starter_template_to_the_ai_editor/step_25.png)
 
-In the dialog that appears, select your documentation repository from the dropdown. This action informs Dev-Docs where your documentation will reside and where the Dev-Docs editor should connect.
+You should now see a dialog that prompts you to select your documentation repo. Make sure to select the one we set up from the dropdown. This tells Dev-Docs where your docs will live and where the Dev-Docs editor should connect.
 
-## Step 13: Launch the editor for your new documentation
+## Step 13: Open the AI editor for your new docs
 
-![Open editor](/img/starter_template_edit_docs.png)
+![Open AI editor](/img/starter_template_edit_docs.png)
 
-Access the AI editor interface to begin creating and editing your documentation.
+You'll now have access to the AI editor interface where you can start creating and editing your documentation.
 
-## Step 14: Commit and push changes to GitHub
+## Step 14: Push changes to GitHub repository
 
 ![Push to GitHub](/img/connect_the_starter_template_to_the_ai_editor/step_28.png)
 
-After making changes in the AI editor, commit and push your updates to GitHub to keep your documentation repository in sync.
+After making changes in the AI editor, use the interface to push your updates to the GitHub repository, ensuring your documentation stays in sync.
 
-## Step 15: Review and publish your documentation
+## Step 15: Review and manage your documentation
 
-Once you've pushed your changes, review your documentation on GitHub to ensure everything looks correct. If you're using a static site generator or documentation platform, trigger a new build to publish your updated docs.
+Take some time to review the initial documentation structure provided by the starter template. You can now use the AI editor to:
+
+- Update existing content
+- Add new pages or sections
+- Reorganize the documentation structure
+- Collaborate with team members on documentation tasks
+
+Remember to regularly commit and push your changes to keep your documentation up-to-date and accessible to your team or users.
