@@ -1,6 +1,6 @@
 # How to Merge Your Drafts to Another Branch
 
-## Step 1: Open the "Push to GitHub" menu
+## Step 1: Open the "Push to GitHub" Menu
 
 ![Open Push to GitHub menu](/img/merge_your_drafts_to_another_branch/step_3.png)
 
@@ -36,16 +36,12 @@ Ensure that the correct branch is selected as the target for merging your drafts
 
 Click the "Push change to GitHub" button to start the merging process.
 
-## Step 7: Verify Successful Merge
+## Step 7: Confirm Successful Merge
 
 ![Verify success](/img/merge_your_drafts_to_another_branch/step_12.png)
 
 After pushing the changes, you should see a success message confirming that the changes were pushed successfully to the selected branch on GitHub.
 
-## Step 8: Review Merged Changes on GitHub
+## Step 8: Review Merged Changes
 
-After the successful merge, it's a good practice to visit your GitHub repository and review the changes. This step ensures that all your drafts have been correctly merged into the target branch.
-
-## Step 9: Clean Up Local Drafts
-
-Once you've confirmed that your changes are successfully merged, consider removing the local drafts to keep your workspace organized. This step helps prevent accidentally pushing the same changes again in the future.
+After the merge is complete, it's a good practice to review the changes on GitHub to ensure everything was merged correctly. You can do this by navigating to the target branch on GitHub and examining the commit history and file changes.
