@@ -5,7 +5,7 @@ Open the drafts section in the document editor.
 
 ![Open drafts section](/img/rename_a_draft/step_1.png)
 
-## Step 2: Locate the Desired Draft
+## Step 2: Locate the Draft
 Locate the draft you want to rename in the list.
 
 ![Locate draft](/img/rename_a_draft/step_2.png)
@@ -15,7 +15,7 @@ Click on the draft to select it. You should see options appear, including "Renam
 
 ![Select draft](/img/rename_a_draft/step_3.png)
 
-## Step 4: Choose the Rename Option
+## Step 4: Click the Rename Option
 Click the "Rename" option next to the draft.
 
 ![Click Rename](/img/rename_a_draft/step_4.png)
@@ -26,8 +26,6 @@ Edit the name of the draft in the text field that appears. When finished, click 
 ![Edit draft name](/img/rename_a_draft/step_5.png)
 
 ## Step 6: Confirm the Change
-After renaming, verify that the new name appears correctly in the drafts list. If needed, you can repeat the process to make further adjustments.
+Verify that the new name is displayed correctly in the drafts list.
 
-Your draft has now been renamed. The new name will be displayed in the drafts list, making it easier to organize and locate your documents.
-
-**Note:** Renaming a draft does not affect its content or version history. It simply changes how the draft is identified in your list of documents.
+Your draft has now been renamed. The updated name will be reflected in the drafts list and any references to the draft throughout your document.
