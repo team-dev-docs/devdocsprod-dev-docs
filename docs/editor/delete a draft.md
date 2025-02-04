@@ -6,7 +6,7 @@
 
 ## Step 2: Select the Draft to Delete
 
-![Step 2: Select Draft](/img/delete_a_draft/step_2.png) Hover your mouse over the draft you want to delete. This will reveal additional options, including a "Delete" button.
+![Step 2: Select Draft](/img/delete_a_draft/step_1.png) Hover your mouse over the draft you want to delete. This will reveal additional options, including a "Delete" button.
 
 ## Step 3: Click the Delete Button
 
@@ -14,10 +14,6 @@
 
 ## Step 4: Confirm Deletion
 
-A confirmation dialog will appear to ensure you want to proceed with deleting the draft. Click "Yes" or "Confirm" to permanently delete the draft.
+A confirmation dialog will appear asking if you're sure you want to delete the draft. Click "Yes" to proceed with the deletion or "No" to cancel.
 
-## Step 5: Verify Removal
-
-After confirming, check your drafts list to ensure the selected draft has been successfully removed.
-
-Remember, deleting a draft is permanent, so make sure you want to remove it before taking this action. If you're unsure, consider archiving the draft instead of deleting it.
+Remember, deleting a draft is permanent, so make sure you want to remove it before taking this action. If you're unsure, consider archiving the draft instead, which allows you to recover it later if needed.
