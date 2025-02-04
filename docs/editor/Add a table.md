@@ -8,7 +8,7 @@ Position your cursor where you want to add the table in your document.
 ![Step 2](/img/add_a_table/step_2.png)
 Click the "+" button to open the formatting options.
 
-## Step 3: Select Add Table
+## Step 3: Select "Add Table"
 ![Step 3](/img/add_a_table/step_3.png)
 Scroll down in the formatting menu and select "Add Table".
 
@@ -24,12 +24,12 @@ Click on "Header one" to edit the first column header.
 ![Step 6](/img/add_a_table/step_10.png)
 Click on "Header two" to edit the second column header.
 
-## Step 7: Add Content to Table
+## Step 7: Add Content and Rows
 ![Step 7](/img/add_a_table/step_11.png)
 Begin adding content to your table by clicking in the cells and typing. You can add more rows by clicking the "+" button at the bottom of the table.
 
 ## Step 8: Adjust Table Properties
-After adding content, you can adjust table properties such as column width, text alignment, and cell background color by using the table formatting options that appear when you click on the table.
+After adding your content, you can adjust table properties such as column width, text alignment, and cell background color using the table formatting options.
 
-## Step 9: Finalize Table Formatting
-Review your table for consistency and make any final adjustments to ensure it fits well within your document and effectively presents your information.
+## Step 9: Review and Finalize
+Once you've added all your content and formatted the table to your liking, review it for any errors or inconsistencies. Make any final adjustments before considering your table complete.
