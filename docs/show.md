@@ -13,33 +13,40 @@ const ollama = new Ollama()
 ```
 
 ## Parameters
-- `request` (ShowRequest): An object containing the following properties:
-  - `model` (string): The name of the model to retrieve metadata for.
-  - `system` (string, optional): A system prompt to include in the metadata.
-  - `template` (string, optional): A custom prompt template.
-  - `options` (Options, optional): Additional options for the model.
+- `request` (object, required): An object containing the following properties:
+  - `model` (string, required): The name of the model to show metadata for.
+  - `system` (string, optional): Custom system prompt to use for the model.
+  - `template` (string, optional): Custom prompt template to use for the model.
+  - `options` (object, optional): Additional options for the model.
 
 ## Return Value
 The `show` method returns a Promise that resolves to a `ShowResponse` object containing the model's metadata.
 
 ## Examples
 
-### Basic usage
+1. Basic usage:
 ```javascript
-const metadata = await ollama.show({ model: 'llama2' })
-console.log(metadata)
+const modelInfo = await ollama.show({ model: 'llama2' })
+console.log(modelInfo)
 ```
 
-### With custom system prompt
+2. With custom system prompt:
 ```javascript
-const metadata = await ollama.show({
-  model: 'gpt-4',
+const modelInfo = await ollama.show({
+  model: 'gpt4',
   system: 'You are a helpful assistant.'
 })
-console.log(metadata.system)
+console.log(modelInfo.system)
+```
+
+3. Retrieving model details:
+```javascript
+const modelInfo = await ollama.show({ model: 'codellama' })
+console.log(`Model family: ${modelInfo.details.family}`)
+console.log(`Parameter size: ${modelInfo.details.parameter_size}`)
 ```
 
 ## Notes or Considerations
-- Ensure you have the correct permissions to access the model's metadata.
-- The availability of certain metadata fields may vary depending on the model.
-- This method is useful for inspecting model details before using it in other operations.
+- Ensure you have the correct permissions to access the model information.
+- The availability of certain metadata fields may vary depending on the model and Ollama version.
+- This method is useful for inspecting model configurations and understanding their capabilities before use.
