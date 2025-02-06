@@ -12,15 +12,9 @@ Dev-Docs is a powerful documentation solution that streamlines the process of cr
 
 - **Seamless Integration**: Integrate Dev-Docs directly into your development workflow with our VS Code extension and into your CI/CD with our GitHub App. Generate Markdown files and manage your docs without ever leaving your familiar environment. Push the docs to where your teams or users are already reading them.
 
-<br></br>
-
 - **Customizable Output**: Tailor the AI-generated content to your specific needs with customizable prompts and filters. Dev-Docs adapts to your project's unique requirements, ensuring that the generated documentation aligns perfectly with your standards. Edit the final output as you see fit. The final say is always yours!
 
-<br></br>
-
 - **Improved SEO and Developer Experience**: Well-documented projects are more discoverable and attractive to potential users and customers. Dev-Docs helps you create comprehensive, SEO-friendly documentation that can boost your project's visibility, enable faster customer onboarding and drive sales.
-
-<br></br>
 
 - **Time and Cost Savings**: By automating much of the documentation process, Dev-Docs helps your team save valuable time and resources, allowing them to focus on core development and documentation tasks while maintaining high-quality content for your docs. 
 
