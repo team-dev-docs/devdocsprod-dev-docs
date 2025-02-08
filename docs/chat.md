@@ -1,30 +1,31 @@
 # chat Documentation
 
 ## Brief Description
-The `chat` method allows you to interact with an AI model using a conversational interface. It supports streaming responses and can handle messages with text and images.
+The `chat` method allows users to interact with an AI model in a conversational manner, supporting text and image inputs.
 
 ## Usage
-To use the `chat` method, you'll need to import the Ollama class and create an instance:
+To use the `chat` method, you need to create an instance of the Ollama class and then call the `chat` method with the appropriate request object.
 
 ```javascript
 import { Ollama } from 'ollama'
 
 const ollama = new Ollama()
+const response = await ollama.chat(chatRequest)
 ```
 
 ## Parameters
 - `request` (ChatRequest): An object containing the following properties:
-  - `model` (string, required): The name of the model to use.
+  - `model` (string, required): The name of the model to use for the chat.
   - `messages` (Message[], optional): An array of message objects representing the conversation history.
-  - `stream` (boolean, optional): Whether to stream the response.
+  - `stream` (boolean, optional): Whether to stream the response. Default is `false`.
   - `format` (string | object, optional): The desired output format.
-  - `keep_alive` (string | number, optional): How long to keep the model loaded in memory.
-  - `tools` (Tool[], optional): An array of tool objects that the model can use.
-  - `options` (Partial<Options>, optional): Additional options for the chat session.
+  - `keep_alive` (string | number, optional): Duration to keep the model loaded in memory.
+  - `tools` (Tool[], optional): Array of tools available for the model to use.
+  - `options` (Partial<Options>, optional): Additional options for the chat.
 
 ## Return Value
-- If `stream` is `false`: Promise<ChatResponse>
-- If `stream` is `true`: Promise<AbortableAsyncIterator<ChatResponse>>
+- If `stream` is `false`: Returns a Promise that resolves to a `ChatResponse` object.
+- If `stream` is `true`: Returns a Promise that resolves to an `AbortableAsyncIterator<ChatResponse>`.
 
 ## Examples
 
@@ -37,12 +38,13 @@ const response = await ollama.chat({
 console.log(response.message.content)
 ```
 
-### Streaming chat with images
+### Streaming chat with image input
 ```javascript
+const imageData = await fs.promises.readFile('image.jpg')
 const stream = await ollama.chat({
-  model: 'llama2',
+  model: 'llava',
   messages: [
-    { role: 'user', content: 'What's in this image?', images: ['base64_encoded_image_data'] }
+    { role: 'user', content: 'What's in this image?', images: [imageData] }
   ],
   stream: true
 })
@@ -53,8 +55,7 @@ for await (const chunk of stream) {
 ```
 
 ## Notes or Considerations
-- The `chat` method can handle both text and image inputs.
-- When using images, they should be provided as base64 encoded strings or Uint8Arrays.
-- Streaming responses allow for real-time output, which is useful for long responses or interactive applications.
-- The method automatically encodes images before sending the request.
-- You can abort an ongoing streamed request using the `abort()` method on the returned AbortableAsyncIterator.
+- The `chat` method supports both text and image inputs. Images can be provided as Uint8Arrays or base64 encoded strings.
+- When using the streaming option, make sure to handle the async iterator properly to receive real-time responses.
+- The method automatically encodes images to base64 if they are provided as Uint8Arrays.
+- Be aware of the model's capabilities when using different input types or tools.
