@@ -1,3 +1,7 @@
+---
+sidebar_position: 
+---
+
 # Using Dev-Docs with Continue in VS Code
 
 ## Step 1: Open the Continue Extension

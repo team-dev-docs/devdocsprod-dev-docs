@@ -3,9 +3,9 @@ sidebar_position: 1
 ---
 
 
-# Quickstart
+# VS Code Quickstart
 
-See Dev-Docs in action in just a under five minutes! First, you'll need an account. If you haven't made one yet, head to [dev-docs.io](https://www.dev-docs.io/) to create a free account in just a few clicks by logging in with your GitHub (no cc required). If you already have one then you're ready to go! Woohoo! 
+See Dev-Docs in action in just a few minutes! First, you'll need an account. If you haven't made one yet, head to [dev-docs.io](https://www.dev-docs.io/) to create a free account by logging in with your GitHub (no cc required). If you already have one then you're ready to go!
 
 <br></br>
 

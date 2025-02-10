@@ -1,4 +1,6 @@
-
+---
+sidebar_position: 4
+---
 
   # How to Generate Context on a Folder in VS Code
 
@@ -6,7 +8,7 @@
 
 ![Open folder in VS Code](/img/generate_some_context_on_a_folder/step_1.png)
 
-First, open your project folder in Visual Studio Code. You should see the folder structure in the Explorer pane on the left side of the window. In this example, we can see a Node.js project with various files and folders.
+First, open your project folder in VS Code. You should see the folder structure in the Explorer pane on the left side of the window. In this example, we can see a Node.js project with various files and folders.
 
 ## Step 2: Generate High Level Context for the Folder
 
