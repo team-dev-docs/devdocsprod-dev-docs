@@ -4,7 +4,7 @@
 
 Dev-Docs is an AI-powered documentation generator designed to streamline the process of creating and maintaining internal documentation for software projects. It integrates seamlessly with Visual Studio Code and offers features like AI-generated context,
 
-![](upload)
+![](/img/add_an_image_to_google_slides/step_10.png)
 
 API documentation, and cloud synchronization.
 
