@@ -1,48 +1,40 @@
 # removeBackgroundColor Documentation
 
-## Overview
+## Brief Description
+The `removeBackgroundColor` function removes a specified color from an image, making it transparent.
 
-`removeBackgroundColor` is a function that removes a specified background color from an image, making it transparent. This is particularly useful for creating sprites or isolating objects in images for use in games or graphic design projects.
-
-## JavaScript Example
-
-```javascript
-import { removeBackgroundColor } from './imageProcessing';
-
-const inputPath = 'path/to/input/image.png';
-const outputPath = 'path/to/output/image.png';
-const targetColor = '#FFFFFF'; // White background
-const colorThreshold = 10; // Tolerance for color matching
-
-removeBackgroundColor(inputPath, outputPath, targetColor, colorThreshold)
-  .then(() => console.log('Background removed successfully'))
-  .catch(error => console.error('Error removing background:', error));
-```
-
-## Use Cases
-
-1. **Game Development**: Remove backgrounds from character sprites or game objects to integrate them seamlessly into different game environments.
+## Usage
+To use `removeBackgroundColor`, you need to import it from the appropriate module and call it with the required parameters.
 
 ```javascript
-const characterSprite = 'character.png';
-const transparentSprite = 'character_transparent.png';
-await removeBackgroundColor(characterSprite, transparentSprite, '#00FF00', 5); // Remove green screen
+import { removeBackgroundColor } from './path/to/module';
 ```
 
-2. **Web Design**: Create transparent PNG images for website logos or icons.
+## Parameters
+- `inputPath` (string, required): The file path of the input image.
+- `outputPath` (string, required): The file path where the processed image will be saved.
+- `targetColor` (string, required): The color to be removed, specified as a CSS color string (e.g., '#FFFFFF' for white).
+- `colorThreshold` (number, optional): The tolerance for color matching. Default is 0.
+- `options` (object, optional): Additional options for image processing. Default is an empty object.
 
+## Return Value
+The function returns a Promise that resolves with the result of the image processing operation.
+
+## Examples
+
+### Basic Usage
 ```javascript
-const logo = 'company_logo.png';
-const transparentLogo = 'company_logo_transparent.png';
-await removeBackgroundColor(logo, transparentLogo, '#FFFFFF', 0); // Remove white background
+await removeBackgroundColor('input.png', 'output.png', '#FFFFFF');
 ```
 
-3. **Photo Editing**: Isolate objects from their backgrounds for compositing or further editing.
-
+### With Color Threshold
 ```javascript
-const productPhoto = 'product.jpg';
-const isolatedProduct = 'product_isolated.png';
-await removeBackgroundColor(productPhoto, isolatedProduct, '#E5E5E5', 20); // Remove light gray background with some tolerance
+await removeBackgroundColor('input.png', 'output.png', '#FF0000', 10);
 ```
 
-By utilizing `removeBackgroundColor`, developers and designers can easily prepare images for various applications, enhancing the visual appeal and integration of graphics in their projects.
+## Notes or Considerations
+- The function uses the Jimp library for image processing.
+- The color matching is based on the `Jimp.colorDiff` method, which calculates the difference between colors.
+- Large color thresholds may result in unintended transparency in areas with similar colors.
+- Ensure that the input file exists and the output path is writable.
+- The function works best with images that have a distinct background color.
