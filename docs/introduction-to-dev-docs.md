@@ -20,7 +20,7 @@ Dev-Docs is a powerful documentation solution that streamlines the process of cr
 
 * **Time and Cost Savings**: By automating much of the documentation process, Dev-Docs helps your team save valuable time and resources, allowing them to focus on core development and documentation tasks while maintaining high-quality content for your docs.
 
-## I edited this and no draft came up
+## How it Works:
 
 ### Internal Team Documentation
 
