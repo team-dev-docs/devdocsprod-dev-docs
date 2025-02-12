@@ -22,7 +22,9 @@ Dev-Docs is a powerful documentation solution that streamlines the process of cr
 
 ## How to Use Dev-Docs?
 
-### Dev-Docs excels at generating and maintaining documentation for your internal development teams. It helps create comprehensive guides, API references, and codebase overviews, ensuring that your team members have access to up-to-date information about your project's architecture, functionality, and best practices.
+### Internal Team Documentation
+
+Dev-Docs excels at generating and maintaining documentation for your internal development teams. It helps create comprehensive guides, API references, and codebase overviews, ensuring that your team members have access to up-to-date information about your project's architecture, functionality, and best practices.
 
 ### User-Facing Documentation
 
