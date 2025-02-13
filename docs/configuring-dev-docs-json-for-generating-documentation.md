@@ -1,4 +1,4 @@
-# Advanced configuring dev-docs.json for Generating Documentation
+# Advanced Configuring dev-docs.json for Generating Documentation
 
 The `dev-docs.json` file offers various configuration options to customize how Dev-Docs generates documentation for your code files. This guide focuses on the "ai" section of the configuration, which provides powerful features for tailoring the documentation process.
 
