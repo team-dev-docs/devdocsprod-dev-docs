@@ -1,5 +1,5 @@
 ---
-sidebar_position: 
+sidebar_position: 6
 ---
 
 # Using Dev-Docs with Continue in VS Code
