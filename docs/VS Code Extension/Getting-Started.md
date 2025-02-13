@@ -1,4 +1,8 @@
-# Getting Started with Dev-Docs
+---
+sidebar_position: 2
+---
+
+# Setting up the VS Code Extension
 
 Dev-Docs is a powerful VS Code extension that helps you generate and manage documentation for your codebase. This guide will walk you through the basic setup and usage to get you up and running quickly.
 
