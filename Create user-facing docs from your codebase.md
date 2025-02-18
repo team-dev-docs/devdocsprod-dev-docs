@@ -1,13 +1,10 @@
-
-
-  # How to Use and Customize the "Populate External Docs" Command in the VS Code Extension
+# How to Use and Customize the "Populate External Docs" Command in the VS Code Extension
 
 ## Step 1: Access the Command
 
 1. Open your VS Code workspace
 2. Press `Cmd+Shift+P` (Mac) or `Ctrl+Shift+P` (Windows/Linux) to open the command palette
 3. Type "Populate External Docs" and select the command
-
 
 ## Step 2: Customizing Generation with dev-docs.json
 
@@ -48,6 +45,13 @@ After running the command:
 2. Review and edit the generated content as needed
 3. Commit changes to your repository
 
-By following these steps and customizing the `dev-docs.json`, you can efficiently generate and manage external documentation for your project using the VS Code extension.
+## Step 4: Refine and Iterate
 
-  
+To improve the quality of generated documentation:
+
+1. Analyze the initial output and identify areas for improvement
+2. Adjust the `externalDocPrompt` in `dev-docs.json` to provide more specific guidance
+3. Re-run the "Populate External Docs" command to generate updated documentation
+4. Repeat this process until you achieve the desired level of detail and accuracy
+
+By following these steps and customizing the `dev-docs.json`, you can efficiently generate, manage, and refine external documentation for your project using the VS Code extension.
