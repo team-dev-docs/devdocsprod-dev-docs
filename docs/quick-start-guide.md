@@ -2,8 +2,6 @@
 
 ## Installation
 
-![](upload)
-
 1. Install the Dev-Docs VS Code extension from the marketplace
 
 2. Sign up for a Dev-Docs account at <https://dev-docs.com>
