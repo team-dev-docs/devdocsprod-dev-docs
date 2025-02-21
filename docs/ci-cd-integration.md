@@ -4,8 +4,9 @@ Dev-Docs can be seamlessly integrated into your CI/CD pipelines to automate docu
 
 ## Prerequisites
 
-- A GitHub repository with Dev-Docs installed
-- A CI/CD platform (e.g. GitHub Actions, Jenkins, GitLab CI)
+* A GitHub repository with Dev-Docs installed
+
+* A CI/CD platform (e.g. GitHub Actions, Jenkins, GitLab CI)
 
 ## Step 1: Configure dev-docs.json
 
@@ -53,8 +54,9 @@ jobs:
 
 In your repository or CI/CD platform settings, add the following secrets:
 
-- `DEV_DOCS_API_KEY`: Your Dev-Docs API key
-- `GENERATE_ENDPOINT_URL`: The URL for the Dev-Docs generation service
+* `DEV_DOCS_API_KEY`: Your Dev-Docs API key
+
+* `GENERATE_ENDPOINT_URL`: The URL for the Dev-Docs generation service
 
 ## Step 4: Commit and push
 
