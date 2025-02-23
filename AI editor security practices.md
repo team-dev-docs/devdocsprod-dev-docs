@@ -1,4 +1,4 @@
-# Protect your .env in AI editors like Cursor
+# Protect your .env in Cursor
 
 ## Inspiration for this post
 
