@@ -13,3 +13,7 @@ The biggest thing that will likely save you a lot stress is going into the vscod
 ![](/img/cursorfix.png)So this prevents you from opening an .env file in Cursor in general, but it also prevents things like composer and chat from having access to it(at least from what I have seen).
 
 ![](/img/composer.png)
+
+## Final notes
+
+Also the last thing I want to do is stress more people out, so if you open
