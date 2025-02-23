@@ -1,4 +1,4 @@
-# Protect your sensitive credentials in AI editors like Cursor
+# Protect your .env in AI editors like Cursor
 
 ## Inspiration for this post
 
