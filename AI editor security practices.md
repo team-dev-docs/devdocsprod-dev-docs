@@ -16,4 +16,4 @@ The biggest thing that will likely save you a lot stress is going into the vscod
 
 ## Final notes
 
-Also the last thing I want to do is stress more people out, so if you open
+Also the last thing I want to do is stress more people out, so if you find yourself stressed that you opened a project in Cursor, it does not appear you have to be too stressed out about your .env, because if you are in private mode they seem to claim to delete your data and your context
