@@ -6,6 +6,6 @@ Recently we started using cursor in addition to GitHub copilot, and I was person
 
 So at this point you are likely wondering how can I avoid any stress and worry around .env files variables in Cursor? So a couple things, one always make sure .gitignore includes .env file. Also add a .cursorignore file as well with .env file.\
 \
-The biggest thing that will likely save you a lot stress is going into the vscode settings and prevent any .env file from being open in Cursor ever.
+The biggest thing that will likely save you a lot stress is going into the vscode settings(remember cursor is a vscode fork) and prevent any .env file from being open in Cursor ever.
 
-![](/img/cursorfix.png)
+![](/img/cursorfix.png)So this prevents you from opening an .env file in general, and
