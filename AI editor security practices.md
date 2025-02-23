@@ -8,4 +8,4 @@ So at this point you are likely wondering how can I avoid any stress and worry a
 \
 The biggest thing that will likely save you a lot stress is going into the vscode settings(remember cursor is a vscode fork) and prevent any .env file from being open in Cursor ever.
 
-![](/img/cursorfix.png)So this prevents you from opening an .env file in general, and
+![](/img/cursorfix.png)So this prevents you from opening an .env file in Cursor in general
