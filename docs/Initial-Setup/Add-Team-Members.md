@@ -4,20 +4,18 @@ sidebar_position: 4
 
 
 
-# How to Expand Your Circus: Adding New Clowns to the Big Top
+# Add Team Members
 
-Ever felt like your organization needs more jesters? Well, buckle up, ringmaster, because we're about to teach you how to recruit some fresh faces for your digital three-ring circus!
+Learn how to manage your org.
 
-## Step 1: Embark on a User Safari
+## Step 1: Navigate to Users
 
-First things first, brave explorer! Navigate to the exotic land of "Users" on your Dev-Docs homepage. It's like a virtual savannah, but with fewer lions and more avatars.
+On the homepage of the Dev-Docs web app click "Users". ![](/img/add_team_members/step_1.png)
 
-## Step 2: Summon the Magical Add User Dialog
+## Step 2: Open the add User Dialog
 
-Click that shiny "Add User" button like it's a big red nose. Go on, give it a honk! This will conjure the mystical Add User Dialog, guaranteed to be 73% less confusing than assembling IKEA furniture.
+Click the "Add User" button. ![](/img/add_team_members/step_2.png)
 
-## Step 3: Fill in the Blanks (or Risk Cosmic Chaos)
+## Step 3: Fill in User Info
 
-Now, channel your inner bureaucrat and fill in those input fields. Remember, every blank left unfilled creates a tear in the space-time continuum. Or, you know, just makes HR grumpy. Click save to officially invite your new team member to join your merry band of keyboard warriors!
-
-Congratulations! You've successfully expanded your digital circus. May your new recruit bring you joy, efficiency, and only the occasional pratfall.
+Fill in the input fields and click save to invite a team member to your org. ![](/img/add_team_members/step_3.png)
