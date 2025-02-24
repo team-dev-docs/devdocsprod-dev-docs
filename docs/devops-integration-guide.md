@@ -1,22 +1,18 @@
 # DevOps Integration Guide for Dev-Docs
 
-This guide provides instructions on integrating Dev-Docs with common DevOps workflows and tools.
+This guide covers how to integrate Dev-Docs with common DevOps workflows and tools.
 
-## Continuous Integration (CI) Integration
+## Continuous Integration
 
 ### GitHub Actions
 
-To generate documentation automatically on pushes to your main branch:
+To automatically generate documentation on each commit:
 
-1. Create a `.github/workflows/generate-docs.yml` file in your repository
-2. Add the following workflow:
+1. Create a `.github/workflows/generate-docs.yml` file with the following:
 
 ```yaml
-name: Generate Documentation
-on:
-  push:
-    branches: [main]
-    paths: ['**.js']
+name: Generate Docs
+on: [push]
 jobs:
   generate-docs:
     runs-on: ubuntu-latest
@@ -24,77 +20,68 @@ jobs:
       - uses: actions/checkout@v2
       - name: Generate Docs
         run: |
-          curl -X POST ${{ secrets.GENERATE_ENDPOINT_URL }} \
-          -H "Content-Type: application/json" \
-          -d '{
-            "timestamp": "${{ github.event.head_commit.timestamp }}",
-            "api_key": "${{ secrets.DEV_DOCS_API_KEY }}",
-            "github_token": "${{ secrets.GITHUB_TOKEN }}",
-            "repo_name": "${{ github.repository }}",
-            "actor": "${{ github.actor }}"
-          }'
+          npm install @dev-docs/cli
+          npx dev-docs generate
+      - name: Commit changes
+        uses: EndBug/add-and-commit@v7
+        with:
+          author_name: GitHub Actions
+          author_email: actions@github.com
+          message: 'Auto-generate documentation'
+          add: 'docs/*'
 ```
 
-3. Add your Dev-Docs API key as a repository secret named `DEV_DOCS_API_KEY`
-4. Set the `GENERATE_ENDPOINT_URL` secret to the URL provided by Dev-Docs
+2. Commit this file to enable automatic doc generation on push.
 
-This will trigger documentation generation on every push to JavaScript files in your main branch.
+### GitLab CI
 
-## Version Control Integration
+Add the following to your `.gitlab-ci.yml`:
 
-### GitHub App
+```yaml
+generate-docs:
+  image: node:latest
+  script:
+    - npm install @dev-docs/cli
+    - npx dev-docs generate
+  artifacts:
+    paths:
+      - docs/
+```
 
-To enable automated workflows for internal documentation and changelog generation:
+## Deployment
 
-1. Install the Dev-Docs GitHub App on your repository
-2. Create or update the `dev-docs.json` file in your repository root:
+### Netlify
+
+1. Connect your Git repository to Netlify
+2. Set the build command to: `npm run build && npx dev-docs generate`
+3. Set the publish directory to: `docs`
+
+### Vercel
+
+Add the following to your `vercel.json`:
 
 ```json
 {
-  "gitHubApp": {
-    "workflows": ["generateDocs", "generateChangelog"]
-  }
+  "buildCommand": "npm run build && npx dev-docs generate",
+  "outputDirectory": "docs"
 }
 ```
 
-3. Optionally, specify a custom changelog location:
+## Docker
 
-```json
-{
-  "gitHubApp": {
-    "workflows": ["generateDocs", "generateChangelog"],
-    "changelogPath": "docs/CHANGELOG.md"
-  }
-}
+To use Dev-Docs in a Docker workflow:
+
+1. Add to your Dockerfile:
+
+```dockerfile
+RUN npm install -g @dev-docs/cli
+RUN dev-docs generate
 ```
 
-The GitHub App will automatically detect this configuration and enable the specified workflows.
+2. Mount your code directory and run:
 
-## Code Editor Integration
-
-### VS Code Extension
-
-Install the Dev-Docs VS Code extension to integrate documentation generation into your development workflow:
-
-1. Install the extension from the VS Code marketplace
-2. Use the command palette (Cmd+Shift+P / Ctrl+Shift+P) to access Dev-Docs commands:
-   - "Generate Documentation" to create docs for the current file
-   - "Populate External Docs" to generate user-facing documentation
-3. Customize the extension behavior by creating a `dev-docs.json` file in your project root:
-
-```json
-{
-  "ai": {
-    "internalTypeFilters": ["class", "method", "function"],
-    "codeFilters": [],
-    "nameFilters": [],
-    "docSubFolder": "api/",
-    "merge": true,
-    "externalDocPrompt": "Generate comprehensive API documentation"
-  }
-}
+```
+docker run -v $(pwd):/app dev-docs generate
 ```
 
-This configuration allows you to fine-tune which code elements are documented and how the documentation is generated.
-
-By integrating Dev-Docs with these DevOps tools and workflows, you can automate documentation generation and maintenance throughout your development process.
+By integrating Dev-Docs into your CI/CD pipelines, you can ensure documentation stays up-to-date with each code change.
