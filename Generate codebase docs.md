@@ -1,4 +1,4 @@
-# How to Use the "Generate Documentation" Command in Dev-Docs VS Code Extension test
+# How to Use the "Generate Documentation" Command in Dev-Docs VS Code Extension
 
 ## Using the Command
 
