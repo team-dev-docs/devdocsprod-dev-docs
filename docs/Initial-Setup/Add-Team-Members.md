@@ -4,22 +4,18 @@ sidebar_position: 4
 
 
 
-# Add Team Members: The Wacky Way to Grow Your Organizational Zoo! 🐒🦁🐘
+# Add Team Members
 
-Learn how to manage your org like a circus ringmaster on a sugar rush!
+Learn how to manage your org.
 
-## Step 1: Navigate to the User Jungle 🌴
+## Step 1: Navigate to Users
 
-On the homepage of the Dev-Docs web app, click "Users" or yell "TARZAN!" at your screen. Whichever works.
+On the homepage of the Dev-Docs web app click "Users". ![](/img/add_team_members/step_1.png)
 
-## Step 2: Summon the Magical Add User Genie 🧞‍♂️
+## Step 2: Open the add User Dialog
 
-Click the "Add User" button. If nothing happens, try rubbing your mouse like a magic lamp.
+Click the "Add User" button. ![](/img/add_team_members/step_2.png)
 
-## Step 3: Fill in User Info (or Make It Up!) 🤪
+## Step 3: Fill in User Info
 
-Fill in the input fields with either: a) Actual user information b) Names of your favorite cartoon characters c) Random keyboard smashes
-
-Click save to invite a team member to your org. Congratulations! You've just added another animal to your digital zoo!
-
-Remember: The more users you add, the more fun your office becomes. It's like playing "The Floor is Lava," but with deadlines!
+Fill in the input fields and click save to invite a team member to your org. ![](/img/add_team_members/step_3.png)
