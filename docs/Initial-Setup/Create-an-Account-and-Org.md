@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Create an Account and Org
 
-Learn the basics of setting up your Dev-Docs account.
+Learn the basics of setting up your Docs.dev account.
 
 ## Step 1: Login For the First Time
 
@@ -20,5 +20,3 @@ Go to [dev-docs.io](https://dev-docs.io), click the "Login with Github" button. 
 Click the **Next** button.  And you are done.
 
 ![create_an_account_and_org/step_5](/img/create_an_account_and_org/step_5.png)
-  
-  
