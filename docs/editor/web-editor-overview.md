@@ -6,7 +6,7 @@ sidebar_position: 1
 
 # Web Editor Overview
 
-The Dev-Docs web editor is a powerful tool designed to streamline the process of creating, editing, and managing documentation. It offers a range of features that enhance the documentation workflow, particularly in conjunction with GitHub integration.
+The Docs.dev web editor is a powerful tool designed to streamline the process of creating, editing, and managing documentation. It offers a range of features that enhance the documentation workflow, particularly in conjunction with GitHub integration.
 
 ## Key Features
 
@@ -26,11 +26,11 @@ The Dev-Docs web editor is a powerful tool designed to streamline the process of
 
 The web editor interacts seamlessly with GitHub, offering several key functionalities:
 
-1. Repository Connection: Users can connect their GitHub repositories to the Dev-Docs platform, allowing direct access to codebase and existing documentation.
+1. Repository Connection: Users can connect their GitHub repositories to the Docs.dev platform, allowing direct access to codebase and existing documentation.
 
 2. Branch Management: The editor supports merging drafts to specific branches on GitHub, facilitating version control and collaborative workflows.
 
-3. Automated Workflows: Through the Dev-Docs GitHub App, users can set up automated workflows for generating internal documentation and changelogs based on code changes.
+3. Automated Workflows: Through the Docs.dev GitHub App, users can set up automated workflows for generating internal documentation and changelogs based on code changes.
 
 4. Push to GitHub: Users can push their edited content directly to GitHub repositories, maintaining synchronization between the web editor and the codebase.
 
@@ -46,4 +46,4 @@ The web editor interacts seamlessly with GitHub, offering several key functional
 
 * Consistency and Quality: Features like AI-assisted generation and auditing tools help maintain consistency and quality across documentation.
 
-The Dev-Docs web editor, with its robust features and GitHub integration, serves as a comprehensive solution for managing documentation alongside code development, catering to both technical and non-technical users involved in the documentation process.
+The Docs.dev web editor, with its robust features and GitHub integration, serves as a comprehensive solution for managing documentation alongside code development, catering to both technical and non-technical users involved in the documentation process.
