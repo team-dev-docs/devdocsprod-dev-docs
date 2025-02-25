@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Sett up the GitHub app
+# Set up the GitHub app
 
 ## Step 1: Install
 
