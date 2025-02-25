@@ -4,11 +4,11 @@ sidebar_position: 3
 
 # Sign in With the VS Code Extension
 
-Get Dev-Docs set up in VS Code.
+Get Docs.dev set up in VS Code.
 
-## Step 1: Find the Dev-Docs Login Button
+## Step 1: Find the Docs.dev Login Button
 
-In your VS Code editor, click on the Dev-Docs button.
+In your VS Code editor, click on the Docs.dev button.
 ![](/img/use_ai_to_generate_api_documentation/step_1.png)
 
 ## Step 2: Login
