@@ -8,7 +8,7 @@ sidebar_position: 3
 
 ![Set up docs](/img/connect_the_starter_template_to_the_ai_editor/step_8.png)
 
-Back in Dev-Docs, you'll see a prompt to set up your docs. Click "Connect your own docs" to proceed.
+Back in Docs.dev, you'll see a prompt to set up your docs. Click "Connect your own docs" to proceed.
 
 ## Step 2: Set up User-Facing Docs by installing the GitHub App
 
@@ -34,17 +34,17 @@ Choose the GitHub account or organization where you want to install the app.
 
 From the dropdown, find your docs repository. Be sure to select it and click "Save".
 
-## Step 6: Associate your repository with your Dev-Docs organization
+## Step 6: Associate your repository with your Docs.dev organization
 
 ![](/img/connect_the_starter_template_to_the_ai_editor/step_22.png)
 
-Verify that your repository name matches your desired Dev-Docs organization and click "Complete GitHub App Setup".
+Verify that your repository name matches your desired Docs.dev organization and click "Complete GitHub App Setup".
 
-## Step 7: Set your documentation repository in Dev-Docs
+## Step 7: Set your documentation repository in Docs.dev
 
 ![](/img/connect_the_starter_template_to_the_ai_editor/step_25.png)
 
-You should now see a dialog prompting you to select your documentation repository. Choose the one we set up from the dropdown. This step informs Dev-Docs where your documentation lives and where the Dev-Docs editor should connect.
+You should now see a dialog prompting you to select your documentation repository. Choose the one we set up from the dropdown. This step informs Docs.dev where your documentation lives and where the Docs.dev editor should connect.
 
 ## Step 8: Access the AI editor for your new docs
 
@@ -60,4 +60,4 @@ After making changes in the AI editor, you can push your updates to GitHub. Be s
 
 ## Step 10: Collaborate and iterate
 
-With your documentation now connected to the AI editor and GitHub, you can easily collaborate with your team. Invite team members to contribute, review changes, and continuously improve your documentation using the powerful features of both Dev-Docs and GitHub.
+With your documentation now connected to the AI editor and GitHub, you can easily collaborate with your team. Invite team members to contribute, review changes, and continuously improve your documentation using the powerful features of both Docs.dev and GitHub.
