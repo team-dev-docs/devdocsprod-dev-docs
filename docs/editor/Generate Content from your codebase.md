@@ -1,23 +1,23 @@
 # Generate content from your codebase and docs
 
-## Step 1: Authorize the Docs.dev GitHub App
+## Step 1: Authorize the Dev-Docs GitHub App
 ### Select user account for authorization
 
-Select the user account you want to use to authorize the Docs.dev GitHub App.
+Select the user account you want to use to authorize the Dev-Docs GitHub App.
 
-![Authorize Docs.dev GitHub App](/img/generate_content_from_your_codebase_and_docs/step_3.png)
+![Authorize Dev-Docs GitHub App](/img/generate_content_from_your_codebase_and_docs/step_3.png)
 
-## Step 2: Install the Docs.dev GitHub App 
+## Step 2: Install the Dev-Docs GitHub App 
 ### Choose installation location
 
-Choose where you want to install the Docs.dev GitHub App. You can install it on your personal account or in an organization you manage.
+Choose where you want to install the Dev-Docs GitHub App. You can install it on your personal account or in an organization you manage.
 
-![Install Docs.dev GitHub App](/img/generate_content_from_your_codebase_and_docs/step_4.png)
+![Install Dev-Docs GitHub App](/img/generate_content_from_your_codebase_and_docs/step_4.png)
 
 ## Step 3: Configure repository access
 ### Select access scope
 
-Select which repositories you want the Docs.dev GitHub App to access. You can choose between "All repositories" or "Only select repositories".
+Select which repositories you want the Dev-Docs GitHub App to access. You can choose between "All repositories" or "Only select repositories".
 
 ![Configure repository access](/img/generate_content_from_your_codebase_and_docs/step_5.png)
 
