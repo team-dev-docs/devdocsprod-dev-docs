@@ -2,7 +2,7 @@
 
 This guide will help you get started with Dev-Docs quickly.
 
-![](upload)
+![](/img/.png)
 
 ## Prerequisites
 
