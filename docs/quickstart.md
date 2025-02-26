@@ -2,6 +2,8 @@
 
 This guide will help you get started with Dev-Docs quickly.
 
+![](upload)
+
 ## Prerequisites
 
 * Node.js installed
