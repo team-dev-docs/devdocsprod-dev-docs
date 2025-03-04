@@ -1,3 +1,3 @@
 # GitHub automations
 
-(coming soon)
+Automate the generat(coming soon)
