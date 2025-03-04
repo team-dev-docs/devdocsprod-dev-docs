@@ -1,3 +1,3 @@
 # GitHub automations
 
-Automate the generat(coming soon)
+Prevent documentation drift by automating the generat(coming soon)
