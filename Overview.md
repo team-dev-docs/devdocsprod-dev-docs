@@ -1,1 +1,1 @@
-These guides and resources will help you get started managing your docs
+Welcome to Docs.dev: Your AI powered docs assistant
