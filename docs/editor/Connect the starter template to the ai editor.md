@@ -10,8 +10,6 @@ sidebar_position: 2
 
 ![Generate Starter Template](/img/connect_the_starter_template_to_the_ai_editor/step_8.png)
 
-Click setup and then in the dialog select "use our template" to generate your own starter docs repository for Dev-Docs to connect to.
-
 ## Step 3: Create a new repository on GitHub
 
 ![Create new repository](/img/connect_the_starter_template_to_the_ai_editor/step_4.png)
