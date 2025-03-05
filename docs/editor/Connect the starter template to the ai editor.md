@@ -74,8 +74,6 @@ From the dropdown, find your newly created docs repo. Feel free to connect any o
 
 ![Associate repo with Dev-Docs org](/img/connect_the_starter_template_to_the_ai_editor/step_22.png)
 
-Check to make sure your repo name matches your desired Dev-Docs organization and click "complete GitHub App Setup".
-
 ## Step 12: Set your documentation repo in Dev-Docs
 
 ![Set documentation repo](/img/connect_the_starter_template_to_the_ai_editor/step_25.png)
