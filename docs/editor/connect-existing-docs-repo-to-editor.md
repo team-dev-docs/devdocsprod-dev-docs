@@ -47,21 +47,3 @@ Once done, go back to the Docs.dev web app and confirm that your repository name
 You should now see a dialog prompting you to select your documentation repository. Choose the one we set up from the dropdown. This step informs Docs.dev where your documentation lives and where the Docs.dev editor should pull from. Once this step is done you're all set and ready to go!
 
 ![](/img/connect_the_starter_template_to_the_ai_editor/step_25.png)
-
-You should now see a dialog prompting you to select your documentation repository. Choose the one we set up from the dropdown. This step informs Dev-Docs where your documentation lives and where the Dev-Docs editor should connect.
-
-## Step 8: Access the AI editor for your new docs
-
-![](/img/starter_template_edit_docs.png)
-
-You'll now have access to the AI-powered editor interface where you can start creating and editing your documentation efficiently.
-
-## Step 9: Push changes to GitHub and review
-
-![Push to GitHub](/img/connect_the_starter_template_to_the_ai_editor/step_28.png)
-
-After making changes in the AI editor, you can push your updates to GitHub. Be sure to review the changes in your repository to ensure everything is correct before merging.
-
-## Step 10: Collaborate and iterate
-
-With your documentation now connected to the AI editor and GitHub, you can easily collaborate with your team. Invite team members to contribute, review changes, and continuously improve your documentation using the powerful features of both Dev-Docs and GitHub.
