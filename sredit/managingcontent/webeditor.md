@@ -28,7 +28,7 @@ Select the `+` button or type `/` to view the drop down menu where you can:
 
 * Add a table
 
-Ask Docs.dev AI for assistance
+* Ask Docs.dev AI for assistance
 
 ### Add and edit frontmatter
 
