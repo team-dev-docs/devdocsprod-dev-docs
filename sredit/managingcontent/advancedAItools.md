@@ -28,6 +28,6 @@ When finished you'll see a list of personas that have grades against them. These
 
 ## Generate content
 
-Generate content allows you
+The Generate content feature allows you to generate new docs from your existing documentation.
 
 ## Generate complete docs
