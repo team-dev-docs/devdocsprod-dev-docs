@@ -34,7 +34,7 @@ Click "Create repository" when done.
 
 ![Set up repository](/img/connect_the_starter_template_to_the_ai_editor/step_5.png)
 
-## Step 5: View the newly created repository
+## Step 5: View the newly created repo
 
 Your new repo is now created with the initial commit and files from the template.
 
