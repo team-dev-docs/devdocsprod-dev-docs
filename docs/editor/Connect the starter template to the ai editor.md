@@ -14,7 +14,7 @@ When first setting up your Docs.dev account you will be prompted to set up your 
 
 ## Step 3: Create a new repo on GitHub
 
-On the GitHub page, click on "New repository" to create a new repository for your documentation.
+On the GitHub page, click on "New repo" to create a new repository for your documentation.
 
 ![Create new repository](/img/connect_the_starter_template_to_the_ai_editor/step_4.png)
 
