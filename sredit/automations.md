@@ -2,6 +2,8 @@
 
 Prevent documentation drift by automating your docs directly in the GitHub workflow
 
-1.
+* Generate docs from PRs
+
+*
 
 (coming soon)
