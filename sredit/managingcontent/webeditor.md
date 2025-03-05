@@ -16,7 +16,7 @@ Right click into the web editor to **a**
 
 ### Drop down menu
 
-Highlight any text, select the `+` button or type `/` to view the drop down menu where you can:
+Highlight any text, select the `+` button, or type `/` to view the drop down menu where you can:
 
 * Format headings
 
