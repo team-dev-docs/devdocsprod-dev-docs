@@ -20,7 +20,7 @@ To use your existing docs, select **Connect your own docs** and click on "instal
 
 ## Step 3: Confirm repository selection in GitHub
 
-Select **Install** or "**Configure**" if you have installed the app already.
+Select **Install** or **Configure** if you have installed the app already.
 
 ![](/img/connect_the_starter_template_to_the_ai_editor/step_13.png)
 
