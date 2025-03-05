@@ -26,11 +26,7 @@ Once you have installed the GitHub App and selected which repo(s) to connect, co
 
 See here \[LINK DOC] for a step by step guide on connecting your existing docs.
 
-### Set up a new docs repo using our template
-
-Follow this guide if you do not have an existing documentation repo and would like to leverage our open source Docusaurus template.
-
-Select use our template. You will be taken to GitHub where you will be prompted to create a new repository. Follow the steps in GitHub and come back to [app.docs.dev](https://app.docs.dev/) once the repo is set up. From here, follow the steps in the **Connect your existing docs** above to get set up.
+###
 
 See here \[LINK DOC] for a step by step guide on using our template.
 
