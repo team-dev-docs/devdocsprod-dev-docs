@@ -22,6 +22,8 @@ Select the `+` button or type `/` to view the drop down menu where you can:
 
 * Format headings
 
+* Create bulleted and numbered lists
+
 * /
 
 ### Add and edit frontmatter
