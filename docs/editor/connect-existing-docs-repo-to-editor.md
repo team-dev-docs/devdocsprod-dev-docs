@@ -52,6 +52,4 @@ You should now see a dialog prompting you to select your documentation repositor
 
 ![](/img/starter_template_edit_docs.png)
 
-You'll now have access to the AI-powered editor interface where you can start creating and editing your documentation efficiently.
-
 ##
