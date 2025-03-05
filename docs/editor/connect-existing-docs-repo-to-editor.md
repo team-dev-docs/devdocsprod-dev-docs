@@ -42,7 +42,7 @@ Once done, go back to the Docs.dev web app and confirm that your repository name
 
 ![](/img/connect_the_starter_template_to_the_ai_editor/step_22.png)
 
-## Step 7: Set your documentation repository in Dev-Docs
+## Step 7: Set your documentation repo in Dev-Docs
 
 ![](/img/connect_the_starter_template_to_the_ai_editor/step_25.png)
 
