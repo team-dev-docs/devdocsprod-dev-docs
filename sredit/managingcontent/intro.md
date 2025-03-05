@@ -1,6 +1,8 @@
 # Guides
 
-Here you'll find guides on the various features and functionality of our web editor. Refer here to learn how to leverage Docs.dev to analyze your existing docs for quality and SEO, generate new docs based on your codebase, audit existing documentation and more.
+Here you'll find guides on the various features and functionality of our web editor. Refer to the guides below to learn more about the web editor, as well as
+
+here to learn how to leverage Docs.dev to analyze your existing docs for quality and SEO, generate new docs based on your codebase, audit existing documentation and more.
 
 * Using the web editor
 
