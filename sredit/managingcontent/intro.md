@@ -2,7 +2,7 @@
 
 Here you'll find guides on the various features and functionality of our web editor.
 
-Refer to the guides below to learn more
+Refer to the guides below to learn more about the advanced AI functionality available.
 
 here to learn how to leverage Docs.dev to analyze your existing docs for quality and SEO, generate new docs based on your codebase, audit existing documentation and more.
 
