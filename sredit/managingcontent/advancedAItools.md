@@ -32,4 +32,4 @@ The Generate content feature allows you to generate new docs from your existing 
 
 ## Generate complete docs
 
-The Generate complete docs feature is meant for those without any existing documentation footprint. Using this feature will have the AI scan your selected codebase and generate multiple documentation pages that it belives are rele
+The Generate complete docs feature is meant for those without any existing documentation footprint. Using this feature will have the AI scan your selected codebase and generate multiple documentation pages that it believes are rele
