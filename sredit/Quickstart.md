@@ -20,4 +20,4 @@ See here \[LINK DOC] for a step by step guide on connecting your existing docs.
 
 ### Set up a new docs repo using our template
 
-Select use our template
+If you do not have an existing documentation repo and would like to leverage our open source Docusaurus template then follow these steps.
