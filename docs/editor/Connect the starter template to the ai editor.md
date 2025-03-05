@@ -54,6 +54,8 @@ Select **Connect your own docs** and click on "install the GitHub App" to begin 
 
 ## Step 8: Confirm repo selection for GitHub app
 
+Select **Install** or **Configure** if you have installed the app already.
+
 ![Confirm repository selection](/img/connect_the_starter_template_to_the_ai_editor/step_13.png)
 
 Click "install" or "Configure" if you have installed the app already.
