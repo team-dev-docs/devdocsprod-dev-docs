@@ -38,9 +38,9 @@ From the dropdown, find your docs repository. Feel free to connect any other pub
 
 ## Step 6: Associate your repository with your Dev-Docs organization
 
-![](/img/connect_the_starter_template_to_the_ai_editor/step_22.png)
-
 Verify that your repository name matches your desired Dev-Docs organization and click "Complete GitHub App Setup".
+
+![](/img/connect_the_starter_template_to_the_ai_editor/step_22.png)
 
 ## Step 7: Set your documentation repository in Dev-Docs
 
