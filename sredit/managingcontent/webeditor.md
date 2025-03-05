@@ -10,7 +10,7 @@ Refer to the guides below to learn more about the advanced AI functionality avai
 
 ### AI assisted writing
 
-Highlight any text and select **AI tools&#x20;**&#x74;o
+Highlight any text and select **AI tools&#x20;**&#x74;o have AI assist your writing. You can use this to help
 
 ### Drop down menu
 
