@@ -16,7 +16,7 @@ Right click into the web editor to **a**
 
 ### Drop down menu
 
-Select the **+**
+Select the **+&#x20;**&#x64;
 
 ### Add and edit frontmatter
 
