@@ -22,18 +22,6 @@ On the GitHub page, click on "New repository" to create a new repository for you
 
 ![Set up repository](/img/connect_the_starter_template_to_the_ai_editor/step_5.png)
 
-Fill in the repository details:
-
-* Choose the repository template (e.g., team-dev-docs/starter-template-v3)
-
-* Set the owner
-
-* Name your repository (e.g., my\_cool\_new\_docs)
-
-* Choose visibility (public or private)
-
-Click "Create repository" when done.
-
 ## Step 5: View the newly created repository
 
 ![View new repository](/img/connect_the_starter_template_to_the_ai_editor/step_7.png)
