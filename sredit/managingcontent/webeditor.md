@@ -10,7 +10,7 @@ Refer to the guides below to learn more about the advanced AI functionality avai
 
 ### Drop down menu
 
-### Add a table
+### Drop down menu
 
 ### Add and edit frontmatter
 
