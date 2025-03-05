@@ -31,3 +31,5 @@ When finished you'll see a list of personas that have grades against them. These
 The Generate content feature allows you to generate new docs from your existing documentation. To do this select **AI tools** in the top right hand corner of the web editor and navigate to **Generate content** in the drop down menu. From there, select which docs you would like to use as context. You can also check the checkbox to use your other connected codebases as context. Once you have all your context selected, insert your prompt into the text field and hit submit to get a new doc page. Everything generated here will go back into the web editor so you can edit as you see fit and then push to the GitHub branch of your choosing when ready.
 
 ## Generate complete docs
+
+The Generate complete docs feature is meant for those without any existing documentation footprint. This feature will have D
