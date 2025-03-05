@@ -24,7 +24,9 @@ Select the `+` button or type `/` to view the drop down menu where you can:
 
 * Insert a code block
 
-* Add and Image
+* Add and image
+
+* Add a table
 
 ### Add and edit frontmatter
 
