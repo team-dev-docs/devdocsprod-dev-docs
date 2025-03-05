@@ -32,6 +32,8 @@ Choose the GitHub account or organization where you want to install the app.
 
 ## Step 5: Add and select your documentation repo
 
+From the dropdown, find your docs repository. Feel free to connect any other public codebases you would like the app to have access to as context. Be sure to select it and select **Save.**
+
 ![](/img/connect_the_starter_template_to_the_ai_editor/step_17.png)
 
 From the dropdown, find your docs repository. Be sure to select it and click "Save".
