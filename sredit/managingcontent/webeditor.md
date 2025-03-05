@@ -48,7 +48,7 @@ You can always go back to GitHub to view the doc you have open by selecting the 
 
 ### Renaming and deleting drafts
 
-Select the three dots next to your drafts on the left hand side of the web editor screen to rename or delete drafts. I
+Select the three dots next to your drafts on the left hand side of the web editor screen to rename or delete drafts. You can select multiple drafts by clicking the three lines button between
 
 ## View raw markdown content
 
