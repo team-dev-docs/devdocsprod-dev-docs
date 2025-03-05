@@ -30,7 +30,7 @@ Fill in the repository details:
 
 * Choose visibility (public or private)
 
-Click Create repository when done.
+Click **Create repository** when done.
 
 ![Set up repository](/img/connect_the_starter_template_to_the_ai_editor/step_5.png)
 
