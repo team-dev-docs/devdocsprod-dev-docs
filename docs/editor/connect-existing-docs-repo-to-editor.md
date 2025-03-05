@@ -38,6 +38,8 @@ From the dropdown, find your docs repo. Feel free to connect any other public co
 
 ## Step 6: Associate your repository with your Dev-Docs organization
 
+Once done, go back to the [Docs.dev](http://Docs.dev) web app and confirm that your repository name matches your desired [Docs.dev](http://Docs.dev) organization and select **Complete GitHub App Setup**.
+
 ![](/img/connect_the_starter_template_to_the_ai_editor/step_22.png)
 
 Verify that your repository name matches your desired Dev-Docs organization and click "Complete GitHub App Setup".
