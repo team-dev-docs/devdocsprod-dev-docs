@@ -42,8 +42,6 @@ Once done, go back to the Docs.dev web app and confirm that your repository name
 
 ![](/img/connect_the_starter_template_to_the_ai_editor/step_22.png)
 
-Verify that your repository name matches your desired Dev-Docs organization and click "Complete GitHub App Setup".
-
 ## Step 7: Set your documentation repository in Dev-Docs
 
 ![](/img/connect_the_starter_template_to_the_ai_editor/step_25.png)
