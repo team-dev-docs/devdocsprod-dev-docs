@@ -14,7 +14,7 @@ Note: the files in the drop down menus are from the codebases you connected to o
 
 ## Audit docs
 
-This feature allows you to have AI scan your existing documentation based on any prompt of your choosing. To audit your existing documentation select **AI tools** in the top right hand corner of the web editor and navigate to **Audit docs** the drop down menu. You can add any prompt you choose into the **Describe what you want to audit field. If you would like for the AI to also check your docs against your code**
+This feature allows you to have AI scan your existing documentation based on any prompt of your choosing. To audit your existing documentation select **AI tools** in the top right hand corner of the web editor and navigate to **Audit docs** the drop down menu. First select which docs or folders you would like to check against. Then,ou can add any prompt you choose into the **Describe what you want to audit field. If you would like for the AI to also check your docs against your code**
 
 When finished, you will see a table of suggested docs where you can select which docs you would like to generate. Everything generated here will go back into the web editor so you can edit as you see fit and then push to the GitHub branch of your choosing when ready.
 
