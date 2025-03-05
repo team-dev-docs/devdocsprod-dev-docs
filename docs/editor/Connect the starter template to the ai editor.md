@@ -72,7 +72,7 @@ Select the GitHub account or organization where you want to install the app.
 
 From the dropdown, select the docs repo we created in the prior steps. Be sure to select it and click "save".
 
-## Step 11: Associate your repository with your Dev-Docs organization
+## Step 11: Associate your repo with your Dev-Docs organization
 
 ![Associate repo with Dev-Docs org](/img/connect_the_starter_template_to_the_ai_editor/step_22.png)
 
