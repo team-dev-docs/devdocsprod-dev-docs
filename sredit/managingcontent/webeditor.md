@@ -1,6 +1,6 @@
 # Web editor
 
-The Docs.dev web editor was built to work directly with your existing workflow. Once connected with your docs repo on GitHub (see Quickstart \[LINK]) all your markdown docs
+The Docs.dev web editor was built to work directly with your existing workflow. Once connected with your docs repo on GitHub (see Quickstart \[LINK]), all your markdown docs
 
 Refer to the guides below to learn more about the advanced AI functionality available.
 
