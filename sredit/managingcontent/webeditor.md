@@ -6,4 +6,6 @@ Refer to the guides below to learn more about the advanced AI functionality avai
 
 ## Branch Logic
 
+## Add and edit frontmatter
+
 SR Q: Can we make this section a like Docusaurus overview section where we have the blurb above and then the boxes that link to the various guides belowWeb
