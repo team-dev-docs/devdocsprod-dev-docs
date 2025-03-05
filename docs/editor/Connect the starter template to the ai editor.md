@@ -42,7 +42,7 @@ Your new repo is now created with the initial commit and files from the template
 
 ## Step 6: Return to Dev-Docs to connect your new docs
 
-Once the new repo is set up, go back to the [Docs.dev](http://Docs.dev) web app and confirm that your repository name matches your desired [Docs.dev](http://Docs.dev) organization and select **Complete GitHub App Setup**.
+Once the new repo is set up, go back to the [Docs.dev](http://Docs.dev) web app and confirm that your repo name matches your desired [Docs.dev](http://Docs.dev) organization and select **Complete GitHub App Setup**.
 
 ![Set up docs](/img/connect_the_starter_template_to_the_ai_editor/step_8.png)
 
