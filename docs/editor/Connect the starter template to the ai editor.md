@@ -44,6 +44,8 @@ Your new repository is now created with the initial commit and files from the te
 
 ![Set up docs](/img/connect_the_starter_template_to_the_ai_editor/step_8.png)
 
+Back in Dev-Docs, you'll see a prompt to set up your docs. Click "Connect your own docs" to proceed.
+
 ## Step 7: Set up User-Facing Docs by installing GitHub App
 
 ![Set up User-Facing Docs](/img/connect_the_starter_template_to_the_ai_editor/step_11.png)
