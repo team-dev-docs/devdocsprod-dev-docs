@@ -8,7 +8,7 @@ Refer to the guides below to learn more about the advanced AI functionality avai
 
 ## Additional tools
 
-Add an image
+### Add an image
 
 ### Add a table
 
