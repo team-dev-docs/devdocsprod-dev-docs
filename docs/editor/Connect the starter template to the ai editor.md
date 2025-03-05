@@ -46,8 +46,6 @@ Once the new repo is set up, go back to the Docs.dev web app and confirm that yo
 
 ![Set up docs](/img/connect_the_starter_template_to_the_ai_editor/step_8.png)
 
-Back in Dev-Docs, you'll see a prompt to set up your docs.
-
 ## Step 7: Set up User-Facing Docs by installing GitHub App
 
 ![Set up User-Facing Docs](/img/connect_the_starter_template_to_the_ai_editor/step_11.png)
