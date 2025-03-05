@@ -6,7 +6,7 @@ sidebar_position: 3
 
 # Connect your existing docs to the AI editor
 
-## Step 1: Click "Connect your own docs
+## Step 1: Click Connect your own docs
 
 ![Set up docs](/img/connect_the_starter_template_to_the_ai_editor/step_8.png)
 
