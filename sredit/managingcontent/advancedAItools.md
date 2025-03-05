@@ -14,4 +14,6 @@ This feature allows you to generate net new docs from code objects directly in y
 
 ## Generate content
 
+/
+
 ## Generate complete docs
