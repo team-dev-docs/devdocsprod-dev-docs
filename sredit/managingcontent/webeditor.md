@@ -1,4 +1,4 @@
-# Managing content
+# Web editor
 
 The Docs.dev web editor was built to work directly with your existing workflow. Once connected with your GitHub (see Quickstart \[LINK])
 
