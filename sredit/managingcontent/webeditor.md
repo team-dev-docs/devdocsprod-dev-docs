@@ -20,7 +20,9 @@ Right click into the web editor to **a**
 
 Select the `+` button or type `/` to view the drop down menu where you can:
 
-* Add a table
+* Format headings
+
+* /
 
 ### Add and edit frontmatter
 
