@@ -26,4 +26,4 @@ Follow this guide if you do not have an existing documentation repo and would li
 
 Select use our template. You will be taken to GitHub where you will be prompted to create a new repository. Follow the steps in GitHub and come back to Docs.dev once the repo is set up. Select your newly set up docs repo and any other repos you would like us to have access to for context (i.e. public SDKs or codebases). Once set up, you're all set and ready to go. Congrats! Select **Edit docs** to open up the web editor and get going.
 
-See here \[LINK DOC] for a step by step guide on connecting your existing docs.
+See here \[LINK DOC] for a step by step guide on using our template
