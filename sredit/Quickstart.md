@@ -13,3 +13,7 @@ Click setup to go through the onboarding and either connect your existing docs r
 ### Connect your existing docs
 
 Select **Connect your own docs** to set up Docs.dev to work with your existing documentation. You will be taken to GitHub to install our GitHub App and will need to connect it to your documentation repo. You will need the repository owner to approve the request if you lack the permissions needed to install the GitHub app on your repo.
+
+Whe
+
+See here for a step by step
