@@ -10,7 +10,7 @@ Refer to the guides below to learn more about the advanced AI functionality avai
 
 ### AI assisted writing
 
-Right click into
+Right click into the web editor
 
 ### Drop down menu
 
