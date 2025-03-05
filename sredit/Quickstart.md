@@ -30,4 +30,4 @@ See here \[LINK DOC] for a step by step guide on using our template.
 
 ## Support
 
-## Shoot us a note at <founders@dev-docs.io> if you have any questions at all or would like us to walk you through the product.
+Shoot us a note at founders\@dev-docs.io if you have any questions at all or would like us to walk you through the product.
