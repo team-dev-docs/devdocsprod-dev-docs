@@ -24,6 +24,8 @@ Select the `+` button or type `/` to view the drop down menu where you can:
 
 * Create bulleted and numbered lists
 
+* Insert a code block
+
 * /
 
 ### Add and edit frontmatter
