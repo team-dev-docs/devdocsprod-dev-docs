@@ -14,8 +14,6 @@ Refer to the guides below to learn more about the advanced AI functionality avai
 
 Right click into the web editor to **a**
 
-**/**
-
 ### Drop down menu
 
 Select the `+` button or type `/` to view the drop down menu where you can:
