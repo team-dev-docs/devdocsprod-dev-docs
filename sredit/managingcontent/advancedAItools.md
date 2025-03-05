@@ -26,6 +26,8 @@ The Analyze docs feature allows you to analyze the quality of your existing docu
 
 When finished you'll see a list of personas that have grades against them. These are the personas that the AI believes your documentation
 
+Let us know what else you'd like to see here!
+
 ## Generate content
 
 ## Generate complete docs
