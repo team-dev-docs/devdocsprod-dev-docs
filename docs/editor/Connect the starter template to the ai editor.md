@@ -18,7 +18,7 @@ On the GitHub page, click on "New repo" to create a new repo for your documentat
 
 ![Create new repository](/img/connect_the_starter_template_to_the_ai_editor/step_4.png)
 
-## Step 4: Set up the repository details
+## Step 4: Set up the repo details
 
 Fill in the repository details:
 
