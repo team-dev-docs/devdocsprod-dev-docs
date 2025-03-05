@@ -16,7 +16,7 @@ Select **Connect your own docs** to set up Docs.dev to work with your existing d
 
 We recommend you start by providing access to only the repo where your docs are hosted from to start. You can always come back and connect additional repos that you would like to use as context at a later time (i.e. publid SDKs or codebases) in order to take full advantage of Docs.dev.
 
-Once you have installed the GitHub App and selected which repo(s) to connect it to, come back to Docs.dev and
+Once you have installed the GitHub App and selected which repo(s) to connect it to, come back to Docs.dev and close the loop by selecting which repo is your do
 
 See here \[LINK DOC] for a step by step guide on connecting your existing docs.
 
