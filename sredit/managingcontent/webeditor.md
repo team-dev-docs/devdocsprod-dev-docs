@@ -30,7 +30,7 @@ Highlight any text, select the `+` button, or type `/` to view the drop down men
 
 ### Add and edit frontmatter
 
-Select the information button
+Select the information button on the top right of web editor to
 
 ### View doc in GitHub
 
