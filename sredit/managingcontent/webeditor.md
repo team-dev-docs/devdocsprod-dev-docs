@@ -32,6 +32,8 @@ Highlight any text, select the `+` button, or type `/` to view the drop down men
 
 Select the information button
 
+/
+
 ## View raw markdown content
 
 Select the **Rich text editor&#x20;**&#x64;ropdown in the top right and select **Raw editor** to view the raw markdown that your doc will be pushed to GitHub as. You
