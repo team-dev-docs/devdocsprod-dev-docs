@@ -48,6 +48,8 @@ Once the new repo is set up, go back to the Docs.dev web app and confirm that yo
 
 ## Step 7: Set up User-Facing Docs by installing GitHub App
 
+To use your existing docs, select **Connect your own docs** and click on "install the GitHub App" to begin the integration process. Clicking this will take you out of [Docs.dev](http://Docs.dev) and into your GitHub where you can install and set up the Dev-Docs GitHub app.
+
 ![Set up User-Facing Docs](/img/connect_the_starter_template_to_the_ai_editor/step_11.png)
 
 Click on "install the GitHub App" to begin the connection process.
