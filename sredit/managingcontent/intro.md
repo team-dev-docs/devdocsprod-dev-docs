@@ -1,6 +1,6 @@
 # Managing content
 
-The [Docs.dev](http://Docs.dev)
+The Docs.dev web editor was built to work directly with your existing workflow. Once connected with your GitHub (see Quickstart
 
 Refer to the guides below to learn more about the advanced AI functionality available.
 
