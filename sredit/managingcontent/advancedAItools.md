@@ -16,6 +16,8 @@ Note: the files in the drop down menus are from the codebases you connected to o
 
 To generate audit your existing documentation select **AI tools** in the top right hand corner of the web editor and navigate to **Audit docs** the drop down menu. This feature allows you to have AI scan your existing documentation based on what you would like it to search for
 
+When finished, you will see a table of suggested docs where you can select which docs you would like to generate. Everything generated here will go back into the web editor so you can edit as you see fit and then push to GitHub when ready.
+
 ## Analyze docs
 
 ## Generate content
