@@ -12,7 +12,7 @@ Refer to the guides below to learn more about the advanced AI functionality avai
 
 ### Add a table
 
-## Add and edit frontmatter
+### Add and edit frontmatter
 
 ## View raw markdown content
 
