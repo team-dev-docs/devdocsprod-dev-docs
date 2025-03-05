@@ -12,4 +12,4 @@ Refer to the guides below to learn how to generate docs for your SDKs, generate 
 
 ## Generate content
 
-Generate complete docs
+## Generate complete docs
