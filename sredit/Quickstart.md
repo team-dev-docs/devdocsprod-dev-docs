@@ -8,4 +8,4 @@ Go to [app.docs.dev](http://app.docs.dev) and log in with GitHub to create your 
 
 ### Setup and connect your docs repo
 
-Click setup to take
+Click setup to go through the onboarding and either connect your docs repo
