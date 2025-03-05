@@ -1,68 +1,62 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer').themes.github;
-const darkCodeTheme = require('prism-react-renderer').themes.dracula;
+const lightCodeTheme = require("prism-react-renderer").themes.github;
+const darkCodeTheme = require("prism-react-renderer").themes.dracula;
 
 // [item, [[], [], []]]
-const apiConfig = require('./dev-docs-openapi.js');
-const openApiCongfig = apiConfig.config
-const itemsJson = require("./items.json")
-const footerItems = require("./footerItems.json")
-const logoJson = require('./logo.json')
-
+const apiConfig = require("./dev-docs-openapi.js");
+const openApiCongfig = apiConfig.config;
+const itemsJson = require("./items.json");
+const footerItems = require("./footerItems.json");
+const logoJson = require("./logo.json");
+const aiConfig = require("./ai.json");
+const fs = require("fs");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   scripts: [
     {
-      src: 'https://app.termly.io/resource-blocker/ee5d9b1d-d5ea-431c-baff-84e1083d2614?autoBlock=on',
-      async: true
+      src: "https://kit.fontawesome.com/c11e540390.js",
+      crossorigin: "anonymous",
     },
-    {
-      src: 'https://kit.fontawesome.com/c11e540390.js',
-      crossorigin: 'anonymous',
-    },
-    {
-      src: 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js',
-      crossorigin: 'anonymous',
-    }
   ],
   stylesheets: [
     {
-      href: 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css',
-    },
-    'src/css/custom.css',
-    {
-      href: 'https://cdn.tailwindcss.com/2.2.19/tailwind.min.css'
-    },
-    {
-      href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap',
-      rel: 'stylesheet',
+      href: "https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css",
+      crossorigin: "anonymous",
     },
   ],
-  title: 'Your Dev-Docs',
-  tagline: 'Lets Dev-Doc and Roll',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
-  onBrokenLinks: 'ignore',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  title: "Your Dev-Docs",
+  tagline: "Lets Dev-Doc and Roll",
+  url: "https://your-docusaurus-test-site.com",
+  baseUrl: "/",
+  onBrokenLinks: "ignore",
+  onBrokenMarkdownLinks: "warn",
+  favicon: "img/favicon.ico",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: "facebook", // Usually your GitHub org/user name.
+  projectName: "docusaurus", // Usually your repo name.
   plugins: [
-    'docusaurus-plugin-sass',
-    '@orama/plugin-docusaurus-v3',
-    // '@docusaurus/plugin-content-docs',
+    "docusaurus-plugin-sass",
     [
-      'docusaurus-plugin-openapi-docs',
+      "./extractAndTestCodeBlocksPlugin",
       {
-        id: "apiDocs",
-        docsPluginId: "classic",
-        config: openApiCongfig
+        // Optional plugin config
+        indexDocs: true,
+        indexBlog: true,
+        indexPages: true,
+      },
+    ],
+    [
+      "./oramaSearchPlugin",
+      {
+        // Optional plugin config
+        indexDocs: true,
+        indexBlog: true,
+        indexPages: true,
       },
     ],
     [
@@ -71,14 +65,6 @@ const config = {
         id: "changelog",
         routeBasePath: "changelog",
         path: "./changelog",
-      },
-    ],
-    [
-      "posthog-docusaurus",
-      {
-        apiKey: "phc_Q3Rna4XzIjrTqqUDwIPTffPplnZXKDQvGaYA5OsVPtA",
-        appUrl: "https://us.i.posthog.com", // optional, defaults to "https://us.i.posthog.com"
-        enableInDevelopment: false, // optional
       },
     ],
     async function myPlugin(context, options) {
@@ -93,97 +79,111 @@ const config = {
       };
     },
   ],
-  themes: ["docusaurus-theme-openapi-docs"],
-  // Even if you don't use internalization, you can use this field to set useful
-  // metadata like html lang. For example, if your site is Chinese, you may want
-  // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: "en",
+    locales: ["en"],
   },
-
   presets: [
     [
-      'classic',
+      "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          docItemComponent: "@theme/ApiItem",
-          // docLayoutComponent: "@theme/DocPage",
-          sidebarPath: require.resolve('./sidebars.js'),
-          sidebarCollapsed: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
+          sidebarPath: require.resolve("./sidebars.js"),
           editUrl:
-            'https://github.com/team-dev-docs/devdocsprod-dev-docs/blob/main',
+            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
         blog: {
           showReadingTime: true,
-          readingTime: ({content, frontMatter, defaultReadingTime}) =>
-            defaultReadingTime({content, options: {wordsPerMinute: 1300}}),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-            feedOptions: {
-              createFeedItems: async (params) => {
-                const {blogPosts, defaultCreateFeedItems, ...rest} = params;
-                console.log("###########")
-                console.log(blogPosts)
-                return defaultCreateFeedItems({
-
-                  // keep only the 10 most recent blog posts in the feed
-                  blogPosts: blogPosts.filter((item, index) => index < 10),
-                  ...rest,
-                });
-              },
-            },
+          editUrl:
+            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.scss'),
+          customCss: require.resolve("./src/css/custom.scss"),
         },
       }),
     ],
   ],
-
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       colorMode: {
-        defaultMode: 'dark',
+        defaultMode: "dark",
         disableSwitch: false,
-        respectPrefersColorScheme: true,
+        respectPrefersColorScheme: false,
       },
+      ...(aiConfig.banner
+        ? {
+            announcementBar: {
+              id: "support_us",
+              content:
+                'This entire docs site is auto-generated and built using Dev-Docs. This is part of an experiment—read more  <a target="_blank" rel="noopener noreferrer" href="https://docs.dev">here</a>',
+              backgroundColor: "#fafbfc",
+              textColor: "#091E42",
+              isCloseable: false,
+            },
+          }
+        : {}),
       head: [
         {
-          tagName: 'link',
+          tagName: "link",
           attributes: {
-            rel: 'stylesheet',
-            href: 'https://use.fontawesome.com/releases/v5.15.4/css/all.css',
-            integrity: 'sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm',
-            crossorigin: 'anonymous',
+            rel: "stylesheet",
+            href: "https://use.fontawesome.com/releases/v5.15.4/css/all.css",
+            integrity:
+              "sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm",
+            crossorigin: "anonymous",
           },
         },
       ],
       navbar: {
-        title: '',
+        title: "Dev-Docs",
         logo: {
-          alt: 'My Site Logo',
+          alt: "My Site Logo",
           src: logoJson.logo || "",
         },
         items: [
-          ...itemsJson.items, {
-            type: 'search',
-            position: 'left',
-          }
+          ...itemsJson.items,
+          {
+            type: "search",
+            position: "left",
+          },
+          {
+            type: 'custom-github-auth',
+            position: 'right',
+            className: 'navbar-github-auth',
+          },
+          {
+            type: 'custom-codespaces',
+            position: 'right',
+            className: 'navbar-codespaces',
+          },
         ],
       },
       footer: {
-        style: 'dark',
+        style: "dark",
         links: [...footerItems.links],
         copyright: `⚡️ by Dev-Docs.io`,
       },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+        defaultLanguage: "javascript",
+        additionalLanguages: [
+          "python",
+          "java",
+          "php",
+          "ruby",
+          "bash",
+          "json",
+          "yaml",
+          "markdown",
+          "scss",
+          "jsx",
+          "tsx",
+          "typescript",
+          "css",
+        ],
       },
     }),
 };
