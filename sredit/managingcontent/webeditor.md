@@ -14,6 +14,6 @@ Refer to the guides below to learn more about the advanced AI functionality avai
 
 ## View raw markdown content
 
-Select the Rich text editor
+Select the **Rich text editor&#x20;**&#x64;ropdown in the top right
 
 SR Q: Can we make this section a like Docusaurus overview section where we have the blurb above and then the boxes that link to the various guides belowWeb
