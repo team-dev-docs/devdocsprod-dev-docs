@@ -16,4 +16,4 @@ Select **Connect your own docs** to set up Docs.dev to work with your existing d
 
 Whe
 
-See here \[LINK DOC] for a step by step guide on
+See here \[LINK DOC] for a step by step guide on connecting your own docs.
