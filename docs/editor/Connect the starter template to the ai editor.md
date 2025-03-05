@@ -52,7 +52,7 @@ Select **Connect your own docs** and click on "install the GitHub App" to begin 
 
 ![Set up User-Facing Docs](/img/connect_the_starter_template_to_the_ai_editor/step_11.png)
 
-## Step 8: Confirm repo selection for GitHub App
+## Step 8: Confirm repo selection for GitHub app
 
 ![Confirm repository selection](/img/connect_the_starter_template_to_the_ai_editor/step_13.png)
 
