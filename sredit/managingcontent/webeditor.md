@@ -16,7 +16,7 @@ Right click into the web editor to **a**
 
 ### Drop down menu
 
-Select the **+&#x20;**&#x62;utton or type /
+Select the **+&#x20;**&#x62;utton or type
 
 ### Add and edit frontmatter
 
