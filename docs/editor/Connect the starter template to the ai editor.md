@@ -36,9 +36,9 @@ Click "Create repository" when done.
 
 ## Step 5: View the newly created repository
 
-![View new repository](/img/connect_the_starter_template_to_the_ai_editor/step_7.png)
-
 Your new repository is now created with the initial commit and files from the template.
+
+![View new repository](/img/connect_the_starter_template_to_the_ai_editor/step_7.png)
 
 ## Step 6: Return to Dev-Docs to connect your new docs
 
