@@ -6,7 +6,7 @@ Welcome to Docs.dev! Follow the steps below to get started in ***under 5 minutes
 
 * A GitHub account is required for authenticating with [Docs.dev](http://Docs.dev)
 
-* A documentation repo in GitHub. If you do not have one
+* A documentation repo in GitHub. If you do not have one See here \[LINK DOC] for a step by step guide on using our template.
 
 ## Create account
 
