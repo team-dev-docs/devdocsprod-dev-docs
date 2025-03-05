@@ -1,3 +1,3 @@
 # Advanced AI tooling
 
-At [Docs.dev](http://Docs.dev) we
+At Docs.dev we believe great writers are really great editors. That is,
