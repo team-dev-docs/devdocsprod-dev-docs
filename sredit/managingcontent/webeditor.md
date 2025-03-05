@@ -34,7 +34,7 @@ Select the information button
 
 ### View doc in GitHub
 
-You can always go back to GitHub to view the doc you have open by selecting the information button on the top right and selecting
+You can always go back to GitHub to view the doc you have open by selecting the information button on the top right and selecting **View on GitHub** from there you
 
 ## View raw markdown content
 
