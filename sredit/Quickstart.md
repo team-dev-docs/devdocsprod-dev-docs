@@ -8,4 +8,4 @@ Go to [app.docs.dev](http://app.docs.dev) and log in with GitHub to create your 
 
 ### Setup and connect your docs repo
 
-Click setup to go through the onboarding and either connect your existing docs repo in GitHub. If you do not have a docs repo, you can either create one yourself and connect it or leverage our open source
+Click setup to go through the onboarding and either connect your existing docs repo in GitHub. If you do not have a docs repo, you can either create one yourself and connect it or leverage our open source Docusaurus template
