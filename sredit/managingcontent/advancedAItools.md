@@ -28,6 +28,6 @@ When finished you'll see a list of personas that have grades against them. These
 
 ## Generate content
 
-The Generate content feature allows you to generate new docs from your existing documentation. To do this select **AI tools** in the top right hand corner of the web editor and navigate to **Generate content** in the drop down menu. From there, select which docs you would like to use as context. You can also check the checkbox to use your other connected codebases as context. Once you have all your context selected, insert your prompt
+The Generate content feature allows you to generate new docs from your existing documentation. To do this select **AI tools** in the top right hand corner of the web editor and navigate to **Generate content** in the drop down menu. From there, select which docs you would like to use as context. You can also check the checkbox to use your other connected codebases as context. Once you have all your context selected, insert your prompt into the
 
 ## Generate complete docs
