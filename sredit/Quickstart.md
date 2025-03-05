@@ -24,4 +24,4 @@ See here \[LINK DOC] for a step by step guide on connecting your existing docs.
 
 Follow this guide if you do not have an existing documentation repo and would like to leverage our open source Docusaurus template.
 
-Select use our template. You will be taken to GitHub where you will be prompted to create a new repository. Follow the steps in GitHub and come back to Docs.dev once the repo is set up. Select your newly set up docs repo and any other repos you would like us to have access to for context ((i.e. public SDKs or codebases).
+Select use our template. You will be taken to GitHub where you will be prompted to create a new repository. Follow the steps in GitHub and come back to Docs.dev once the repo is set up. Select your newly set up docs repo and any other repos you would like us to have access to for context (i.e. public SDKs or codebases).
