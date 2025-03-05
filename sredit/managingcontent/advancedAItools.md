@@ -22,6 +22,8 @@ When finished, you will see a table of suggested docs where you can select which
 
 ## Analyze docs
 
+The Analyze docs
+
 ## Generate content
 
 ## Generate complete docs
