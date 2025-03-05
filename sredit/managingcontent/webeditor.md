@@ -6,7 +6,9 @@ Refer to the guides below to learn more about the advanced AI functionality avai
 
 ## Branch Logic
 
-## Ad
+## Additional Tools
+
+### Add an image
 
 ## Add and edit frontmatter
 
