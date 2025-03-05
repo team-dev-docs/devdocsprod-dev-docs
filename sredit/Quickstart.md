@@ -4,6 +4,6 @@ Welcome to Docs.dev! Follow the steps below to get started in ***under 5 minutes
 
 ### Create account
 
-Go to [app.docs.dev](http://app.docs.dev) and log in with GitHub to create your account. Once in select setup to
+Go to [app.docs.dev](http://app.docs.dev) and log in with GitHub to create your account.
 
 /
