@@ -36,7 +36,7 @@ Click "Create repository" when done.
 
 ## Step 5: View the newly created repository
 
-Your new repository is now created with the initial commit and files from the template.
+Your new repo is now created with the initial commit and files from the template.
 
 ![View new repository](/img/connect_the_starter_template_to_the_ai_editor/step_7.png)
 
