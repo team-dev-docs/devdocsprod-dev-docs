@@ -20,6 +20,8 @@ To use your existing docs, select **Connect your own docs** and click on "instal
 
 ## Step 3: Confirm repository selection in GitHub
 
+This
+
 ![](/img/connect_the_starter_template_to_the_ai_editor/step_13.png)
 
 ## Step 4: Select your GitHub account or organization
