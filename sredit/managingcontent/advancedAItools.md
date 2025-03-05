@@ -22,7 +22,9 @@ When finished, you will see a table of suggested docs where you can select which
 
 ## Analyze docs
 
-The Analyze docs feature allows you to analyze the quality of your existing documentation as a whole. Note that this doesn't check against individual docs but instead your entire documentation repo. To do this select **AI tools** in the top right hand corner of the web editor and navigate to **Analyze docs** in the drop down menu. The AI will go to work and
+The Analyze docs feature allows you to analyze the quality of your existing documentation as a whole. Note that this doesn't check against individual docs but instead your entire documentation repo. To do this select **AI tools** in the top right hand corner of the web editor and navigate to **Analyze docs** in the drop down menu. The AI will go to work and will start to analyze your documentation!
+
+When finished you'll see a
 
 ## Generate content
 
