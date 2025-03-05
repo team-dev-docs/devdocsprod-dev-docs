@@ -34,8 +34,6 @@ Choose the GitHub account or organization where you want to install the app.
 
 ![](/img/connect_the_starter_template_to_the_ai_editor/step_17.png)
 
-From the dropdown, find your docs repository. Be sure to select it and click "Save".
-
 ## Step 6: Associate your repository with your Dev-Docs organization
 
 ![](/img/connect_the_starter_template_to_the_ai_editor/step_22.png)
