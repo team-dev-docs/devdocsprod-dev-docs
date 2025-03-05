@@ -12,6 +12,4 @@ Click setup to go through the onboarding and either connect your existing docs r
 
 ### Connect your existing docs
 
-* Here's a guide connecting your existing docs repo
-
-* Here's a guide to
+To conne
