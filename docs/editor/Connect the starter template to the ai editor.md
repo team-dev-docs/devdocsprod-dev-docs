@@ -54,7 +54,7 @@ Back in Dev-Docs, you'll see a prompt to set up your docs. Click "Connect your o
 
 Click on "install the GitHub App" to begin the connection process.
 
-## Step 8: Confirm repository selection for GitHub App
+## Step 8: Confirm repo selection for GitHub App
 
 ![Confirm repository selection](/img/connect_the_starter_template_to_the_ai_editor/step_13.png)
 
