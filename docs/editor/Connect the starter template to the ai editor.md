@@ -64,8 +64,6 @@ Choose the GitHub account or organization where you want to install the app.
 
 ![Select GitHub account](/img/connect_the_starter_template_to_the_ai_editor/step_16.png)
 
-Select the GitHub account or organization where you want to install the app.
-
 ## Step 10: Add the documentation repo
 
 ![Add docs repo](/img/connect_the_starter_template_to_the_ai_editor/step_17.png)
