@@ -42,7 +42,7 @@ Your new repo is now created with the initial commit and files from the template
 
 ## Step 6: Return to Dev-Docs to connect your new docs
 
-Once the new repo is set up, go back to the Docs.dev web app and confirm that your repo name matches your desired Docs.dev organization and select Connect your own docs" to proceed.
+Once the new repo is set up, go back to the Docs.dev web app and confirm that your repo name matches your desired Docs.dev organization and select Connect your own docs to proceed.
 
 ![Set up docs](/img/connect_the_starter_template_to_the_ai_editor/step_8.png)
 
