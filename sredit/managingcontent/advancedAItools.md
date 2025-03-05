@@ -28,6 +28,6 @@ When finished you'll see a list of personas that have grades against them. These
 
 ## Generate content
 
-The Generate content feature allows you to generate new docs from your existing documentation. To do this select **AI tools** in the top right hand corner of the web editor and navigate to **Analyze docs** in the drop down menu.
+The Generate content feature allows you to generate new docs from your existing documentation. To do this select **AI tools** in the top right hand corner of the web editor and navigate to **Generate content** in the drop down menu.
 
 ## Generate complete docs
