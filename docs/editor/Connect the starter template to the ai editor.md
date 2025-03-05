@@ -42,6 +42,8 @@ Your new repository is now created with the initial commit and files from the te
 
 ## Step 6: Return to Dev-Docs to connect your new docs
 
+Once done, go back to the [Docs.dev](http://Docs.dev) web app and confirm that your repository name matches your desired [Docs.dev](http://Docs.dev) organization and select **Complete GitHub App Setup**.
+
 ![Set up docs](/img/connect_the_starter_template_to_the_ai_editor/step_8.png)
 
 Back in Dev-Docs, you'll see a prompt to set up your docs. Click "Connect your own docs" to proceed.
