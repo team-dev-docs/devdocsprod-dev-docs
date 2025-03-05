@@ -10,7 +10,7 @@ Refer to the guides below to learn more about the advanced AI functionality avai
 
 ## Additional tools
 
-### Drop down menu
+### AI assisted writing
 
 ### Drop down menu
 
