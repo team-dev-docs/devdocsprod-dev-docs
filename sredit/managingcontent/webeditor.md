@@ -6,7 +6,9 @@ Below you'll see some information on how the web editor works and some of the ba
 
 ## Branch Logic
 
-### Editing
+Docs.dev
+
+### Editing branch
 
 Docs.dev pulls in your docs from the repo you selected. On the left hand side of the web editor screen you'll be able to view all your published documentation (select **Published)**, as well as any drafts you are currently working on. At the top of the left hand side of the screen you will see the branch that you are editing on. Select the button displaying the branch to choose which branch you would like to work off of or create a new branch directly from the web editor. All new drafts and edits made will be synced directly to this branch.
 
