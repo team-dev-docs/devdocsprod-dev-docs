@@ -6,7 +6,7 @@ Below you'll see some information on how the web editor works and some of the ba
 
 ## Branch Logic
 
-[Docs.dev](http://Docs.dev)
+Docs.dev pulls in your docs from the repo you selected. On the left hand side of the web editor screen you'll be able to view all your published documentation, as well as any
 
 ## Additional tools
 
