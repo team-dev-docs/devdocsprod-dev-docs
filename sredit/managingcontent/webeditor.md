@@ -32,7 +32,9 @@ Highlight any text, select the `+` button, or type `/` to view the drop down men
 
 Select the information button
 
-/
+### View doc in GitHub
+
+You can always go back to GitHub to view the doc you have open by selecting the information button I
 
 ## View raw markdown content
 
