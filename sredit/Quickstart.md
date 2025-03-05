@@ -6,7 +6,7 @@ Welcome to Docs.dev! Follow the steps below to get started in ***under 5 minutes
 
 Go to [app.docs.dev](http://app.docs.dev) and log in with GitHub to create your account and create an org within Docs.dev.
 
-### Setup and connect your docs repo
+## Setup and connect your docs repo
 
 Click setup to go through the onboarding and either connect your existing docs repo in GitHub. If you do not have an existing docs repo, you can either create one yourself and connect it or leverage our open source Docusaurus template.
 
