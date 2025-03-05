@@ -94,7 +94,7 @@ You'll now have access to the AI editor interface where you can start creating a
 
 ![Push to GitHub](/img/connect_the_starter_template_to_the_ai_editor/step_28.png)
 
-After making changes in the AI editor, use the interface to push your updates to the GitHub repository, ensuring your documentation stays in sync.
+After making changes in the AI editor, use the interface to push your updates to the GitHub repo, ensuring your documentation stays in sync.
 
 ## Step 15: Review and manage your documentation
 
