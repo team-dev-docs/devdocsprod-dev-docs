@@ -14,6 +14,8 @@ Right click into the web editor to **a**
 
 ### Drop down menu
 
+Select the
+
 ### Add and edit frontmatter
 
 ## View raw markdown content
