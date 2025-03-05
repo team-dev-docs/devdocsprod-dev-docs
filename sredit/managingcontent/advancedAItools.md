@@ -6,7 +6,7 @@ Refer to the guides below to learn how to generate docs for your SDKs, generate 
 
 ## Code objects
 
-This feature allows you to generate net new docs from code objects directly in your SDK. To do this select the **AI tools** drop down in the top right of the web editor and select **Code objects**. Once selected, go through the drop down menus to select which code files the code object's are defined in and then which files have relevant context (if any) for those code objects. Then enter in which types of objects you would like the AI to search for and suggest docs for.
+This feature allows you to generate net new docs from code objects directly in your SDK. To do this select the **AI tools** drop down in the top right of the web editor and select **Code objects**. Once selected, go through the drop down menus to select which code files the code object's are defined in and then which files have relevant context (if any) for those code objects. Then enter in which types of objects you would like the AI to search for and suggest docs for. When ready select **Submit** and the AI will go into your codebase to find the relevant
 
 Note: the files in the drop down menus are from the codebases you connected to our GitHub app. If you do not see the relevant code files you can go into our GitHub app settings within GitHub to connect additional repos.
 
