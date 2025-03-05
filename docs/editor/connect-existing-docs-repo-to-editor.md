@@ -24,8 +24,6 @@ Select **Install** or **Configure** if you have installed the app already.
 
 ![](/img/connect_the_starter_template_to_the_ai_editor/step_13.png)
 
-Click "Install" or "Configure" if you have installed the app already.
-
 ## Step 4: Select your GitHub account or organization
 
 ![](/img/connect_the_starter_template_to_the_ai_editor/step_16.png)
