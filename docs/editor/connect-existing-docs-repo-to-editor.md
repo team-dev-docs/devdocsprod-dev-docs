@@ -8,7 +8,7 @@ sidebar_position: 3
 
 ## Step 1: Click "Connect your own docs"
 
-When first setting up your [Docs.dev](http://Docs.dev) account you will be prompted to set up your docs.
+When first setting up your Docs.dev account you will be prompted to set up your docs.
 
 ![Set up docs](/img/connect_the_starter_template_to_the_ai_editor/step_8.png)
 
