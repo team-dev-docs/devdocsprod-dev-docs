@@ -20,4 +20,4 @@ See here \[LINK DOC] for a step by step guide on connecting your existing docs.
 
 ### Set up a new docs repo using our template
 
-To
+Select use our template
