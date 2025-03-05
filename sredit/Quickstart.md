@@ -22,4 +22,4 @@ See here \[LINK DOC] for a step by step guide on connecting your existing docs.
 
 Follow this guide if you do not have an existing documentation repo and would like to leverage our open source Docusaurus template.
 
-S
+Select
