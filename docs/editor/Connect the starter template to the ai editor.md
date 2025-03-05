@@ -108,4 +108,4 @@ Take some time to review the initial documentation structure provided by the sta
 
 * Collaborate with team members on documentation tasks
 
-Remember to regularly commit and push your changes to keep your documentation up-to-date and accessible to your team or users.
+Remember to regularly commit and push your changes to keep your documentation up-to-date and accessible to your team or users
