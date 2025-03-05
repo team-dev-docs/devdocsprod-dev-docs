@@ -44,7 +44,7 @@ Once done, go back to the Docs.dev web app and confirm that your repository name
 
 ## Step 7: Set your documentation repository in Dev-Docs
 
-You should now see a dialog prompting you to select your documentation repository. Choose the one we set up from the dropdown. This step informs Docs.dev where your documentation lives and where the Docs.dev editor should pull from.
+You should now see a dialog prompting you to select your documentation repository. Choose the one we set up from the dropdown. This step informs Docs.dev where your documentation lives and where the Docs.dev editor should pull from. Once this step is done you're all set and ready to go!
 
 ![](/img/connect_the_starter_template_to_the_ai_editor/step_25.png)
 
