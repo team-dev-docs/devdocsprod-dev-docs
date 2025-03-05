@@ -6,4 +6,6 @@ Refer to the guides below to learn how to generate docs for your SDKs, generate 
 
 ## Code objects
 
-## Audit Docs
+## Audit docs
+
+## Analyze docs
