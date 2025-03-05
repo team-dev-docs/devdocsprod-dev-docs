@@ -32,4 +32,4 @@ The Generate content feature allows you to generate new docs from your existing 
 
 ## Generate complete docs
 
-The Generate complete docs feature is meant for those without any existing documentation footprint. Using this feature will have the AI scan your selected codebase and generate multiple documentation pages that it believes will help a user leverage your product. To do this select **AI tools** in the top right hand corner of the web editor and navigate to **Generate complete docs** in the drop down menu. From there, select which codebase you would like to generate docs for,
+The Generate complete docs feature is meant for those without any existing documentation footprint. Using this feature will have the AI scan your selected codebase and generate multiple documentation pages that it believes will help a user leverage your product. To do this select **AI tools** in the top right hand corner of the web editor and navigate to **Generate complete docs** in the drop down menu. From there, select which codebase you would like to generate docs for and then select **D**
