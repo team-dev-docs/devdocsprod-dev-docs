@@ -16,7 +16,7 @@ Right click into the web editor to **a**
 
 ### Drop down menu
 
-Select the `+` button or type / to view the drop down menu where you can:
+Select the `+` button or type `/` to view the drop down menu where you can:
 
 * Add a table
 
