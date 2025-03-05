@@ -83,29 +83,3 @@ Check to make sure your repo name matches your desired Dev-Docs organization and
 ![Set documentation repo](/img/connect_the_starter_template_to_the_ai_editor/step_25.png)
 
 You should now see a dialog that prompts you to select your documentation repo. Make sure to select the one we set up from the dropdown. This tells Dev-Docs where your docs will live and where the Dev-Docs editor should connect.
-
-## Step 13: Open the AI editor for your new docs
-
-![Open AI editor](/img/starter_template_edit_docs.png)
-
-You'll now have access to the AI editor interface where you can start creating and editing your documentation.
-
-## Step 14: Push changes to GitHub repository
-
-![Push to GitHub](/img/connect_the_starter_template_to_the_ai_editor/step_28.png)
-
-After making changes in the AI editor, use the interface to push your updates to the GitHub repo, ensuring your documentation stays in sync.
-
-## Step 15: Review and manage your documentation
-
-Take some time to review the initial documentation structure provided by the starter template. You can now use the AI editor to:
-
-* Update existing content
-
-* Add new pages or sections
-
-* Reorganize the documentation structure
-
-* Collaborate with team members on documentation tasks
-
-Remember to regularly commit and push your changes to keep your documentation up-to-date and accessible to your team or users
