@@ -16,8 +16,6 @@ When first setting up your Docs.dev account you will be prompted to set up your 
 
 ![Set up User-Facing Docs](/img/connect_the_starter_template_to_the_ai_editor/step_11.png)
 
-Click on "install the GitHub App" to begin the integration process.
-
 ## Step 3: Confirm repository selection in GitHub
 
 ![](/img/connect_the_starter_template_to_the_ai_editor/step_13.png)
