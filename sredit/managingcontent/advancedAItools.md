@@ -16,7 +16,7 @@ Note: the files in the drop down menus are from the codebases you connected to o
 
 This feature allows you to have AI scan your existing documentation based on any prompt of your choosing. To audit your existing documentation select **AI tools** in the top right hand corner of the web editor and navigate to **Audit docs** the drop down menu. First select which docs or folders you would like to check against. If you would like for the AI to also check your docs against your codebase, you can select the checkbox, which also bring the codebases you have connected to the GitHub App into the same drop down menu.
 
-When ready, add any prompt you choose into the **Describe what you want to audit field. Examples include spelling and grammar checks or making broad sweeping changes across all your docs, such as changing names, links or anything else.**
+When ready, add any prompt you choose into the **Describe what you want to audit field. Examples include spelling and grammar checks or making broad sweeping changes across all your docs, such as changing names, links or anything else. Once you have your prompt ready,**
 
 When finished, you will see a table of suggested docs where you can select which docs you would like to generate. Everything generated here will go back into the web editor so you can edit as you see fit and then push to the GitHub branch of your choosing when ready.
 
