@@ -14,7 +14,7 @@ Note: the files in the drop down menus are from the codebases you connected to o
 
 ## Audit docs
 
-To generate docs based on your code objects select **AI tools** in the top right hand corner of the web editor.
+To generate audit your existing documentation To generate docs based on your code objects select **AI tools** in the top right hand corner of the web editor.
 
 ## Analyze docs
 
