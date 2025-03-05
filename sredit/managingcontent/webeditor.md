@@ -14,7 +14,7 @@ On the left hand side of the web editor screen you'll be able to view all your p
 
 ### Push to GitHub
 
-All edits made will be automatically synced the editing branch selected on the top left of the screen. When you are ready to push your edits to a new branch you
+All edits made will be automatically synced the editing branch selected on the top left of the screen. When you are ready to push your edits to a new branch you can select **Push to GitHub** on the top right of the web editor screen
 
 ## Additional tools
 
