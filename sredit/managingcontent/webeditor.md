@@ -14,6 +14,6 @@ Refer to the guides below to learn more about the advanced AI functionality avai
 
 ## View raw markdown content
 
-Select the **Rich text editor&#x20;**&#x64;ropdown in the top right and select **Raw editor** to view the f
+Select the **Rich text editor&#x20;**&#x64;ropdown in the top right and select **Raw editor** to view the raw markdown that your doc will be pushed to GitHub as.
 
 SR Q: Can we make this section a like Docusaurus overview section where we have the blurb above and then the boxes that link to the various guides belowWeb
