@@ -32,4 +32,4 @@ The Generate content feature allows you to generate new docs from your existing 
 
 ## Generate complete docs
 
-The Generate complete docs feature is meant for those without any existing documentation footprint. This feature will have D
+The Generate complete docs feature is meant for those without any existing documentation footprint. This feature will have scan your selected
