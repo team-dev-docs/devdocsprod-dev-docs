@@ -1,4 +1,4 @@
-# Web editor
+# Web
 
 Here you'll find guides on the various features and functionality of our web editor.
 
