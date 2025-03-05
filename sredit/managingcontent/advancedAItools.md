@@ -22,7 +22,7 @@ When finished, you will see a table of suggested docs where you can select which
 
 ## Analyze docs
 
-The Analyze docs
+The Analyze docs feature allows you to analyze the quality of your existing documentation as a whole. Note that this doesn't check against individual docs but instead your entire documentation repo.
 
 ## Generate content
 
