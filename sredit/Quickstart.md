@@ -12,4 +12,4 @@ Click setup to go through the onboarding and either connect your existing docs r
 
 ### Connect your existing docs
 
-Select **Connect your own docs** to set up Docs.dev to
+Select **Connect your own docs** to set up Docs.dev to work with your existing documentation. You will be taken to GitHub
