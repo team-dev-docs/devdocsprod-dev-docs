@@ -16,7 +16,7 @@ Right click into the web editor to **a**
 
 ### Drop down menu
 
-Select the button or type `/`
+Select the + button or type `/`
 
 ### Add and edit frontmatter
 
