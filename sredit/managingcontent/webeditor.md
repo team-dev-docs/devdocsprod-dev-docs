@@ -39,5 +39,3 @@ You can always go back to GitHub to view the doc you have open by selecting the 
 ## View raw markdown content
 
 Select the **Rich text editor&#x20;**&#x64;ropdown in the top right and select **Raw editor** to view the raw markdown that your doc will be pushed to GitHub as. We do not offer functionality to
-
-/
