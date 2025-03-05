@@ -6,7 +6,9 @@ Refer to the guides below to learn how to generate docs for your SDKs, generate 
 
 ## Code objects
 
-This feature allows you to generate net new docs from code objects directly in your SDK. To do this select the **AI tools** drop down in the top right of the web editor and select **Code objects**. Once selected you
+This feature allows you to generate net new docs from code objects directly in your SDK. To do this select the **AI tools** drop down in the top right of the web editor and select **Code objects**. Once selected, go through the drop down menus to select which codefiles from the connected repos
+
+If you do not see the relevant code files
 
 ## Audit docs
 
