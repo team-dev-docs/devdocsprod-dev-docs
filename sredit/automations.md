@@ -4,6 +4,6 @@ Prevent documentation drift by automating your docs directly in the GitHub workf
 
 * Generate docs from PRs
 
-*
+* W
 
 (coming soon)
