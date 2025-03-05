@@ -6,8 +6,6 @@ Refer to the guides below to learn more about the advanced AI functionality avai
 
 ## Branch Logic
 
-/
-
 ## Additional tools
 
 ### AI assisted writing
