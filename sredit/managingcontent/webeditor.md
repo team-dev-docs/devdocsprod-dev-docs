@@ -24,7 +24,7 @@ Highlight any text and select **AI tools&#x20;**&#x74;o have AI assist your writ
 
 ### Drop down menu
 
-Highlight any text, select the `+` button, or type `/` to view the drop down menu where you can:
+Highlight any text, select the `+` button, or type `/` to view a drop down menu where you can:
 
 * Format headings
 
