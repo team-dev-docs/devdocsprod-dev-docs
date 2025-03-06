@@ -4,14 +4,6 @@ Docs.dev AI can be used to generate new drafts directly from your existing docs 
 
 Refer to the guides below to learn how to learn how you can use AI to help you generate and maintain your docs.
 
-## Generate docs from code objects
-
-This feature allows you to generate net new docs from code objects in your codebase or SDK. To do this select the **AI tools** drop down in the top right hand corner of the web editor and select **Code objects** in the drop down menu. Once selected, go through the drop down menus to select which code files the code object's are defined in and then which files have relevant context (if any) for those code objects. Then enter in which types of objects you would like the AI to search for and suggest docs for. When ready, select **Submit** and the AI will go into the selected codebase(s) to find the relevant objects it believes will be helpful to document.
-
-When finished, you will see a table of suggested docs where you can select which docs you would like to generate. Everything generated here will go back into the web editor so you can edit as you see fit and then push to GitHub when ready.
-
-Note: the files in the drop down menus are from the codebases you connected to our GitHub app. If you do not see the relevant code files you can go into our GitHub App settings within GitHub to connect additional repos.
-
 ## Audit docs
 
 This feature allows you to have AI scan your existing docs based on any prompt of your choosing. To audit your existing docs select **AI tools** in the top right hand corner of the web editor and navigate to **Audit docs** the drop down menu. First select which docs or folders you would like to check against. If you would like for the AI to also check your docs against your codebase, you can select the checkbox, which also bring the codebases you have connected to the GitHub App into the same drop down menu.
