@@ -1,4 +1,4 @@
-# AI tooling
+# Generate and manage docs with AI
 
 At Docs.dev we believe great writers are really great editors. That is, the true magic happens after a writer is able to get out the first draft. We've built tooling to help you generate new drafts directly from your existing docs and public codebases, as well as some other nifty tools to help you manage your docs as a whole. You can access these advanced features by selecting **AI Tools** in the top right of the editor and selecting the functionality you'd like from the dropdown.
 
