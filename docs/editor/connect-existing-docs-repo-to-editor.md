@@ -6,10 +6,10 @@ sidebar_position: 2
 
 # Connect your docs repo
 
-## Step 1: Select **Connect your own docs**
-When first setting up your Docs.dev account you will be prompted to set up your docs.
+## Step 1: Begin setup to connect your docs
+When first setting up your Docs.dev account you will be prompted to set up your docs. Select Connect your own docs and click on Install the GitHub App to begin the integration process.
 
-![Set up docs](/img/connect_the_starter_template_to_the_ai_editor/step_8.png)
+![Set up docs](/img/newconnectdocsui.png)
 
 ## Step 2: Set up User-Facing Docs by installing the GitHub App
 To use your existing docs, select **Connect your own docs** and click on **Install the GitHub App** to begin the integration process. Clicking this will take you out of Docs.dev and into your GitHub where you can install and set up the Dev-Docs GitHub App.
