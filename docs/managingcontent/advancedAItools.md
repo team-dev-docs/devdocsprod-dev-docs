@@ -68,6 +68,8 @@ Note: the files in the drop down menus are from the codebases you connected to o
 
 ## Generate complete docs
 
-The Generate complete docs feature is meant for those without any existing documentation footprint. Using this feature will have the AI scan your selected codebase and suggest multiple documentation pages that it believes will help a user leverage your product. You can then select which pages you want it to create. To do this select **AI tools** in the top right hand corner of the web editor and navigate to **Generate complete docs** in the drop down menu. From there, select which codebase you would like to generate docs for and then select **Generate documentation**.
+The Generate complete docs feature is meant for those without any existing documentation footprint. Using this feature will have the AI scan your selected codebase and suggest multiple documentation pages that it believes will help a user leverage your product. You can then select which pages you want it to create. Follow the steps below to generate a set of new docs directly from your codebase:
+
+To do this select **AI tools** in the top right hand corner of the web editor and navigate to **Generate complete docs** in the drop down menu. From there, select which codebase you would like to generate docs for and then select **Generate documentation**.
 
 Watch the AI go to work and generate a new set of docs for your project. Once generated, everything generated will go back into the web editor so you can edit as you see fit and then push to the GitHub branch of your choosing when ready.
