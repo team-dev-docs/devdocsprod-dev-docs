@@ -72,6 +72,6 @@ The Generate complete docs feature is meant for those without any existing docum
 
 * Select **AI tools** in the top right hand corner of the web editor and navigate to **Generate complete docs** in the drop down menu.
 
-* From there, select which codebase you would like to generate docs for and then select **Generate documentation**.
+* Select which codebase you would like to generate docs for and then select **Generate documentation**.
 
 Watch the AI go to work and generate a new set of docs for your project. Once generated, everything generated will go back into the web editor so you can edit as you see fit and then push to the GitHub branch of your choosing when ready.
