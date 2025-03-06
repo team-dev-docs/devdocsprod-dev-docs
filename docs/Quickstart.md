@@ -2,13 +2,15 @@
 sidebar_position: 2
 ---
 
+
+
 # Quickstart
 
 Welcome to Docs.dev! Follow the steps below to get started in ***under 5 minutes***.
 
 ## Prerequisites
 
-* A GitHub account is required for authenticating with Docs.dev
+* A GitHub account is required for authenticating with [Docs.dev](http://Docs.dev)
 
 * A documentation repo in GitHub. If you do not have one, go [here](/docs/editor/connect-the-starter-template-to-the-ai-editor) and follow the guide to set up a new docs repo using our open source Docusaurus template
 
@@ -32,4 +34,4 @@ See [here](/docs/editor/connect-existing-docs-repo-to-editor) for a step by step
 
 ## Support
 
-Shoot us a note at founders@dev-docs.io if you have any questions at all or would like us to help get you set up or give you tour. We'd love to show you around!
+Shoot us a note at <founders@dev-docs.io> if you have any questions at all or would like us to help get you set up or give you tour. We'd love to show you around!
