@@ -22,9 +22,7 @@ Refer to the guides below to learn how to learn how you can use AI to help you g
 
 * Select **Submit** once you have your prompt ready and let the AI go to work.
 
-When complete, you will see a table of suggested changes when finished. From there, select which docs you would like it automatically generate.
-
-Everything generated here will go back into the web editor so you can edit as you see fit and then push to the GitHub branch of your choosing when ready.
+When complete, you will see a table of suggested changes when finished. From there, select which docs you would like it automatically generate. Everything generated here will go back into the web editor so you can edit as you see fit and then push to the GitHub branch of your choosing when ready.
 
 ## Analyze docs
 
