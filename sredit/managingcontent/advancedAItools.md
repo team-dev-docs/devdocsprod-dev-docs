@@ -2,9 +2,7 @@
 
 Docs.dev AI can be used to generate new drafts directly from your existing docs and public codebases, as well as to manage your docs as a whole. You can access these advanced features by selecting **AI Tools** in the top right of the editor and selecting the functionality you'd like from the dropdown.
 
-Refer to the guides below to learn how to learn what you can do
-
-generate docs for your SDKs, generate all your docs from scratch, generate one off docs, and audit or analyze all of your existing docs.
+Refer to the guides below to learn how to learn what you can do with
 
 ## Code objects
 
