@@ -8,4 +8,4 @@ Prevent documentation drift by automating your docs directly in the GitHub workf
 
 * and more
 
-This feature is in beta. Reach out directly to how to get set up.
+This feature is in beta. Reach out directly to get set up.
