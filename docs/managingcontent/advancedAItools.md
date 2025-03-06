@@ -12,7 +12,7 @@ Refer to the guides below to learn how to learn how you can use AI to help you g
 
 ## Audit docs
 
-**Audit docs** allows you to have AI scan your existing docs based on any prompt of your choosing.
+**Audit docs** allows you to have AI scan your existing docs based on any prompt of your choosing. You can use
 
 To audit your existing docs select **AI tools** in the top right hand corner of the web editor and navigate to **Audit docs** in the drop down menu. First select which docs or folders you would like to check against. If you would like for the AI to also check your docs against your codebase, you can select the checkbox. Selecting this will bring the codebases you have connected to the GitHub App into the same drop down menu.
 
