@@ -1,4 +1,4 @@
-# Web editor
+# Manage contentWeb editor
 
 The Docs.dev web editor was built to work directly with your existing workflow. Once connected with your docs repo on GitHub (see Quickstart \[LINK]), all your markdown docs will be viewable and editable directly in a rich text editor. Use the editor to create new drafts, edit existing content, leverage AI assisted writing capabilities, and more. Everything you do will be pushed back to the GitHub branch of your choosing as markdown or mdx, where you can continue to edit and continue with your normal editing and publishing workflow.
 
