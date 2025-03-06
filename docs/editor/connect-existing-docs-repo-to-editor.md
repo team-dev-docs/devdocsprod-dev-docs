@@ -8,7 +8,7 @@ sidebar_position: 2
 
 ## Step 1: Select **Connect your own docs**
 
-When first setting up your Docs.dev account you will be prompted to set up your docs. Select **Connect your own docs** to
+When first setting up your Docs.dev account you will be prompted to set up your docs. Select **Connect your own docs** and click on **Install the GitHub App** to begin the integration process
 
 ![Set up docs](/img/connect_the_starter_template_to_the_ai_editor/step_8.png)
 
