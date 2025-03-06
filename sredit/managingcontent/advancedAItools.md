@@ -10,7 +10,7 @@ This feature allows you to generate net new docs from code objects in your SDK. 
 
 When finished, you will see a table of suggested docs where you can select which docs you would like to generate. Everything generated here will go back into the web editor so you can edit as you see fit and then push to GitHub when ready.
 
-Note: the files in the drop down menus are from the codebases you connected to our GitHub app. If you do not see the relevant code files you can go into our GitHub app settings within GitHub to connect additional repos.
+Note: the files in the drop down menus are from the codebases you connected to our GitHub app. If you do not see the relevant code files you can go into our GitHub App settings within GitHub to connect additional repos.
 
 ## Audit docs
 
