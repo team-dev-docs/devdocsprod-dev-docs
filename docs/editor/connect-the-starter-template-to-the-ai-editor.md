@@ -10,7 +10,7 @@ sidebar_position: 2
 
 When first setting up your Docs.dev account you will be prompted to set up your docs. If you don't have a documentation repo and you would like use our starter template, select **Don't have docs to connect? Use our GitHub docs template**. Clicking this will take you out of Docs.dev and into your GitHub where you can install and set up the Dev-Docs GitHub App.
 
-![](upload)
+![](/img/newconnectdocsui.png)
 
 ## Step 3: Create a new repo on GitHub
 
