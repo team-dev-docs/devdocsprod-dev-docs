@@ -6,7 +6,7 @@ sidebar_position: 2
 
 # Connect your docs repo
 
-## Step 1: Select **Connect your own docs**
+## Step 1: Begin **setup**
 
 When first setting up your Docs.dev account you will be prompted to set up your docs. Select **Connect your own docs** and click on **Install the GitHub App** to begin the integration process.
 
