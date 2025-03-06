@@ -14,7 +14,7 @@ Refer to the guides below to learn how to learn how you can use AI to help you g
 
 **Audit docs** allows you to have AI scan your existing docs based on any prompt of your choosing. Examples of how to use it include spelling and grammar checks across your docs or making broad sweeping changes across all your docs, such as changing names or links. Follow the steps below to audit your existing docs:
 
-* select **AI tools** in the top right hand corner of the web editor and navigate to **Audit docs** in the drop down menu
+* select **AI tools** in the top right hand corner of the web editor and navigate to **Audit docs** in the drop down menu.
 
 * Select which docs or folders you would like to check against. If you would like for the AI to also check your docs against your codebase, you can select the checkbox. Selecting this will bring the codebases you have connected to the GitHub App into the same drop down menu.
 
