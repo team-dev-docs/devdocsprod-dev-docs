@@ -28,4 +28,8 @@ export default function Home(): JSX.Element {
   return (
     <Redirect to="/docs" />
   );
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> stephensediting
