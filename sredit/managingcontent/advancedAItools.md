@@ -4,7 +4,7 @@ Docs.dev AI can be used to generate new drafts directly from your existing docs 
 
 Refer to the guides below to learn how to learn how you can use AI to help you generate and maintain your docs.
 
-## Generate docs from Code objects
+## Generate docs from code objects
 
 This feature allows you to generate net new docs from code objects in your codebase or SDK. To do this select the **AI tools** drop down in the top right hand corner of the web editor and select **Code objects** in the drop down menu. Once selected, go through the drop down menus to select which code files the code object's are defined in and then which files have relevant context (if any) for those code objects. Then enter in which types of objects you would like the AI to search for and suggest docs for. When ready, select **Submit** and the AI will go into the selected codebase(s) to find the relevant objects it believes will be helpful to document.
 
