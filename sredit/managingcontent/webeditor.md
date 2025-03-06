@@ -44,7 +44,7 @@ Select the information button on the top right of web editor to add or edit fron
 
 ### View in GitHub
 
-You can always go back to GitHub to view the doc you have open by selecting the information button on the top right and selecting **View on GitHub**. Feel free to edit in GitHub, locally, or however you choose! Any changes made in the web editor or on GitHub will be bidirectionally synced.
+You can always go back to GitHub to view the doc you have open by selecting the information button on the top right and selecting **View on GitHub**. Feel free to edit in GitHub, locally or however you choose! Any changes made in the web editor or on GitHub will be bidirectionally synced.
 
 ### Renaming and deleting drafts
 
