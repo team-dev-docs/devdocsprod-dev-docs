@@ -1,3 +1,7 @@
+---
+sidebar_position: 4
+---
+
 # Automate the process in GitHub (beta)
 
 Prevent documentation drift by automating your docs directly in the GitHub workflow
