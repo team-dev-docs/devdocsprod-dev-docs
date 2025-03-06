@@ -16,7 +16,7 @@ Everything generated here will go back into the web editor so you can edit as yo
 
 The Analyze docs feature allows you to analyze the quality of your existing documentation as a whole. Note that this doesn't check against individual docs but instead your entire docs repo. To do this select **AI tools** in the top right hand corner of the web editor and navigate to **Analyze docs** in the drop down menu. The AI will go to work and will start to analyze your docs.
 
-When finished you'll see a list of personas that have grades against them. These are the personas that the AI believes your docs are intended to be positioned for, as well as a grade for how effective they are. Below you'll see the AI suggest some docs that it believes will be helpful to add to your docs site to improve the effectiveness for a given persona. Select which files you'd like to generate and let the AI create some drafts for you. Everything generated here will go back into the web editor so you can edit as you see fit and then push to the GitHub branch of your choosing when ready.
+When finished you'll see a list of personas that have grades against them. These are the personas that the AI believes your docs are intended to be positioned for, as well as a grade for how effective they are at speaking to that persona. Below you'll see the AI suggest some docs that it believes will be helpful to add to your docs site to improve the effectiveness for a given persona. Select which files you'd like to generate and let the AI create some drafts for you. Everything generated here will go back into the web editor so you can edit as you see fit and then push to the GitHub branch of your choosing when ready.
 
 ## Generate content
 
