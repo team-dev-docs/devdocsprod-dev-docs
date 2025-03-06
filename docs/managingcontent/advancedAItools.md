@@ -56,7 +56,7 @@ This feature allows you to generate net new docs from code objects in your codeb
 
 * Select the **AI tools** drop down in the top right hand corner of the web editor and select **Code objects** in the drop down menu.
 
-* Ggo through the drop down menus to select which code files the code objects are defined in and then which files have relevant context (if any) for those code objects.
+* Go through the drop down menus to select which code files the code objects are defined in and then which files have relevant context (if any) for those code objects.
 
 * Enter in which types of objects you would like the AI to search for and suggest docs for.
 
