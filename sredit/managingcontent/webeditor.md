@@ -16,7 +16,7 @@ On the left hand side of the web editor screen you'll be able to view all your p
 
 All edits made will be automatically synced with the editing branch selected on the top left of the screen. When you are ready to push your edits to a new branch you can select **Push to GitHub** on the top right of the web editor screen. Once selected you will be able to select which drafts you want to push as well as which branch you want to push the drafts to.
 
-## Additional tools
+## Additional editing tools
 
 ### AI assisted writing
 
