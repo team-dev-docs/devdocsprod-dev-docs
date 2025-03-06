@@ -18,7 +18,7 @@ Refer to the guides below to learn how to learn how you can use AI to help you g
 
 * Select which docs or folders you would like to check against. If you would like for the AI to also check your docs against your codebase, you can select the checkbox. Selecting this will bring the codebases you have connected to the GitHub App into the same drop down menu.
 
-When ready, add any prompt you choose into the **Describe what you want to audit field**.. Select **Submit** once you have your prompt ready and let the AI go to work. It will scan your existing docs and then populate a table of suggested changes when finished. From there, select which docs you would like it automatically generate.
+* When ready, add any prompt you choose into the **Describe what you want to audit field**.. Select **Submit** once you have your prompt ready and let the AI go to work. It will scan your existing docs and then populate a table of suggested changes when finished. From there, select which docs you would like it automatically generate.
 
 Everything generated here will go back into the web editor so you can edit as you see fit and then push to the GitHub branch of your choosing when ready.
 
