@@ -1,4 +1,4 @@
-# Automations (coming soon)
+# Automate the process in GitHub (coming soon)
 
 Prevent documentation drift by automating your docs directly in the GitHub workflow
 
