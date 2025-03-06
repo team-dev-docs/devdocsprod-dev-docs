@@ -42,7 +42,9 @@ The **Generate content** feature allows you to generate new docs from your exist
 
 * Select **AI tools** in the top right hand corner of the web editor and navigate to **Generate content** in the drop down menu.
 
-* Select which docs you would like to use as context. You can also check the checkbox to use your other connected codebases as context. Once you have all your context selected, insert your prompt into the text field and hit submit to get a new doc page. Everything generated here will go back into the web editor so you can edit as you see fit and then push to the GitHub branch of your choosing when ready.
+* Select which docs you would like to use as context.
+
+* (Optional) You can also check the checkbox to use your other connected codebases as context. Once you have all your context selected, insert your prompt into the text field and hit submit to get a new doc page. Everything generated here will go back into the web editor so you can edit as you see fit and then push to the GitHub branch of your choosing when ready.
 
 ## Generate docs from code objects
 
