@@ -10,7 +10,7 @@ Welcome to Docs.dev! Follow the steps below to get started in ***under 5 minutes
 
 * A GitHub account is required for authenticating with Docs.dev
 
-* A documentation repo in GitHub. If you do not have one, go here [LINK DOC] and follow the guide to set up a new docs repo using our open source Docusaurus template
+* A documentation repo in GitHub. If you do not have one, go [here](/docs/editor/connect-the-starter-template-to-the-ai-editor) and follow the guide to set up a new docs repo using our open source Docusaurus template
 
 ## Create account
 
@@ -28,7 +28,7 @@ We recommend you start by providing access to only the repo where your docs are 
 
 Once you have installed the GitHub App and selected which repo(s) to connect, come back to [app.docs.dev](https://app.docs.dev/) and close the loop by inputting which repo your documentation lives in. Congrats! Now you're all set up and ready to go! Select **Edit docs** to open up the web editor and get going.
 
-See here [LINK DOC] for a step by step guide on connecting your existing docs.
+See [here](/docs/editor/connect-existing-docs-repo-to-editor) for a step by step guide on connecting your existing docs.
 
 ## Support
 

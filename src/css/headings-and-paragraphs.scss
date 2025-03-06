@@ -159,6 +159,7 @@ h6 {
 // Paragraphs
 p {
   @include vertical-margin($base-margin);
+  padding-top: 2rem;
 }
 
 // Unordered Lists
