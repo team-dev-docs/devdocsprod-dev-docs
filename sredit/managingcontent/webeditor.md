@@ -4,7 +4,7 @@ The Docs.dev web editor was built to work directly with your existing workflow. 
 
 Below you'll see some information on how the web editor works and some of the basic functionality of it. Refer to the additional docs to learn how to leverage the more advanced AI functionality that Docs.dev has to offer.
 
-## GitHub branch Logic
+## GitHub branch logic
 
 Docs.dev pulls in your docs from the repo you selected. However, you have full control over what branch you are editing on and that you push your edits to.
 
