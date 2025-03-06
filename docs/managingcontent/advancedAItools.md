@@ -58,7 +58,7 @@ This feature allows you to generate net new docs from code objects in your codeb
 
 * Ggo through the drop down menus to select which code files the code objects are defined in and then which files have relevant context (if any) for those code objects.
 
-* Then enter in which types of objects you would like the AI to search for and suggest docs for. When ready, select **Submit** and the AI will go into the selected codebase(s) to find the relevant objects it believes will be helpful to document.
+* Enter in which types of objects you would like the AI to search for and suggest docs for. When ready, select **Submit** and the AI will go into the selected codebase(s) to find the relevant objects it believes will be helpful to document.
 
 When finished, you will see a table of suggested docs where you can select which docs you would like to generate. Everything generated here will go back into the web editor so you can edit as you see fit and then push to GitHub when ready.
 
