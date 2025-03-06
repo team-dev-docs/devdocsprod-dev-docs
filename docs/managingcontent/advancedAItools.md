@@ -26,7 +26,7 @@ When complete, you will see a table of suggested changes when finished. From the
 
 ## Analyze docs
 
-The Analyze docs feature allows you to analyze the quality of your existing documentation as a whole. Note that this doesn't check against individual docs but instead your entire docs repo. To analyze your docs
+The Analyze docs feature allows you to analyze the quality of your existing documentation as a whole. Note that this doesn't check against individual docs but instead your entire docs repo. Follow the steps below to analyze your existing docs:
 
 do this select **AI tools** in the top right hand corner of the web editor and navigate to **Analyze docs** in the drop down menu. The AI will go to work and will start to analyze your docs.
 
