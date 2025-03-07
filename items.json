@@ -17,6 +17,12 @@
             "position": "left",
             "prependBaseUrlToHref": true,
             "href": "/changelog"
+        },
+        {
+            "label": "APIs",
+            "position": "left",
+            "prependBaseUrlToHref": true,
+            "href": "/apis"
         }
     ]
 }
