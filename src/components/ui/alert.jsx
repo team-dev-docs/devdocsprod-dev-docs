@@ -4,6 +4,7 @@ import { unified } from 'unified';
 import markdown from 'remark-parse';
 import remark2rehype from 'remark-rehype';
 import rehype2react from 'rehype-react';
+import { useColorMode } from '@docusaurus/theme-common';
 
 import { cn } from "@site/src/utils"
 
@@ -18,7 +19,7 @@ const alertVariants = cva(
       variant: {
         default: "bg-background text-foreground",
         destructive:
-          "border-destructive/50 text-destructive dark:border-destructive [&>svg]:text-destructive",
+          "text-destructive dark:border-destructive [&>svg]:text-destructive",
       },
     },
     defaultVariants: {
@@ -40,29 +41,57 @@ const processChildren = (children) => {
   return processedChildren;
 };
 
-const Alert = React.forwardRef(({ className, variant, ...props }, ref) => (
-  <div
-    ref={ref}
-    role="alert"
-    className={cn(alertVariants({ variant }), className)}
-    {...props} />
-))
+const Alert = React.forwardRef(({ className, variant, ...props }, ref) => {
+  const { colorMode } = useColorMode();
+  const alertStyle = {
+    backgroundColor: colorMode === 'dark' ? '#0A0A0A' : 'white',
+    border: colorMode === 'dark' ? '1px solid rgba(255, 255, 255, 0.1)' : '1px solid rgba(0, 0, 0, 0.1)',
+    color: variant === 'destructive' 
+      ? (colorMode === 'dark' ? '#ef4444' : '#dc2626')
+      : (colorMode === 'dark' ? '#FFFFFF' : '#000000')
+  };
+
+  return (
+    <div
+      ref={ref}
+      role="alert"
+      style={alertStyle}
+      className={cn(alertVariants({ variant }), className)}
+      {...props} />
+  )
+})
 Alert.displayName = "Alert"
 
-const AlertTitle = React.forwardRef(({ className, ...props }, ref) => (
-  <h5
-    ref={ref}
-    className={cn("mb-1 font-medium leading-none tracking-tight", className)}
-    {...props} />
-))
+const AlertTitle = React.forwardRef(({ className, ...props }, ref) => {
+  const { colorMode } = useColorMode();
+  const titleStyle = {
+    color: colorMode === 'dark' ? '#FFFFFF' : '#000000'
+  };
+
+  return (
+    <h5
+      ref={ref}
+      style={titleStyle}
+      className={cn("mb-1 font-medium leading-none tracking-tight", className)}
+      {...props} />
+  )
+})
 AlertTitle.displayName = "AlertTitle"
 
-const AlertDescription = React.forwardRef(({ className, ...props }, ref) => (
-  <div
-    ref={ref}
-    className={cn("text-sm [&_p]:leading-relaxed", className)}
-    {...props} />
-))
+const AlertDescription = React.forwardRef(({ className, ...props }, ref) => {
+  const { colorMode } = useColorMode();
+  const descriptionStyle = {
+    color: colorMode === 'dark' ? 'rgba(255, 255, 255, 0.7)' : 'rgba(0, 0, 0, 0.7)'
+  };
+
+  return (
+    <div
+      ref={ref}
+      style={descriptionStyle}
+      className={cn("text-sm [&_p]:leading-relaxed", className)}
+      {...props} />
+  )
+})
 AlertDescription.displayName = "AlertDescription"
 
 const DevDocsAlert = React.forwardRef(({ className, children, customIcon: CustomIcon, ...props }, ref) => (

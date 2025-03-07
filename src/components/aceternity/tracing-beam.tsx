@@ -91,6 +91,7 @@ export const TracingBeam = ({
           className=" ml-4 hidden lg:block"
           aria-hidden="true"
         >
+          
           <motion.path
             d={`M 1 0V -36 l 18 24 V ${svgHeight * 0.8} l -18 24V ${svgHeight}`}
             fill="none"

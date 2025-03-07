@@ -1,75 +1,57 @@
 import React from 'react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs"
+import CodeBlock from '@theme/CodeBlock';
 
+const CodeSnippets = ({ children }) => {
+  // Extract code blocks from MDX structure
+  const codeBlocks = React.Children.toArray(children)
+    .map(child => {
+      let childObject = {...child.props.children.props}
+      // Extract language and filename from className (format: "language-javascript::filename")
+      const [langPart, fileName] = childObject.className.split("::");
+      const language = langPart.replace('language-', '');
+      
+      return {
+        ...childObject,
+        language,
+        fileName,
+        // Keep the original className for Prism highlighting
+        prismClassName: `language-${language}`
+      };
+    });
 
-
-
-
-
-function findPreElements(children) {
-  let preElements = [];
-
-  React.Children.forEach(children, child => {
-    if (React.isValidElement(child)) {
-      if (child.props.parentName === 'pre') {
-        preElements.push(child);
-      }
-
-      if (child.props.children) {
-        preElements = preElements.concat(findPreElements(child.props.children));
-      }
-    }
-  });
-
-  return preElements;
-}
-
-// Usage:
-// const preElements = findPreElements(props.children);
-
-const CodeSnippets = (props) => {
-  const parseCodeSnippets = (props) => {
-    let preElements = findPreElements(props);
-
-    let codeBlocks = [];
-    const triggers = [];
-    const contents = [];
-    for (const prop of preElements) {
-      let child = prop
-      console.log("this is the child", child)
-
-      let languageAndContext = child.props.className.split("-")[1]
-      let language = languageAndContext.split("::")[0]
-      let langContext = languageAndContext.split("::")[1]
-      triggers.push(
-        <TabsTrigger key={languageAndContext} value={languageAndContext}>{`${language} ${langContext || ""}`}</TabsTrigger>
-      );
-
-      contents.push(
-        <TabsContent className="mt-2" key={languageAndContext} value={languageAndContext}>
-          {child}
-        </TabsContent>
-      );
-
-      console.log("is this looping")
-    }
-
-    console.log("this is the code blocks", codeBlocks)
-    console.log("this is the triggers", triggers)
-    console.log("this is the contents", contents)
-    return { triggers, contents };
-  };
-
-  // Convert children to a string
-  const { triggers, contents } = parseCodeSnippets(props.children);
+  if (codeBlocks.length === 0) {
+    console.warn('No valid code blocks found');
+    return null;
+  }
 
   return (
     <div className="mt-[1em]">
-      <Tabs defaultValue={triggers.length > 0 ? triggers[0].props.value : ''}>
+      <Tabs defaultValue={codeBlocks[0].className}>
         <TabsList>
-          {triggers}
+          {codeBlocks.map(({ className, fileName }) => (
+            <TabsTrigger 
+              key={className} 
+              value={className}
+            >
+              {fileName}
+            </TabsTrigger>
+          ))}
         </TabsList>
-        {contents}
+        {codeBlocks.map(({ className, children, language }) => (
+          <TabsContent 
+            key={className} 
+            value={className}
+            className="mt-2"
+          >
+            <CodeBlock
+              language={language}
+              showLineNumbers
+            >
+              {children}
+            </CodeBlock>
+          </TabsContent>
+        ))}
       </Tabs>
     </div>
   );

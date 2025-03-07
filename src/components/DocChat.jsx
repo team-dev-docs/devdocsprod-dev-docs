@@ -1,4 +1,5 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect, useCallback, Fragment, useRef } from "react";
+import * as jsxRuntime from 'react/jsx-runtime';
 import { unified } from "unified";
 import markdown from "remark-parse";
 import remark2rehype from "remark-rehype";
@@ -6,6 +7,8 @@ import rehype2react from "rehype-react";
 import CodeBlock from "../components/ui/codeblock";
 import { Input } from "../components/ui/input";
 import { badgeVariants, Badge } from "../components/ui/badge";
+import aiConfig from '@site/ai.json';
+import TerminalLogo from '../../static/svgs/terminallogo.svg';
 
 import {
   AlertDialog,
@@ -19,6 +22,8 @@ import {
   AlertDialogTrigger,
 } from "../components/ui/alert-dialog";
 import { Button } from "../components/ui/button";
+import { IconX, IconSend2 } from "@tabler/icons-react";
+import logoJson from "../../logo.json";
 
 import {
   Carousel,
@@ -28,18 +33,11 @@ import {
   CarouselPrevious,
 } from "../components/ui/carousel";
 
-import logoJson from "../../logo.json";
-import chatJson from "../../chat.json";
-import { IconX, IconSend2 } from "@tabler/icons-react";
-
-
 const { logo } = logoJson;
-const { chatUrl } = chatJson;
 
 function capitalizeFirstLetterOfEachWord(str) {
   return str.replace(/(^\w|\s\w)/g, (match) => match.toUpperCase());
 }
-
 
 const useViewport = () => {
   const [viewport, setViewport] = useState({
@@ -76,6 +74,9 @@ const processor = unified()
   .use(remark2rehype)
   .use(rehype2react, {
     createElement: React.createElement,
+    Fragment: React.Fragment,
+    jsx: jsxRuntime.jsx,
+    jsxs: jsxRuntime.jsxs,
     components: {
       pre: CodeBlock,
     },
@@ -142,91 +143,145 @@ const SendInput = () => {
   );
 };
 
-function ChatBox({ messages, onSendMessage }) {
+function ChatBox({ messages, onSendMessage, onModeChange }) {
   const [showChatBox, setShowChatBox] = useState(false);
   const [loadingBar, setLoadingBar] = useState(false);
   const [message, setMessage] = React.useState("");
   const [isFullScreen, setIsFullScreen] = useState(false);
   const [isDialogOpen, setIsDialogOpen] = useState(false);
+  const [docsContent, setDocsContent] = useState(null);
+  const [showModeDropdown, setShowModeDropdown] = useState(false);
+  const [currentMode, setCurrentMode] = useState('normal');
+  const dropdownRef = useRef(null);
   
-
-
   const { width, height } = useViewport();
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setShowModeDropdown(false);
+      }
+    }
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
+  const handleModeChange = (mode) => {
+    setCurrentMode(mode);
+    setShowModeDropdown(false);
+    if (onModeChange) {
+      onModeChange(mode);
+    }
+  };
+
+  useEffect(() => {
+    // Fetch the docs content when component mounts
+    fetch('/llms-full.txt')
+      .then(response => response.text())
+      .then(content => {
+        setDocsContent(content);
+      })
+      .catch(error => {
+        console.error('Error loading docs content:', error);
+      });
+  }, []);
 
   const handleSendMessage = async (event) => {
     event.preventDefault();
-
     const trimmedMessage = message.trim();
 
-    // Check if the trimmed message is not empty
-    if (trimmedMessage == "") {
-      console.log("Sending message:", trimmedMessage);
+    if (!trimmedMessage) {
       setMessage("");
+      return;
+    }
+
+    const token = localStorage.getItem('github_token');
+    if (!token) {
+      messages.push(
+        { text: message, sender: "user" },
+        { text: 'Please sign in to use the chat feature' }
+      );
+      setMessage("");
+      return;
+    }
+
+    if (!aiConfig.github_features) {
       return;
     }
 
     messages.push({ text: message, sender: "user" });
     setLoadingBar(true);
-    setMessage("")
+    setMessage("");
+
     let messagesContainer = document.querySelector('.end-of-chat');
     let fullMessagesContainer = document.querySelector('.end-of-chat-fullscreen');
     if (messagesContainer) {
-      console.log("this the container", messagesContainer)
       messagesContainer.scrollIntoView({ behavior: 'smooth' });
-      // messagesContainer.scrollTop = messagesContainer.scrollHeight * 2;
     } 
     if(fullMessagesContainer) {
       fullMessagesContainer.scrollIntoView({ behavior: 'smooth' });
     }
+
     try {
-      const response = await fetch(chatUrl, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ query: trimmedMessage }),
+      const myHeaders = new Headers();
+      myHeaders.append('X-GitHub-Token', token);
+      myHeaders.append('Content-Type', 'application/json');
+
+      const raw = JSON.stringify({
+        messages: [
+          {
+            role: 'system',
+            content: `You are a helpful documentation assistant that helps users understand the codebase and documentation. 
+            You have access to the following documentation content:
+            
+            ${docsContent}
+            
+            Please use this information to provide accurate and relevant answers to user questions. When referencing specific parts of the documentation, 
+            try to be precise and quote relevant sections when appropriate.`,
+          },
+          {
+            role: 'user',
+            content: trimmedMessage,
+          },
+        ],
       });
 
+      const requestOptions = {
+        method: 'POST',
+        headers: myHeaders,
+        body: raw,
+        redirect: 'follow',
+      };
+
+      const response = await fetch('http://localhost:3000/copilot/chat/completions', requestOptions);
       if (!response.ok) {
-        throw new Error("Failed to get response from server");
+        throw new Error('Failed to get response from server');
       }
 
       const data = await response.json();
+      const answer = data.choices[0].message.content;
 
-      const answer = data?.text;
       let messageItem = {
-        text: `${answer} \n Here are the sources and other relevant articles:`,
+        text: answer,
         sources: [],
       };
 
-      const { metadatas } = data?.relevantDocuments;
-      let metadatasList = metadatas[0];
-      metadatasList.forEach((messageObject) => {
-        let filename = messageObject?.file.split(".md")[0].replace(/\_/g, " ");
-        let camelSourceName = capitalizeFirstLetterOfEachWord(filename);
-        let markdownPath = `(/${messageObject?.path
-          .split(".md")[0]
-          .replace(/\s/g, "%20")})`;
-        let existingMessage = messageItem.sources.find(function (message) {
-          return message.text.includes(markdownPath);
-        });
-        console.log(existingMessage);
-        if (!existingMessage) {
-          messageItem.sources.push({
-            text: `[${camelSourceName}]${markdownPath}`,
-          });
-          // messages.push({
-          //   text: `[Original Source]${markdownPath} \n ${camelSourceName}`,
-          // });
-        }
-      });
-     
+      // If you want to keep the source functionality, you can add it here
+      // For now, we'll just push the AI response
       messages.push(messageItem);
     } catch (error) {
       console.error(error);
+      messages.push({
+        text: 'Sorry, there was an error processing your request.',
+      });
+    } finally {
+      setLoadingBar(false);
+      setMessage("");
     }
-    setLoadingBar(false);
-    setMessage("");
   };
 
   const toggleFullScreen = () => {
@@ -275,6 +330,50 @@ function ChatBox({ messages, onSendMessage }) {
           <SvgBackgroundImage imageUrl={logo} />
 
           <h3 className="pl-4 chat-header">Dev-Docs AI Bot</h3>
+          
+          <div className="flex items-center ml-auto mr-4">
+            <div className="relative" ref={dropdownRef}>
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setShowModeDropdown(!showModeDropdown);
+                }}
+                className="flex items-center space-x-2 px-3 py-2 text-sm text-gray-400 hover:text-white focus:outline-none"
+              >
+                  <TerminalLogo className="w-4 h-4 mr-2" />
+
+              </button>
+              {showModeDropdown && (
+                <div className="absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-[#323233] ring-1 ring-black ring-opacity-5">
+                  <div className="py-1" role="menu" aria-orientation="vertical">
+                    <button
+                      className={`block w-full text-left px-4 py-2 text-sm ${
+                        currentMode === 'terminal' ? 'bg-[#424242] text-white' : 'text-gray-300 hover:bg-[#424242]'
+                      }`}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        handleModeChange('terminal');
+                      }}
+                    >
+                      Terminal mode
+                    </button>
+                    <button
+                      className={`block w-full text-left px-4 py-2 text-sm ${
+                        currentMode === 'normal' ? 'bg-[#424242] text-white' : 'text-gray-300 hover:bg-[#424242]'
+                      }`}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        handleModeChange('normal');
+                      }}
+                    >
+                      Normal mode
+                    </button>
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+
           <AlertDialog open={isDialogOpen} className="mt-12">
             <AlertDialogTrigger asChild>
               <Button
