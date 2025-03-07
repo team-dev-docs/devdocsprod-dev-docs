@@ -6,8 +6,9 @@ import svgToDataUri from "mini-svg-data-uri";
 import { BackgroundGradientAnimation } from "@site/src/components/background-gradient-animation";
 import { Button } from "../../components/ui/button"
 import { ExternalLink } from 'lucide-react'
-
-
+import AiBanner from "../../components/AiBanner";
+import DocSummary from "../../components/DocSummary";
+import GitHubAuth from "../../components/GitHubAuth";
 
 
 export default function MDXContentWrapper(props) {
@@ -100,6 +101,9 @@ export default function MDXContentWrapper(props) {
       ) : (
           <TracingBeam>
             <div id="tracing-beam">
+              <AiBanner />
+              <DocSummary content={props.children?.props?.children || props.children} />
+              <GitHubAuth />
               <MDXContent style={{ backgroundImage: image }} {...props} />
             </div>
           </TracingBeam>

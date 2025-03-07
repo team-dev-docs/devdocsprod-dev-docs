@@ -7,6 +7,7 @@ import InfoBox from '@site/src/components/InfoBox';
 import { DevDocsCard } from '@site/src/components/ui/card';
 import { DevDocsAccordion } from '@site/src/components/ui/accordion';
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@site/src/components/ui/tabs.jsx';
+import { Terminal } from '@site/src/components/ui/terminal';
 
 export default {
   ...MDXComponents,
@@ -18,4 +19,5 @@ export default {
   TabsList,
   TabsTrigger,
   TabsContent,
+  Terminal
 };
