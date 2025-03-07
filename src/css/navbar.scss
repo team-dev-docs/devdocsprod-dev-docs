@@ -41,6 +41,13 @@
   width: 4rem !important;
 }
 
+[class^="search"] {
+  border: none !important;
+  kbd {
+    color: transparent !important;
+  }
+}
+
 [data-theme="dark"] .navbar__items--right {
   [class^="toggle"] {
     .clean-btn {
@@ -60,6 +67,10 @@
       }
     }
   }
+}
+
+[class^="announcementBar"] {
+  z-index: 200;
 }
 
 .navbar__items--right {

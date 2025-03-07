@@ -140,3 +140,101 @@
 [data-theme='light'] #__docusaurus > nav > div.navbar-sidebar > div.navbar-sidebar__brand > div > button > svg.darkToggleIcon_node_modules-\@docusaurus-theme-classic-lib-theme-ColorModeToggle-styles-module > path {
   color: black !important
 }
+
+:root {
+  --search-bg-light: #ffffff;
+  --search-bg-dark: #1a1b1e;
+  --search-border-light: rgba(87, 95, 110, 0.3);
+  --search-border-dark: rgba(255, 255, 255, 0.1);
+  --search-text-light: #1c1e21;
+  --search-text-dark: #e3e3e3;
+}
+
+// Search dialog and input styles
+[data-theme='light'] {
+  .searchDialog {
+    background-color: var(--search-bg-light);
+    
+    input {
+      background: var(--search-bg-light);
+      color: var(--search-text-light);
+      border-color: var(--search-border-light);
+      
+      &::placeholder {
+        color: rgba(0, 0, 0, 0.5);
+      }
+    }
+  }
+
+  .searchResults {
+    background: var(--search-bg-light);
+    color: var(--search-text-light);
+  }
+}
+
+[data-theme='dark'] {
+  .searchDialog {
+    background-color: var(--search-bg-dark);
+    
+    input {
+      background: var(--search-bg-dark);
+      color: var(--search-text-dark);
+      border-color: var(--search-border-dark);
+      
+      &::placeholder {
+        color: rgba(255, 255, 255, 0.5);
+      }
+    }
+  }
+
+  .searchResults {
+    background: var(--search-bg-dark);
+    color: var(--search-text-dark);
+  }
+}
+
+// Common styles
+.searchDialog {
+  input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    border-width: 1px;
+    border-style: solid;
+    transition: all 0.2s ease;
+    
+    &:focus {
+      outline: none;
+      border-color: var(--ifm-color-primary);
+    }
+  }
+}
+
+.searchResults {
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  
+  a {
+    display: block;
+    padding: 1rem;
+    border-bottom: 1px solid var(--search-border-light);
+    
+    &:last-child {
+      border-bottom: none;
+    }
+    
+    &:hover {
+      background: var(--ifm-color-emphasis-100);
+    }
+  }
+}
+
+// Responsive styles
+@media (max-width: 996px) {
+  .searchDialog {
+    input {
+      font-size: 16px; // Prevents zoom on mobile
+    }
+  }
+}

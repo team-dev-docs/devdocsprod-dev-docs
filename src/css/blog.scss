@@ -51,16 +51,7 @@
   }
 
 
-  ul {
-    li {
-      list-style: none;
-      &::before {
-        content: "—";
-        margin-right: 0.5em;
-        display: inline-block;
-      }
-    }
-  }
+
 
 
   .table-of-contents {

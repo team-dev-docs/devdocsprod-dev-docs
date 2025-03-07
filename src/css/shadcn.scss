@@ -102,13 +102,34 @@ body {
 #__docusaurus_skipToContent_fallback  {
   .markdown {
     ol {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
       list-style: auto;
       padding-left: 1rem;
     }
     ul {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
       list-style: disc;
       padding-left: 1rem;
     }
+
+    li::marker {
+      display: none;
+    }
   }
+
+
   
+  
+}
+
+.blog-post-page li {
+  list-style: disc;
+  list-style: none;
+  &::before {
+    content: "—";
+    margin-right: 0.5em;
+    display: inline-block;
+  }
 }

@@ -1,0 +1,108 @@
+
+
+
+@mixin conditional-styles($variable) {
+  @if $variable {
+    &::before {
+      content: "";
+      position: absolute;
+      top: -15vh;
+      right: 0;
+      left: auto;
+      width: 600px; /* Adjust width and height */
+      height: 600px;
+      background-image: $variable;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 600px;
+
+      /* Apply the mask using your SVG */
+      -webkit-mask-image: url('/static/svgs/planet.svg'); /* Path to the exported SVG */
+      -webkit-mask-repeat: no-repeat;
+      -webkit-mask-position: top;
+      -webkit-mask-size: cover;
+
+      mask-image: url('/static/svgs/planet.svg'); /* Standard property for other browsers */
+      mask-repeat: no-repeat;
+      mask-position: top;
+      mask-size: cover;
+
+      background-blend-mode: soft-light;
+      z-index: -2;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+    }
+  } @else {
+    color: default-color;
+  }
+}
+
+@mixin light-conditional-styles($variable) {
+  @if $variable {
+    &::before {
+      content: "";
+      position: absolute;
+      top: -15vh;
+      right: 0;
+      left: auto;
+      width: 600px; /* Adjust width and height */
+      height: 600px;
+      background-image: $variable;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 600px;
+
+      /* Apply the mask using your SVG */
+      -webkit-mask-image: url('/static/svgs/planet.svg'); /* Path to the exported SVG */
+      -webkit-mask-repeat: no-repeat;
+      -webkit-mask-position: top;
+      -webkit-mask-size: cover;
+
+      mask-image: url('/static/svgs/planet.svg'); /* Standard property for other browsers */
+      mask-repeat: no-repeat;
+      mask-position: top;
+      mask-size: cover;
+
+      background-blend-mode: soft-light;
+      z-index: -2;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+    }
+  } @else {
+    color: default-color;
+  }
+}
+
+
+
+
+[data-theme="dark"] [class^="docRoot"] {
+  @include conditional-styles($custom-dark-background-image);
+}
+
+[data-theme="light"] [class^="docRoot"] {
+  @include light-conditional-styles($custom-light-background-image);
+}
+
+[class^="docRoot"] {
+  position: relative;
+  z-index: 1;
+}
+
+

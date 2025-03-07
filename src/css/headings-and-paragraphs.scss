@@ -159,7 +159,6 @@ h6 {
 // Paragraphs
 p {
   @include vertical-margin($base-margin);
-  padding-top: 2rem;
 }
 
 // Unordered Lists
@@ -203,4 +202,8 @@ a:hover {
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell,
   "Noto Sans", sans-serif, "system-ui", "Segoe UI", Helvetica, Arial,
   sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+}
+
+.markdown li > p {
+  margin-top: 1rem !important;
 }
