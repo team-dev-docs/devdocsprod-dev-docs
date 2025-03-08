@@ -2,6 +2,11 @@ Below is all the contents of our docs:
 
 
 
+ This is the content for the doc /docs/Misc/Generating-an-API-Key.md 
+
+ # Generating an API Key## Step 1: Click on the Avatar IconClick on the circular avatar icon to open the profile menu.xzcxzc![generating\_an\_api\_key/step\_2](/img/generating_an_api_key/step_2.png)## Step 2: Click on Personal API keysClick on the link that says "Personal API keys".![generating\_an\_api\_key/step\_3](/img/generating_an_api_key/step_3.png)## Step 3: Click on Replace and Create New API Key buttonClick on the "Replace and create new API key" button to generate a new API key.![generating\_an\_api\_key/step\_4](/img/generating_an_api_key/step_4.png)## Step 5: Replace API KeyOn the page https://www.dev-docs.io/personal\_api\_keys, click on the button with the text "Replace and create new API Key".![generating\_an\_api\_key/step\_5](/img/generating_an_api_key/step_5.png)Then copy the Dev-Docs API-Key for future use
+
+
  This is the content for the doc /docs/Overview.md 
 
  # Welcome to Docs.dev: Your AI powered docs assistantThe following guides and resources will help you get started managing your docs with Docs.dev.Docs.dev was purpose built to help docs teams create and manage their docs. All you need to do is sync up your docs repo on GitHub and you're good to go. By leveraging AI-assisted content generation and intuitive editing tools you can significantly reduce the time and effort required to produce and maintain high-quality documentation. Optionally, connect Docs.dev directly with your codebase to ensure that your docs stay up-to-date and aligned as your code changes. With collaborative features and automated workflows, you can not only enhance team productivity but also improve the overall quality and consistency of your docs, ultimately supporting better SEO and sales efforts.![](/img/hero_image.png)

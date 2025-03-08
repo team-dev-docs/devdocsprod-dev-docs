@@ -153,7 +153,7 @@ Booting up chat...
   ]);
   const [input, setInput] = useState('');
   const [height, setHeight] = useState(initialHeight);
-  const [isVisible, setIsVisible] = useState(true);
+  const [isVisible, setIsVisible] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [docsContent, setDocsContent] = useState<string | null>(null);
   const [showModeDropdown, setShowModeDropdown] = useState(false);
