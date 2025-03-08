@@ -5,6 +5,28 @@ import { unified } from 'unified';
 import remarkParse from 'remark-parse';
 import remarkStringify from 'remark-stringify';
 
+function parseFrontmatter(content) {
+  // Match content between --- markers
+  const frontmatterRegex = /^---\s*\n([\s\S]*?)\n---/;
+  const match = content.match(frontmatterRegex);
+  
+  if (!match) return null;
+  
+  // Parse the yaml-like frontmatter
+  const frontmatter = {};
+  const lines = match[1].split('\n');
+  
+  for (const line of lines) {
+    const [key, ...valueParts] = line.split(':');
+    if (key && valueParts.length) {
+      // Trim whitespace and quotes
+      const value = valueParts.join(':').trim().replace(/^['"](.*)['"]$/, '$1');
+      frontmatter[key.trim()] = value;
+    }
+  }
+  
+  return frontmatter;
+}
 
 
 
