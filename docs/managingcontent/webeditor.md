@@ -26,12 +26,12 @@ Highlight any text and select **AI tools&#x20;**&#x74;o have AI assist your writ
 ### Drop down menu
 Highlight any text, select the `+` button, or type `/` to view a drop down menu where you can:
 
-  * Format headings
-  * Create bulleted and numbered lists
-  * Insert a code block
-  * Add and image
-  * Add a table
-  * Ask Docs.dev AI for assistance
+* Format headings
+* Create bulleted and numbered lists
+* Insert a code block
+* Add and image
+* Add a table
+* Ask Docs.dev AI for assistance
 
 ### Add and edit frontmatter
 Select the information button on the top right of web editor to add or edit frontmatter.
