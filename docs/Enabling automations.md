@@ -16,10 +16,10 @@ The `dev-docs.json` file should be placed in the root directory of your reposito
 
 ### Required Fields
 
-  * `gitHubApp`: Object containing GitHub-related configurations
-    * `approvalWorkflow`: Boolean, enables or disables the approval workflow
-    * `userDocsWorkflows`: Array of strings, specifies which documentation workflows to run
-    * `issueNotifications`: Array of strings, GitHub usernames to notify on issue creation
+* `gitHubApp`: Object containing GitHub-related configurations
+  * `approvalWorkflow`: Boolean, enables or disables the approval workflow
+  * `userDocsWorkflows`: Array of strings, specifies which documentation workflows to run
+  * `issueNotifications`: Array of strings, GitHub usernames to notify on issue creation
 
 ## Example Configuration
 
