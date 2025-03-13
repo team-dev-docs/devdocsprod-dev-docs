@@ -19,10 +19,10 @@ On the GitHub page, click on **New repo** to create a new repo for your document
 ## Step 4: Set up the repo details
 Fill in the repository details:
 
-* Choose the repository template (e.g., team-dev-docs/starter-template-v3)
-* Set the owner
-* Name your repository (e.g., my\_cool\_new\_docs)
-* Choose visibility (public or private)
+  * Choose the repository template (e.g., team-dev-docs/starter-template-v3)
+  * Set the owner
+  * Name your repository (e.g., my\_cool\_new\_docs)
+  * Choose visibility (public or private)
 
 Click **Create repository** when done.
 
