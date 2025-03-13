@@ -2,7 +2,7 @@
     "items": [
         {
             "position": "left",
-            "label": "Get Started",
+            "label": "Docs",
             "prependBaseUrlToHref": true,
             "href": "/docs/"
         },
