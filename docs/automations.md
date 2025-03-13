@@ -4,7 +4,7 @@ sidebar_position: 4
 
 
 
-# Configuring dev-docs.json for Automatic Documentation Generation
+# Automations(Beta)
 
 This guide explains how to configure the `dev-docs.json` file with the GitHub app to enable automatic documentation modification and generation when your code changes.
 
