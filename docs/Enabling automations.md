@@ -8,6 +8,8 @@ sidebar_position: 5
 
 This guide explains how to configure the `dev-docs.json` file with the GitHub app to enable automatic documentation modification and generation when your code changes.
 
+## Prereqs
+
 ## File Location
 
 The `dev-docs.json` file should be placed in the root directory of your repository.
