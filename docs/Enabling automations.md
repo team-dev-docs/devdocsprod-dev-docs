@@ -14,7 +14,7 @@ This guide explains how to configure the `dev-docs.json` file with the GitHub ap
 
 * Have generated a `llm.txt` and \`llmText.json\` file from docs.dev
 
-* Have the GitHub A
+* Have the GitHub app installed on both your docs repo and codebase you want to generate content on
 
 ## File Location
 
