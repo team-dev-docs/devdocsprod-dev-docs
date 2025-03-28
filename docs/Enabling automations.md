@@ -12,9 +12,7 @@ This guide explains how to configure the `dev-docs.json` file with the GitHub ap
 
 * Have an account created on <https://app.docs.dev>
 
-* Have generated a `llm.txt` and \`llmText.json
-
-  \` file from docs.dev
+* Have generated a `llm.txt` and \`llmText.json\` file from docs.dev
 
 * Have the GitHub A
 
