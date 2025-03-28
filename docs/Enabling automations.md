@@ -14,6 +14,8 @@ This guide explains how to configure the `dev-docs.json` file with the GitHub ap
 
 * Generate a llm.txt file
 
+*
+
 ## File Location
 
 The `dev-docs.json` file should be placed in the root directory of your repository.
