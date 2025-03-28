@@ -14,7 +14,7 @@ This guide explains how to configure the `dev-docs.json` file with the GitHub ap
 
 * Generate a llm.txt file
 
-* Have
+* Have the GitHub A
 
 ## File Location
 
