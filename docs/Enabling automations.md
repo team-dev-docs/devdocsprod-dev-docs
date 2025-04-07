@@ -116,15 +116,3 @@ The `dev-docs.json` file should be placed in the root directory of your reposito
 4. Commit and push the file to your repository.
 
 The system will now use these settings to automatically generate and update documentation based on your code changes.
-
-## Usage
-
-1. Make sure you have a docs.dev account, have installed the GitHub App on your docs repo, and the codebase you want to document.
-
-2. Create a `dev-docs.json` file in your repository's root directory.
-
-3. Configure the fields according to your documentation needs.
-
-4. Commit and push the file to your repository.
-
-The system will now use these settings to automatically generate and update documentation based on your code changes.
