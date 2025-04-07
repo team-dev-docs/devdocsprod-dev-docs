@@ -40,47 +40,6 @@ The `dev-docs.json` file should be placed in the root directory of your reposito
     "approvalWorkflow": true,
     "userDocsWorkflows": ["generateUserDocs"],
     "issueNotifications": ["user1", "user2"],
-    "issues": true
-  }
-}
-```
-
-# Configuring code to doc automation
-
-This guide explains how to configure the `dev-docs.json` file with the GitHub app to enable automatic documentation modification and generation when your code changes.
-
-## Prereqs
-
-* Have an account created on <https://app.docs.dev>
-
-* Have generated a `llm.txt` and `llmText.json` file from docs.dev
-
-* Have the GitHub app installed on both your docs repo and codebase you want to generate content on
-
-## File Location
-
-The `dev-docs.json` file should be placed in the root directory of your repository.
-
-## Configuration Fields
-
-### Required Fields
-
-* `gitHubApp`: Object containing GitHub-related configurations
-
-  * `approvalWorkflow`: Boolean, enables or disables the approval workflow
-
-  * `userDocsWorkflows`: Array of strings, specifies which documentation workflows to run
-
-  * `issueNotifications`: Array of strings, GitHub usernames to notify on issue creation
-
-## Example Configuration
-
-```json
-{
-  "gitHubApp": {
-    "approvalWorkflow": true,
-    "userDocsWorkflows": ["generateUserDocs"],
-    "issueNotifications": ["user1", "user2"],
     "issues": true,
     "connectedOrg": "spriteai"
   }
