@@ -20,13 +20,13 @@ The file serves as a guide for developers to set up and customize automated docu
 ## Imported Code Object
 Certainly! Here's a concise explanation of the Example Configuration in the provided code snippet:
 
-This JSON configuration object defines settings for a GitHub App:
+This JSON configuration specifies settings for a GitHub App:
 
 1. `approvalWorkflow`: Set to `true`, enabling an approval process.
-2. `userDocsWorkflows`: An array specifying workflows related to user documentation, with "generateUserDocs" as the only item.
-3. `issueNotifications`: An array of users ("user1" and "user2") who will receive issue notifications.
+2. `userDocsWorkflows`: An array listing workflows related to user documentation generation.
+3. `issueNotifications`: An array of users to be notified about issues.
 4. `issues`: Set to `true`, indicating that the app handles GitHub issues.
 
-This configuration likely controls the behavior of a GitHub App, determining its features and notification settings.
+This configuration allows customization of the GitHub App's behavior, including workflow triggers, user notifications, and issue management features.
 
   
