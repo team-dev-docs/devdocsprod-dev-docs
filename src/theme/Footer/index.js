@@ -1,7 +1,7 @@
 import React from 'react';
 import Footer from '@theme-original/Footer';
 import Parser from '@site/src/components/OmniParser';
-import ChatBox from '@site/src/components/DocChat';
+// import ChatBox from '@site/src/components/DocChat';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { useColorMode } from '@docusaurus/theme-common';
@@ -69,7 +69,7 @@ export default function FooterWrapper(props) {
   }, [location.pathname]);
   return (
     <>
-      <ChatBox messages={[]} />
+      {/* <ChatBox messages={[]} /> */}
       <GlobalDarkModeHandler />
       
 
