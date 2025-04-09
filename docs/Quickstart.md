@@ -8,7 +8,7 @@ sidebar_position: 2
 Welcome to Docs.dev! Follow the steps below to get started in ***under 5 minutes***.
 
 ## Prerequisites
-* A GitHub account for authenticating with [Docs.dev](http://Docs.dev).
+* A GitHub account for authenticating with [Docs.dev](https://docs.dev).
 * A documentation repo in GitHub. If you do not have one, go [here](/docs/editor/connect-the-starter-template-to-the-ai-editor) and follow the guide to set up a new docs repo using our open source Docusaurus template.
 
 ## Create account

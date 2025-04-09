@@ -59,9 +59,9 @@ From the dropdown, find your newly created docs repo. Feel free to connect any o
 ![Add docs repo](/img/connect_the_starter_template_to_the_ai_editor/step_17.png)
 
 ## Step 11: Associate your repo with your Dev-Docs organization
-Once done, go back to the [Docs.dev](http://Docs.dev) web app and confirm that your repo name matches your desired [Docs.dev](http://Docs.dev) organization and select **Complete GitHub App Setup**.
+Once done, go back to the [Docs.dev](https://docs.dev) web app and confirm that your repo name matches your desired [Docs.dev](https://docs.dev) organization and select **Complete GitHub App Setup**.
 
 ![Associate repo with Dev-Docs org](/img/connect_the_starter_template_to_the_ai_editor/step_22.png)
 
 ## Step 12: Set your documentation repo in Dev-Docs
-You should now see a dialog prompting you to select your documentation repo. Choose the one we set up from the dropdown. This step informs [Docs.dev](http://Docs.dev) where your documentation lives and where the [Docs.dev](http://Docs.dev) editor should pull from. Once this step is done you're all set and ready to go!
+You should now see a dialog prompting you to select your documentation repo. Choose the one we set up from the dropdown. This step informs [Docs.dev](https://docs.dev) where your documentation lives and where the [Docs.dev](https://docs.dev) editor should pull from. Once this step is done you're all set and ready to go!
