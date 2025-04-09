@@ -58,3 +58,18 @@ Certainly! Here's a concise explanation of "View raw markdown content" based on 
 "View raw markdown content" refers to the ability to see the underlying Markdown syntax of a document instead of its formatted appearance. In this context, users can switch from a rich text editor view to a raw Markdown view by selecting "Raw markdown" from a dropdown menu. This allows users to see how the document is structured in Markdown format, which is the format used when the document is pushed to GitHub. However, editing the raw Markdown directly is not supported in the web editor mentioned; such edits would need to be made elsewhere, such as directly on GitHub or in a local environment.
 
   
+---
+# Create and manage content docs/managingcontent/webeditor.md
+## Imported Code Object
+Certainly! Here's a concise explanation of "Create and manage content" based on the provided code snippet:
+
+"Create and manage content" refers to the process of generating new documentation and maintaining existing content using the Docs.dev web editor. This tool integrates with your GitHub repository, allowing you to:
+
+1. View and edit existing markdown documents
+2. Create new drafts
+3. Use AI-assisted writing features
+4. Push changes directly to your chosen GitHub branch
+
+The web editor provides a rich text interface for easy editing while preserving the underlying markdown or mdx format. This seamless integration allows you to incorporate the Docs.dev editor into your existing documentation workflow, combining the convenience of a web-based tool with your established version control and publishing processes.
+
+  
