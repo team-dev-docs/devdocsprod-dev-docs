@@ -10,17 +10,11 @@ This guide explains how to configure the `dev-docs.json` file with the GitHub ap
 
 ## Prereqs
 
-* Have an account created on https:\/\/app.docs.dev
+* Have an account created on <https://app.docs.dev>
 
 * Have generated a `llm.txt` and `llmText.json` file from docs.dev
 
 * Have the GitHub app installed on both your docs repo and codebase you want to generate content on
-
-## File Location
-
-The `dev-docs.json` file should be placed in the root directory of your repository.
-
-## Configuration Fields
 
 ### Required Fields
 
