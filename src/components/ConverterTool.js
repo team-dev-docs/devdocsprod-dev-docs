@@ -426,7 +426,7 @@ var parser = function () {
   this.convertToHTML = function (markdown) {
     markdown = parseTabs(markdown)
 
-    console.log("After the tabs", markdown)
+    
     markdown = handleCodeSnippets(markdown);
     markdown = markdown.replace(
       /(#{1,6}) \+\+\{style="(.*?)"\} (.+)/g,
@@ -494,13 +494,13 @@ var parser = function () {
       /!\[(.*?)\]\((.*?)\)(\+\+\{(style=".*?"|class=".*?"|)?\s*(style=".*?"|class=".*?"|)?\})?/g,
       (match, alt, src, fullMatch, attr1, attr2) => {
         if(src.startsWith("../") || src.startsWith("./")) src = src.split("/static")[1]
-        console.log("this is the match", match)
-        console.log("this is the image", src)
+        
+        
         const imageSrc = extractSrc(match) 
         const styleString = extractStyle(match)
-        console.log("this is the style string", styleString)
+        
         let { style, classAttr } = handleStyleAndClass(attr1, attr2);
-        console.log("this is the image style", style)
+        
         return `<img src="${src}" alt="${alt}"${
           style ? ` style="${style}"` : ""
         }${classAttr ? ` class="${classAttr}"` : ""} />`;
@@ -545,7 +545,7 @@ var parser = function () {
     markdown = convertToList(markdown);
     markdown = convertMarkdownTableToHtml(markdown);
     markdown = decodeBase64InText(markdown)
-    console.log("this is the html", markdown)
+    
     return markdown;
   };
 };

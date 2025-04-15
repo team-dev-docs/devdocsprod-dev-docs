@@ -1,11 +1,11 @@
 import { NodeViewWrapper, NodeViewContent } from '@tiptap/react'
 import React, { useState, useEffect } from 'react'
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-export default (props) => {
+const ButtonContent = (props) => {
     const background = props?.node?.attrs?.background || "white"
     const otherStyles = props?.node?.attrs?.customStyle || {}
     function handleSubmit(e) {
-        console.log(props)
         e.preventDefault();
         var url = props?.node.attrs?.url
         var win = window.open(url, '_blank');
@@ -20,3 +20,11 @@ export default (props) => {
       </NodeViewWrapper>
     );
 };
+
+export default function Button(props) {
+    return (
+        <BrowserOnly>
+            {() => <ButtonContent {...props} />}
+        </BrowserOnly>
+    );
+}

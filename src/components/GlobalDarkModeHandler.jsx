@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-
-const GlobalDarkModeHandler = () => {
+const GlobalDarkModeHandlerContent = () => {
   let location = useLocation();
   const handlePageLoad = () => {
-    console.log("i am being called")
+    
     // Your code here for when the page is loaded
     const isDarkMode = document.documentElement.getAttribute('data-theme') === 'dark';
     if (isDarkMode) {
@@ -48,6 +48,10 @@ const GlobalDarkModeHandler = () => {
   return null; // This component does not render anything
 };
 
-
-
-export default GlobalDarkModeHandler;
+export default function GlobalDarkModeHandler() {
+  return (
+    <BrowserOnly>
+      {() => <GlobalDarkModeHandlerContent />}
+    </BrowserOnly>
+  );
+}

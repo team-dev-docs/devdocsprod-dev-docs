@@ -54,7 +54,7 @@ const JsonToTable = ({ data, title, columns }) => {
       try {
         const decoded64JSON = atob(data);
         const decodedJSON = JSON.parse(decoded64JSON);
-        console.log("what is the headers decoded", decodedJSON)
+        
         setDecodedData(decodedJSON);
       } catch (error) {
         console.error("Error parsing JSON:", error);
@@ -68,7 +68,7 @@ const JsonToTable = ({ data, title, columns }) => {
     const nestedTables = [];
 
     const iteratedTableRows = Object.entries(json).map(([key, value], index) => {
-      console.log("what is the header value", value)
+      
       if (value.value) {
         return (
           <TableRow key={key} className={index % 2 === 0 ? 'table-row-even': 'table-row-odd'}>

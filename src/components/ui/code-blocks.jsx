@@ -7,12 +7,12 @@ const DevDocsCodeBlocks = (props) => {
         let contents = [];
       
         React.Children.forEach(children, (child) => {
-            console.log("is dis the child", child)
+            
           if (React.isValidElement(child) && (child.type === 'pre' || child.props.mdxType === 'pre')) {
             const className = child.props.className || child?.props?.children?.props?.className
-            console.log("dis the class name", className)
+            
             if (typeof className === 'string' && className.includes('-')) {
-            console.log("dis the class name", className)
+            
               const language = className.split('-')[1];
               const [lang, context] = language.split('::');
       

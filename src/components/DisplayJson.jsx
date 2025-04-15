@@ -28,7 +28,7 @@ const JsonToTable = ({ data, title, columns }) => {
       try {
         const decoded64JSON = atob(data);
         const decodedJSON = JSON.parse(decoded64JSON);
-        //console.log(decodedJSON.content["application/json"].schema)
+        //
         let propertiesSchemaKeys = Object.keys(decodedJSON.content["application/json"].schema)
         
         let propertiesItem;
@@ -40,14 +40,14 @@ const JsonToTable = ({ data, title, columns }) => {
         let {properties} = propertiesItem
         let descriptions = [];
         for (let [key, value] of Object.entries(properties)) {
-          console.log("what is the key", key);
-          console.log("what is the value", value);
+          
+          
           let newItem = {};
           newItem[key] = value;
           descriptions.push(newItem);
         }
 
-        console.log("this is the descriptions", descriptions)
+        
         setDecodedData(descriptions);
       } catch (error) {
         console.error("Error parsing JSON:", error);

@@ -26,7 +26,7 @@ const CodeSnippet = (props) => {
     const contents = [];
     for (const prop of preElements) {
       let child = prop
-      console.log("this is the child", child)
+      
 
       let languageAndContext = child.props.className.split("-")[1]
 
@@ -36,7 +36,7 @@ const CodeSnippet = (props) => {
         </div>
       );
 
-      console.log("is this looping")
+      
     }
 
     return { triggers, contents };

@@ -6,13 +6,13 @@ const CodeBlock = ({ children }) => {
 
   const copyCode = () => {
     try {
-        console.log(children)
+        
       const codeLines = children[0].props.children;
       navigator.clipboard.writeText(codeLines);
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
     } catch (e) {
-      console.log(e);
+      
     }
   };
 

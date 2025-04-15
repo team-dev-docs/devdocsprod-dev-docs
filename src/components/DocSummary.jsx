@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Button } from "./ui/button";
 import { Card, CardContent } from "./ui/card";
 import { IconFileDescription } from "@tabler/icons-react";
-import { AUTH_CONFIG } from "../config/auth";
 import aiConfig from "@site/ai.json";
 import { unified } from "unified";
 import rehypeParse from "rehype-parse";
@@ -10,8 +9,10 @@ import rehypeRemark from "rehype-remark";
 import remarkGfm from "remark-gfm";
 import remarkStringify from "remark-stringify";
 import Markdown from "react-markdown";
+import BrowserOnly from '@docusaurus/BrowserOnly';
+import { AUTH_CONFIG } from "../config/auth.ts"
 
-export default function DocSummary({ content }) {
+function DocSummaryContent({ content }) {
   if (!aiConfig.github_features) {
     return null;
   }
@@ -29,7 +30,7 @@ export default function DocSummary({ content }) {
     setLoading(true);
     try {
       const htmlContent = document.querySelector(".markdown")?.outerHTML;
-      console.log("Extracted text content:", htmlContent);
+      
 
       const page = await unified()
         .use(rehypeParse) // Parse HTML content to a syntax tree
@@ -46,7 +47,7 @@ export default function DocSummary({ content }) {
       myHeaders.append("X-GitHub-Token", token);
       myHeaders.append("Content-Type", "application/json");
 
-      console.log(pageContent);
+      
 
       const raw = JSON.stringify({
         messages: [
@@ -70,11 +71,11 @@ export default function DocSummary({ content }) {
       };
 
       let data = await fetch(
-        "http://localhost:3000/copilot/chat/completions",
+        `${AUTH_CONFIG.interactiveDocsBaseUrl}/copilot/chat/completions`,
         requestOptions
       );
       let aiData = await data.json();
-      console.log(aiData);
+      
       setSummary(aiData.choices[0].message.content);
       setLoading(false);
       // Rest of your code...
@@ -106,5 +107,13 @@ export default function DocSummary({ content }) {
         </Card>
       )}
     </div>
+  );
+}
+
+export default function DocSummary(props) {
+  return (
+    <BrowserOnly>
+      {() => <DocSummaryContent {...props} />}
+    </BrowserOnly>
   );
 }

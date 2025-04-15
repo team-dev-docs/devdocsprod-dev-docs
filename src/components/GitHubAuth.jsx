@@ -1,10 +1,19 @@
 import React, { useEffect, useState } from 'react';
 import { Button } from './ui/button';
 import { IconGitHub } from './ui/Icon';
-import { AUTH_CONFIG } from '../config/auth';
 import aiConfig from '@site/ai.json';
+import { AUTH_CONFIG } from '../../src/config/auth.ts'
+import { useColorMode } from '@docusaurus/theme-common';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-export default function GitHubAuth() {
+function GitHubAuthContent() {
+  const { colorMode } = useColorMode()
+  const buttonStyle = {
+    borderRadius: '1rem',
+    border: colorMode === 'dark' ? '1px solid #DD7BFF' : '1px solid #DD7BFF',
+    backgroundColor: colorMode === 'dark' ? '#0A0A0A' : '#0A0A0A',
+    boxShadow: '0px 4px 8px 0px rgba(0, 0, 0, 0.30), 0px 12px 24px 0px rgba(0, 0, 0, 0.20)'
+}
   if (!aiConfig.github_features) {
     return null;
   }
@@ -38,26 +47,15 @@ export default function GitHubAuth() {
   const handleLogin = () => {
     try {
       const state = Math.random().toString(36).substring(7);
-      let currentUrl = `${window.location.origin}/auth/callback`;
-      let values = JSON.stringify({
-        url: currentUrl,
-        state: state
-      });
-      values = btoa(values);
-      localStorage.setItem('oauth_state', values);
-      
-      if (!AUTH_CONFIG.GITHUB_CLIENT_ID) {
-        setError('GitHub Client ID is not configured');
-        console.error('GitHub Client ID is missing in AUTH_CONFIG');
-        return;
-      }
-
-      const githubAuthUrl = new URL('https://github.com/login/oauth/authorize');
-      githubAuthUrl.searchParams.append('client_id', AUTH_CONFIG.GITHUB_CLIENT_ID);
-      githubAuthUrl.searchParams.append('redirect_uri', AUTH_CONFIG.GITHUB_CALLBACK_URL);
-      githubAuthUrl.searchParams.append('state', values);
-      githubAuthUrl.searchParams.append('scope', 'read:user codespace');
-      
+      localStorage.setItem('oauth_state', state);
+      console.log(AUTH_CONFIG.authorizationEndpoint)
+      const githubAuthUrl = new URL(AUTH_CONFIG.authorizationEndpoint);
+      githubAuthUrl.searchParams.append('state', state);
+      githubAuthUrl.searchParams.append('client_id', AUTH_CONFIG.clientId);
+      githubAuthUrl.searchParams.append('redirect_uri', AUTH_CONFIG.redirectUri);
+      githubAuthUrl.searchParams.append('scope', AUTH_CONFIG.scope);
+      console.log(AUTH_CONFIG.authorizationEndpoint)
+      console.log(githubAuthUrl.toString());
       window.location.href = githubAuthUrl.toString();
     } catch (err) {
       console.error('Login error:', err);
@@ -89,6 +87,7 @@ export default function GitHubAuth() {
       {!isAuthenticated ? (
         <Button 
           onClick={handleLogin} 
+          style={buttonStyle}
           className="flex items-center gap-2"
           type="button"
         >
@@ -106,6 +105,7 @@ export default function GitHubAuth() {
           )}
           <Button 
             onClick={handleLogout} 
+            style={buttonStyle}
             variant="outline"
             type="button"
           >
@@ -114,5 +114,13 @@ export default function GitHubAuth() {
         </div>
       )}
     </div>
+  );
+}
+
+export default function GitHubAuth() {
+  return (
+    <BrowserOnly>
+      {() => <GitHubAuthContent />}
+    </BrowserOnly>
   );
 } 

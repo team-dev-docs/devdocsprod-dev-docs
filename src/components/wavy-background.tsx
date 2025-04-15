@@ -2,6 +2,7 @@
 import { cn } from "../utils/cn";
 import React, { useEffect, useRef } from "react";
 import { createNoise3D } from "simplex-noise";
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
 export const WavyBackground = ({
   children,
@@ -118,4 +119,10 @@ export const WavyBackground = ({
   );
 };
 
-export default WavyBackground
+export default function WavyBackgroundWrapper(props: any) {
+  return (
+    <BrowserOnly>
+      {() => <WavyBackground {...props} />}
+    </BrowserOnly>
+  );
+}

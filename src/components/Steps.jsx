@@ -12,7 +12,7 @@ const processor = unified()
   .use(rehype2react, { createElement: React.createElement });
 
   const Step = ({title, stepNumber, children}) => {
-    console.log("Children value", children, stepNumber);
+    
     return (
         <li className="mb-10 ms-6">            
             <span className="absolute flex items-center justify-center w-8 h-8 bg-gray-200 rounded-md -start-4 ring-2 ring-white dark:ring-blue-900 dark:bg-gray-900">

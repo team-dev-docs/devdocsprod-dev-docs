@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { cn } from "@site/src/utils"
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-const ImageFrame = ({imagePath, caption, className}) => {
+const ImageFrameContent = ({imagePath, caption, className}) => {
     const [modalVisible, setModalVisible] = useState(false);
 
     useEffect(() => {
@@ -43,4 +44,10 @@ const ImageFrame = ({imagePath, caption, className}) => {
     )
 }
 
-export default ImageFrame;
+export default function ImageFrame(props) {
+    return (
+        <BrowserOnly>
+            {() => <ImageFrameContent {...props} />}
+        </BrowserOnly>
+    );
+}

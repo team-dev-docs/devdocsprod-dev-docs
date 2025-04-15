@@ -46,9 +46,9 @@ const AccordionContent = React.forwardRef(
   ({ className, children, ...props }, ref) => {
     const processedChildren = React.Children.toArray(children).map((child) => {
       if (typeof child === 'string') {
-        console.log("this is the child processed", child)
+        
         const singleLineString = child.replace(/\\n/g, '\\\\n');
-        console.log(processor.processSync(singleLineString).result)
+        
         return processor.processSync(singleLineString).result
       } else {
         return child;

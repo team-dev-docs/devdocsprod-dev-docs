@@ -9,7 +9,7 @@ import { Input } from "../components/ui/input";
 import { badgeVariants, Badge } from "../components/ui/badge";
 import aiConfig from '@site/ai.json';
 import TerminalLogo from '../../static/svgs/terminallogo.svg';
-
+import BrowserOnly from '@docusaurus/BrowserOnly';
 import {
   AlertDialog,
   AlertDialogAction,
@@ -24,14 +24,9 @@ import {
 import { Button } from "../components/ui/button";
 import { IconX, IconSend2 } from "@tabler/icons-react";
 import logoJson from "../../logo.json";
+import { AUTH_CONFIG } from "../config/auth.ts"
 
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "../components/ui/carousel";
+
 
 const { logo } = logoJson;
 
@@ -257,7 +252,7 @@ function ChatBox({ messages, onSendMessage, onModeChange }) {
         redirect: 'follow',
       };
 
-      const response = await fetch('http://localhost:3000/copilot/chat/completions', requestOptions);
+      const response = await fetch(`${AUTH_CONFIG.interactiveDocsBaseUrl}/copilot/chat/completions`, requestOptions);
       if (!response.ok) {
         throw new Error('Failed to get response from server');
       }
@@ -650,4 +645,10 @@ function ChatBox({ messages, onSendMessage, onModeChange }) {
   );
 }
 
-export default ChatBox;
+export default function DocChat(props) {
+  return (
+    <BrowserOnly>
+      {() => <ChatBox {...props} />}
+    </BrowserOnly>
+  );
+}

@@ -6,9 +6,12 @@ import IconCopy from '@theme/Icon/Copy';
 import IconSuccess from '@theme/Icon/Success';
 import { Button } from '@site/src/components/ui/button';
 import { Input } from '@site/src/components/ui/input';
-import { IconWand } from '@tabler/icons-react';
+import { IconWand, IconPlayerPlay, IconExternalLink } from '@tabler/icons-react';
 import { cn } from '@site/src/utils';
 import { useColorMode } from '@docusaurus/theme-common';
+import { CodespaceOpener } from '@site/src/components/CodespaceOpener';
+import { AUTH_CONFIG } from '@site/src/config/auth';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 import {
   Dialog,
   DialogContent,
@@ -59,13 +62,16 @@ const copyToClipboard = async (text: string): Promise<boolean> => {
   }
 };
 
-export default function CopyButton({code, className}: Props): JSX.Element {
+function CopyButtonContent({code, className}: Props): JSX.Element {
   const [isCopied, setIsCopied] = useState(false);
   const [prompt, setPrompt] = useState('');
   const [rewrittenCode, setRewrittenCode] = useState('');
   const [isLoading, setIsLoading] = useState(false);
-  const [executionResult, setExecutionResult] = useState<{ stderr?: string; stdout?: string } | null>(null);
+  const [isStreaming, setIsStreaming] = useState(false);
+  const [streamedResponse, setStreamedResponse] = useState('');
+  const [executionResult, setExecutionResult] = useState<{ stderr?: string; stdout?: string; code?: number } | null>(null);
   const copyTimeout = useRef<number | undefined>(undefined);
+  const activeCodespace = localStorage.getItem('codespace');
 
   const { colorMode } = useColorMode();
   const contentStyle: React.CSSProperties = {
@@ -109,20 +115,44 @@ export default function CopyButton({code, className}: Props): JSX.Element {
     
     const token = localStorage.getItem('github_token');
     if (!token) {
-      setExecutionResult({ error: 'No GitHub token found. Please authenticate first.' });
+      setExecutionResult({ stdout: '', stderr: 'No GitHub token found. Please authenticate first.' });
       setIsLoading(false);
       return;
     }
 
-    const activeCodespace = localStorage.getItem('codespace');
     if (!activeCodespace) {
-      setExecutionResult({ error: 'No codespace found. Please authenticate first.' });
+      setExecutionResult({ stdout: '', stderr: 'No codespace found. Please authenticate first.' });
       setIsLoading(false);
       return;
     }
 
     try {
-      const response = await fetch('http://localhost:3000/codespaces/termnial', {
+      // First, get the codespace status and URL
+      // const getResponse = await fetch(`http://localhost:3002/codespaces/get?codespace_name=${activeCodespace}`, {
+      //   headers: {
+      //     'x-github-token': token,
+      //   },
+      // });
+      
+      // const getResult = await getResponse.json();
+      
+      // if (getResult.success && getResult.url) {
+      //   const shouldOpen = window.confirm('The codespace needs to be opened before running the code. Would you like to open it in a new tab?');
+      //   if (shouldOpen) {
+      //     window.open(getResult.url, '_blank');
+      //     // Give the user some time to let the codespace load
+      //     setExecutionResult({ stdout: 'Please wait for the codespace to load before running the code again.', stderr: '' });
+      //     setIsLoading(false);
+      //     return;
+      //   } else {
+      //     setExecutionResult({ stdout: '', stderr: 'Cannot run code without opening the codespace first.' });
+      //     setIsLoading(false);
+      //     return;
+      //   }
+      // }
+
+      // If we get here, the codespace is already running, so execute the command
+      const response = await fetch('http://localhost:3002/codespaces/terminal', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -131,13 +161,14 @@ export default function CopyButton({code, className}: Props): JSX.Element {
         body: JSON.stringify({
           code,
           codespace: activeCodespace,
+          command: command,
         }),
       });
 
       const data = await response.json();
       setExecutionResult(data);
     } catch (error) {
-      setExecutionResult({ error: 'Failed to execute command' });
+      setExecutionResult({ stdout: '', stderr: 'Failed to execute command' });
     } finally {
       setIsLoading(false);
     }
@@ -161,6 +192,9 @@ export default function CopyButton({code, className}: Props): JSX.Element {
     }
 
     setIsLoading(true);
+    setIsStreaming(true);
+    setStreamedResponse('');
+    setRewrittenCode('');
     try {
       const myHeaders = new Headers();
       myHeaders.append("X-GitHub-Token", token);
@@ -177,22 +211,62 @@ export default function CopyButton({code, className}: Props): JSX.Element {
             content: `${prompt}\n\nHere is the code to rewrite:\n\`\`\`\n${code}\n\`\`\``,
           },
         ],
+        stream: true
       });
 
       const requestOptions: RequestInit = {
         method: "POST",
         headers: myHeaders,
         body: raw,
-        redirect: 'follow' as RequestRedirect,
       };
 
-      let data = await fetch("http://localhost:3000/copilot/chat/completions", requestOptions);
-      let aiData = await data.json();
-      setRewrittenCode(aiData.choices[0].message.content);
-      setIsLoading(false);
+      const response = await fetch(`${AUTH_CONFIG.interactiveDocsBaseUrl}/copilot/chat/completions`, requestOptions);
+      
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      
+      const reader = response.body?.getReader();
+      
+      if (!reader) {
+        throw new Error('No reader available');
+      }
+
+      let accumulatedResponse = '';
+      const decoder = new TextDecoder();
+      
+      while (true) {
+        const { done, value } = await reader.read();
+        if (done) break;
+        
+        const chunk = decoder.decode(value);
+        try {
+          // Split the chunk by lines and process each line
+          const lines = chunk.split('\n').filter(line => line.trim());
+          for (const line of lines) {
+            if (line.startsWith('data: ')) {
+              const jsonStr = line.slice(6);
+              if (jsonStr === '[DONE]') continue;
+              
+              const jsonData = JSON.parse(jsonStr);
+              const content = jsonData.choices[0]?.delta?.content || '';
+              accumulatedResponse += content;
+              setStreamedResponse(accumulatedResponse);
+            }
+          }
+        } catch (e) {
+          console.error('Error processing chunk:', e);
+        }
+      }
+      
+      // Set the final rewritten code
+      setRewrittenCode(accumulatedResponse);
     } catch (error) {
       console.error("Code rewrite error:", error);
+      setStreamedResponse('Error: Failed to rewrite code');
+    } finally {
       setIsLoading(false);
+      setIsStreaming(false);
     }
   };
 
@@ -265,9 +339,13 @@ export default function CopyButton({code, className}: Props): JSX.Element {
           disabled={isLoading}
         >
           <span className={styles.copyButtonIcons} aria-hidden="true">
-            <IconWand className={styles.copyButtonIcon} />
+            <IconPlayerPlay className={styles.copyButtonIcon} />
           </span>
         </button>
+
+        {activeCodespace && (
+          <CodespaceOpener codespace_name={activeCodespace} />
+        )}
 
         <Dialog>
           <DialogTrigger asChild>
@@ -310,14 +388,14 @@ export default function CopyButton({code, className}: Props): JSX.Element {
                 )}
               />
 
-              {rewrittenCode ? (
+              {rewrittenCode || streamedResponse ? (
                 <div className="mt-2 w-full">
                   <div className="flex items-center justify-between mb-2">
                     <h4 className={cn(
                       "font-medium",
                       colorMode === 'dark' ? "text-gray-200" : "text-gray-800"
                     )}>
-                      Response:
+                      Response{isStreaming ? ' (Streaming...)' : ':'}
                     </h4>
                     <button
                       type="button"
@@ -329,7 +407,8 @@ export default function CopyButton({code, className}: Props): JSX.Element {
                         styles.copyButton,
                         isRewrittenCodeCopied && styles.copyButtonCopied,
                       )}
-                      onClick={handleCopyRewrittenCode}>
+                      onClick={handleCopyRewrittenCode}
+                      disabled={isStreaming}>
                       <span className={styles.copyButtonIcons} aria-hidden="true">
                         <IconCopy className={styles.copyButtonIcon} />
                         <IconSuccess className={styles.copyButtonSuccessIcon} />
@@ -337,7 +416,7 @@ export default function CopyButton({code, className}: Props): JSX.Element {
                     </button>
                   </div>
                   <div style={codeBlockStyle}>
-                    <Markdown>{rewrittenCode}</Markdown>
+                    <Markdown>{streamedResponse || rewrittenCode}</Markdown>
                   </div>
                 </div>
               ) : (
@@ -394,12 +473,14 @@ export default function CopyButton({code, className}: Props): JSX.Element {
             <div className={cn(
               "p-4 rounded-md",
               colorMode === 'dark' ? "bg-gray-800" : "bg-gray-100",
-              executionResult.stderr ? "border-red-500" : "border-green-500",
+              executionResult.stderr || executionResult.code !== 0 ? "border-red-500" : "border-green-500",
               "border"
             )}>
               <pre className="whitespace-pre-wrap break-words">
                 {executionResult.stderr ? (
                   <span className="text-red-500">{executionResult.stderr}</span>
+                ) : executionResult.code !== 0 ? (
+                  <span className="text-red-500">Command failed with exit code {executionResult.code}</span>
                 ) : (
                   executionResult.stdout
                 )}
@@ -409,5 +490,13 @@ export default function CopyButton({code, className}: Props): JSX.Element {
         </div>
       )}
     </div>
+  );
+}
+
+export default function CopyButton(props: Props): JSX.Element {
+  return (
+    <BrowserOnly>
+      {() => <CopyButtonContent {...props} />}
+    </BrowserOnly>
   );
 }

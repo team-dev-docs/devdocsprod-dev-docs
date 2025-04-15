@@ -8,7 +8,7 @@ function App() {
       <ApiReferenceReact
         configuration={{
           spec: {
-            url: '/openapi/api.json', // Reference file from static directory
+            url: '/openapi/galaxy.yaml', // Reference file from static directory
           },
         }}
       />

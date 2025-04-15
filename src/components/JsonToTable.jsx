@@ -13,7 +13,7 @@ const JsonToTable = () => {
         let decodedJSON = JSON.parse(
           zlib.inflateSync(Buffer.from(frontMatter.api, 'base64')).toString()
         );
-        console.log('decodedJSON', decodedJSON);
+        
         decodedJSON.requestBodyValues = extractPropertiesAndExamples(decodedJSON);
         setDecodedData(decodedJSON);
       } catch (error) {
@@ -46,7 +46,7 @@ const JsonToTable = () => {
 
         if (schema.$ref) {
           // Here you should resolve the reference. This is a placeholder logic.
-          console.log(`Reference found: ${schema.$ref}. Implement reference resolution logic.`);
+          
         }
       };
 

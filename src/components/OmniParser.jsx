@@ -10,7 +10,7 @@ function Parser({ children }) {
   useEffect(() => {
     const markdownElements = Array.from(document.getElementsByClassName('language-markdown'));
     const markdownElement = markdownElements.find(function(item){ return item?.innerText});
-    console.log("this is the markdown element", markdownElement.innerText)
+    
     if (markdownElement) {
       setData(markdownElement.innerText);
       setContainer(markdownElement);

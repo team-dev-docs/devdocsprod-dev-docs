@@ -1,0 +1,19 @@
+{
+  "navbar_hide": true,
+  "sidebars": [
+    {
+      "dir": "styling",
+      "name": "styling"
+    },
+    {
+      "dir": "components",
+      "name": "components",
+      "exclude_from_all": true
+    },
+    {
+      "dir": "apis",
+      "name": "apis",
+      "href": "/apis"
+    }
+  ]
+}

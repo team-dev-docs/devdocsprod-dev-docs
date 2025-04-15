@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
 interface TerminalProps {
   initialMessage?: string;
@@ -11,7 +12,7 @@ interface TerminalLine {
   type: 'input' | 'output' | 'error';
 }
 
-export function Terminal({ initialMessage = 'Welcome to the terminal simulator', prompt = '>', codespace: propCodespace }: TerminalProps) {
+function TerminalContent({ initialMessage = 'Welcome to the terminal simulator', prompt = '>', codespace: propCodespace }: TerminalProps) {
   const [history, setHistory] = useState<TerminalLine[]>([
     { content: initialMessage, type: 'output' }
   ]);
@@ -46,7 +47,7 @@ export function Terminal({ initialMessage = 'Welcome to the terminal simulator',
     }
 
     try {
-      const response = await fetch('http://localhost:3000/codespaces/termnial', {
+      const response = await fetch('http://localhost:3002/codespaces/terminal', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -162,5 +163,13 @@ export function Terminal({ initialMessage = 'Welcome to the terminal simulator',
         />
       </div>
     </div>
+  );
+}
+
+export function Terminal(props: TerminalProps): JSX.Element {
+  return (
+    <BrowserOnly>
+      {() => <TerminalContent {...props} />}
+    </BrowserOnly>
   );
 }
