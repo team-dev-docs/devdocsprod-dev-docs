@@ -69,6 +69,68 @@
   }
 }
 
+[data-theme="dark"] {
+  [class^="toggle"] {
+    .clean-btn {
+      position: relative;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 10px;
+      background-image: url("../../static/buttons/darkslider.svg") !important;
+      background-position: center;
+      background-repeat: no-repeat;
+      svg {
+        display: none;
+      }
+    }
+    .clean-btn:hover {
+      position: relative;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 10px;
+      background-image: url("../../static/buttons/darkslider.svg") !important;
+      background-position: center;
+      background-repeat: no-repeat;
+      svg {
+        display: none;
+      }
+
+    }
+  }
+}
+
+
+[class^="toggle"] {
+  .clean-btn {
+    position: relative;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    background-image: url("../../static/buttons/slider.svg") !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    svg {
+      display: none;
+    }
+  }
+  .clean-btn:hover {
+    position: relative;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    background-image: url("../../static/buttons/slider.svg") !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    svg {
+      display: none;
+    }
+  }
+}
+
 [class^="announcementBar"] {
   z-index: 200;
 }

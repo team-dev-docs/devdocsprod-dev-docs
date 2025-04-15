@@ -1,9 +1,9 @@
 
 // import design-preferences.scss
 
-[aria-label="Docs sidebar"] {
-  padding-left: 2.5rem !important;
-}
+// [aria-label="Docs sidebar"] {
+//   padding-left: 2.5rem !important;
+// }
 
 .menu__link--active:not(.menu__link--sublist) {
   border-radius: 7px;
@@ -72,6 +72,9 @@ menu__link--sublist {
 
 .theme-doc-sidebar-container {
   border: none !important;
+  min-height: 100vh !important;
+  max-height: 200vh !important;
+  height: 100%;
 }
 
 .tocCollapsible_node_modules-\@docusaurus-theme-classic-lib-theme-TOCCollapsible-styles-module.theme-doc-toc-mobile.tocMobile_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem-TOC-Mobile-styles-module {
@@ -122,4 +125,16 @@ menu__link--sublist {
 font-style: normal;
 font-weight: 600;
 line-height: normal;
+}
+
+
+.dropdown-container {
+  [class^="sidebar"] {
+    padding-right: 1em;
+    padding-top: 0px !important;
+  }
+}
+
+[class^="sidebarView"] {
+  max-height: none !important;
 }

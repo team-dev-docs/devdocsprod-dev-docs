@@ -2,6 +2,12 @@ import React from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import Layout from '@theme/Layout';
+import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import Editor from '@site/src/components/editor';
+import ChatBox from '@site/src/components/ChatBox';
+import styles from './index.module.css';
+import Parser from '../components/Parser';
 import {Redirect} from '@docusaurus/router';
 
 function HomepageHeader() {

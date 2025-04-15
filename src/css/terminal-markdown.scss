@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+.terminal-markdown {
+    font-family: 'Pixelify Sans', monospace;
+    color: #00ff00; /* Terminal green color */
+  }
+  
+  .terminal-markdown pre {
+    background-color: #2d2d2d;
+    border: 1px solid #424242;
+    margin: 0.5rem 0;
+    font-family: 'Pixelify Sans', monospace;
+  }
+  
+  .terminal-markdown code {
+    color: #d4d4d4;
+    background-color: #2d2d2d;
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    font-size: 0.9em;
+    font-family: 'Pixelify Sans', monospace;
+  }
+  
+  .terminal-markdown p {
+    margin: 0.5rem 0;
+    line-height: 1.5;
+    font-family: 'Pixelify Sans', monospace;
+  }
+  
+  .terminal-markdown a {
+    color: #7984EB;
+    text-decoration: none;
+    font-family: 'Pixelify Sans', monospace;
+  }
+  
+  .terminal-markdown a:hover {
+    text-decoration: underline;
+  }
+  
+  .terminal-markdown ul, .terminal-markdown ol {
+    margin: 0.5rem 0;
+    padding-left: 1.5rem;
+    font-family: 'Pixelify Sans', monospace;
+  }
+  
+  .terminal-markdown li {
+    margin: 0.25rem 0;
+    font-family: 'Pixelify Sans', monospace;
+  }
+  
+  .terminal-markdown blockquote {
+    border-left: 3px solid #424242;
+    margin: 0.5rem 0;
+    padding-left: 1rem;
+    color: #a0a0a0;
+    font-family: 'Pixelify Sans', monospace;
+  }
+
+  [data-theme=dark] .terminal-markdown p {
+    font-family: 'Pixelify Sans', monospace !important;
+  }
+  

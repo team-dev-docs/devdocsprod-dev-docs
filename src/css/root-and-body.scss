@@ -244,11 +244,6 @@ $light-gradient-color-2: if(
 [class^="docRoot"] {
   background-color: transparent;
 
-  @media (min-width: 1400px) {
-    // padding-left: 5em;
-    // padding-right: 5em;
-    padding-top: 2em;
-  }
 
   // backdrop-filter: blur(16px) saturate(10%);
   // -webkit-backdrop-filter: blur(16px) saturate(10%);

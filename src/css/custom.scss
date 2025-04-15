@@ -1,6 +1,4 @@
 //@import "../../node_modules/@fontsource/inter/index.css";
-
-@use "sass:color";
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
@@ -29,5 +27,23 @@
 
 @import "./custom_design_variables.scss";
 @import "./custom_background_image.scss";
-@import "./scalar.scss"
+@import "./scalar.scss";
+@import "./terminal-markdown.scss";
+
+.navbar__item .github-auth-button {
+  margin: 0;
+  padding: 0.5rem 1rem;
+  height: auto;
+}
+
+.navbar-github-auth {
+  display: flex;
+  align-items: center;
+  
+  .github-auth-button {
+    margin: 0;
+    padding: 0.5rem 1rem;
+    height: auto;
+  }
+}
 
