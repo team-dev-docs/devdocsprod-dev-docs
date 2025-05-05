@@ -1,16 +1,13 @@
 ---
 sidebar_position: 5
 ---
-
-
-
 # Configuring code to doc automation
 
 This guide explains how to configure the `dev-docs.json` file with the GitHub app to enable automatic documentation modification and generation when your code changes.
 
 ## Prereqs
 
-* Have an account created on https:\/\/app.docs.dev
+* Have an account created on https://app.docs.dev
 
 * Have generated a `llm.txt` and `llmText.json` file from docs.dev
 
