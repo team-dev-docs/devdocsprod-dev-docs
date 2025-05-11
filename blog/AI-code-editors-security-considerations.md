@@ -1,4 +1,4 @@
-# AI Code Editors: Security Considerations
+# AI Code Editors: Security Considerations, Our Experience
 
 ## Introduction
 
