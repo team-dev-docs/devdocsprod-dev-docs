@@ -74,7 +74,7 @@ To mitigate these risks and enjoy the benefits of AI code editors safely, consid
 
 7. **Verify User Accounts and Policies**: Regularly check your development environment to ensure you're logged in with the correct account and that all necessary security policies are applied.
 
-8. **Implement and Enforce Team-Wide Security Policies**: Establish clear guidelines for using AI code editors within your team, including how to handle sensitive code and data. If you are GitHub
+8. **Implement and Enforce Team-Wide Security Policies**: Establish clear guidelines for using AI code editors within your team, including how to handle sensitive code and data. If you are GitHub use their content-exclusion policies.
 
 ## Conclusion
 
