@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Artificial Intelligence (AI) code editors have revolutionized the way we write code, offering unprecedented productivity gains. However, as with any powerful tool, they come with their own set of security considerations. This blog post explores the potential risks associated with AI code editors and provides guidance on how to use them safely. For example we are using GitHub Copilot with a team license, but we noticed it was trying to
+Artificial Intelligence (AI) code editors have revolutionized the way we write code, offering unprecedented productivity gains. However, as with any powerful tool, they come with their own set of security considerations. This blog post explores the potential risks associated with AI code editors and provides guidance on how to use them safely. For example we are using GitHub Copilot with a team license, but we noticed it was trying to do autocomplete in a sensitive code file despite our rules.
 
 ## The Power of AI Code Editors
 
