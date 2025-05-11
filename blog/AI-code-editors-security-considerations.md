@@ -50,10 +50,6 @@ AI code editors often rely on cloud-based services to provide their advanced fea
 
 * How this data is protected during transmission and storage
 
-### 3. Unintended Code Suggestions
-
-While AI code editors are highly sophisticated, they can sometimes suggest code that may introduce vulnerabilities or bugs. Developers need to remain vigilant and not blindly accept all suggestions without proper review.
-
 ### 4. Conflicting User Accounts and Policies
 
 As we learned, having multiple user accounts in your development environment can lead to unexpected behavior. If one account doesn't have the proper security policies applied, it may override the intended security measures.
