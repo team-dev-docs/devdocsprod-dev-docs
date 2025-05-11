@@ -9,8 +9,11 @@ Artificial Intelligence (AI) code editors have revolutionized the way we write c
 AI-powered code editors have become increasingly popular due to their ability to:
 
 * Autocomplete code snippets
+
 * Suggest function names and parameters
+
 * Provide real-time code analysis
+
 * Offer context-aware coding assistance
 
 These features can significantly boost a developer's productivity, often by a factor of 10 or more. However, this increased efficiency comes with potential security risks that need to be carefully managed.
@@ -19,7 +22,7 @@ These features can significantly boost a developer's productivity, often by a fa
 
 Recently, we encountered a situation that highlighted the importance of vigilance when using AI code editors. While using GitHub Copilot with a team license, we noticed it was attempting to autocomplete code in a sensitive file, despite our configured rules to prevent this.
 
-Upon investigation, we discovered that I was logged into VS Code with two user accounts - one with our security policies applied and another without. Unfortunately, the account without the policies took priority, leading to this potential security breach.
+Upon investigation, I discovered that I was logged into VS Code with two user accounts - one with our security policies applied and another without. Unfortunately, the account without the policies took priority, leading to this potential security breach.
 
 This incident "ruined a Saturday" as we had to take immediate action to rotate our API keys in our services. Although we trust GitHub's practices, we couldn't be certain that our sensitive code wasn't exposed, necessitating this precautionary measure.
 
@@ -30,8 +33,11 @@ This incident "ruined a Saturday" as we had to take immediate action to rotate o
 One of the most critical risks associated with AI code editors is the potential exposure of sensitive information. As these tools analyze your code in real-time, they may inadvertently capture and process sensitive data such as:
 
 * API keys
+
 * Database credentials
+
 * Authentication tokens
+
 * Proprietary algorithms
 
 Our experience with GitHub Copilot attempting to autocomplete in a sensitive code file underscores this risk.
@@ -41,7 +47,9 @@ Our experience with GitHub Copilot attempting to autocomplete in a sensitive cod
 AI code editors often rely on cloud-based services to provide their advanced features. This means that your code, or portions of it, may be transmitted to and stored on external servers. It's crucial to understand:
 
 * What data is being sent to these services
+
 * How this data is protected during transmission and storage
+
 * Who has access to this data
 
 ### 3. Unintended Code Suggestions
