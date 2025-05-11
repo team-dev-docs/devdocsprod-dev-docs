@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Artificial Intelligence (AI) code editors have revolutionized the way we write code, offering unprecedented productivity gains. However, as with any powerful tool, they come with their own set of security considerations. This blog post explores the potential risks associated with AI code editors and provides guidance on how to use them safely.
+Artificial Intelligence (AI) code editors have revolutionized the way we write code, offering unprecedented productivity gains. However, as with any powerful tool, they come with their own set of security considerations. This blog post explores the potential risks associated with AI code editors and provides guidance on how to use them safely. We
 
 ## The Power of AI Code Editors
 
