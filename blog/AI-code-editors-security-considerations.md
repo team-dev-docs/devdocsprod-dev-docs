@@ -30,7 +30,7 @@ This incident "ruined a Saturday" as I had to take immediate action to rotate ou
 
 ### 1. Sensitive Information Exposure
 
-One of the most critical risks associated with AI code editors is the potential exposure of sensitive information. As these tools analyze your code in real-time, they may inadvertently capture and process sensitive data such as:
+One of the most critical risks associated with AI code editors is the potential exposure of sensitive information. As these tools analyze your code in real-time, they may inadvertently capture and process sensitive data such as. In difference to your
 
 * API keys
 
