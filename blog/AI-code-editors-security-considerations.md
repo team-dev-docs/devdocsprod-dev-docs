@@ -22,7 +22,7 @@ These features can significantly boost a developer's productivity, often by a fa
 
 Recently, we encountered a situation that highlighted the importance of vigilance when using AI code editors. While using GitHub Copilot with a team license, we noticed it was attempting to autocomplete code in a sensitive file, despite our configured rules to prevent this.
 
-Upon investigation, I discovered that I was logged into VS Code with two user accounts - one with our security policies applied and another without. Unfortunately, the account without the policies took priority, leading to this potential security breach.
+Upon investigation, I discovered that I was logged into VS Code with two user accounts - one with our security policies applied and another without. Unfortunately, the account without the policies took priority, leading to this situation.
 
 This incident "ruined a Saturday" as we had to take immediate action to rotate our API keys in our services. Although we trust GitHub's practices, we couldn't be certain that our sensitive code wasn't exposed, necessitating this precautionary measure.
 
