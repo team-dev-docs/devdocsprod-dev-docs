@@ -8,10 +8,13 @@ Artificial Intelligence (AI) code editors have revolutionized the way we write c
 
 AI-powered code editors have become increasingly popular due to their ability to:
 
-- Autocomplete code snippets
-- Suggest function names and parameters
-- Provide real-time code analysis
-- Offer context-aware coding assistance
+* Autocomplete code snippets
+
+* Suggest function names and parameters
+
+* Provide real-time code analysis
+
+* Offer context-aware coding assistance
 
 These features can significantly boost a developer's productivity, often by a factor of 10 or more. However, this increased efficiency comes with potential security risks that need to be carefully managed.
 
@@ -21,20 +24,25 @@ These features can significantly boost a developer's productivity, often by a fa
 
 One of the most critical risks associated with AI code editors is the potential exposure of sensitive information. As these tools analyze your code in real-time, they may inadvertently capture and process sensitive data such as:
 
-- API keys
-- Database credentials
-- Authentication tokens
-- Proprietary algorithms
+* API keys
 
-In our recent experience, we noticed that code completion was occurring in a sensitive code file, which raised immediate security concerns.
+* Database credentials
+
+* Authentication tokens
+
+* Proprietary algorithms
+
+In our recent experience, we noticed that code completion for GitHub copilot was occurring in a sensitive code file, which raised immediate security concerns.
 
 ### 2. Data Transmission and Storage
 
 AI code editors often rely on cloud-based services to provide their advanced features. This means that your code, or portions of it, may be transmitted to and stored on external servers. It's crucial to understand:
 
-- What data is being sent to these services
-- How this data is protected during transmission and storage
-- Who has access to this data
+* What data is being sent to these services
+
+* How this data is protected during transmission and storage
+
+* Who has access to this data
 
 ### 3. Unintended Code Suggestions
 
