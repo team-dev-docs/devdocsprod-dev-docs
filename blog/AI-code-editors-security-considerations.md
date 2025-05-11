@@ -24,7 +24,7 @@ Recently, we encountered a situation that highlighted the importance of vigilanc
 
 Upon investigation, I discovered that I was logged into VS Code with two user accounts - one with our security policies applied and another without. Unfortunately, the account without the policies took priority, leading to this situation.
 
-This incident "ruined a Saturday" as we had to take immediate action to rotate our API keys in our services. Although we trust GitHub's practices, we couldn't be certain that our sensitive code wasn't exposed, necessitating this precautionary measure.
+This incident "ruined a Saturday" as we had to take immediate action to rotate our API keys in our services. Although we trust GitHub's practices, we couldn't be, necessitating this precautionary measure.
 
 ## Security Risks and Considerations
 
