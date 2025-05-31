@@ -1,4 +1,4 @@
-# New Character Generation Functions
+# I AM AT HOME COFFEE
 
 This document describes the new convenience functions added to the spriteAI library for generating specific character types. These functions extend the capabilities of the `generateCharacterSpritesheet` function by providing pre-configured options for common character archetypes.
 
@@ -7,7 +7,9 @@ This document describes the new convenience functions added to the spriteAI libr
 Three new functions have been added to simplify the process of generating character spritesheets:
 
 1. `generateNinja`
+
 2. `generateSpaceman`
+
 3. `generateRobot`
 
 Each of these functions is designed to create a character spritesheet with predefined states, style, and frame count, while still allowing for customization through optional parameters.
@@ -30,9 +32,12 @@ export const generateNinja = async function(options = {}) {
 ```
 
 This function generates a ninja character spritesheet with the following default options:
-- States: idle, walk, run, attack, sneak
-- Style: pixel-art
-- Frames per state: 6
+
+* States: idle, walk, run, attack, sneak
+
+* Style: pixel-art
+
+* Frames per state: 6
 
 ### generateSpaceman
 
@@ -50,9 +55,12 @@ export const generateSpaceman = async function(options = {}) {
 ```
 
 This function generates a spaceman (astronaut) character spritesheet with the following default options:
-- States: idle, walk, run, float
-- Style: pixel-art
-- Frames per state: 6
+
+* States: idle, walk, run, float
+
+* Style: pixel-art
+
+* Frames per state: 6
 
 ### generateRobot
 
@@ -70,9 +78,12 @@ export const generateRobot = async function(options = {}) {
 ```
 
 This function generates a robot character spritesheet with the following default options:
-- States: idle, walk, run, attack, power-up
-- Style: pixel-art
-- Frames per state: 6
+
+* States: idle, walk, run, attack, power-up
+
+* Style: pixel-art
+
+* Frames per state: 6
 
 ## Usage
 
