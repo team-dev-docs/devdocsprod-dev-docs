@@ -20,8 +20,6 @@ Today, I learned we had an issue with one of our domains, in that it was missing
 
 Implementing DMARC is something that can be overlooked, and is something that can missed by other busy founders but I learned it is important because it:
 
-* Build trust with customers and partners
-
 * Protects your domain from being used by other folks outside your team
 
 * Protect our brand reputation from the start
