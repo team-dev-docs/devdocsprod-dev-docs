@@ -9,7 +9,7 @@ Today, I learned we had an issue with one of our domains, in that it was missing
 1. **Created a DMARC Record**: I started with a minimal policy in our dns:
 
    ```
-   v=DMARC1; p=none; rua=mailto:dmarc-reports@ourdomain.com
+   v=DMARC1; p=none; rua=mailto:dmarc-reports@{{our domain}}
    ```
 
 2. **Published the Record**: I added this to our domain's DNS settings.
