@@ -22,7 +22,7 @@ Implementing DMARC is something that can be overlooked, and is something that ca
 
 * Build trust with customers and partners
 
-* Protecting your domain from being used by other folks outside your team
+* Protects your domain from being used by other folks outside your team
 
 * Protect our brand reputation from the start
 
