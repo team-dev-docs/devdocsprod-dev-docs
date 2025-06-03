@@ -2,7 +2,7 @@
 
 ## Our recent experience with DMARC
 
-Today, I learned we had an issue with one of our domains, in that it was missing \_DMARC policy. DMARC (Domain-based Message Authentication, Reporting, and Conformance) policy is important, yet often overlooked when setting up Google Workspace with a custom domain.
+Today, I learned we had an issue with one of our domains, in that it was missing \_DMARC policy. DMARC (Domain-based Message Authentication, Reporting, and Conformance) policy is important, yet often overlooked when setting up Google Workspace with a custom domain. We implemented a fix today, but wanted to share my experience
 
 ## Our DMARC Implementation Process
 
