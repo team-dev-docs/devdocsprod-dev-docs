@@ -2,7 +2,7 @@
 
 ## Our recent experience with DMARC
 
-As we grew our startup, I realized the importance of securing our email domain. Implementing a DMARC (Domain-based Message Authentication, Reporting, and Conformance) policy was crucial, yet it's often overlooked when setting up Google Workspace with a custom domain.
+Today, I realized the importance of securing our email domain. Implementing a DMARC (Domain-based Message Authentication, Reporting, and Conformance) policy was crucial, yet it's often overlooked when setting up Google Workspace with a custom domain.
 
 ## Our DMARC Implementation Process
 
