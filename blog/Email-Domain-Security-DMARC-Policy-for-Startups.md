@@ -18,7 +18,7 @@ Today, I learned we had an issue with one of our domains, in that it was missing
 
 ## Why It's Worth It
 
-Implementing DMARC is something that can be overlooked, and is something that can missed by other busy founders:
+Implementing DMARC is something that can be overlooked, and is something that can missed by other busy founders but I learned it is important because:
 
 * Build trust with customers and partners
 
