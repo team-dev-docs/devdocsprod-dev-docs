@@ -18,9 +18,7 @@ Today, I learned we had an issue with one of our domains, in that it was missing
 
 ## Lessons Learned
 
-* Start with a lenient policy and tighten gradually.
-
-* Don't forget about third-party services sending emails on your behalf.
+* Start with a lenient policy and tighten gr
 
 * Regularly review DMARC reports to catch issues early.
 
