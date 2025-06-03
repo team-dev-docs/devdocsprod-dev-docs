@@ -2,8 +2,6 @@
 
 ## Why DMARC Matters
 
-As we grew our startup, I realized the importance of securing our email domain. Implementing a DMARC (Domain-based Message Authentication, Reporting, and Conformance) policy was crucial, yet it's often overlooked when setting up Google Workspace with a custom domain.
-
 ## Our DMARC Implementation Process
 
 1. **Checked SPF and DKIM**: First, I ensured our SPF and DKIM were correctly set up in Google Workspace.
