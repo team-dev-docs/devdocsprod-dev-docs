@@ -6,7 +6,7 @@ Today, I learned we had an issue with one of our domains, in that it was missing
 
 ## Our DMARC Implementation Process
 
-1. **Created a DMARC Record**: I started with a minimal policy:
+1. **Created a DMARC Record**: I started with a minimal policy in our dns:
 
    ```
    v=DMARC1; p=none; rua=mailto:dmarc-reports@ourdomain.com
