@@ -1,6 +1,6 @@
 # Suggestions for other Startups: Check your DMARC
 
-## Why DMARC Matters
+##
 
 ## Our DMARC Implementation Process
 
