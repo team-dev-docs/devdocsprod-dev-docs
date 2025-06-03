@@ -6,19 +6,17 @@ Today, I learned we had an issue with one of our domains, in that it was missing
 
 ## Our DMARC Implementation Process
 
-1. **Checked SPF and DKIM**: First, I ensured our SPF and DKIM were correctly set up in Google Workspace.
-
-2. **Created a DMARC Record**: I started with a minimal policy:
+1. **Created a DMARC Record**: I started with a minimal policy:
 
    ```
    v=DMARC1; p=none; rua=mailto:dmarc-reports@ourdomain.com
    ```
 
-3. **Published the Record**: I added this to our domain's DNS settings.
+2. **Published the Record**: I added this to our domain's DNS settings.
 
-4. **Monitored Reports**: We began receiving and analyzing reports to understand our email traffic.
+3. **Monitored Reports**: We began receiving and analyzing reports to understand our email traffic.
 
-5. **Gradually Tightened Policy**: Over time, I moved from 'p=none' to 'p=quarantine', and finally to 'p=reject'.
+4. **Gradually Tightened Policy**: Over time, I moved from 'p=none' to 'p=quarantine', and finally to 'p=reject'.
 
 ## Lessons Learned
 
