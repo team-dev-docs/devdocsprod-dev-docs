@@ -34,6 +34,8 @@ Implementing DMARC early on has helped us:
 
 * Build trust with customers and partners
 
+* Protecting your domain from being used by other folks outside your organziation
+
 * Protect our brand reputation from the start
 
 * Improve email deliverability
