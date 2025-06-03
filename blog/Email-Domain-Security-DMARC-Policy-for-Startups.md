@@ -1,6 +1,8 @@
 # Suggestions for other Startups: Check your DMARC
 
-##
+Our DMARC\
+It
+--
 
 ## Our DMARC Implementation Process
 
