@@ -1,4 +1,4 @@
-# Suggestions for other Startups: Check your Dmarc
+# Suggestions for other Startups: Check your DMARC
 
 ## Why DMARC Matters
 
