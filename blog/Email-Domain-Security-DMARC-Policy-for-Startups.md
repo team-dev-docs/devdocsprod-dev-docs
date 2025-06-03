@@ -14,9 +14,7 @@ Today, I learned we had an issue with one of our domains, in that it was missing
 
 2. **Published the Record**: I added this to our domain's DNS settings.
 
-3. **Monitored Reports**: We began receiving and analyzing reports to understand our email traffic.
-
-4. **Gradually Tightened Policy**: Over time, I moved from 'p=none' to 'p=reject'.
+3. **Gradually Tightened Policy**: Over time, I moved from 'p=none' to 'p=reject'.
 
 ## Lessons Learned
 
