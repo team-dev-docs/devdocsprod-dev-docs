@@ -16,12 +16,6 @@ Today, I learned we had an issue with one of our domains, in that it was missing
 
 3. **Gradually Tightened Policy**: Over time, I moved from 'p=none' to 'p=reject'.
 
-## Lessons Learned
-
-* Start with a lenient policy and tighten gr
-
-* Regularly review DMARC reports to catch issues early.
-
 ## Why It's Worth It
 
 Implementing DMARC early on has helped us:
