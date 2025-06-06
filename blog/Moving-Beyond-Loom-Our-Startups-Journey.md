@@ -20,14 +20,6 @@ Perhaps the most alarming issue we've encountered is the accidental creation of 
 
 Lastly, we've found the default setting of login-protected links to be a hindrance to our confidence in the tool. Although the links are hard to guess because of their long id, it still makes me deeply uncomfortable that all videos by default are not login protected.
 
-* Slows down our communication process
-
-* Creates unnecessary friction for external stakeholders
-
-* Limits the spontaneity and ease of sharing quick updates
-
-While we understand the importance of security, we believe there should be a more flexible approach to content sharing.
-
 ## Moving Forward
 
 These challenges have prompted us to look for alternatives that better suit our needs. We're seeking a solution that offers:
