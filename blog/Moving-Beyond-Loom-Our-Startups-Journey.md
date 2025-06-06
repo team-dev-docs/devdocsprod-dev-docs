@@ -22,7 +22,7 @@ Lastly, we've found the default setting of login-protected links to be a hindran
 
 ## Moving Forward
 
-These challenges have prompted us to look for alternatives that better suit our needs. We're seeking a solution that offers:
+I haven't been this frustated with a tool in awhile especially since I use to love loom but these challenges have prompted us to look for alternatives that better suit our needs. We're seeking a solution that offers:
 
 1. A stable and reliable browser extension
 
