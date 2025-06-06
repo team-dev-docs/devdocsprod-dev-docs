@@ -8,8 +8,6 @@ Clear user interface and intuitive controls are crucial for any tool we use. Unf
 
 * Wasted time redoing recordings
 
-* Accidental sharing of unintended content
-
 * Frustration among team members
 
 A tool that we rely on for communication should have crystal-clear controls to avoid any ambiguity.
