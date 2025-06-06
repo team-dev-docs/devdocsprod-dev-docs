@@ -8,7 +8,7 @@ Clear user interface and intuitive controls are crucial for any tool we use. Unf
 
 ## The Accidental Recording
 
-Perhaps the most alarming issue we've encountered is the accidental creation of recordings. In one instance, there was a three hour long accidental recording in our loom(luckily no views), where we able to catch it and delete it but it was still beyond frustrating that happened in the first place.
+Perhaps the most alarming issue we've encountered is the accidental creation of an recordings. In one instance, there was a three hour long accidental recording in our loom(luckily no views), where we able to catch it and delete it but it was still beyond frustrating that happened in the first place.
 
 ## The Login Barrier
 
