@@ -4,7 +4,7 @@ As a growing startup, we've been using Loom for our video communication needs. H
 
 ## The Pause and Resume Puzzle
 
-Clear user interface and intuitive controls are crucial for any tool we use. Unfortunately, we've found the resume and pause buttons in Loom to be somewhat confusing. It's often unclear whether the recording is actually paused or still running. This lack of clarity has led to hours of wasted time redoing recordings
+Clear user interface and intuitive controls are crucial for any tool we use. Unfortunately, we've found the resume and pause buttons in Loom to be somewhat confusing. It's often unclear whether the recording is actually paused or still running. This lack of clarity has led to hours of wasted time redoing recordings.
 
 ## The Triple Recording Incident
 
