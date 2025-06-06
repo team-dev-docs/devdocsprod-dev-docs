@@ -22,16 +22,4 @@ Lastly, we've found the default setting of login-protected links to be a hindran
 
 ## Moving Forward
 
-I haven't been this frustated with a tool in awhile especially since I use to love loom but these challenges have prompted us to look for alternatives that better suit our needs. We're seeking a solution that offers:
-
-1. A stable and reliable browser extension
-
-2. Clear and intuitive recording controls
-
-3. Safeguards against accidental recordings
-
-4. Flexible sharing options
-
-As we continue to grow and evolve, we're committed to finding tools that enhance our productivity and streamline our communication. While Loom has served us in many ways, we believe it's time to explore options that align more closely with our needs as a dynamic startup.
-
-We're excited about the possibilities that lie ahead and look forward to finding a video communication tool that truly empowers our team and supports our growth journey.
+I haven't been this frustated with a tool in awhile especially since I use to love loom but these challenges have prompted us to look for alternatives that better suit our needs. In this case we
