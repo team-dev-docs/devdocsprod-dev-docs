@@ -18,7 +18,7 @@ Perhaps the most alarming issue we've encountered is the accidental creation of 
 
 ## The Login Barrier
 
-Lastly, we've found the default setting of login-protected links to be a hindrance to our workflow. As a startup that frequently collaborates with external partners and clients, we need a solution that allows for easy sharing of content. Having links automatically protected by login:
+Lastly, we've found the default setting of login-protected links to be a hindrance to our confidence in the tool. Although the links are hard to guess
 
 * Slows down our communication process
 
