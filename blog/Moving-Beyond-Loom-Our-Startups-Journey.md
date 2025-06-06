@@ -6,7 +6,7 @@ As a growing startup, we've been using Loom for our video communication needs. H
 
 Clear user interface and intuitive controls are crucial for any tool we use. Unfortunately, we've found the resume and pause buttons in Loom to be somewhat confusing. It's often unclear whether the recording is actually paused or still running. This lack of clarity has led to hours of wasted time redoing recordings.
 
-## The Triple Recording Incident
+## The Accidental Recording
 
 Perhaps the most alarming issue we've encountered is the accidental creation of multiple recordings. In one instance, there was a three hour long accidental recording in our loom(luckily no views), where we able to catch it and delete it but it was still beyond frustrating that happened in the first place.
 
