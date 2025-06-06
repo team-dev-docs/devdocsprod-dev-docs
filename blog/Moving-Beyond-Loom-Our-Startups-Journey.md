@@ -14,7 +14,7 @@ A tool that we rely on for communication should have crystal-clear controls to a
 
 ## The Triple Recording Incident
 
-Perhaps the most alarming issue we've encountered is the accidental creation of multiple recordings. In one instance, a team member unknowingly created three separate recordings of the same content. While we were fortunate that these recordings hadn't been viewed, this incident highlighted a serious flaw in the user experience:
+Perhaps the most alarming issue we've encountered is the accidental creation of multiple recordings. In one instance, there was a three hour long accidental recording in our loom(luckily no views):
 
 * Lack of clear indication when a new recording starts
 
