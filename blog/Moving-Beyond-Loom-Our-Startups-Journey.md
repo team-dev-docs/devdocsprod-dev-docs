@@ -18,7 +18,7 @@ Perhaps the most alarming issue we've encountered is the accidental creation of 
 
 ## The Login Barrier
 
-Lastly, we've found the default setting of login-protected links to be a hindrance to our confidence in the tool. Although the links are hard to guess because of their long id, it still makes me deeply uncomfortable
+Lastly, we've found the default setting of login-protected links to be a hindrance to our confidence in the tool. Although the links are hard to guess because of their long id, it still makes me deeply uncomfortable that all videos by default are not login protected.
 
 * Slows down our communication process
 
