@@ -16,6 +16,6 @@ Lastly, we've found the default setting of login-protected links to be a hindran
 
 ## Moving Forward
 
-I haven't been this frustated with a tool in awhile especially since I use to love loom but these challenges have prompted us to look for alternatives that better suit our needs. In this case we decided on descript.\
+I haven't been this frustrated with a tool in awhile especially since I use to love loom but these challenges have prompted us to look for alternatives that better suit our needs. In this case we decided on descript.\
 \
 Thanks for reading my rant.
