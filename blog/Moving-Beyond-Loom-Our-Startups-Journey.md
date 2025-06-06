@@ -8,10 +8,6 @@ Clear user interface and intuitive controls are crucial for any tool we use. Unf
 
 * Wasted time redoing recordings
 
-* Frustration among team members
-
-A tool that we rely on for communication should have crystal-clear controls to avoid any ambiguity.
-
 ## The Triple Recording Incident
 
 Perhaps the most alarming issue we've encountered is the accidental creation of multiple recordings. In one instance, there was a three hour long accidental recording in our loom(luckily no views), where we able to catch it and delete it but it was still beyond frustrating that happened in the first place.
