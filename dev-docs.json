@@ -1,9 +1,9 @@
 {
-  "external": true,
-  "ai": {
-    "mappings": []
-  },
-   "gitHubApp": {
-    "workflows": ["generateDocs"]
+  "gitHubApp": {
+    "approvalWorkflow": true,
+    "userDocsWorkflows": [
+      "generateUserDocs"
+    ],
+    "issues": true
   }
 }
