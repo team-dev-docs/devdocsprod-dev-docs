@@ -1,0 +1,52 @@
+# pull Documentation
+
+## Brief Description
+The `pull` method downloads a model from the Ollama registry, with an option to stream the progress.
+
+## Usage
+To use the `pull` method, you need to create an instance of the Ollama class and then call the `pull` method with the appropriate parameters.
+
+```javascript
+import Ollama from 'ollama'
+
+const ollama = new Ollama()
+const result = await ollama.pull({ model: 'modelname' })
+```
+
+## Parameters
+The `pull` method accepts a single object parameter with the following properties:
+
+- `model` (string, required): The name of the model to pull from the Ollama registry.
+- `stream` (boolean, optional): If set to `true`, the method will return a stream of progress responses. Default is `false`.
+- `insecure` (boolean, optional): If set to `true`, allows insecure connections when pulling the model. Use with caution.
+
+## Return Value
+The `pull` method returns a Promise that resolves to:
+
+- If `stream` is `false`: A `ProgressResponse` object containing information about the pull operation.
+- If `stream` is `true`: An `AbortableAsyncIterator<ProgressResponse>` that yields progress updates as the model is being pulled.
+
+## Examples
+
+1. Basic usage to pull a model:
+
+```javascript
+const result = await ollama.pull({ model: 'llama2' })
+console.log(result)
+```
+
+2. Pulling a model with progress streaming:
+
+```javascript
+const stream = await ollama.pull({ model: 'llama2', stream: true })
+for await (const chunk of stream) {
+  console.log('Progress:', chunk)
+}
+```
+
+## Notes or Considerations
+
+- Ensure you have a stable internet connection when pulling large models.
+- The `insecure` option should be used cautiously, as it may expose you to security risks.
+- You can use the returned `AbortableAsyncIterator` to cancel the pull operation if needed.
+- The `pull` method is useful for downloading models that are not already available on your local Ollama instance.
